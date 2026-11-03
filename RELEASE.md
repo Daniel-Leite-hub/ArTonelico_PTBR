@@ -1,7 +1,8 @@
 # Ar tonelico: Melody of Elemia (Undub) — Tradução PT-BR Completa
 
 > **Versão da Tradução:** v1.0.0 (Curadoria Editorial Integral)  
-> **Status:** 100% dos textos traduzidos e revisados | Zero travamentos | Zero fallbacks de capacidade
+> **Status:** 100% dos textos traduzidos e revisados | Zero travamentos | Zero fallbacks de capacidade  
+> **Aplicador Executável Incluso:** `release/Aplicador_ArTonelico_PTBR.exe` (1-Click Patcher Windows)
 
 ---
 
@@ -38,7 +39,7 @@ Para garantir que a geração ocorra sem qualquer inconsistência, certifique-se
 
 | Atributo | ISO Original (Undub) | ISO Final Compilada (PT-BR) |
 | :--- | :--- | :--- |
-| **Nome Padrão** | `Ar tonelico - Melody of Elemia (Undub).iso` | `ArTonelico_PTBR_completo_curado_20261101.iso` |
+| **Nome Padrão** | `Ar tonelico - Melody of Elemia (Undub).iso` | `ArTonelico_PTBR_completo.iso` |
 | **ID do Executável** | `SLUS_214.45` | `SLUS_214.45` (com realocação MIPS) |
 | **Tamanho em Bytes** | `3.110.580.224 bytes` | `3.324.913.664 bytes` |
 | **Linhas Traduzidas**| — | `32.641` linhas verificadas |
@@ -46,34 +47,42 @@ Para garantir que a geração ocorra sem qualquer inconsistência, certifique-se
 
 ---
 
-## 4. Como Compilar a ISO Traduzida
+## 4. Como Aplicar a Tradução na ISO
 
-O repositório inclui a pipeline completa para montagem automatizada da imagem ISO.
+O pacote disponibiliza duas formas de aplicação: o executável oficial para jogadores (1-clique sem necessidade de Python) e o pipeline de build via código-fonte.
 
-### Pré-requisitos
-- Python 3.10 ou superior instalado.
-- Dependência de imagem (Pillow):
-  ```bash
-  pip install pillow
-  ```
-- A ISO original do jogo (*Ar tonelico Undub*).
+### Método 1: Aplicador Executável Windows (Recomendado para Jogadores)
 
-### Passo a Passo
+O release acompanha o aplicativo executável oficial:
+**`release/Aplicador_ArTonelico_PTBR.exe`**
 
-1. **Posicione a ISO Original:**
-   Coloque o arquivo `Ar tonelico - Melody of Elemia (Undub).iso` na pasta raiz (acima do repositório) ou execute o utilitário de redirecionamento caso o arquivo esteja em outro diretório:
+1. Abra o arquivo `release/Aplicador_ArTonelico_PTBR.exe` dando duplo clique no Windows.
+2. No campo **1. Imagem ISO Original do Jogo (Undub)**, clique em **Selecionar ISO...** e aponte para a sua ISO original (*Undub*). O programa tenta localizá-la automaticamente se estiver na mesma pasta.
+3. No campo **2. Onde salvar a ISO Traduzida**, escolha onde salvar a imagem gerada (por padrão `ArTonelico_PTBR_completo.iso`).
+4. Clique no botão azul **APLICAR TRADUÇÃO NA ISO**.
+5. Aguarde a barra de progresso (leva menos de 60 segundos). Ao término, uma mensagem confirmará as 32.641 linhas injetadas e oferecerá a opção de abrir a pasta com a ISO pronta para jogar!
+
+*Não é necessário instalar Python, dependências ou configurar linha de comando para este método.*
+
+---
+
+### Método 2: Via Terminal / Script Python (Para Desenvolvedores)
+
+Se você preferir rodar a compilação diretamente pelos fontes:
+
+1. **Pré-requisitos:** Python 3.10+ e Pillow:
+   ```bash
+   pip install pillow
+   ```
+2. **Posicione ou redirecione a ISO:**
    ```powershell
    python tools/relink_project_iso.py "release/ArTonelico_PTBR_adaptado_108_20260926.atproj" "C:\Caminho\Para\Sua\ISO.iso"
    ```
-
-2. **Execute o Gerador Automático:**
-   No diretório do repositório, execute:
+3. **Execute o gerador:**
    ```powershell
    python tools/build_release_iso_curada.py
    ```
-
-3. **Conclusão:**
-   O script irá injetar os scripts EVD reempacotados, remapear as fontes na VRAM, aplicar os patches de memória ELF e salvar a imagem pronta em `ISOs/ArTonelico_PTBR_completo_curado_20261101.iso`.
+4. A ISO traduzida será gerada na pasta `ISOs/`.
 
 ---
 

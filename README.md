@@ -149,7 +149,8 @@ ArTonelico_PTBR_Git/
 │   ├── test_text_arena.py          # Testes de expansão de Text Arena
 │   └── ...
 │
-├── release/                        # Artefatos consolidados e banco autoritativo
+├── release/                        # Artefatos consolidados e executável de release
+│   ├── Aplicador_ArTonelico_PTBR.exe # Aplicativo Windows oficial (1-clique) para aplicar na ISO
 │   ├── ArTonelico_PTBR_adaptado_108_20260926.atproj  # Banco SQLite mestre curado (23 MB)
 │   ├── glossario_franquia/         # Base terminológica consolidada
 │   └── iso/                        # Relatórios estruturais e metadados de compilação
@@ -162,25 +163,26 @@ ArTonelico_PTBR_Git/
 
 ## 5. Como Executar e Compilar
 
-### Pré-requisitos
-- Python 3.10 ou superior.
-- Biblioteca de processamento de imagens (Pillow):
+### Opção 1: Aplicador Executável Windows (Recomendado para Jogadores)
+O release inclui um executável oficial autônomo com interface gráfica amigável:
+```text
+release/Aplicador_ArTonelico_PTBR.exe
+```
+Basta executar o aplicativo, selecionar a imagem ISO original de *Ar tonelico (Undub)* e clicar em **"APLICAR TRADUÇÃO NA ISO"**. O software faz a validação da imagem, aplica todos os scripts, fontes e realocações de memória sem exigir instalação prévia de Python ou dependências.
+
+### Opção 2: Compilação via Pipeline Python (Para Engenheiros e Desenvolvedores)
+- **Pré-requisitos:** Python 3.10+ e Pillow:
   ```bash
   pip install pillow
   ```
-- Imagem ISO do jogo *Ar tonelico: Melody of Elemia (Undub)* (`SLUS-21445`).
-
-### Executando os Testes Automatizados
-Para rodar a suite de testes de integridade e validar os parsers binários:
-```powershell
-python -B -m unittest discover -s tests
-```
-
-### Compilando a Imagem ISO Traduzida
-Com a ISO original posicionada ou devidamente vinculada no banco de dados:
-```powershell
-python tools/build_release_iso_curada.py
-```
+- **Execução dos Testes Automatizados:**
+  ```powershell
+  python -B -m unittest discover -s tests
+  ```
+- **Compilando a Imagem ISO Traduzida:**
+  ```powershell
+  python tools/build_release_iso_curada.py
+  ```
 O compilador executa a verificação completa das 32.641 entradas, recalcula os offsets binários, expande a Text Arena e entrega a imagem em `ISOs/ArTonelico_PTBR_completo_curado_20261101.iso`.
 
 Para instruções detalhadas de configuração no PCSX2, compatibilidade com consoles reais e guia do jogador, consulte o arquivo [`RELEASE.md`](RELEASE.md).
