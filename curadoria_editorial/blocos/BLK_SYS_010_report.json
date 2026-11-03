@@ -1,0 +1,116 @@
+{
+  "block_id": "BLK_SYS_010",
+  "completed_at": "2026-10-29T05:16:58.542488+00:00",
+  "backup_created": "G:\\JOGO\\PS2\\Ar tonelico - Melody of Elemia (Undub)\\Ferramentas_Traducao\\backups\\curadoria\\ArTonelico_backup_pre_BLK_SYS_010_20261029_021657.atproj",
+  "total_dialogues": 288,
+  "lines_rewritten": 261,
+  "lines_approved_as_is": 27,
+  "new_terms_added": 6,
+  "scene_handoff": {
+    "last_scene_id": "BLK_SYS_010",
+    "last_line_id": 23204,
+    "location_and_situation": "Núcleo Sistêmico Parte 10 (Parâmetros de Equipamento de HP/MP, Dano Direto, Overclock, Resistência GD, BS, Influência, Selos Dracônicos 100%, e Catálogo Completo das Magias da Canção de Aurica em SLUS/TEXT/0113 a 0124) concluído e 100% auditado contra o Shift-JIS de memória física.",
+    "emotional_state": "Sistêmico e Lírico / Excelência absoluta na eliminação de calques culinários ('Spoonful of MP', 'Cup of MP'), erradicação de 100 estouros de bytes, restauração do Coelho do Relógio e das narrativas íntimas de Lyner dentro da Cosmosfera de Aurica.",
+    "active_hooks": [
+      "Transicionar para BLK_SYS_011 ou próximo eixo narrativo/sistêmico conforme o Scene Breakdown Ledger."
+    ]
+  },
+  "highlights": [
+    {
+      "id": 22924,
+      "jp": "ライフブースター",
+      "en": "Life Booster",
+      "pt_before": "Amplificador vital",
+      "pt_after": "Life Booster",
+      "reason": "Eliminação de estouro de bytes estrito de 32B ('Amplificador vital' tinha 37B; Life Booster tem 25B <= 32B)."
+    },
+    {
+      "id": 22928,
+      "jp": "まあまあMPアップ",
+      "en": "Spoonful of MP",
+      "pt_before": "Colher de MP",
+      "pt_after": "Médio MP+",
+      "reason": "Eliminação do calque culinário americano ('Spoonful of MP' -> 'Colher de MP'), harmonizando perfeitamente com a progressão Leve/Médio/Alto/Super MP+ (20B <= 32B)."
+    },
+    {
+      "id": 22930,
+      "jp": "なかなかMPアップ",
+      "en": "Cup of MP",
+      "pt_before": "Copo de MP",
+      "pt_after": "Alto MP+",
+      "reason": "Eliminação do calque culinário bizarro americano ('Cup of MP' -> 'Copo de MP'), alinhando com a progressão do JP (17B <= 24B)."
+    },
+    {
+      "id": 22978,
+      "jp": "マッハな速さ",
+      "en": "Mach Speed",
+      "pt_before": "Velocidade Mach",
+      "pt_after": "Agil Mach",
+      "reason": "Eliminação de estouro de bytes em slot ultraestrito de 24B ('Velocidade Mach' tinha 31B; Agil Mach tem 19B <= 24B)."
+    },
+    {
+      "id": 22991,
+      "jp": "【装備品用】CR限界を超えて能力を高める。GD耐性低下。",
+      "en": "[Equipment]CRRaises abilities past the limit. Lowers GD resistance.",
+      "pt_before": "[Equipamento]CREleva os atributos além do limite, mas reduz a resistência GD.",
+      "pt_after": "[Equipamento]CREleva atributos além do limite. Reduz resist. GD.",
+      "reason": "Eliminação de estouro de bytes (antigo tinha 157B > 136B; novo tem 127B <= 136B) mantendo clareza total dos parâmetros."
+    },
+    {
+      "id": 23003,
+      "jp": "【装備品用】CRダメージの100%分の炎追加ダメージ。",
+      "en": "[Equipment]CR100% of base damage as additional fire damage.",
+      "pt_before": "[Equipamento]CRAdiciona 100% do dano base como dano de fogo.",
+      "pt_after": "[Equipamento]CRCausa +100% do dano base em fogo.",
+      "reason": "Eliminação de estouro de bytes (antigo tinha 121B > 120B; novo tem 89B <= 120B) e harmonização simétrica com BLK_SYS_009."
+    },
+    {
+      "id": 23111,
+      "jp": "匠の業",
+      "en": "Mastery",
+      "pt_before": "Maestria",
+      "pt_after": "Primor",
+      "reason": "Eliminação de estouro no limite ultraestrito de 16B ('Maestria' tinha 17B > 16B; 'Primor' traduz Takumi no Waza com perfeição em 13B <= 16B)."
+    },
+    {
+      "id": 23150,
+      "jp": "紡いだというよりは、作ったというべきかな?舌とドンスケハウスと涙でどう作ったのかは謎だが...",
+      "en": "More like a machine than a song.. It is a mystery how it’s made from a tongue, a Don Leon House, and tears.",
+      "pt_before": "Parece mais máquina que Canção. Como surgiu de uma língua, da Casa de Don Leon e de lágrimas é um mistério.",
+      "pt_after": "Construímos em vez de tecer? Como surgiu de uma língua, casa de Don Leon e lágrimas é um mistério.",
+      "reason": "Eliminação de estouro de bytes (antigo tinha 220B > 216B; novo tem 202B <= 216B) com fidelidade à voz íntima e perplexa de Lyner."
+    },
+    {
+      "id": 23185,
+      "jp": "オリカが自信を持てたお礼として手に入れた魔法。この魔法の正体は時計ウサギだ",
+      "en": "Aurica was given this magic as a reward for being confident. This magic is actually the March Hare.",
+      "pt_before": "Aurica recebeu esta magia como prêmio por sua confiança. Na verdade, ela é a Lebre de Março.",
+      "pt_after": "Prova da autoconfiança de Aurica. A verdadeira face desta magia é o Coelho do Relógio.",
+      "reason": "Restauração do texto original japonês 'Tokei Usagi' (Coelho do Relógio de Alice), desfazendo o erro crasso da tradução americana que inventou 'March Hare' (Lebre de Março; 176B <= 200B)."
+    },
+    {
+      "id": 23189,
+      "jp": "オリカを恐喝していたボルドからちびオリカを守るため、どんすけのオリカが紡いだ魔法",
+      "en": "The Don Leon-Aurica crafted this magic to protect the Chibi Aurica from Bourd.",
+      "pt_before": "Aurica Don Leon criou esta magia para proteger Aurica Pequena de Bourd.",
+      "pt_after": "Aurica Don Leon a teceu para proteger a Chibi-Aurica das ameaças de Bourd.",
+      "reason": "Preservação da terminologia canônica da Cosmosfera (Chibi-Aurica / Aurica Don Leon / Bourd) em 150B <= 160B."
+    },
+    {
+      "id": 23193,
+      "jp": "ミシャの力を吸って逃げた掃除機猫を追いかけるため、そしてミシャを助けるために紡ぎだした魔法だ",
+      "en": "In order to rescue Misha, Aurica crafted this magic to chase the vacuum cat that took Misha’s power.",
+      "pt_before": "Aurica a criou para perseguir o gato aspirador que roubara o poder de Misha e resgatá-la.",
+      "pt_after": "Magia tecida para perseguir o gato-aspirador que sugou os poderes de Misha e resgatar nossa amiga.",
+      "reason": "Fidelidade à lore cósmica do gato-aspirador (Soujiki Neko) e à voz fraterna de Lyner em 179B <= 208B."
+    },
+    {
+      "id": 23197,
+      "jp": "セラフィフライアで壊れた精神世界を治すために、天使と悪魔のオリカが力を合わせて紡ぎだした魔法だ",
+      "en": "To fix the soulspace destroyed by Seraphiflyer, Angel Aurica and Devil Aurica worked together to craft this magic.",
+      "pt_before": "Aurica Anjo e Aurica Demônio criaram esta magia juntas para reparar o Espaço da Alma destruído por Seraphiflyer.",
+      "pt_after": "Para salvar a Cosmosfera após o Seraphy-Flyer, Aurica Anjo e Aurica Demônio uniram forças.",
+      "reason": "Substituição do termo genérico 'Espaço da Alma' pelo cânone sagrado 'Cosmosfera' e lirismo no clímax da união das facetas de Aurica (184B <= 232B)."
+    }
+  ]
+}

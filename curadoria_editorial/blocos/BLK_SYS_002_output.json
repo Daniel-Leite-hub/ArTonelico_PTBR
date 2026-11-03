@@ -1,0 +1,2507 @@
+{
+  "block_id": "BLK_SYS_002",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Executable Strings",
+  "total_lines": 288,
+  "lines_rewritten": 162,
+  "lines_approved_as_is": 126,
+  "new_terms": {
+    "RC: [Item/Categoria]": {
+      "pt": "RC: [Item/Categoria]",
+      "category": "Item / Síntese",
+      "note": "Prefixo canônico de Recipe Card (Card de Receita de Grathmeld / Categoria de Síntese). Mantido com 'RC:' para paridade com a UI do jogo."
+    },
+    "Issen": {
+      "pt": "Lampejo",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Combate / Habilidade",
+      "note": "Golpe espadachim instantâneo de Ayatane (JP 一閃). Tradução canônica: Lampejo (em vez do literal 'Faísca'/Spark do inglês)."
+    },
+    "Somersault": {
+      "pt": "Mortal",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Combate / Habilidade",
+      "note": "Chute acrobático giratório para trás de Misha (JP さまそー). Tradução canônica: Mortal (em vez do equívoco 'Wakey' do inglês)."
+    }
+  },
+  "scene_handoff_final": {
+    "last_scene_id": "BLK_SYS_002",
+    "last_line_id": 20882,
+    "location_and_situation": "Núcleo Sistêmico Parte 2 (habilidades avançadas de combate, golpes de chefes, técnicas de Misha/Radolf/Jack/Ayatane e catálogo de receitas de Grathmeld) concluído e padronizado.",
+    "emotional_state": "Sistêmico / Neutro.",
+    "active_hooks": [
+      "Encadear com BLK_SYS_003 (continuação do catálogo de itens, armas, armaduras e acessórios de síntese)."
+    ]
+  },
+  "highlights": [
+    {
+      "id": 20595,
+      "jp": "大爆発",
+      "en": "Great Explosion",
+      "before": "Grande explosão",
+      "after": "Grande Explosão",
+      "reason": "JP 大爆発 (Grande explosão destrutiva de chefe; 31B <= 32B)"
+    },
+    {
+      "id": 20604,
+      "jp": "一斉掃射",
+      "en": "Simultaneous Swipe",
+      "before": "Golpe simultâneo",
+      "after": "Saraivada Geral",
+      "reason": "JP 一斉掃射 (Disparo/varredura maciça de projéteis; 31B <= 40B; corrige erro do EN 'Swipe')"
+    },
+    {
+      "id": 20608,
+      "jp": "デスギアー",
+      "en": "Death Gear",
+      "before": "Engr.mortal",
+      "after": "Eng. Mortal",
+      "reason": "JP デスギアー (Engrenagem cortante mortal; 23B <= 24B)"
+    },
+    {
+      "id": 20622,
+      "jp": "バグズファング",
+      "en": "Bugs Fang",
+      "before": "Presa bug",
+      "after": "Presa Viral",
+      "reason": "JP バグズファング (Mordida de monstro Bug/Vírus; 23B <= 24B; substitui 'Presa bug')"
+    },
+    {
+      "id": 20624,
+      "jp": "ブレイクスピン",
+      "en": "Break Spin",
+      "before": "Giro quebra",
+      "after": "Giro Quebra",
+      "reason": "JP ブレイクスピン (Giro destruidor de impacto; 23B <= 24B)"
+    },
+    {
+      "id": 20628,
+      "jp": "ニードルレイン",
+      "en": "Needle Rain",
+      "before": "Agulhada",
+      "after": "Mil Agulhas",
+      "reason": "JP ニードルレイン (Chuva diluviana de agulhas; 23B <= 24B; substitui 'Agulhada')"
+    },
+    {
+      "id": 20630,
+      "jp": "システムブレイク",
+      "en": "System Break",
+      "before": "Falha sistema",
+      "after": "Pane no Sistema",
+      "reason": "JP システムブレイク (Colapso no sistema mecânico; 31B <= 32B; substitui 'Falha sistema')"
+    },
+    {
+      "id": 20632,
+      "jp": "ハーム・ウェイブ",
+      "en": "Harm Wave",
+      "before": "Onda nociva",
+      "after": "Onda Nociva",
+      "reason": "JP ハーム・ウェイブ (Onda de choque danosa; 23B <= 24B)"
+    },
+    {
+      "id": 20636,
+      "jp": "フレイムスプレー",
+      "en": "Flame Spray",
+      "before": "Jato fogo",
+      "after": "Jato Ígneo",
+      "reason": "JP フレイムスプレー (Dispersão de labaredas; 21B <= 24B; substitui 'Jato fogo')"
+    },
+    {
+      "id": 20646,
+      "jp": "ロックキャノン",
+      "en": "Rock Cannon",
+      "before": "Canhão ped.",
+      "after": "Tiro Pétreo",
+      "reason": "JP ロックキャノン (Disparo com projétil de rocha; 23B <= 24B; elimina abreviação 'Canhão ped.')"
+    },
+    {
+      "id": 20650,
+      "jp": "ハイバスター",
+      "en": "High Buster",
+      "before": "Alto Buster",
+      "after": "Mega Buster",
+      "reason": "JP ハイバスター (Canhão de energia potente; 23B <= 24B; substitui 'Alto Buster')"
+    },
+    {
+      "id": 20652,
+      "jp": "パルスレイザー",
+      "en": "Pulse Laser",
+      "before": "Laser pulso",
+      "after": "Laser Pulso",
+      "reason": "JP パルスレイザー (Emissão de laser pulsado; 23B <= 24B)"
+    },
+    {
+      "id": 20670,
+      "jp": "爆砕<復>",
+      "en": "Burst Crush (Redo)",
+      "before": "Impacto (Refazer)",
+      "after": "Impacto (Múltiplo)",
+      "reason": "JP 爆砕<復> (Estilhaço de múltiplos golpes repetidos; 37B <= 40B; substitui 'Refazer')"
+    },
+    {
+      "id": 20677,
+      "jp": "コワレタセカイ",
+      "en": "Ruined World",
+      "before": "Mundo arruinado",
+      "after": "Mundo em Ruínas",
+      "reason": "JP コワレタセカイ (Cenário desolado de destruição; 31B <= 32B)"
+    },
+    {
+      "id": 20679,
+      "jp": "オチテイクソラ",
+      "en": "Falling Sky",
+      "before": "Céu caindo",
+      "after": "Céu Caindo",
+      "reason": "JP オチテイクソラ (Abóboda celeste em colapso; 21B <= 24B)"
+    },
+    {
+      "id": 20680,
+      "jp": "#0まわしげり",
+      "en": "Roundhouse Kick",
+      "before": "Chute giratório",
+      "after": "Chute Giratório",
+      "reason": "JP #0まわしげり (Golpe marcial de chute circular de Misha; 31B <= 32B)"
+    },
+    {
+      "id": 20681,
+      "jp": "#0流形・一乃舞",
+      "en": "Flowing Form - First Dance",
+      "before": "Forma fluida - Primeira dança",
+      "after": "Forma Fluida: 1ª Dança",
+      "reason": "JP #0流形・一乃舞 (Primeiro kata do estilo marcial fluido de Misha; 45B <= 56B; resolve overflow anterior)"
+    },
+    {
+      "id": 20683,
+      "jp": "#0さまそー",
+      "en": "Wakey",
+      "before": "Acorda",
+      "after": "Mortal",
+      "reason": "JP #0さまそー (Golpe de chute acrobático Somersault; 13B <= 16B; corrige erro crasso do EN 'Wakey')"
+    },
+    {
+      "id": 20684,
+      "jp": "#0飛形・昇輪落陽",
+      "en": "Flying Form - Rising Ring Falling Sun",
+      "before": "Forma voadora - Anel ascendente, sol poente",
+      "after": "Forma Voadora: Anel e Poente",
+      "reason": "JP #0飛形・昇輪落陽 (Golpe marcial aéreo em arco descendente; 61B <= 80B; resolve overflow)"
+    },
+    {
+      "id": 20686,
+      "jp": "#0しょうてい",
+      "en": "Palm Punch",
+      "before": "Golpe palma",
+      "after": "Golpe Palma",
+      "reason": "JP #0しょうてい (Golpe marcial com a palma da mão Shoutei; 23B <= 24B)"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 20595,
+      "original_en": "Great Explosion",
+      "original_jp": "大爆発",
+      "current_ptbr": "Grande explosão",
+      "curated_ptbr": "Grande Explosão",
+      "justification": "JP 大爆発 (Grande explosão destrutiva de chefe; 31B <= 32B)"
+    },
+    {
+      "id": 20596,
+      "original_en": "70M Vulcan",
+      "original_jp": "70Mバルカン",
+      "current_ptbr": "70M Vulcan",
+      "curated_ptbr": "70M Vulcan",
+      "justification": "JP 70Mバルカン (Armamento vulcan de 70M; 21B <= 24B)"
+    },
+    {
+      "id": 20597,
+      "original_en": "Ikarga 1",
+      "original_jp": "イカルガ1",
+      "current_ptbr": "Ikarga 1",
+      "curated_ptbr": "Ikarga 1",
+      "justification": "JP イカルガ1 (Identificador da fase 1 do chefe Ikarga; 17B <= 24B)"
+    },
+    {
+      "id": 20598,
+      "original_en": "Four Chambered Missile",
+      "original_jp": "4連ミサイル",
+      "current_ptbr": "Míssil de 4 câmaras",
+      "curated_ptbr": "Mísseis Quádruplos",
+      "justification": "JP 4連ミサイル (Disparo quádruplo de mísseis; 37B <= 48B)"
+    },
+    {
+      "id": 20599,
+      "original_en": "Ikarga 2",
+      "original_jp": "イカルガ2",
+      "current_ptbr": "Ikarga 2",
+      "curated_ptbr": "Ikarga 2",
+      "justification": "JP イカルガ2 (Identificador da fase 2 do chefe Ikarga; 17B <= 24B)"
+    },
+    {
+      "id": 20600,
+      "original_en": "Death Hover",
+      "original_jp": "デスホバー",
+      "current_ptbr": "Voo mortal",
+      "curated_ptbr": "Voo Mortal",
+      "justification": "JP デスホバー (Ataque aéreo do chefe; 21B <= 24B)"
+    },
+    {
+      "id": 20601,
+      "original_en": "Ikarga 3",
+      "original_jp": "イカルガ3",
+      "current_ptbr": "Ikarga 3",
+      "curated_ptbr": "Ikarga 3",
+      "justification": "JP イカルガ3 (Identificador da fase 3 do chefe Ikarga; 17B <= 24B)"
+    },
+    {
+      "id": 20602,
+      "original_en": "100M Vulcan",
+      "original_jp": "100Mバルカン",
+      "current_ptbr": "100M Vulcan",
+      "curated_ptbr": "100M Vulcan",
+      "justification": "JP 100Mバルカン (Vulcan aprimorada de 100M; 23B <= 24B)"
+    },
+    {
+      "id": 20603,
+      "original_en": "Ikarga II 1",
+      "original_jp": "イカルガII1",
+      "current_ptbr": "Ikarga II 1",
+      "curated_ptbr": "Ikarga II 1",
+      "justification": "JP イカルガII1 (Chefe Ikarga versão II fase 1; 23B <= 24B)"
+    },
+    {
+      "id": 20604,
+      "original_en": "Simultaneous Swipe",
+      "original_jp": "一斉掃射",
+      "current_ptbr": "Golpe simultâneo",
+      "curated_ptbr": "Saraivada Geral",
+      "justification": "JP 一斉掃射 (Disparo/varredura maciça de projéteis; 31B <= 40B; corrige erro do EN 'Swipe')"
+    },
+    {
+      "id": 20605,
+      "original_en": "Ikarga II 3",
+      "original_jp": "イカルガII3",
+      "current_ptbr": "Ikarga II 3",
+      "curated_ptbr": "Ikarga II 3",
+      "justification": "JP イカルガII3 (Chefe Ikarga versão II fase 3; 23B <= 24B)"
+    },
+    {
+      "id": 20606,
+      "original_en": "Photon Spread",
+      "original_jp": "フォトンスプレッド",
+      "current_ptbr": "Feixe fóton",
+      "curated_ptbr": "Feixe Fóton",
+      "justification": "JP フォトンスプレッド (Dispersão de feixes fóton; 23B <= 32B)"
+    },
+    {
+      "id": 20607,
+      "original_en": "Ikarga II 4",
+      "original_jp": "イカルガII4",
+      "current_ptbr": "Ikarga II 4",
+      "curated_ptbr": "Ikarga II 4",
+      "justification": "JP イカルガII4 (Chefe Ikarga versão II fase 4; 23B <= 24B)"
+    },
+    {
+      "id": 20608,
+      "original_en": "Death Gear",
+      "original_jp": "デスギアー",
+      "current_ptbr": "Engr.mortal",
+      "curated_ptbr": "Eng. Mortal",
+      "justification": "JP デスギアー (Engrenagem cortante mortal; 23B <= 24B)"
+    },
+    {
+      "id": 20609,
+      "original_en": "Ikarga II 5",
+      "original_jp": "イカルガII5",
+      "current_ptbr": "Ikarga II 5",
+      "curated_ptbr": "Ikarga II 5",
+      "justification": "JP イカルガII5 (Chefe Ikarga versão II fase 5; 23B <= 24B)"
+    },
+    {
+      "id": 20610,
+      "original_en": "System Uncontrolled",
+      "original_jp": "システム暴走",
+      "current_ptbr": "Sistema sem ctrl.",
+      "curated_ptbr": "Pane no Sistema",
+      "justification": "JP システム暴走 (Sobrecarga e perda de controle do robô; 31B <= 40B)"
+    },
+    {
+      "id": 20611,
+      "original_en": "Ikarga II 6",
+      "original_jp": "イカルガII6",
+      "current_ptbr": "Ikarga II 6",
+      "curated_ptbr": "Ikarga II 6",
+      "justification": "JP イカルガII6 (Chefe Ikarga versão II fase 6; 23B <= 24B)"
+    },
+    {
+      "id": 20612,
+      "original_en": "Forbidden Claw",
+      "original_jp": "フォビドゥンクロウ",
+      "current_ptbr": "Garra proibida",
+      "curated_ptbr": "Garra Proibida",
+      "justification": "JP フォビドゥンクロウ (Ataque cortante letal; 29B <= 32B)"
+    },
+    {
+      "id": 20613,
+      "original_en": "Falss 1",
+      "original_jp": "ファルス司祭1",
+      "current_ptbr": "Falss 1",
+      "curated_ptbr": "Falss 1",
+      "justification": "JP ファルス司祭1 (Padre Falss fase 1; 15B <= 16B)"
+    },
+    {
+      "id": 20614,
+      "original_en": "Elemia Ray",
+      "original_jp": "エレミア・レイ",
+      "current_ptbr": "Raio Elemia",
+      "curated_ptbr": "Raio Elemia",
+      "justification": "JP エレミア・レイ (Raio sagrado da Igreja de Elemia; 23B <= 24B)"
+    },
+    {
+      "id": 20615,
+      "original_en": "Falss 2",
+      "original_jp": "ファルス司祭2",
+      "current_ptbr": "Falss 2",
+      "curated_ptbr": "Falss 2",
+      "justification": "JP ファルス司祭2 (Padre Falss fase 2; 15B <= 16B)"
+    },
+    {
+      "id": 20616,
+      "original_en": "Gravity Punishment",
+      "original_jp": "グラビディパニシュ",
+      "current_ptbr": "Punição grav.",
+      "curated_ptbr": "Punição Gravítica",
+      "justification": "JP グラビディパニシュ (Castigo gravitacional divino; 35B <= 40B; elimina abreviação feia 'Punição grav.')"
+    },
+    {
+      "id": 20617,
+      "original_en": "Falss 3",
+      "original_jp": "ファルス司祭3",
+      "current_ptbr": "Falss 3",
+      "curated_ptbr": "Falss 3",
+      "justification": "JP ファルス司祭3 (Padre Falss fase 3; 15B <= 16B)"
+    },
+    {
+      "id": 20618,
+      "original_en": "High Voltage",
+      "original_jp": "ハイボルテージ",
+      "current_ptbr": "Alta tensão",
+      "curated_ptbr": "Alta Tensão",
+      "justification": "JP ハイボルテージ (Ataque elétrico; 23B <= 32B)"
+    },
+    {
+      "id": 20619,
+      "original_en": "Falss 4",
+      "original_jp": "ファルス司祭4",
+      "current_ptbr": "Falss 4",
+      "curated_ptbr": "Falss 4",
+      "justification": "JP ファルス司祭4 (Padre Falss fase 4; 15B <= 16B)"
+    },
+    {
+      "id": 20620,
+      "original_en": "Elemia Anthem",
+      "original_jp": "エレミア賛歌",
+      "current_ptbr": "Hino de Elemia",
+      "curated_ptbr": "Hino de Elemia",
+      "justification": "JP エレミア賛歌 (Cântico litúrgico de combate; 29B <= 32B)"
+    },
+    {
+      "id": 20621,
+      "original_en": "Falss 5",
+      "original_jp": "ファルス司祭5",
+      "current_ptbr": "Falss 5",
+      "curated_ptbr": "Falss 5",
+      "justification": "JP ファルス司祭5 (Padre Falss fase 5; 15B <= 16B)"
+    },
+    {
+      "id": 20622,
+      "original_en": "Bugs Fang",
+      "original_jp": "バグズファング",
+      "current_ptbr": "Presa bug",
+      "curated_ptbr": "Presa Viral",
+      "justification": "JP バグズファング (Mordida de monstro Bug/Vírus; 23B <= 24B; substitui 'Presa bug')"
+    },
+    {
+      "id": 20623,
+      "original_en": "ELMA-I 1",
+      "original_jp": "ELMA-I1",
+      "current_ptbr": "ELMA-I 1",
+      "curated_ptbr": "ELMA-I 1",
+      "justification": "JP ELMA-I1 (Chefe mecânico ELMA-I fase 1; 17B <= 24B)"
+    },
+    {
+      "id": 20624,
+      "original_en": "Break Spin",
+      "original_jp": "ブレイクスピン",
+      "current_ptbr": "Giro quebra",
+      "curated_ptbr": "Giro Quebra",
+      "justification": "JP ブレイクスピン (Giro destruidor de impacto; 23B <= 24B)"
+    },
+    {
+      "id": 20625,
+      "original_en": "ELMA-I 2",
+      "original_jp": "ELMA-I2",
+      "current_ptbr": "ELMA-I 2",
+      "curated_ptbr": "ELMA-I 2",
+      "justification": "JP ELMA-I2 (Chefe ELMA-I fase 2; 17B <= 24B)"
+    },
+    {
+      "id": 20626,
+      "original_en": "Shutter Tail",
+      "original_jp": "シャッターテイル",
+      "current_ptbr": "Cauda obtur.",
+      "curated_ptbr": "Cauda Cortante",
+      "justification": "JP シャッターテイル (Golpe com cauda laminada; 29B <= 32B; substitui 'Cauda obtur.')"
+    },
+    {
+      "id": 20627,
+      "original_en": "ELMA-I 3",
+      "original_jp": "ELMA-I3",
+      "current_ptbr": "ELMA-I 3",
+      "curated_ptbr": "ELMA-I 3",
+      "justification": "JP ELMA-I3 (Chefe ELMA-I fase 3; 17B <= 24B)"
+    },
+    {
+      "id": 20628,
+      "original_en": "Needle Rain",
+      "original_jp": "ニードルレイン",
+      "current_ptbr": "Agulhada",
+      "curated_ptbr": "Mil Agulhas",
+      "justification": "JP ニードルレイン (Chuva diluviana de agulhas; 23B <= 24B; substitui 'Agulhada')"
+    },
+    {
+      "id": 20629,
+      "original_en": "ELMA-I 4",
+      "original_jp": "ELMA-I4",
+      "current_ptbr": "ELMA-I 4",
+      "curated_ptbr": "ELMA-I 4",
+      "justification": "JP ELMA-I4 (Chefe ELMA-I fase 4; 17B <= 24B)"
+    },
+    {
+      "id": 20630,
+      "original_en": "System Break",
+      "original_jp": "システムブレイク",
+      "current_ptbr": "Falha sistema",
+      "curated_ptbr": "Pane no Sistema",
+      "justification": "JP システムブレイク (Colapso no sistema mecânico; 31B <= 32B; substitui 'Falha sistema')"
+    },
+    {
+      "id": 20631,
+      "original_en": "ELMA-II 1",
+      "original_jp": "ELMA-II1",
+      "current_ptbr": "ELMA-II 1",
+      "curated_ptbr": "ELMA-II 1",
+      "justification": "JP ELMA-II1 (Chefe ELMA-II fase 1; 19B <= 24B)"
+    },
+    {
+      "id": 20632,
+      "original_en": "Harm Wave",
+      "original_jp": "ハーム・ウェイブ",
+      "current_ptbr": "Onda nociva",
+      "curated_ptbr": "Onda Nociva",
+      "justification": "JP ハーム・ウェイブ (Onda de choque danosa; 23B <= 24B)"
+    },
+    {
+      "id": 20633,
+      "original_en": "ELMA-II 2",
+      "original_jp": "ELMA-II2",
+      "current_ptbr": "ELMA-II 2",
+      "curated_ptbr": "ELMA-II 2",
+      "justification": "JP ELMA-II2 (Chefe ELMA-II fase 2; 19B <= 24B)"
+    },
+    {
+      "id": 20634,
+      "original_en": "Cross Cut",
+      "original_jp": "クロスカット",
+      "current_ptbr": "Corte X",
+      "curated_ptbr": "Corte Cruz",
+      "justification": "JP クロスカット (Golpe duplo entrecruzado; 21B <= 24B; substitui 'Corte X')"
+    },
+    {
+      "id": 20635,
+      "original_en": "ELMA-II 3",
+      "original_jp": "ELMA-II3",
+      "current_ptbr": "ELMA-II 3",
+      "curated_ptbr": "ELMA-II 3",
+      "justification": "JP ELMA-II3 (Chefe ELMA-II fase 3; 19B <= 24B)"
+    },
+    {
+      "id": 20636,
+      "original_en": "Flame Spray",
+      "original_jp": "フレイムスプレー",
+      "current_ptbr": "Jato fogo",
+      "curated_ptbr": "Jato Ígneo",
+      "justification": "JP フレイムスプレー (Dispersão de labaredas; 21B <= 24B; substitui 'Jato fogo')"
+    },
+    {
+      "id": 20637,
+      "original_en": "ABR-γ 1",
+      "original_jp": "ABR-γ1",
+      "current_ptbr": "ABR-γ 1",
+      "curated_ptbr": "ABR-γ 1",
+      "justification": "JP ABR-γ1 (Chefe mecânico ABR-Gama fase 1; 15B <= 16B)"
+    },
+    {
+      "id": 20638,
+      "original_en": "Deep Freeze",
+      "original_jp": "ディープフリーズ",
+      "current_ptbr": "Congelar",
+      "curated_ptbr": "Congelar",
+      "justification": "JP ディープフリーズ (Ataque elemental de gelo extremo; 17B <= 24B)"
+    },
+    {
+      "id": 20639,
+      "original_en": "ABR-γ 2",
+      "original_jp": "ABR-γ2",
+      "current_ptbr": "ABR-γ 2",
+      "curated_ptbr": "ABR-γ 2",
+      "justification": "JP ABR-γ2 (Chefe ABR-Gama fase 2; 15B <= 16B)"
+    },
+    {
+      "id": 20640,
+      "original_en": "Thunder Shower",
+      "original_jp": "サンダーシャワー",
+      "current_ptbr": "Chuva de raios",
+      "curated_ptbr": "Chuva de Raios",
+      "justification": "JP サンダーシャワー (Descarga elétrica em área; 29B <= 32B)"
+    },
+    {
+      "id": 20641,
+      "original_en": "ABR-γ 3",
+      "original_jp": "ABR-γ3",
+      "current_ptbr": "ABR-γ 3",
+      "curated_ptbr": "ABR-γ 3",
+      "justification": "JP ABR-γ3 (Chefe ABR-Gama fase 3; 15B <= 16B)"
+    },
+    {
+      "id": 20642,
+      "original_en": "Master Bit",
+      "original_jp": "マスタービット",
+      "current_ptbr": "Bit mestre",
+      "curated_ptbr": "Bit Mestre",
+      "justification": "JP マスタービット (Unidade bit principal; 21B <= 24B)"
+    },
+    {
+      "id": 20643,
+      "original_en": "ABR-γ 4",
+      "original_jp": "ABR-γ4",
+      "current_ptbr": "ABR-γ 4",
+      "curated_ptbr": "ABR-γ 4",
+      "justification": "JP ABR-γ4 (Chefe ABR-Gama fase 4; 15B <= 16B)"
+    },
+    {
+      "id": 20644,
+      "original_en": "Double Impact",
+      "original_jp": "ダブルインパクト",
+      "current_ptbr": "Impacto duplo",
+      "curated_ptbr": "Impacto Duplo",
+      "justification": "JP ダブルインパクト (Impacto físico consecutivo; 27B <= 32B)"
+    },
+    {
+      "id": 20645,
+      "original_en": "ABR-γ 5",
+      "original_jp": "ABR-γ5",
+      "current_ptbr": "ABR-γ 5",
+      "curated_ptbr": "ABR-γ 5",
+      "justification": "JP ABR-γ5 (Chefe ABR-Gama fase 5; 15B <= 16B)"
+    },
+    {
+      "id": 20646,
+      "original_en": "Rock Cannon",
+      "original_jp": "ロックキャノン",
+      "current_ptbr": "Canhão ped.",
+      "curated_ptbr": "Tiro Pétreo",
+      "justification": "JP ロックキャノン (Disparo com projétil de rocha; 23B <= 24B; elimina abreviação 'Canhão ped.')"
+    },
+    {
+      "id": 20647,
+      "original_en": "ABR-β 1",
+      "original_jp": "ABR-β1",
+      "current_ptbr": "ABR-β 1",
+      "curated_ptbr": "ABR-β 1",
+      "justification": "JP ABR-β1 (Chefe mecânico ABR-Beta fase 1; 15B <= 16B)"
+    },
+    {
+      "id": 20648,
+      "original_en": "Ring Bit",
+      "original_jp": "リングビット",
+      "current_ptbr": "Bit anel",
+      "curated_ptbr": "Bit Anular",
+      "justification": "JP リングビット (Bit em formato de anel; 21B <= 24B; substitui 'Bit anel')"
+    },
+    {
+      "id": 20649,
+      "original_en": "ABR-β 2",
+      "original_jp": "ABR-β2",
+      "current_ptbr": "ABR-β 2",
+      "curated_ptbr": "ABR-β 2",
+      "justification": "JP ABR-β2 (Chefe ABR-Beta fase 2; 15B <= 16B)"
+    },
+    {
+      "id": 20650,
+      "original_en": "High Buster",
+      "original_jp": "ハイバスター",
+      "current_ptbr": "Alto Buster",
+      "curated_ptbr": "Mega Buster",
+      "justification": "JP ハイバスター (Canhão de energia potente; 23B <= 24B; substitui 'Alto Buster')"
+    },
+    {
+      "id": 20651,
+      "original_en": "ABR-β 3",
+      "original_jp": "ABR-β3",
+      "current_ptbr": "ABR-β 3",
+      "curated_ptbr": "ABR-β 3",
+      "justification": "JP ABR-β3 (Chefe ABR-Beta fase 3; 15B <= 16B)"
+    },
+    {
+      "id": 20652,
+      "original_en": "Pulse Laser",
+      "original_jp": "パルスレイザー",
+      "current_ptbr": "Laser pulso",
+      "curated_ptbr": "Laser Pulso",
+      "justification": "JP パルスレイザー (Emissão de laser pulsado; 23B <= 24B)"
+    },
+    {
+      "id": 20653,
+      "original_en": "ABR-α 1",
+      "original_jp": "ABR-α1",
+      "current_ptbr": "ABR-α 1",
+      "curated_ptbr": "ABR-α 1",
+      "justification": "JP ABR-α1 (Chefe mecânico ABR-Alfa fase 1; 15B <= 16B)"
+    },
+    {
+      "id": 20654,
+      "original_en": "Homing Bit",
+      "original_jp": "ホーミングビット",
+      "current_ptbr": "Bit guiado",
+      "curated_ptbr": "Bit Guiado",
+      "justification": "JP ホーミングビット (Bit telemetrado teleguiado; 21B <= 24B)"
+    },
+    {
+      "id": 20655,
+      "original_en": "ABR-α 2",
+      "original_jp": "ABR-α2",
+      "current_ptbr": "ABR-α 2",
+      "curated_ptbr": "ABR-α 2",
+      "justification": "JP ABR-α2 (Chefe ABR-Alfa fase 2; 15B <= 16B)"
+    },
+    {
+      "id": 20656,
+      "original_en": "Powered Dive",
+      "original_jp": "パワードダイブ",
+      "current_ptbr": "Mergulho forte",
+      "curated_ptbr": "Mergulho Forte",
+      "justification": "JP パワードダイブ (Investida descendente potente; 29B <= 32B)"
+    },
+    {
+      "id": 20657,
+      "original_en": "ABR-α 3",
+      "original_jp": "ABR-α3",
+      "current_ptbr": "ABR-α 3",
+      "curated_ptbr": "ABR-α 3",
+      "justification": "JP ABR-α3 (Chefe ABR-Alfa fase 3; 15B <= 16B)"
+    },
+    {
+      "id": 20658,
+      "original_en": "Eraser Wave",
+      "original_jp": "イレイザーウェイブ",
+      "current_ptbr": "Onda nula",
+      "curated_ptbr": "Onda Nula",
+      "justification": "JP イレイザーウェイブ (Onda de apagamento/anulação; 19B <= 24B)"
+    },
+    {
+      "id": 20659,
+      "original_en": "ABR-α 4",
+      "original_jp": "ABR-α4",
+      "current_ptbr": "ABR-α 4",
+      "curated_ptbr": "ABR-α 4",
+      "justification": "JP ABR-α4 (Chefe ABR-Alfa fase 4; 15B <= 16B)"
+    },
+    {
+      "id": 20660,
+      "original_en": "Light (Doom)",
+      "original_jp": "光<破滅>",
+      "current_ptbr": "Luz (Ruína)",
+      "curated_ptbr": "Luz (Ruína)",
+      "justification": "JP 光<破滅> (Emissão luminosa devastadora da sombra; 23B <= 32B)"
+    },
+    {
+      "id": 20661,
+      "original_en": "Shadow Mir Head",
+      "original_jp": "シャドウ・ミュール頭部",
+      "current_ptbr": "Cabeça de Mir",
+      "curated_ptbr": "Cabeça de Mir",
+      "justification": "JP シャドウ・ミュール頭部 (Segmento da cabeça da Mir Sombria; 27B <= 32B)"
+    },
+    {
+      "id": 20662,
+      "original_en": "Howl (Tragic)",
+      "original_jp": "咆哮<悲壮>",
+      "current_ptbr": "Uivo (Trágico)",
+      "curated_ptbr": "Uivo (Trágico)",
+      "justification": "JP 咆哮<悲壮> (Bramido doloroso do chefe; 29B <= 32B)"
+    },
+    {
+      "id": 20663,
+      "original_en": "Sonata (Despair)",
+      "original_jp": "奏鳴<絶望>",
+      "current_ptbr": "Sonata (Desespero)",
+      "curated_ptbr": "Sonata (Desespero)",
+      "justification": "JP 奏鳴<絶望> (Ressonância sombria de desespero; 37B <= 40B)"
+    },
+    {
+      "id": 20664,
+      "original_en": "Shadow Mir Arm",
+      "original_jp": "シャドウ・ミュール腕部",
+      "current_ptbr": "Braço de Mir",
+      "curated_ptbr": "Braço de Mir",
+      "justification": "JP シャドウ・ミュール腕部 (Segmento do braço da Mir Sombria; 25B <= 32B)"
+    },
+    {
+      "id": 20665,
+      "original_en": "Destruction (Wrath)",
+      "original_jp": "破壊<憤怒>",
+      "current_ptbr": "Destruição (Ira)",
+      "curated_ptbr": "Destruição (Ira)",
+      "justification": "JP 破壊<憤怒> (Fúria destruidora da sombra; 33B <= 40B)"
+    },
+    {
+      "id": 20666,
+      "original_en": "Embrace (Oblivion)",
+      "original_jp": "帰依<忘却>",
+      "current_ptbr": "Abraço (Esquec.)",
+      "curated_ptbr": "Abraço (Oblívio)",
+      "justification": "JP 帰依<忘却> (Entrega e devoção ao esquecimento absoluto; 33B <= 40B; elimina 'Esquec.')"
+    },
+    {
+      "id": 20667,
+      "original_en": "Burst Crush (Zero)",
+      "original_jp": "爆砕<零>",
+      "current_ptbr": "Impacto (Zero)",
+      "curated_ptbr": "Impacto (Zero)",
+      "justification": "JP 爆砕<零> (Estilhaço explosivo nulo; 29B <= 40B)"
+    },
+    {
+      "id": 20668,
+      "original_en": "Shadow Mir Body",
+      "original_jp": "シャドウ・ミュール胸部",
+      "current_ptbr": "Corpo de Mir",
+      "curated_ptbr": "Corpo de Mir",
+      "justification": "JP シャドウ・ミュール胸部 (Segmento torácico da Mir Sombria; 25B <= 32B)"
+    },
+    {
+      "id": 20669,
+      "original_en": "Burst Crush (Unit)",
+      "original_jp": "爆砕<単>",
+      "current_ptbr": "Impacto (Unidade)",
+      "curated_ptbr": "Impacto (Singular)",
+      "justification": "JP 爆砕<単> (Estilhaço simples de alvo único; 37B <= 40B; substitui 'Unidade')"
+    },
+    {
+      "id": 20670,
+      "original_en": "Burst Crush (Redo)",
+      "original_jp": "爆砕<復>",
+      "current_ptbr": "Impacto (Refazer)",
+      "curated_ptbr": "Impacto (Múltiplo)",
+      "justification": "JP 爆砕<復> (Estilhaço de múltiplos golpes repetidos; 37B <= 40B; substitui 'Refazer')"
+    },
+    {
+      "id": 20671,
+      "original_en": "Suction (Thirst)",
+      "original_jp": "吸引<渇望>",
+      "current_ptbr": "Sucção (Sede)",
+      "curated_ptbr": "Sucção (Sede)",
+      "justification": "JP 吸引<渇望> (Dreno faminto de energia vital; 27B <= 40B)"
+    },
+    {
+      "id": 20672,
+      "original_en": "Kill",
+      "original_jp": "キル",
+      "current_ptbr": "Matar",
+      "curated_ptbr": "Matar",
+      "justification": "JP キル (Comando letal de abate; 11B <= 16B)"
+    },
+    {
+      "id": 20673,
+      "original_en": "Shadow Mir (Predator)",
+      "original_jp": "シャドウ・ミュール(プレデター)",
+      "current_ptbr": "Mir Sombria (Predador)",
+      "curated_ptbr": "Mir Sombria (Predador)",
+      "justification": "JP シャドウ・ミュール(プレデター) (Forma predadora da Mir Sombria; 45B <= 48B)"
+    },
+    {
+      "id": 20674,
+      "original_en": "Circulate",
+      "original_jp": "マワル",
+      "current_ptbr": "Circular",
+      "curated_ptbr": "Rodopiar",
+      "justification": "JP マワル (Girar em torno do alvo; 17B <= 24B; substitui 'Circular')"
+    },
+    {
+      "id": 20675,
+      "original_en": "Power to Destroy",
+      "original_jp": "ハカイノチカラ",
+      "current_ptbr": "Poder destrutivo",
+      "curated_ptbr": "Poder Destrutivo",
+      "justification": "JP ハカイノチカラ (Força destrutiva bruta; 33B <= 40B)"
+    },
+    {
+      "id": 20676,
+      "original_en": "Break All",
+      "original_jp": "ミナゴワシ",
+      "current_ptbr": "Quebra tudo",
+      "curated_ptbr": "Aniquilar",
+      "justification": "JP ミナゴワシ (Destruição total de todos os alvos; 19B <= 24B; substitui 'Quebra tudo')"
+    },
+    {
+      "id": 20677,
+      "original_en": "Ruined World",
+      "original_jp": "コワレタセカイ",
+      "current_ptbr": "Mundo arruinado",
+      "curated_ptbr": "Mundo em Ruínas",
+      "justification": "JP コワレタセカイ (Cenário desolado de destruição; 31B <= 32B)"
+    },
+    {
+      "id": 20678,
+      "original_en": "Shadow Mir (Mir)",
+      "original_jp": "シャドウ・ミュール(ミュール)",
+      "current_ptbr": "Mir Sombria (Mir)",
+      "curated_ptbr": "Mir Sombria (Mir)",
+      "justification": "JP シャドウ・ミュール(ミュール) (Núcleo primordial de Mir; 35B <= 40B)"
+    },
+    {
+      "id": 20679,
+      "original_en": "Falling Sky",
+      "original_jp": "オチテイクソラ",
+      "current_ptbr": "Céu caindo",
+      "curated_ptbr": "Céu Caindo",
+      "justification": "JP オチテイクソラ (Abóboda celeste em colapso; 21B <= 24B)"
+    },
+    {
+      "id": 20680,
+      "original_en": "Roundhouse Kick",
+      "original_jp": "#0まわしげり",
+      "current_ptbr": "Chute giratório",
+      "curated_ptbr": "Chute Giratório",
+      "justification": "JP #0まわしげり (Golpe marcial de chute circular de Misha; 31B <= 32B)"
+    },
+    {
+      "id": 20681,
+      "original_en": "Flowing Form - First Dance",
+      "original_jp": "#0流形・一乃舞",
+      "current_ptbr": "Forma fluida - Primeira dança",
+      "curated_ptbr": "Forma Fluida: 1ª Dança",
+      "justification": "JP #0流形・一乃舞 (Primeiro kata do estilo marcial fluido de Misha; 45B <= 56B; resolve overflow anterior)"
+    },
+    {
+      "id": 20682,
+      "original_en": "Child of Light 1",
+      "original_jp": "光の御子1",
+      "current_ptbr": "Criança da Luz 1",
+      "curated_ptbr": "Criança da Luz 1",
+      "justification": "JP 光の御子1 (Manifestação sagrada do poder de Misha; 33B <= 40B)"
+    },
+    {
+      "id": 20683,
+      "original_en": "Wakey",
+      "original_jp": "#0さまそー",
+      "current_ptbr": "Acorda",
+      "curated_ptbr": "Mortal",
+      "justification": "JP #0さまそー (Golpe de chute acrobático Somersault; 13B <= 16B; corrige erro crasso do EN 'Wakey')"
+    },
+    {
+      "id": 20684,
+      "original_en": "Flying Form - Rising Ring Falling Sun",
+      "original_jp": "#0飛形・昇輪落陽",
+      "current_ptbr": "Forma voadora - Anel ascendente, sol poente",
+      "curated_ptbr": "Forma Voadora: Anel e Poente",
+      "justification": "JP #0飛形・昇輪落陽 (Golpe marcial aéreo em arco descendente; 61B <= 80B; resolve overflow)"
+    },
+    {
+      "id": 20685,
+      "original_en": "Child of Light 2",
+      "original_jp": "光の御子2",
+      "current_ptbr": "Criança da Luz 2",
+      "curated_ptbr": "Criança da Luz 2",
+      "justification": "JP 光の御子2 (Manifestação 2 do poder da Criança da Luz; 33B <= 40B)"
+    },
+    {
+      "id": 20686,
+      "original_en": "Palm Punch",
+      "original_jp": "#0しょうてい",
+      "current_ptbr": "Golpe palma",
+      "curated_ptbr": "Golpe Palma",
+      "justification": "JP #0しょうてい (Golpe marcial com a palma da mão Shoutei; 23B <= 24B)"
+    },
+    {
+      "id": 20687,
+      "original_en": "Destroy Form - Absolute Strength Impact",
+      "original_jp": "#0破形・絶勁衝波",
+      "current_ptbr": "Forma destruidora - Impacto de força absoluta",
+      "curated_ptbr": "Forma Destruidora: Impacto Supremo",
+      "justification": "JP #0破形・絶勁衝波 (Golpe de demolição com força interna absoluta; 69B <= 80B; resolve overflow)"
+    },
+    {
+      "id": 20688,
+      "original_en": "Child of Light 3",
+      "original_jp": "光の御子3",
+      "current_ptbr": "Criança da Luz 3",
+      "curated_ptbr": "Criança da Luz 3",
+      "justification": "JP 光の御子3 (Manifestação 3 do poder da Criança da Luz; 33B <= 40B)"
+    },
+    {
+      "id": 20689,
+      "original_en": "Vacuum Wave Fist",
+      "original_jp": "#0しんくうはどうけん",
+      "current_ptbr": "Punho de vácuo",
+      "curated_ptbr": "Punho de Vácuo",
+      "justification": "JP #0しんくうはどうけん (Onda de choque concentrada de vácuo; 29B <= 40B)"
+    },
+    {
+      "id": 20690,
+      "original_en": "Ruin Form - One Shot Kill",
+      "original_jp": "#0滅形・殺一兆星射斗",
+      "current_ptbr": "Forma devastadora - Morte com um golpe",
+      "curated_ptbr": "Forma da Ruína: Golpe Fatal",
+      "justification": "JP #0滅形・殺一兆星射斗 (Golpe marcial final de aniquilação letal; 55B <= 56B; resolve overflow)"
+    },
+    {
+      "id": 20691,
+      "original_en": "Child of Light 4",
+      "original_jp": "光の御子4",
+      "current_ptbr": "Criança da Luz 4",
+      "curated_ptbr": "Criança da Luz 4",
+      "justification": "JP 光の御子4 (Manifestação 4 do poder da Criança da Luz; 33B <= 40B)"
+    },
+    {
+      "id": 20692,
+      "original_en": "Dragon Tiger Dance",
+      "original_jp": "#0りゅうこらんぶ",
+      "current_ptbr": "Dança dragão-tigre",
+      "curated_ptbr": "Fúria Dragão-Tigre",
+      "justification": "JP #0りゅうこらんぶ (Sucessão avassaladora de golpes Ryuuko Ranbu; 37B <= 40B)"
+    },
+    {
+      "id": 20693,
+      "original_en": "Dance Form - Ultimate Dance of Warrior Princess",
+      "original_jp": "#0舞形・闘姫究極演舞",
+      "current_ptbr": "Forma dançante - Dança suprema da princesa guerreira",
+      "curated_ptbr": "Forma Dançante: Dança Suprema da Guerreira",
+      "justification": "JP #0舞形・闘姫究極演舞 (Apoteose das artes marciais de Misha; 85B <= 96B; resolve overflow)"
+    },
+    {
+      "id": 20694,
+      "original_en": "Child of Light 5",
+      "original_jp": "光の御子5",
+      "current_ptbr": "Criança da Luz 5",
+      "curated_ptbr": "Criança da Luz 5",
+      "justification": "JP 光の御子5 (Manifestação 5 do poder da Criança da Luz; 33B <= 40B)"
+    },
+    {
+      "id": 20695,
+      "original_en": "Platina Heal",
+      "original_jp": "プラチナヒール",
+      "current_ptbr": "Cura Platina",
+      "curated_ptbr": "Cura Platina",
+      "justification": "JP プラチナヒール (Magia sagrada de restauração de Platina; 25B <= 32B)"
+    },
+    {
+      "id": 20696,
+      "original_en": "Protector 1",
+      "original_jp": "プロテクター1",
+      "current_ptbr": "Protetor 1",
+      "curated_ptbr": "Protetor 1",
+      "justification": "JP プロテクター1 (Dispositivo defensivo de guarda; 21B <= 24B)"
+    },
+    {
+      "id": 20697,
+      "original_en": "Stampede Thunder",
+      "original_jp": "スタンピード雷",
+      "current_ptbr": "Debandada elétrica",
+      "curated_ptbr": "Debandada Elétrica",
+      "justification": "JP スタンピード雷 (Investida eletrizada em massa; 37B <= 40B)"
+    },
+    {
+      "id": 20698,
+      "original_en": "Bourd (Reinforced)",
+      "original_jp": "ボルド(強化後)",
+      "current_ptbr": "Bourd (Reforçado)",
+      "curated_ptbr": "Bourd (Reforçado)",
+      "justification": "JP ボルド(強化後) (Chefe Bourd fortalecido por implantes; 35B <= 40B)"
+    },
+    {
+      "id": 20699,
+      "original_en": "Earth Crack Thunder",
+      "original_jp": "アースクラック雷",
+      "current_ptbr": "Fenda elétrica",
+      "curated_ptbr": "Fenda Elétrica",
+      "justification": "JP アースクラック雷 (Ruptura no solo carregada de relâmpagos; 29B <= 40B)"
+    },
+    {
+      "id": 20700,
+      "original_en": "Full Recovery",
+      "original_jp": "フルリカバリー",
+      "current_ptbr": "Cura total",
+      "curated_ptbr": "Cura Total",
+      "justification": "JP フルリカバリー (Recuperação completa de HP; 21B <= 32B)"
+    },
+    {
+      "id": 20701,
+      "original_en": "Revenge",
+      "original_jp": "リベンジ / りべんじ",
+      "current_ptbr": "Vingança",
+      "curated_ptbr": "Revide",
+      "justification": "JP リベンジ / りべんじ (Contra-ataque vingativo; 13B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20702,
+      "original_en": "Reaction Test",
+      "original_jp": "リアクションテスト",
+      "current_ptbr": "Teste de reação",
+      "curated_ptbr": "Teste de Reação",
+      "justification": "JP リアクションテスト (Diagnóstico de reflexos do sistema; 31B <= 32B)"
+    },
+    {
+      "id": 20703,
+      "original_en": "Delete Mode",
+      "original_jp": "デリートモード",
+      "current_ptbr": "Modo exclusão",
+      "curated_ptbr": "Modo Delete",
+      "justification": "JP デリートモード (Protocolo de eliminação e extermínio; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20704,
+      "original_en": "Normal Mode",
+      "original_jp": "ノーマルモード",
+      "current_ptbr": "Modo normal",
+      "curated_ptbr": "Modo Normal",
+      "justification": "JP ノーマルモード (Protocolo de operação padrão; 23B <= 24B)"
+    },
+    {
+      "id": 20705,
+      "original_en": "Dormancy",
+      "original_jp": "休眠",
+      "current_ptbr": "Dormência",
+      "curated_ptbr": "Repouso",
+      "justification": "JP 休眠 (Modo de suspensão e dormência mecânica; 15B <= 24B)"
+    },
+    {
+      "id": 20706,
+      "original_en": "Revival",
+      "original_jp": "復活",
+      "current_ptbr": "Ressurreição",
+      "curated_ptbr": "Reviver",
+      "justification": "JP 復活 (Ressurreição / reativação de combate; 15B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20707,
+      "original_en": "Fill Up",
+      "original_jp": "充填",
+      "current_ptbr": "Preencher",
+      "curated_ptbr": "Recarga",
+      "justification": "JP 充填 (Abastecimento e recarga de energia; 15B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20708,
+      "original_en": "Safe Mode",
+      "original_jp": "セーフモード",
+      "current_ptbr": "Modo seguro",
+      "curated_ptbr": "Modo Seguro",
+      "justification": "JP セーフモード (Protocolo de contingência defensiva; 23B <= 24B)"
+    },
+    {
+      "id": 20709,
+      "original_en": "Circling Soul (Reincarnation)",
+      "original_jp": "回魂<輪廻>",
+      "current_ptbr": "Alma circular (Reencarnação)",
+      "curated_ptbr": "Alma Circular (Reencarnação)",
+      "justification": "JP 回魂<輪廻> (Ciclo de retorno das almas; 57B <= 64B)"
+    },
+    {
+      "id": 20710,
+      "original_en": "Force Shock",
+      "original_jp": "フォースショック",
+      "current_ptbr": "Choque",
+      "curated_ptbr": "Choque",
+      "justification": "JP フォースショック (Descarga de força cinética; 13B <= 24B)"
+    },
+    {
+      "id": 20711,
+      "original_en": "Poisson Cool",
+      "original_jp": "ぷわぞんくーる",
+      "current_ptbr": "Frio Poisson",
+      "curated_ptbr": "Veneno Frio",
+      "justification": "JP ぷわぞんくーる (Toxina congelante em tom cômico; 23B <= 32B)"
+    },
+    {
+      "id": 20712,
+      "original_en": "Fall in Love",
+      "original_jp": "フォーリンラヴ",
+      "current_ptbr": "Apaixonar",
+      "curated_ptbr": "Apaixonar",
+      "justification": "JP フォーリンラヴ (Sedução e encanto irresistível; 19B <= 32B)"
+    },
+    {
+      "id": 20713,
+      "original_en": "Heart Strike",
+      "original_jp": "ハートストライク",
+      "current_ptbr": "Golpe coração",
+      "curated_ptbr": "Golpe Cardíaco",
+      "justification": "JP ハートストライク (Impacto direto no coração; 29B <= 32B)"
+    },
+    {
+      "id": 20714,
+      "original_en": "Reverse Youth",
+      "original_jp": "青春真逆様",
+      "current_ptbr": "Rejuvenescer",
+      "curated_ptbr": "Rejuvenescer",
+      "justification": "JP 青春真逆様 (Inversão temporal da mocidade; 25B <= 32B)"
+    },
+    {
+      "id": 20715,
+      "original_en": "Tempting Dream World",
+      "original_jp": "勧誘夢世界",
+      "current_ptbr": "Mundo onírico sedutor",
+      "curated_ptbr": "Mundo Onírico Sedutor",
+      "justification": "JP 勧誘夢世界 (Ilusão hipnótica dos sonhos; 43B <= 48B)"
+    },
+    {
+      "id": 20716,
+      "original_en": "Only You in Sight",
+      "original_jp": "君以外不可視",
+      "current_ptbr": "Só tenho olhos para você",
+      "curated_ptbr": "Só Olhos Para Você",
+      "justification": "JP 君以外不可視 (Visão cega a tudo exceto ao amado; 37B <= 40B; resolve overflow)"
+    },
+    {
+      "id": 20717,
+      "original_en": "Hug of Love",
+      "original_jp": "あいのほうよう",
+      "current_ptbr": "Abraço de amor",
+      "curated_ptbr": "Abraço Doce",
+      "justification": "JP あいのほうよう (Amplexo afetuoso apaixonado; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20718,
+      "original_en": "3 Plato",
+      "original_jp": "3プラトン",
+      "current_ptbr": "3 Platôs",
+      "curated_ptbr": "Triplo",
+      "justification": "JP 3プラトン (Ataque triplo sincronizado de luta livre; 13B <= 16B; corrige erro absurdo do EN '3 Plato')"
+    },
+    {
+      "id": 20719,
+      "original_en": "Defiant Push",
+      "original_jp": "必殺の突っ張り",
+      "current_ptbr": "Empurrão rebelde",
+      "curated_ptbr": "Empurrão Fatal",
+      "justification": "JP 必殺の突っ張り (Golpe de empurrão mortal de sumo; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20720,
+      "original_en": "Duplicate",
+      "original_jp": "デュプリケイト",
+      "current_ptbr": "Duplicar",
+      "curated_ptbr": "Duplicar",
+      "justification": "JP デュプリケイト (Criação de cópias idênticas; 17B <= 24B)"
+    },
+    {
+      "id": 20721,
+      "original_en": "Warcry",
+      "original_jp": "雄たけび",
+      "current_ptbr": "Grito de guerra",
+      "curated_ptbr": "Rugido",
+      "justification": "JP 雄たけび (Bramido feroz de combate; 13B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20722,
+      "original_en": "Hell Breath",
+      "original_jp": "ヘルブレス",
+      "current_ptbr": "Sopro infernal",
+      "curated_ptbr": "Sopro Fatal",
+      "justification": "JP ヘルブレス (Exalação infernal calcinante; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20723,
+      "original_en": "Howling",
+      "original_jp": "ハウリング",
+      "current_ptbr": "Uivo",
+      "curated_ptbr": "Uivo",
+      "justification": "JP ハウリング (Emissão vocal atordoante de fera; 9B <= 16B)"
+    },
+    {
+      "id": 20724,
+      "original_en": "Cursed Breath",
+      "original_jp": "カースドブレス",
+      "current_ptbr": "Sopro amaldiçoado",
+      "curated_ptbr": "Sopro Maldito",
+      "justification": "JP カースドブレス (Exalação carregada de maldição; 27B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20725,
+      "original_en": "Mist Breath",
+      "original_jp": "ミストブレス",
+      "current_ptbr": "Sopro de névoa",
+      "curated_ptbr": "Sopro Névoa",
+      "justification": "JP ミストブレス (Vapor obnubilante em leque; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20726,
+      "original_en": "Cry of God",
+      "original_jp": "鳴神",
+      "current_ptbr": "Grito divino",
+      "curated_ptbr": "Raio Divino",
+      "justification": "JP 鳴神 (Trovão celestial Narukami; 23B <= 24B; resolve overflow e desfaz literalidade do EN)"
+    },
+    {
+      "id": 20727,
+      "original_en": "Running Fire",
+      "original_jp": "火走",
+      "current_ptbr": "Fogo contínuo",
+      "curated_ptbr": "Rastro de Fogo",
+      "justification": "JP 火走 (Chamas rastejantes no solo; 29B <= 32B; mais dinâmico que 'Fogo contínuo')"
+    },
+    {
+      "id": 20728,
+      "original_en": "Killing Step",
+      "original_jp": "キリングステップ",
+      "current_ptbr": "Passo mortal",
+      "curated_ptbr": "Passo Mortal",
+      "justification": "JP キリングステップ (Deslocamento furtivo letal; 25B <= 32B)"
+    },
+    {
+      "id": 20729,
+      "original_en": "Phoenix Wind",
+      "original_jp": "火鳥風絶",
+      "current_ptbr": "Vento fênix",
+      "curated_ptbr": "Vendaval Fênix",
+      "justification": "JP 火鳥風絶 (Ventos ígneos da ave mística; 29B <= 32B)"
+    },
+    {
+      "id": 20730,
+      "original_en": "God Bird",
+      "original_jp": "神鳥",
+      "current_ptbr": "Ave divina",
+      "curated_ptbr": "Ave Divina",
+      "justification": "JP 神鳥 (Entidade ornitológica sagrada; 21B <= 24B)"
+    },
+    {
+      "id": 20731,
+      "original_en": "Ultimate Tornado",
+      "original_jp": "超絶竜巻",
+      "current_ptbr": "Tornado supremo",
+      "curated_ptbr": "Tornado Supremo",
+      "justification": "JP 超絶竜巻 (Vórtice ciclônico de força máxima; 31B <= 40B)"
+    },
+    {
+      "id": 20732,
+      "original_en": "Super Dive",
+      "original_jp": "超ダイブ",
+      "current_ptbr": "Mergulhão",
+      "curated_ptbr": "Mergulhão",
+      "justification": "JP 超ダイブ (Salto descendente devastador; 19B <= 24B)"
+    },
+    {
+      "id": 20733,
+      "original_en": "Vacuum Wave",
+      "original_jp": "真空波",
+      "current_ptbr": "Onda de vácuo",
+      "curated_ptbr": "Onda Vácuo",
+      "justification": "JP 真空波 (Lâmina de ar rarefeito cortante; 21B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20734,
+      "original_en": "Shockwave",
+      "original_jp": "衝撃波",
+      "current_ptbr": "Onda de choque",
+      "curated_ptbr": "Onda Choque",
+      "justification": "JP 衝撃波 (Propagação concussiva violenta; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20735,
+      "original_en": "Fading",
+      "original_jp": "フェーディング",
+      "current_ptbr": "Desvanecer",
+      "curated_ptbr": "Esvair",
+      "justification": "JP フェーディング (Dissipação e desvanecimento; 13B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20736,
+      "original_en": "Poison Shot",
+      "original_jp": "ポイゾンショット",
+      "current_ptbr": "Tiro venenoso",
+      "curated_ptbr": "Tiro Tóxico",
+      "justification": "JP ポイゾンショット (Projétil envenenado; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20737,
+      "original_en": "Tomato Attack",
+      "original_jp": "トマトアタック",
+      "current_ptbr": "Ataque de tomate",
+      "curated_ptbr": "Tomatada",
+      "justification": "JP トマトアタック (Ataque cômico arremessando tomates; 17B <= 32B; resolve overflow com humor genuíno)"
+    },
+    {
+      "id": 20738,
+      "original_en": "Green Bamboo Shoot",
+      "original_jp": "緑のたけのこ",
+      "current_ptbr": "Broto de bambu",
+      "curated_ptbr": "Broto de Bambu",
+      "justification": "JP 緑のたけのこ (Broto vegetal em erupção; 29B <= 40B)"
+    },
+    {
+      "id": 20739,
+      "original_en": "Girl Explosion",
+      "original_jp": "女子大爆発",
+      "current_ptbr": "Explosão garota",
+      "curated_ptbr": "Explosão Garota",
+      "justification": "JP 女子大爆発 (Detonação feminina exagerada; 31B <= 32B)"
+    },
+    {
+      "id": 20740,
+      "original_en": "Lil Tornelico",
+      "original_jp": "ちびとねりこ",
+      "current_ptbr": "Mini Tornelico",
+      "curated_ptbr": "Mini Tonelico",
+      "justification": "JP ちびとねりこ (Versão miniaturizada da Torre Tonelico; 27B <= 32B; corrige grafia para 'Tonelico')"
+    },
+    {
+      "id": 20741,
+      "original_en": "Dive Slash",
+      "original_jp": "ダイブスラッシュ",
+      "current_ptbr": "Golpe mergulho",
+      "curated_ptbr": "Corte Dive",
+      "justification": "JP ダイブスラッシュ (Golpe característico com a espada de Lyner; 21B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20742,
+      "original_en": "Applies little physical damage by flipping the sword and slashing the target ",
+      "original_jp": "剣を斬り返して対象を攻撃し物理の小ダメージを与える。",
+      "current_ptbr": "Gira a espada e corta o alvo, causando pouco dano físico.",
+      "curated_ptbr": "Gira a espada e corta o alvo, causando pouco dano físico.",
+      "justification": "Descrição da habilidade Dive Slash de Lyner; 115B <= 160B"
+    },
+    {
+      "id": 20743,
+      "original_en": "Full Stomp",
+      "original_jp": "フルスタンプ",
+      "current_ptbr": "Pisão total",
+      "curated_ptbr": "Pisão Total",
+      "justification": "JP フルスタンプ (Golpe pesado descendente; 23B <= 24B)"
+    },
+    {
+      "id": 20744,
+      "original_en": "Moderate physical damage by jumping and swinging down the sword into the target",
+      "original_jp": "飛び込みから剣を思い切り振り下ろし、対象に物理の中ダメージ。",
+      "current_ptbr": "Salta e desfere um golpe de cima para baixo, causando dano físico moderado.",
+      "curated_ptbr": "Salta e desfere um golpe de cima para baixo, causando dano físico moderado.",
+      "justification": "Descrição da habilidade Full Stomp; 149B <= 160B"
+    },
+    {
+      "id": 20745,
+      "original_en": "Impulse",
+      "original_jp": "インパルス",
+      "current_ptbr": "Impulso",
+      "curated_ptbr": "Impulso",
+      "justification": "JP インパルス (Golpe rápido com onda de vento; 15B <= 16B)"
+    },
+    {
+      "id": 20746,
+      "original_en": "Moderate physical+wind damage with a shockwave from a sword swing.",
+      "original_jp": "高速で剣を振り下ろし、衝撃波で対象に物理+風属性の中ダメージ。",
+      "current_ptbr": "A onda de choque da espada causa dano físico e de vento moderado.",
+      "curated_ptbr": "A onda de choque da espada causa dano físico e de vento moderado.",
+      "justification": "Descrição da habilidade Impulse; 129B <= 136B"
+    },
+    {
+      "id": 20747,
+      "original_en": "Double Beat",
+      "original_jp": "ダブルビート",
+      "current_ptbr": "Batida dupla",
+      "curated_ptbr": "Golpe Duplo",
+      "justification": "JP ダブルビート (Dois cortes sucessivos; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20748,
+      "original_en": "Great physical damage by slashing as you pass the target and continues to hit upwards.",
+      "original_jp": "すれ違いざまに切りつけ、さらに打ち上げて対象に物理の大ダメージ。",
+      "current_ptbr": "Corta o alvo ao passar por ele e continua golpeando para cima, causando muito dano físico.",
+      "curated_ptbr": "Corta o alvo ao passar e o lança para o alto, causando grande dano físico.",
+      "justification": "Descrição da habilidade Double Beat; 149B <= 176B; resolve overflow de 182B)"
+    },
+    {
+      "id": 20749,
+      "original_en": "Break Blade",
+      "original_jp": "ブレイクブレイド",
+      "current_ptbr": "Lâmina quebra",
+      "curated_ptbr": "Quebradora",
+      "justification": "JP ブレイクブレイド (Lâmina destruidora de guardas; 21B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20750,
+      "original_en": "Applies huge physical damage and delays the target’s action with strong slashes.",
+      "original_jp": "強烈な斬撃を連続で叩き込み、対象の行動を遅らせて物理の特大ダメージ。",
+      "current_ptbr": "Cortes poderosos causam enorme dano físico e atrasam a ação do alvo.",
+      "curated_ptbr": "Cortes poderosos causam enorme dano físico e atrasam a ação do alvo.",
+      "justification": "Descrição da habilidade Break Blade; 137B <= 168B"
+    },
+    {
+      "id": 20751,
+      "original_en": "Shield of Bond",
+      "original_jp": "絆の盾",
+      "current_ptbr": "Escudo do laço",
+      "curated_ptbr": "Escudo do Elo",
+      "justification": "JP 絆の盾 (Escudo forjado pelos laços com as Reyvateils; 27B <= 32B)"
+    },
+    {
+      "id": 20752,
+      "original_en": "Decreases damage taken by half when guarding often.",
+      "original_jp": "一定確率で「護る」を実行した時に受けるダメージを半減させる。",
+      "current_ptbr": "Defender com frequência reduz pela metade o dano recebido.",
+      "curated_ptbr": "Ao defender, há chance de reduzir o dano à metade.",
+      "justification": "Descrição de Shield of Bond; 101B <= 104B; tradução fiel do JP 一定確率 e resolve overflow)"
+    },
+    {
+      "id": 20753,
+      "original_en": "Photon Storm",
+      "original_jp": "フォトンストーム",
+      "current_ptbr": "Tempestade fóton",
+      "curated_ptbr": "Tormenta Fóton",
+      "justification": "JP フォトンストーム (Tempestade de partículas de fótons; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20754,
+      "original_en": "By surrounding himself in a battle aura, a Knight of Elemia can create a stong hit.",
+      "original_jp": "エレミアの騎士の持つ闘気を体にまとい全身全霊の力を込めた一撃を見舞う",
+      "current_ptbr": "Envolto numa aura de batalha, um Cavaleiro de Elemia desfere um golpe poderoso.",
+      "curated_ptbr": "Envolto numa aura de batalha, um Cavaleiro de Elemia desfere um golpe poderoso.",
+      "justification": "Descrição de Photon Storm; 159B <= 168B"
+    },
+    {
+      "id": 20755,
+      "original_en": "Single Shot",
+      "original_jp": "シングルショット",
+      "current_ptbr": "Tiro único",
+      "curated_ptbr": "Tiro Único",
+      "justification": "JP シングルショット (Disparo preciso da arma de Radolf; 21B <= 24B)"
+    },
+    {
+      "id": 20756,
+      "original_en": "Quick shots that apply little physical+fire damage to the target.",
+      "original_jp": "愛用の銃を早撃ちして対象に物理+炎属性の小ダメージ。",
+      "current_ptbr": "Tiros rápidos causam pouco dano físico e de fogo ao alvo.",
+      "curated_ptbr": "Tiros rápidos causam pouco dano físico e de fogo ao alvo.",
+      "justification": "Descrição de Single Shot; 115B <= 136B"
+    },
+    {
+      "id": 20757,
+      "original_en": "Gatling Shot",
+      "original_jp": "ガトリングショット",
+      "current_ptbr": "Tiro Gatling",
+      "curated_ptbr": "Tiro Gatling",
+      "justification": "JP ガトリングショット (Fogo contínuo de metralhadora; 25B <= 32B)"
+    },
+    {
+      "id": 20758,
+      "original_en": "Medium physical+fire damage applied in continous firing mode.",
+      "original_jp": "連射モードで対象に物理+炎属性の中ダメージを与える。",
+      "current_ptbr": "Disparos contínuos causam dano físico e de fogo moderado.",
+      "curated_ptbr": "Disparos contínuos causam dano físico e de fogo moderado.",
+      "justification": "Descrição de Gatling Shot; 115B <= 128B"
+    },
+    {
+      "id": 20759,
+      "original_en": "Gunfire",
+      "original_jp": "ガンファイア",
+      "current_ptbr": "Tiroteio",
+      "curated_ptbr": "Rajada",
+      "justification": "JP ガンファイア (Disparo generalizado em área; 13B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20760,
+      "original_en": "Shooting within a certain range that applies large physical+fire damage to random targets.",
+      "original_jp": "一定範囲に対して銃を乱射し、ランダムの対象に物理+炎属性の大ダメージ。",
+      "current_ptbr": "Dispara numa área e causa muito dano físico e de fogo a alvos aleatórios.",
+      "curated_ptbr": "Dispara numa área e causa muito dano físico e de fogo a alvos aleatórios.",
+      "justification": "Descrição de Gunfire; 147B <= 184B"
+    },
+    {
+      "id": 20761,
+      "original_en": "Flash Bomb",
+      "original_jp": "フラッシュボム",
+      "current_ptbr": "Bomba clarão",
+      "curated_ptbr": "Bomba Flash",
+      "justification": "JP フラッシュボム (Artefato luminoso cegante; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20762,
+      "original_en": "Throw into the enemy’s front line, causing medium fire damage and blind effect.",
+      "original_jp": "敵前衛にフラッシュ爆弾を投げ、炎の中ダメージを与え暗闇状態にする。",
+      "current_ptbr": "Lança na linha de frente inimiga, causando dano de fogo moderado e cegueira.",
+      "curated_ptbr": "Lança na linha de frente inimiga, causando dano de fogo moderado e cegueira.",
+      "justification": "Descrição de Flash Bomb; 153B <= 160B"
+    },
+    {
+      "id": 20763,
+      "original_en": "Toxic Bomb",
+      "original_jp": "トキシックボム",
+      "current_ptbr": "Bomba tóxica",
+      "curated_ptbr": "Bomba Gás",
+      "justification": "JP トキシックボム (Bomba de gás tóxico venenoso; 19B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20764,
+      "original_en": "Throw into the enemy’s front line, causing medium fire damage and poison effect.",
+      "original_jp": "敵前衛に毒ガスを噴出する爆弾を投げ、炎の中ダメージを与え毒状態にする。",
+      "current_ptbr": "Lança na linha de frente inimiga, causando dano de fogo moderado e veneno.",
+      "curated_ptbr": "Lança na linha de frente inimiga, causando dano de fogo moderado e veneno.",
+      "justification": "Descrição de Toxic Bomb; 149B <= 168B"
+    },
+    {
+      "id": 20765,
+      "original_en": "Night Scope",
+      "original_jp": "ナイトスコープ",
+      "current_ptbr": "Mira noturna",
+      "curated_ptbr": "Mira Noite",
+      "justification": "JP ナイトスコープ (Visor de mira na escuridão; 21B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20766,
+      "original_en": "With the skill to see in the dark, gives you immunity to any blind effects.",
+      "original_jp": "暗視能力によって、暗闇状態を完全に無効化する。",
+      "current_ptbr": "A visão no escuro concede imunidade à cegueira.",
+      "curated_ptbr": "A visão no escuro concede imunidade à cegueira.",
+      "justification": "Descrição de Night Scope; 95B <= 152B"
+    },
+    {
+      "id": 20767,
+      "original_en": "U. G. S. M",
+      "original_jp": "U.G.S.M",
+      "current_ptbr": "U. G. S. M",
+      "curated_ptbr": "U.G.S.M.",
+      "justification": "JP U.G.S.M (Sigla da metralhadora especial de Jack; 17B <= 24B)"
+    },
+    {
+      "id": 20768,
+      "original_en": "Ultra Great Super Machinegun",
+      "original_jp": "うるとら・ごっつ・すげえ・ましんがん",
+      "current_ptbr": "Ultrassupermetralhadora",
+      "curated_ptbr": "Ultrassupermetralhadora",
+      "justification": "JP うるとら・ごっつ・すげえ・ましんがん (Nome cômico e hiperbólico da arma; 47B <= 64B)"
+    },
+    {
+      "id": 20769,
+      "original_en": "Chain Smash",
+      "original_jp": "チェーンスマッシュ",
+      "current_ptbr": "Golpe elo",
+      "curated_ptbr": "Golpe Serra",
+      "justification": "JP チェーンスマッシュ (Ataque contundente com a motosserra; 23B <= 24B; corrige 'elo')"
+    },
+    {
+      "id": 20770,
+      "original_en": "Applies little physical damage by bashing the target with a chain saw.",
+      "original_jp": "チェーンソウで殴りつけ、回転刃と衝撃で物理の小ダメージ。",
+      "current_ptbr": "Golpeia o alvo com uma motosserra, causando pouco dano físico.",
+      "curated_ptbr": "Golpeia o alvo com uma motosserra, causando pouco dano físico.",
+      "justification": "Descrição de Chain Smash; 125B <= 144B"
+    },
+    {
+      "id": 20771,
+      "original_en": "Chain Tackle",
+      "original_jp": "チェーンタックル",
+      "current_ptbr": "Investida corrente",
+      "curated_ptbr": "Bote de Serra",
+      "justification": "JP チェーンタックル (Investida de corpo com a motosserra; 27B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20772,
+      "original_en": "Applies medium physical damage by charging into the enemy with the chain saw.",
+      "original_jp": "チェーンソウを構えたまま敵に突撃、回転刃でえぐり物理の中ダメージ。",
+      "current_ptbr": "Avança com a motosserra, causando dano físico moderado.",
+      "curated_ptbr": "Avança com a motosserra, causando dano físico moderado.",
+      "justification": "Descrição de Chain Tackle; 111B <= 160B"
+    },
+    {
+      "id": 20773,
+      "original_en": "Overcook Burner",
+      "original_jp": "丸焼きバーナー",
+      "current_ptbr": "Queimador extremo",
+      "curated_ptbr": "Maçarico Feroz",
+      "justification": "JP 丸焼きバーナー (Tocha de solda de alta temperatura; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20774,
+      "original_en": "Applies medium fire damage to a single target with a jet of flames of a weilding torch.",
+      "original_jp": "懐の溶接用バーナーで高温の炎を噴射し単体に炎属性の中ダメージ。",
+      "current_ptbr": "O jato de uma tocha de solda causa dano de fogo moderado a um alvo.",
+      "curated_ptbr": "O jato de uma tocha de solda causa dano de fogo moderado a um alvo.",
+      "justification": "Descrição de Overcook Burner; 135B <= 176B"
+    },
+    {
+      "id": 20775,
+      "original_en": "Violent Saw",
+      "original_jp": "暴れノコ",
+      "current_ptbr": "Serra violenta",
+      "curated_ptbr": "Serra Feroz",
+      "justification": "JP 暴れノコ (Giro desenfreado da lâmina de corte; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20776,
+      "original_en": "Medium physical damage to a single target by spinning wildly while holding a chainsaw.",
+      "original_jp": "チェーンソウを構えた状態で高速回転し、単体に物理の中ダメージ。",
+      "current_ptbr": "Gira com a motosserra e causa dano físico moderado a um alvo.",
+      "curated_ptbr": "Gira com a motosserra e causa dano físico moderado a um alvo.",
+      "justification": "Descrição de Violent Saw; 123B <= 176B"
+    },
+    {
+      "id": 20777,
+      "original_en": "Final Switch",
+      "original_jp": "ファイナルスイッチ",
+      "current_ptbr": "Chave final",
+      "curated_ptbr": "Botão Final",
+      "justification": "JP ファイナルスイッチ (Ativador do míssil de emergência; 23B <= 32B)"
+    },
+    {
+      "id": 20778,
+      "original_en": "A 250,000 Leaf (estimate), high quality missile that does a lot of physical+fire damage.",
+      "original_jp": "一発25万リーフCR(推定)の高性能ミサイルで敵前衛に物理+炎の大ダメージ。",
+      "current_ptbr": "Míssil de alta qualidade, avaliado em 250.000 Leaf. Causa muito dano físico e de fogo.",
+      "curated_ptbr": "Míssil de alta qualidade, avaliado em 250.000 Leaf. Causa muito dano físico e de fogo.",
+      "justification": "Descrição de Final Switch; 175B <= 184B"
+    },
+    {
+      "id": 20779,
+      "original_en": "Cure Tablet",
+      "original_jp": "キュアタブレット",
+      "current_ptbr": "Pastilha de cura",
+      "curated_ptbr": "Pílula Cura",
+      "justification": "JP キュアタブレット (Comprimido médico regenerativo; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20780,
+      "original_en": "Medicine that regenerates the body that slightly recovers a single friendly target.",
+      "original_jp": "身体の再生能力を向上させる成分を持った薬で、味方単体のHPを小回復。",
+      "current_ptbr": "Remédio regenerador que recupera um pouco do HP de um aliado.",
+      "curated_ptbr": "Remédio regenerador que recupera um pouco do HP de um aliado.",
+      "justification": "Descrição de Cure Tablet; 123B <= 168B"
+    },
+    {
+      "id": 20781,
+      "original_en": "Tailspin",
+      "original_jp": "きりもみ丼落とし",
+      "current_ptbr": "Pirueta",
+      "curated_ptbr": "Em Espiral",
+      "justification": "JP きりもみ丼落とし (Ataque com mergulho em parafuso giratório; 21B <= 24B)"
+    },
+    {
+      "id": 20782,
+      "original_en": "One strong attack with the centrifugal force of the Violent Saw and the drop from the air.",
+      "original_jp": "暴れノコの遠心力に空中からの落下速度が加わり強烈な一撃を叩き込む",
+      "current_ptbr": "Um golpe poderoso une a força centrífuga da Serra Violenta à queda do alto.",
+      "curated_ptbr": "Um golpe poderoso une a força centrífuga da Serra Feroz à queda do alto.",
+      "justification": "Descrição de Tailspin (alinha com Serra Feroz); 147B <= 184B"
+    },
+    {
+      "id": 20783,
+      "original_en": "Strike of Belief",
+      "original_jp": "信念の一撃",
+      "current_ptbr": "Golpe da crença",
+      "curated_ptbr": "Golpe da Fé",
+      "justification": "JP 信念の一撃 (Ataque reto canalizado pela convicção; 23B <= 40B)"
+    },
+    {
+      "id": 20784,
+      "original_en": "A traditional spear skill of the Knights; a single strike that does little physical damage.",
+      "original_jp": "騎士団伝統の槍技で、真っ直ぐな突きを繰り出し対象に物理の小ダメージ。",
+      "current_ptbr": "Técnica de lança dos Cavaleiros: um golpe que causa pouco dano físico.",
+      "curated_ptbr": "Técnica de lança dos Cavaleiros: um golpe que causa pouco dano físico.",
+      "justification": "Descrição de Strike of Belief; 143B <= 184B"
+    },
+    {
+      "id": 20785,
+      "original_en": "Honest Blow",
+      "original_jp": "実直なる打撃",
+      "current_ptbr": "Golpe honesto",
+      "curated_ptbr": "Golpe Firme",
+      "justification": "JP 実直なる打撃 (Ataque com todo o peso do corpo sobre a arma; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20786,
+      "original_en": "Medium physical damage from a heavy blow with all weight on the weapon.",
+      "original_jp": "全体重を武器に乗せた重い一撃で対象に物理の中ダメージを与える。",
+      "current_ptbr": "Um golpe com todo o peso sobre a arma causa dano físico moderado.",
+      "curated_ptbr": "Um golpe com todo o peso sobre a arma causa dano físico moderado.",
+      "justification": "Descrição de Honest Blow; 131B <= 144B"
+    },
+    {
+      "id": 20787,
+      "original_en": "A huge physical+lightning damage by attacking from above while weilding lightning.",
+      "original_jp": "奇跡の力で雷をまとい、上空から対象を攻撃し物理+雷属性の特大ダメージ。",
+      "current_ptbr": "Ataca do alto com um raio, causando enorme dano físico e elétrico.",
+      "curated_ptbr": "Ataca do alto com um raio, causando enorme dano físico e elétrico.",
+      "justification": "Descrição da habilidade Rainha dos Raios / Milagre; 135B <= 168B"
+    },
+    {
+      "id": 20788,
+      "original_en": "Eternal Rain",
+      "original_jp": "永遠の雨",
+      "current_ptbr": "Chuva eterna",
+      "curated_ptbr": "Chuva Eterna",
+      "justification": "JP 永遠の雨 (Ataque torrencial contínuo de lança; 25B <= 32B)"
+    },
+    {
+      "id": 20789,
+      "original_en": "A mastered spear skill of the Knights; large physical damage applied by a quick strike.",
+      "original_jp": "騎士団伝統の槍技の奥義。高速で突きを繰り出し対象に物理の大ダメージ。",
+      "current_ptbr": "Técnica avançada de lança dos Cavaleiros. Um golpe rápido causa muito dano físico.",
+      "curated_ptbr": "Técnica avançada de lança dos Cavaleiros. Um golpe rápido causa muito dano físico.",
+      "justification": "Descrição de Eternal Rain; 167B <= 176B"
+    },
+    {
+      "id": 20790,
+      "original_en": "Spear of End",
+      "original_jp": "終焉の槍",
+      "current_ptbr": "Lança do fim",
+      "curated_ptbr": "Lança do Fim",
+      "justification": "JP 終焉の槍 (Ataque terminal apocalíptico de lança; 25B <= 32B)"
+    },
+    {
+      "id": 20791,
+      "original_en": "Throw the enemy and beat down, doing medium physical damage and paralyzing effect.",
+      "original_jp": "槍で敵を打ち上げ、さらに叩きつけて対象に物理の中ダメージ+麻痺の効果。",
+      "current_ptbr": "Arremessa e golpeia o inimigo, causando dano físico moderado e paralisia.",
+      "curated_ptbr": "Arremessa e golpeia o inimigo, causando dano físico moderado e paralisia.",
+      "justification": "Descrição de Spear of End; 147B <= 168B"
+    },
+    {
+      "id": 20792,
+      "original_en": "Blessed Wind",
+      "original_jp": "祝福の風",
+      "current_ptbr": "Vento abençoado",
+      "curated_ptbr": "Vento Abençoado",
+      "justification": "JP 祝福の風 (Brisa divina restauradora; 31B <= 32B)"
+    },
+    {
+      "id": 20793,
+      "original_en": "Recieves the blessing of Gods, allowing a certain amount of HP recovery over time.",
+      "original_jp": "神の祝福を受け、戦闘中自動的に一定時間ごとにHPを回復する。",
+      "current_ptbr": "A bênção dos deuses recupera uma quantidade de HP ao longo do tempo.",
+      "curated_ptbr": "A bênção dos deuses recupera uma quantidade de HP ao longo do tempo.",
+      "justification": "Descrição de Blessed Wind; 137B <= 168B"
+    },
+    {
+      "id": 20794,
+      "original_en": "Electric Blade",
+      "original_jp": "電刃雷華",
+      "current_ptbr": "Lâmina elétrica",
+      "curated_ptbr": "Lâmina do Raio",
+      "justification": "JP 電刃雷華 (Lâmina relampejante sagrada de Radolf; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20795,
+      "original_en": "Belief in God becomes lightning that destroys evil and destroys all darkness.",
+      "original_jp": "神を信じる心が、悪を滅する迅雷となって全ての闇を破壊する",
+      "current_ptbr": "A fé se torna um raio que destrói o mal e dissipa as trevas.",
+      "curated_ptbr": "A fé se torna um raio que destrói o mal e dissipa as trevas.",
+      "justification": "Descrição de Electric Blade; 121B <= 160B"
+    },
+    {
+      "id": 20796,
+      "original_en": "Spark",
+      "original_jp": "一閃",
+      "current_ptbr": "Faísca",
+      "curated_ptbr": "Lampejo",
+      "justification": "JP 一閃 (Golpe espadachim cortante instantâneo de Ayatane; 15B <= 16B; substitui 'Faísca')"
+    },
+    {
+      "id": 20797,
+      "original_en": "Cuts at the enemy quickly, applying little physical damage to the target.",
+      "original_jp": "高速で対象を切りつけ、対象に物理の小ダメージ。",
+      "current_ptbr": "Corta o inimigo rapidamente, causando pouco dano físico.",
+      "curated_ptbr": "Corta o inimigo rapidamente, causando pouco dano físico.",
+      "justification": "Descrição de Issen / Lampejo; 113B <= 152B"
+    },
+    {
+      "id": 20798,
+      "original_en": "Breaking Strike",
+      "original_jp": "破突",
+      "current_ptbr": "Golpe rompedor",
+      "curated_ptbr": "Golpe Rompedor",
+      "justification": "JP 破突 (Estocada de ruptura; 29B <= 32B)"
+    },
+    {
+      "id": 20799,
+      "original_en": "Swings the blades in both hands, doing medium physical damage with continous hits.",
+      "original_jp": "両手の刀を高速で振り、連続で切りつけ対象に物理の中ダメージ。",
+      "current_ptbr": "Golpes contínuos com as duas lâminas causam dano físico moderado.",
+      "curated_ptbr": "Golpes contínuos com as duas lâminas causam dano físico moderado.",
+      "justification": "Descrição de Breaking Strike; 133B <= 168B"
+    },
+    {
+      "id": 20800,
+      "original_en": "Dual Slash",
+      "original_jp": "両斬",
+      "current_ptbr": "Golpe duplo",
+      "curated_ptbr": "Corte Duplo",
+      "justification": "JP 両斬 (Corte simultâneo com duas katanas; 23B <= 24B)"
+    },
+    {
+      "id": 20801,
+      "original_en": "Do medium physical damage by charging into the target holding both swords in a cross.",
+      "original_jp": "十文字に刀を構えたまま、対象に突撃し払い抜け物理の中ダメージ。",
+      "current_ptbr": "Avança com as espadas cruzadas, causando dano físico moderado.",
+      "curated_ptbr": "Avança com as espadas cruzadas, causando dano físico moderado.",
+      "justification": "Descrição de Dual Slash; 125B <= 176B"
+    },
+    {
+      "id": 20802,
+      "original_en": "Dramatically increases physical ability and speed, but slightly decreases attack power.",
+      "original_jp": "運動能力を飛躍的に高め、速度を大幅に上昇させるが、攻撃力が多少低下する。",
+      "current_ptbr": "Aumenta muito a capacidade física e a velocidade, mas reduz um pouco o ataque.",
+      "curated_ptbr": "Aumenta muito a capacidade física e a velocidade, mas reduz um pouco o ataque.",
+      "justification": "Descrição da postura de agilidade; 157B <= 176B"
+    },
+    {
+      "id": 20803,
+      "original_en": "Roaring Blade",
+      "original_jp": "轟刃",
+      "current_ptbr": "Lâmina rugidora",
+      "curated_ptbr": "Lâmina Rugidora",
+      "justification": "JP 轟刃 (Onda de choque ressonante da espada; 31B <= 32B)"
+    },
+    {
+      "id": 20804,
+      "original_en": "The blade is sharpened to its extreme; the shockwave it creates applies large damage.",
+      "original_jp": "極限まで研ぎ澄まされた刀気の衝撃波で対象に大ダメージ。一撃で倒すことも。",
+      "current_ptbr": "A lâmina extremamente afiada gera uma onda de choque que causa muito dano.",
+      "curated_ptbr": "A lâmina extremamente afiada gera uma onda de choque que causa muito dano.",
+      "justification": "Descrição de Roaring Blade; 149B <= 176B"
+    },
+    {
+      "id": 20805,
+      "original_en": "Hazy Shadow",
+      "original_jp": "朧影",
+      "current_ptbr": "Sombra nebulosa",
+      "curated_ptbr": "Vulto Fugaz",
+      "justification": "JP 朧影 (Esquiva evasiva ilusória de salgueiro; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20806,
+      "original_en": "Avoids enemy attacks with the body flow similar to the leaves of a willow tree.",
+      "original_jp": "柳の葉のような身のこなしで敵の攻撃を一定確率で無効化させる",
+      "current_ptbr": "Esquiva-se como folhas de salgueiro levadas pelo vento.",
+      "curated_ptbr": "Esquiva-se como folhas de salgueiro levadas pelo vento.",
+      "justification": "Descrição de Hazy Shadow; 111B <= 160B"
+    },
+    {
+      "id": 20807,
+      "original_en": "Illusionary Break",
+      "original_jp": "幻真無慚断",
+      "current_ptbr": "Ruptura ilusória",
+      "curated_ptbr": "Corte Ilusório",
+      "justification": "JP 幻真無慚断 (Técnica suprema impiedosa de gelo absoluto; 29B <= 40B)"
+    },
+    {
+      "id": 20808,
+      "original_en": "A deadly attack that freezes everything; even the flame of life. ",
+      "original_jp": "全てを凍らせる死出の一撃。それは命の炎すらも凍てつかせる",
+      "current_ptbr": "Um ataque mortal que congela tudo, até a chama da vida.",
+      "curated_ptbr": "Um ataque mortal que congela tudo, até a chama da vida.",
+      "justification": "Descrição de Illusionary Break; 111B <= 136B"
+    },
+    {
+      "id": 20809,
+      "original_en": "Photon Glass",
+      "original_jp": "フォトングラス",
+      "current_ptbr": "Vidro de fóton",
+      "curated_ptbr": "Vidro de Fóton",
+      "justification": "JP フォトングラス (Material translúcido condutor de fótons; 29B <= 32B)"
+    },
+    {
+      "id": 20810,
+      "original_en": "RC: Photon Glass",
+      "original_jp": "合C:フォトングラス",
+      "current_ptbr": "RC: Vidro de fóton",
+      "curated_ptbr": "RC: Vidro de Fóton",
+      "justification": "JP 合C:フォトングラス (Card de receita de síntese; 37B <= 40B)"
+    },
+    {
+      "id": 20811,
+      "original_en": "Powered Screw",
+      "original_jp": "パワードビス",
+      "current_ptbr": "Parafuso potente",
+      "curated_ptbr": "Parafuso Forte",
+      "justification": "JP パワードビス (Componente mecânico reforçado; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20812,
+      "original_en": "RC: Screw",
+      "original_jp": "合C:ネジ",
+      "current_ptbr": "RC: Parafuso",
+      "curated_ptbr": "RC: Rosca",
+      "justification": "JP 合C:ネジ (Card de receita para parafusos/roscas; 19B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20813,
+      "original_en": "Gravard Compass",
+      "original_jp": "グラバード羅針盤",
+      "current_ptbr": "Bússola Gravard",
+      "curated_ptbr": "Bússola Gravard",
+      "justification": "JP グラバード羅針盤 (Instrumento magnético de navegação; 31B <= 32B)"
+    },
+    {
+      "id": 20814,
+      "original_en": "RC: Compass",
+      "original_jp": "合C:羅針盤",
+      "current_ptbr": "RC: Bússola",
+      "curated_ptbr": "RC: Bússola",
+      "justification": "JP 合C:羅針盤 (Card de receita de bússola; 23B <= 24B)"
+    },
+    {
+      "id": 20815,
+      "original_en": "Kanto’s Fiery Box",
+      "original_jp": "カントの火箱",
+      "current_ptbr": "Caixa flamejante Kanto",
+      "curated_ptbr": "Braseiro de Kanto",
+      "justification": "JP カントの火箱 (Caixa de fogo/braseiro térmico; 35B <= 40B; resolve overflow)"
+    },
+    {
+      "id": 20816,
+      "original_en": "RC: Wooden Box",
+      "original_jp": "合C:木の箱",
+      "current_ptbr": "RC: Caixa madeira",
+      "curated_ptbr": "RC: Caixa",
+      "justification": "JP 合C:木の箱 (Card de receita de recipientes de madeira; 19B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20817,
+      "original_en": "Polishing Powder",
+      "original_jp": "研磨剤",
+      "current_ptbr": "Pó de polimento",
+      "curated_ptbr": "Pó de Polimento",
+      "justification": "JP 研磨剤 (Abrasivo fino de síntese; 31B <= 40B)"
+    },
+    {
+      "id": 20818,
+      "original_en": "RC: White Powder",
+      "original_jp": "合C:白い粉 / 合C:しろいこな",
+      "current_ptbr": "RC: Pó branco",
+      "curated_ptbr": "RC: Pó Branco",
+      "justification": "JP 合C:白い粉 (Card de receita de pó mineral; 27B <= 40B)"
+    },
+    {
+      "id": 20819,
+      "original_en": "Harmonizer",
+      "original_jp": "ハーモナイザ",
+      "current_ptbr": "Harmonizador",
+      "curated_ptbr": "Harmonizer",
+      "justification": "JP ハーモナイザ (Componente ressonador sonoro; 21B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20820,
+      "original_en": "RC: Super Civ Mech",
+      "original_jp": "合C:超文明のメカ",
+      "current_ptbr": "RC: Máquina da Supercivilização",
+      "curated_ptbr": "RC: Mec. Ancestral",
+      "justification": "JP 合C:超文明のメカ (Card de tecnologia da supercivilização pré-cataclismo; 37B <= 40B; resolve overflow de 64B)"
+    },
+    {
+      "id": 20821,
+      "original_en": "Franmelt Magnet",
+      "original_jp": "フランメルト磁石",
+      "current_ptbr": "Ímã Franmelt",
+      "curated_ptbr": "Ímã Franmelt",
+      "justification": "JP フランメルト磁石 (Mineral polarizado de Franmelt; 25B <= 32B)"
+    },
+    {
+      "id": 20822,
+      "original_en": "RC: Magnet",
+      "original_jp": "合C:磁石",
+      "current_ptbr": "RC: Ímã",
+      "curated_ptbr": "RC: Ímã",
+      "justification": "JP 合C:磁石 (Card de receita de ímãs; 15B <= 24B)"
+    },
+    {
+      "id": 20823,
+      "original_en": "Stone Wood Fertilizer",
+      "original_jp": "石木栄養剤",
+      "current_ptbr": "Adubo de madeira-pedra",
+      "curated_ptbr": "Nutriente Pedra-Madeira",
+      "justification": "JP 石木栄養剤 (Fertilizante botânico mineral; 47B <= 48B)"
+    },
+    {
+      "id": 20824,
+      "original_en": "RC: Fertilizer",
+      "original_jp": "合C:石木栄養剤",
+      "current_ptbr": "RC: Fertilizante",
+      "curated_ptbr": "RC: Adubo",
+      "justification": "JP 合C:石木栄養剤 (Card de receita de fertilizante; 19B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20825,
+      "original_en": "Natural Cotton",
+      "original_jp": "大自然の綿",
+      "current_ptbr": "Algodão natural",
+      "curated_ptbr": "Algodão Natural",
+      "justification": "JP 大自然の綿 (Fibra vegetal pura de Sol Ciel; 31B <= 32B)"
+    },
+    {
+      "id": 20826,
+      "original_en": "RC: Cotton",
+      "original_jp": "合C:綿",
+      "current_ptbr": "RC: Algodão",
+      "curated_ptbr": "RC: Algodão",
+      "justification": "JP 合C:綿 (Card de receita de fibras têxteis; 23B <= 24B)"
+    },
+    {
+      "id": 20827,
+      "original_en": "Acordonite",
+      "original_jp": "アコルドナイト",
+      "current_ptbr": "Acordonite",
+      "curated_ptbr": "Acordonita",
+      "justification": "JP アコルドナイト (Minério metálico nobre; 21B <= 24B)"
+    },
+    {
+      "id": 20828,
+      "original_en": "RC: Iron",
+      "original_jp": "合C:鉄",
+      "current_ptbr": "RC: Ferro",
+      "curated_ptbr": "RC: Ferro",
+      "justification": "JP 合C:鉄 (Card de receita de metalurgia de ferro; 19B <= 24B)"
+    },
+    {
+      "id": 20829,
+      "original_en": "Patchy Cloth",
+      "original_jp": "つぎはぎな布",
+      "current_ptbr": "Tecido remendado",
+      "curated_ptbr": "Pano Remendado",
+      "justification": "JP つぎはぎな布 (Tecido com retalhos costurados; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20830,
+      "original_en": "RC: Cloth",
+      "original_jp": "合C:布",
+      "current_ptbr": "RC: Tecido",
+      "curated_ptbr": "RC: Tecido",
+      "justification": "JP 合C:布 (Card de receita de tecelagem; 21B <= 24B)"
+    },
+    {
+      "id": 20831,
+      "original_en": "Don Leon",
+      "original_jp": "どんすけ",
+      "current_ptbr": "Don Leon",
+      "curated_ptbr": "Don Leon",
+      "justification": "JP どんすけ (Bichinho de pelúcia mascote Don Leon; 17B <= 24B)"
+    },
+    {
+      "id": 20832,
+      "original_en": "RC: Stuffed Animal",
+      "original_jp": "合C:ぬいぐるみ",
+      "current_ptbr": "RC: Bicho de pelúcia",
+      "curated_ptbr": "RC: Pelúcia",
+      "justification": "JP 合C:ぬいぐるみ (Card de receita de bichos de pelúcia; 23B <= 40B; resolve overflow)"
+    },
+    {
+      "id": 20833,
+      "original_en": "Flipper",
+      "original_jp": "フリッパー",
+      "current_ptbr": "Nadadeira",
+      "curated_ptbr": "Flipper",
+      "justification": "JP フリッパー (Nadadeira de mergulho aquático; 15B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20834,
+      "original_en": "RC: Flipper",
+      "original_jp": "合C:フリッパー",
+      "current_ptbr": "RC: Nadadeira",
+      "curated_ptbr": "RC: Flipper",
+      "justification": "JP 合C:フリッパー (Card de receita do flipper; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20835,
+      "original_en": "Ramcluster",
+      "original_jp": "ラムクラスタ",
+      "current_ptbr": "Ramcluster",
+      "curated_ptbr": "Ramcluster",
+      "justification": "JP ラムクラスタ (Módulo de memória e processamento; 21B <= 24B)"
+    },
+    {
+      "id": 20836,
+      "original_en": "RC: Ramcluster",
+      "original_jp": "合C:ラムクラスタ",
+      "current_ptbr": "RC: Ramcluster",
+      "curated_ptbr": "RC: Ramcluster",
+      "justification": "JP 合C:ラムクラスタ (Card de receita de ramcluster; 29B <= 32B)"
+    },
+    {
+      "id": 20837,
+      "original_en": "Sharing Core",
+      "original_jp": "シェアリングコア",
+      "current_ptbr": "Núcleo compartilhado",
+      "curated_ptbr": "Núcleo Mútuo",
+      "justification": "JP シェアリングコア (Unidade de processamento compartilhado; 25B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20838,
+      "original_en": "RC: Sharing Core",
+      "original_jp": "合C:シェアリングコア",
+      "current_ptbr": "RC: Núcleo compartilhado",
+      "curated_ptbr": "RC: Núcleo Mútuo",
+      "justification": "JP 合C:シェアリングコア (Card de receita de núcleo mútuo; 33B <= 40B; resolve overflow)"
+    },
+    {
+      "id": 20839,
+      "original_en": "Ocean Breeze Ocarina",
+      "original_jp": "海風のオカリナ",
+      "current_ptbr": "Ocarina brisa marinha",
+      "curated_ptbr": "Ocarina Brisa Marinha",
+      "justification": "JP 海風のオカリナ (Instrumento musical de sopro marítimo; 43B <= 48B)"
+    },
+    {
+      "id": 20840,
+      "original_en": "RC: Ocarina",
+      "original_jp": "合C:オカリナ",
+      "current_ptbr": "RC: Ocarina",
+      "curated_ptbr": "RC: Ocarina",
+      "justification": "JP 合C:オカリナ (Card de receita de ocarinas; 23B <= 24B)"
+    },
+    {
+      "id": 20841,
+      "original_en": "Tripolar Incubator",
+      "original_jp": "三極式共鳴培養槽",
+      "current_ptbr": "Incubadora tripolar",
+      "curated_ptbr": "Incubadora Tripolar",
+      "justification": "JP 三極式共鳴培養槽 (Tanque de cultivo biológico ressonante; 39B <= 40B)"
+    },
+    {
+      "id": 20842,
+      "original_en": "RC: Water Tank",
+      "original_jp": "合C:水槽",
+      "current_ptbr": "RC: Tanque de água",
+      "curated_ptbr": "RC: Tanque",
+      "justification": "JP 合C:水槽 (Card de recipientes hídricos e tanques; 21B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20843,
+      "original_en": "High Purity Dissolving Reactor",
+      "original_jp": "高純度溶解炉",
+      "current_ptbr": "Reator de dissolução de alta pureza",
+      "curated_ptbr": "Reator de Alta Pureza",
+      "justification": "JP 高純度溶解炉 (Fornalha e reator de refino puro; 43B <= 64B; resolve overflow)"
+    },
+    {
+      "id": 20844,
+      "original_en": "RC: Barrel",
+      "original_jp": "合C:たる",
+      "current_ptbr": "RC: Barril",
+      "curated_ptbr": "RC: Barril",
+      "justification": "JP 合C:たる (Card de receita de recipientes cilíndricos; 21B <= 24B)"
+    },
+    {
+      "id": 20845,
+      "original_en": "Symphonic Synapse",
+      "original_jp": "導力神経節",
+      "current_ptbr": "Sinapse sinfônica",
+      "curated_ptbr": "Sinapse Sinfônica",
+      "justification": "JP 導力神経節 (Nódulo condutor acústico-neural; 35B <= 40B)"
+    },
+    {
+      "id": 20846,
+      "original_en": "RC: Synapse",
+      "original_jp": "合C:シナプス",
+      "current_ptbr": "RC: Sinapse",
+      "curated_ptbr": "RC: Sinapse",
+      "justification": "JP 合C:シナプス (Card de síntese neural; 23B <= 24B)"
+    },
+    {
+      "id": 20847,
+      "original_en": "D3 Cell",
+      "original_jp": "D3細胞",
+      "current_ptbr": "Célula D3",
+      "curated_ptbr": "Cél. D3",
+      "justification": "JP D3細胞 (Amostra citológica experimental D3; 15B <= 16B; resolve overflow)"
+    },
+    {
+      "id": 20848,
+      "original_en": "RC: Cell",
+      "original_jp": "合C:細胞",
+      "current_ptbr": "RC: Célula",
+      "curated_ptbr": "RC: Célula",
+      "justification": "JP 合C:細胞 (Card de síntese biológica celular; 21B <= 24B)"
+    },
+    {
+      "id": 20849,
+      "original_en": "Mercury Atom",
+      "original_jp": "マーキュリー素子",
+      "current_ptbr": "Átomo de mercúrio",
+      "curated_ptbr": "Átomo Mercúrio",
+      "justification": "JP マーキュリー素子 (Elemento e átomo químico de mercúrio; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20850,
+      "original_en": "RC: Origin of Creation",
+      "original_jp": "合C:万物の原初",
+      "current_ptbr": "RC: Origem da Criação",
+      "curated_ptbr": "RC: Origem da Criação",
+      "justification": "JP 合C:万物の原初 (Card supremo da gênese dos elementos; 43B <= 48B)"
+    },
+    {
+      "id": 20851,
+      "original_en": "Quantize",
+      "original_jp": "クオンタイズ",
+      "current_ptbr": "Quantizar",
+      "curated_ptbr": "Quantizar",
+      "justification": "JP クオンタイズ (Processo de modulação quântica; 19B <= 24B)"
+    },
+    {
+      "id": 20852,
+      "original_en": "RC: Rectifier",
+      "original_jp": "合C:整流器",
+      "current_ptbr": "RC: Retificador",
+      "curated_ptbr": "RC: Retificador",
+      "justification": "JP 合C:整流器 (Card de componentes conversores; 31B <= 32B)"
+    },
+    {
+      "id": 20853,
+      "original_en": "Symphonic Reactor",
+      "original_jp": "導力プラグ",
+      "current_ptbr": "Reator sinfônico",
+      "curated_ptbr": "Plugue Sinfônico",
+      "justification": "JP 導力プラグ (Conector de energia sinfônica; 33B <= 40B)"
+    },
+    {
+      "id": 20854,
+      "original_en": "RC: Reactor",
+      "original_jp": "合C:プラグ",
+      "current_ptbr": "RC: Reator",
+      "curated_ptbr": "RC: Plugue",
+      "justification": "JP 合C:プラグ (Card de conectores e plugues; 21B <= 24B)"
+    },
+    {
+      "id": 20855,
+      "original_en": "DH Grathnode Disc",
+      "original_jp": "DH化グラスノ盤",
+      "current_ptbr": "Disco Grathnode DH",
+      "curated_ptbr": "Disco Grathnode DH",
+      "justification": "JP DH化グラスノ盤 (Disco virgem de cristal Grathnode tipo DH; 37B <= 40B)"
+    },
+    {
+      "id": 20856,
+      "original_en": "RC: Grathnode Disc",
+      "original_jp": "合C:グラスノ盤",
+      "current_ptbr": "RC: Disco Grathnode",
+      "curated_ptbr": "RC: Disco Grathnode",
+      "justification": "JP 合C:グラスノ盤 (Card de matrizes Grathnode; 39B <= 40B)"
+    },
+    {
+      "id": 20857,
+      "original_en": "Healy C",
+      "original_jp": "カイフクンC",
+      "current_ptbr": "Healy C",
+      "curated_ptbr": "Healy C",
+      "justification": "JP カイフクンC (Poção medicinal básica de grau C; 15B <= 16B)"
+    },
+    {
+      "id": 20858,
+      "original_en": "RC: Healy C",
+      "original_jp": "合C:カイフクンC",
+      "current_ptbr": "RC: Healy C",
+      "curated_ptbr": "RC: Healy C",
+      "justification": "JP 合C:カイフクンC (Card farmacêutico Healy C; 23B <= 24B)"
+    },
+    {
+      "id": 20859,
+      "original_en": "Fullhealin D",
+      "original_jp": "ゼンカインD",
+      "current_ptbr": "Fullhealin D",
+      "curated_ptbr": "Fullhealin D",
+      "justification": "JP ゼンカインD (Tônico de recuperação total grau D; 25B <= 32B)"
+    },
+    {
+      "id": 20860,
+      "original_en": "RC: Strong Medicine",
+      "original_jp": "合C:強いくすり",
+      "current_ptbr": "RC: Remédio forte",
+      "curated_ptbr": "RC: Remédio Forte",
+      "justification": "JP 合C:強いくすり (Card de fármacos concentrados; 35B <= 40B)"
+    },
+    {
+      "id": 20861,
+      "original_en": "Heal Cracker",
+      "original_jp": "ヒールクラッカー",
+      "current_ptbr": "Biscoito cura",
+      "curated_ptbr": "Biscoito Cura",
+      "justification": "JP ヒールクラッカー (Bolacha crocante medicinal; 27B <= 32B)"
+    },
+    {
+      "id": 20862,
+      "original_en": "RC: Powerful Medicine",
+      "original_jp": "合C:強力なくすり",
+      "current_ptbr": "RC: Remédio potente",
+      "curated_ptbr": "RC: Remédio Potente",
+      "justification": "JP 合C:強力なくすり (Card de medicamentos avançados; 39B <= 48B)"
+    },
+    {
+      "id": 20863,
+      "original_en": "Restore Bomb",
+      "original_jp": "レストアボム",
+      "current_ptbr": "Bomba restauradora",
+      "curated_ptbr": "Bomba Restauro",
+      "justification": "JP レストアボム (Artefato explosivo regenerativo de área; 29B <= 32B; resolve overflow)"
+    },
+    {
+      "id": 20864,
+      "original_en": "RC: Best Medicine",
+      "original_jp": "合C:最強のくすり",
+      "current_ptbr": "RC: Melhor remédio",
+      "curated_ptbr": "RC: Melhor Remédio",
+      "justification": "JP 合C:最強のくすり (Card da panaceia suprema medicinal; 37B <= 40B)"
+    },
+    {
+      "id": 20865,
+      "original_en": "Tranquilizer",
+      "original_jp": "トランキライザー",
+      "current_ptbr": "Tranquilizante",
+      "curated_ptbr": "Tranquilizante",
+      "justification": "JP トランキライザー (Sedativo químico de combate; 29B <= 32B)"
+    },
+    {
+      "id": 20866,
+      "original_en": "Bolt Angel",
+      "original_jp": "ボルトエンジェル",
+      "current_ptbr": "Anjo elétrico",
+      "curated_ptbr": "Anjo Trovão",
+      "justification": "JP ボルトエンジェル (Dispositivo eólico-elétrico; 23B <= 24B; resolve overflow)"
+    },
+    {
+      "id": 20867,
+      "original_en": "RC: Revival Machine",
+      "original_jp": "合C:復活機",
+      "current_ptbr": "RC: Revivedor",
+      "curated_ptbr": "RC: Revitalizador",
+      "justification": "JP 合C:復活機 (Card de maquinário de reanimação; 35B <= 40B)"
+    },
+    {
+      "id": 20868,
+      "original_en": "Missile",
+      "original_jp": "メッソー",
+      "current_ptbr": "Míssil",
+      "curated_ptbr": "Míssil",
+      "justification": "JP メッソー (Projétil explosivo balístico; 13B <= 16B)"
+    },
+    {
+      "id": 20869,
+      "original_en": "RC: Missile",
+      "original_jp": "合C:メッソー",
+      "current_ptbr": "RC: Míssil",
+      "curated_ptbr": "RC: Míssil",
+      "justification": "JP 合C:メッソー (Card balístico de mísseis; 21B <= 24B)"
+    },
+    {
+      "id": 20870,
+      "original_en": "Bombmill",
+      "original_jp": "バク風車",
+      "current_ptbr": "Bombmill",
+      "curated_ptbr": "Bomba-Vento",
+      "justification": "JP バク風車 (Catavento detonador aerodinâmico; 23B <= 24B)"
+    },
+    {
+      "id": 20871,
+      "original_en": "RC: Airwing",
+      "original_jp": "合C:エアウィング",
+      "current_ptbr": "RC: Asa ar",
+      "curated_ptbr": "RC: Airwing",
+      "justification": "JP 合C:エアウィング (Card aerodinâmico de asas; 23B <= 24B)"
+    },
+    {
+      "id": 20872,
+      "original_en": "Bolta Polta",
+      "original_jp": "ボルタポルタ",
+      "current_ptbr": "Bolta Polta",
+      "curated_ptbr": "Bolta Polta",
+      "justification": "JP ボルタポルタ (Dispositivo elétrico oscilante; 23B <= 24B)"
+    },
+    {
+      "id": 20873,
+      "original_en": "RC: Electric Bomb",
+      "original_jp": "合C:電気ばくだん",
+      "current_ptbr": "RC: Bomba elétrica",
+      "curated_ptbr": "RC: Bomba Elétrica",
+      "justification": "JP 合C:電気ばくだん (Card de explosivos de choque; 37B <= 40B)"
+    },
+    {
+      "id": 20874,
+      "original_en": "Ionization Liquid",
+      "original_jp": "電離化合液",
+      "current_ptbr": "Líquido ionizante",
+      "curated_ptbr": "Líquido Ionizante",
+      "justification": "JP 電離化合液 (Solução química condutora ionizada; 35B <= 40B)"
+    },
+    {
+      "id": 20875,
+      "original_en": "RC: Mysterious Liquid",
+      "original_jp": "合C:あやしい液体",
+      "current_ptbr": "RC: Líquido misterioso",
+      "curated_ptbr": "RC: Líquido Misterioso",
+      "justification": "JP 合C:あやしい液体 (Card de soluções químicas anômalas; 45B <= 48B)"
+    },
+    {
+      "id": 20876,
+      "original_en": "Popcorn Bomb",
+      "original_jp": "ポプコーンボム",
+      "current_ptbr": "Bomba pipoca",
+      "curated_ptbr": "Bomba Pipoca",
+      "justification": "JP ポプコーンボム (Explosivo cômico de milho estourado; 25B <= 32B)"
+    },
+    {
+      "id": 20877,
+      "original_en": "RC: Great Bomb",
+      "original_jp": "合C:大ばくだん",
+      "current_ptbr": "RC: Bomba forte",
+      "curated_ptbr": "RC: Bomba Forte",
+      "justification": "JP 合C:大ばくだん (Card de explosivos de alto calibre; 31B <= 32B)"
+    },
+    {
+      "id": 20878,
+      "original_en": "Peeka",
+      "original_jp": "イナイイナイ",
+      "current_ptbr": "Peeka",
+      "curated_ptbr": "Peeka",
+      "justification": "JP イナイイナイ (Brinquedo do jogo de esconder infantil; 11B <= 16B)"
+    },
+    {
+      "id": 20879,
+      "original_en": "RC: Pig",
+      "original_jp": "合C:ブタ",
+      "current_ptbr": "RC: Porco",
+      "curated_ptbr": "RC: Pig",
+      "justification": "JP 合C:ブタ (Card de mascote suíno; 15B <= 16B; cabe com precisão cirúrgica no slot de 16B)"
+    },
+    {
+      "id": 20880,
+      "original_en": "Boo",
+      "original_jp": "バー",
+      "current_ptbr": "Boo",
+      "curated_ptbr": "Boo",
+      "justification": "JP バー (Susto/surpresa da brincadeira peek-a-boo; 7B <= 8B)"
+    },
+    {
+      "id": 20881,
+      "original_en": "RC: Drum",
+      "original_jp": "合C:たいこ",
+      "current_ptbr": "RC: Tambor",
+      "curated_ptbr": "RC: Tambor",
+      "justification": "JP 合C:たいこ (Card de instrumentos de percussão Taiko; 21B <= 24B)"
+    },
+    {
+      "id": 20882,
+      "original_en": "Invert Hook",
+      "original_jp": "インバートフック",
+      "current_ptbr": "Gancho inversor",
+      "curated_ptbr": "Gancho Inv.",
+      "justification": "JP インバートフック (Mecanismo de fixação e inversão; 23B <= 24B; resolve overflow com abreviação elegante)"
+    }
+  ]
+}

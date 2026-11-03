@@ -1,0 +1,85 @@
+# -*- coding: utf-8 -*-
+"""Dados de calibração editorial para BLK_SYS_024 - Parte 3 (Arquivos 0289 a 0291)
+IDs 27098 a 27169 (72 falas)
+"""
+
+lines_0289 = {
+    27098: ("...O meu conceito de magiaCRtá desmoronando todo.", "Lyner atordoado com as magias bizarras com CR. (84B <= 96B)"),
+    27099: ("Fico tão feliz de ficar mais forteCRa cada mergulho seu em mim!", "Misha alegre pelo poder do Mergulho com CR. (120B <= 152B)"),
+    27100: ("A Tempestade de Raios foiCRincrível demais!", "Misha empolgada com a Canção de combate com CR. (83B <= 96B)"),
+    27101: ("Isso me ajuda muito,CRfico feliz também!", "Lyner grato pela ajuda em combate com CR. (72B <= 88B)"),
+    27102: ("Mas os nomes das magiasCRprecisam ser tão sinistros?", "Lyner achando os nomes agressivos com CR. (99B <= 136B)"),
+    27103: ("O que foi?CRSão superlegais!", "Misha defendendo a estética das Canções com CR. (61B <= 88B)"),
+    27104: ("...B-bom, se você acha,CRtudo bem então...", "Lyner cedendo sem jeito com CR. (78B <= 88B)"),
+    27105: ("Por termos ficado tanto tempo longeCRe você ter me esquecido... seráCRque não sirvo de muita ajuda?", "Misha insegura com quebras CR. (173B <= 192B)"),
+    27106: ("Hã?! Que bobagem! É o oposto,CRvocê me ajuda demais!", "Lyner tranquilizando Misha enfático com CR. (99B <= 120B)"),
+    27107: ("...Mas você mergulha mais na SenhoraCRShurelia, que chegou depois de mim,CRe vocês tão superíntimos...", "Misha com ciúmes de Shurelia com quebras CR. (187B <= 224B)"),
+    27108: ("...Pronto!CRNão posso ficar pra trás!!", "Misha determinada a competir com CR. (66B <= 80B)"),
+    27109: ("Lyner! Pode vir com tudo eCRmergulhar fundo em mim sem dó!!", "Misha fazendo convite ousado de Mergulho com CR. (117B <= 152B)"),
+    27110: ("Ainda não acredito que a SenhoraCRShurelia te deixou mergulhar nela.", "Misha chocada com Shurelia com CR. (124B <= 96B)"),
+    27111: ("Ela deve confiarCRmuito em você.", "Misha impressionada com a confiança com CR. (53B <= 56B)"),
+    27112: ("Hã? S-será?...", "Lyner encabulado. (27B <= 32B)"),
+    27113: ("Tá corando por quê?!CRQual é!!", "Misha implicando com o rubor de Lyner com CR. (57B <= 64B)"),
+    27114: ("Mas não vá se esquecer de mim, tá?CRPode mergulhar cada vez maisCRfundo em mim também!", "Misha pedindo para aprofundar os Mergulhos nela com quebras CR. (160B <= 176B)"),
+    27115: ("...Isso não é meio ousadoCRdemais pra uma Reyvateil dizer?", "Lyner chocado com a ousadia dela com CR. (110B <= 112B)"),
+    27116: ("Ugh... p-para!CRNão precisa jogar na cara,CRque vergonha...", "Misha corando envergonhada com quebras CR. (110B <= 112B)"),
+    27117: ("Lyner, você tinha que virCRmais cedo, poxa!", "Misha fazendo bico pela demora com CR. (72B <= 72B)"),
+    27118: ("Garotos que deixam garotasCResperando são odiados, viu?", "Misha dando bronca fofa com CR. (92B <= 88B)"),
+    27119: ("Hã? Mas eu vim correndoCRo mais rápido que pude!", "Lyner se justificando com CR. (84B <= 96B)"),
+    27120: ("Será?... Bom, só de você ter vindoCRjá fico feliz, então passa.", "Misha relevando o atraso com CR. (120B <= 160B)"),
+    27121: ("Eu tava meio preocupado com você...CRMas já que tá tudo bem, fico aliviado.", "Lyner atencioso e aliviado com CR. (134B <= 216B)")
+}
+
+lines_0290 = {
+    27122: ("É que ando mergulhando bem fundoCRna sua mente ultimamente, fiquei pensandoCRse você estava bem...", "Lyner preocupado com os mergulhos profundos com quebras CR. (173B <= 184B)"),
+    27123: ("Ah... se preocupou comigo?CRQue amor...", "Misha comovida com a preocupação com CR. (80B <= 96B)"),
+    27124: ("Claro que me preocupo. Opa!CRVocê tá encostando na minha mão...", "Lyner notando o contato físico com CR. (120B <= 104B)"),
+    27125: ("Não tô encostando, tô segurando.CRÉ que fiquei tão feliz...", "Misha entrelaçando os dedos com CR. (107B <= 104B)"),
+    27126: ("Comigo tá tudo bem!CRFico mais preocupada com você.", "Misha invertendo o cuidado para Lyner com CR. (96B <= 96B)"),
+    27127: ("Quanto mais fundo na Cosmosfera,CRmais perigoso dizem que fica...", "Misha ciente dos riscos do Mergulho profundo com CR. (117B <= 160B)"),
+    27128: ("B-bom, não posso negar isso...", "Lyner admitindo o risco. (61B <= 80B)"),
+    27129: ("Não ia aguentar se você mergulhasseCRe não acordasse nunca mais...", "Misha temendo pelo coma de Lyner com CR. (117B <= 168B)"),
+    27130: ("Mas mesmo com esse medo, fico radianteCRquando você mergulha em mim...", "Misha dividida entre o perigo e o deleite do Mergulho com CR. (129B <= 192B)"),
+    27131: ("E além disso... hum...CREi, Lyner, tá me ouvindo?", "Misha notando a distração dele com CR. (87B <= 96B)"),
+    27132: ("Hã? Querer eu quero, mas...CRcom você segurando a minha mão,CRnão consigo me concentrar...", "Lyner desajeitado com o toque de mãos com quebras CR. (172B <= 216B)"),
+    27133: ("Fico tão nervoso que a sua vozCRentra por um ouvido e sai pelo outro...", "Lyner explicando a pane nos sentidos com CR. (137B <= 160B)"),
+    27134: ("D-desculpa... Mas por que será?CRSinto que não posso soltar você...", "Misha apegada ao aperto de mãos com CR. (118B <= 128B)"),
+    27135: ("Se eu soltar, você não vaiCRembora, né?", "Misha carente pedindo que ele fique com CR. (74B <= 80B)"),
+    27136: ("Pode confiar.", "Lyner tranquilizando. (27B <= 32B)"),
+    27137: ("Queria tanto ver a suaCRCosmosfera também...", "Misha sonhando em mergulhar na mente dele com CR. (80B <= 88B)"),
+    27138: ("A minha?!", "Lyner perplexo. (19B <= 24B)"),
+    27139: ("Fico curiosa pra saber o que senteCRquando mergulha na minha mente.", "Misha intrigada com as percepções de Lyner com CR. (124B <= 144B)"),
+    27140: ("Só poderem mergulhar em ReyvateilsCRé tão injusto...", "Misha achando unilateral o sistema com CR. (94B <= 112B)"),
+    27141: ("Se desse pra mergulhar em mim,CReu deixava você ver na boa...", "Lyner gentil concordando em reciprocidade com CR. (115B <= 128B)"),
+    27142: ("Falando assim parece fácil, mas exigeCRmuita coragem! É vergonhoso de morrer,CRsem brincadeira!", "Misha expondo a nudez psicológica do Mergulho com quebras CR. (165B <= 176B)"),
+    27143: ("Mas só eu ver a sua é meio sem graça.CRSe desse, eu te mostrava a minha.", "Lyner querendo compartilhar seu mundo interior com CR. (130B <= 168B)"),
+    27144: ("Talvez eu só diga isso porque seiCRque é impossível, claro...", "Lyner rindo de sua própria ousadia segura com CR. (116B <= 136B)"),
+    27145: ("...Não, só de ouvir issoCRjá fico supercontente.", "Misha radiante com a intenção dele com CR. (92B <= 104B)")
+}
+
+lines_0291 = {
+    27146: ("É mesmo?", "Lyner surpreso. (17B <= 32B)"),
+    27147: ("É sim... Ah, Lyner,CRme empresta a cabeça!", "Misha com pedido inusitado com CR. (78B <= 96B)"),
+    27148: ("Hã? Como assim emprestar... Uou!", "Lyner puxado de repente. (67B <= 112B)"),
+    27149: ("Não se mexe! Se me derCRuma cabeçada eu te mato...", "Misha ameaçando cômica com CR. (99B <= 104B)"),
+    27150: ("Encostar a testa na minha não dá...CReu não tô com febre, sabia?", "Lyner desconcertado com o toque testa a testa com CR. (123B <= 192B)"),
+    27151: ("Eu sei disso. Mas parece que assimCReu consigo sentir o que você táCRpensando...", "Misha tentando ler pensamentos com quebras CR. (146B <= 184B)"),
+    27152: ("...Dá pra saber?", "Lyner cético. (34B <= 40B)"),
+    27153: ("Hum... dá pra ver que você táCRnervoso pra caramba agora.", "Misha acertando o estado de tensão dele com CR. (110B <= 120B)"),
+    27154: ("...Tenho a impressão de queCRtá tirando uma com a minha cara.", "Lyner desconfiado com CR. (115B <= 104B)"),
+    27155: ("Nada a ver! Assim sinto mesmoCRque posso entender o que pensa...CRalém do mais...", "Misha justificando o contato íntimo com quebras CR. (143B <= 208B)"),
+    27156: ("...E?", "Lyner curioso. (11B <= 16B)"),
+    27157: ("...Não, nada. Ah, não solta ainda!CRAinda não descobri nada, ué.", "Misha disfarçando e segurando a proximidade com quebras CR. (119B <= 136B)"),
+    27158: ("...Lyner, posso chegar mais pertoCRde você?", "Misha pedindo aconchego com CR. (76B <= 104B)"),
+    27159: ("Hã? Sim, pode.", "Lyner consentindo. (33B <= 40B)"),
+    27160: ("Hehehe... Conversar assim com vocêCRme deixa tão feliz.", "Misha radiante ao lado dele com CR. (104B <= 136B)"),
+    27161: ("É? Se só isso te deixa feliz,CRtô sempre às ordens.", "Lyner prestativo com CR. (94B <= 152B)"),
+    27162: ("Mas a gente pode conversarCRsempre no dia a dia, não?", "Lyner ingênuo perguntando sobre a rotina com CR. (96B <= 96B)"),
+    27163: ("Mas aí tão todos por perto.CRÉ totalmente diferente disso!", "Misha marcando a exclusividade a dois com CR. (116B <= 136B)"),
+    27164: ("É? O que muda?", "Lyner lerdo. (31B <= 48B)"),
+    27165: ("Hum... tipo ficar coladinhaCRem você assim?", "Misha demonstrando o carinho corporal com CR. (84B <= 112B)"),
+    27166: ("Pera, vai colar mesmo em mim?!", "Lyner em choque. (61B <= 88B)"),
+    27167: ("Ehehe, não dá pra fazer issoCRna frente de todo mundo, dá?", "Misha travessa com CR. (107B <= 112B)"),
+    27168: ("Até daria, mas aí a Aurica e a SenhoraCRShurelia virariam minhas inimigas.", "Misha rindo da rivalidade feminina com CR. (146B <= 176B)"),
+    27169: ("I-inimigas?! Por acaso vocêsCRse dão mal?!", "Lyner sem entender nada com CR. (82B <= 112B)")
+}

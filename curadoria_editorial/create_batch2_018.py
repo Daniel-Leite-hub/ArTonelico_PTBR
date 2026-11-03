@@ -1,0 +1,310 @@
+# -*- coding: utf-8 -*-
+import json
+
+batch2 = [
+    {
+        "id": 4551,
+        "curated_ptbr": "Talvez a culpa seja toda minha...",
+        "verdict": "rewritten",
+        "rationale": "Melancolia e auto-recriminação de Shurelia em sua persona colegial (私のせいかも...)."
+    },
+    {
+        "id": 4552,
+        "curated_ptbr": "Hã?...",
+        "verdict": "rewritten",
+        "rationale": "Expressão de surpresa e preocupação da companheira Reyvateil (...え?)."
+    },
+    {
+        "id": 4553,
+        "curated_ptbr": "Acho que esta escola só foi atacada porque eu estava aqui...",
+        "verdict": "rewritten",
+        "rationale": "Confissão aflita sobre ser o alvo dos ataques da Facção Mir."
+    },
+    {
+        "id": 4554,
+        "curated_ptbr": "Por minha culpa, tanto esta escola\nquanto o café onde eu trabalho...",
+        "verdict": "rewritten",
+        "rationale": "Preservada a quebra de linha sem fratura sintática ou pontuação solta, expressando o remorso da heroína."
+    },
+    {
+        "id": 4555,
+        "curated_ptbr": "Você está pensando demais.\nNão tem como o inimigo saber\nde tantas coisas assim a seu respeito...",
+        "verdict": "rewritten",
+        "rationale": "Consolo realista da Reyvateil da Cosmosfera em 3 linhas correspondentes ao original japonês."
+    },
+    {
+        "id": 4556,
+        "curated_ptbr": "Pois é.\nAlém do mais, foi graças à senhorita Tougasaki\nque todos nós nos salvamos.",
+        "verdict": "rewritten",
+        "rationale": "Preservado o nome canônico do papel dramático de Shurelia 'senhorita Tougasaki' (塔ヶ崎さん), alinhado ao glossário mestre."
+    },
+    {
+        "id": 4557,
+        "curated_ptbr": "Mas a Facção Mir sempre aparece onde quer que eu vá, trazendo desgraça a todos...",
+        "verdict": "rewritten",
+        "rationale": "Uso consistente do termo canônico 'Facção Mir' (ミュール団) e do sofrimento de carregar um fardo solitário."
+    },
+    {
+        "id": 4558,
+        "curated_ptbr": "Eu não aguento mais passar por isso!",
+        "verdict": "rewritten",
+        "rationale": "Desabafo desesperado da jovem de 15 anos (こんなの、もういや!), superando o mecânico 'Tudo isso tem que parar'."
+    },
+    {
+        "id": 4559,
+        "curated_ptbr": "Senhorita Tougasaki!!",
+        "verdict": "rewritten",
+        "rationale": "Vocativo canônico 'Senhorita Tougasaki!!' (塔ヶ崎さん) conforme o glossário."
+    },
+    {
+        "id": 4560,
+        "curated_ptbr": "Carregar o fardo de salvar o mundo...\né peso demais para as costas de uma garota de 15 anos.\nMaldita seja essa Facção Mir...",
+        "verdict": "rewritten",
+        "rationale": "Preservada a quebra tripartite, sem pontuação órfã, expressando a comoção da guardiã e seu ódio pela Facção Mir."
+    },
+    {
+        "id": 4561,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio dramático de Lyner comovido pela dor de Tougasaki."
+    },
+    {
+        "id": 4562,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Pausa reflexiva da guardiã idêntica ao original."
+    },
+    {
+        "id": 4563,
+        "curated_ptbr": "Não vai atrás dela?...",
+        "verdict": "rewritten",
+        "rationale": "Incentivo direto da Reyvateil sem pontuação solta inicial (...追わなくていいの?)."
+    },
+    {
+        "id": 4564,
+        "curated_ptbr": "Hã?",
+        "verdict": "rewritten",
+        "rationale": "Reação desajeitada e atônita de Lyner."
+    },
+    {
+        "id": 4565,
+        "curated_ptbr": "Não vai correr atrás da Leila?\nEla é a sua parceira, não é mesmo?!",
+        "verdict": "rewritten",
+        "rationale": "Preservado o nome canônico 'Leila' (澪羅) e a cobrança afetuosa de parceria em 2 linhas balanceadas."
+    },
+    {
+        "id": 4566,
+        "curated_ptbr": "É... tem razão!",
+        "verdict": "rewritten",
+        "rationale": "Aquiescência rápida e decidida de Lyner (あ、ああ!)."
+    },
+    {
+        "id": 4567,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Pausa dramática idêntica ao original."
+    },
+    {
+        "id": 4568,
+        "curated_ptbr": "Leila... Se você descobrir a verdade sobre a sua ligação com a Facção Mir... talvez o choque seja tão devastador que não consiga mais suportar...",
+        "verdict": "rewritten",
+        "rationale": "Solilóquio sombrio da Reyvateil sobre a terrível verdade da origem de Leila ligada ao vírus de Mir."
+    },
+    {
+        "id": 4569,
+        "curated_ptbr": "Raina, agora você é o único capaz de salvar a Leila.\nAguente firme, por favor...",
+        "verdict": "rewritten",
+        "rationale": "Uso do nome fictício 'Raina' (頼奈 - papel colegial de Lyner Barsett) conforme assentado no glossário mestre."
+    },
+    {
+        "id": 4570,
+        "curated_ptbr": "Ué?... Onde... onde eu estou?...",
+        "verdict": "rewritten",
+        "rationale": "Despertar confuso da jovem estudante recuperando a consciência após o ataque do vírus."
+    },
+    {
+        "id": 4571,
+        "curated_ptbr": "Você acordou... Que alívio...",
+        "verdict": "rewritten",
+        "rationale": "Alívio acolhedor da Reyvateil da Cosmosfera ao ver a colega recobrar os sentidos."
+    },
+    {
+        "id": 4572,
+        "curated_ptbr": "Quem é você?...\nE o Raina? O Raina está bem?!",
+        "verdict": "rewritten",
+        "rationale": "Uso correto do nome fictício 'Raina' (頼奈) e formatação com a conjunção 'E' iniciando a segunda linha para eliminar pontuação órfã."
+    },
+    {
+        "id": 4573,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio compassivo da guardiã mental."
+    },
+    {
+        "id": 4574,
+        "curated_ptbr": "Eu não aguento... mais...",
+        "verdict": "rewritten",
+        "rationale": "Fardo de exaustão e febre de Aurica (もう...ダメ...。) expresso com vulnerabilidade comovente."
+    },
+    {
+        "id": 4575,
+        "curated_ptbr": "Harase-kun?...\nMisha?!",
+        "verdict": "rewritten",
+        "rationale": "Termos canônicos 'Harase-kun' (原瀬君) e 'Misha' (彌紗) respeitados, sem pontuação órfã após a quebra de linha."
+    },
+    {
+        "id": 4576,
+        "curated_ptbr": "Senhorita Tougasaki!\nQue bom... Você voltou a si!",
+        "verdict": "rewritten",
+        "rationale": "Vocativo canônico 'Senhorita Tougasaki' (塔ヶ崎さん) e quebra de linha sem fratura sintática."
+    },
+    {
+        "id": 4577,
+        "curated_ptbr": "Ainda é cedo demais para comemorar!",
+        "verdict": "rewritten",
+        "rationale": "Alerta enérgico de batalha (喜ぶのはまだ早いわよ)."
+    },
+    {
+        "id": 4578,
+        "curated_ptbr": "Vocês me pagam...\nEu até tentei pegar leve,\nmas resolveram fazer toda essa bagunça...",
+        "verdict": "rewritten",
+        "rationale": "Fúria teatral da vilã Claire contra os heróis em 3 versos balanceados perfeitamente."
+    },
+    {
+        "id": 4579,
+        "curated_ptbr": "Vocês me irritaram de verdade...\nAgora perdi a paciência...\nVou reduzir esta cidade inteira a cinzas junto com vocês!",
+        "verdict": "rewritten",
+        "rationale": "Clímax da ameaça de Claire em 3 linhas imponentes, sem fratura sintática."
+    },
+    {
+        "id": 4580,
+        "curated_ptbr": "Vamos nessa, ELMA!",
+        "verdict": "rewritten",
+        "rationale": "Comando de batalha entusiasmado convocando a monstruosidade mecânica ELMA."
+    },
+    {
+        "id": 4581,
+        "curated_ptbr": "Groooaaargh!!!",
+        "verdict": "rewritten",
+        "rationale": "Rugido feroz e gutural da criatura viral ELMA (グオォォォォ!!!)."
+    },
+    {
+        "id": 4582,
+        "curated_ptbr": "Droga!\nEles vão tocar o terror na cidade!",
+        "verdict": "rewritten",
+        "rationale": "Pânico urgente da guardiã perante a iminência de destruição urbana."
+    },
+    {
+        "id": 4583,
+        "curated_ptbr": "Vamos rápido!",
+        "verdict": "rewritten",
+        "rationale": "Urgência concisa e heroica da estudante Tougasaki."
+    },
+    {
+        "id": 4584,
+        "curated_ptbr": "Antes disso!\nJá que temos esta oportunidade de ouro,\nvou destruir o sistema central deles!",
+        "verdict": "rewritten",
+        "rationale": "Determinação tática da Reyvateil de sabotar o quartel-general da Facção Mir em 3 linhas límpidas."
+    },
+    {
+        "id": 4585,
+        "curated_ptbr": "Haaah!!!",
+        "verdict": "rewritten",
+        "rationale": "Grito de golpe e liberação de poder mágico (はぁっ!!!)."
+    },
+    {
+        "id": 4586,
+        "curated_ptbr": "Com isso, a Facção Mir está acabada!",
+        "verdict": "rewritten",
+        "rationale": "Triunfo decisivo com a padronização do nome canônico da Facção Mir."
+    },
+    {
+        "id": 4587,
+        "curated_ptbr": "Sim...",
+        "verdict": "rewritten",
+        "rationale": "Concordância aliviada da companheira de batalha."
+    },
+    {
+        "id": 4588,
+        "curated_ptbr": "Harase... kun...",
+        "verdict": "rewritten",
+        "rationale": "Nome canônico 'Harase-kun' chamado com doçura e hesitação (原瀬...くん...)."
+    },
+    {
+        "id": 4589,
+        "curated_ptbr": "Senhorita Tougasaki...\nMe perdoe pelo que houve antes...\nEu fui um idiota. Entendi tudo errado...",
+        "verdict": "rewritten",
+        "rationale": "Pedido de perdão sincero de Lyner (persona Harase) em 3 linhas balanceadas e sem pontuação solta."
+    },
+    {
+        "id": 4590,
+        "curated_ptbr": "Conversamos depois! Rápido!",
+        "verdict": "rewritten",
+        "rationale": "Interrupção necessária e enérgica da guardiã puxando todos para a ação imediata."
+    },
+    {
+        "id": 4591,
+        "curated_ptbr": "Tem razão, vamos logo...",
+        "verdict": "rewritten",
+        "rationale": "Assentimento focado da heroína Tougasaki."
+    },
+    {
+        "id": 4592,
+        "curated_ptbr": "Sim!",
+        "verdict": "rewritten",
+        "rationale": "Confirmação heroica e impetuosa de Lyner."
+    },
+    {
+        "id": 4593,
+        "curated_ptbr": "O mundo parece ter mudado sutilmente...\nQuer dizer, talvez tenha mudado bastante...",
+        "verdict": "rewritten",
+        "rationale": "Reflexão intuitiva de Lyner percebendo a reconfiguração da Cosmosfera após a Mudança de Paradigma."
+    },
+    {
+        "id": 4594,
+        "curated_ptbr": "Bem, tanto faz. Vou dar uma caminhada para explorar.",
+        "verdict": "rewritten",
+        "rationale": "Curiosidade descontraída do protagonista ao explorar o novo cenário."
+    },
+    {
+        "id": 4595,
+        "curated_ptbr": "Pretende regressar agora para a Cosmosfera?",
+        "verdict": "rewritten",
+        "rationale": "Pergunta cortês do guia do portal sobre o retorno ao mundo interior."
+    },
+    {
+        "id": 4596,
+        "curated_ptbr": "Sendo assim, tenha um bom retorno.",
+        "verdict": "rewritten",
+        "rationale": "Desejo formal de boa viagem na transição dimensional."
+    },
+    {
+        "id": 4597,
+        "curated_ptbr": "Você retornou para a Cosmosfera.",
+        "verdict": "rewritten",
+        "rationale": "Mensagem informativa do sistema com o termo canônico 'Cosmosfera'."
+    },
+    {
+        "id": 4598,
+        "curated_ptbr": "Sendo assim, nos vemos na próxima ocasião.",
+        "verdict": "rewritten",
+        "rationale": "Despedida cerimoniosa do guarda dimensional."
+    },
+    {
+        "id": 4599,
+        "curated_ptbr": "Ficou alaranjado...",
+        "verdict": "rewritten",
+        "rationale": "Constatação de Lyner ao solucionar o enigma fônico das placas coloridas."
+    },
+    {
+        "id": 4600,
+        "curated_ptbr": "Isso significa que o espelho da placa vermelha\ndeve ficar apontado exatamente\npara este lado.",
+        "verdict": "rewritten",
+        "rationale": "Raciocínio lógico e preciso de Ayatane, com 3 linhas balanceadas sem pontuação órfã."
+    }
+]
+
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch2_018.json", "w", encoding="utf-8") as f:
+    json.dump(batch2, f, indent=2, ensure_ascii=False)
+
+print(f"Batch 2 saved with {len(batch2)} items.")

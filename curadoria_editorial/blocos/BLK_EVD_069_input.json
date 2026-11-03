@@ -1,0 +1,2221 @@
+{
+  "block_id": "BLK_EVD_069",
+  "axis_id": "AXIS_3",
+  "axis_name": "3_HISTORIA_E_EVENTOS",
+  "category": "Event Dialogue",
+  "line_count": 190,
+  "id_range": [
+    15748,
+    15937
+  ],
+  "scene_handoff_received": {
+    "last_scene_id": "Event/794.evd",
+    "last_line_id": 15747,
+    "resumo_dramatico": "O bloco BLK_EVD_068 articula quatro arcos dramáticos fundamentais entre a exploração da Torre e as projeções da Cosmosfera: (1) Em Event/696.evd, na Cosmosfera de Aurica, Lyner é confrontado pela manifestação da Deusa-Mãe Tyria (uma das deusas do Trio de Elemia, na verdade uma persona manipuladora de Mir). A entidade afirma que Aurica é sua reencarnação e descendente, recita a profecia ancestral de El Elemia e instrui Lyner a adentrar o labirinto selado sob o Templo de Elemia na Garra do Falcão para recuperar o Cristal Hymmnos 'Linker' e desencadear o advento da terra prometida. Ao despertar, Don Leon relata em pânico que a 'Torre da Vida' de Aurica está sob grave perturbação. (2) Em Event/219.evd, após Shurelia se despedir no convés superior e encarregar Lyner de proteger Misha, Aurica e Radolf se despedem para prestar contas ao Bispo Falss. Lyner tem um súbito devaneio com um flashback de infância em Platina, relembrando a promessa infantil feita a Misha de salvá-la caso fosse raptada. Acordado pelas zombarias afetuosas de Jack e Misha ('Mano Harm'), o grupo ruma para a Corporação Tenba, prevendo uma escala estratégica em Em Pheyna. (3) Em Event/303.evd, Radolf e Lyner tentam transpor o Anteparo A para resgatar a população, mas a barreira está trancada. Aurica e Lyner recorrem a fórmulas mágicas disparatadas ('Abre-te, sésamo' e um trava-línguas infantil) no exato instante em que Shurelia e Ayatane abrem a comporta, gerando um momento hilário de constrangimento cômico. Shurelia revela que o Corredor Musical — responsável pelo clima e pela remoção de energias nocivas — entrou em colapso devido à queda de uma das sete Placas Hexagonais. Ayatane junta-se ao grupo para calibrar a instalação. (4) Em Event/794.evd, na simulação de comédia romântica colegial de Shurelia (Episódio 3), Lyner assume o papel do estudante Raina Harase (16 anos), dividido entre a misteriosa garota mágica Leila Togasaki e a amiga de infância Aurica. Após repelir os ataques da Facção Mir, Aurica se declara a Raina. No ramo exibido, Lyner corresponde aos sentimentos de Aurica e eles alcançam o final feliz da vida conjugal, culminando na sugestão hilária de Aurica de batizar o filho de 'Don Leon' (Donsuke). Ao término da história, Shurelia emerge visivelmente emburrada e enciumada pelo desfecho, pressionando Lyner a reiniciar a simulação para obter o final com Leila.",
+    "decisoes_terminologicas": {
+      "Hymn Crystal Linker": "ヒュムネクリスタル「リンカ」 (Cristal Hymmnos Linker)",
+      "Musical Corridor": "彩音回廊 (Corredor Musical)",
+      "Dividing Wall A": "A隔壁 (Anteparo A)",
+      "Hexagonal Plate": "六角板 (Placa Hexagonal)",
+      "Team Mir": "ミュール団 (Facção Mir)",
+      "Raina Harase": "原瀬頼奈 (Raina Harase)",
+      "Leila Togasaki": "塔ヶ崎澪羅 (Leila Togasaki)",
+      "Tower of Life": "いのちの塔 (Torre da Vida)",
+      "Mano Harm": "アル兄ぃ (Mano Harm)",
+      "Don Leon": "丼助 / どんすけ (Don Leon)"
+    },
+    "alertas_para_proximo_bloco": "Com a entrada de Ayatane na equipe e o desbloqueio do Corredor Musical no Mapa-Múndi, os blocos seguintes devem cobrir a incursão ao Corredor Musical para restaurar o equilíbrio atmosférico das Placas Hexagonais, a investigação do selo no Templo de Elemia na Garra do Falcão e a progressão dos níveis da Cosmosfera."
+  },
+  "active_cast": {
+    "Aurica": {
+      "id": 2,
+      "full_name": "Aurica Felchel",
+      "gender": "feminino",
+      "role": "Reyvateil da Igreja de Elemia",
+      "voice_profile": "Tímida, meiga, insegura, marcada pelo trauma do massacre de Skuwat. Dicção hesitante, delicada e dócil ('Eu...', 'Será que...'). Na Cosmosfera, revela desejos intensos e medo de rejeição.",
+      "laughter_and_vocalizations": "Risinho tímido ('Hehe...', 'Hihi'), hesitações ('Ah...', 'E-eu...'), choque contido ('Ai!', 'Oh...'). Sem rubricas descritivas.",
+      "address_matrix": {
+        "Lyner": "Devoção e coragem redobrada ao lado de seu protetor ('...Pode deixar comigo!').",
+        "Misha": "Troca de farpas bem-humorada acusando Misha de ser uma megera controladora e disputando o braço de Lyner.",
+        "Claire": "Afeto filial fraternal íntimo ('mana Claire / クレアお姉ちゃん').",
+        "Falss": "Respeito religioso cerimonioso ('Bispo Falss / o senhor').",
+        "Leard": "Respeito cerimonioso e temor reverente ('É-é uma honra conhecê-lo...').",
+        "Shurelia": "Sensibilidade empática aguçada, sentindo a dor, a força e a fragilidade do Cântico sagrado.",
+        "Comerciantes / Mundo": "Inocência desconcertante, chamando comerciantes de 'dona' e trocando veneno mortal por cebola sem pestanejar.",
+        "Lyner (Nível 9)": "Transparência afetiva absoluta e desarmamento total ('Não sobrou mais nada. Já não tenho mais nada para te mostrar, Lyner. Não tenho mais nenhum segredo guardado de você')."
+      }
+    },
+    "Shurelia": {
+      "id": 9,
+      "full_name": "Shurelia (Eoria)",
+      "gender": "feminino",
+      "role": "Administradora da Torre / Deusa de Elemia",
+      "voice_profile": "Nobre, etérea, graciosa, solene em sua função divina, mas surpreendentemente desajeitada, inocente e fofa em assuntos mundanos e cotidianos. Dicção refinada e serena.",
+      "laughter_and_vocalizations": "Riso suave e elegante ('Hehe', 'Fufu...'), timidez fofa ('Ah...', 'Isso é...'), determinação ('Sim!').",
+      "address_matrix": {
+        "Lyner": "Amor transcendental, ternura materna e devoção serena, confiando-lhe o futuro e todos os sentimentos do coração antes do sacrifício supremo ('Se for você, Lyner, tenho certeza de que cuidará com imenso carinho deste solo...').",
+        "Radolf": "Tratamento divino gracioso aos seus devotos cavaleiros.",
+        "Mir": "Dor profunda pela tragédia da irmã de criação, compaixão e tristeza.",
+        "Leard": "Humildade divina e compaixão sincera, desculpando-se pelos transtornos causados e pedindo autorização com doçura tímida ('...Não... posso?').",
+        "Humanos": "Gélido desprezo e altivez divina ('ó raça amaldiçoada', 'espécie covarde').",
+        "Mundo": "Compaixão absoluta e autossacrifício comovente ('Eu já tomei minha decisão... Eu quero salvar este mundo!').",
+        "Mundo Inferior / Spica": "Curiosidade infantil, doçura cândida e fascínio pelas coisas simples da terra, revelando seu total desprovimento de senso de direção e inocência para fechar acordos secretos com comerciantes de rua.",
+        "Leard / Platina": "Serenidade moral e sabedoria justa ('O coração humano não se dobra por imposições').",
+        "Ayatane": "Maternidade benevolente acolhendo os sentimentos para forjar o cristal divino ('Ficarei à sua espera')."
+      }
+    },
+    "Radolf": {
+      "id": 6,
+      "full_name": "Radolf Schnaider",
+      "gender": "masculino",
+      "role": "Comandante dos Cavaleiros de Elemia",
+      "voice_profile": "Nobre, digno, virtuoso, estóico. Cavalheiro militar devotado à proteção dos inocentes e à fé de Elemia. Dicção sóbria, formal e firme.",
+      "laughter_and_vocalizations": "Sorriso contido ('Humpf, de fato'), solenidade militar ('Entendido!', 'Avante!').",
+      "address_matrix": {
+        "Lyner": "Camarada de armas respeitado e parceiro em missões confidenciais ('Lyner', 'você'), revelando com bom humor seu lado profano bom de copo durante as peripécias da Cosmosfera.",
+        "Shurelia": "Devoção absoluta e respeito religioso máximo ('Senhora Shurelia / Vossa Graça').",
+        "Krusche": "Paciência e respeito cordial, mesmo sob as provocações dela.",
+        "Lyner / Aurica": "Perplexidade estupefata e solidariedade cômica com o futuro estomacal do cavaleiro ('Que salto absurdo foi esse?! ...Força aí, amigo').",
+        "Igreja de Elemia (Crise)": "Responsabilidade ética inabalável. Mesmo caluniado de traição (謀反の濡れ衣), assume perante Lyner e Platina todo o peso moral dos desmandos praticados pelos cavaleiros clericais na dita Guerra Santa."
+      }
+    },
+    "Misha": {
+      "id": 3,
+      "full_name": "Misha Arsellec Lünn",
+      "gender": "feminino",
+      "role": "Reyvateil Origin / Amiga de Infância de Lyner",
+      "voice_profile": "Extrovertida, energética, provocativa, com espírito tsundere genuíno. Inteligente e conhecedora de tecnologia ancestral. Esconde dores e saudades profundas por trás de birras carinhosas.",
+      "laughter_and_vocalizations": "Riso provocativo ('Hehe!', 'Hihihi!'), bico emburrado ('Humpf!', 'Ora!'), indignação fofa ('Ei!', 'Como é que é?!').",
+      "address_matrix": {
+        "Lyner": "Lealdade incondicional, resolução tática e suporte vibrante.",
+        "Aurica": "Disputa cômica de ciúmes arremessando bombas em meio à paródia de Atelier Elie na Cosmosfera.",
+        "Krusche": "Indignação cômica diante das provocações sobre suas fobias e descoordenação motora ('Cala a bôôôca!').",
+        "Leard": "Respeito com afeto familiar de quem cresceu em Platina.",
+        "Jack": "Apego leal e protetor de infância pelo verdadeiro nome ('Harm-da!'), bico tsundere ao ser chamada de pirralha ('Eu já sou uma mulher bem adulta, ficou sabendo?!').",
+        "Claire": "Desafio frontal e impiedoso ('Se acha que consegue, por que não tenta a sorte?').",
+        "Shurelia": "Cuidado zeloso e desespero cômico diante dos sumiços da Deusa na multidão."
+      }
+    },
+    "Lyner": {
+      "id": 1,
+      "full_name": "Lyner Barsett",
+      "gender": "masculino",
+      "role": "Protagonista / Cavaleiro de Elemia",
+      "voice_profile": "Jovem idealista, impulsivo, corajoso, com grande compaixão e senso de justiça. Reage de forma transparente e emotiva. Fala em português oral culto e caloroso (você / te), sem afetações normativas em conversas casuais.",
+      "laughter_and_vocalizations": "Riso franco ('Haha!', 'Hahaha!'), alívio ('Uff...', 'Ah...'), choque ('Hã?!', 'O quê?!'). Sem rubricas (*suspiro*).",
+      "address_matrix": {
+        "Aurica": "Desespero e pavor cômico diante dos hábitos culinários bizarros e da falta de filtro social dela ('Aurica... o que diabos você pretendia fazer a gente engolir...?!').",
+        "Misha": "Vínculo de infância inquebrantável, confiança absoluta e carinho sincero.",
+        "Shurelia": "Honra e devoção solene ao aceitar acompanhá-la em sua jornada pelo mundo ('A honra é toda minha!').",
+        "Krusche": "Parceria descontraída e bem-humorada ('você / te'), tolerando o choque do orçamento estratosférico da nave.",
+        "Radolf": "Tratamento de camarada e superior respeitado ('você' com reverência militar ou 'o senhor' em missões solenes).",
+        "Jack": "Respeito sincero ao calejado veterano Teru, buscando conselhos de sobrevivência na travessia da Torre.",
+        "Leard": "Indignação juvenil explosiva contra o controle paterno e a imposição política ('Pare de querer mandar na minha vida...!').",
+        "address_matrix": {
+          "Misha": "você / tratamento carinhoso e protetor de infância, com comentários bem-humorados sobre seus hábitos e magias peculiares",
+          "Aurica": "você / cumplicidade carinhosa, encorajando sua autoestima e lembrando com afeto de suas peripécias na Cosmosfera",
+          "Shurelia": "Senhora Shurelia / respeito reverente à administradora da Torre, com assombro diante do poder colossal de suas magias"
+        },
+        "Shurelia (Leila)": "Vínculo romântico e transcendente na Cosmosfera ('eu só queria... passar mais um minuto, mais um segundo que fosse ao lado da Leila...'), valorizando os sentimentos vivos e a memória do coração acima de réplicas digitais.",
+        "Ayano": "Respeito atônito com a aparição imponente da presidente corporativa ('A-a Senhora... Ayano?!').",
+        "Senhora Shurelia": "Reverência filial e protetora fervorosa ('Senhora Shurelia! Por favor, não se esforce ainda! Eu mesmo vou acabar com a Mir!'), culminando no desespero dilacerante ao vê-la entoar o Suspend.",
+        "Mir": "Firmeza heroica e rejeição da desumanização, buscando inicialmente a paz e combatendo sem piedade quando o diálogo é repelido.",
+        "Igreja de Hórus (Gratidão)": "Determinação moral e lealdade heroica ao recusar a busca geral para descer ao lado de Aurica e saldar sua dívida de honra com o Bispo Falss."
+      }
+    },
+    "Krusche": {
+      "id": 5,
+      "full_name": "Krusche Elendia",
+      "gender": "feminino",
+      "role": "Piloto de Dirigível / Engenheira Mecânica",
+      "voice_profile": "Independente, audaciosa, sarcástica, pragmática ao extremo. Detesta sentimentalismo barato e enrolação. Fala incisiva, rápida e cheia de atitude.",
+      "laughter_and_vocalizations": "Gargalhada zombeteira ('Hahaha!', 'Humpf, hehe'), impaciência ('Tsc!', 'Bora logo!').",
+      "address_matrix": {
+        "Lyner": "Estímulo enérgico de mentora e engenheira-chefe ('Calma, calma! Encare isso como parte do seu treinamento').",
+        "Radolf": "Provocações à solenidade militar dele.",
+        "Jack": "Respeito entre profissionais cínicos.",
+        "Ayano": "Tratamento profissional corporativo como chefe do Projeto Shoga diante da Presidente da Tenba.",
+        "Misha": "Sarcasmo afetuoso e deboche impiedoso com os medos e a descoordenação da amiga ('Quer dizer então que você tem medo de altura, pavor do escuro, coordenação zero e ainda por cima é desastrada?').",
+        "Jack / Misha": "Sarcasmo mordaz alfinetando a masculinidade de Jack ('...Um imprestável de marca maior mesmo') e sonhos de voar além dos confins do mundo."
+      }
+    },
+    "Jack": {
+      "id": 4,
+      "full_name": "Jack Hamilton",
+      "gender": "masculino",
+      "role": "Mercenário Teru / Veterano de Guerra",
+      "voice_profile": "Despojado, cínico, experiente, fala arrastada de pistoleiro calejado. Esconde um senso moral afiado sob a pose de quem só trabalha por dinheiro.",
+      "laughter_and_vocalizations": "Risinho sarcástico ('Hehehe...', 'Humpf'), desdém ('Tsc... que saco'), aviso ('Fica esperto').",
+      "address_matrix": {
+        "Lyner": "Camaradagem fraterna protetora, irritação zombeteira diante dos cortes no clima romântico ('Seu... que droga! Não estraga o meu momento!') e conselhos de rua ('Fique longe da Tenba').",
+        "Krusche": "Parceria profissional sem rodeios.",
+        "Radolf": "Respeito irônico à retidão do cavaleiro.",
+        "Lyra": "Trata como uma irmãzinha mais nova ou conhecida de trabalho que o envergonha em público, tentando manter pose de mercenário durão.",
+        "Claire": "Galanteio canastrão, floreado e sedutor ('Fui atraído até esta taverna pelo brilho da sua presença...'), respeitando sua autonomia como dona do bar.",
+        "Misha": "Carinho paternal e fraternal culpado por ter partido ('Perdão, Misha. Nunca foi porque você não importasse para mim').",
+        "Flute": "Rebeldia moral contra o dogma cego do [Juramento de Elemia] diante do massacre de sua gente ('O que vale mais: um dogma cego ou a vida de todos nós...?')."
+      }
+    }
+  },
+  "matched_terms": {
+    "Reyvateil": {
+      "pt": "Reyvateil",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Raça / Classe",
+      "note": "Donzelas cantoras capazes de sintonizar a Torre e converter canções em poder (Magia da Canção). Plural: Reyvateils."
+    },
+    "Harmonics": {
+      "pt": "Harmonics",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Combate / Sistema",
+      "note": "Nível de sintonia e ressonância emocional entre Lyner e a Reyvateil durante a batalha."
+    },
+    "Crescent Chronicle": {
+      "pt": "Crônica Crescente",
+      "category": "Lore / Literatura",
+      "note": "Obra literária de romance acompanhada e discutida pelos personagens durante o descanso."
+    },
+    "Tastiella": {
+      "pt": "Tastiella",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Personagem / Lore",
+      "note": "Guardiã secular do repositório da Crônica Crescente e mentora espiritual que confia o futuro a Lyner (JP タスティエーラ)."
+    },
+    "Team Mir": {
+      "pt": "Facção Mir",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Facção / Cosmosphere",
+      "note": "ミュール団. Organização vilanesca paródica na simulação colegial da Cosmosfera de Shurelia."
+    },
+    "Pureblooded β-Type": {
+      "pt": "Reyvateil β-Pura",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Lore / Classificação Reyvateil",
+      "note": "β純血種. Reyvateil criada artificialmente em tubo sem genitores, dotada de maior pureza de código e força mágica superior à Terceira Geração. Misha é a última de Sol Ciel."
+    },
+    "Chronicle": {
+      "pt": "Chronicle",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Magia Azul / Entidade",
+      "note": "クリニクル (Kurinikuru). Personificação da Magia Azul tecida por Lyner e pelas personas de Aurica para restaurar e recriar o mundo do Nível 9 na Cosmosfera (ID 12885, 12900)."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 15736,
+      "event_file": "Event/794.evd",
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "speaker_id": 50,
+      "original_jp": "頼奈の苦難は続く...。",
+      "original_en": "Lyner’s suffering continued...",
+      "text_ptbr": "E assim, os suplícios de Lyner continuam..."
+    },
+    {
+      "id": 15737,
+      "event_file": "Event/794.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "...。",
+      "original_en": "......",
+      "text_ptbr": "......"
+    },
+    {
+      "id": 15738,
+      "event_file": "Event/794.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "......あれ?",
+      "original_en": "Huh...?",
+      "text_ptbr": "......Ué?"
+    },
+    {
+      "id": 15739,
+      "event_file": "Event/794.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "どうやら、一応の結末を迎えたみたいですね。",
+      "original_en": "Well, I guess that’s the end.",
+      "text_ptbr": "Pelo visto, chegamos a uma espécie de desfecho, não é mesmo?"
+    },
+    {
+      "id": 15740,
+      "event_file": "Event/794.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "終わったのか...。",
+      "original_en": "That’s it!?",
+      "text_ptbr": "Acabou...?"
+    },
+    {
+      "id": 15741,
+      "event_file": "Event/794.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "終わりました。CR随分と腑に落ちない終わり方ですけど。",
+      "original_en": "Yes. But, I didn’t like that ending.",
+      "text_ptbr": "Acabou. Embora seja um desfecho\nbastante intragável, na minha modesta opinião."
+    },
+    {
+      "id": 15742,
+      "event_file": "Event/794.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "...え?",
+      "original_en": "...Huh?",
+      "text_ptbr": "...Hã?"
+    },
+    {
+      "id": 15743,
+      "event_file": "Event/794.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "いえ、なんでもないんですよ?CRでも、もしやり直したいなら、さっきのCR手前からやり直せますよ?",
+      "original_en": "Well, if you didn’t like it, we can go back and play it again from the middle.",
+      "text_ptbr": "Não, não é nada não, viu?\nMas... caso deseje tentar de novo,\npodemos recomeçar daquele ponto de antes, sabia?"
+    },
+    {
+      "id": 15744,
+      "event_file": "Event/794.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "...は、はあ...。",
+      "original_en": "...Okay...",
+      "text_ptbr": "...É-é mesmo...?"
+    },
+    {
+      "id": 15745,
+      "event_file": "Event/794.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "もしやり直したいなら!ですよ。CRやり直した方が、絶対楽しいと思いますが。",
+      "original_en": "But, only if you want to! I don’t want to pressure you or anything. But, I strongly recommend it.",
+      "text_ptbr": "Apenas se você quiser, que fique bem claro!\nMas acho que seria infinitamente mais divertido se recomeçasse."
+    },
+    {
+      "id": 15746,
+      "event_file": "Event/794.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "は、はあ...。",
+      "original_en": "W, well...",
+      "text_ptbr": "É-é...?"
+    },
+    {
+      "id": 15747,
+      "event_file": "Event/794.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "そうですか...。CRそれでは、また次の機会にでも。",
+      "original_en": "Okay...maybe next time.",
+      "text_ptbr": "Compreendo...\nBem, deixemos para uma próxima oportunidade, então."
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 15748,
+      "event_file": "Event/495.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "よし...CR気合いを入れていこうぜ!",
+      "original_en": "We must do our best!",
+      "current_ptbr": "Precisamos dar o nosso melhor!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15749,
+      "event_file": "Event/495.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ええ。この世界の未来がCRかかっているんだもの...。",
+      "original_en": "That’s right. The fate of the world is in our hands...",
+      "current_ptbr": "É isso mesmo. O destino do mundo está em nossas mãos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15750,
+      "event_file": "Event/495.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "これで...終わりにしよう...。",
+      "original_en": "We have to finish this...",
+      "current_ptbr": "Precisamos terminar isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15751,
+      "event_file": "Event/495.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "未来が永遠に続くように!",
+      "original_en": "We can’t let her win!",
+      "current_ptbr": "Não podemos deixar que ela vença!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15752,
+      "event_file": "Event/495.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "...やったるぜ!",
+      "original_en": "...We can do this!",
+      "current_ptbr": "...Nós conseguimos!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15753,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "オロカナ...ワタシニカテルト...オモウノカ...?",
+      "original_en": "Fools...do you believe you can...defeat me...?",
+      "current_ptbr": "Tolos... vocês acreditam que podem... me derrotar...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15754,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "もちろんだ!",
+      "original_en": "Of course!",
+      "current_ptbr": "Claro!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15755,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "ナラバ...ソノ ジシンヲCRキョウフニカエテヤロウ...。",
+      "original_en": "You’re so confident... Soon, your confidence will turn to fear...",
+      "current_ptbr": "Você está tão confiante... Em breve, sua confiança se transformará em medo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15756,
+      "event_file": "Event/495.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "くっ!!...これが...ミュールの力!?",
+      "original_en": "Ahh! This is...the power of Mir!?",
+      "current_ptbr": "Ahh! Isso é... o poder de Mir!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15757,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "来るぞ!!",
+      "original_en": "Here it comes!",
+      "current_ptbr": "Lá vem!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15758,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "これは!?CR...クレセントクロニクルが!",
+      "original_en": "What!? ...The Crescent Chronicle!",
+      "current_ptbr": "O quê!? ...A “Crônica Crescente”!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15759,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "クレセントクロニクルの中に、こんなバケモノがいたのか!",
+      "original_en": "There was a monster inside of it all along.",
+      "current_ptbr": "Havia um monstro lá dentro o tempo todo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15760,
+      "event_file": "Event/495.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...終わったの!?",
+      "original_en": "...Is it over!?",
+      "current_ptbr": "...Acabou!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15761,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "いや、まだ様子が変だ...。CR何か来るぞ!",
+      "original_en": "No. Something still isn’t right. Something’s coming!",
+      "current_ptbr": "Não. Ainda há algo errado. Algo está chegando!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15762,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "こ、これは!?",
+      "original_en": "It’s...!?",
+      "current_ptbr": "É...!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15763,
+      "event_file": "Event/495.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "...これがミュールの本体か!",
+      "original_en": "...That’s Mir’s true form!",
+      "current_ptbr": "...Essa é a verdadeira forma de Mir!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15764,
+      "event_file": "Event/495.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "これが史上最強にして最悪のレーヴァテイル...β純血種...ミュール...",
+      "original_en": "She’s the greatest and worst pureblooded β-type Reyvateil in the history of the world...Mir.",
+      "current_ptbr": "Ela é a melhor e a pior Reyvateil do tipo β de sangue puro da história do mundo... Mir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15765,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "どんな姿でも手加減しない!行くぜ!",
+      "original_en": "I won’t go easy on you, no matter what you look like!",
+      "current_ptbr": "Não vou dar mole com você, não importa como você seja!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15766,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "人間達...そして人に荷担するレーヴァテイル達...。",
+      "original_en": "Humans...and the Reyvateils who help them...",
+      "current_ptbr": "Os humanos... e as Reyvateils que os ajudam...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15767,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "滅び行く世界の愚かな生き物たち...。",
+      "original_en": "Such stupid creatures must be removed from the world...",
+      "current_ptbr": "Essas criaturas estúpidas precisam ser eliminadas do mundo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15768,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "なぜ...剣を振るうの?",
+      "original_en": "...What good is a sword?",
+      "current_ptbr": "...Para que serve uma espada?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15769,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "争いは何を生むの?貴方のその剣の一撃は、詩の一撃はCR何を生み出すの...?",
+      "original_en": "What good comes from a sword stroke, from a song note...?",
+      "current_ptbr": "O que de bom advém de um golpe de espada, de uma nota musical...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15770,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "何に怯えることもない世界!...平和だ!",
+      "original_en": "We can create a world without fear! A world...of peace!",
+      "current_ptbr": "Podemos criar um mundo sem medo! Um mundo... de paz!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15771,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "剣では...CR平和は生み出せない...。",
+      "original_en": "And you think swords and magic can do that...",
+      "current_ptbr": "E você acha que espadas e magia podem fazer isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15772,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "剣で平和を得た世界には...CR更なる剣の災厄が...CR降りかかるのに...",
+      "original_en": "Peace won by the sword will fall by the sword.",
+      "current_ptbr": "A paz conquistada pela espada perecerá pela espada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15773,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "お前に説教されるCR筋合いはない!",
+      "original_en": "Don’t talk to me about peace!",
+      "current_ptbr": "Não venha me falar de paz!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15774,
+      "event_file": "Event/495.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "わかった。CRならば...私も容赦しない。",
+      "original_en": "So be it. I shall grant you no mercy.",
+      "current_ptbr": "Que assim seja. Não terei misericórdia de você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15775,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺たち...勝ったのか...?",
+      "original_en": "Did we...win?",
+      "current_ptbr": "Será que... vencemos?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15776,
+      "event_file": "Event/495.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "ああ...勝ったんだ...CRミュールに。",
+      "original_en": "Yes, we won. Mir has been defeated.",
+      "current_ptbr": "Sim, vencemos. Mir foi derrotada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15777,
+      "event_file": "Event/495.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "今度こそ...CR本当に終わったのよ。CR...やっと。",
+      "original_en": "It’s really over this time... For real...",
+      "current_ptbr": "Desta vez acabou de verdade... De verdade mesmo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15778,
+      "event_file": "Event/495.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "これで、本当に安心して暮らせる世界が...来るんだね...。",
+      "original_en": "We can finally live in a world of peace.",
+      "current_ptbr": "Finalmente podemos viver em um mundo de paz.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15779,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "なあ、みんな...。CR俺、1つだけ気になっていることがあるんだ。",
+      "original_en": "Hey, everyone... Something’s still bothering me.",
+      "current_ptbr": "Ei, pessoal... Ainda tem uma coisa me incomodando.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15780,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様を起こすとCRミシャが謳い続けなければCRならない。",
+      "original_en": "If we woke Lady Shurelia, then Misha had to continue singing.",
+      "current_ptbr": "Se acordássemos a Lady Shurelia, então Misha teria que continuar cantando.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15781,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャが普通の生活をするCRためには、シュレリア様はCR起こしてはならない。",
+      "original_en": "And, in order for Misha to live a normal life, Lady Shurelia has to stay asleep.",
+      "current_ptbr": "E, para que Misha possa levar uma vida normal, a Senhora Shurelia precisa permanecer adormecida.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15782,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "その両方を同時に叶える為には、ミュールを倒すしかなかった...。",
+      "original_en": "To free them both, we had to defeat Mir...",
+      "current_ptbr": "Para libertar as duas, tivemos que derrotar Mir...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15783,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "でも、ミュールだってCRレーヴァテイルなんだ。",
+      "original_en": "But, Mir is also a Reyvateil.",
+      "current_ptbr": "Mas Mir também é uma Reyvateil.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15784,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュールを倒してしまったら、結果同じなんじゃないか...?",
+      "original_en": "By defeating Mir, are we really solving all of our problems?",
+      "current_ptbr": "Ao derrotar Mir, será que estamos realmente resolvendo todos os nossos problemas?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15785,
+      "event_file": "Event/495.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "そんなこと無いよ!CRミシャちゃんもシュレリア様もこれからは...",
+      "original_en": "I don’t see why not! Misha and Lady Shurelia will both...",
+      "current_ptbr": "Por que não? Misha e a senhora Shurelia vão ambas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15786,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュールは、俺たちの幸せのために...体よくこの世界から追い出されただけだ。",
+      "original_en": "The whole point of taking care of Mir was so that we could all live in peace.",
+      "current_ptbr": "O objetivo de cuidar da Mir era justamente para que todos pudéssemos viver em paz.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15787,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "それって...「シュレリア様を起こさない」って選択と同じじゃないか?",
+      "original_en": "But, how is that any less selfish than not waking up Lady Shurelia?",
+      "current_ptbr": "Mas, como isso é menos egoísta do que não acordar a Lady Shurelia?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15788,
+      "event_file": "Event/495.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15789,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そう考えると...何も変わってない気がするんだ。CRこの世界は...何も...",
+      "original_en": "When I think about it like that, it feels like nothing’s changed. This world hasn’t changed...",
+      "current_ptbr": "Quando penso nisso dessa forma, parece que nada mudou. Este mundo não mudou...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15790,
+      "event_file": "Event/495.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...",
+      "original_en": "Lyner...",
+      "current_ptbr": "Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15791,
+      "event_file": "Event/495.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "あぁもう!オメェはいつもCR難しいこと考え過ぎなんだよ。",
+      "original_en": "You’re thinking too hard, kid. You’re blowing it.",
+      "current_ptbr": "Você está pensando demais, garoto. Está estragando tudo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15792,
+      "event_file": "Event/495.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー。タスティエーラも言ってました。自分の考えを貫き通すのは大事だと。",
+      "original_en": "Lyner, Tastiella said that it’s important to never lose faith.",
+      "current_ptbr": "Lyner, Tastiella disse que é importante nunca perder a fé.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15793,
+      "event_file": "Event/495.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナーは、自分のやり方でミュールを倒せたのですから...それでいいと思います。",
+      "original_en": "You did your part. You found your own way of defeating Mir.",
+      "current_ptbr": "Você fez sua parte. Você encontrou sua própria maneira de derrotar Mir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15794,
+      "event_file": "Event/495.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "そうそう。とにかく、これでこの世界が平和になったことには間違いないんだ。",
+      "original_en": "That’s right. The world is safe once again. That’s what is most important.",
+      "current_ptbr": "É isso mesmo. O mundo está seguro novamente. Isso é o que mais importa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15795,
+      "event_file": "Event/495.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "それだけでも、十分な成果だと思わないか?",
+      "original_en": "Don’t you think you have done enough?",
+      "current_ptbr": "Você não acha que já fez o suficiente?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15796,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...そうだよな。CR十分すぎる成果だ。",
+      "original_en": "...I guess you’re right. I’ve done my part.",
+      "current_ptbr": "...Acho que você está certo. Eu fiz minha parte.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15797,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "だって、俺たちは...",
+      "original_en": "Because, together...",
+      "current_ptbr": "Porque, juntos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15798,
+      "event_file": "Event/495.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺たちは...CR世界を救ったんだから...",
+      "original_en": "We saved the world...",
+      "current_ptbr": "Nós salvamos o mundo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15799,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー。CRこの間のお話の続きをプレイしますか?",
+      "original_en": "Do you want to continue the story from the other day?",
+      "current_ptbr": "Quer continuar a história do outro dia?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15800,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "わかりました。CRそれじゃ早速、続きからプレイしましょう。",
+      "original_en": "Alright. You can continue where you left off.",
+      "current_ptbr": "Tudo bem. Você pode continuar de onde parou.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15801,
+      "event_file": "Event/790.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "俺の名前は原瀬頼奈(はらせらいな)、CR元気盛りの16歳、高等部一年生だ。",
+      "original_en": "My name’s Lyner Harasett. I’m 16 years old, and I’m a sophomore.",
+      "current_ptbr": "Meu nome é Lyner Harasett. Tenho 16 anos e estou no segundo ano do ensino médio.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15802,
+      "event_file": "Event/790.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "ひょんな事から謎の少女、塔ヶ崎澪羅(とうがさきれいら)と出逢い、退屈な日常が徐々にエキサイティングなものになりつつある。",
+      "original_en": "Due to a bizarre incident, I ended up being friends with a girl named Leila Togasaki. Ever since then, my life started to get exciting.",
+      "current_ptbr": "Devido a um incidente bizarro, acabei me tornando amigo de uma garota chamada Leila Togasaki. Desde então, minha vida começou a ficar emocionante.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15803,
+      "event_file": "Event/790.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "そしてそんな俺に、今日もまた試練が訪れる。悪の組織、ミュール団からの刺客だ。",
+      "original_en": "I have quite an ordeal to face today. I have to deal with an assassin from the evil Team Mir.",
+      "current_ptbr": "Tenho uma provação e tanto pela frente hoje. Preciso lidar com um assassino da malvada Equipe Mir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15804,
+      "event_file": "Event/790.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "さてさて、今回はどんなヤツが出てくるのか...全く、気が重いぜ。",
+      "original_en": "So, who do I have to fight this time...? I’m too depressed to care.",
+      "current_ptbr": "Então, contra quem vou ter que lutar dessa vez...? Estou deprimido demais pra me importar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15805,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...あ...",
+      "original_en": "...Hm...",
+      "current_ptbr": "...Hum...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15806,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あれ...き、君は!?",
+      "original_en": "You’re...!?",
+      "current_ptbr": "Você é...!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15807,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "もしかして...この学校の...生徒なの?",
+      "original_en": "Oh, are you a student here?",
+      "current_ptbr": "Ah, você estuda aqui?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15808,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "え?頼奈、この子...だれ?CRしかも一学年年下の制服じゃない...",
+      "original_en": "Who is this girl? Judging by her uniform, she’s a freshman...",
+      "current_ptbr": "Quem é essa garota? A julgar pelo uniforme, ela é caloura...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15809,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "え!?あ、ああ、いや、その...CR昨日事件があっただろ?さっき話してた...CRあの時に助けたり助けられたり...",
+      "original_en": "I met her during that crazy incident yesterday. I saved her, and she saved me...",
+      "current_ptbr": "Eu a conheci durante aquele incidente maluco ontem. Eu a salvei, e ela me salvou...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15810,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15811,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "ああ、そうなんだ。CRあの時、大変だったよね!CRあたし織香。よろしくね。",
+      "original_en": "Wow, I’m sorry you were caught up in all that mayhem yesterday! Hi, I’m Aurica. It’s nice to meet you.",
+      "current_ptbr": "Nossa, sinto muito pela confusão de ontem! Oi, sou Aurica. Prazer em conhecê-la.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15812,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "は、はあ...。CRよろしく...お願いします...。",
+      "original_en": "Nice to meet you, too.",
+      "current_ptbr": "O prazer é meu.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15813,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15814,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あ!...と、昨日は大丈夫だったか?CRあれから何ともない?CR俺なんか筋肉痛でさぁ...あははは...",
+      "original_en": "Are you alright? I’m so sore from yesterday, you know...hahaha...",
+      "current_ptbr": "Está bem? Estou todo dolorido desde ontem, sabe... hahaha...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15815,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...大丈夫です。",
+      "original_en": "...I’m fine.",
+      "current_ptbr": "...Estou bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15816,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "頼奈、もう行こ!?CR数学、ノート写すんでしょ?時間ないよ?",
+      "original_en": "Let’s go! You still want to copy my math homework, right?",
+      "current_ptbr": "Vamos lá! Você ainda quer copiar meu dever de matemática, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15817,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あ!しまった!CRすぐ行こう!",
+      "original_en": "Oh, yeah! We better go!",
+      "current_ptbr": "Ah, é mesmo! É melhor a gente ir!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15818,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "ホントにしょうがいなぁ。CR写させてあげる代わりに、また買い物CRつき合ってもらうからね。",
+      "original_en": "I’ll let you copy my homework, but then you have to go shopping with me, okay?",
+      "current_ptbr": "Vou deixar você copiar meu dever de casa, mas depois você tem que ir às compras comigo, tá?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15819,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ま、マジかよ...。",
+      "original_en": "Are you serious?",
+      "current_ptbr": "Você está falando sério?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15820,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15821,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "昨日はありがとうございました!CRそれじゃ原瀬君、CR私、遅刻しちゃうから行きますね。",
+      "original_en": "Thank you for yesterday. I’m going to be late. I have to go.",
+      "current_ptbr": "Obrigado pelo que aconteceu ontem. Vou me atrasar. Preciso ir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15822,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あ...ちょ...ちょっと...",
+      "original_en": "Hey, wait...",
+      "current_ptbr": "Ei, espera aí...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15823,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15824,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "お前ら、いいか...。CR数学が出来ないヤツは、世の中のクズだ!",
+      "original_en": "Listen to me. If you don’t get better in math, you’re going to end up with the filth out on the street!",
+      "current_ptbr": "Me escute. Se você não melhorar em matemática, vai acabar junto com a escória nas ruas!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15825,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "卒業までには最低でもフーリエ変換まではCR修得しろ!死に際にはインテグラルを解いて死ね!いいな!",
+      "original_en": "You better master Fourier Transformation by graduation! And you better pass Integrals or you’ll die trying!",
+      "current_ptbr": "É melhor você dominar a Transformada de Fourier até a formatura! E é melhor você passar na disciplina de Integrais ou vai morrer tentando!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15826,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "(またこれかよ...。CR 毎回この言葉からなんだよな...)",
+      "original_en": "(Man...how many times does he have to give me this lecture...)",
+      "current_ptbr": "(Nossa... quantas vezes ele vai ter que me dar esse sermão...)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15827,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "よーし...それじゃ、宿題を提出しろ。CR基礎問のP23だったな...。",
+      "original_en": "Alright...turn in your homework. It was the basic section on p.23.",
+      "current_ptbr": "Tudo bem... entreguem o dever de casa. Era a seção básica da p. 23.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15828,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "(や、やべぇ...結局時間が無くて、CR 織香のノート写してなかった...)",
+      "original_en": "(Damn, I didn’t even have time to copyCRAurica’s...)",
+      "current_ptbr": "(Droga, nem tive tempo de copiarCRo da Aurica...)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15829,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "忘れたヤツは前に出ろ!CRひざまづけ!命乞いしろ!!",
+      "original_en": "If you forgot to do your homework, come to the front and beg for your life!",
+      "current_ptbr": "Se você esqueceu de fazer o dever de casa, venha pra frente da sala e implore pela sua vida!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15830,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "(ひぃぃぃ...!毎度の事ながら、CR この先生、ちょっと怖いよな...!CR とにかくひとまず逃げよう...)",
+      "original_en": "(The teacher is pretty scary, as always. I should be okay for now...)",
+      "current_ptbr": "(O professor é bem assustador, como sempre. Acho que vou ficar bem por enquanto...)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15831,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ふぅ...そもそも俺、数学は苦手なんだよな...。理系に進学する気無いし。CR体育なら自信あるんだけどな...。",
+      "original_en": "I’m not good at math. But, it’s not like I’m trying to be a rocket scientist or anything. But, I’ve always aced P.E.",
+      "current_ptbr": "Não sou bom em matemática. Mas não é como se eu estivesse tentando ser um cientista espacial ou algo do tipo. Porém, sempre tirei nota máxima em Educação Física.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15832,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...ん?バレーボール...?",
+      "original_en": "Huh? Volleyball?",
+      "current_ptbr": "Hã? Voleibol?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15833,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "すいませーん!...あっ!...",
+      "original_en": "Excuse me! Oops!",
+      "current_ptbr": "Com licença! Opa!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15834,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...こけた...。CRあれは...",
+      "original_en": "Sorry...",
+      "current_ptbr": "Desculpe...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15835,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "あ...CR原瀬...君...",
+      "original_en": "Harasett...",
+      "current_ptbr": "Harasett...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15836,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...塔ヶ崎...さん...",
+      "original_en": "Togasaki...",
+      "current_ptbr": "Togasaki...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15837,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "こんなところで何やってるの?CR授業は...?",
+      "original_en": "What are you doing here? Shouldn’t you be in class?",
+      "current_ptbr": "O que você está fazendo aqui? Você não deveria estar na aula?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15838,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...ばっくれた。CR数学は苦手なんだよな...。",
+      "original_en": "I’m ditching. I’m not very good at math.",
+      "current_ptbr": "Vou dar uma escapada. Não sou muito bom em matemática.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15839,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "ふーん...そうなんだ...",
+      "original_en": "I see...",
+      "current_ptbr": "Entendi...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15840,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15841,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...となり...座っていい?",
+      "original_en": "Do you...mind if I sit next to you?",
+      "current_ptbr": "Você... se importa se eu me sentar ao seu lado?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15842,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あ、ああ、いいけど、CR今、体育の授業やってるんじゃないのか?",
+      "original_en": "Go right ahead. But, aren’t you supposed to be in P.E.?",
+      "current_ptbr": "Fica à vontade. Mas você não deveria estar na aula de educação física?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15843,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "私、体育苦手なの...。",
+      "original_en": "I’m not good at it...",
+      "current_ptbr": "Não sou boa nisso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15844,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "しかしビックリしたよな。CR塔ヶ崎さんも俺と同じ学園だったとは...。CRそれに、1つ下だったんだな。",
+      "original_en": "I’m surprised to see you here. You’re a freshman, right?",
+      "current_ptbr": "Estou surpreso de te ver aqui. Você é caloura, certo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15845,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "そうみたい。CR私もビックリした。",
+      "original_en": "Yeah, I’m surprised, too.",
+      "current_ptbr": "É, também estou surpresa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15846,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15847,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "......ねえ、あの...CR朝の子は...?",
+      "original_en": "Who was that girl you were with this morning?",
+      "current_ptbr": "Quem era aquela garota que estava com você hoje de manhã?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15848,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ああ、アレ!アイツは幼なじみ。CR単なる幼なじみ!",
+      "original_en": "Oh, her? We grew up together! That’s all.",
+      "current_ptbr": "Ah, ela? Nós crescemos juntos! Só isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15849,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...。CRそ、そうなんだ...。CR頼奈の彼女かと思った。びっくりした。",
+      "original_en": "Oh...I thought she was your girlfriend. It caught me by surprise.",
+      "current_ptbr": "Ah... Eu pensei que ela fosse sua namorada. Isso me pegou de surpresa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15850,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...え?",
+      "original_en": "Huh?",
+      "current_ptbr": "Hã?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15851,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "あ、いや...CRだってこの間一人って言ってたでしょ?CRだから、うそつきー!って。",
+      "original_en": "Well, you told me that you didn’t have a girlfriend. I thought you lied to me.",
+      "current_ptbr": "Bem, você me disse que não tinha namorada. Achei que tivesse mentido para mim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15852,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ああ、そういう事か。CRまあ、残念ながら違うんだな。ホントにCR単なる幼なじみ。",
+      "original_en": "Oh, no! I didn’t lie. We just grew up together. That’s all.",
+      "current_ptbr": "Ah, não! Eu não menti. Nós só crescemos juntos. Só isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15853,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "それにしても、ちょっと意外だな。CR塔ヶ崎さんって体育苦手なんだ。",
+      "original_en": "But, I’m a little surprised that you aren’t good at P.E.",
+      "current_ptbr": "Mas estou surpreso que você não seja boa em Educação Física.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15854,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "え...?意外だった?CRもう少し運動ができたらいいんだけど...。CR私、天性の運動オンチだから。",
+      "original_en": "Why are you surprised? I wish I was a better at sports...but, I really can’t help it.",
+      "current_ptbr": "Por que você está surpreso? Eu gostaria de ser melhor nos esportes... mas, realmente, não tenho jeito.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15855,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "そういえば、よく一人でコケてるもんな。CRアレは才能だよ、才能。",
+      "original_en": "You do fall down pretty often, for no apparent reason. That just might be your talent.",
+      "current_ptbr": "Você realmente cai com bastante frequência, sem motivo aparente. Talvez esse seja o seu talento.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15856,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "むーぅ...。CRほっといて。",
+      "original_en": "Don’t make fun of me.",
+      "current_ptbr": "Não zombe de mim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15857,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "まあ、それでも今はまだバレーとかだからCRマシだけど、夏が憂鬱...。",
+      "original_en": "I can handle volleyball...but, I don’t like summer sports...",
+      "current_ptbr": "Eu dou conta do vôlei... mas não gosto de esportes de verão...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15858,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...夏?",
+      "original_en": "Summer sports?",
+      "current_ptbr": "Esportes de verão?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15859,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "うん...CR私、泳げないから...",
+      "original_en": "Yeah...I can’t swim...",
+      "current_ptbr": "É... eu não sei nadar...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15860,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "そ、そうなのか...。CRあんな敵と戦ったりしてるのに、CRホントにまるでダメなんだな...。",
+      "original_en": "Hmmm...so you can fight all kinds of hideous monsters, but you can’t play sports...",
+      "current_ptbr": "Hmmm... então você consegue lutar contra todos os tipos de monstros horrendos, mas não consegue praticar esportes...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15861,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "あれは別よ。CR原瀬君からパワーもらったりするし...、CRそれに、実際は謳ってるだけじゃない。",
+      "original_en": "It’s different. You helped power me up. Besides, I just chant.",
+      "current_ptbr": "É diferente. Você me ajudou a ficar mais forte. Além disso, eu só recito.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15862,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "それもそうか...。CRしかし、あの変身の仕方、微妙だよな。",
+      "original_en": "You’re right. I’m just surprised how you transform.",
+      "current_ptbr": "Você tem razão. Só estou surpreso com a forma como você se transforma.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15863,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "え?どうして?",
+      "original_en": "Why is that?",
+      "current_ptbr": "Por que isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15864,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "手を握ると変身するんだろ?CRそれじゃ、うっかり手も握れないじゃないか。",
+      "original_en": "You transformed when I held your hand. I could barely even think while holding yours.",
+      "current_ptbr": "Você se transformou quando segurei sua mão. Eu mal conseguia pensar enquanto segurava a sua.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15865,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...え?CR原瀬君...握りたかったり...するの?",
+      "original_en": "Huh? So, do you want to hold my hand now?",
+      "current_ptbr": "Hã? Então, você quer segurar minha mão agora?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15866,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あ?...あ、いや、そうじゃなくて!CRほら、彼とか出来たら大変だなぁと思って!ははは...",
+      "original_en": "No...that’s not what I meant. I just feel sorry for your boyfriend. If you have one, that is...",
+      "current_ptbr": "Não... não foi isso que eu quis dizer. Só sinto pena do seu namorado. Se é que você tem um, claro...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15867,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...彼...CR...CRそうね。",
+      "original_en": "My boyfriend...I see...",
+      "current_ptbr": "Meu namorado... Entendi...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15868,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "でもご心配なく。CR私が心の中で強く念じなければ、CR手を握られても変身することはないから。",
+      "original_en": "Don’t worry, I only transform when I want to.",
+      "current_ptbr": "Não se preocupe, só me transformo quando quero.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15869,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...試しに握ってみる?",
+      "original_en": "...Do you want to hold my hand to find out?",
+      "current_ptbr": "...Você quer segurar minha mão para descobrir?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15870,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "え...ええ?",
+      "original_en": "Why do you want to hold my hand?",
+      "current_ptbr": "Por que você quer segurar minha mão?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15871,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...冗談よ。バカ...。",
+      "original_en": "I’m only kidding...",
+      "current_ptbr": "Estou só brincando...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15872,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "こらぁ!塔ヶ崎!CRいつまでボール取りに行ってるんだ!",
+      "original_en": "You’re talking too long! Bring the ball back already!",
+      "current_ptbr": "Vocês estão falando demais! Tragam logo a bola de volta!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15873,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "まずい...怒られちゃった...。CRそれじゃ、私行くね...。",
+      "original_en": "Oops...I better go back...",
+      "current_ptbr": "Opa... É melhor eu voltar...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15874,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ああ...行っちゃった。",
+      "original_en": "And there she goes again.",
+      "current_ptbr": "E lá vai ela de novo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15875,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "俺もブラブラしてても仕方ないしな。CRそろそろ教室に帰ってみるか...。",
+      "original_en": "I should probably get back to class, too...",
+      "current_ptbr": "Acho que também devo voltar para a aula...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15876,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ん?...なんだか微妙に騒がしいな...CR嫌な予感がする...",
+      "original_en": "Huh? Why is it so noisy? I’ve got a bad feeling about this...",
+      "current_ptbr": "Hã? Por que está tão barulhento? Tenho um mau pressentimento sobre isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15877,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "こ、これは!?CRみんな倒れてる!!",
+      "original_en": "Everyone’s on the floor, again?",
+      "current_ptbr": "Todo mundo está no chão de novo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15878,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "ら...頼奈... ",
+      "original_en": "Lyner...",
+      "current_ptbr": "Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15879,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "織香!!大丈夫か!?CRこれは一体...どうしたんだ!",
+      "original_en": "Aurica! Are you alright? What happened?",
+      "current_ptbr": "Aurica! Você está bem? O que aconteceu?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15880,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "数学の授業やってたら...突然目眩がして...CRみんな...たおれちゃって...",
+      "original_en": "We started feeling dizzy during math class...and then we all collapsed...",
+      "current_ptbr": "Começamos a sentir tontura durante a aula de matemática... e então todos desmaiamos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15881,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "織香!しっかりしろ、織香!",
+      "original_en": "Aurica! Are you okay? Aurica?",
+      "current_ptbr": "Aurica! Você está bem? Aurica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15882,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "無駄よ。",
+      "original_en": "Give it up.",
+      "current_ptbr": "Desista.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15883,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "!!CR君は...!?",
+      "original_en": "Huh!? Who are you?",
+      "current_ptbr": "Hã!? Quem é você?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15884,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "私は彌紗。CR私と一緒に来て!",
+      "original_en": "I’m Misha. I want you to come with me!",
+      "current_ptbr": "Sou a Misha. Quero que você venha comigo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15885,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "え...?",
+      "original_en": "What?",
+      "current_ptbr": "O quê?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15886,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "さあ、早く!CRその子を助けたいんでしょう?",
+      "original_en": "Lyner! Hurry up!",
+      "current_ptbr": "Lyner! Se apresse!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15887,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "一体どういう事なんだ!",
+      "original_en": "What’s going on?",
+      "current_ptbr": "O que está acontecendo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15888,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "ミュール団の侵攻よ。CRこの学校はミュール団に乗っ取られたわ。CR貴方ならどういう事かわかるわよね?",
+      "original_en": "It’s an attack from Team Mir. Mir took over the school. You know what I’m talking about, right?",
+      "current_ptbr": "É um ataque da Equipe Mir. A Mir tomou conta da escola. Você sabe do que estou falando, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15889,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ミュール団って...まさかあの、CRハーモニクスパワーを喰らう...",
+      "original_en": "Team Mir...you mean, the ones who steal Harmonics...",
+      "current_ptbr": "Equipe Mir... você quer dizer, aqueles que roubam os Harmonics...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15890,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "ハーモニクスパワーを喰らうウイルスを使い、世界征服を目論む影の集団。",
+      "original_en": "Yeah, they’re an evil organization, plotting to take over the world with viruses.",
+      "current_ptbr": "É, eles são uma organização maligna, planejando dominar o mundo com vírus.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15891,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...なんてこった...。",
+      "original_en": "I can’t believe it...",
+      "current_ptbr": "Não acredito nisso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15892,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "すぐに澪羅を呼んできて!CRそして戦うのよ!",
+      "original_en": "Go get Leila right now! We have to fight!",
+      "current_ptbr": "Vá buscar a Leila agora mesmo! Temos que lutar!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15893,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "あ、ああ。わかった!CRでも、君は一体...?CR何故そんなことを...",
+      "original_en": "I’m on it. But, who are you? How do you know all about this?",
+      "current_ptbr": "Pode deixar. Mas, quem é você? Como sabe tudo isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15894,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "私は単なる澪羅の友達よ。CRさあ、早く行って...!",
+      "original_en": "I’m just a friend of hers. Go find her already!",
+      "current_ptbr": "Sou só amiga dela. Vai lá procurá-la logo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15895,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "塔ヶ崎さーん!CR塔ヶ崎さーーん!!",
+      "original_en": "Togasaki! Togasaki!",
+      "current_ptbr": "Togasaki! Togasaki!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15896,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...どうしたの?CR恥ずかしいから、あまり大声で叫ばないで...",
+      "original_en": "Stop yelling my name out loud. It’s embarrassing...",
+      "current_ptbr": "Pare de gritar meu nome em voz alta. É constrangedor...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15897,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "大変だ!この学校がミュール団にCR乗っ取られたらしい!CR教室のみんなが倒れていて...",
+      "original_en": "The school’s been taken over by Team Mir. Everyone in the classrooms are out cold...",
+      "current_ptbr": "A escola foi tomada pela Equipe Mir. Todos nas salas de aula estão desmaiados...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15898,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "ええっ!?CRわかったわ、すぐに行きましょ!",
+      "original_en": "What!? Ok, let’s go!",
+      "current_ptbr": "O quê!? Ok, vamos lá!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15899,
+      "event_file": "Event/790.evd",
+      "speaker_id": 123,
+      "speaker": "Jovem de Karff",
+      "original_jp": "頼奈... あたし...もうだめかも...",
+      "original_en": "I may not...survive...much longer...",
+      "current_ptbr": "Talvez eu não... sobreviva... por muito mais tempo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15900,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "ひどい...。CRかなりの量のハーモニクスパワーをCR吸われてるわ...。",
+      "original_en": "She’s in critical condition. She lost almost all of her Harmonic power...",
+      "current_ptbr": "Ela está em estado crítico. Perdeu quase todo o seu poder harmônico...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15901,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "さて、そろそろこの部屋は終わったかな?CR君達は実に出来がいい生徒だよ...。",
+      "original_en": "Is this room done? You guys are excellent students...",
+      "current_ptbr": "Essa sala já está pronta? Vocês são excelentes alunos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15902,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "先生...!?CRそれに、あんたは...!?",
+      "original_en": "Teacher...huh? Who’re you?",
+      "current_ptbr": "Professor... hein? Quem é você?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15903,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "...ほう。CR一人だけ落ちこぼれがいたか。",
+      "original_en": "Look, there’s one student left.",
+      "current_ptbr": "Olha, ainda falta um aluno.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15904,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "あらあら、可愛そうに。CRね、レアード。この子も助けてあげたら?",
+      "original_en": "The poor kid. Why don’t we save this one, too, Leard?",
+      "current_ptbr": "Pobre garoto. Por que não salvamos esse também, Leard?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15905,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "誰だ!お前は...",
+      "original_en": "Who are you...?",
+      "current_ptbr": "Quem é você...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15906,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "あらあら、元気がいいわね。私好み。CRきっと美味しいハーモニクスパワーを持っているんでしょうね。",
+      "original_en": "Mmm, you’re so full of energy. I love it! I bet his Harmonic power is especially delicious.",
+      "current_ptbr": "Hum, você está cheio de energia. Adoro isso! Aposto que o poder harmônico dele é especialmente delicioso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15907,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "ハーモニクスパワー!?CRあなた...ウイルスなの!?",
+      "original_en": "Harmonic power!? Are you a virus?",
+      "current_ptbr": "Energia harmônica!? Você é um vírus?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15908,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "ふふふ、教えて欲しい?CRでも、それは、ヒ・ミ・ツ。",
+      "original_en": "Do you really want to know? I’m sorry, but I can’t tell you. It’s a secret.",
+      "current_ptbr": "Você realmente quer saber? Sinto muito, mas não posso te contar. É segredo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15909,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15910,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "やっぱり若い子たちのハーモニクスパワーは美味しいわね。癖になっちゃいそう。",
+      "original_en": "Young children’s Harmonic power is especially sweet and addicting.",
+      "current_ptbr": "O poder harmônico das crianças pequenas é especialmente doce e viciante.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15911,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "それじゃ、あなたは一体...",
+      "original_en": "Who do you think you are?",
+      "current_ptbr": "Quem você pensa que é?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15912,
+      "event_file": "Event/790.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "私は、未来の女王。CRハーモニクスパワーを集めて、ミュールを復活させちゃうの。",
+      "original_en": "Why, I’m the future queen. In case you hadn’t noticed, I’m collecting Harmonic power to reawaken Mir.",
+      "current_ptbr": "Ora, eu sou a futura rainha. Caso você não tenha percebido, estou coletando o poder Harmônico para despertar Mir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15913,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "澪羅!頼奈!CRあの女はミュール団のトップ、クレアよ!CRそしてそいつはウイルスだ!",
+      "original_en": "She’s Claire, the leader of Team Mir. And, those are the viruses!",
+      "current_ptbr": "Ela é Claire, a líder da Equipe Mir. E esses são os vírus!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15914,
+      "event_file": "Event/790.evd",
+      "speaker_id": 8,
+      "speaker": "Claire",
+      "original_jp": "お前は...彌紗!?CRキーッ!...余計なところで現れて...",
+      "original_en": "You...Misha!? What are you doing?",
+      "current_ptbr": "Você... Misha!? O que você está fazendo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15915,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "ミュール団のトップ!?CRあなたが、ミュール団の...!!",
+      "original_en": "The leader of Team Mir? So, you’re...!",
+      "current_ptbr": "A líder da Equipe Mir? Então, você é...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15916,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "澪羅、準備はいい?",
+      "original_en": "Are you ready?",
+      "current_ptbr": "Você está pronto?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15917,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "...大丈夫。",
+      "original_en": "...Yes.",
+      "current_ptbr": "...Sim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15918,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15919,
+      "event_file": "Event/790.evd",
+      "speaker_id": 128,
+      "speaker": "Reyvateil da Cosmosfera",
+      "original_jp": "頑張るのよ!",
+      "original_en": "Let’s do our best!",
+      "current_ptbr": "Vamos dar o nosso melhor!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15920,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "...ほほう、読めたぞ。CRお前はもしや、シンガーエンジェル...。CR面白い。ここで俺が倒してくれるわ。",
+      "original_en": "Oh, I get it. You’re the Singing Angel... This is interesting. I’ve been wanting to fight you for some time now.",
+      "current_ptbr": "Ah, já entendi. Você é o Anjo Cantor... Isso é interessante. Já faz um tempo que eu queria lutar contra você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15921,
+      "event_file": "Event/790.evd",
+      "speaker_id": 8,
+      "speaker": "Claire",
+      "original_jp": "お願い、レアード。CRひと思いにやっちゃって。",
+      "original_en": "Leard, take them out quickly.",
+      "current_ptbr": "Leard, acabe com eles rapidamente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15922,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "御意。",
+      "original_en": "...Fine.",
+      "current_ptbr": "...Tudo bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15923,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "頼奈!お願い...私に力を...",
+      "original_en": "Lyner! Please lend me your power...",
+      "current_ptbr": "Lyner! Por favor, me empreste seu poder...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15924,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "ああ...。",
+      "original_en": "Okay.",
+      "current_ptbr": "Tudo bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15925,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "弱きを助け、悪しきを討つ!CR幸せのメロディー届けます!CRシンガーエンジェル・シュレリア見参!",
+      "original_en": "Defend the feeble and defeat the evil. My happy Song heralds the villain’s demise when Singing Angel Shurelia arrives!",
+      "current_ptbr": "Defenda os fracos e derrote o mal. Minha canção alegre anuncia a ruína do vilão quando a Anjo Cantora Shurelia chega!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15926,
+      "event_file": "Event/790.evd",
+      "speaker_id": 133,
+      "speaker": "Estudante da Cosmosfera",
+      "original_jp": "詩に変わって、お仕置きよ!",
+      "original_en": "In the name of right, you will feel our might!",
+      "current_ptbr": "Em nome da justiça, vocês sentirão nosso poder!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15927,
+      "event_file": "Event/790.evd",
+      "speaker_id": 132,
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "original_jp": "(言えない...俺には言えない...こんな事...)",
+      "original_en": "(I’m not going to say anything ridiculous like that...it’s like insulting yourself....)",
+      "current_ptbr": "(Não vou dizer nada ridículo como isso... é como se fosse um insulto a si mesmo...)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15928,
+      "event_file": "Event/790.evd",
+      "speaker_id": 125,
+      "speaker": "Personagem [125]",
+      "original_jp": "面白い!貴様のその有り余るハーモニクスCRパワー、一滴残らず吸い尽くしてくれるわ!",
+      "original_en": "Ha ha! I’ll suck all of your Harmonic power dry! Every last drop!",
+      "current_ptbr": "Ha ha! Vou sugar todo o seu poder harmônico até a última gota!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15929,
+      "event_file": "Event/790.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...あれ?ここは...",
+      "original_en": "Huh? Where am I...?",
+      "current_ptbr": "Hã? Onde estou...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15930,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お帰りなさい。CRゲームオーバーになっちゃったみたいです。",
+      "original_en": "Welcome back. Looks like it’s Game Over.",
+      "current_ptbr": "Bem-vindo de volta. Parece que o jogo acabou.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15931,
+      "event_file": "Event/790.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ありゃりゃ...",
+      "original_en": "Oh...",
+      "current_ptbr": "Ah...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15932,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "次は続きから出来るみたいですから、またCR挑戦してみてもいいかもしれませんね。",
+      "original_en": "Next time, we can continue where we left off. Maybe you should try again some other time.",
+      "current_ptbr": "Da próxima vez, podemos continuar de onde paramos. Talvez você devesse tentar de novo em outra ocasião.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15933,
+      "event_file": "Event/790.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "しかし、ホンモノの戦闘が入るとはCR思わなかったな...。",
+      "original_en": "I didn’t expect to have real battles...",
+      "current_ptbr": "Eu não esperava ter batalhas de verdade...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15934,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "実は、私も正直少し驚いています。CRでも、命に別状は無いみたいですし...",
+      "original_en": "I’m surprised, too. But at least we’re not hurt...",
+      "current_ptbr": "Também me surpreendi. Mas pelo menos não estamos feridos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15935,
+      "event_file": "Event/790.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...あったら困りますって!",
+      "original_en": "...You’re right.",
+      "current_ptbr": "...Você tem razão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15936,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "そうですね...。CRとにかく、一度現実に戻りましょう。",
+      "original_en": "Let’s get back to the real world for now.",
+      "current_ptbr": "Vamos voltar ao mundo real por enquanto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 15937,
+      "event_file": "Event/790.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "そうですか...。CRそれでは、また次の機会にでも。",
+      "original_en": "Ah... Well, I’ll see you next time.",
+      "current_ptbr": "Ah... Bem, até a próxima.",
+      "review_status": "unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+import sys
+import json
+
+sys.path.insert(0, r"C:\Users\Daniel\.gemini\config\skills\curadoria-editorial-game-localization\scripts")
+import validador_editorial
+
+batch3_data = [
+    {
+        "id": 2723,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "...Tem certeza de que quer entrar na minha casa?",
+        "verdict": "rewritten",
+        "rationale": "Hesitação tímida e constrangida de Misha diante de sua casa na Cosmosfera ('うちに入る')."
+    },
+    {
+        "id": 2724,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "Ué? Não posso?",
+        "verdict": "rewritten",
+        "rationale": "Espanto espontâneo e descontraído de Lyner."
+    },
+    {
+        "id": 2725,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "...Não, não é isso.\nÉ que... fico com um pouco de vergonha...",
+        "verdict": "rewritten",
+        "rationale": "Subtexto de timidez e embaraço familiar de Misha."
+    },
+    {
+        "id": 2726,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "O clima lá dentro é de guerra, mas...\nnão repara, tá...?",
+        "verdict": "rewritten",
+        "rationale": "Expressão idiomática viva para '壮絶' (cenário de guerra / caótico), superando o literal 'extremo'."
+    },
+    {
+        "id": 2727,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "C-clima de guerra...?!",
+        "verdict": "rewritten",
+        "rationale": "Gagueira e reação espantada de Lyner ecoando a expressão de Misha."
+    },
+    {
+        "id": 2728,
+        "event_file": "Event/622.evd",
+        "speaker": "Guarda / Viajante",
+        "speaker_id": 144,
+        "curated_ptbr": "Ei, vocês aí! Cadê a bebida?!\nTragam mais birita pra cá, agora mesmo!!",
+        "verdict": "rewritten",
+        "rationale": "Rudeza truculenta do pai bêbado esbravejando ('オラァ!酒だ!')."
+    },
+    {
+        "id": 2729,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "...?! M-mas o que é isso?!",
+        "verdict": "rewritten",
+        "rationale": "Choque imediato de Lyner com a gritaria doméstica repentina."
+    },
+    {
+        "id": 2730,
+        "event_file": "Event/622.evd",
+        "speaker": "Guarda / Viajante",
+        "speaker_id": 134,
+        "curated_ptbr": "Para com isso, pai!",
+        "verdict": "rewritten",
+        "rationale": "Apelo desesperado da filha sendo agredida ('やめて!お父さん!')."
+    },
+    {
+        "id": 2731,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Ai, ai, ai...\nComeçou tudo outra vez...",
+        "verdict": "rewritten",
+        "rationale": "Expressão de desalento e constrangimento de Misha ('あちゃー...、またやってるよ')."
+    },
+    {
+        "id": 2732,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "Pai, por favor...\nA gente não tem nem um centavo sobrando para comprar bebida...",
+        "verdict": "rewritten",
+        "rationale": "Súplica aflita da irmã mais velha revelando a penúria familiar provocada pelo vício do pai."
+    },
+    {
+        "id": 2733,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "...O quê?! Não tem bebida, é?!\nEntão vende as roupas do seu corpo\ne vai comprar birita com o dinheiro, sua desgraçada!",
+        "verdict": "rewritten",
+        "rationale": "Violência verbal brutal e torpe do pai alcoólatra ('テメェの服売って', '買ってこいや')."
+    },
+    {
+        "id": 2734,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "Kyaaa!",
+        "verdict": "rewritten",
+        "rationale": "Grito feminino agudo de dor ao ser empurrada ('きゃっ!'), corrigindo o decalque absurdo 'Guh!' da NISA."
+    },
+    {
+        "id": 2735,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "Larga ela, seu velho maluco!!\nO que você pensa que está fazendo?!",
+        "verdict": "rewritten",
+        "rationale": "Intervenção indignada de Lyner protegendo a jovem; em JP '親父' (oyaji) é vocativo informal para homens de meia-idade, não o pai de Lyner!"
+    },
+    {
+        "id": 2736,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "Hã?! Velho maluco de quem, moleque?!\nEu nunca nem vi a sua fuça na vida!",
+        "verdict": "rewritten",
+        "rationale": "Reação agressiva e alcoolizada do homem rechaçando o rapaz intrometido ('テメェなんざシラネェよ')."
+    },
+    {
+        "id": 2737,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Larga ela, pai!!",
+        "verdict": "rewritten",
+        "rationale": "Comando furioso e ríspido de Misha peitando o próprio pai ('やめろよ、親父!!')."
+    },
+    {
+        "id": 2738,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "Ora, se não é a Misha... Você voltou, é...?\nOnde é que você andou vadiando sem a minha autorização?!\nCadê a minha bebida?! Cadê o meu trago?!",
+        "verdict": "rewritten",
+        "rationale": "Voz bêbada e autoritária exigindo submissão e álcool da filha ('どこほっつき歩いてやがった')."
+    },
+    {
+        "id": 2739,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Não tem bebida nenhuma aqui em casa!\nAté quando você vai continuar encharcado de pinga?!",
+        "verdict": "rewritten",
+        "rationale": "Revolta legítima de Misha confrontando o vício destrutivo do pai ('飲んだくれてるんだ')."
+    },
+    {
+        "id": 2740,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "O quê?!\nVocê agora... tem coragem de desafiar o próprio pai?!",
+        "verdict": "rewritten",
+        "rationale": "Tensão dramática e fúria tirânica do patriarca bêbado ('親に逆らう気か')."
+    },
+    {
+        "id": 2741,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Você só pensa no próprio umbigo e vomita as ordens que quer!\nQue tal parar um segundo e pensar no que os outros sentem?!",
+        "verdict": "rewritten",
+        "rationale": "Desabafo visceral de ressentimento reprimido de Misha contra a tirania paterna."
+    },
+    {
+        "id": 2742,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "Sua fedelha insolente!\nFilho só tem que calar a boca e obedecer ao pai, tá me ouvindo?!",
+        "verdict": "rewritten",
+        "rationale": "Ameaça autoritária desmedida exigindo obediência cega ('素直に聞いてりゃいいんだよ')."
+    },
+    {
+        "id": 2743,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Nunca mais!!\nToma essa!!",
+        "verdict": "rewritten",
+        "rationale": "Ruptura dramática de Misha disparando sua magia para se defender ('イヤだぁ!! ええいっ!!')."
+    },
+    {
+        "id": 2744,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "Guaaargh!!\nSua pestinha desgraçada...\nVocê disparou magia na cara do seu próprio pai?!",
+        "verdict": "rewritten",
+        "rationale": "Impacto físico violento da rajada mágica e indignação do agressor atordoado ('親に向かって魔法を撃ちやがったな')."
+    },
+    {
+        "id": 2745,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [144]",
+        "speaker_id": 144,
+        "curated_ptbr": "Você está deserdada!\nNem pense em pisar de volta aqui em casa\nenquanto não me trouxer mais bebida!!",
+        "verdict": "rewritten",
+        "rationale": "Maldição de deserdação clássica em anime/drama japonês ('勘当だ!')."
+    },
+    {
+        "id": 2746,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Já cansei. Eu nunca mais piso naquele inferno.",
+        "verdict": "rewritten",
+        "rationale": "Decisão amarga e ressentida de Misha abandonando o lar traumático ('あんな家帰らない')."
+    },
+    {
+        "id": 2747,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "Mas não é assim que as coisas funcionam, Misha...\nNós somos uma família, lembra?\nSe você não voltar, o papai vai ficar preocupado.",
+        "verdict": "rewritten",
+        "rationale": "Condescendência dolorosa e ciclo de co-dependência da irmã mais velha com o pai abusivo."
+    },
+    {
+        "id": 2748,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "Vamos arranjar um pouco de bebida e voltar para casa.\nOuvi dizer que chegaram uns barris importados nos armazéns do cais.\nQue tal darmos uma passada por lá?",
+        "verdict": "rewritten",
+        "rationale": "Tentativa desesperada de manter a paz doméstica buscando o álcool nos armazéns portuários."
+    },
+    {
+        "id": 2749,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Ai, mana...\nVocê faz todas as vontades desse homem sem reclamar...",
+        "verdict": "rewritten",
+        "rationale": "Lamentação de Misha sobre a submissão cega da irmã ('親父の言いなり')."
+    },
+    {
+        "id": 2750,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Lyner, me perdoa...\nNão queria que você visse essa vergonha toda lá em casa.\nEra exatamente por isso que eu relutava em voltar...",
+        "verdict": "rewritten",
+        "rationale": "Vergonha dolorosa de Misha diante do rapaz que ela ama, expondo suas feridas íntimas."
+    },
+    {
+        "id": 2751,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "Não se preocupe com isso, de verdade.",
+        "verdict": "rewritten",
+        "rationale": "Compaixão sincera e acolhimento imediato de Lyner para confortar a amiga."
+    },
+    {
+        "id": 2752,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "Ora... um amigo seu?\nBoa noite! Eu sou a irmã mais velha da Misha.",
+        "verdict": "rewritten",
+        "rationale": "Mudança súbita de tom da irmã para uma polidez graciosa ('ミシャの姉です')."
+    },
+    {
+        "id": 2753,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "Ah, muito prazer.",
+        "verdict": "rewritten",
+        "rationale": "Cumprimento cortês e espontâneo de Lyner ('あ、どうも')."
+    },
+    {
+        "id": 2754,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "...É o seu namorado?",
+        "verdict": "rewritten",
+        "rationale": "Insinuação maliciosa e direta da irmã mais velha com reticências provocativas."
+    },
+    {
+        "id": 2755,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "N-não tem nada disso, não viaja!!",
+        "verdict": "rewritten",
+        "rationale": "Pânico e rubor imediato de Misha negando o romance aos berros."
+    },
+    {
+        "id": 2756,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "É mesmo...? Sendo assim...\nnão gostaria de namorar comigo, rapaz...?",
+        "verdict": "rewritten",
+        "rationale": "Reviravolta cômica da irmã cantando Lyner descaradamente ('お付き合いしてもらえませんか')."
+    },
+    {
+        "id": 2757,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "C-como assim?!",
+        "verdict": "rewritten",
+        "rationale": "Engasgo e perplexidade total de Lyner com a proposta inusitada."
+    },
+    {
+        "id": 2758,
+        "event_file": "Event/622.evd",
+        "speaker": "Misha",
+        "speaker_id": 2,
+        "curated_ptbr": "Nem pensar!! Nem vem!!\nMana, que loucura é essa que deu na sua cabeça do nada?!",
+        "verdict": "rewritten",
+        "rationale": "Ciúme desmedido e possessivo de Misha em desespero cômico absoluto."
+    },
+    {
+        "id": 2759,
+        "event_file": "Event/622.evd",
+        "speaker": "Personagem [134]",
+        "speaker_id": 134,
+        "curated_ptbr": "Sei lá...\nNem eu sei explicar. Por que será que eu disse isso...?",
+        "verdict": "rewritten",
+        "rationale": "Confusão sonhadora da personagem da Cosmosfera sem entender a própria programação mental."
+    },
+    {
+        "id": 2760,
+        "event_file": "Event/622.evd",
+        "speaker": "Lyner",
+        "speaker_id": 1,
+        "curated_ptbr": "(...Será impressão minha ou já passei por essa mesma loucura antes...?)",
+        "verdict": "rewritten",
+        "rationale": "Comentário metalinguístico e cômico de Lyner lembrando-se de situações absurdas anteriores."
+    },
+    {
+        "id": 2761,
+        "event_file": "Event/622.evd",
+        "speaker": "Sistema / Caixa Narrativa / Tutorial",
+        "speaker_id": 14,
+        "curated_ptbr": "Você teceu a Magia Verde [Tiro Rajada]!",
+        "verdict": "rewritten",
+        "rationale": "Fórmula canônica de tecitura mágica na Cosmosfera ('Você teceu a Magia...') com nome oficial [Tiro Rajada] (爆風弾)."
+    }
+]
+
+# Validation
+input_path = r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\blocos\BLK_EVD_011_input.json"
+with open(input_path, "r", encoding="utf-8") as f:
+    input_data = json.load(f)
+
+input_map = {d["id"]: d for d in input_data["dialogues"]}
+
+hard_gate_errors = 0
+lint_warnings = 0
+
+for item in batch3_data:
+    orig = input_map[item["id"]]
+    trad = item["curated_ptbr"]
+    valido, erros = validador_editorial.validar_hard_gate(
+        original=orig["original_jp"],
+        traduzido=trad,
+        ignorar_quebras=True,
+        permitir_colisao_variavel=True
+    )
+    if not valido:
+        hard_gate_errors += len(erros)
+        for e in erros:
+            print(f"[HARD GATE ERROR] ID {item['id']}: {e}")
+
+    avisos = validador_editorial.auditar_estilo_editorial(trad)
+    if avisos:
+        lint_warnings += len(avisos)
+        for a in avisos:
+            print(f"[LINT WARNING] ID {item['id']}: {a}")
+
+print(f"Batch 3 ({len(batch3_data)} lines): Hard Gate Errors = {hard_gate_errors}, Lint Warnings = {lint_warnings}")
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch3_curated.json", "w", encoding="utf-8") as out:
+    json.dump(batch3_data, out, ensure_ascii=False, indent=2)
+print("Batch 3 saved successfully.")

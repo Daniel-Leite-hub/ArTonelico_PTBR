@@ -1,0 +1,152 @@
+import json
+import sys
+
+sys.path.insert(0, r"C:\Users\Daniel\.gemini\config\skills\curadoria-editorial-game-localization\scripts")
+import validador_editorial
+
+input_path = r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\blocos\BLK_EVD_015_input.json"
+output_path = r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\blocos\BLK_EVD_015_output.json"
+
+with open(input_path, "r", encoding="utf-8") as f:
+    input_data = json.load(f)
+
+input_map = {d["id"]: d for d in input_data["dialogues"]}
+
+batches = [
+    r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch1_015.json",
+    r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch2_015.json",
+    r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch3_015.json",
+    r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch4_015.json",
+    r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch5_015.json"
+]
+
+all_curated = []
+for b_path in batches:
+    with open(b_path, "r", encoding="utf-8") as f:
+        all_curated.extend(json.load(f))
+
+print(f"Loaded {len(all_curated)} curated items.")
+assert len(all_curated) == 256, f"Expected 256 items, got {len(all_curated)}"
+
+dialogues_output = []
+lines_rewritten = 0
+lines_approved_as_is = 0
+
+for item in all_curated:
+    d_id = item["id"]
+    orig = input_map[d_id]
+    curated_text = item["curated_ptbr"]
+    verdict = item["verdict"]
+    rationale = item["rationale"]
+    
+    if verdict == "rewritten":
+        lines_rewritten += 1
+        status_val = "rewritten"
+    else:
+        lines_approved_as_is += 1
+        status_val = "approved_as_is"
+        
+    d_obj = {
+        "id": d_id,
+        "event_file": orig["event_file"],
+        "speaker": orig["speaker"],
+        "original_jp": orig["original_jp"],
+        "original_en": orig["original_en"],
+        "current_ptbr": orig["current_ptbr"],
+        "curated_ptbr": curated_text,
+        "verdict": verdict,
+        "rationale": rationale,
+        "speaker_id": orig.get("speaker_id", 0),
+        "review_status": "approved",
+        "change_type": "curadoria_editorial_profunda",
+        "status": status_val,
+        "texto_ptbr_anterior": orig["current_ptbr"],
+        "texto_ptbr_curado": curated_text,
+        "justificativa": rationale,
+        "revised_ptbr": curated_text,
+        "notes_or_justification": rationale
+    }
+    dialogues_output.append(d_obj)
+
+scene_handoff = {
+    "resumo_dramatico": (
+        "O bloco narrativo BLK_EVD_015 (IDs 3751 a 4006, abrangendo 18 arquivos de eventos Event/*.evd) "
+        "aprofunda momentos cruciais da intimidade de Lyner com as três heroínas, a revelação conceitual do Campo Binário, "
+        "a introdução à arte de Grathmeld com Mestre Pochoma e o avanço silencioso da Guerra Santa de Falss pela Torre: "
+        "1. Na mente de Misha (Event/624.evd), o grupo busca saquê para a árvore cósmica e é desafiado pelo Espírito da Flor para um duelo de bebida; "
+        "sem tolerância ao álcool, consultam Hama, que explica o conceito psíquico de 'substituição simbólica' (代替), em que traumas reais "
+        "(como a relação secreta entre Leard, pai de Lyner, e Misha em Platina) são convertidos em metáforas digeríveis pela mente (como um pai bêbado); "
+        "2. No mergulho na mente de Shurelia (Event/780.evd), Lyner descobre um espaço etéreo e desolado; Shurelia revela que por ser uma Origin "
+        "não possui a 'psique mortal e humana' (生身の精神) necessária para formar uma Cosmosfera tradicional, de modo que aquele espaço é, na realidade, "
+        "o Campo Binário (バイナリ野) situado além da porta da Torre existente no íntimo das outras Reyvateils, permitindo a infiltração de vírus através dessa fronteira tênue; "
+        "Shurelia pede desculpas timidamente por seu mundo ser vazio e Lyner a tranquiliza com carinho sincero; "
+        "3. No Anteparo A1 da Torre (Event/840.evd), a segurança realiza a autenticação por Espectro FFT de Lyner Barsett e abre as comportas "
+        "mediante a entoação sagrada em Hymmnos (#0Ma paks ga exec guol A1 al noes.); "
+        "4. Na loja Guardião da Torre (Event/20.evd), Jack flerta galanteadoramente com a graciosa atendente Narl (Noelle), que veio da capital, "
+        "provocando suspiros até que um espirro estrondoso de Mestre Pochoma rompe o clima romântico e Jack empurra Lyner para aprender Grathmeld; "
+        "5. Para prosseguir no laboratório (Event/158.evd), Lyner descobre que precisa de um Yulastrino (guardado no templo de Em Pheyna) e um Gancho Invertido; "
+        "Krusche entrega o Cartão de Receita 'SínC: Herança da Supercivilização?' sob ameaça de morte caso o documento seja danificado; "
+        "6. No quarto da estalagem (Event/860.evd), Misha pede comovida para que Lyner realize a Instalação nela para que sua Magia da Canção fique forte o bastante "
+        "para protegê-lo; entrega o Cristal Grathnode [Canção +10%], pede que ele seja gentil e mostra a Porta de Instalação entre seus seios, gerando pânico virginal em Lyner "
+        "e indignação envergonhada em Misha, consolidando um dos momentos mais íntimos e canônicos do jogo; "
+        "7. Na Cosmosfera de Aurica (Event/775.evd), o hilário crossover de Atelier Marie coloca Lyner frente a frente com Kreis, o arrogante eterno primeiro colocado "
+        "da Academia de Alquimia de Salburg; Kreis esbraveja de ciúmes e desaforos ao saber do amor entre Lyner e Marlone (Marie), fornecendo inadvertidamente o item [Língua Insuportável]; "
+        "8. No quebra-cabeça de espelhos (Event/309.evd), Lyner, Aurica e Ayatane contornam a queda de uma placa hexagonal dinamitando os espelhos com bombas de fogo; "
+        "9. Shurelia presenteia Lyner com a Fita de Topologia (Topology Ribbon, Event/884.evd), artefato poderoso para Reyvateils que acelera o Burst e protege em instalações arriscadas, "
+        "gerando choque cômico quando Lyner descobre que a deusa pretendia fazê-lo usar a fita feminina na cabeça sob o pretexto de ser vanguarda da alta moda; "
+        "10. No Beco Vagalume (Event/87.evd), Misha apresenta a espetacular cidade artificial construída até o último parafuso pela Tenba sobre o gerador de força, "
+        "contrastando a voracidade de inovação e o espírito pioneiro do Mundo Inferior com a estagnação aristocrática de Platina; "
+        "11. Radolf e Ayatane se reúnem com Lyner (Event/368.evd) após o resgate de Aurica e a confirmação de que o Bispo Falss foi contaminado pelo vírus, marchando juntos para reagrupar forças; "
+        "12. Na loja Guardião da Torre (Event/32.evd), Jack repreende a ignorância de Lyner sobre os Melders e Mestre Pochoma oferece-se bondosamente para ensinar o Grathmeld de graça; "
+        "13. Na mente de Aurica (Event/735.evd), Lyner encontra a pequena Aurica tímida do orfanato e é surpreendido pela versão adulta de Aurica vestida de samurai afirmando ser 'Donsuke', "
+        "levando o guardião Don Leon a alertar que a revelação de sua verdadeira identidade no Nível 3 é apenas questão de tempo; "
+        "14. E no evento final (Event/302.evd), sentinelas Teru abordam Lyner e Radolf mas os liberam por serem aliados do Patriarca Flute, revelando que uma enorme multidão de humanos "
+        "está escalando a Torre em segredo, acendendo o sinal de alarme em Radolf sobre o avanço letal da Guerra Santa declarada por Falss."
+    ),
+    "decisoes_terminologicas": {
+        "Substituição simbólica (代替 - Daitai)": "substituição simbólica (mecanismo psíquico na Cosmosfera onde traumas reais são reescritos em metáforas)",
+        "Binary Field (バイナリ野)": "Campo Binário (espaço de dados e fônica digital da Torre além da porta mental das Reyvateils)",
+        "Bare spirit (生身の精神)": "psique mortal e humana (a consciência carnal/biológica exclusiva de Reyvateils não-Origin)",
+        "A1 Dividing Gate (A1隔壁)": "Anteparo A1 (porta de alta segurança da Torre operada por Espectro FFT e Hymmnos)",
+        "#0Ma paks ga exec guol A1 al noes.": "código sagrado ancestral em Hymmnos integralmente restaurado com tag #0",
+        "FFT Spectrum (FFTスペクトラム認証)": "Espectro FFT (sistema biométrico sonoro da Torre)",
+        "Tower Guardian (タワーガーディアン)": "Guardião da Torre (empório e oficina de Grathmeld em Karacol / Platina)",
+        "Narl (ナール)": "Narl (atendente da loja Guardião da Torre, neta de Mestre Pochoma, chamada de Noelle na dublagem ocidental)",
+        "Master Pochoma (ポチョマー先生)": "Mestre Pochoma (mestre lendário da síntese Grathmeld e curandeiro rural)",
+        "Yulastrino (ユーラストリノ)": "Yulastrino (artefato sagrado guardado no templo de Em Pheyna)",
+        "Invert Hook (インバートフック)": "Gancho Invertido (ferramenta de ancoragem e escalada da Primeira Era)",
+        "Recipe Card Synthesis C: Heritage of Super Civilization? (合C:?超文明の遺産?)": "Cartão de Receita [SínC: Herança da Supercivilização?]",
+        "Install / Installer Port (インストール / インストールポイント)": "Instalar / Instalação / Porta de Instalação (conector de fônica no corpo da Reyvateil)",
+        "Grathnode Crystal 10% Song Increase (グラスノ結晶『詩1割増サービス』)": "Cristal Grathnode [Canção +10%]",
+        "Foul Mouth (憎たらしい舌)": "Língua Insuportável (item de busca de Atelier Marie entregue pelo arrogante Kreis em paridade com BLK_EVD_007)",
+        "Topology Ribbon (トポロジーリボン)": "Fita de Topologia (acessório criado por Shurelia que aprimora o poder de Reyvateils e a velocidade de Burst)",
+        "Burst Speed (バーストスピード)": "velocidade de Burst (velocidade de carga do efeito de ressonância da canção)",
+        "Firefly Alley (ほたる横丁)": "Beco Vagalume (metrópole industrial e ilha artificial inteiramente concebida pela Tenba)",
+        "Donsuke (どんすけ)": "Donsuke (persona cômica de samurai incorporada por Aurica na Cosmosfera em alusão a Don Leon)"
+    },
+    "alertas_para_proximo_bloco": (
+        "1. A marcha das tropas humanas pela Torre (descoberta pelas sentinelas Teru) confirma que a conspiração de Falss está em andamento veloz, preparando o massacre no Altar dos Apóstolos. "
+        "2. Com o Cartão de Receita e a necessidade de chegar ao laboratório, o grupo precisará buscar o Yulastrino no templo de Em Pheyna para forjar o Gancho Invertido. "
+        "3. Na Cosmosfera de Aurica, a colisão de identidades entre a pequena Aurica e Donsuke marca a preparação final para a quebra de selo do Nível 3, onde Don Leon revelará o Código Hymmnos. "
+        "4. Preservar o rigor absoluto da Tríade de Idiomas, a paridade de controles e o padrão estrito de Hard Gate sem pontuações órfãs ou quebras indevidas."
+    )
+}
+
+output_data = {
+    "block_id": "BLK_EVD_015",
+    "axis_id": "AXIS_3",
+    "axis_name": "HISTÓRIA E EVENTOS",
+    "total_lines": len(dialogues_output),
+    "lines_rewritten": lines_rewritten,
+    "lines_approved_as_is": lines_approved_as_is,
+    "dialogues": dialogues_output,
+    "scene_handoff": scene_handoff
+}
+
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+print(f"BLK_EVD_015_output.json generated successfully!")
+print(f"Total lines: {len(dialogues_output)}")
+print(f"Rewritten: {lines_rewritten}")
+print(f"Approved as is: {lines_approved_as_is}")

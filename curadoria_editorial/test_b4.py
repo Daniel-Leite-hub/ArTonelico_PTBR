@@ -1,0 +1,384 @@
+import json
+import sys
+
+sys.path.insert(0, r"C:\Users\Daniel\.gemini\config\skills\curadoria-editorial-game-localization\scripts")
+import validador_editorial
+
+b4 = [
+    {
+        "id": 3602,
+        "curated_ptbr": "Lyner, você nunca achou as batalhas puxadas demais?",
+        "verdict": "rewritten",
+        "rationale": "Dicção serena e afetuosa de Shurelia preocupando-se com Lyner."
+    },
+    {
+        "id": 3603,
+        "curated_ptbr": "Hã? É, bem... Às vezes passo por uns apertos, sim...",
+        "verdict": "rewritten",
+        "rationale": "Franqueza humilde e natural de Lyner admitindo o cansaço."
+    },
+    {
+        "id": 3604,
+        "curated_ptbr": "Sendo assim, vou confeccionar algo especial para você.",
+        "verdict": "rewritten",
+        "rationale": "Resgata a habilidade ancestral de síntese de Shurelia com tom gracioso."
+    },
+    {
+        "id": 3605,
+        "curated_ptbr": "Seria algum item para usar durante os combates?",
+        "verdict": "rewritten",
+        "rationale": "Correção: 道具 é item/ferramenta, e não arma (weapon) como NISA traduziu erroneamente."
+    },
+    {
+        "id": 3606,
+        "curated_ptbr": "Sim! É um artefato bem chamativo,\ncapaz de causar um dano estrondoso de uma só vez.",
+        "verdict": "rewritten",
+        "rationale": "Entusiasmo ingênuo de Shurelia descrevendo sua criação espalhafatosa (派手な道具)."
+    },
+    {
+        "id": 3607,
+        "curated_ptbr": "Se existe algo assim, seria uma ajuda e tanto!\nPor favor, eu aceito com certeza.",
+        "verdict": "rewritten",
+        "rationale": "Entusiasmo prático de Lyner (頼もしい限りです)."
+    },
+    {
+        "id": 3608,
+        "curated_ptbr": "Combinado!\nVou pegar alguns dos seus materiais emprestados, está bem?",
+        "verdict": "rewritten",
+        "rationale": "Doçura maternal e descontraída de Shurelia."
+    },
+    {
+        "id": 3609,
+        "curated_ptbr": "Para ser algo tão chamativo assim,\nsó pode ser uma bomba, não é...?",
+        "verdict": "rewritten",
+        "rationale": "Eufonia de dedução lógica de Lyner (やっぱり爆弾かな)."
+    },
+    {
+        "id": 3610,
+        "curated_ptbr": "Prontinho! Um item valioso para as batalhas:\no Coelho Mecânico!",
+        "verdict": "rewritten",
+        "rationale": "Apresentação orgulhosa de Shurelia introduzindo o nome do item traduzido com charme (めかうさぎ -> Coelho Mecânico)."
+    },
+    {
+        "id": 3611,
+        "curated_ptbr": "C-coelho?!",
+        "verdict": "rewritten",
+        "rationale": "Choque gaguejado de Lyner diante do formato do explosivo."
+    },
+    {
+        "id": 3612,
+        "curated_ptbr": "Coelho Mecânico!\nOu, para falar de forma mais simples: uma bomba em forma de coelho.",
+        "verdict": "rewritten",
+        "rationale": "Clareza cômica impecável de Shurelia (ウサギ爆弾)."
+    },
+    {
+        "id": 3613,
+        "curated_ptbr": "...É de um perigo aterrador,\nque não combina em nada com essa carinha tão fofa...",
+        "verdict": "rewritten",
+        "rationale": "Contraste hilário entre a fofura e o poder destrutivo."
+    },
+    {
+        "id": 3614,
+        "curated_ptbr": "Mas não é ótimo para pegar o inimigo de surpresa?",
+        "verdict": "rewritten",
+        "rationale": "Astúcia inocente de Shurelia (油断させるのにはちょうど良いでしょ?)."
+    },
+    {
+        "id": 3615,
+        "curated_ptbr": "E além do mais, em vez de carregar um explosivo com cara de bomba,\nisso aqui nos deixa muito mais tranquilos psicologicamente...",
+        "verdict": "rewritten",
+        "rationale": "Argumento hilariamente absurdo de Shurelia (気分的に落ち着く)."
+    },
+    {
+        "id": 3616,
+        "curated_ptbr": "É... É mesmo...?",
+        "verdict": "rewritten",
+        "rationale": "Hesitação desconcertada de Lyner."
+    },
+    {
+        "id": 3617,
+        "curated_ptbr": "É exatamente assim!",
+        "verdict": "rewritten",
+        "rationale": "Firmeza serena e convicta da Deusa de Elemia."
+    },
+    {
+        "id": 3618,
+        "curated_ptbr": "Mas isso é realmente potente?\nOlhando de fora, não parece nem de longe...",
+        "verdict": "rewritten",
+        "rationale": "Ceticismo justificável de Lyner avaliando o bichinho de brinquedo."
+    },
+    {
+        "id": 3619,
+        "curated_ptbr": "Ele deflagra uma detonação massiva que engole todos os inimigos\nem chamas infernais, portanto manuseie com bastante cuidado.",
+        "verdict": "rewritten",
+        "rationale": "Descrição técnica letal e apocalíptica dita com extrema tranquilidade (業火に包む威力)."
+    },
+    {
+        "id": 3620,
+        "curated_ptbr": "...A aparência e a letalidade não batem em nada, hein...",
+        "verdict": "rewritten",
+        "rationale": "Comentário resignado e perplexo de Lyner."
+    },
+    {
+        "id": 3621,
+        "curated_ptbr": "Já disse que é para fazer o inimigo baixar a guarda!\nNão tem nenhum outro motivo por trás disso, ué.",
+        "verdict": "rewritten",
+        "rationale": "Birrinha fofa e defensiva de Shurelia (油断させるためだってば)."
+    },
+    {
+        "id": 3622,
+        "curated_ptbr": "...Bom, já entendi perfeitamente\nque é uma bomba com carinha de anjo.",
+        "verdict": "rewritten",
+        "rationale": "Concordância bem-humorada de Lyner."
+    },
+    {
+        "id": 3623,
+        "curated_ptbr": "Ah, não é só a carinha, não!\nSe você chacoalhar, veja só: ele chia todo dengoso: “Usa-usa♪”.",
+        "verdict": "rewritten",
+        "rationale": "Manteve o som icônico e fofo em japonês com nota de chocalho dengoso."
+    },
+    {
+        "id": 3624,
+        "curated_ptbr": "...Por favor, vamos parar de colocar funções inúteis\nem armas de destruição em massa? Eu te imploro...",
+        "verdict": "rewritten",
+        "rationale": "Apelo cômico desesperado de Lyner pelo bom senso da inventora."
+    },
+    {
+        "id": 3625,
+        "curated_ptbr": "Mas garanto que o poder é supremo!",
+        "verdict": "rewritten",
+        "rationale": "Fiança absoluta de Shurelia sobre sua criação (強さは保障するよ)."
+    },
+    {
+        "id": 3626,
+        "curated_ptbr": "Quando estiver em apuros, experimente arremessá-lo.\nTenho certeza de que ele protegerá você, Lyner.",
+        "verdict": "rewritten",
+        "rationale": "Carinho e bênção protetora de Shurelia."
+    },
+    {
+        "id": 3627,
+        "curated_ptbr": "Ser salvo por uma coisinha tão fofa assim...\nÉ meio humilhante para um guerreiro...",
+        "verdict": "rewritten",
+        "rationale": "Orgulho ferido de cavaleiro expresso com humor (微妙に情けないですね)."
+    },
+    {
+        "id": 3628,
+        "curated_ptbr": "Obteve o item Coelho Mecânico!\nObteve a ficha de receita Síntese C: Coelho Mecânico!",
+        "verdict": "rewritten",
+        "rationale": "Padronização canônica de obtenção de receitas e itens, sem conflito de colchetes de controle."
+    },
+    {
+        "id": 3629,
+        "curated_ptbr": "Lyner, tem um instante?",
+        "verdict": "rewritten",
+        "rationale": "Transição suave e cortês para conversa particular."
+    },
+    {
+        "id": 3630,
+        "curated_ptbr": "Don Leon!\nDon Leon, você tá aí?!",
+        "verdict": "rewritten",
+        "rationale": "Chamado urgente de Lyner procurando o guardião samurai de pelúcia."
+    },
+    {
+        "id": 3631,
+        "curated_ptbr": "Contenha o alarido! Este servo samurai se encontra aqui.",
+        "verdict": "rewritten",
+        "rationale": "Dicção arcaica majestosa e caricata do samurai de pelúcia (騒ぐな。拙者はここにいる)."
+    },
+    {
+        "id": 3632,
+        "curated_ptbr": "Escuta, Don Leon! Me revele o tal Código Hymmnos da Aurica.\nVocê sabe qual é, não sabe?",
+        "verdict": "rewritten",
+        "rationale": "Termo sagrado Código Hymmnos aplicado com precisão canônica."
+    },
+    {
+        "id": 3633,
+        "curated_ptbr": "O-o que significa essa petulância repentina?!\nÉ evidente que este servo o conhece, mas...",
+        "verdict": "rewritten",
+        "rationale": "Soberba ultrajada e pose samurai de Don Leon (何だ唐突に)."
+    },
+    {
+        "id": 3634,
+        "curated_ptbr": "Eu te imploro! Me conte logo!",
+        "verdict": "rewritten",
+        "rationale": "Desespero sincero de Lyner insistindo na resposta."
+    },
+    {
+        "id": 3635,
+        "curated_ptbr": "Insolente imbecil!! Como ousa supor que este nobre guardião revelaria\ntal segredo a quem sequer compreende a essência de um Código Hymmnos?!",
+        "verdict": "rewritten",
+        "rationale": "Reprimenda épica e trovejante de Don Leon (馬鹿者!!), superando a versão podada do inglês."
+    },
+    {
+        "id": 3636,
+        "curated_ptbr": "O Código representa a chave mestra do próprio coração da Senhorita Aurica!\nJamais confiaria um tesouro sagrado desses a um patife insolente feito você!",
+        "verdict": "rewritten",
+        "rationale": "Fidelidade poética e lealdade canônica de Don Leon pela sua mestra (オリカさんの「心の鍵」/ 信用に足らない貴様)."
+    },
+    {
+        "id": 3637,
+        "curated_ptbr": "Mas então... O que eu preciso fazer para você me contar...?",
+        "verdict": "rewritten",
+        "rationale": "Humildade pragmática de Lyner buscando uma condição."
+    },
+    {
+        "id": 3638,
+        "curated_ptbr": "Primeiro deve abrir verdadeiramente seu coração à Senhorita Aurica!\nQuando atingir o Nível 3 ou superior da Cosmosfera dela,\ntalvez este servo veja alguma virtude em vós.",
+        "verdict": "rewritten",
+        "rationale": "Exigência do guardião integrando termos canônicos (Nível 3 / Cosmosfera) e tom cerimonioso."
+    },
+    {
+        "id": 3639,
+        "curated_ptbr": "Retorne a questionar quando alcançar o Nível 3.\nDependendo do humor deste guerreiro naquele instante, poderei considerar revelar-lhe algo.",
+        "verdict": "rewritten",
+        "rationale": "Arrogância pomposa adorável de Don Leon mantida no mais alto nível estilístico."
+    },
+    {
+        "id": 3640,
+        "curated_ptbr": "...Ah, Lyner!\nUma boa noite para você!",
+        "verdict": "rewritten",
+        "rationale": "Saudação meiga e etérea da criatura floral."
+    },
+    {
+        "id": 3641,
+        "curated_ptbr": "Você e a florzinha já se tornaram grandes amigos, não é?\nVeio até aqui para regá-la de novo?",
+        "verdict": "rewritten",
+        "rationale": "Tom doce e afável da guardiã espiritual da flor."
+    },
+    {
+        "id": 3642,
+        "curated_ptbr": "Para fazer isso, precisará de 1.000 DP.\nDeseja regar a planta agora?",
+        "verdict": "rewritten",
+        "rationale": "Instrução de sistema de Cosmosfera com DP em caixa de diálogo."
+    },
+    {
+        "id": 3643,
+        "curated_ptbr": "Uaaah?!",
+        "verdict": "rewritten",
+        "rationale": "Espanto estarrecido de Lyner com o surto de crescimento instantâneo da planta."
+    },
+    {
+        "id": 3644,
+        "curated_ptbr": "Puxa vida! A florzinha cresceu ainda mais!",
+        "verdict": "rewritten",
+        "rationale": "Encanto alegre e descontraído da fada/espírito."
+    },
+    {
+        "id": 3645,
+        "curated_ptbr": "...Fl-fl-flor?! Dá para chamar isso de flor?!\nIsso já virou um monstro de árvore gigante!!",
+        "verdict": "rewritten",
+        "rationale": "Gagueira hilária de choque absoluto de Lyner (おはおはおは...お花って...)."
+    },
+    {
+        "id": 3646,
+        "curated_ptbr": "Ora, não se apegue a detalhes bobos!",
+        "verdict": "rewritten",
+        "rationale": "Desdém cômico da fada varrendo o absurdo para debaixo do tapete."
+    },
+    {
+        "id": 3647,
+        "curated_ptbr": "Bobos nada, olha o tamanho dessa coisa!!",
+        "verdict": "rewritten",
+        "rationale": "Réplica furiosa e indignada de Lyner (細かくねーって!!)."
+    },
+    {
+        "id": 3648,
+        "curated_ptbr": "Mas é verdade que ela cresceu muito além de qualquer expectativa.\nTudo isso graças ao carinho e amor que o Lyner dedicou a ela.",
+        "verdict": "rewritten",
+        "rationale": "Elogio afetuoso destacando o vínculo mental gerado pelos pontos de mergulho."
+    },
+    {
+        "id": 3649,
+        "curated_ptbr": "Que tipo de amor é capaz de transformar\numa florzinha num tronco colossal desses...?",
+        "verdict": "rewritten",
+        "rationale": "Reflexão cética e desconcertada de Lyner (花を大木にする愛情って一体...)."
+    },
+    {
+        "id": 3650,
+        "curated_ptbr": "Lyner... Misha...\nMuito obrigada por cuidarem de mim com tanto desvelo até aqui.",
+        "verdict": "rewritten",
+        "rationale": "Gratidão etérea e graciosa da entidade botânica consciente."
+    },
+    {
+        "id": 3651,
+        "curated_ptbr": "Agora atingi a plenitude do meu crescimento.\nChegou o momento de retribuir todo o afeto que me deram.",
+        "verdict": "rewritten",
+        "rationale": "Nobreza mística da oferenda de poder."
+    },
+    {
+        "id": 3652,
+        "curated_ptbr": "Por favor, invoque a minha essência como Magia da Misha.\nTenho certeza de que poderei ser de grande valia nas batalhas.",
+        "verdict": "rewritten",
+        "rationale": "Transformação da entidade da Cosmosfera em feitiço de combate da Reyvateil."
+    },
+    {
+        "id": 3653,
+        "curated_ptbr": "Sério mesmo?! Que maravilha!",
+        "verdict": "rewritten",
+        "rationale": "Comemoração alegre da fadinha."
+    },
+    {
+        "id": 3654,
+        "curated_ptbr": "Que notícia fantástica.",
+        "verdict": "rewritten",
+        "rationale": "Calor fraternal sincero de Lyner."
+    },
+    {
+        "id": 3655,
+        "curated_ptbr": "Tecelou a Magia Vermelha Flor!",
+        "verdict": "rewritten",
+        "rationale": "CORREÇÃO POÉTICA SAGRADA: 紡ぎ出した é tecer/compor/dar à luz a Magia da Canção, corrigindo a sintaxe grotesca anterior ('Você criou a [Flor] Magia Vermelha!')."
+    },
+    {
+        "id": 3656,
+        "curated_ptbr": "Puxa, parece que ainda falta água para regar.",
+        "verdict": "rewritten",
+        "rationale": "Alerta de recursos insuficientes na mente."
+    },
+    {
+        "id": 3657,
+        "curated_ptbr": "Você precisa dedicar mais carinho a ela, ouviu?\nVolte aqui da próxima vez para tentar de novo!",
+        "verdict": "rewritten",
+        "rationale": "Incentivo simpático da guardiã floral."
+    },
+    {
+        "id": 3658,
+        "curated_ptbr": "Entendi. Então conto com você numa próxima oportunidade!",
+        "verdict": "rewritten",
+        "rationale": "Despedida cordial e leve."
+    }
+]
+
+# Load input for original comparison
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\blocos\BLK_EVD_014_input.json", "r", encoding="utf-8") as f:
+    input_data = json.load(f)
+inp_map = {d["id"]: d for d in input_data["dialogues"]}
+
+hard_gate_errors = 0
+lint_warnings = 0
+
+for item in b4:
+    orig = inp_map[item["id"]]
+    valido, erros = validador_editorial.validar_hard_gate(
+        original=orig["original_jp"],
+        traduzido=item["curated_ptbr"],
+        ignorar_quebras=True,
+        permitir_colisao_variavel=True
+    )
+    if not valido:
+        for e in erros:
+            print(f"[HARD GATE] ID {item['id']}: {e}")
+            hard_gate_errors += 1
+    avisos = validador_editorial.auditar_estilo_editorial(item["curated_ptbr"])
+    if avisos:
+        for a in avisos:
+            print(f"[LINT] ID {item['id']}: {a}")
+            lint_warnings += 1
+
+print(f"Batch 4 check complete: {len(b4)} items, {hard_gate_errors} hard gate errors, {lint_warnings} lint warnings.")
+
+if hard_gate_errors == 0 and lint_warnings == 0:
+    out_file = r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch4_014.json"
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(b4, f, indent=2, ensure_ascii=False)
+    print(f"Saved {out_file}")

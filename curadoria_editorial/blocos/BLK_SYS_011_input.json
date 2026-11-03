@@ -1,0 +1,3085 @@
+{
+  "block_id": "BLK_SYS_011",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Executable Strings",
+  "line_count": 288,
+  "id_range": [
+    23205,
+    23492
+  ],
+  "scene_handoff_received": {
+    "last_scene_id": "BLK_SYS_010",
+    "last_line_id": 23204,
+    "location_and_situation": "Núcleo Sistêmico Parte 10 (Parâmetros de Equipamento de HP/MP, Dano Direto, Overclock, Resistência GD, BS, Influência, Selos Dracônicos 100%, e Catálogo Completo das Magias da Canção de Aurica em SLUS/TEXT/0113 a 0124) concluído e 100% auditado contra o Shift-JIS de memória física.",
+    "emotional_state": "Sistêmico e Lírico / Excelência absoluta na eliminação de calques culinários ('Spoonful of MP', 'Cup of MP'), erradicação de 100 estouros de bytes, restauração do Coelho do Relógio e das narrativas íntimas de Lyner dentro da Cosmosfera de Aurica.",
+    "active_hooks": [
+      "Transicionar para BLK_SYS_011 ou próximo eixo narrativo/sistêmico conforme o Scene Breakdown Ledger."
+    ]
+  },
+  "active_cast": {},
+  "matched_terms": {
+    "Reyvateil": {
+      "pt": "Reyvateil",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Raça / Classe",
+      "note": "Donzelas cantoras capazes de sintonizar a Torre e converter canções em poder (Magia da Canção). Plural: Reyvateils."
+    },
+    "Song Magic": {
+      "pt": "Magia da Canção",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Combate / Magia",
+      "note": "Poder conjurado pelas Reyvateils. A canção cresce em potência enquanto elas cantam (Harmonics/Burst)."
+    },
+    "Burst": {
+      "pt": "Burst",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Combate / HUD",
+      "note": "Porcentagem acumulada de poder da Magia da Canção antes de ser descarregada."
+    },
+    "Mind Guardian": {
+      "pt": "Guardião Mental",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Cosmosfera",
+      "note": "Entidade criada pelo subconsciente da Reyvateil para proteger sua psique (ex.: Don Leon para Aurica)."
+    },
+    "Don Leon": {
+      "pt": "Don Leon",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Personagem / Cosmosfera",
+      "note": "Em japonês 'どんすけ' (Donsuke). Guardião de pelúcia/samurai da Cosmosfera de Aurica."
+    },
+    "Child of Light": {
+      "pt": "Criança da Luz",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Título / Personagem",
+      "note": "Alcunha mística de Kanade (JP 光の御子), a terceira filha androide de manutenção e guardiã da Plasma Bell."
+    },
+    "A.B.R.": {
+      "pt": "A.B.R.",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Bestiário / Mecânico",
+      "note": "Guardião autônomo tripartite da Torre de Elemia composto pelos módulos α, β e γ (JP ABR)."
+    },
+    "ELMA-DS": {
+      "pt": "ELMA-DS",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Inimigo / Vírus",
+      "note": "Forma viral malévola e negra que corrompe e replica o guardião autônomo ELMA criado por Shurelia (JP ELMAーDS)."
+    },
+    "ELMA": {
+      "pt": "ELMA",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Guardião / Mecânico",
+      "note": "Guardião original de base branca criado por Shurelia para proteger os santuários da Torre (JP エルマ / ELMA)."
+    },
+    "Bishop Falss": {
+      "pt": "Bispo Falss",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Personagem / Clero",
+      "note": "Bispo da Igreja de Elemia e guardião do santuário da Tribo Teru em Platina (JP ファルス司祭)."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 23193,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "ミシャの力を吸って逃げた掃除機猫を追いかけるため、そしてミシャを助けるために紡ぎだした魔法だ",
+      "original_en": "In order to rescue Misha, Aurica crafted this magic to chase the vacuum cat that took Misha’s power.",
+      "text_ptbr": "Magia tecida para perseguir o gato-aspirador que sugou os poderes de Misha e resgatar nossa amiga."
+    },
+    {
+      "id": 23194,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "クリニクル",
+      "original_en": "Chronicle",
+      "text_ptbr": "Chronicle"
+    },
+    {
+      "id": 23195,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "状態異常を受けたときに治療+HP回復",
+      "original_en": "Cure + HP Recovery when status is affected.",
+      "text_ptbr": "Cura anomalias de estado e restaura o HP."
+    },
+    {
+      "id": 23196,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "回復しつつ状態保持",
+      "original_en": "Heal while maintaining health",
+      "text_ptbr": "Cura e previne anomalias"
+    },
+    {
+      "id": 23197,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "セラフィフライアで壊れた精神世界を治すために、天使と悪魔のオリカが力を合わせて紡ぎだした魔法だ",
+      "original_en": "To fix the soulspace destroyed by Seraphiflyer, Angel Aurica and Devil Aurica worked together to craft this magic.",
+      "text_ptbr": "Para salvar a Cosmosfera após o Seraphy-Flyer, Aurica Anjo e Aurica Demônio uniram forças."
+    },
+    {
+      "id": 23198,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "マジQ",
+      "original_en": "Magi Q",
+      "text_ptbr": "Magi Q"
+    },
+    {
+      "id": 23199,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "敵からのダメージ量を軽減する",
+      "original_en": "Lessens damage taken from the enemy.",
+      "text_ptbr": "Atenua o dano recebido de inimigos."
+    },
+    {
+      "id": 23200,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "ダメージ軽減",
+      "original_en": "Lessen Damage",
+      "text_ptbr": "Atenua Dano"
+    },
+    {
+      "id": 23201,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "掃除機猫と戦った時に手に入れた魔法で、オリカが自分の力を否定しなかったからこそ紡ぎ出せたものだ",
+      "original_en": "Magic obtained when fighting the vacuum cat. Aurica was able to get it because she didn’t deny her own power.",
+      "text_ptbr": "Gesta na luta com o gato-aspirador. Aurica a teceu por não renegar seu próprio poder."
+    },
+    {
+      "id": 23202,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "何が起こるかわからない",
+      "original_en": "Don’t know what will happen",
+      "text_ptbr": "Efeito imprevisível."
+    },
+    {
+      "id": 23203,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "オリカの精神世界を全て見終わった後に紡ぎだされたものだが、何が起こるのかはまったくの不明だ",
+      "original_en": "This one was crafted after seeing all of Aurica’s soulspace. I have no idea what will happen.",
+      "text_ptbr": "Tecida após ver toda a Cosmosfera de Aurica. O que ela faz é mistério total."
+    },
+    {
+      "id": 23204,
+      "event_file": "SLUS/TEXT/0124",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "ソニック弾",
+      "original_en": "Sonic Shot",
+      "text_ptbr": "Tiro Sônico"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 23205,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "魔法の弾を目標にぶつけて破壊する",
+      "original_en": "Blast a shot of magic at the target to destroy it.",
+      "current_ptbr": "Dispara magia para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23206,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "オリカの精神世界に行く前から使えていた魔法。障害物などを壊してくれるのに便利なものだ",
+      "original_en": "Aurica was able to use this magic before visiting her soulspace. It’s useful to break obstacles.",
+      "current_ptbr": "Aurica já a usava antes de visitarmos seu Espaço da Alma. É útil para destruir obstáculos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23207,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火炎弾",
+      "original_en": "Fire Shot",
+      "current_ptbr": "Tiro de fogo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23208,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火の弾を目標にぶつけて破壊する",
+      "original_en": "Blast a shot of fire at the target to destroy it.",
+      "current_ptbr": "Dispara fogo para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23209,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "炎の悪魔を退治するために初めて作った魔法。笑われるからいやというオリカを説得するのは疲れたよ...",
+      "original_en": "The first magic made to rid the fire devil. I got so tired of trying to convince Aurica that I wouldn’t laugh.",
+      "current_ptbr": "Primeira magia feita para eliminar o demônio de fogo. Cansei de convencer Aurica de que não riria dela.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23210,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "樹氷弾",
+      "original_en": "Ice Shot",
+      "current_ptbr": "Tiro de gelo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23211,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷の弾を相手にぶつけて破壊する",
+      "original_en": "Blast a shot of ice at the target to destroy it.",
+      "current_ptbr": "Dispara gelo para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23212,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どんすけオリカが使った魔法。問答無用でファルス司祭を凍らせていた。",
+      "original_en": "Magic that the Don Leon-Aurica was using. She froze Bishop Falss without any hesitation.",
+      "current_ptbr": "Magia de Aurica Don Leon. Ela congelou o bispo Falss sem hesitar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23213,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "雷弾",
+      "original_en": "Thunder Shot",
+      "current_ptbr": "Tiro elétrico",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23214,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "雷の弾を目標にぶつけて破壊する",
+      "original_en": "Blast a shot of lightning at the target to destroy it.",
+      "current_ptbr": "Dispara um raio para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23215,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "正直、どうして手に入ったのかはよくわからないが、俺はこの魔法を鎖で縛られたうえに食らわされたんだ...",
+      "original_en": "Honestly, I don’t know how she got it. But I got hit with this magic while being tied by chains...",
+      "current_ptbr": "Não sei como a conseguiu. Mas fui atingido por ela enquanto estava acorrentado...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23216,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆風弾",
+      "original_en": "Gale Shot",
+      "current_ptbr": "Tiro de vento",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23217,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆風の弾を目標にぶつけて破壊する",
+      "original_en": "Blast a shot of wind at the target to destroy it.",
+      "current_ptbr": "Dispara vento para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23218,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "オリカが最初から使うことのできる、数少ない魔法のひとつ。爆風で障害物などを壊すことができる",
+      "original_en": "One of the few magics that Aurica is able to use from the beginning. It can destroy obstacles with an explosion.",
+      "current_ptbr": "Uma das magias que Aurica já conhecia. Destrói obstáculos com uma explosão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23219,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アナライザ",
+      "original_en": "Analyzer",
+      "current_ptbr": "Analisador",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23220,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フィールド上で爆破できる目標の耐久力を表示",
+      "original_en": "Displays the durability of the destroyable target on the field.",
+      "current_ptbr": "Mostra a resistência dos alvos destrutíveis no cenário.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23221,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "オリカが病気のクレアさんを助けたいと願い、悪魔のオリカを退けたことにより手に入れた魔法だ",
+      "original_en": "Aurica wished to help Miss Claire, and rid the Devil Aurica, allowing her to get this magic.",
+      "current_ptbr": "Aurica a obteve ao desejar ajudar Claire e se livrar de Aurica Demônio.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23222,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "気の玉",
+      "original_en": "Energy Ball",
+      "current_ptbr": "Orbe energ.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23223,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "気を固めた玉を叩きつけてダメージを与える",
+      "original_en": "Damage the enemy by throwing a ball of energy.",
+      "current_ptbr": "Atinge o inimigo com uma esfera de energia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23224,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャが最初から使えた攻撃魔法。本人は、魔法ではなくて気だ、と言い張っているが似たようなものでは?",
+      "original_en": "Misha knew how to use this attack magic from the start. She says it’s energy, not magic. Isn’t it the same thing?",
+      "current_ptbr": "Misha já conhecia esta magia. Diz que é energia, não magia. Não dá no mesmo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23225,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "樹氷玉",
+      "original_en": "Glacial Ball",
+      "current_ptbr": "Esfera glacial",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23226,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷の玉を相手に叩きつけてダメージを与える",
+      "original_en": "Damage the enemy by throwing a ball of ice.",
+      "current_ptbr": "Atinge o inimigo com uma bola de gelo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23227,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷の精を助け、もう一度雪を降らせて上げたお礼として手に入れた魔法",
+      "original_en": "The ice spirit gave this to Misha as a gift of appreciation for rescuing it and letting it snow again.",
+      "current_ptbr": "O espírito do gelo a deu a Misha por resgatá-lo e permitir que nevasse outra vez.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23228,
+      "event_file": "SLUS/TEXT/0125",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "疾風迅雷",
+      "original_en": "Thunderclap",
+      "current_ptbr": "Trovoada",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23229,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "強力な雷の一撃で相手を爆発させる",
+      "original_en": "A strong lightning bolt will make the enemy explode.",
+      "current_ptbr": "Um raio poderoso faz o inimigo explodir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23230,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "心の護であるハマを失い、世界を破壊するために紡ぎだされた魔法。",
+      "original_en": "This magic was crafted to destroy the world when Hama, her mind guardian, was lost.",
+      "current_ptbr": "Criada para destruir o mundo quando Hama, sua Guardiã da Mente, desapareceu.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23231,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "雫神",
+      "original_en": "Tear God",
+      "current_ptbr": "Lágrima divina",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23232,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷によるダメージを相手に与える",
+      "original_en": "Damage the enemy with ice.",
+      "current_ptbr": "Causa dano de gelo ao inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23233,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷ダメージ",
+      "original_en": "Ice Damage",
+      "current_ptbr": "Dano de gelo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23234,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "樹氷山のドラゴンを倒したときに紡ぎだされた魔法だ。元々はミシャの捨てた思念の固まりらしい",
+      "original_en": "This magic was crafted when we beat the dragon. It’s originally an abandoned form of Misha’s thoughts.",
+      "current_ptbr": "Criada ao vencermos o dragão. Era uma forma abandonada dos pensamentos de Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23235,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "華",
+      "original_en": "Flower",
+      "current_ptbr": "Flor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23236,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "相手に魔法によるダメージを与える",
+      "original_en": "Damage the enemy with magic.",
+      "current_ptbr": "Causa dano mágico ao inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23237,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "波止場で大木になるまで育てた華が恩返しとして魔法になった。手に入れるのに結構、苦労したなぁ...",
+      "original_en": "In return for our efforts to grow the flower into a great tree, the flower at the pier became magic. It’s hard work.",
+      "current_ptbr": "Depois do esforço para transformar a flor numa grande árvore, a flor do píer virou magia. Foi trabalhoso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23238,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "虚空破斬",
+      "original_en": "Void Slasher",
+      "current_ptbr": "Corte do vazio",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23239,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "相手を斬り裂く強力な一撃を与える",
+      "original_en": "A strong strike that slashes the enemy.",
+      "current_ptbr": "Um golpe poderoso corta o inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23240,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "物理ダメージ",
+      "original_en": "Physical Damage",
+      "current_ptbr": "Dano físico",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23241,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "死神と戦った時に、俺が死神に勝つというのをミシャが強く思い描いて紡いだ魔法だ。",
+      "original_en": "When we fought the reaper, Misha prayed for me to win. Those hopes took form into this magic.",
+      "current_ptbr": "Durante a luta contra o ceifador, Misha desejou minha vitória. Sua esperança tomou a forma desta magia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23242,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "頑固親父",
+      "original_en": "Stubborn Father",
+      "current_ptbr": "Pai teimoso",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23243,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "相手に強力な魔法によるダメージを与える",
+      "original_en": "Damage the enemy with strong magic.",
+      "current_ptbr": "Causa forte dano mágico ao inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23244,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ドメスティックバイオ...いや、親子の激しいスキンシップの上に紡ぎだされた魔法、なのかな...",
+      "original_en": "The result of domestic violen-... I mean, intense parent-child bonding. I guess.",
+      "current_ptbr": "Resultado de violência domés... quer dizer, de uma intensa aproximação entre pais e filhos. Acho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23245,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "塔結線",
+      "original_en": "Tower Connection",
+      "current_ptbr": "Conexão da torre",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23246,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "凱亜爆砕",
+      "original_en": "Gaia Bombard",
+      "current_ptbr": "Bombardeio Gaia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23247,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "相手に対して強力な魔法ダメージを与える",
+      "original_en": "Strong magic damage against the enemy.",
+      "current_ptbr": "Causa forte dano mágico ao inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23248,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "気の玉を更に強力なものにするために紡ぎだされたもの。簡単に紡いでしまうのがミシャの凄いところだ",
+      "original_en": "A stronger, upgraded version of the Energy Ball. The amazing thing about Misha is that she crafts it so easily.",
+      "current_ptbr": "Versão mais forte do Orbe de Energia. O incrível é a facilidade com que Misha a cria.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23249,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "金属爆撃",
+      "original_en": "Meteor",
+      "current_ptbr": "Meteoro",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23250,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "金属爆弾を使用して相手に物理的ダメージを与える",
+      "original_en": "Does physical damage to the enemy by using a metal bomb.",
+      "current_ptbr": "Causa dano físico com uma bomba de metal.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23251,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "名前からして、そしてやることからして魔法とは言えない。だが、これもミシャが紡ぎ出したものだ...",
+      "original_en": "The name doesn’t suggest that this is magic, nor does the way she uses it. But, Misha did craft it, so it’s magic.",
+      "current_ptbr": "Nem o nome nem a maneira de usar parecem mágicos. Mas Misha a criou, então é magia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23252,
+      "event_file": "SLUS/TEXT/0126",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "我愛弥",
+      "original_en": "Wo Ai Ni",
+      "current_ptbr": "Wo Ai Ni",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23253,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "風を巻き起こして相手にダメージを与える",
+      "original_en": "Stirs up a wind and does damage to the enemy.",
+      "current_ptbr": "Uma ventania causa dano ao inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23254,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャの精神世界に再びハマが戻ったことにより紡ぎだされた魔法",
+      "original_en": "The magic that was crafted when Hama came back to Misha’s soulspace.",
+      "current_ptbr": "Criada quando Hama voltou ao Espaço da Alma de Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23255,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "金丹",
+      "original_en": "Cinna",
+      "current_ptbr": "Cinna",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23256,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "最初からミシャが使えた回復魔法だ。これくらいの魔法ならダイブしなくてもRTは誰でも使えるらしい",
+      "original_en": "Healing magic that Misha knew from the start. Any Reyvateil can use this level of magic without diving it seems.",
+      "current_ptbr": "Magia de cura que Misha já conhecia. Parece que qualquer Reyvateil usa magia desse nível sem Mergulho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23257,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "桃源金丹",
+      "original_en": "Arcadic Cinna",
+      "current_ptbr": "Arcadic Cinna",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23258,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "船の中で4年間待ち続けていた桃源金丹とミシャが再会したことにより紡ぎだされた魔法",
+      "original_en": "After four years of waiting on the ship, Arcadic Cinna was finally able to reunite with Misha.",
+      "current_ptbr": "Após quatro anos de espera no navio, Arcadic Cinna finalmente reencontrou Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23259,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "極楽金丹",
+      "original_en": "Paradise Cinna",
+      "current_ptbr": "Paradise Cinna",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23260,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "疾風迅雷によって破壊してしまった世界を、光に溢れた世界として蘇らせるために紡ぎ出した魔法",
+      "original_en": "This magic was crafted after the world was destroyed by Thunderclap to revive a world filled with light.",
+      "current_ptbr": "Criada após a destruição pela Trovoada, para reviver um mundo cheio de luz.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23261,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ドラゴンに吹き飛ばされそうになった俺を守るためにミシャが紡ぎだしてくれた魔法だ",
+      "original_en": "When I was about to be blown away by the dragon, Misha saved me by crafting this magic.",
+      "current_ptbr": "Misha a criou para me salvar quando o dragão quase me lançou para longe.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23262,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷護",
+      "original_en": "Ice Guard",
+      "current_ptbr": "Proteção gelo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23263,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詩の詠唱中、氷耐性を上昇&氷の追加打撃を発生させる",
+      "original_en": "Ice resistance increased & additional ice damage generated.",
+      "current_ptbr": "Aumenta a resistência a gelo e adiciona dano de gelo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23264,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詠唱中氷打撃&耐性+",
+      "original_en": "Ice Attack & Resistance +",
+      "current_ptbr": "Ataque e resistência a gelo +",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23265,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "凍えていたオリカに頼まれて紡ぎ出した魔法。しかし、なんだか嫌々という感じで紡ぎ出していた",
+      "original_en": "Shivering, Aurica pleaded for Misha to craft this magic. She seemed kind of unwilling when she was crafting though.",
+      "current_ptbr": "Tremendo de frio, Aurica pediu que Misha criasse esta magia. Ela não pareceu muito disposta.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23266,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "宿屋で俺をからかったミシャがそのお詫びとして紡いだもの。これに関しては何も苦労はしなかった",
+      "original_en": "Misha crafted this as an apology for making fun of me at the inn. There was no hard work involved in this one.",
+      "current_ptbr": "Misha a criou para se desculpar por zombar de mim na pousada. Esta não deu trabalho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23267,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "修羅天",
+      "original_en": "Angel Shura ",
+      "current_ptbr": "Anjo Shura ",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23268,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "世界変革をどうにかして止めようとしていた俺を修羅天が手伝ってくれたから紡ぎだされた",
+      "original_en": "Shura tried to help me when I was trying to stop the world revolution. That’s how this magic was crafted.",
+      "current_ptbr": "Shura tentou me ajudar a impedir a revolução mundial. Assim nasceu esta magia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23269,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "利支天",
+      "original_en": "Angel Rishi",
+      "current_ptbr": "Anjo Rishi",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23270,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "甲冑ミシャのお付きとして登場した魔法だ。",
+      "original_en": "This one appeared as an escort to the Armored Misha.",
+      "current_ptbr": "Surgiu como escolta de Misha de Armadura.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23271,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "韋駄天",
+      "original_en": "Angel Skanda",
+      "current_ptbr": "Anjo Skanda",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23272,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "死神から逃げるために紡ぎ出した魔法。もしあのまま戦っていたら、どうなっていたやら...",
+      "original_en": "This magic was crafted to run away from the reaper. It would’ve been really bad if we had continued fighting.",
+      "current_ptbr": "Criada para fugir do ceifador. Continuar a luta teria sido desastroso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23273,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "薬庵",
+      "original_en": "Shaman",
+      "current_ptbr": "Xamã",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23274,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "他人に感謝されることによって感じられる暖かさというものを知ったミシャが手に入れた魔法だ",
+      "original_en": "Misha learned this magic when she felt the warmth of being appreciated by others.",
+      "current_ptbr": "Misha a aprendeu ao sentir o carinho de ser valorizada pelos outros.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23275,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "吸収風船",
+      "original_en": "Absorbing Balloon",
+      "current_ptbr": "Balão absorvente",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23276,
+      "event_file": "SLUS/TEXT/0127",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "酒飲み対決で勝利したために得た魔法。だが、一番頑張ったのはタヌキであって俺達は何もしていない...",
+      "original_en": "We got this magic by winning the drinking contest. The raccoon did all the work, and we just watched.",
+      "current_ptbr": "Obtida ao vencer a disputa de bebida. O guaxinim fez tudo; nós só assistimos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23277,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "不可思議",
+      "original_en": "Miracle",
+      "current_ptbr": "Milagre",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23278,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャの精神世界を全て見終わった後に紡ぎだされたものだが、何が起こるのかはまったく不明だ",
+      "original_en": "This one was crafted after seeing all of Misha’s soulspace. I have no idea what will happen.",
+      "current_ptbr": "Criada após explorar todo o Espaço da Alma de Misha. Não faço ideia do que vai acontecer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23279,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "大人の自分の体を壊すために紡ぎ出した魔法。かなり物騒な理由で紡ぎ出した魔法だ...",
+      "original_en": "Misha crafted this magic to destroy her grown up body. It’s a scary reason if you think about it.",
+      "current_ptbr": "Misha a criou para destruir seu corpo adulto. Pensando bem, é um motivo assustador.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23280,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "月ノ館に無理やり連れて行かれそうになったミシャが、それに抵抗するために紡ぎ出した魔法だ",
+      "original_en": "Misha crafted this magic to fight against being forced back to the Moon Mansion.",
+      "current_ptbr": "Criada para resistir à volta forçada à Mansão da Lua.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23281,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷の弾を目標にぶつけて破壊する",
+      "original_en": "Shoot ice to destroy the target.",
+      "current_ptbr": "Dispara gelo para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23282,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "闇に包まれた街に雪を降らせるために、消えかけている氷の精を大きくさせるために紡ぎ出した",
+      "original_en": "The ice spirit was enlarged by this magic to make it snow again in the dark town.",
+      "current_ptbr": "O espírito do gelo cresceu com esta magia para fazer nevar de novo na cidade escura.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23283,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "雷を飛ばす魔法が欲しいと言ったら簡単に紡ぎだしてくれた魔法。俺は特に何もしなかった",
+      "original_en": "She easily crafted this when I said that it’d be nice if she were able to throw lightning. I myself, didn’t really do much.",
+      "current_ptbr": "Ela a criou facilmente quando eu disse que seria bom lançar raios. Não fiz quase nada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23284,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ドメスティックバイオ...いや、酒に酔って暴れる親父を静かにさせるために紡ぎ出した魔法だ...多分",
+      "original_en": "Magic to calm down the drunken father who was causing a lot of domestic violen-... I mean, trouble.",
+      "current_ptbr": "Magia para acalmar o pai bêbado que causava violência domés... quer dizer, confusão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23285,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "氷の精を山まで連れて行くために紡ぎ出した魔法。攻撃の時とかとは違い、目に見えるようなものではない",
+      "original_en": "Magic that was crafted to take the ice spirit to the mountain. Unlike attack magic, this isn’t something you can see.",
+      "current_ptbr": "Criada para levar o espírito do gelo à montanha. Diferente das magias de ataque, seu efeito não é visível.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23286,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "プライマル・ワード",
+      "original_en": "Primal Word",
+      "current_ptbr": "Verbo raiz",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23287,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "魔法の玉を相手にぶつける",
+      "original_en": "Throws a magic ball at the enemy.",
+      "current_ptbr": "Lança uma esfera de magia no inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23288,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリア様の得意とする詩魔法。オリカやミシャも似た魔法を使えるが、威力は桁違いに上だ。",
+      "original_en": "Lady Shurelia is very good with this Song Magic. Aurica and Misha have something similar, but this one is much stronger.",
+      "current_ptbr": "Shurelia domina esta Magia da Canção. Aurica e Misha têm versões parecidas, mas esta é muito mais forte.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23289,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "A.B.R.",
+      "original_en": "A.B.R.",
+      "current_ptbr": "A.B.R.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23290,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "A.B.R.を召喚し、火と氷のダメージを与える",
+      "original_en": "Summons A.B.R. and does fire & ice damage.",
+      "current_ptbr": "Invoca A.B.R. e causa dano de fogo e gelo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23291,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火・氷ダメージ",
+      "original_en": "Fire & Ice Damage",
+      "current_ptbr": "Dano de fogo e gelo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23292,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリア様の精神世界をクリアした際に使えるようになった魔法。強さは自分の身で思い知らされている。",
+      "original_en": "This magic became available upon completion of Lady Shurelia’s soulspace. I know from experience; it’s strong.",
+      "current_ptbr": "Obtida ao completar o Espaço da Alma de Shurelia. Sei por experiência: é forte.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23293,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミュールの使徒",
+      "original_en": "Apostle of Mir",
+      "current_ptbr": "Apóstolo de Mir",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23294,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファルス司祭を召喚し、氷ダメージを与える",
+      "original_en": "Summons Leard and does ice damage.",
+      "current_ptbr": "Invoca Leard e causa dano de gelo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23295,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリア様の精神世界をクリアした際に使えるようになった魔法。強いのはわかるんだけどな...",
+      "original_en": "This magic became available upon completion of Lady Shurelia’s soulspace. Yes, it’s powerful, but...",
+      "current_ptbr": "Obtida ao completar o Espaço da Alma de Shurelia. Sim, é poderosa, mas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23296,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-DS",
+      "original_en": "ELMA-DS",
+      "current_ptbr": "ELMA-DS",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23297,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-DSを召喚し、炎ダメージを与える",
+      "original_en": "Summons ELMA-DS and does fire damage.",
+      "current_ptbr": "Invoca ELMA-DS e causa dano de fogo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23298,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリア様の精神世界をクリアした際に使えるようになった魔法。見るたびに嫌な思い出が蘇る...",
+      "original_en": "This magic became available upon completion of Lady Shurelia’s soulspace. Reminds me of those bad memories.",
+      "current_ptbr": "Obtida ao completar o Espaço da Alma de Shurelia. Traz lembranças ruins.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23299,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャドウ",
+      "original_en": "Shadow",
+      "current_ptbr": "Sombra",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23300,
+      "event_file": "SLUS/TEXT/0128",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "魔神シャドウを召喚し、魔法ダメージを与える",
+      "original_en": "Summons Demon Shadow and does magic damage.",
+      "current_ptbr": "Invoca Sombra Demoníaca e causa dano mágico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23301,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリア様の精神世界をクリアした際に使えるようになった魔法。こんなのまで使えるようになったか...",
+      "original_en": "This magic became available upon completion of Lady Shurelia’s soulspace. This one’s quite amazing.",
+      "current_ptbr": "Obtida ao completar o Espaço da Alma de Shurelia. Esta é incrível.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23302,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シルヴァホルン",
+      "original_en": "Silver Horn",
+      "current_ptbr": "Silver Horn",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23303,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "強力な雷ダメージを与える",
+      "original_en": "Applies strong lightning damage.",
+      "current_ptbr": "Causa forte dano elétrico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23304,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリア様の精神世界を全てクリアした際に使えるようになった魔法。相変わらず、容赦ない威力だ。",
+      "original_en": "This magic became available upon completion of Lady Shurelia’s soulspace. Such merciless power.",
+      "current_ptbr": "Obtida ao completar o Espaço da Alma de Shurelia. Que poder impiedoso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23305,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "究極の詩魔法。塔の管理者であるシュレリア様の放つそれはオリカやミシャより高い破壊力を誇る",
+      "original_en": "The ultimate Song Magic. Lady Shurelia’s version has much more destructive power than Aurica or Misha’s.",
+      "current_ptbr": "Magia da Canção suprema. A versão de Shurelia é muito mais destrutiva que as de Aurica e Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23306,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子",
+      "original_en": "Child of Light",
+      "current_ptbr": "Criança da Luz",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23307,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子召喚",
+      "original_en": "Summon Child of Light",
+      "current_ptbr": "Invoca a Criança da Luz",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23308,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子と五回戦って勝利した際に使えるようになった魔法。いや、別に変な想像はしてないって...",
+      "original_en": "Lady Shurelia becomes able to use this after 5 victories against the Child of Light. No, I don’t have weird thoughts.",
+      "current_ptbr": "Shurelia a aprende após cinco vitórias contra a Criança da Luz. Não, não estou pensando em nada estranho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23309,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ライフフィル",
+      "original_en": "Life Fill",
+      "current_ptbr": "Recarga vital",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23310,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "蘇生と同時にほぼ全快まで体力が回復する超強力な回復魔法。その分、MPの消費も激しい。",
+      "original_en": "This healing magic revives and heals almost all of your health. But because it’s so strong, it uses a lot of MP.",
+      "current_ptbr": "Magia de cura que revive e recupera quase todo o HP. Sua força exige muito MP.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23311,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エナジーフィル",
+      "original_en": "Energy Fill",
+      "current_ptbr": "Recarga energia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23312,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詩の詠唱中、全耐性を上昇&全属性の追加打撃",
+      "original_en": "Increases all resistances & all additional damage while singing.",
+      "current_ptbr": "Aumenta todas as resistências e todos os danos extras enquanto canta.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23313,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詠唱中全耐性変化",
+      "original_en": "All Resistances Increased",
+      "current_ptbr": "Aumenta resistências",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23314,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火・氷・風・雷に対しての攻撃に対しての耐性を激烈強化してくれる魔法。",
+      "original_en": "Resistance to fire, ice, wind, and lightning attacks are all boosted in this magic.",
+      "current_ptbr": "Aumenta a resistência a fogo, gelo, vento e raio.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23315,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ブラストフィル",
+      "original_en": "Blast Fill",
+      "current_ptbr": "Recarga Blast",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23316,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詩の詠唱中、攻撃力、防御力、素早さを上昇させる",
+      "original_en": "Attack power, defense, and agility increased while singing.",
+      "current_ptbr": "Aumenta ataque, defesa e agilidade enquanto canta.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23317,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詠唱中全パラメーター変化",
+      "original_en": "All Stats Increased",
+      "current_ptbr": "Aumenta atributos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23318,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "攻撃力、防御力、そして素早さを激烈強化してくれる魔法。戦闘時に使えば怖いものなしだ。",
+      "original_en": "Attack power, defense, and agility are greatly increased in this magic. Using this in battle could make you invincible.",
+      "current_ptbr": "Aumenta muito ataque, defesa e agilidade. Pode deixar você invencível em batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23319,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "メディフィル",
+      "original_en": "Medi Fill",
+      "current_ptbr": "Recarga médica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23320,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "毒や暗闇、痺れを使ってくる敵と戦闘する際に役に立つ魔法。使用箇所は限られるが強い味方だ。",
+      "original_en": "This is useful when you fight enemies that poison, blind, or paralyze. It’s not always needed, but it’s nice to have.",
+      "current_ptbr": "Útil contra veneno, cegueira e paralisia. Não é sempre necessária, mas é bom tê-la.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23321,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フルクッション",
+      "original_en": "Full Cushion",
+      "current_ptbr": "Proteção total",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23322,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ダメージを受ける際に、そのダメージを吸い取ってくれる。しかし、随分と可愛らしい魔法だ...",
+      "original_en": "It absorbs the damage when you get hit by damage. This is such a cutsey looking magic.",
+      "current_ptbr": "Absorve dano quando você é atingido. Uma magia de aparência bem fofinha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23323,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケ",
+      "original_en": "Prophecy",
+      "current_ptbr": "Profecia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23324,
+      "event_file": "SLUS/TEXT/0129",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "何が起こるかわからない魔法。戦闘に余裕がある時にだけ使うことをお勧めする。",
+      "original_en": "I have no idea what this magic does. So I suggest you use it only if you have that luxury in battle.",
+      "current_ptbr": "Não faço ideia do que faz. Use só se puder se dar a esse luxo em batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23325,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "魔法の弾を目標にぶつけて破壊する",
+      "original_en": "Blast a shot of magic to destroy the target.",
+      "current_ptbr": "Dispara magia para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23326,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "障害物を破壊する時に便利な、衝撃波を飛ばす魔法だ。",
+      "original_en": "Magic that blasts a shockwave. Useful in destroying obstacles. ",
+      "current_ptbr": "Dispara uma onda de choque. Útil para destruir obstáculos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23327,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火の弾を目標にぶつけて破壊する",
+      "original_en": "Shoot fire to destroy the target.",
+      "current_ptbr": "Dispara fogo para destruir o alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23328,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "障害物を破壊する時はもちろん、焼肉に火をつける際にも役に立つ便利な魔法だ。",
+      "original_en": "Useful magic in destroying obstacles and in firing up the BBQ. So convenient.",
+      "current_ptbr": "Útil para destruir obstáculos e acender o churrasco. Muito conveniente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23329,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "障害物を破壊する時はもちろん、かき氷を作るときにも役に立つ便利な魔法だ。",
+      "original_en": "Useful magic in destroying obstacles and in making shaved ice. Convenient indeed.",
+      "current_ptbr": "Útil para destruir obstáculos e fazer raspadinha. Conveniente mesmo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23330,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "障害物を破壊する際に使用する魔法。ってか、シュレリア様はいつどうやってこの魔法を紡いだんだろう?",
+      "original_en": "Magic that is used to destroy obstacles. I wonder when Lady Shurelia actually crafted this magic.",
+      "current_ptbr": "Destrói obstáculos. Quando será que Shurelia criou esta magia?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23331,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "障害物を破壊する時はもちろん、みりん干しを作る際にも役に立つ便利な魔法だ。",
+      "original_en": "Useful magic in destroying obstacles and in making dried fish. Multi-pupose convenience.",
+      "current_ptbr": "Útil para destruir obstáculos e secar peixe. Conveniência multiuso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23332,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "障害物の耐久力が見えるようになる魔法。便利だとは思うが、私生活では視界の邪魔になるだけだろうな...",
+      "original_en": "Magic that allows you to see the durability of things. I know it’s convenient, but I bet it’s only annoying in daily life.",
+      "current_ptbr": "Mostra a resistência dos objetos. É útil, mas deve ser irritante no dia a dia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23333,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マイヒーローA",
+      "original_en": "My Hero A",
+      "current_ptbr": "Meu herói A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23334,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マイヒーローB",
+      "original_en": "My Hero B",
+      "current_ptbr": "Meu herói B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23335,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "???A",
+      "original_en": "??? A",
+      "current_ptbr": "??? A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23336,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "???B",
+      "original_en": "??? B",
+      "current_ptbr": "??? B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23337,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "???C",
+      "original_en": "??? C",
+      "current_ptbr": "??? C",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23338,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "金属爆撃A",
+      "original_en": "Meteor A",
+      "current_ptbr": "Meteoro A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23339,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "金属爆撃B",
+      "original_en": "Meteor B",
+      "current_ptbr": "Meteoro B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23340,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "金属爆撃C",
+      "original_en": "Meteor C",
+      "current_ptbr": "Meteoro C",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23341,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "不可思議A",
+      "original_en": "Miracle A",
+      "current_ptbr": "Milagre A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23342,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "不可思議B",
+      "original_en": "Miracle B",
+      "current_ptbr": "Milagre B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23343,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "不可思議C",
+      "original_en": "Miracle C",
+      "current_ptbr": "Milagre C",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23344,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ライフフィルA",
+      "original_en": "Life Fill A",
+      "current_ptbr": "Recarga vital A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23345,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ライフフィルB",
+      "original_en": "Life Fill B",
+      "current_ptbr": "Recarga vital B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23346,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エナジーフィルA",
+      "original_en": "Energy Fill A",
+      "current_ptbr": "Recarga energia A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23347,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エナジーフィルB",
+      "original_en": "Energy Fill B",
+      "current_ptbr": "Recarga energia B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23348,
+      "event_file": "SLUS/TEXT/0130",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ブラストフィルA",
+      "original_en": "Blast Fill A",
+      "current_ptbr": "Recarga Blast A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23349,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ブラストフィルB",
+      "original_en": "Blast Fill B",
+      "current_ptbr": "Recarga Blast B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23350,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "メディフィルA",
+      "original_en": "Medi Fill A",
+      "current_ptbr": "Recarga médica A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23351,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "メディフィルB",
+      "original_en": "Medi Fill B",
+      "current_ptbr": "Recarga médica B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23352,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フルクッションA",
+      "original_en": "Full Cushion A",
+      "current_ptbr": "Proteção total A",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23353,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フルクッションB",
+      "original_en": "Full Cushion B",
+      "current_ptbr": "Proteção total B",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23354,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケAA",
+      "original_en": "Prophecy AA",
+      "current_ptbr": "Profecia AA",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23355,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケAB",
+      "original_en": "Prophecy AB",
+      "current_ptbr": "Profecia AB",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23356,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケAC",
+      "original_en": "Prophecy AC",
+      "current_ptbr": "Profecia AC",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23357,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケBA",
+      "original_en": "Prophecy BA",
+      "current_ptbr": "Profecia BA",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23358,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケBB",
+      "original_en": "Prophecy BB",
+      "current_ptbr": "Profecia BB",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23359,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハッケBC",
+      "original_en": "Prophecy BC",
+      "current_ptbr": "Profecia BC",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23360,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "スタンダード",
+      "original_en": "Standard",
+      "current_ptbr": "Padrão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23361,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "オリカのイメージは純真無垢。教会を抜きにしても、やっぱりイメージは白系です。初期から何度かキャラデザが変わっていますが、大昔はうさみみリボンを付けていた時期もありました。",
+      "original_en": "Aurica’s image is pure and innocent. Even without the whole Church thing, her image is white. Her character design was changed around a lot, and there was one point where she even had bunny ears.",
+      "current_ptbr": "Aurica passa uma imagem pura e inocente, ligada ao branco mesmo sem a Igreja. Seu desenho mudou bastante; numa versão, ela até tinha orelhas de coelho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23362,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "天守聖衣",
+      "original_en": "Holy Guardian",
+      "current_ptbr": "Guardiã Sagrada",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23363,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "巫女というのは癒し系の霊的なモノを感じます。そんな訳で癒し手としてのオリカは巫女服のアレンジです。和装束は全体のバランスがとても良くて個人的に好きな服です。日本人の血なのか...",
+      "original_en": "Shrine maidens have a healing, spiritual vibe. So here’s Aurica in an adapted version of a shrine maiden outfit. Japanese outfits seem well balanced and are my personal favorites. It must be my Japanese blood.",
+      "current_ptbr": "Sacerdotisas têm um ar espiritual e acolhedor. Este traje adapta essa ideia para Aurica. Gosto do equilíbrio das roupas japonesas. Deve ser meu sangue japonês.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23364,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "LILIM",
+      "original_en": "LILIM",
+      "current_ptbr": "LILIM",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23365,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ある意味大冒険でもあった悪魔服。子悪魔的な、艶やかさとは違う元気な色っぽさ(?)を大切にしてデザインしています。オリカはまだ色気よりも食い気が勝る子ですからね。",
+      "original_en": "It was an adventure of a sort, designing this devil costume. I tried to keep this a cute devilish design rather than the sexy devil. Aurica is more like a food over romance type of girl so...",
+      "current_ptbr": "Foi uma aventura desenhar este traje de demônio. Preferi um diabinho fofo a um visual sensual. Aurica se interessa mais por comida que por romance...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23366,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "SERAPH",
+      "original_en": "SERAPH",
+      "current_ptbr": "SERAPH",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23367,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "個人的超お気に入りです。天使鎧は、まだムスメ調合システムが今の形になる前からCR「装甲形態」という形で存在していました。最初に構築したシステムは自由度が高すぎてボツりましたが。",
+      "original_en": "My personal favorite. The angel armor existed long before this girls crafting system got set into place as an ”armored form.” Though, the first system  built had too much freedom and it got canned.",
+      "current_ptbr": "Meu favorito. A armadura de anjo existia como forma blindada antes do sistema de criação das garotas. A primeira versão do sistema dava liberdade demais e foi descartada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23368,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "スクワート",
+      "original_en": "Skuwat",
+      "current_ptbr": "Skuwat",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23369,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "剣と魔法の世界をイメージした服。このゲームはファンタジーRPGとして作っていますが、世界観的に純正ファンタジー度が低い故、純度の高い服を入れてみるとその差がよくわかります。",
+      "original_en": "An outfit imaged from a world of swords and magic. This is suppose to be a fantasy RPG, but this world doesn’t have that pure fantasy view. See the difference with this outfit?",
+      "current_ptbr": "Traje inspirado num mundo de espadas e magia. Este é um RPG de fantasia, mas seu mundo não tem um visual puramente fantástico. Percebe a diferença?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23370,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "セレモニー",
+      "original_en": "Ceremony",
+      "current_ptbr": "Cerimônia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23371,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "正当派ウェディングドレス。オリカにはやはりチャペルとドレスが似合います。本来は一生に一度モノの筈ですが、実は戦闘で着るとかなり強い為、毎日でも着たりするかと思います。",
+      "original_en": "An orthodox wedding dress. Aurica goes well with a chapel and a dress. It’s supposed to be a once in a life time thing, but it’s pretty strong when worn in battle, so she might wear it everyday.",
+      "current_ptbr": "Vestido de noiva clássico. Aurica combina com capela e vestido. Era para usar uma vez na vida, mas é tão forte em batalha que talvez use todo dia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23372,
+      "event_file": "SLUS/TEXT/0131",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "スクールデイズ",
+      "original_en": "School Days",
+      "current_ptbr": "Dias escolares",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23373,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "劣等感の完了はどんな舞台にしようかと悩んだところで学園モノという形に。初期に出た魔法学校の設定(黒ローブ魔法使い)も捨てがたかったですが。個人的には魔法使いが大好きなのです。",
+      "original_en": "After thinking about what the stage should be for an inferiority complex, I decided on the school. The first design for magic school (black robe magician) was nice too. Personally, I love magicians.",
+      "current_ptbr": "Escolhi a escola como cenário para o complexo de inferioridade. O primeiro desenho, de maga de manto preto numa escola de magia, também era bom. Adoro magos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23374,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "バブルパッション",
+      "original_en": "Bubble Passion",
+      "current_ptbr": "Paixão borbulhante",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23375,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "求めていたのは色っぽさではなく「ネタ」。バスタオル着て戦うゲームは業界初では?そんなシチュを作りたくて作ってみましたが、お陰様で精神世界側のお話で大変苦労させて頂きました。",
+      "original_en": "What I seeked for in this outfit was a joke, not sexiness. Isn’t this the first game where you can fight in a bath towel? Sorry for causing so much trouble for the soulspace story because of this costume.",
+      "current_ptbr": "Busquei humor, não sensualidade. Será o primeiro jogo em que se luta de toalha de banho? Desculpem os problemas que este traje causou à história do Espaço da Alma.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23376,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どんすけ",
+      "original_en": "Don Leon",
+      "current_ptbr": "Don Leon",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23377,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ただカッコイイや可愛いだけではつまらないので、ネタ投下!です。コイツは戦闘のちびキャラのサイズが他のオリカと違い、調整に随分手間取りました。ネタの割に時間かけてます。",
+      "original_en": "Just cool and cute isn’t enough, so I threw in a joke. This one makes the small battle Aurica’s size different from the others, so adjusting took effort. It may have been a joke, but it took a lot of time.",
+      "current_ptbr": "Só bonito e fofo não bastava: incluí uma piada. Este traje muda o tamanho de Aurica em batalha e exigiu muitos ajustes. Era uma brincadeira, mas deu trabalho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23378,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マルローネ",
+      "original_en": "Marlone",
+      "current_ptbr": "Marlone",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23379,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アトリエをプレイされている方へのサービス品、まだの方へのサンプル品(?)として設定してみました。お話はネタですので本気になさらぬよう。でも、マリーの破天荒っぷりは本当です。",
+      "original_en": "Here’s a reward for those who have played the Atlier series, and a sample for those who haven’t. The story is just for fun, so don’t take it too seriously. But Mary’s caprice is real, seriously.",
+      "current_ptbr": "Recompensa para fãs de Atelier e uma amostra para quem não conhece a série. A história é uma brincadeira, mas os caprichos de Marie são reais. Sério.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23380,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャのイメージは神の御子。神懸かり的なモノを表現するのに、和装束はとても相性がいい。和洋折衷デザインとして、かなり前衛的に構築してみました。頭に付いてるのは太鼓です。",
+      "original_en": "Misha’s image is a child of god. Japanese outfits are great when trying to describe the supernatural. I tried to make a blend of Japanese and Western in this design. The things on her head are little drums.",
+      "current_ptbr": "Misha representa uma filha dos deuses. Roupas japonesas combinam com o sobrenatural. Misturei estilos oriental e ocidental. Os enfeites da cabeça são pequenos tambores.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23381,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "点心爛漫",
+      "original_en": "China Dress",
+      "current_ptbr": "Vestido chinês",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23382,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "外に連れて行かれた自分を待つミシャとして用意したチャイナ。チャイナ服って、波止場と異国情緒な雰囲気があって良いですね。異国の象徴としてのイメージです。...横濱の影響が強すぎ?",
+      "original_en": "Misha is taken outside to meet  her other self in a china dress. I like how the chinese outfit has a nice exotic flavor with the pier. It’s an image of the symbol of a foreign land.",
+      "current_ptbr": "Misha sai para conhecer sua outra versão, de vestido chinês. O traje e o píer dão um toque exótico, símbolo de uma terra estrangeira.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23383,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "SINOBI",
+      "original_en": "SHINOBI",
+      "current_ptbr": "SHINOBI",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23384,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャの中の革新意識として用意した忍。様々な所でミシャを自由へと誘います。兵士と違い、自由に動き回り、そして裏から突き崩す忍。そんなイメージが役割にピッタリだったので採用。",
+      "original_en": "This outfit was prepared as the innovative conscious inside Misha. She tries to lure Misha to freedom in many places. Unlike soldiers, shinobi (ninja) move around freely and strike from the back. Perfect, no?",
+      "current_ptbr": "Este traje representa o lado inovador de Misha, que a atrai para a liberdade. Ao contrário de soldados, ninjas se movem livres e atacam pelas costas. Perfeito, não?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23385,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "KASHA",
+      "original_en": "KASHA",
+      "current_ptbr": "KASHA",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23386,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "規律を重んじる、自由意志は許されないミシャとして、忍と相対する位置に置いた服。規律、武士道といった、個より全体の幸せや平和を重んじる世界をイメージしています。",
+      "original_en": "Heavily discipline oriented, and unforgiving of free will. The opposite to the shinobi Misha. An image of a world of rules and bushido (chivalry), where peace of the whole is more important than the individual.",
+      "current_ptbr": "Disciplina rígida, sem espaço para a vontade própria. O oposto de Misha ninja: um mundo de regras e bushido, onde a paz coletiva vale mais que o indivíduo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23387,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "セーラーガール",
+      "original_en": "Sailorgirl",
+      "current_ptbr": "Marinheira",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23388,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "学園モノとして最もオーソドックスなセーラー服。今色々なメディアで学園モノは多く存在しますが、ここまでクラシカルなモノはあまり無いかと思います。ミシャには丁度いい大人な雰囲気。",
+      "original_en": "The most orthodox sailor outfit for school drama. There are many kinds of school drama, but this one is pretty classic. A perfect grown up situation for Misha.",
+      "current_ptbr": "Uniforme de marinheira clássico de histórias escolares. Há muitos tipos, mas este é tradicional. Um cenário de amadurecimento perfeito para Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23389,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "白無垢",
+      "original_en": "White Kimono",
+      "current_ptbr": "Quimono branco",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23390,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャといえば寿。お式は和が似合いそうです。ミシャはきっと結婚したらいい奥さんになるでしょう。大和撫子的なイメージで創っていますが、やはりこれで戦闘すると強かったりします。",
+      "original_en": "For Misha, the Japanese wedding outfit looks the best. I bet Misha would be the perfect wife. The outfit was made with the pure Japanese woman image, but it’s pretty strong when you fight in it.",
+      "current_ptbr": "O traje nupcial japonês combina melhor com Misha. Ela seria uma esposa perfeita. Busquei a mulher japonesa tradicional, mas o traje também é forte em batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23391,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャのスタンダード服は格好いいですがとてもお腹が苦しそうです。西洋のコルセットみたいなものですね。心の解放の象徴として描いたモノですが、身体も相当リラックスできそうです。",
+      "original_en": "Misha’s standard outfit is cool, but seems tight in the stomach. Kind of like a corsette I guess. This one represents the release of her heart, but it seems she can relax physically too.",
+      "current_ptbr": "O traje comum de Misha é bonito, mas aperta a cintura como um espartilho. Este representa a libertação de seu coração e também parece mais confortável.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23392,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "封印体と呼ばれるちびミシャ。ちびミシャ好きな方の中には元の姿に戻すのが辛かった方もいらっしゃるかも知れませんが、ゲーム中でまたこちらに戻れたりもします。やや隠しネタですが。",
+      "original_en": "The supressed form, Little Misha. I’m sure some of you who liked her little were hesistant to turn her back to normal, but there’s a way in-game to make her small again. It’s a little hidden though.",
+      "current_ptbr": "Misha Pequena, sua forma reprimida. Alguns fãs devem ter hesitado em fazê-la crescer, mas há um jeito um pouco escondido de torná-la pequena outra vez no jogo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23393,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マジカルシャワー",
+      "original_en": "Magical Shower",
+      "current_ptbr": "Chuva mágica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23394,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "女の子なら憧れる子も多い魔女っ子。ミシャにとっての魔女っ子はむしろ自分の使命における象徴のようなモノですから、憧れとは違いますけどね。",
+      "original_en": "It’s a girl’s inner dreams to become a magical girl. Though, in Misha’s case, the magical girl represents her destiny, so it’s probably not something she admires.",
+      "current_ptbr": "Virar uma garota mágica é um sonho infantil. Para Misha, porém, isso representa seu destino, então talvez não seja algo que ela admire.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23395,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シープスイーツ",
+      "original_en": "Sheep Sweets",
+      "current_ptbr": "Doces de ovelha",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23396,
+      "event_file": "SLUS/TEXT/0132",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "パジャマ姿は、大人になりたくないミシャの象徴です。眠るという行為は自分と周りを拒絶し時間を止めてしまうこと。パジャマって、とても幼く見えますよね。そんな理由も込めてみました。",
+      "original_en": "The pajama outfit represents Misha not wanting to grow up. Getting sleepy means that she is starting to reject everything around her. Doesn’t the pajama make her look really childish?",
+      "current_ptbr": "O pijama mostra que Misha não quer crescer. A sonolência indica que começa a rejeitar tudo ao redor. Não a deixa muito infantil?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23397,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エルフィール",
+      "original_en": "Elfir",
+      "current_ptbr": "Elfir",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23398,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アトリエをプレイされている方へのサービス品、まだの方へのサンプル品(?)として設定してみました。お話はネタですが、事実を多分に含んでいます。人気者ですしね。タライも降るし(謎",
+      "original_en": "Here’s a nice reward for those who have played the Atlier series, and a sample for those who haven’t. The story is like a joke, but there’s some truth to it. I mean, she is a popular character. ",
+      "current_ptbr": "Recompensa para fãs de Atelier e amostra para quem não conhece. A história é uma piada, mas tem um fundo de verdade. Afinal, ela é uma personagem popular.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23399,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "この世界の中での今風ではない、近未来風のイメージです。そこに儚さのイメージをも載せています。シュレリアは実に沢山のリテイクから今の形になったキャラです。最初は全然違いました。",
+      "original_en": "This image is a near-future, non-present day world, with a little hint of transience. Shurelia comes from a lot of retakes after retakes. At first, she was a very different character.",
+      "current_ptbr": "Visual de um futuro próximo diferente do presente, com um toque de transitoriedade. Shurelia passou por muitas revisões. No início, era bem diferente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23400,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "リンケージ",
+      "original_en": "Linkage",
+      "current_ptbr": "Ligação",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23401,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "カッコイイ!と思うのはひいき目なのでしょうか?一見グロテスクですけどね。一つ目のキャラだと思ってる人が多いかな。口もとを見れば、それは違うとわかるはず。単なるマスクなんです。",
+      "original_en": "I think it’s cool, but is that because I’m biased? It seems a lot of people thought she was one-eyed. If you look at the mouth, you would know she’s not. It’s just a mask.",
+      "current_ptbr": "Acho bonito, mas será preferência minha? Muita gente pensou que ela tivesse um olho só. A boca mostra que não: é apenas uma máscara.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23402,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "涼風彩々",
+      "original_en": "Colorful Breeze",
+      "current_ptbr": "Brisa colorida",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23403,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "浴衣はいいですよね。見ていて和みます。シュレリアの服は精神世界専用ですが、他のキャラと同じように現実でも出したかったかも。",
+      "original_en": "Yukata’s are so nice. Just looking at them feels relaxing. Shurelia’s outfits can only be used in her soulspace, but I wish she could wear it in reality like the other characters.",
+      "current_ptbr": "Yukatas são tão agradáveis que só vê-los relaxa. Os trajes de Shurelia só existem no Espaço da Alma, mas queria que ela os usasse na realidade como as outras.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23404,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "サマーブリーズ",
+      "original_en": "Summer Breeze",
+      "current_ptbr": "Brisa de verão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23405,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いわゆるカジュアル夏服です。一部ではオバサンっぽいというお話も有ったり無かったり。個人的には好きなデザインなのですが。",
+      "original_en": "A casual summer outfit. Someone said it looked kind of looked old lady clothing. I personally like this design though.",
+      "current_ptbr": "Roupa casual de verão. Disseram que parece roupa de senhora, mas eu gosto do desenho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23406,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "コルセット",
+      "original_en": "Corsette",
+      "current_ptbr": "Corsette",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23407,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "今巷で何かと話題のメイド服。昔はコア層をターゲットにしたお店が多かったですが、最近は一般向けで普通にありますしね。メイド服が可愛くて、着たくてバイトする子も結構いるそうです。",
+      "original_en": "The recently popular maid outfit. I remember it only used to sell to a core group, but now they’re kind of trendy and sell to everyone. I heard there are girls who pick jobs to wear the cute maid uniforms.",
+      "current_ptbr": "Traje de empregada, hoje popular. Antes só agradava a um público específico; agora virou moda. Há garotas que escolhem trabalhos pelos uniformes fofos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23408,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エンゲージ",
+      "original_en": "Engagement",
+      "current_ptbr": "Noivado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23409,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "花をモチーフにしたウェディングドレス。スタンダードもそうですが、シュレリアは花のイメージが強いです。可憐なんだけど儚いような...。いや、一千年も生きていたらむしろしぶといのか。",
+      "original_en": "A wedding dress with flowers as its motiff. Shurelia has a strong image of flowers, even I the Standard. Lovely yet vain... Well, living for a thousand years is rather tough I guess.",
+      "current_ptbr": "Vestido de noiva com flores. Shurelia tem essa imagem floral até no traje comum: adorável, mas passageira... Viver mil anos deve ser difícil.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23410,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "モネット",
+      "original_en": "Monette",
+      "current_ptbr": "Monette",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23411,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリアデザインは、3人の中で一番低学年向けのデザインです。バーチャル世界内でも、一番低い学年という設定になっています。",
+      "original_en": "Shurelia’s designs are meant to be the youngest of the three. Even in the virtual world, the setting makes her the lowest grade.",
+      "current_ptbr": "Os desenhos de Shurelia a apresentam como a mais jovem das três. Até no mundo virtual, ela está na série escolar mais baixa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23412,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ENJIB",
+      "original_en": "ENJIB",
+      "current_ptbr": "ENJIB",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23413,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シュレリアの服は、仮想世界内のみでかつ、仮想世界自体がオマケ要素という事で、かなり遊ばせていただきました。ゲーム内で気軽に出来るミニゲーム、みたいなモノですね。",
+      "original_en": "Shurelia’s outfits can only be used in the virtual world. Well, the virtual world itself is like a bonus element, so they let me play around with it. Kind of like a mini-game within the game.",
+      "current_ptbr": "Os trajes de Shurelia só existem no mundo virtual. Como esse mundo já é um bônus, pude brincar com as ideias. É quase um minijogo dentro do jogo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23414,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "こんいろの水着",
+      "original_en": "Navyblue Swimsuit",
+      "current_ptbr": "Maiô azul-marinho",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23415,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "このゲームの遊び心と冒険心はどこまで行くのだろうと思い始めた頃。行くなら行ききれ!行かないならやめろ、という信念の下に、行ききってしまいました一品。",
+      "original_en": "I began wondering how far this game’s playfulness and adventure would allow. That’s when my belief was realized, that I must go as far as I can if I could. And here it is.",
+      "current_ptbr": "Quis descobrir até onde o jogo permitia ousadia e humor. Se podia ir longe, devia ir até o fim. E aqui está o resultado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23416,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "リイタ",
+      "original_en": "Lita",
+      "current_ptbr": "Lita",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23417,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ゲーム中には登場しませんが、シュレリアエンドを迎えた方に、ボーナスピクチャです。イリスのアトリエのヒロイン、リイタのコスチューム。",
+      "original_en": "It doesn’t appear in the game, but for those who got a Shurelia ending, here’s a bonus picture. This is Lita’s costume from Atlier Iris.",
+      "current_ptbr": "Não aparece no jogo, mas é uma imagem extra para quem fez o final de Shurelia. É o traje de Lita, de Atelier Iris.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23418,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "カイフクンC",
+      "original_en": "Healy C",
+      "current_ptbr": "Healy C",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23419,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?カイフクンC?",
+      "original_en": "?Healy C?",
+      "current_ptbr": "?Healy C?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23420,
+      "event_file": "SLUS/TEXT/0133",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方単体のHPを小回復させる",
+      "original_en": "Small heal for a single target",
+      "current_ptbr": "Cura leve de um alvo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23421,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "飲むと少し元気になる薬。凄く疲れているときは大量に飲まなきゃいけないのが苦だ。",
+      "original_en": "A medicine that makes you a little energized. If you’re really tired, you’re gonna have to drink a lot.",
+      "current_ptbr": "Remédio que dá um pouco de energia. Se estiver muito cansado, vai precisar beber bastante.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23422,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "HP回復1",
+      "original_en": "HP Recovery 1",
+      "current_ptbr": "Recupera HP 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23423,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ゼンカインD",
+      "original_en": "Fullhealin D",
+      "current_ptbr": "Fullhealin D",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23424,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?強いくすり?",
+      "original_en": "?Strong Medicine?",
+      "current_ptbr": "?Remédio forte?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23425,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方単体のHPを中回復させる",
+      "original_en": "Medium heal for a single target",
+      "current_ptbr": "Cura moderada de um alvo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23426,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これ一本でかなり元気になる。もの凄く疲れた時にはこれに限る。",
+      "original_en": "One of these can make you pretty energized. If you’re really tired, these’ll give you wings.",
+      "current_ptbr": "Um destes dá muita energia. Se estiver exausto, vai até ganhar asas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23427,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "HP回復2",
+      "original_en": "HP Recovery 2",
+      "current_ptbr": "Recupera HP 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23428,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ヒールクラッカー",
+      "original_en": "Heal Cracker",
+      "current_ptbr": "Biscoito cura",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23429,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?強力なくすり?",
+      "original_en": "?Potent Medicine?",
+      "current_ptbr": "?Remédio potente?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23430,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方全体のHPを中回復させる",
+      "original_en": "Medium heal for whole party",
+      "current_ptbr": "Cura moderada do grupo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23431,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "見た目はアレだが、みんな一緒に回復させてくれる道具。これで回復出来るんだから不思議だ。",
+      "original_en": "Yeah I know it doesn’t look like it, but it’ll heal everyone at the same time. Yes, I know it’s strange, but it heals.",
+      "current_ptbr": "Não parece, mas cura todos de uma vez. Sim, é estranho, mas funciona.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23432,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "HP回復全員1",
+      "original_en": "HP Recovery Party 1",
+      "current_ptbr": "Cura do grupo 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23433,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レストアボム",
+      "original_en": "Restore Bomb",
+      "current_ptbr": "Bomba restauradora",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23434,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?最強のくすり?",
+      "original_en": "?Ultimate Medicine?",
+      "current_ptbr": "?Remédio supremo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23435,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方全体のHPを大回復させる",
+      "original_en": "Greater heal for whole party",
+      "current_ptbr": "Cura maior para todo o grupo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23436,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "みんなで一気に回復するときに便利。でも、使うのに少し勇気が...。",
+      "original_en": "Very convenient for recovering all at once. But you’ll need quite some courage to use it.",
+      "current_ptbr": "Muito prático para curar todos de uma vez. Mas exige coragem para usar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23437,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "HP回復全員2",
+      "original_en": "HP Recovery Party 2",
+      "current_ptbr": "Cura HP do grupo 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23438,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トランキライザー",
+      "original_en": "Tranquilizer",
+      "current_ptbr": "Tranquilizante",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23439,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?しろいこな?",
+      "original_en": "?White Powder?",
+      "current_ptbr": "?Pó branco?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23440,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方単体の状態異常を回復させる",
+      "original_en": "Recover abnormal status for single target.",
+      "current_ptbr": "Cura estados negativos de um alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23441,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "体に異常を感じた時に飲む薬。体力あるからって無理しちゃダメだぞ。",
+      "original_en": "Medicine you drink when you’re feeling strange. Don’t push yourself even if you think you’re strong enough.",
+      "current_ptbr": "Remédio para quando você se sente estranho. Não se force, mesmo que se ache forte.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23442,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "状態変化回復",
+      "original_en": "Recover status effect",
+      "current_ptbr": "Remove alterações de estado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23443,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ボルトエンジェル",
+      "original_en": "Bolt Angel",
+      "current_ptbr": "Anjo elétrico",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23444,
+      "event_file": "SLUS/TEXT/0134",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?復活機?",
+      "original_en": "?Restoration?",
+      "current_ptbr": "?Restauração?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23445,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "戦闘不能状態の仲間単体を復活させることが出来る",
+      "original_en": "Restore a single target from unconsciousness",
+      "current_ptbr": "Revive um alvo desmaiado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23446,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "仲間が戦闘時に倒れたときはこれを使おう。もちろん、自分が使われる側ってこともあるんだが...。",
+      "original_en": "Use this when someone falls in battle. Of course, you could be the one needing it in some cases.",
+      "current_ptbr": "Use quando alguém cair em batalha. Às vezes, quem vai precisar é você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23447,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "戦闘不能回復",
+      "original_en": "Recover ",
+      "current_ptbr": "Cura ",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23448,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "メッソー",
+      "original_en": "Missile",
+      "current_ptbr": "Míssil",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23449,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?メッソー?",
+      "original_en": "?Missile?",
+      "current_ptbr": "?Míssil?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23450,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵前衛に対して炎による小ダメージを与える",
+      "original_en": "Small fire damage to enemy’s front line",
+      "current_ptbr": "Dano leve de fogo à frente inimiga",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23451,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "戦闘中に使用すると、相手に炎の一撃を与えることが出来る。ただし、使用時には相手の耐性に要注意だ。",
+      "original_en": "Use this in battle to apply fire damage to your opponent. But be sure to check the enemy’s resistances too.",
+      "current_ptbr": "Use em batalha para causar dano de fogo. Confira antes a resistência do inimigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23452,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆弾1火",
+      "original_en": "Bomb 1 Fire",
+      "current_ptbr": "Bomba 1 Fogo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23453,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "バク風車",
+      "original_en": "Baku Pinwheel",
+      "current_ptbr": "Catavento Baku",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23454,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?エアウィング?",
+      "original_en": "?Air Wing?",
+      "current_ptbr": "?Asa aérea?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23455,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵前衛に対して風による小ダメージを与える",
+      "original_en": "Small wind damage to enemy’s front line",
+      "current_ptbr": "Dano leve de vento à frente inimiga",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23456,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "前衛に並んでいる敵はこいつで一気に蹴散らそう。ただし、使用時には相手の耐性に要注意だ。",
+      "original_en": "Blow the enemy’s front line away with this item. But be sure to check the enemy’s resistance beforehand.",
+      "current_ptbr": "Lança a frente inimiga para longe. Confira a resistência do inimigo antes de usar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23457,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆弾2風",
+      "original_en": "Bomb 2 Wind",
+      "current_ptbr": "Bomba 2 Vento",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23458,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ボルタポルタ",
+      "original_en": "Boltapolta",
+      "current_ptbr": "Boltapolta",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23459,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?電気ばくだん?",
+      "original_en": "?Electric Bomb?",
+      "current_ptbr": "?Bomba elétrica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23460,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵単体に対して雷による小ダメージを与える",
+      "original_en": "Small lightning damage to single enemy target",
+      "current_ptbr": "Dano leve de raio a um inimigo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23461,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "戦闘中に使用すると、相手に雷の一撃を与えることが出来る。ただし、使用時には相手の耐性に要注意だ。",
+      "original_en": "Damage your opponent with lightning damage by using this in battle. Remember to check the enemy’s resistance.",
+      "current_ptbr": "Causa dano elétrico em batalha. Lembre-se de conferir a resistência inimiga.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23462,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆弾3雷",
+      "original_en": "Bomb 3 Lightning",
+      "current_ptbr": "Bomba 3 Raio",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23463,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "電離化合液",
+      "original_en": "Ionization Liquid",
+      "current_ptbr": "Líquido ionizante",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23464,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?あやしい液体?",
+      "original_en": "?Suspicious Liquid?",
+      "current_ptbr": "?Líquido suspeito?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23465,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵単体に対して氷による小ダメージを与える",
+      "original_en": "Small ice damage to single enemy target",
+      "current_ptbr": "Dano leve de gelo a um inimigo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23466,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "破裂すると途端に凍りつく危険な水が入っている箱。相手に氷の一撃を与えるぞ。",
+      "original_en": "A dangerous liquid in a box that instantly freezes the moment it bursts. Does ice damage to the opponent.",
+      "current_ptbr": "Líquido perigoso numa caixa. Congela assim que ela se rompe e causa dano de gelo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23467,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆弾4氷",
+      "original_en": "Bomb 4 Ice",
+      "current_ptbr": "Bomba 4 Gelo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23468,
+      "event_file": "SLUS/TEXT/0135",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ポプコーンボム",
+      "original_en": "Popcorn Bomb",
+      "current_ptbr": "Bomba de pipoca",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23469,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?大ばくだん?",
+      "original_en": "?Big Bomb?",
+      "current_ptbr": "?Bomba grande?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23470,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵全体に対して雷、炎、物理的な中ダメージを与える",
+      "original_en": "Medium lightning, fire, physical damage to all enemies",
+      "current_ptbr": "Dano moderado de raio, fogo e físico a todos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23471,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "多属性の敵が同時に現れたとしても有効な爆弾。というか、物理的なダメージだけでも十分な気がするのだが...。",
+      "original_en": "A useful bomb even if an enemy with multiple resistances appear. Isn’t the physical damage enough?",
+      "current_ptbr": "Bomba útil contra inimigos com várias resistências. Será que o dano físico não bastava?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23472,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆弾A2(雷、炎、物理)",
+      "original_en": "Bomb A2 (Lightning, Fire, Physical)",
+      "current_ptbr": "Bomba A2 (raio, fogo, físico)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23473,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イナイイナイ",
+      "original_en": "Peeka",
+      "current_ptbr": "Peeka",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23474,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?ブタ?",
+      "original_en": "?Pig?",
+      "current_ptbr": "?Porco?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23475,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵に遭遇する確率を激減させることが出来る便利な道具",
+      "original_en": "Decreases the chance to encounter enemies",
+      "current_ptbr": "Reduz encontros com inimigos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23476,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵除け線香と言うのが正しいだろうか。持ち運びが少し恥ずかしい。",
+      "original_en": "An incense to repel enemies. A little embarrassing carrying it around.",
+      "current_ptbr": "Incenso que afasta inimigos. Dá um pouco de vergonha carregar isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23477,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵出ない",
+      "original_en": "No enemy appearances",
+      "current_ptbr": "Evita encontros com inimigos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23478,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "バー",
+      "original_en": "Boo",
+      "current_ptbr": "Boo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23479,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?たいこ?",
+      "original_en": "?Drum?",
+      "current_ptbr": "?Tambor?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23480,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵に遭遇する確率を激増させることが出来る危険な道具",
+      "original_en": "Increases the chance to encounter enemies",
+      "current_ptbr": "Aumenta encontros com inimigos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23481,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "間違えて赤ん坊をあやす時に使ったりでもしたらとんでもないことになるぞ。",
+      "original_en": "If you play around with it as a rattle, you’re in some big trouble.",
+      "current_ptbr": "Se brincar com isto como um chocalho, vai arrumar uma grande confusão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23482,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵よく出る",
+      "original_en": "Many enemy appearances",
+      "current_ptbr": "Mais encontros com inimigos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23483,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "インバートフック",
+      "original_en": "Invert Hook",
+      "current_ptbr": "Gancho inversor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23484,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?超文明の遺産?",
+      "original_en": "?Legacy of Civilizations?",
+      "current_ptbr": "?Legado das civilizações?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23485,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方ヒロインの詠唱速度を爆裂アップさせる",
+      "original_en": "Boosts friendly RT’s singing speed",
+      "current_ptbr": "Acelera o canto da Reyvateil aliada",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23486,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詠唱速度を爆裂アップさせる道具。速くなるのは良いんだが、舌を噛んだりしないのかが少し気になる...。",
+      "original_en": "A tool to increase singing speed. Sure it’s great to sing faster, but what if you bite your tongue...",
+      "current_ptbr": "Ferramenta que acelera o canto. É bom cantar mais rápido, mas e se morder a língua?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23487,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詠唱速度爆裂アップ",
+      "original_en": "Boost singing speed ",
+      "current_ptbr": "Acelera o canto ",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23488,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トランキリティ",
+      "original_en": "Tranquility",
+      "current_ptbr": "Tranquilidade",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23489,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "?トランキリティ?",
+      "original_en": "?Tranquility?",
+      "current_ptbr": "?Tranquilidade?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23490,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "味方ヒロインのMPを小回復させる",
+      "original_en": "Small MP recovery ",
+      "current_ptbr": "Recupera um pouco de MP ",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23491,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レーヴァテイルの延命剤として使われるクリスタル。謳い過ぎて疲れた時に使ってあげよう。",
+      "original_en": "A crystal used as a life extending agent for Reyvateils. Use it for them when they’re tired from singing too much.",
+      "current_ptbr": "Cristal usado para prolongar a vida das Reyvateils. Use quando estiverem cansadas de cantar demais.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 23492,
+      "event_file": "SLUS/TEXT/0136",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "精神力回復",
+      "original_en": "Recover spiritual powers",
+      "current_ptbr": "Recupera poder espiritual",
+      "review_status": "unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,2474 @@
+{
+  "block_id": "BLK_SYS_001",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Executable Strings",
+  "total_lines": 290,
+  "lines_rewritten": 124,
+  "lines_approved_as_is": 166,
+  "new_terms": {
+    "Drena Fogo/Gelo/Raio/Vento/Magia": {
+      "pt": "Drena [Elemento]",
+      "category": "Combate / Efeito Passivo",
+      "note": "Padronização canônica de absorção de dano elemental nos executáveis."
+    },
+    "Imune a [Efeito]": {
+      "pt": "Imune a [Efeito]",
+      "category": "Combate / Efeito Passivo",
+      "note": "Padronização canônica de imunidade a status negativos em chefes e monstros."
+    }
+  },
+  "scene_handoff_final": {
+    "last_scene_id": "BLK_SYS_001",
+    "last_line_id": 20594,
+    "location_and_situation": "Núcleo Sistêmico Parte 1 (menus, atributos, habilidades de batalha básicas e chefes) concluído e padronizado.",
+    "emotional_state": "Sistêmico / Neutro.",
+    "active_hooks": [
+      "Encadear com BLK_SYS_002 (habilidades avançadas, magias de monstros e catálogo de armas/itens)."
+    ]
+  },
+  "highlights": [
+    {
+      "id": 20311,
+      "jp": "プレイ時間",
+      "en": "Time Played",
+      "before": "Tempo",
+      "after": "Tempo total",
+      "reason": "JP プレイ時間 (Tempo de jogo). 'Tempo total' cabe nos 24B sem truncamento."
+    },
+    {
+      "id": 20313,
+      "jp": "武器",
+      "en": "Armor",
+      "before": "Armad",
+      "after": "Armad.",
+      "reason": "JP 防具 (categoria de armadura/proteção corporal; abreviado por teto de 16B)"
+    },
+    {
+      "id": 20314,
+      "jp": "防具",
+      "en": "Accessory",
+      "before": "Acess.",
+      "after": "Acessório",
+      "reason": "JP アクセサリ (categoria de acessórios; 20B <= 24B)"
+    },
+    {
+      "id": 20317,
+      "jp": "攻撃力",
+      "en": "F Attack",
+      "before": "Atq.F",
+      "after": "Atq. Fogo",
+      "reason": "JP 炎打撃 (ataque elemental de fogo; 19B <= 24B)"
+    },
+    {
+      "id": 20318,
+      "jp": "炎打撃",
+      "en": "I Attack",
+      "before": "Atq.G",
+      "after": "Atq. Gelo",
+      "reason": "JP 氷打撃 (ataque elemental de gelo; 19B <= 24B)"
+    },
+    {
+      "id": 20319,
+      "jp": "氷打撃",
+      "en": "L Attack",
+      "before": "Atq.R",
+      "after": "Atq. Raio",
+      "reason": "JP 雷打撃 (ataque elemental de raio; 19B <= 24B)"
+    },
+    {
+      "id": 20320,
+      "jp": "雷打撃",
+      "en": "W Attack",
+      "before": "Atq.V",
+      "after": "Atq. Vento",
+      "reason": "JP 風打撃 (ataque elemental de vento; 21B <= 24B)"
+    },
+    {
+      "id": 20322,
+      "jp": "防御力",
+      "en": "F Resist",
+      "before": "Res.F",
+      "after": "Res. Fogo",
+      "reason": "JP 炎耐性 (resistência elemental a fogo; 19B <= 24B)"
+    },
+    {
+      "id": 20323,
+      "jp": "炎耐性",
+      "en": "I Resist",
+      "before": "Res.G",
+      "after": "Res. Gelo",
+      "reason": "JP 氷耐性 (resistência elemental a gelo; 19B <= 24B)"
+    },
+    {
+      "id": 20324,
+      "jp": "氷耐性",
+      "en": "L Resist",
+      "before": "Res.R",
+      "after": "Res. Raio",
+      "reason": "JP 雷耐性 (resistência elemental a raio; 19B <= 24B)"
+    },
+    {
+      "id": 20325,
+      "jp": "雷耐性",
+      "en": "W Resist",
+      "before": "Res.V",
+      "after": "Res. Vento",
+      "reason": "JP 風耐性 (resistência elemental a vento; 21B <= 24B)"
+    },
+    {
+      "id": 20328,
+      "jp": "MP",
+      "en": "Age:",
+      "before": "Id.:",
+      "after": "Idade:",
+      "reason": "JP 年齢: (campo de idade na ficha)"
+    },
+    {
+      "id": 20331,
+      "jp": "性別:",
+      "en": "Male",
+      "before": "Masc",
+      "after": "Masc.",
+      "reason": "JP 男 (sexo masculino; abreviado por teto de 16B)"
+    },
+    {
+      "id": 20335,
+      "jp": "好き:",
+      "en": "Dislikes:",
+      "before": "Detesta:",
+      "after": "Não gosta:",
+      "reason": "JP 嫌い: (desgostos pessoais na ficha; 21B <= 24B)"
+    },
+    {
+      "id": 20342,
+      "jp": "あいうえおかき",
+      "en": "Category",
+      "before": "Classe",
+      "after": "Categoria",
+      "reason": "JP カテゴリ (classe/tipo de objeto)"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 20305,
+      "original_en": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.-!?/%&+*=()",
+      "original_jp": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.-!?/%&+*=()",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "String técnica vazia/não exibida"
+    },
+    {
+      "id": 20306,
+      "original_en": "Item",
+      "original_jp": "アイテム",
+      "current_ptbr": "Item",
+      "curated_ptbr": "Item",
+      "justification": "Item (termo canônico do inventário)"
+    },
+    {
+      "id": 20307,
+      "original_en": "Leaf",
+      "original_jp": "リーフ",
+      "current_ptbr": "Leaf",
+      "curated_ptbr": "Leaf",
+      "justification": "Leaf (moeda canônica de Sol Ciel)"
+    },
+    {
+      "id": 20308,
+      "original_en": "DP",
+      "original_jp": "DP",
+      "current_ptbr": "DP",
+      "curated_ptbr": "DP",
+      "justification": "DP (Pontos de Mergulho no HUD)"
+    },
+    {
+      "id": 20309,
+      "original_en": "Lyner",
+      "original_jp": "ライナー",
+      "current_ptbr": "Lyner",
+      "curated_ptbr": "Lyner",
+      "justification": "Lyner (nome do protagonista mantido)"
+    },
+    {
+      "id": 20310,
+      "original_en": "WINDOW2D_MESSAGE06",
+      "original_jp": "文章入ります",
+      "current_ptbr": "WINDOW2D_MESSAGE06",
+      "curated_ptbr": "WINDOW2D_MESSAGE06",
+      "justification": "Identificador de layout interno protegido"
+    },
+    {
+      "id": 20311,
+      "original_en": "Time Played",
+      "original_jp": "プレイ時間",
+      "current_ptbr": "Tempo",
+      "curated_ptbr": "Tempo total",
+      "justification": "JP プレイ時間 (Tempo de jogo). 'Tempo total' cabe nos 24B sem truncamento."
+    },
+    {
+      "id": 20312,
+      "original_en": "Weapon",
+      "original_jp": "あいうえおかきく",
+      "current_ptbr": "Arma",
+      "curated_ptbr": "Arma",
+      "justification": "JP 武器 (categoria de armas)"
+    },
+    {
+      "id": 20313,
+      "original_en": "Armor",
+      "original_jp": "武器",
+      "current_ptbr": "Armad",
+      "curated_ptbr": "Armad.",
+      "justification": "JP 防具 (categoria de armadura/proteção corporal; abreviado por teto de 16B)"
+    },
+    {
+      "id": 20314,
+      "original_en": "Accessory",
+      "original_jp": "防具",
+      "current_ptbr": "Acess.",
+      "curated_ptbr": "Acessório",
+      "justification": "JP アクセサリ (categoria de acessórios; 20B <= 24B)"
+    },
+    {
+      "id": 20315,
+      "original_en": "HP",
+      "original_jp": "アクセサリ",
+      "current_ptbr": "HP",
+      "curated_ptbr": "HP",
+      "justification": "HP (Pontos de Vida no HUD)"
+    },
+    {
+      "id": 20316,
+      "original_en": "Attack",
+      "original_jp": "HP",
+      "current_ptbr": "Ataque",
+      "curated_ptbr": "Ataque",
+      "justification": "JP 攻撃力 (atributo de ataque físico)"
+    },
+    {
+      "id": 20317,
+      "original_en": "F Attack",
+      "original_jp": "攻撃力",
+      "current_ptbr": "Atq.F",
+      "curated_ptbr": "Atq. Fogo",
+      "justification": "JP 炎打撃 (ataque elemental de fogo; 19B <= 24B)"
+    },
+    {
+      "id": 20318,
+      "original_en": "I Attack",
+      "original_jp": "炎打撃",
+      "current_ptbr": "Atq.G",
+      "curated_ptbr": "Atq. Gelo",
+      "justification": "JP 氷打撃 (ataque elemental de gelo; 19B <= 24B)"
+    },
+    {
+      "id": 20319,
+      "original_en": "L Attack",
+      "original_jp": "氷打撃",
+      "current_ptbr": "Atq.R",
+      "curated_ptbr": "Atq. Raio",
+      "justification": "JP 雷打撃 (ataque elemental de raio; 19B <= 24B)"
+    },
+    {
+      "id": 20320,
+      "original_en": "W Attack",
+      "original_jp": "雷打撃",
+      "current_ptbr": "Atq.V",
+      "curated_ptbr": "Atq. Vento",
+      "justification": "JP 風打撃 (ataque elemental de vento; 21B <= 24B)"
+    },
+    {
+      "id": 20321,
+      "original_en": "Defense",
+      "original_jp": "風打撃",
+      "current_ptbr": "Defesa",
+      "curated_ptbr": "Defesa",
+      "justification": "JP 防御力 (atributo de defesa física)"
+    },
+    {
+      "id": 20322,
+      "original_en": "F Resist",
+      "original_jp": "防御力",
+      "current_ptbr": "Res.F",
+      "curated_ptbr": "Res. Fogo",
+      "justification": "JP 炎耐性 (resistência elemental a fogo; 19B <= 24B)"
+    },
+    {
+      "id": 20323,
+      "original_en": "I Resist",
+      "original_jp": "炎耐性",
+      "current_ptbr": "Res.G",
+      "curated_ptbr": "Res. Gelo",
+      "justification": "JP 氷耐性 (resistência elemental a gelo; 19B <= 24B)"
+    },
+    {
+      "id": 20324,
+      "original_en": "L Resist",
+      "original_jp": "氷耐性",
+      "current_ptbr": "Res.R",
+      "curated_ptbr": "Res. Raio",
+      "justification": "JP 雷耐性 (resistência elemental a raio; 19B <= 24B)"
+    },
+    {
+      "id": 20325,
+      "original_en": "W Resist",
+      "original_jp": "雷耐性",
+      "current_ptbr": "Res.V",
+      "curated_ptbr": "Res. Vento",
+      "justification": "JP 風耐性 (resistência elemental a vento; 21B <= 24B)"
+    },
+    {
+      "id": 20326,
+      "original_en": "Agility",
+      "original_jp": "風耐性",
+      "current_ptbr": "Agilid.",
+      "curated_ptbr": "Agilid.",
+      "justification": "JP 素早さ (atributo de agilidade/velocidade; teto de 16B)"
+    },
+    {
+      "id": 20327,
+      "original_en": "MP",
+      "original_jp": "素早さ",
+      "current_ptbr": "MP",
+      "curated_ptbr": "MP",
+      "justification": "MP (Pontos de Magia no HUD)"
+    },
+    {
+      "id": 20328,
+      "original_en": "Age:",
+      "original_jp": "MP",
+      "current_ptbr": "Id.:",
+      "curated_ptbr": "Idade:",
+      "justification": "JP 年齢: (campo de idade na ficha)"
+    },
+    {
+      "id": 20329,
+      "original_en": "Years",
+      "original_jp": "年齢:",
+      "current_ptbr": "anos",
+      "curated_ptbr": "anos",
+      "justification": "JP 歳 (unidade de idade)"
+    },
+    {
+      "id": 20330,
+      "original_en": "Gender:",
+      "original_jp": "歳",
+      "current_ptbr": "Sexo:",
+      "curated_ptbr": "Sexo:",
+      "justification": "JP 性別: (campo de sexo/gênero na ficha)"
+    },
+    {
+      "id": 20331,
+      "original_en": "Male",
+      "original_jp": "性別:",
+      "current_ptbr": "Masc",
+      "curated_ptbr": "Masc.",
+      "justification": "JP 男 (sexo masculino; abreviado por teto de 16B)"
+    },
+    {
+      "id": 20332,
+      "original_en": "Height:",
+      "original_jp": "男",
+      "current_ptbr": "Altura:",
+      "curated_ptbr": "Altura:",
+      "justification": "JP 身長: (campo de altura na ficha)"
+    },
+    {
+      "id": 20333,
+      "original_en": "Weight:",
+      "original_jp": "身長:",
+      "current_ptbr": "Peso:",
+      "curated_ptbr": "Peso:",
+      "justification": "JP 体重: (campo de peso na ficha)"
+    },
+    {
+      "id": 20334,
+      "original_en": "Likes:",
+      "original_jp": "体重:",
+      "current_ptbr": "Gosta:",
+      "curated_ptbr": "Gosta:",
+      "justification": "JP 好き: (gostos pessoais na ficha)"
+    },
+    {
+      "id": 20335,
+      "original_en": "Dislikes:",
+      "original_jp": "好き:",
+      "current_ptbr": "Detesta:",
+      "curated_ptbr": "Não gosta:",
+      "justification": "JP 嫌い: (desgostos pessoais na ficha; 21B <= 24B)"
+    },
+    {
+      "id": 20336,
+      "original_en": "Dream:",
+      "original_jp": "あいうえおかきくけこ",
+      "current_ptbr": "Sonho:",
+      "curated_ptbr": "Sonho:",
+      "justification": "JP 夢: (sonho/aspiração pessoal na ficha)"
+    },
+    {
+      "id": 20337,
+      "original_en": "Total Magic",
+      "original_jp": "嫌い:",
+      "current_ptbr": "Magia total",
+      "curated_ptbr": "Magia total",
+      "justification": "JP 全魔法合計 (total de magias conhecidas; 23B <= 24B)"
+    },
+    {
+      "id": 20338,
+      "original_en": "Quality",
+      "original_jp": "夢 :",
+      "current_ptbr": "Qualid.",
+      "curated_ptbr": "Qualid.",
+      "justification": "JP 品質 (qualidade de síntese de item; teto de 16B)"
+    },
+    {
+      "id": 20339,
+      "original_en": "Current Equipment",
+      "original_jp": "あいうえおかきくけ",
+      "current_ptbr": "Equipamento atual",
+      "curated_ptbr": "Equipamento atual",
+      "justification": "JP 現在の装備品 (itens equipados atualmente)"
+    },
+    {
+      "id": 20340,
+      "original_en": "Syn-C",
+      "original_jp": "あいうえおかきくけこさしすせ",
+      "current_ptbr": "Syn-C",
+      "curated_ptbr": "Syn-C",
+      "justification": "Syn-C (taxa de sincronia mantida)"
+    },
+    {
+      "id": 20341,
+      "original_en": "Named",
+      "original_jp": "全魔法合計",
+      "current_ptbr": "Nome",
+      "curated_ptbr": "Nome",
+      "justification": "JP 命名 (nome do item ou artefato)"
+    },
+    {
+      "id": 20342,
+      "original_en": "Category",
+      "original_jp": "あいうえおかき",
+      "current_ptbr": "Classe",
+      "curated_ptbr": "Categoria",
+      "justification": "JP カテゴリ (classe/tipo de objeto)"
+    },
+    {
+      "id": 20343,
+      "original_en": "Equip [Accessory]",
+      "original_jp": "品質",
+      "current_ptbr": "Equip. [Acess.]",
+      "curated_ptbr": "Equip. [Acessório]",
+      "justification": "JP 装備【アクセサリ】 (ação de equipar acessório)"
+    },
+    {
+      "id": 20344,
+      "original_en": "Memo",
+      "original_jp": "現在の装備品",
+      "current_ptbr": "Nota",
+      "curated_ptbr": "Nota",
+      "justification": "JP メモ (anotação/observação; 9B <= 16B)"
+    },
+    {
+      "id": 20345,
+      "original_en": "Recipe",
+      "original_jp": "合C",
+      "current_ptbr": "Rec.",
+      "curated_ptbr": "Receita",
+      "justification": "JP レシピ (receita de síntese)"
+    },
+    {
+      "id": 20346,
+      "original_en": "Use Effect",
+      "original_jp": "命名",
+      "current_ptbr": "Efeito uso",
+      "curated_ptbr": "Efeito uso",
+      "justification": "JP 使用効果 (efeito ao ser consumido/usado)"
+    },
+    {
+      "id": 20347,
+      "original_en": "(Grathnode) Recrystallization",
+      "original_jp": "カテゴリ",
+      "current_ptbr": "Recristalização",
+      "curated_ptbr": "Recristalização",
+      "justification": "JP グラスノ再結晶化 (processo de síntese de Grathnode)"
+    },
+    {
+      "id": 20348,
+      "original_en": "Enhancements",
+      "original_jp": "装備【アクセサリ】",
+      "current_ptbr": "Melhorias",
+      "curated_ptbr": "Aprimoramentos",
+      "justification": "JP パワード情報 (propriedades extras do item)"
+    },
+    {
+      "id": 20349,
+      "original_en": "Equipable Characters ",
+      "original_jp": "メモ",
+      "current_ptbr": "Quem pode equipar ",
+      "curated_ptbr": "Quem pode equipar ",
+      "justification": "JP 装備可能キャラ (personagens compatíveis)"
+    },
+    {
+      "id": 20350,
+      "original_en": "Change Parameter",
+      "original_jp": "レシピ",
+      "current_ptbr": "Mudar atributo",
+      "curated_ptbr": "Mudar atributos",
+      "justification": "JP パラメーター変化 (modificadores de atributos; 31B <= 40B)"
+    },
+    {
+      "id": 20351,
+      "original_en": "GD Resist",
+      "original_jp": "使用効果",
+      "current_ptbr": "Res. GD",
+      "curated_ptbr": "Res. GD",
+      "justification": "JP GD耐性 (resistência a Grathnode)"
+    },
+    {
+      "id": 20352,
+      "original_en": "Spawn Point",
+      "original_jp": "グラスノ再結晶化",
+      "current_ptbr": "Origem",
+      "curated_ptbr": "Aparição",
+      "justification": "JP 出現場所 (local de aparição de inimigo/item; 17B <= 24B)"
+    },
+    {
+      "id": 20353,
+      "original_en": "Dropped Items",
+      "original_jp": "パワード情報",
+      "current_ptbr": "Itens obtidos",
+      "curated_ptbr": "Itens deixados",
+      "justification": "JP 落とすアイテム (espólios de batalha)"
+    },
+    {
+      "id": 20354,
+      "original_en": "Home",
+      "original_jp": "装備可能キャラ",
+      "current_ptbr": "Casa",
+      "curated_ptbr": "Origem",
+      "justification": "JP 出身地 (terra natal/cidade de origem)"
+    },
+    {
+      "id": 20355,
+      "original_en": "Job",
+      "original_jp": "パラメーター変化",
+      "current_ptbr": "At.",
+      "curated_ptbr": "At.",
+      "justification": "JP 職業 (ocupação/profissão; teto de 8B)"
+    },
+    {
+      "id": 20356,
+      "original_en": "Likes",
+      "original_jp": "GD抵抗力",
+      "current_ptbr": "Gosta",
+      "curated_ptbr": "Gosta",
+      "justification": "JP 好き (gostos pessoais)"
+    },
+    {
+      "id": 20357,
+      "original_en": "Dislikes",
+      "original_jp": "出現場所",
+      "current_ptbr": "Detesta",
+      "curated_ptbr": "Não gosta",
+      "justification": "JP 嫌い (desgostos)"
+    },
+    {
+      "id": 20358,
+      "original_en": "Dream",
+      "original_jp": "あいうえ",
+      "current_ptbr": "Sonho",
+      "curated_ptbr": "Sonho",
+      "justification": "JP 夢 (sonho pessoal)"
+    },
+    {
+      "id": 20359,
+      "original_en": "Hobbies",
+      "original_jp": "ドロップアイテム",
+      "current_ptbr": "Hobby",
+      "curated_ptbr": "Hobby",
+      "justification": "JP 趣味 (passatempo; teto de 16B)"
+    },
+    {
+      "id": 20360,
+      "original_en": "Motto",
+      "original_jp": "生まれ",
+      "current_ptbr": "Lema",
+      "curated_ptbr": "Lema",
+      "justification": "JP 座右の銘 (lema pessoal)"
+    },
+    {
+      "id": 20361,
+      "original_en": "Amount Made",
+      "original_jp": "仕事",
+      "current_ptbr": "Qtde. feita",
+      "curated_ptbr": "Qtd. criada",
+      "justification": "JP 作成個数 (quantidade produzida)"
+    },
+    {
+      "id": 20362,
+      "original_en": "Old Item",
+      "original_jp": "好き",
+      "current_ptbr": "Item ant",
+      "curated_ptbr": "Item base",
+      "justification": "JP 元アイテム (item anterior para síntese)"
+    },
+    {
+      "id": 20363,
+      "original_en": "Selling Price",
+      "original_jp": "嫌い",
+      "current_ptbr": "Preço venda",
+      "curated_ptbr": "Preço de venda",
+      "justification": "JP 売却金額 (valor obtido ao vender)"
+    },
+    {
+      "id": 20364,
+      "original_en": "Combined Item",
+      "original_jp": "夢",
+      "current_ptbr": "Item criado",
+      "curated_ptbr": "Item criado",
+      "justification": "JP 作成アイテム (item resultante da síntese)"
+    },
+    {
+      "id": 20365,
+      "original_en": "Number",
+      "original_jp": "趣味",
+      "current_ptbr": "Núm.",
+      "curated_ptbr": "Qtd.",
+      "justification": "JP 個数 (quantidade)"
+    },
+    {
+      "id": 20366,
+      "original_en": "Total Price",
+      "original_jp": "座右の銘",
+      "current_ptbr": "Total",
+      "curated_ptbr": "Preço total",
+      "justification": "JP 合計金額 (valor total na loja)"
+    },
+    {
+      "id": 20367,
+      "original_en": "Own",
+      "original_jp": "あいうえおかきくの作成",
+      "current_ptbr": "Tem",
+      "curated_ptbr": "Tem",
+      "justification": "JP 所持数 (quantidade que possui; teto de 8B)"
+    },
+    {
+      "id": 20368,
+      "original_en": "Stock",
+      "original_jp": "作成個数",
+      "current_ptbr": "Qtde.",
+      "curated_ptbr": "Estoque",
+      "justification": "JP 在庫数 (estoque da loja)"
+    },
+    {
+      "id": 20369,
+      "original_en": "Required DP",
+      "original_jp": "売却金額",
+      "current_ptbr": "DP exigido",
+      "curated_ptbr": "DP exigido",
+      "justification": "JP 必要DP (Pontos de Mergulho necessários)"
+    },
+    {
+      "id": 20370,
+      "original_en": "Enter",
+      "original_jp": "混ぜたアイテム",
+      "current_ptbr": "Entr.",
+      "curated_ptbr": "Entrar",
+      "justification": "JP 入る (comando de entrada na Cosmosfera)"
+    },
+    {
+      "id": 20371,
+      "original_en": "Return to Reality",
+      "original_jp": "個",
+      "current_ptbr": "Voltar ao real",
+      "curated_ptbr": "Voltar à realidade",
+      "justification": "JP 現実に戻る (comando de saída da Cosmosfera)"
+    },
+    {
+      "id": 20372,
+      "original_en": "Play Time",
+      "original_jp": "合計金額 / プレイ時間",
+      "current_ptbr": "Tempo",
+      "curated_ptbr": "Tempo total",
+      "justification": "JP プレイ時間 (tempo de jogo total)"
+    },
+    {
+      "id": 20373,
+      "original_en": "Don’t Sing at Start",
+      "original_jp": "所持 / 始めは歌わない",
+      "current_ptbr": "Sem canto inicial",
+      "curated_ptbr": "Lenta",
+      "justification": "JP おっとり (personalidade preguiçosa/calma)"
+    },
+    {
+      "id": 20374,
+      "original_en": "Lazy",
+      "original_jp": "一文字ずつ",
+      "current_ptbr": "Lenta",
+      "curated_ptbr": "Sem canto inicial",
+      "justification": "JP 最初から謳わない (opção tática de batalha)"
+    },
+    {
+      "id": 20375,
+      "original_en": "ON",
+      "original_jp": "ON",
+      "current_ptbr": "LIG",
+      "curated_ptbr": "LIG",
+      "justification": "JP ON (estado ativado; teto de 8B)"
+    },
+    {
+      "id": 20376,
+      "original_en": "English",
+      "original_jp": "英語",
+      "current_ptbr": "Inglês",
+      "curated_ptbr": "LIG.",
+      "justification": "JP ON (estado ligado no menu)"
+    },
+    {
+      "id": 20377,
+      "original_en": "Burst Chart ",
+      "original_jp": "バースト傾向",
+      "current_ptbr": "Gráf. Burst ",
+      "curated_ptbr": "Inglês",
+      "justification": "JP 英語 (idioma da interface)"
+    },
+    {
+      "id": 20378,
+      "original_en": "Explanation",
+      "original_jp": "あいうえおかきくけこさしす",
+      "current_ptbr": "Explicação",
+      "curated_ptbr": "Explicação",
+      "justification": "JP 説明 (texto explicativo da tela)"
+    },
+    {
+      "id": 20379,
+      "original_en": "Magnification",
+      "original_jp": "説明",
+      "current_ptbr": "Multiplicador",
+      "curated_ptbr": "Multiplicador",
+      "justification": "JP 倍率 (taxa de multiplicação de Burst)"
+    },
+    {
+      "id": 20380,
+      "original_en": "Required MP",
+      "original_jp": "倍率",
+      "current_ptbr": "MP exigido",
+      "curated_ptbr": "MP exigido",
+      "justification": "JP 消費MP (custo de MP da magia)"
+    },
+    {
+      "id": 20381,
+      "original_en": "Aurica",
+      "original_jp": "%",
+      "current_ptbr": "Aurica",
+      "curated_ptbr": "Aurica",
+      "justification": "JP オリカ (nome de Aurica na aba)"
+    },
+    {
+      "id": 20382,
+      "original_en": "Ultimate Cosmosphere",
+      "original_jp": "消費MP",
+      "current_ptbr": "Cosmosfera final",
+      "curated_ptbr": "Trajes obtidos ",
+      "justification": "JP 所持コスチューム (coleção de roupas)"
+    },
+    {
+      "id": 20383,
+      "original_en": "Costumes in Possession ",
+      "original_jp": "オリカ",
+      "current_ptbr": "Trajes obtidos ",
+      "curated_ptbr": "Magias obtidas",
+      "justification": "JP 習得魔法 (magias de canção aprendidas)"
+    },
+    {
+      "id": 20384,
+      "original_en": "Magics Acquired",
+      "original_jp": "最高コスモスフィア",
+      "current_ptbr": "Magias obtidas",
+      "curated_ptbr": "Cosmosfera explorada",
+      "justification": "JP コスモスフィア制覇 (níveis concluídos)"
+    },
+    {
+      "id": 20385,
+      "original_en": "Cosmosphere Explored",
+      "original_jp": "コスチューム所持率",
+      "current_ptbr": "Cosmosfera explorada",
+      "curated_ptbr": "Conversas feitas",
+      "justification": "JP 会話達成度 (tópicos de acampamento vistos)"
+    },
+    {
+      "id": 20386,
+      "original_en": "Conversations Achieved",
+      "original_jp": "コスモスフィア踏破率",
+      "current_ptbr": "Conversas concluídas",
+      "curated_ptbr": "Conversas passadas ",
+      "justification": "JP 過去会話 (histórico de conversas)"
+    },
+    {
+      "id": 20387,
+      "original_en": "Past Conversations ",
+      "original_jp": "トークマター達成率",
+      "current_ptbr": "Conversas passadas ",
+      "curated_ptbr": "Qualid.",
+      "justification": "JP 品質 (qualidade do traje/item)"
+    },
+    {
+      "id": 20388,
+      "original_en": "Unseen Conversations",
+      "original_jp": "すでに見たマター",
+      "current_ptbr": "Conversas inéditas",
+      "curated_ptbr": "Gráfico de Burst ",
+      "justification": "JP バーストチャート (gráfico de poder de canção)"
+    },
+    {
+      "id": 20389,
+      "original_en": "About to Expire",
+      "original_jp": "まだ見ていないマター",
+      "current_ptbr": "Quase esgotado",
+      "curated_ptbr": "Trocar traje",
+      "justification": "JP 着替える (comando de vestir outra roupa)"
+    },
+    {
+      "id": 20390,
+      "original_en": "Required HP",
+      "original_jp": "期限切れ間近のマター",
+      "current_ptbr": "HP exigido",
+      "curated_ptbr": "Reiniciar",
+      "justification": "JP 初期値に戻す (restaurar padrões)"
+    },
+    {
+      "id": 20391,
+      "original_en": "Named:",
+      "original_jp": "あいうえおかきくけこさしすせそたちつてと",
+      "current_ptbr": "Nome:",
+      "curated_ptbr": "Nome:",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20392,
+      "original_en": "Ar tonelico",
+      "original_jp": "アルトネリコ",
+      "current_ptbr": "Ar tonelico",
+      "curated_ptbr": "Ar tonelico",
+      "justification": "Ar tonelico (nome canônico da Torre mantido)"
+    },
+    {
+      "id": 20393,
+      "original_en": "VOICE0000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20394,
+      "original_en": "VOICE1000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20395,
+      "original_en": "VOICE2000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20396,
+      "original_en": "VOICE3000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20397,
+      "original_en": "VOICE4000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20398,
+      "original_en": "VOICE5000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20399,
+      "original_en": "VOICE6000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20400,
+      "original_en": "VOICE7000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20401,
+      "original_en": "VOICE8000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20402,
+      "original_en": "VOICE9000",
+      "original_jp": "",
+      "current_ptbr": "",
+      "curated_ptbr": "",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20403,
+      "original_en": "Pombad",
+      "original_jp": "ポムばっど",
+      "current_ptbr": "Pombad",
+      "curated_ptbr": "Pombad",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20404,
+      "original_en": "Pom Tackle",
+      "original_jp": "ポムたっくる",
+      "current_ptbr": "Ataque Pom",
+      "curated_ptbr": "Ataque Pom",
+      "justification": "JP ポムたっくる (investida do Pombad)"
+    },
+    {
+      "id": 20405,
+      "original_en": "Self Evolution",
+      "original_jp": "自己進化",
+      "current_ptbr": "Autoevolução",
+      "curated_ptbr": "Autoevolução",
+      "justification": "JP 自己進化 (habilidade de Pombad)"
+    },
+    {
+      "id": 20406,
+      "original_en": "Pom Blast",
+      "original_jp": "ポムブラスト",
+      "current_ptbr": "Bomba Pom",
+      "curated_ptbr": "Bomba Pom",
+      "justification": "JP ポムブラスト (explosão sonora de Pombad)"
+    },
+    {
+      "id": 20407,
+      "original_en": "Jumping Thorn",
+      "original_jp": "ジャンピングトゲ",
+      "current_ptbr": "Espinho ágil",
+      "curated_ptbr": "Espinho Ágil",
+      "justification": "JP ジャンピングトゲ (espinhos saltadores)"
+    },
+    {
+      "id": 20408,
+      "original_en": "Triple Attack",
+      "original_jp": "トリプルアタック",
+      "current_ptbr": "Ataque triplo",
+      "curated_ptbr": "Ataque Triplo",
+      "justification": "JP トリプルアタック (três golpes consecutivos)"
+    },
+    {
+      "id": 20409,
+      "original_en": "Chaotic Triple",
+      "original_jp": "乱れトリプル",
+      "current_ptbr": "Triplo caos",
+      "curated_ptbr": "Triplo Caótico",
+      "justification": "JP 乱れトリプル (ataque desordenado)"
+    },
+    {
+      "id": 20410,
+      "original_en": "Fusion Beam",
+      "original_jp": "溶解ビーム",
+      "current_ptbr": "Raio fusão",
+      "curated_ptbr": "Raio Fusão",
+      "justification": "JP 溶解ビーム (raio corrosivo de fusão)"
+    },
+    {
+      "id": 20411,
+      "original_en": "Flower Shot",
+      "original_jp": "フラワーショット",
+      "current_ptbr": "Tiro floral",
+      "curated_ptbr": "Tiro Floral",
+      "justification": "JP フラワーショット (disparo de pétalas)"
+    },
+    {
+      "id": 20412,
+      "original_en": "Acid Rain",
+      "original_jp": "アシッドレイン",
+      "current_ptbr": "Chuva ácida",
+      "curated_ptbr": "Chuva Ácida",
+      "justification": "JP アシッドレイン (chuva química corrosiva)"
+    },
+    {
+      "id": 20413,
+      "original_en": "Mouthful",
+      "original_jp": "がぶりつき",
+      "current_ptbr": "Bocada",
+      "curated_ptbr": "Bocada",
+      "justification": "JP がぶりつき (mordida voraz)"
+    },
+    {
+      "id": 20414,
+      "original_en": "Sleepy Gas",
+      "original_jp": "ねむねむガス",
+      "current_ptbr": "Gás sono",
+      "curated_ptbr": "Gás do Sono",
+      "justification": "JP ねむねむガス (gás sonífero que induz sono)"
+    },
+    {
+      "id": 20415,
+      "original_en": "Poisony Gas",
+      "original_jp": "どくどくガス",
+      "current_ptbr": "Gás tóxico",
+      "curated_ptbr": "Gás Tóxico",
+      "justification": "JP どくどくガス (gás envenenado)"
+    },
+    {
+      "id": 20416,
+      "original_en": "Tingly Gas",
+      "original_jp": "びりびりガス",
+      "current_ptbr": "Gás paral.",
+      "curated_ptbr": "Gás Choque",
+      "justification": "JP びりびりガス (gás eletrificado que paralisa; 21B <= 24B)"
+    },
+    {
+      "id": 20417,
+      "original_en": "Collapsing Gas",
+      "original_jp": "ばたばたガス",
+      "current_ptbr": "Gás fraco",
+      "curated_ptbr": "Gás Debilitante",
+      "justification": "JP ばたばたガス (gás enfraquecedor)"
+    },
+    {
+      "id": 20418,
+      "original_en": "Dangerous Pollen",
+      "original_jp": "アブない花粉",
+      "current_ptbr": "Pólen perigoso",
+      "curated_ptbr": "Pólen Perigoso",
+      "justification": "JP アブない花粉 (esporos hostis)"
+    },
+    {
+      "id": 20419,
+      "original_en": "Invisible Pollen",
+      "original_jp": "ミエない花粉",
+      "current_ptbr": "Pólen invisível",
+      "curated_ptbr": "Pólen Invisível",
+      "justification": "JP ミエない花粉 (esporos imperceptíveis)"
+    },
+    {
+      "id": 20420,
+      "original_en": "Healing Pollen",
+      "original_jp": "癒しの花粉",
+      "current_ptbr": "Pólen cura",
+      "curated_ptbr": "Pólen Curativo",
+      "justification": "JP 癒しの花粉 (esporos restauradores)"
+    },
+    {
+      "id": 20421,
+      "original_en": "Bite",
+      "original_jp": "かみつき",
+      "current_ptbr": "Mordida",
+      "curated_ptbr": "Mordida",
+      "justification": "JP かみつき (ataque de presas básico)"
+    },
+    {
+      "id": 20422,
+      "original_en": "Sleepy Bite",
+      "original_jp": "眠りかみつき",
+      "current_ptbr": "Mord. sono",
+      "curated_ptbr": "Mord. Sono",
+      "justification": "JP 眠りかみつき (mordida que causa sono)"
+    },
+    {
+      "id": 20423,
+      "original_en": "Poisonous Bite",
+      "original_jp": "どくかみつき",
+      "current_ptbr": "Mord. tóxica",
+      "curated_ptbr": "Mordida Tóxica",
+      "justification": "JP どくかみつき (mordida com veneno; 29B <= 32B)"
+    },
+    {
+      "id": 20424,
+      "original_en": "Paralyzing Bite",
+      "original_jp": "マヒかみつき",
+      "current_ptbr": "Mord. paral.",
+      "curated_ptbr": "Mord. Paral.",
+      "justification": "JP マヒかみつき (mordida paralisante)"
+    },
+    {
+      "id": 20425,
+      "original_en": "Super Bite",
+      "original_jp": "超かみつき",
+      "current_ptbr": "Mord. forte",
+      "curated_ptbr": "Mord. Forte",
+      "justification": "JP 超かみつき (mordida amplificada)"
+    },
+    {
+      "id": 20426,
+      "original_en": "Cut",
+      "original_jp": "たたっキル",
+      "current_ptbr": "Crt",
+      "curated_ptbr": "Crt",
+      "justification": "JP たたっキル (corte rápido; teto de 8B)"
+    },
+    {
+      "id": 20427,
+      "original_en": "MINE-UCHI",
+      "original_jp": "MINE-UCHI",
+      "current_ptbr": "MINE-UCHI",
+      "curated_ptbr": "MINE-UCHI",
+      "justification": "MINE-UCHI (golpe com as costas da lâmina sem matar)"
+    },
+    {
+      "id": 20428,
+      "original_en": "Spirit",
+      "original_jp": "気合入れ",
+      "current_ptbr": "Alma",
+      "curated_ptbr": "Foco",
+      "justification": "JP 気合入れ (concentração de espírito/energia de luta)"
+    },
+    {
+      "id": 20429,
+      "original_en": "Slash",
+      "original_jp": "ブッダ斬る",
+      "current_ptbr": "Golpe",
+      "curated_ptbr": "Golpe",
+      "justification": "JP ブッダ斬る (golpe de lâmina cortante)"
+    },
+    {
+      "id": 20430,
+      "original_en": "Thunder",
+      "original_jp": "いかずち",
+      "current_ptbr": "Trovão",
+      "curated_ptbr": "Trovão",
+      "justification": "JP いかずち (golpe elétrico)"
+    },
+    {
+      "id": 20431,
+      "original_en": "Fillet",
+      "original_jp": "三枚おろし",
+      "current_ptbr": "Cortar",
+      "curated_ptbr": "Filetar",
+      "justification": "JP 三枚おろし (técnica precisa de corte)"
+    },
+    {
+      "id": 20432,
+      "original_en": "Give thy Life",
+      "original_jp": "御命頂戴",
+      "current_ptbr": "Dê sua vida",
+      "curated_ptbr": "Dê a sua vida",
+      "justification": "JP 御命頂戴 (solenidade samurai de abate; 25B <= 32B)"
+    },
+    {
+      "id": 20433,
+      "original_en": "Godspeed",
+      "original_jp": "神速",
+      "current_ptbr": "Ágil",
+      "curated_ptbr": "Passo Veloz",
+      "justification": "JP 神速 (movimento em velocidade extrema; 23B <= 24B)"
+    },
+    {
+      "id": 20434,
+      "original_en": "Lightning Slash",
+      "original_jp": "雷光斬り",
+      "current_ptbr": "Golpe raio",
+      "curated_ptbr": "Corte Relâmpago",
+      "justification": "JP 雷光斬り (corte eletrificado; 31B <= 32B)"
+    },
+    {
+      "id": 20435,
+      "original_en": "Gale Slash",
+      "original_jp": "疾風斬り",
+      "current_ptbr": "Golpe vento",
+      "curated_ptbr": "Corte Vento",
+      "justification": "JP 疾風斬り (corte aerodinâmico veloz; 23B <= 24B)"
+    },
+    {
+      "id": 20436,
+      "original_en": "Burning Slash",
+      "original_jp": "火炎斬",
+      "current_ptbr": "Golpe fogo",
+      "curated_ptbr": "Corte de Fogo",
+      "justification": "JP 火炎斬 (corte incandescente; 27B <= 32B)"
+    },
+    {
+      "id": 20437,
+      "original_en": "Fast Shot",
+      "original_jp": "ファストショット",
+      "current_ptbr": "Tiro rápido",
+      "curated_ptbr": "Tiro Rápido",
+      "justification": "JP ファストショット (disparo veloz com pistola)"
+    },
+    {
+      "id": 20438,
+      "original_en": "Full Auto",
+      "original_jp": "フルオート",
+      "current_ptbr": "Automático",
+      "curated_ptbr": "Automático",
+      "justification": "JP フルオート (rajada contínua de disparos)"
+    },
+    {
+      "id": 20439,
+      "original_en": "Super Shot",
+      "original_jp": "スーパーショット",
+      "current_ptbr": "Supertiro",
+      "curated_ptbr": "Supertiro",
+      "justification": "JP スーパーショット (disparo concentrado potente)"
+    },
+    {
+      "id": 20440,
+      "original_en": "Sleep Shot",
+      "original_jp": "スリープショット",
+      "current_ptbr": "Tiro sono",
+      "curated_ptbr": "Tiro Sono",
+      "justification": "JP スリープショット (projétil tranquilizante)"
+    },
+    {
+      "id": 20441,
+      "original_en": "Stun Shot",
+      "original_jp": "スタンショット",
+      "current_ptbr": "Tiro atord.",
+      "curated_ptbr": "Tiro Atord.",
+      "justification": "JP スタンショット (projétil paralisante)"
+    },
+    {
+      "id": 20442,
+      "original_en": "KEI-BO",
+      "original_jp": "KEI-BO",
+      "current_ptbr": "KEI-BO",
+      "curated_ptbr": "KEI-BO",
+      "justification": "KEI-BO (bastão de choque policial)"
+    },
+    {
+      "id": 20443,
+      "original_en": "Frostbite KEI-BO",
+      "original_jp": "凍傷KEI-BO",
+      "current_ptbr": "KEI-BO congelante",
+      "curated_ptbr": "KEI-BO Congelante",
+      "justification": "JP 凍傷KEI-BO (bastão criogênico)"
+    },
+    {
+      "id": 20444,
+      "original_en": "Electromagnetic KEI-BO",
+      "original_jp": "電磁KEI-BO",
+      "current_ptbr": "KEI-BO eletromagnético",
+      "curated_ptbr": "KEI-BO Eletromagnético",
+      "justification": "JP 電磁KEI-BO (bastão com pulso EMP)"
+    },
+    {
+      "id": 20445,
+      "original_en": "Full Combination",
+      "original_jp": "フルコンビネーション",
+      "current_ptbr": "Combinação total",
+      "curated_ptbr": "Combo Total",
+      "justification": "JP フルコンビネーション (sequência completa de golpes)"
+    },
+    {
+      "id": 20446,
+      "original_en": "Temple Strike",
+      "original_jp": "神殿突き",
+      "current_ptbr": "Golpe têmpora",
+      "curated_ptbr": "Golpe do Templo",
+      "justification": "JP 神殿突き (estocada sagrada de cavaleiro)"
+    },
+    {
+      "id": 20447,
+      "original_en": "Healing",
+      "original_jp": "ヒーリング",
+      "current_ptbr": "Cura",
+      "curated_ptbr": "Cura",
+      "justification": "JP ヒーリング (feitiço de restauração de HP)"
+    },
+    {
+      "id": 20448,
+      "original_en": "Divine Punishment",
+      "original_jp": "天罰の光 / 神罰の雷",
+      "current_ptbr": "Punição divina",
+      "curated_ptbr": "Punição Divina",
+      "justification": "JP 天罰の光 (raio de retribuição sagrada)"
+    },
+    {
+      "id": 20449,
+      "original_en": "Verse of Curse",
+      "original_jp": "呪いの言霊",
+      "current_ptbr": "Verso maldito",
+      "curated_ptbr": "Verso Maldito",
+      "justification": "JP 呪いの言霊 (palavras de esconjuro; 27B <= 32B)"
+    },
+    {
+      "id": 20450,
+      "original_en": "Blessing",
+      "original_jp": "ブレシング",
+      "current_ptbr": "Bênção",
+      "curated_ptbr": "Bênção",
+      "justification": "JP ブレシング (encantamento de proteção)"
+    },
+    {
+      "id": 20451,
+      "original_en": "Soul Drain",
+      "original_jp": "ソウルドレイン",
+      "current_ptbr": "Dreno alma",
+      "curated_ptbr": "Dreno Alma",
+      "justification": "JP ソウルドレイン (absorção espiritual)"
+    },
+    {
+      "id": 20452,
+      "original_en": "Shadow Attack",
+      "original_jp": "シャドウアタック",
+      "current_ptbr": "Ataque sombra",
+      "curated_ptbr": "Ataque Sombrio",
+      "justification": "JP シャドウアタック (ofensiva das sombras)"
+    },
+    {
+      "id": 20453,
+      "original_en": "Summon Hellfire",
+      "original_jp": "サモンヘルファイア",
+      "current_ptbr": "Chamar inferno",
+      "curated_ptbr": "Invocar Inferno",
+      "justification": "JP サモンヘルファイア (chamas abissais)"
+    },
+    {
+      "id": 20454,
+      "original_en": "Summon Tornado",
+      "original_jp": "サモントルネイド",
+      "current_ptbr": "Chamar tornado",
+      "curated_ptbr": "Invocar Tornado",
+      "justification": "JP サモントルネイド (ciclone destrutivo)"
+    },
+    {
+      "id": 20455,
+      "original_en": "Laser",
+      "original_jp": "レーザー",
+      "current_ptbr": "Laser",
+      "curated_ptbr": "Laser",
+      "justification": "JP レーザー (feixe de energia)"
+    },
+    {
+      "id": 20456,
+      "original_en": "Ice Beam",
+      "original_jp": "アイスビーム",
+      "current_ptbr": "Raio gelo",
+      "curated_ptbr": "Raio Gelo",
+      "justification": "JP アイスビーム (feixe congelante)"
+    },
+    {
+      "id": 20457,
+      "original_en": "Electromagnetic Laser",
+      "original_jp": "電磁レーザー",
+      "current_ptbr": "Laser elétrico",
+      "curated_ptbr": "Laser Eletromagnético",
+      "justification": "JP 電磁レーザー (feixe carregado de plasma)"
+    },
+    {
+      "id": 20458,
+      "original_en": "Mystery Ray",
+      "original_jp": "怪光線",
+      "current_ptbr": "Raio oculto",
+      "curated_ptbr": "Raio Oculto",
+      "justification": "JP 怪光線 (feixe misterioso destrutivo)"
+    },
+    {
+      "id": 20459,
+      "original_en": "Alarm",
+      "original_jp": "アラーム",
+      "current_ptbr": "Alarme",
+      "curated_ptbr": "Alarme",
+      "justification": "JP アラーム (sinal de alerta de segurança)"
+    },
+    {
+      "id": 20460,
+      "original_en": "Request Aid",
+      "original_jp": "救援要請",
+      "current_ptbr": "Pedir ajuda",
+      "curated_ptbr": "Pedir Ajuda",
+      "justification": "JP 救援要請 (chamado de reforços militares)"
+    },
+    {
+      "id": 20461,
+      "original_en": "Bit Attack",
+      "original_jp": "ビットアタック",
+      "current_ptbr": "Ataque bit",
+      "curated_ptbr": "Ataque Bit",
+      "justification": "JP ビットアタック (disparo de drones bit)"
+    },
+    {
+      "id": 20462,
+      "original_en": "All Range",
+      "original_jp": "オールレンジ",
+      "current_ptbr": "Toda área",
+      "curated_ptbr": "Área Total",
+      "justification": "JP オールレンジ (ataque em todos os quadrantes)"
+    },
+    {
+      "id": 20463,
+      "original_en": "Screw Dive",
+      "original_jp": "スクリューダイブ",
+      "current_ptbr": "Giro esp.",
+      "curated_ptbr": "Giro Esp.",
+      "justification": "JP スクリューダイブ (mergulho em parafuso aéreo)"
+    },
+    {
+      "id": 20464,
+      "original_en": "Super Bomb",
+      "original_jp": "スーパーボム",
+      "current_ptbr": "Superbomba",
+      "curated_ptbr": "Superbomba",
+      "justification": "JP スーパーボム (explosivo de alta potência)"
+    },
+    {
+      "id": 20465,
+      "original_en": "Fire Shield",
+      "original_jp": "ファイアシールド",
+      "current_ptbr": "Escudo fogo",
+      "curated_ptbr": "Escudo Fogo",
+      "justification": "JP ファイアシールド (proteção ígnea)"
+    },
+    {
+      "id": 20466,
+      "original_en": "Ice Shield",
+      "original_jp": "アイスシールド",
+      "current_ptbr": "Escudo gelo",
+      "curated_ptbr": "Escudo Gelo",
+      "justification": "JP アイスシールド (proteção criogênica)"
+    },
+    {
+      "id": 20467,
+      "original_en": "Electric Shield",
+      "original_jp": "エレキシールド",
+      "current_ptbr": "Escudo raio",
+      "curated_ptbr": "Escudo Elétrico",
+      "justification": "JP エレキシールド (barreira de choques)"
+    },
+    {
+      "id": 20468,
+      "original_en": "Wind Shield",
+      "original_jp": "ウィンドシールド",
+      "current_ptbr": "Esc. vento",
+      "curated_ptbr": "Esc. Vento",
+      "justification": "JP ウィンドシールド (barreira de correntes de ar)"
+    },
+    {
+      "id": 20469,
+      "original_en": "Full Barrier",
+      "original_jp": "フルバリア",
+      "current_ptbr": "Barreira",
+      "curated_ptbr": "Barreira",
+      "justification": "JP フルバリア (escudo defensivo absoluto)"
+    },
+    {
+      "id": 20470,
+      "original_en": "Self Recovery",
+      "original_jp": "自己修復",
+      "current_ptbr": "Autocura",
+      "curated_ptbr": "Autocura",
+      "justification": "JP 自己修復 (regeneração mecânica autônoma)"
+    },
+    {
+      "id": 20471,
+      "original_en": "Mega Cannon",
+      "original_jp": "メガカノン",
+      "current_ptbr": "Megacanhão",
+      "curated_ptbr": "Megacanhão",
+      "justification": "JP メガカノン (disparo de artilharia pesada)"
+    },
+    {
+      "id": 20472,
+      "original_en": "Dive Attack",
+      "original_jp": "ダイブアタック",
+      "current_ptbr": "Mergulho",
+      "curated_ptbr": "Mergulho",
+      "justification": "JP ダイブアタック (investida aérea em queda livre)"
+    },
+    {
+      "id": 20473,
+      "original_en": "Sky Drive",
+      "original_jp": "スカイドライブ",
+      "current_ptbr": "Voo celeste",
+      "curated_ptbr": "Voo Celeste",
+      "justification": "JP スカイドライブ (manobra de voo rasante)"
+    },
+    {
+      "id": 20474,
+      "original_en": "Single-Loader Gun",
+      "original_jp": "壱式単発銃",
+      "current_ptbr": "Arma monotiro",
+      "curated_ptbr": "Canhão Principal",
+      "justification": "JP 主砲 (disparo da arma primária do navio)"
+    },
+    {
+      "id": 20475,
+      "original_en": "Dual Chamber Gun",
+      "original_jp": "弐式連装銃",
+      "current_ptbr": "Arma dupla",
+      "curated_ptbr": "Arma dupla",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20476,
+      "original_en": "Enemy Explosion",
+      "original_jp": "敵陣大爆発",
+      "current_ptbr": "Expl. inimiga",
+      "curated_ptbr": "Expl. inimiga",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20477,
+      "original_en": "Homing Shot",
+      "original_jp": "ホーミングショット",
+      "current_ptbr": "Tiro guiado",
+      "curated_ptbr": "Tiro guiado",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20478,
+      "original_en": "Energy Drain",
+      "original_jp": "エナジードレイン",
+      "current_ptbr": "Dreno energia",
+      "curated_ptbr": "Dreno energia",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20479,
+      "original_en": "Flame Thrower",
+      "original_jp": "火炎放射",
+      "current_ptbr": "Lança-chamas",
+      "curated_ptbr": "Lança-chamas",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20480,
+      "original_en": "Absolute Zero",
+      "original_jp": "絶対零度",
+      "current_ptbr": "Zero absoluto",
+      "curated_ptbr": "Zero absoluto",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20481,
+      "original_en": "Induced Explosion",
+      "original_jp": "誘爆",
+      "current_ptbr": "Explosão induz.",
+      "curated_ptbr": "Explosão induz.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20482,
+      "original_en": "Assault Storm",
+      "original_jp": "強襲",
+      "current_ptbr": "Temp. de ataque",
+      "curated_ptbr": "Temp. de ataque",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20483,
+      "original_en": "Steep Descent",
+      "original_jp": "急降下",
+      "current_ptbr": "Descida íngreme",
+      "curated_ptbr": "Descida íngreme",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20484,
+      "original_en": "Fire Breath",
+      "original_jp": "炎のブレス",
+      "current_ptbr": "Sopro fogo",
+      "curated_ptbr": "Sopro fogo",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20485,
+      "original_en": "Poison Mist",
+      "original_jp": "毒霧",
+      "current_ptbr": "Névoa tóx.",
+      "curated_ptbr": "Névoa tóx.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20486,
+      "original_en": "Call Lightning",
+      "original_jp": "コールライトニング",
+      "current_ptbr": "Invocar raio",
+      "curated_ptbr": "Invocar raio",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20487,
+      "original_en": "Blizzard",
+      "original_jp": "ブリザード",
+      "current_ptbr": "Nevasca",
+      "curated_ptbr": "Nevasca",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20488,
+      "original_en": "Cyclone",
+      "original_jp": "大旋風",
+      "current_ptbr": "Ciclone",
+      "curated_ptbr": "Ciclone",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20489,
+      "original_en": "Aurora Breath",
+      "original_jp": "オーロラブレス",
+      "current_ptbr": "Sopro de aurora",
+      "curated_ptbr": "Sopro de aurora",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20490,
+      "original_en": "Tiny Fire",
+      "original_jp": "タイニーファイア",
+      "current_ptbr": "Chama menor",
+      "curated_ptbr": "Chama menor",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20491,
+      "original_en": "Tiny Ice",
+      "original_jp": "タイニーアイス",
+      "current_ptbr": "Gelo menor",
+      "curated_ptbr": "Gelo menor",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20492,
+      "original_en": "Tiny Thunder",
+      "original_jp": "タイニーサンダー",
+      "current_ptbr": "Trovão pequeno",
+      "curated_ptbr": "Trovão pequeno",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20493,
+      "original_en": "Flame Scythe",
+      "original_jp": "焔薙",
+      "current_ptbr": "Foice ígnea",
+      "curated_ptbr": "Foice ígnea",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20494,
+      "original_en": "Hellfire",
+      "original_jp": "業火",
+      "current_ptbr": "Inferno",
+      "curated_ptbr": "Inferno",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20495,
+      "original_en": "Lightning Flash",
+      "original_jp": "電光石火",
+      "current_ptbr": "Clarão raio",
+      "curated_ptbr": "Clarão raio",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20496,
+      "original_en": "Tornado",
+      "original_jp": "巻き上げ竜巻",
+      "current_ptbr": "Tornado",
+      "curated_ptbr": "Tornado",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20497,
+      "original_en": "Dragon Kamikaze",
+      "original_jp": "飛竜特攻",
+      "current_ptbr": "Dragão kamikaze",
+      "curated_ptbr": "Dragão kamikaze",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20498,
+      "original_en": "Calamity",
+      "original_jp": "天変地異",
+      "current_ptbr": "Calamidade",
+      "curated_ptbr": "Calamidade",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20499,
+      "original_en": "Earthen Horn",
+      "original_jp": "大地のホルン",
+      "current_ptbr": "Chifre terra",
+      "curated_ptbr": "Chifre terra",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20500,
+      "original_en": "Battle Command",
+      "original_jp": "戦いの号令",
+      "current_ptbr": "Comando batalha",
+      "curated_ptbr": "Comando batalha",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20501,
+      "original_en": "Broken Whistle",
+      "original_jp": "ピーヒョロ笛",
+      "current_ptbr": "Apito quebrado",
+      "curated_ptbr": "Apito quebrado",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20502,
+      "original_en": "A weird sound that brings down the morale of the party. Decreases all status.",
+      "original_jp": "へっぽこな音色でパーティのやる気を削ぐ。全てのステータスが下がってしまう",
+      "current_ptbr": "Um som estranho desanima o grupo e reduz todos os atributos.",
+      "curated_ptbr": "Um som estranho desanima o grupo e reduz todos os atributos.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20503,
+      "original_en": "Beast Calling",
+      "original_jp": "獣を呼ぶ唄",
+      "current_ptbr": "Chamar feras",
+      "curated_ptbr": "Chamar feras",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20504,
+      "original_en": "Bird Calling",
+      "original_jp": "鳥を呼ぶ唄",
+      "current_ptbr": "Chamar aves",
+      "curated_ptbr": "Chamar aves",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20505,
+      "original_en": "Machine Calling",
+      "original_jp": "機械を呼ぶ唄",
+      "current_ptbr": "Chamar máquinas",
+      "curated_ptbr": "Chamar máquinas",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20506,
+      "original_en": "Energy Ball",
+      "original_jp": "気の玉",
+      "current_ptbr": "Orbe energ.",
+      "curated_ptbr": "Orbe energ.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20507,
+      "original_en": "Plasma Ball",
+      "original_jp": "プラズマボール",
+      "current_ptbr": "Orbe plasma",
+      "curated_ptbr": "Orbe plasma",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20508,
+      "original_en": "Burning Heat Wave",
+      "original_jp": "しゃくねつ熱波",
+      "current_ptbr": "Onda de calor",
+      "curated_ptbr": "Onda de calor",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20509,
+      "original_en": "Chilly Soul Dropper",
+      "original_jp": "ヒエヒエ塊落とし",
+      "current_ptbr": "Gota de alma fria",
+      "curated_ptbr": "Gota de alma fria",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20510,
+      "original_en": "Hell Paradise Doggy",
+      "original_jp": "地獄極楽わんこ",
+      "current_ptbr": "Cão infernal",
+      "curated_ptbr": "Cão infernal",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20511,
+      "original_en": "Sleepy Dragon",
+      "original_jp": "うつうつ飛竜",
+      "current_ptbr": "Dragão sonol.",
+      "curated_ptbr": "Dragão sonol.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20512,
+      "original_en": "Guardian Call",
+      "original_jp": "ガーディアンコール",
+      "current_ptbr": "Chamar guardião",
+      "curated_ptbr": "Chamar guardião",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20513,
+      "original_en": "Life Warm",
+      "original_jp": "ライフウォーム",
+      "current_ptbr": "Calor vital",
+      "curated_ptbr": "Calor vital",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20514,
+      "original_en": "Life Refresh",
+      "original_jp": "ライフリフレッシュ",
+      "current_ptbr": "Renovar vida",
+      "curated_ptbr": "Renovar vida",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20515,
+      "original_en": "Life Shower",
+      "original_jp": "ライフシャワー",
+      "current_ptbr": "Chuva vital",
+      "curated_ptbr": "Chuva vital",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20516,
+      "original_en": "K-BLADE",
+      "original_jp": "K-BLADE",
+      "current_ptbr": "K-BLADE",
+      "curated_ptbr": "K-BLADE",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20517,
+      "original_en": "H-LING",
+      "original_jp": "H-LING",
+      "current_ptbr": "H-LING",
+      "curated_ptbr": "H-LING",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20518,
+      "original_en": "P-AZMA",
+      "original_jp": "P-AZMA",
+      "current_ptbr": "P-AZMA",
+      "curated_ptbr": "P-AZMA",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20519,
+      "original_en": "S-RAIN",
+      "original_jp": "S-RAIN",
+      "current_ptbr": "S-RAIN",
+      "curated_ptbr": "S-RAIN",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20520,
+      "original_en": "X-CUT",
+      "original_jp": "X-CUT",
+      "current_ptbr": "X-CUT",
+      "curated_ptbr": "X-CUT",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20521,
+      "original_en": "B-SLASH",
+      "original_jp": "B-SLASH",
+      "current_ptbr": "B-SLASH",
+      "curated_ptbr": "B-SLASH",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20522,
+      "original_en": "T-LAZER",
+      "original_jp": "T-LAZER",
+      "current_ptbr": "T-LAZER",
+      "curated_ptbr": "T-LAZER",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20523,
+      "original_en": "S-BOOST",
+      "original_jp": "S-BOOST",
+      "current_ptbr": "S-BOOST",
+      "curated_ptbr": "S-BOOST",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20524,
+      "original_en": "K-RAY",
+      "original_jp": "K-RAY",
+      "current_ptbr": "K-RAY",
+      "curated_ptbr": "K-RAY",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20525,
+      "original_en": "Z-STAB",
+      "original_jp": "Z-STAB",
+      "current_ptbr": "Z-STAB",
+      "curated_ptbr": "Z-STAB",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20526,
+      "original_en": "P-ARMOR",
+      "original_jp": "P-ARMOR",
+      "current_ptbr": "P-ARMOR",
+      "curated_ptbr": "P-ARMOR",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20527,
+      "original_en": "S-KILLER",
+      "original_jp": "S-KILLER",
+      "current_ptbr": "S-KILLER",
+      "curated_ptbr": "S-KILLER",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20528,
+      "original_en": "D-PIERCE",
+      "original_jp": "D-PIERCE",
+      "current_ptbr": "D-PIERCE",
+      "curated_ptbr": "D-PIERCE",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20529,
+      "original_en": "Nyo",
+      "original_jp": "にょっ",
+      "current_ptbr": "Nyo",
+      "curated_ptbr": "Nyo",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20530,
+      "original_en": "Fret",
+      "original_jp": "だだをこねる",
+      "current_ptbr": "Fret",
+      "curated_ptbr": "Fret",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20531,
+      "original_en": "Sorry Nyo",
+      "original_jp": "ごめんにょ",
+      "current_ptbr": "Perdão Nyo",
+      "curated_ptbr": "Perdão Nyo",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20532,
+      "original_en": "Healin Nyo",
+      "original_jp": "回復するにょ",
+      "current_ptbr": "Cura Nyo",
+      "curated_ptbr": "Cura Nyo",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20533,
+      "original_en": "Ar Tonelico",
+      "original_jp": "アルトネリコ",
+      "current_ptbr": "Ar Tonelico",
+      "curated_ptbr": "Ar Tonelico",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20534,
+      "original_en": "Super magic used by Boss Shurelia. Really hurts a lot.",
+      "original_jp": "ボスシュレリアの使う超魔法。ちょーいたい",
+      "current_ptbr": "Supermagia de Shurelia. Causa muito dano.",
+      "curated_ptbr": "Supermagia de Shurelia. Causa muito dano.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20535,
+      "original_en": "Primal Word",
+      "original_jp": "プライマル・ワード",
+      "current_ptbr": "Verbo raiz",
+      "curated_ptbr": "Verbo raiz",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20536,
+      "original_en": "Fast cast song used by Boss Shurelia. Fast and painful.",
+      "original_jp": "ボスシュレリアの高速詩。早くていたい",
+      "current_ptbr": "Canção rápida de Shurelia. Veloz e dolorosa.",
+      "curated_ptbr": "Canção rápida de Shurelia. Veloz e dolorosa.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20537,
+      "original_en": "Full Cushion",
+      "original_jp": "フルクッション",
+      "current_ptbr": "Proteção total",
+      "curated_ptbr": "Proteção total",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20538,
+      "original_en": "Boss Shurelia’s recovery magic. She is invincible while singing this song.",
+      "original_jp": "ボスシュレリアの回復詩。これを歌っている間はほぼ無敵。",
+      "current_ptbr": "Magia de cura de Shurelia. Ela fica invencível enquanto canta.",
+      "curated_ptbr": "Magia de cura de Shurelia. Ela fica invencível enquanto canta.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20539,
+      "original_en": "Satellite Strike",
+      "original_jp": "サテライトストライク",
+      "current_ptbr": "Ataque satélite",
+      "curated_ptbr": "Ataque satélite",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20540,
+      "original_en": "Normal attack by Boss Shurelia. Single target attack that hurts a lot.",
+      "original_jp": "ボスシュレリアの通常攻撃。単体でめっさ痛い",
+      "current_ptbr": "Ataque normal de Shurelia. Atinge um alvo e causa muito dano.",
+      "curated_ptbr": "Ataque normal de Shurelia. Atinge um alvo e causa muito dano.",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20541,
+      "original_en": "Satellite Rain",
+      "original_jp": "サテライトレイン",
+      "current_ptbr": "Chuva satélite",
+      "curated_ptbr": "Chuva satélite",
+      "justification": "Aprovado integralmente sem alteração após confronto na Tríade"
+    },
+    {
+      "id": 20542,
+      "original_en": "Random attack by Boss Shurelia. If all attacks hit one person, it’s a one shot death.",
+      "original_jp": "ボスシュレリアのランダム攻撃。全部同じ人に当たると一撃死レベル",
+      "current_ptbr": "Ataque aleatório de Shurelia. Se todos os golpes acertarem o mesmo alvo, é morte certa.",
+      "curated_ptbr": "Ataque aleatório de Shurelia. Se todos os golpes atingirem um alvo, é morte certa.",
+      "justification": "Ajuste cirúrgico: 'atingirem um alvo' enquadra no teto exato de 176B sem perder uma gota de tensão!"
+    },
+    {
+      "id": 20543,
+      "original_en": "Stampede",
+      "original_jp": "スタンピード",
+      "current_ptbr": "Debandada",
+      "curated_ptbr": "Debandada",
+      "justification": "JP スタンピード (investida em massa desgovernada)"
+    },
+    {
+      "id": 20544,
+      "original_en": "Bourd 1",
+      "original_jp": "ボルド1",
+      "current_ptbr": "Bourd 1",
+      "curated_ptbr": "Bourd 1",
+      "justification": "Bourd 1 (identificador tático de chefe mantido)"
+    },
+    {
+      "id": 20545,
+      "original_en": "Dread Charge ",
+      "original_jp": "ドレッドチャージ",
+      "current_ptbr": "Carga sombria ",
+      "curated_ptbr": "Carga Sombria",
+      "justification": "JP ドレッドチャージ (investida aterradora; sem espaço solto)"
+    },
+    {
+      "id": 20546,
+      "original_en": "Bourd 2",
+      "original_jp": "ボルド2",
+      "current_ptbr": "Bourd 2",
+      "curated_ptbr": "Bourd 2",
+      "justification": "Bourd 2 (identificador mantido)"
+    },
+    {
+      "id": 20547,
+      "original_en": "Earth Crack",
+      "original_jp": "アースクラック",
+      "current_ptbr": "Fenda terra",
+      "curated_ptbr": "Fenda Terra",
+      "justification": "JP アースクラック (fratura do solo)"
+    },
+    {
+      "id": 20548,
+      "original_en": "Bourd 3",
+      "original_jp": "ボルド3",
+      "current_ptbr": "Bourd 3",
+      "curated_ptbr": "Bourd 3",
+      "justification": "Bourd 3 (identificador mantido)"
+    },
+    {
+      "id": 20549,
+      "original_en": "Super Acceleration",
+      "original_jp": "超加速",
+      "current_ptbr": "Superaceleração",
+      "curated_ptbr": "Superaceleração",
+      "justification": "JP 超加速 (aumento brutal de velocidade)"
+    },
+    {
+      "id": 20550,
+      "original_en": "Bourd 4",
+      "original_jp": "ボルド4",
+      "current_ptbr": "Bourd 4",
+      "curated_ptbr": "Bourd 4",
+      "justification": "Bourd 4 (identificador mantido)"
+    },
+    {
+      "id": 20551,
+      "original_en": "Crescent Slash",
+      "original_jp": "三日月斬り",
+      "current_ptbr": "Golpe crescente",
+      "curated_ptbr": "Corte Crescente",
+      "justification": "JP 三日月斬り (golpe em arco de lua crescente; 31B <= 32B)"
+    },
+    {
+      "id": 20552,
+      "original_en": "Flaut 1",
+      "original_jp": "フラウト1",
+      "current_ptbr": "Flaut 1",
+      "curated_ptbr": "Flaut 1",
+      "justification": "Flaut 1 (identificador mantido)"
+    },
+    {
+      "id": 20553,
+      "original_en": "Haze Attack",
+      "original_jp": "朧討ち",
+      "current_ptbr": "Golpe névoa",
+      "curated_ptbr": "Golpe Névoa",
+      "justification": "JP 朧討ち (golpe oculto por bruma; 23B <= 24B)"
+    },
+    {
+      "id": 20554,
+      "original_en": "Flaut 2",
+      "original_jp": "フラウト2",
+      "current_ptbr": "Flaut 2",
+      "curated_ptbr": "Flaut 2",
+      "justification": "Flaut 2 (identificador mantido)"
+    },
+    {
+      "id": 20555,
+      "original_en": "Snake Bite Needle ",
+      "original_jp": "蛇咬針",
+      "current_ptbr": "Agulha de cobra ",
+      "curated_ptbr": "Agulha da Serpente",
+      "justification": "JP 蛇咬針 (golpe perfurante venenoso; 37B <= 40B, sem espaço solto)"
+    },
+    {
+      "id": 20556,
+      "original_en": "Flaut 3",
+      "original_jp": "フラウト3",
+      "current_ptbr": "Flaut 3",
+      "curated_ptbr": "Flaut 3",
+      "justification": "Flaut 3 (identificador mantido)"
+    },
+    {
+      "id": 20557,
+      "original_en": "Triple Blade Scatter",
+      "original_jp": "三身散華",
+      "current_ptbr": "Rajada de 3 lâminas",
+      "curated_ptbr": "Três Lâminas",
+      "justification": "JP 三身散華 (rajada de três lâminas dispersas; 25B <= 48B)"
+    },
+    {
+      "id": 20558,
+      "original_en": "Flaut 4",
+      "original_jp": "フラウト4",
+      "current_ptbr": "Flaut 4",
+      "curated_ptbr": "Flaut 4",
+      "justification": "Flaut 4 (identificador mantido)"
+    },
+    {
+      "id": 20559,
+      "original_en": "Gate Out",
+      "original_jp": "ゲートアウト",
+      "current_ptbr": "Saída",
+      "curated_ptbr": "Saída",
+      "justification": "JP ゲートアウト (teleporte de retirada; 13B <= 24B)"
+    },
+    {
+      "id": 20560,
+      "original_en": "Tastiella 1",
+      "original_jp": "タスティエーラ1",
+      "current_ptbr": "Tastiella 1",
+      "curated_ptbr": "Tastiella 1",
+      "justification": "Tastiella 1 (identificador mantido)"
+    },
+    {
+      "id": 20561,
+      "original_en": "Gate In",
+      "original_jp": "ゲートイン",
+      "current_ptbr": "Entrada",
+      "curated_ptbr": "Entrada",
+      "justification": "JP ゲートイン (teleporte de aproximação)"
+    },
+    {
+      "id": 20562,
+      "original_en": "Tastiella 2",
+      "original_jp": "タスティエーラ2",
+      "current_ptbr": "Tastiella 2",
+      "curated_ptbr": "Tastiella 2",
+      "justification": "Tastiella 2 (identificador mantido)"
+    },
+    {
+      "id": 20563,
+      "original_en": "Abysmal Gate ",
+      "original_jp": "アビスマルゲート",
+      "current_ptbr": "Portal abissal ",
+      "curated_ptbr": "Portal Abissal",
+      "justification": "JP アビスマルゲート (invocação de fenda cósmica; 29B <= 32B, sem espaço solto)"
+    },
+    {
+      "id": 20564,
+      "original_en": "Tastiella 3",
+      "original_jp": "タスティエーラ3",
+      "current_ptbr": "Tastiella 3",
+      "curated_ptbr": "Tastiella 3",
+      "justification": "Tastiella 3 (identificador mantido)"
+    },
+    {
+      "id": 20565,
+      "original_en": "Holy Light",
+      "original_jp": "ホーリーライト",
+      "current_ptbr": "Luz sagrada",
+      "curated_ptbr": "Luz Sagrada",
+      "justification": "JP ホーリーライト (raio de luz purificadora; 23B <= 24B)"
+    },
+    {
+      "id": 20566,
+      "original_en": "Tastiella 4",
+      "original_jp": "タスティエーラ4",
+      "current_ptbr": "Tastiella 4",
+      "curated_ptbr": "Tastiella 4",
+      "justification": "Tastiella 4 (identificador mantido)"
+    },
+    {
+      "id": 20567,
+      "original_en": "Crushing Bite",
+      "original_jp": "噛み砕く",
+      "current_ptbr": "Mord. esmag.",
+      "curated_ptbr": "Mordida Feroz",
+      "justification": "JP 噛み砕く (mordida esmagadora destrutiva; 27B <= 32B sem abreviação feia)"
+    },
+    {
+      "id": 20568,
+      "original_en": "Slepnir 1",
+      "original_jp": "スレイプニル1",
+      "current_ptbr": "Slepnir 1",
+      "curated_ptbr": "Slepnir 1",
+      "justification": "Slepnir 1 (identificador mantido)"
+    },
+    {
+      "id": 20569,
+      "original_en": "Demon Breath",
+      "original_jp": "デモンブレス",
+      "current_ptbr": "Sopro demon.",
+      "curated_ptbr": "Sopro Demoníaco",
+      "justification": "JP デモンブレス (baforada infernal de besta; 32B <= 32B)"
+    },
+    {
+      "id": 20570,
+      "original_en": "Slepnir 2",
+      "original_jp": "スレイプニル2",
+      "current_ptbr": "Slepnir 2",
+      "curated_ptbr": "Slepnir 2",
+      "justification": "Slepnir 2 (identificador mantido)"
+    },
+    {
+      "id": 20571,
+      "original_en": "Wave Cannon",
+      "original_jp": "波動砲",
+      "current_ptbr": "Canhão onda",
+      "curated_ptbr": "Canhão Onda",
+      "justification": "JP 波動砲 (disparo de energia ondulatória concentrada)"
+    },
+    {
+      "id": 20572,
+      "original_en": "Slepnir 3",
+      "original_jp": "スレイプニル3",
+      "current_ptbr": "Slepnir 3",
+      "curated_ptbr": "Slepnir 3",
+      "justification": "Slepnir 3 (identificador mantido)"
+    },
+    {
+      "id": 20573,
+      "original_en": "Limit Release",
+      "original_jp": "リミット解除",
+      "current_ptbr": "Liberar limite",
+      "curated_ptbr": "Fim do Limite",
+      "justification": "JP リミット解除 (desativação de travas de força; 27B <= 32B, paralelismo de substantivo)"
+    },
+    {
+      "id": 20574,
+      "original_en": "Slepnir 4",
+      "original_jp": "スレイプニル4",
+      "current_ptbr": "Slepnir 4",
+      "curated_ptbr": "Slepnir 4",
+      "justification": "Slepnir 4 (identificador mantido)"
+    },
+    {
+      "id": 20575,
+      "original_en": "Burn Missile",
+      "original_jp": "バーンミサイル",
+      "current_ptbr": "Míssil fogo",
+      "curated_ptbr": "Míssil Ardente",
+      "justification": "JP バーンミサイル (projétil incendiário; 31B <= 32B)"
+    },
+    {
+      "id": 20576,
+      "original_en": "Guardian 1",
+      "original_jp": "ガーディアン1",
+      "current_ptbr": "Guardião 1",
+      "curated_ptbr": "Guardião 1",
+      "justification": "JP ガーディアン1 (identificador mantido)"
+    },
+    {
+      "id": 20577,
+      "original_en": "Double Beam",
+      "original_jp": "ダブルビーム",
+      "current_ptbr": "Raio duplo",
+      "curated_ptbr": "Raio Duplo",
+      "justification": "JP ダブルビーム (feixe gêmeo de plasma)"
+    },
+    {
+      "id": 20578,
+      "original_en": "Guardian 2",
+      "original_jp": "ガーディアン2",
+      "current_ptbr": "Guardião 2",
+      "curated_ptbr": "Guardião 2",
+      "justification": "Guardião 2 (identificador mantido)"
+    },
+    {
+      "id": 20579,
+      "original_en": "Alert ",
+      "original_jp": "警報",
+      "current_ptbr": "Alerta ",
+      "curated_ptbr": "Alerta",
+      "justification": "JP 警報 (sinal de invasão/alarme; sem espaço solto)"
+    },
+    {
+      "id": 20580,
+      "original_en": "Guardian 5",
+      "original_jp": "ガーディアン5",
+      "current_ptbr": "Guardião 5",
+      "curated_ptbr": "Guardião 5",
+      "justification": "Guardião 5 (identificador mantido)"
+    },
+    {
+      "id": 20581,
+      "original_en": "Meteor Burst",
+      "original_jp": "メテオ・バースト",
+      "current_ptbr": "Impacto meteoro",
+      "curated_ptbr": "Impacto Meteoro",
+      "justification": "JP メテオ・バースト (queda destrutiva de bólido)"
+    },
+    {
+      "id": 20582,
+      "original_en": "Regeneration",
+      "original_jp": "再生能力",
+      "current_ptbr": "Regeneração",
+      "curated_ptbr": "Regeneração",
+      "justification": "JP 再生能力 (capacidade de restaurar tecidos/blindagem)"
+    },
+    {
+      "id": 20583,
+      "original_en": "Physical Attack Immunity",
+      "original_jp": "物理攻撃無効",
+      "current_ptbr": "Imune a ataque físico",
+      "curated_ptbr": "Imunidade a Ataque Físico",
+      "justification": "JP 物理攻撃無効 (bloqueio total de dano físico; 53B <= 56B)"
+    },
+    {
+      "id": 20584,
+      "original_en": "Mental Corruption Immunity",
+      "original_jp": "精神異常無効",
+      "current_ptbr": "Imune a corrupção mental",
+      "curated_ptbr": "Imunidade a Dano Mental",
+      "justification": "JP 精神異常無効 (bloqueio de alterações mentais; 47B <= 56B)"
+    },
+    {
+      "id": 20585,
+      "original_en": "Poison Immunity",
+      "original_jp": "毒無効",
+      "current_ptbr": "Imune a veneno",
+      "curated_ptbr": "Imune a Veneno",
+      "justification": "JP 毒無効 (proteção absoluta contra toxinas; 29B <= 32B)"
+    },
+    {
+      "id": 20586,
+      "original_en": "Paralyze Immunity",
+      "original_jp": "マヒ無効",
+      "current_ptbr": "Imune a paralisia",
+      "curated_ptbr": "Imune a Paralisia",
+      "justification": "JP マヒ無効 (proteção absoluta contra imobilização; 35B <= 40B)"
+    },
+    {
+      "id": 20587,
+      "original_en": "Darkness Immunity",
+      "original_jp": "暗闇無効",
+      "current_ptbr": "Imune a cegueira",
+      "curated_ptbr": "Imune a Cegueira",
+      "justification": "JP 暗闇無効 (proteção absoluta contra escuridão; 33B <= 40B)"
+    },
+    {
+      "id": 20588,
+      "original_en": "Status Abnormality Immunity",
+      "original_jp": "状態異常無効",
+      "current_ptbr": "Imune a estado anormal",
+      "curated_ptbr": "Imune a Alteração de Estado",
+      "justification": "JP 状態異常無効 (proteção contra todos os debuffs; 55B <= 56B)"
+    },
+    {
+      "id": 20589,
+      "original_en": "Reflect Song Magic ",
+      "original_jp": "詩魔法反射",
+      "current_ptbr": "Reflete Magia ",
+      "curated_ptbr": "Reflete Canção",
+      "justification": "JP 詩魔法反射 (devolve Magia da Canção contra o conjurador; 31B <= 40B)"
+    },
+    {
+      "id": 20590,
+      "original_en": "Absorb Fire",
+      "original_jp": "炎吸収",
+      "current_ptbr": "Abs. fogo",
+      "curated_ptbr": "Drena Fogo",
+      "justification": "JP 炎吸収 (converte dano ígneo recebido em cura; 21B <= 24B)"
+    },
+    {
+      "id": 20591,
+      "original_en": "Absorb Ice",
+      "original_jp": "氷吸収",
+      "current_ptbr": "Abs. gelo",
+      "curated_ptbr": "Drena Gelo",
+      "justification": "JP 氷吸収 (converte dano de gelo recebido em cura; 21B <= 24B)"
+    },
+    {
+      "id": 20592,
+      "original_en": "Absorb Lightning",
+      "original_jp": "雷吸収",
+      "current_ptbr": "Absorver raio",
+      "curated_ptbr": "Drena Raio",
+      "justification": "JP 雷吸収 (converte dano de raio recebido em cura; 21B <= 40B)"
+    },
+    {
+      "id": 20593,
+      "original_en": "Absorb Wind",
+      "original_jp": "風吸収",
+      "current_ptbr": "Abs. vento",
+      "curated_ptbr": "Drena Vento",
+      "justification": "JP 風吸収 (converte dano de vento recebido em cura; 23B <= 24B)"
+    },
+    {
+      "id": 20594,
+      "original_en": "Absorb Magic",
+      "original_jp": "魔法吸収",
+      "current_ptbr": "Absorver magia",
+      "curated_ptbr": "Drena Magia",
+      "justification": "JP 魔法吸収 (converte dano mágico recebido em cura; 23B <= 32B)"
+    }
+  ]
+}

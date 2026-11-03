@@ -1,0 +1,3057 @@
+{
+  "block_id": "BLK_SYS_002",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Executable Strings",
+  "line_count": 288,
+  "id_range": [
+    20595,
+    20882
+  ],
+  "scene_handoff_received": {
+    "last_scene_id": "BLK_SYS_001",
+    "last_line_id": 20594,
+    "location_and_situation": "Núcleo Sistêmico Parte 1 (menus, atributos, habilidades de batalha básicas e chefes) concluído e padronizado.",
+    "emotional_state": "Sistêmico / Neutro.",
+    "active_hooks": [
+      "Encadear com BLK_SYS_002 (habilidades avançadas, magias de monstros e catálogo de armas/itens)."
+    ]
+  },
+  "active_cast": {},
+  "matched_terms": {
+    "Dive": {
+      "pt": "Mergulho / mergulhar",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Ação / Sistema",
+      "note": "Substantivo: 'Mergulho' (o ato de entrar na Cosmosfera). Verbo: 'mergulhar'. 'Dive Shop' -> Loja de Mergulho / Centro de Mergulho."
+    },
+    "Grathnode": {
+      "pt": "Grathnode",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Tecnologia / Mineral",
+      "note": "Condutor e cristal sonoro. Cristais Grathnode aprimoram atributos e efeitos das Reyvateils."
+    },
+    "Burst": {
+      "pt": "Burst",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Combate / HUD",
+      "note": "Porcentagem acumulada de poder da Magia da Canção antes de ser descarregada."
+    },
+    "Leaf": {
+      "pt": "Leaf",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Economia / Moeda",
+      "note": "A moeda corrente do jogo ('500 Leaf'). Cuidado para não confundir com folha de planta em itens botânicos."
+    },
+    "Platina": {
+      "pt": "Platina",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Localização",
+      "note": "A cidade flutuante no topo da Torre Ar tonelico, onde Lyner nasceu e os Cavaleiros residem."
+    },
+    "Don Leon": {
+      "pt": "Don Leon",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Personagem / Cosmosfera",
+      "note": "Em japonês 'どんすけ' (Donsuke). Guardião de pelúcia/samurai da Cosmosfera de Aurica."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 20583,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "物理攻撃無効",
+      "original_en": "Physical Attack Immunity",
+      "text_ptbr": "Imunidade a Ataque Físico"
+    },
+    {
+      "id": 20584,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "精神異常無効",
+      "original_en": "Mental Corruption Immunity",
+      "text_ptbr": "Imunidade a Dano Mental"
+    },
+    {
+      "id": 20585,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "毒無効",
+      "original_en": "Poison Immunity",
+      "text_ptbr": "Imune a Veneno"
+    },
+    {
+      "id": 20586,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "マヒ無効",
+      "original_en": "Paralyze Immunity",
+      "text_ptbr": "Imune a Paralisia"
+    },
+    {
+      "id": 20587,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "暗闇無効",
+      "original_en": "Darkness Immunity",
+      "text_ptbr": "Imune a Cegueira"
+    },
+    {
+      "id": 20588,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "状態異常無効",
+      "original_en": "Status Abnormality Immunity",
+      "text_ptbr": "Imune a Alteração de Estado"
+    },
+    {
+      "id": 20589,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "詩魔法反射",
+      "original_en": "Reflect Song Magic ",
+      "text_ptbr": "Reflete Canção"
+    },
+    {
+      "id": 20590,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "炎吸収",
+      "original_en": "Absorb Fire",
+      "text_ptbr": "Drena Fogo"
+    },
+    {
+      "id": 20591,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "氷吸収",
+      "original_en": "Absorb Ice",
+      "text_ptbr": "Drena Gelo"
+    },
+    {
+      "id": 20592,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "雷吸収",
+      "original_en": "Absorb Lightning",
+      "text_ptbr": "Drena Raio"
+    },
+    {
+      "id": 20593,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "風吸収",
+      "original_en": "Absorb Wind",
+      "text_ptbr": "Drena Vento"
+    },
+    {
+      "id": 20594,
+      "event_file": "SLUS/TEXT/0014",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "魔法吸収",
+      "original_en": "Absorb Magic",
+      "text_ptbr": "Drena Magia"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 20595,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "大爆発",
+      "original_en": "Great Explosion",
+      "current_ptbr": "Grande explosão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20596,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "70Mバルカン",
+      "original_en": "70M Vulcan",
+      "current_ptbr": "70M Vulcan",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20597,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガ1",
+      "original_en": "Ikarga 1",
+      "current_ptbr": "Ikarga 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20598,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "4連ミサイル",
+      "original_en": "Four Chambered Missile",
+      "current_ptbr": "Míssil de 4 câmaras",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20599,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガ2",
+      "original_en": "Ikarga 2",
+      "current_ptbr": "Ikarga 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20600,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "デスホバー",
+      "original_en": "Death Hover",
+      "current_ptbr": "Voo mortal",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20601,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガ3",
+      "original_en": "Ikarga 3",
+      "current_ptbr": "Ikarga 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20602,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "100Mバルカン",
+      "original_en": "100M Vulcan",
+      "current_ptbr": "100M Vulcan",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20603,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガII1",
+      "original_en": "Ikarga II 1",
+      "current_ptbr": "Ikarga II 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20604,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一斉掃射",
+      "original_en": "Simultaneous Swipe",
+      "current_ptbr": "Golpe simultâneo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20605,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガII3",
+      "original_en": "Ikarga II 3",
+      "current_ptbr": "Ikarga II 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20606,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フォトンスプレッド",
+      "original_en": "Photon Spread",
+      "current_ptbr": "Feixe fóton",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20607,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガII4",
+      "original_en": "Ikarga II 4",
+      "current_ptbr": "Ikarga II 4",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20608,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "デスギアー",
+      "original_en": "Death Gear",
+      "current_ptbr": "Engr.mortal",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20609,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガII5",
+      "original_en": "Ikarga II 5",
+      "current_ptbr": "Ikarga II 5",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20610,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "システム暴走",
+      "original_en": "System Uncontrolled",
+      "current_ptbr": "Sistema sem ctrl.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20611,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イカルガII6",
+      "original_en": "Ikarga II 6",
+      "current_ptbr": "Ikarga II 6",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20612,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フォビドゥンクロウ",
+      "original_en": "Forbidden Claw",
+      "current_ptbr": "Garra proibida",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20613,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファルス司祭1",
+      "original_en": "Falss 1",
+      "current_ptbr": "Falss 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20614,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エレミア・レイ",
+      "original_en": "Elemia Ray",
+      "current_ptbr": "Raio Elemia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20615,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファルス司祭2",
+      "original_en": "Falss 2",
+      "current_ptbr": "Falss 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20616,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラビディパニシュ",
+      "original_en": "Gravity Punishment",
+      "current_ptbr": "Punição grav.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20617,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファルス司祭3",
+      "original_en": "Falss 3",
+      "current_ptbr": "Falss 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20618,
+      "event_file": "SLUS/TEXT/0015",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハイボルテージ",
+      "original_en": "High Voltage",
+      "current_ptbr": "Alta tensão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20619,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファルス司祭4",
+      "original_en": "Falss 4",
+      "current_ptbr": "Falss 4",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20620,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エレミア賛歌",
+      "original_en": "Elemia Anthem",
+      "current_ptbr": "Hino de Elemia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20621,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファルス司祭5",
+      "original_en": "Falss 5",
+      "current_ptbr": "Falss 5",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20622,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "バグズファング",
+      "original_en": "Bugs Fang",
+      "current_ptbr": "Presa bug",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20623,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-I1",
+      "original_en": "ELMA-I 1",
+      "current_ptbr": "ELMA-I 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20624,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ブレイクスピン",
+      "original_en": "Break Spin",
+      "current_ptbr": "Giro quebra",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20625,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-I2",
+      "original_en": "ELMA-I 2",
+      "current_ptbr": "ELMA-I 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20626,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャッターテイル",
+      "original_en": "Shutter Tail",
+      "current_ptbr": "Cauda obtur.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20627,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-I3",
+      "original_en": "ELMA-I 3",
+      "current_ptbr": "ELMA-I 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20628,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ニードルレイン",
+      "original_en": "Needle Rain",
+      "current_ptbr": "Agulhada",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20629,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-I4",
+      "original_en": "ELMA-I 4",
+      "current_ptbr": "ELMA-I 4",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20630,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "システムブレイク",
+      "original_en": "System Break",
+      "current_ptbr": "Falha sistema",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20631,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-II1",
+      "original_en": "ELMA-II 1",
+      "current_ptbr": "ELMA-II 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20632,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハーム・ウェイブ",
+      "original_en": "Harm Wave",
+      "current_ptbr": "Onda nociva",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20633,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-II2",
+      "original_en": "ELMA-II 2",
+      "current_ptbr": "ELMA-II 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20634,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "クロスカット",
+      "original_en": "Cross Cut",
+      "current_ptbr": "Corte X",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20635,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ELMA-II3",
+      "original_en": "ELMA-II 3",
+      "current_ptbr": "ELMA-II 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20636,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フレイムスプレー",
+      "original_en": "Flame Spray",
+      "current_ptbr": "Jato fogo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20637,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-γ1",
+      "original_en": "ABR-γ 1",
+      "current_ptbr": "ABR-γ 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20638,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ディープフリーズ",
+      "original_en": "Deep Freeze",
+      "current_ptbr": "Congelar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20639,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-γ2",
+      "original_en": "ABR-γ 2",
+      "current_ptbr": "ABR-γ 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20640,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "サンダーシャワー",
+      "original_en": "Thunder Shower",
+      "current_ptbr": "Chuva de raios",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20641,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-γ3",
+      "original_en": "ABR-γ 3",
+      "current_ptbr": "ABR-γ 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20642,
+      "event_file": "SLUS/TEXT/0016",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マスタービット",
+      "original_en": "Master Bit",
+      "current_ptbr": "Bit mestre",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20643,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-γ4",
+      "original_en": "ABR-γ 4",
+      "current_ptbr": "ABR-γ 4",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20644,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ダブルインパクト",
+      "original_en": "Double Impact",
+      "current_ptbr": "Impacto duplo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20645,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-γ5",
+      "original_en": "ABR-γ 5",
+      "current_ptbr": "ABR-γ 5",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20646,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ロックキャノン",
+      "original_en": "Rock Cannon",
+      "current_ptbr": "Canhão ped.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20647,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-β1",
+      "original_en": "ABR-β 1",
+      "current_ptbr": "ABR-β 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20648,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "リングビット",
+      "original_en": "Ring Bit",
+      "current_ptbr": "Bit anel",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20649,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-β2",
+      "original_en": "ABR-β 2",
+      "current_ptbr": "ABR-β 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20650,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハイバスター",
+      "original_en": "High Buster",
+      "current_ptbr": "Alto Buster",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20651,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-β3",
+      "original_en": "ABR-β 3",
+      "current_ptbr": "ABR-β 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20652,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "パルスレイザー",
+      "original_en": "Pulse Laser",
+      "current_ptbr": "Laser pulso",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20653,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-α1",
+      "original_en": "ABR-α 1",
+      "current_ptbr": "ABR-α 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20654,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ホーミングビット",
+      "original_en": "Homing Bit",
+      "current_ptbr": "Bit guiado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20655,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-α2",
+      "original_en": "ABR-α 2",
+      "current_ptbr": "ABR-α 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20656,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "パワードダイブ",
+      "original_en": "Powered Dive",
+      "current_ptbr": "Mergulho forte",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20657,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-α3",
+      "original_en": "ABR-α 3",
+      "current_ptbr": "ABR-α 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20658,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イレイザーウェイブ",
+      "original_en": "Eraser Wave",
+      "current_ptbr": "Onda nula",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20659,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ABR-α4",
+      "original_en": "ABR-α 4",
+      "current_ptbr": "ABR-α 4",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20660,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光<破滅>",
+      "original_en": "Light (Doom)",
+      "current_ptbr": "Luz (Ruína)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20661,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャドウ・ミュール頭部",
+      "original_en": "Shadow Mir Head",
+      "current_ptbr": "Cabeça de Mir",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20662,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "咆哮<悲壮>",
+      "original_en": "Howl (Tragic)",
+      "current_ptbr": "Uivo (Trágico)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20663,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "奏鳴<絶望>",
+      "original_en": "Sonata (Despair)",
+      "current_ptbr": "Sonata (Desespero)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20664,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャドウ・ミュール腕部",
+      "original_en": "Shadow Mir Arm",
+      "current_ptbr": "Braço de Mir",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20665,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "破壊<憤怒>",
+      "original_en": "Destruction (Wrath)",
+      "current_ptbr": "Destruição (Ira)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20666,
+      "event_file": "SLUS/TEXT/0017",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "帰依<忘却>",
+      "original_en": "Embrace (Oblivion)",
+      "current_ptbr": "Abraço (Esquec.)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20667,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆砕<零>",
+      "original_en": "Burst Crush (Zero)",
+      "current_ptbr": "Impacto (Zero)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20668,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャドウ・ミュール胸部",
+      "original_en": "Shadow Mir Body",
+      "current_ptbr": "Corpo de Mir",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20669,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆砕<単>",
+      "original_en": "Burst Crush (Unit)",
+      "current_ptbr": "Impacto (Unidade)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20670,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "爆砕<復>",
+      "original_en": "Burst Crush (Redo)",
+      "current_ptbr": "Impacto (Refazer)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20671,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "吸引<渇望>",
+      "original_en": "Suction (Thirst)",
+      "current_ptbr": "Sucção (Sede)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20672,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キル",
+      "original_en": "Kill",
+      "current_ptbr": "Matar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20673,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャドウ・ミュール(プレデター)",
+      "original_en": "Shadow Mir (Predator)",
+      "current_ptbr": "Mir Sombria (Predador)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20674,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マワル",
+      "original_en": "Circulate",
+      "current_ptbr": "Circular",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20675,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハカイノチカラ",
+      "original_en": "Power to Destroy",
+      "current_ptbr": "Poder destrutivo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20676,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミナゴワシ",
+      "original_en": "Break All",
+      "current_ptbr": "Quebra tudo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20677,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "コワレタセカイ",
+      "original_en": "Ruined World",
+      "current_ptbr": "Mundo arruinado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20678,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シャドウ・ミュール(ミュール)",
+      "original_en": "Shadow Mir (Mir)",
+      "current_ptbr": "Mir Sombria (Mir)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20679,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "オチテイクソラ",
+      "original_en": "Falling Sky",
+      "current_ptbr": "Céu caindo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20680,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0まわしげり",
+      "original_en": "Roundhouse Kick",
+      "current_ptbr": "Chute giratório",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20681,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0流形・一乃舞",
+      "original_en": "Flowing Form - First Dance",
+      "current_ptbr": "Forma fluida - Primeira dança",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20682,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子1",
+      "original_en": "Child of Light 1",
+      "current_ptbr": "Criança da Luz 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20683,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0さまそー",
+      "original_en": "Wakey",
+      "current_ptbr": "Acorda",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20684,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0飛形・昇輪落陽",
+      "original_en": "Flying Form - Rising Ring Falling Sun",
+      "current_ptbr": "Forma voadora - Anel ascendente, sol poente",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20685,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子2",
+      "original_en": "Child of Light 2",
+      "current_ptbr": "Criança da Luz 2",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20686,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0しょうてい",
+      "original_en": "Palm Punch",
+      "current_ptbr": "Golpe palma",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20687,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0破形・絶勁衝波",
+      "original_en": "Destroy Form - Absolute Strength Impact",
+      "current_ptbr": "Forma destruidora - Impacto de força absoluta",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20688,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子3",
+      "original_en": "Child of Light 3",
+      "current_ptbr": "Criança da Luz 3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20689,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0しんくうはどうけん",
+      "original_en": "Vacuum Wave Fist",
+      "current_ptbr": "Punho de vácuo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20690,
+      "event_file": "SLUS/TEXT/0018",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0滅形・殺一兆星射斗",
+      "original_en": "Ruin Form - One Shot Kill",
+      "current_ptbr": "Forma devastadora - Morte com um golpe",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20691,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子4",
+      "original_en": "Child of Light 4",
+      "current_ptbr": "Criança da Luz 4",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20692,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0りゅうこらんぶ",
+      "original_en": "Dragon Tiger Dance",
+      "current_ptbr": "Dança dragão-tigre",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20693,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "#0舞形・闘姫究極演舞",
+      "original_en": "Dance Form - Ultimate Dance of Warrior Princess",
+      "current_ptbr": "Forma dançante - Dança suprema da princesa guerreira",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20694,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "光の御子5",
+      "original_en": "Child of Light 5",
+      "current_ptbr": "Criança da Luz 5",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20695,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "プラチナヒール",
+      "original_en": "Platina Heal",
+      "current_ptbr": "Cura Platina",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20696,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "プロテクター1",
+      "original_en": "Protector 1",
+      "current_ptbr": "Protetor 1",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20697,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "スタンピード雷",
+      "original_en": "Stampede Thunder",
+      "current_ptbr": "Debandada elétrica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20698,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ボルド(強化後)",
+      "original_en": "Bourd (Reinforced)",
+      "current_ptbr": "Bourd (Reforçado)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20699,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アースクラック雷",
+      "original_en": "Earth Crack Thunder",
+      "current_ptbr": "Fenda elétrica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20700,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フルリカバリー",
+      "original_en": "Full Recovery",
+      "current_ptbr": "Cura total",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20701,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "リベンジ / りべんじ",
+      "original_en": "Revenge",
+      "current_ptbr": "Vingança",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20702,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "リアクションテスト",
+      "original_en": "Reaction Test",
+      "current_ptbr": "Teste de reação",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20703,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "デリートモード",
+      "original_en": "Delete Mode",
+      "current_ptbr": "Modo exclusão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20704,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ノーマルモード",
+      "original_en": "Normal Mode",
+      "current_ptbr": "Modo normal",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20705,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "休眠",
+      "original_en": "Dormancy",
+      "current_ptbr": "Dormência",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20706,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "復活",
+      "original_en": "Revival",
+      "current_ptbr": "Ressurreição",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20707,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "充填",
+      "original_en": "Fill Up",
+      "current_ptbr": "Preencher",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20708,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "セーフモード",
+      "original_en": "Safe Mode",
+      "current_ptbr": "Modo seguro",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20709,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "回魂<輪廻>",
+      "original_en": "Circling Soul (Reincarnation)",
+      "current_ptbr": "Alma circular (Reencarnação)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20710,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フォースショック",
+      "original_en": "Force Shock",
+      "current_ptbr": "Choque",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20711,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ぷわぞんくーる",
+      "original_en": "Poisson Cool",
+      "current_ptbr": "Frio Poisson",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20712,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フォーリンラヴ",
+      "original_en": "Fall in Love",
+      "current_ptbr": "Apaixonar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20713,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハートストライク",
+      "original_en": "Heart Strike",
+      "current_ptbr": "Golpe coração",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20714,
+      "event_file": "SLUS/TEXT/0019",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "青春真逆様",
+      "original_en": "Reverse Youth",
+      "current_ptbr": "Rejuvenescer",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20715,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "勧誘夢世界",
+      "original_en": "Tempting Dream World",
+      "current_ptbr": "Mundo onírico sedutor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20716,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "君以外不可視",
+      "original_en": "Only You in Sight",
+      "current_ptbr": "Só tenho olhos para você",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20717,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あいのほうよう",
+      "original_en": "Hug of Love",
+      "current_ptbr": "Abraço de amor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20718,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "3プラトン",
+      "original_en": "3 Plato",
+      "current_ptbr": "3 Platôs",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20719,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "必殺の突っ張り",
+      "original_en": "Defiant Push",
+      "current_ptbr": "Empurrão rebelde",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20720,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "デュプリケイト",
+      "original_en": "Duplicate",
+      "current_ptbr": "Duplicar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20721,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "雄たけび",
+      "original_en": "Warcry",
+      "current_ptbr": "Grito de guerra",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20722,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ヘルブレス",
+      "original_en": "Hell Breath",
+      "current_ptbr": "Sopro infernal",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20723,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハウリング",
+      "original_en": "Howling",
+      "current_ptbr": "Uivo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20724,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "カースドブレス",
+      "original_en": "Cursed Breath",
+      "current_ptbr": "Sopro amaldiçoado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20725,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミストブレス",
+      "original_en": "Mist Breath",
+      "current_ptbr": "Sopro de névoa",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20726,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "鳴神",
+      "original_en": "Cry of God",
+      "current_ptbr": "Grito divino",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20727,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火走",
+      "original_en": "Running Fire",
+      "current_ptbr": "Fogo contínuo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20728,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キリングステップ",
+      "original_en": "Killing Step",
+      "current_ptbr": "Passo mortal",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20729,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "火鳥風絶",
+      "original_en": "Phoenix Wind",
+      "current_ptbr": "Vento fênix",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20730,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "神鳥",
+      "original_en": "God Bird",
+      "current_ptbr": "Ave divina",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20731,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "超絶竜巻",
+      "original_en": "Ultimate Tornado",
+      "current_ptbr": "Tornado supremo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20732,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "超ダイブ",
+      "original_en": "Super Dive",
+      "current_ptbr": "Mergulhão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20733,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "真空波",
+      "original_en": "Vacuum Wave",
+      "current_ptbr": "Onda de vácuo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20734,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "衝撃波",
+      "original_en": "Shockwave",
+      "current_ptbr": "Onda de choque",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20735,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フェーディング",
+      "original_en": "Fading",
+      "current_ptbr": "Desvanecer",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20736,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ポイゾンショット",
+      "original_en": "Poison Shot",
+      "current_ptbr": "Tiro venenoso",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20737,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トマトアタック",
+      "original_en": "Tomato Attack",
+      "current_ptbr": "Ataque de tomate",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20738,
+      "event_file": "SLUS/TEXT/0020",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "緑のたけのこ",
+      "original_en": "Green Bamboo Shoot",
+      "current_ptbr": "Broto de bambu",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20739,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "女子大爆発",
+      "original_en": "Girl Explosion",
+      "current_ptbr": "Explosão garota",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20740,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ちびとねりこ",
+      "original_en": "Lil Tornelico",
+      "current_ptbr": "Mini Tornelico",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20741,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ダイブスラッシュ",
+      "original_en": "Dive Slash",
+      "current_ptbr": "Golpe mergulho",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20742,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "剣を斬り返して対象を攻撃し物理の小ダメージを与える。",
+      "original_en": "Applies little physical damage by flipping the sword and slashing the target ",
+      "current_ptbr": "Gira a espada e corta o alvo, causando pouco dano físico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20743,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フルスタンプ",
+      "original_en": "Full Stomp",
+      "current_ptbr": "Pisão total",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20744,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "飛び込みから剣を思い切り振り下ろし、対象に物理の中ダメージ。",
+      "original_en": "Moderate physical damage by jumping and swinging down the sword into the target",
+      "current_ptbr": "Salta e desfere um golpe de cima para baixo, causando dano físico moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20745,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "インパルス",
+      "original_en": "Impulse",
+      "current_ptbr": "Impulso",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20746,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "高速で剣を振り下ろし、衝撃波で対象に物理+風属性の中ダメージ。",
+      "original_en": "Moderate physical+wind damage with a shockwave from a sword swing.",
+      "current_ptbr": "A onda de choque da espada causa dano físico e de vento moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20747,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ダブルビート",
+      "original_en": "Double Beat",
+      "current_ptbr": "Batida dupla",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20748,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "すれ違いざまに切りつけ、さらに打ち上げて対象に物理の大ダメージ。",
+      "original_en": "Great physical damage by slashing as you pass the target and continues to hit upwards.",
+      "current_ptbr": "Corta o alvo ao passar por ele e continua golpeando para cima, causando muito dano físico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20749,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ブレイクブレイド",
+      "original_en": "Break Blade",
+      "current_ptbr": "Lâmina quebra",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20750,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "強烈な斬撃を連続で叩き込み、対象の行動を遅らせて物理の特大ダメージ。",
+      "original_en": "Applies huge physical damage and delays the target’s action with strong slashes.",
+      "current_ptbr": "Cortes poderosos causam enorme dano físico e atrasam a ação do alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20751,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "絆の盾",
+      "original_en": "Shield of Bond",
+      "current_ptbr": "Escudo do laço",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20752,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一定確率で「護る」を実行した時に受けるダメージを半減させる。",
+      "original_en": "Decreases damage taken by half when guarding often.",
+      "current_ptbr": "Defender com frequência reduz pela metade o dano recebido.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20753,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フォトンストーム",
+      "original_en": "Photon Storm",
+      "current_ptbr": "Tempestade fóton",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20754,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "エレミアの騎士の持つ闘気を体にまとい全身全霊の力を込めた一撃を見舞う",
+      "original_en": "By surrounding himself in a battle aura, a Knight of Elemia can create a stong hit.",
+      "current_ptbr": "Envolto numa aura de batalha, um Cavaleiro de Elemia desfere um golpe poderoso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20755,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シングルショット",
+      "original_en": "Single Shot",
+      "current_ptbr": "Tiro único",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20756,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "愛用の銃を早撃ちして対象に物理+炎属性の小ダメージ。",
+      "original_en": "Quick shots that apply little physical+fire damage to the target.",
+      "current_ptbr": "Tiros rápidos causam pouco dano físico e de fogo ao alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20757,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ガトリングショット",
+      "original_en": "Gatling Shot",
+      "current_ptbr": "Tiro Gatling",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20758,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "連射モードで対象に物理+炎属性の中ダメージを与える。",
+      "original_en": "Medium physical+fire damage applied in continous firing mode.",
+      "current_ptbr": "Disparos contínuos causam dano físico e de fogo moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20759,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ガンファイア",
+      "original_en": "Gunfire",
+      "current_ptbr": "Tiroteio",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20760,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一定範囲に対して銃を乱射し、ランダムの対象に物理+炎属性の大ダメージ。",
+      "original_en": "Shooting within a certain range that applies large physical+fire damage to random targets.",
+      "current_ptbr": "Dispara numa área e causa muito dano físico e de fogo a alvos aleatórios.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20761,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フラッシュボム",
+      "original_en": "Flash Bomb",
+      "current_ptbr": "Bomba clarão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20762,
+      "event_file": "SLUS/TEXT/0021",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵前衛にフラッシュ爆弾を投げ、炎の中ダメージを与え暗闇状態にする。",
+      "original_en": "Throw into the enemy’s front line, causing medium fire damage and blind effect.",
+      "current_ptbr": "Lança na linha de frente inimiga, causando dano de fogo moderado e cegueira.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20763,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トキシックボム",
+      "original_en": "Toxic Bomb",
+      "current_ptbr": "Bomba tóxica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20764,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵前衛に毒ガスを噴出する爆弾を投げ、炎の中ダメージを与え毒状態にする。",
+      "original_en": "Throw into the enemy’s front line, causing medium fire damage and poison effect.",
+      "current_ptbr": "Lança na linha de frente inimiga, causando dano de fogo moderado e veneno.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20765,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ナイトスコープ",
+      "original_en": "Night Scope",
+      "current_ptbr": "Mira noturna",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20766,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "暗視能力によって、暗闇状態を完全に無効化する。",
+      "original_en": "With the skill to see in the dark, gives you immunity to any blind effects.",
+      "current_ptbr": "A visão no escuro concede imunidade à cegueira.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20767,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "U.G.S.M",
+      "original_en": "U. G. S. M",
+      "current_ptbr": "U. G. S. M",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20768,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うるとら・ごっつ・すげえ・ましんがん",
+      "original_en": "Ultra Great Super Machinegun",
+      "current_ptbr": "Ultrassupermetralhadora",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20769,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "チェーンスマッシュ",
+      "original_en": "Chain Smash",
+      "current_ptbr": "Golpe elo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20770,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "チェーンソウで殴りつけ、回転刃と衝撃で物理の小ダメージ。",
+      "original_en": "Applies little physical damage by bashing the target with a chain saw.",
+      "current_ptbr": "Golpeia o alvo com uma motosserra, causando pouco dano físico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20771,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "チェーンタックル",
+      "original_en": "Chain Tackle",
+      "current_ptbr": "Investida corrente",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20772,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "チェーンソウを構えたまま敵に突撃、回転刃でえぐり物理の中ダメージ。",
+      "original_en": "Applies medium physical damage by charging into the enemy with the chain saw.",
+      "current_ptbr": "Avança com a motosserra, causando dano físico moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20773,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "丸焼きバーナー",
+      "original_en": "Overcook Burner",
+      "current_ptbr": "Queimador extremo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20774,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "懐の溶接用バーナーで高温の炎を噴射し単体に炎属性の中ダメージ。",
+      "original_en": "Applies medium fire damage to a single target with a jet of flames of a weilding torch.",
+      "current_ptbr": "O jato de uma tocha de solda causa dano de fogo moderado a um alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20775,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "暴れノコ",
+      "original_en": "Violent Saw",
+      "current_ptbr": "Serra violenta",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20776,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "チェーンソウを構えた状態で高速回転し、単体に物理の中ダメージ。",
+      "original_en": "Medium physical damage to a single target by spinning wildly while holding a chainsaw.",
+      "current_ptbr": "Gira com a motosserra e causa dano físico moderado a um alvo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20777,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ファイナルスイッチ",
+      "original_en": "Final Switch",
+      "current_ptbr": "Chave final",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20778,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一発25万リーフCR(推定)の高性能ミサイルで敵前衛に物理+炎の大ダメージ。",
+      "original_en": "A 250,000 Leaf (estimate), high quality missile that does a lot of physical+fire damage.",
+      "current_ptbr": "Míssil de alta qualidade, avaliado em 250.000 Leaf. Causa muito dano físico e de fogo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20779,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キュアタブレット",
+      "original_en": "Cure Tablet",
+      "current_ptbr": "Pastilha de cura",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20780,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "身体の再生能力を向上させる成分を持った薬で、味方単体のHPを小回復。",
+      "original_en": "Medicine that regenerates the body that slightly recovers a single friendly target.",
+      "current_ptbr": "Remédio regenerador que recupera um pouco do HP de um aliado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20781,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "きりもみ丼落とし",
+      "original_en": "Tailspin",
+      "current_ptbr": "Pirueta",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20782,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "暴れノコの遠心力に空中からの落下速度が加わり強烈な一撃を叩き込む",
+      "original_en": "One strong attack with the centrifugal force of the Violent Saw and the drop from the air.",
+      "current_ptbr": "Um golpe poderoso une a força centrífuga da Serra Violenta à queda do alto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20783,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "信念の一撃",
+      "original_en": "Strike of Belief",
+      "current_ptbr": "Golpe da crença",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20784,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "騎士団伝統の槍技で、真っ直ぐな突きを繰り出し対象に物理の小ダメージ。",
+      "original_en": "A traditional spear skill of the Knights; a single strike that does little physical damage.",
+      "current_ptbr": "Técnica de lança dos Cavaleiros: um golpe que causa pouco dano físico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20785,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "実直なる打撃",
+      "original_en": "Honest Blow",
+      "current_ptbr": "Golpe honesto",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20786,
+      "event_file": "SLUS/TEXT/0022",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "全体重を武器に乗せた重い一撃で対象に物理の中ダメージを与える。",
+      "original_en": "Medium physical damage from a heavy blow with all weight on the weapon.",
+      "current_ptbr": "Um golpe com todo o peso sobre a arma causa dano físico moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20787,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "奇跡の力で雷をまとい、上空から対象を攻撃し物理+雷属性の特大ダメージ。",
+      "original_en": "A huge physical+lightning damage by attacking from above while weilding lightning.",
+      "current_ptbr": "Ataca do alto com um raio, causando enorme dano físico e elétrico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20788,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "永遠の雨",
+      "original_en": "Eternal Rain",
+      "current_ptbr": "Chuva eterna",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20789,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "騎士団伝統の槍技の奥義。高速で突きを繰り出し対象に物理の大ダメージ。",
+      "original_en": "A mastered spear skill of the Knights; large physical damage applied by a quick strike.",
+      "current_ptbr": "Técnica avançada de lança dos Cavaleiros. Um golpe rápido causa muito dano físico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20790,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "終焉の槍",
+      "original_en": "Spear of End",
+      "current_ptbr": "Lança do fim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20791,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "槍で敵を打ち上げ、さらに叩きつけて対象に物理の中ダメージ+麻痺の効果。",
+      "original_en": "Throw the enemy and beat down, doing medium physical damage and paralyzing effect.",
+      "current_ptbr": "Arremessa e golpeia o inimigo, causando dano físico moderado e paralisia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20792,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "祝福の風",
+      "original_en": "Blessed Wind",
+      "current_ptbr": "Vento abençoado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20793,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "神の祝福を受け、戦闘中自動的に一定時間ごとにHPを回復する。",
+      "original_en": "Recieves the blessing of Gods, allowing a certain amount of HP recovery over time.",
+      "current_ptbr": "A bênção dos deuses recupera uma quantidade de HP ao longo do tempo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20794,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "電刃雷華",
+      "original_en": "Electric Blade",
+      "current_ptbr": "Lâmina elétrica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20795,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "神を信じる心が、悪を滅する迅雷となって全ての闇を破壊する",
+      "original_en": "Belief in God becomes lightning that destroys evil and destroys all darkness.",
+      "current_ptbr": "A fé se torna um raio que destrói o mal e dissipa as trevas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20796,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一閃",
+      "original_en": "Spark",
+      "current_ptbr": "Faísca",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20797,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "高速で対象を切りつけ、対象に物理の小ダメージ。",
+      "original_en": "Cuts at the enemy quickly, applying little physical damage to the target.",
+      "current_ptbr": "Corta o inimigo rapidamente, causando pouco dano físico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20798,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "破突",
+      "original_en": "Breaking Strike",
+      "current_ptbr": "Golpe rompedor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20799,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "両手の刀を高速で振り、連続で切りつけ対象に物理の中ダメージ。",
+      "original_en": "Swings the blades in both hands, doing medium physical damage with continous hits.",
+      "current_ptbr": "Golpes contínuos com as duas lâminas causam dano físico moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20800,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "両斬",
+      "original_en": "Dual Slash",
+      "current_ptbr": "Golpe duplo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20801,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "十文字に刀を構えたまま、対象に突撃し払い抜け物理の中ダメージ。",
+      "original_en": "Do medium physical damage by charging into the target holding both swords in a cross.",
+      "current_ptbr": "Avança com as espadas cruzadas, causando dano físico moderado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20802,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "運動能力を飛躍的に高め、速度を大幅に上昇させるが、攻撃力が多少低下する。",
+      "original_en": "Dramatically increases physical ability and speed, but slightly decreases attack power.",
+      "current_ptbr": "Aumenta muito a capacidade física e a velocidade, mas reduz um pouco o ataque.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20803,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "轟刃",
+      "original_en": "Roaring Blade",
+      "current_ptbr": "Lâmina rugidora",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20804,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "極限まで研ぎ澄まされた刀気の衝撃波で対象に大ダメージ。一撃で倒すことも。",
+      "original_en": "The blade is sharpened to its extreme; the shockwave it creates applies large damage.",
+      "current_ptbr": "A lâmina extremamente afiada gera uma onda de choque que causa muito dano.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20805,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "朧影",
+      "original_en": "Hazy Shadow",
+      "current_ptbr": "Sombra nebulosa",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20806,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "柳の葉のような身のこなしで敵の攻撃を一定確率で無効化させる",
+      "original_en": "Avoids enemy attacks with the body flow similar to the leaves of a willow tree.",
+      "current_ptbr": "Esquiva-se como folhas de salgueiro levadas pelo vento.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20807,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "幻真無慚断",
+      "original_en": "Illusionary Break",
+      "current_ptbr": "Ruptura ilusória",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20808,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "全てを凍らせる死出の一撃。それは命の炎すらも凍てつかせる",
+      "original_en": "A deadly attack that freezes everything; even the flame of life. ",
+      "current_ptbr": "Um ataque mortal que congela tudo, até a chama da vida.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20809,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フォトングラス",
+      "original_en": "Photon Glass",
+      "current_ptbr": "Vidro de fóton",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20810,
+      "event_file": "SLUS/TEXT/0023",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:フォトングラス",
+      "original_en": "RC: Photon Glass",
+      "current_ptbr": "RC: Vidro de fóton",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20811,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "パワードビス",
+      "original_en": "Powered Screw",
+      "current_ptbr": "Parafuso potente",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20812,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:ネジ",
+      "original_en": "RC: Screw",
+      "current_ptbr": "RC: Parafuso",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20813,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラバード羅針盤",
+      "original_en": "Gravard Compass",
+      "current_ptbr": "Bússola Gravard",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20814,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:羅針盤",
+      "original_en": "RC: Compass",
+      "current_ptbr": "RC: Bússola",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20815,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "カントの火箱",
+      "original_en": "Kanto’s Fiery Box",
+      "current_ptbr": "Caixa flamejante Kanto",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20816,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:木の箱",
+      "original_en": "RC: Wooden Box",
+      "current_ptbr": "RC: Caixa madeira",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20817,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "研磨剤",
+      "original_en": "Polishing Powder",
+      "current_ptbr": "Pó de polimento",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20818,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:白い粉 / 合C:しろいこな",
+      "original_en": "RC: White Powder",
+      "current_ptbr": "RC: Pó branco",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20819,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ハーモナイザ",
+      "original_en": "Harmonizer",
+      "current_ptbr": "Harmonizador",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20820,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:超文明のメカ",
+      "original_en": "RC: Super Civ Mech",
+      "current_ptbr": "RC: Máquina da Supercivilização",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20821,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フランメルト磁石",
+      "original_en": "Franmelt Magnet",
+      "current_ptbr": "Ímã Franmelt",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20822,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:磁石",
+      "original_en": "RC: Magnet",
+      "current_ptbr": "RC: Ímã",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20823,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "石木栄養剤",
+      "original_en": "Stone Wood Fertilizer",
+      "current_ptbr": "Adubo de madeira-pedra",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20824,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:石木栄養剤",
+      "original_en": "RC: Fertilizer",
+      "current_ptbr": "RC: Fertilizante",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20825,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "大自然の綿",
+      "original_en": "Natural Cotton",
+      "current_ptbr": "Algodão natural",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20826,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:綿",
+      "original_en": "RC: Cotton",
+      "current_ptbr": "RC: Algodão",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20827,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アコルドナイト",
+      "original_en": "Acordonite",
+      "current_ptbr": "Acordonite",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20828,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:鉄",
+      "original_en": "RC: Iron",
+      "current_ptbr": "RC: Ferro",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20829,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "つぎはぎな布",
+      "original_en": "Patchy Cloth",
+      "current_ptbr": "Tecido remendado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20830,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:布",
+      "original_en": "RC: Cloth",
+      "current_ptbr": "RC: Tecido",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20831,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どんすけ",
+      "original_en": "Don Leon",
+      "current_ptbr": "Don Leon",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20832,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:ぬいぐるみ",
+      "original_en": "RC: Stuffed Animal",
+      "current_ptbr": "RC: Bicho de pelúcia",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20833,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "フリッパー",
+      "original_en": "Flipper",
+      "current_ptbr": "Nadadeira",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20834,
+      "event_file": "SLUS/TEXT/0024",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:フリッパー",
+      "original_en": "RC: Flipper",
+      "current_ptbr": "RC: Nadadeira",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20835,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ラムクラスタ",
+      "original_en": "Ramcluster",
+      "current_ptbr": "Ramcluster",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20836,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:ラムクラスタ",
+      "original_en": "RC: Ramcluster",
+      "current_ptbr": "RC: Ramcluster",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20837,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シェアリングコア",
+      "original_en": "Sharing Core",
+      "current_ptbr": "Núcleo compartilhado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20838,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:シェアリングコア",
+      "original_en": "RC: Sharing Core",
+      "current_ptbr": "RC: Núcleo compartilhado",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20839,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "海風のオカリナ",
+      "original_en": "Ocean Breeze Ocarina",
+      "current_ptbr": "Ocarina brisa marinha",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20840,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:オカリナ",
+      "original_en": "RC: Ocarina",
+      "current_ptbr": "RC: Ocarina",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20841,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "三極式共鳴培養槽",
+      "original_en": "Tripolar Incubator",
+      "current_ptbr": "Incubadora tripolar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20842,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:水槽",
+      "original_en": "RC: Water Tank",
+      "current_ptbr": "RC: Tanque de água",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20843,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "高純度溶解炉",
+      "original_en": "High Purity Dissolving Reactor",
+      "current_ptbr": "Reator de dissolução de alta pureza",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20844,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:たる",
+      "original_en": "RC: Barrel",
+      "current_ptbr": "RC: Barril",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20845,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "導力神経節",
+      "original_en": "Symphonic Synapse",
+      "current_ptbr": "Sinapse sinfônica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20846,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:シナプス",
+      "original_en": "RC: Synapse",
+      "current_ptbr": "RC: Sinapse",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20847,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "D3細胞",
+      "original_en": "D3 Cell",
+      "current_ptbr": "Célula D3",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20848,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:細胞",
+      "original_en": "RC: Cell",
+      "current_ptbr": "RC: Célula",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20849,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マーキュリー素子",
+      "original_en": "Mercury Atom",
+      "current_ptbr": "Átomo de mercúrio",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20850,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:万物の原初",
+      "original_en": "RC: Origin of Creation",
+      "current_ptbr": "RC: Origem da Criação",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20851,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "クオンタイズ",
+      "original_en": "Quantize",
+      "current_ptbr": "Quantizar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20852,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:整流器",
+      "original_en": "RC: Rectifier",
+      "current_ptbr": "RC: Retificador",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20853,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "導力プラグ",
+      "original_en": "Symphonic Reactor",
+      "current_ptbr": "Reator sinfônico",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20854,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:プラグ",
+      "original_en": "RC: Reactor",
+      "current_ptbr": "RC: Reator",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20855,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "DH化グラスノ盤",
+      "original_en": "DH Grathnode Disc",
+      "current_ptbr": "Disco Grathnode DH",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20856,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:グラスノ盤",
+      "original_en": "RC: Grathnode Disc",
+      "current_ptbr": "RC: Disco Grathnode",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20857,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "カイフクンC",
+      "original_en": "Healy C",
+      "current_ptbr": "Healy C",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20858,
+      "event_file": "SLUS/TEXT/0025",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:カイフクンC",
+      "original_en": "RC: Healy C",
+      "current_ptbr": "RC: Healy C",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20859,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ゼンカインD",
+      "original_en": "Fullhealin D",
+      "current_ptbr": "Fullhealin D",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20860,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:強いくすり",
+      "original_en": "RC: Strong Medicine",
+      "current_ptbr": "RC: Remédio forte",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20861,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ヒールクラッカー",
+      "original_en": "Heal Cracker",
+      "current_ptbr": "Biscoito cura",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20862,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:強力なくすり",
+      "original_en": "RC: Powerful Medicine",
+      "current_ptbr": "RC: Remédio potente",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20863,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レストアボム",
+      "original_en": "Restore Bomb",
+      "current_ptbr": "Bomba restauradora",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20864,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:最強のくすり",
+      "original_en": "RC: Best Medicine",
+      "current_ptbr": "RC: Melhor remédio",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20865,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トランキライザー",
+      "original_en": "Tranquilizer",
+      "current_ptbr": "Tranquilizante",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20866,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ボルトエンジェル",
+      "original_en": "Bolt Angel",
+      "current_ptbr": "Anjo elétrico",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20867,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:復活機",
+      "original_en": "RC: Revival Machine",
+      "current_ptbr": "RC: Revivedor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20868,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "メッソー",
+      "original_en": "Missile",
+      "current_ptbr": "Míssil",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20869,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:メッソー",
+      "original_en": "RC: Missile",
+      "current_ptbr": "RC: Míssil",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20870,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "バク風車",
+      "original_en": "Bombmill",
+      "current_ptbr": "Bombmill",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20871,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:エアウィング",
+      "original_en": "RC: Airwing",
+      "current_ptbr": "RC: Asa ar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20872,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ボルタポルタ",
+      "original_en": "Bolta Polta",
+      "current_ptbr": "Bolta Polta",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20873,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:電気ばくだん",
+      "original_en": "RC: Electric Bomb",
+      "current_ptbr": "RC: Bomba elétrica",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20874,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "電離化合液",
+      "original_en": "Ionization Liquid",
+      "current_ptbr": "Líquido ionizante",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20875,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:あやしい液体",
+      "original_en": "RC: Mysterious Liquid",
+      "current_ptbr": "RC: Líquido misterioso",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20876,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ポプコーンボム",
+      "original_en": "Popcorn Bomb",
+      "current_ptbr": "Bomba pipoca",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20877,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:大ばくだん",
+      "original_en": "RC: Great Bomb",
+      "current_ptbr": "RC: Bomba forte",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20878,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "イナイイナイ",
+      "original_en": "Peeka",
+      "current_ptbr": "Peeka",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20879,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:ブタ",
+      "original_en": "RC: Pig",
+      "current_ptbr": "RC: Porco",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20880,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "バー",
+      "original_en": "Boo",
+      "current_ptbr": "Boo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20881,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "合C:たいこ",
+      "original_en": "RC: Drum",
+      "current_ptbr": "RC: Tambor",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 20882,
+      "event_file": "SLUS/TEXT/0026",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "インバートフック",
+      "original_en": "Invert Hook",
+      "current_ptbr": "Gancho inversor",
+      "review_status": "unreviewed"
+    }
+  ]
+}

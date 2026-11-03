@@ -1,0 +1,333 @@
+import json
+
+batch3 = [
+    {
+        "id": 2987,
+        "curated_ptbr": "Cuidado!\nTem alguma coisa vindo aí!",
+        "verdict": "rewritten",
+        "rationale": "Grito de alerta incisivo e dinâmico de Lyner em meio à emboscada."
+    },
+    {
+        "id": 2988,
+        "curated_ptbr": "Ufa... Que diabo foi aquilo, afinal?",
+        "verdict": "rewritten",
+        "rationale": "Suspiro de alívio e indagação após a comoção cessar ('ふう、何だったんだ、一体')."
+    },
+    {
+        "id": 2989,
+        "curated_ptbr": "Parece que algum mecanismo foi acionado. Talvez seja melhor recuar por enquanto.",
+        "verdict": "rewritten",
+        "rationale": "Análise técnica e conselho prudente de Krusche sugerindo reagrupamento."
+    },
+    {
+        "id": 2990,
+        "curated_ptbr": "É, você tem razão.",
+        "verdict": "rewritten",
+        "rationale": "Correção de gênero: concordância no feminino com Krusche em vez do incorreto 'Você está certo'."
+    },
+    {
+        "id": 2991,
+        "curated_ptbr": "Em que estado será que a cidade ficou?... Dá até um certo receio de olhar.",
+        "verdict": "rewritten",
+        "rationale": "Apreensão legítima de Lyner contemplando o impacto da catástrofe na urbe."
+    },
+    {
+        "id": 2992,
+        "curated_ptbr": "Peço-lhes sinceras desculpas... Preciso ir à Catedral imediatamente. Vocês poderiam se juntar a mim por lá mais tarde?",
+        "verdict": "rewritten",
+        "rationale": "Formalidade solene e cavalheiresca de Radolf despedindo-se temporariamente do grupo."
+    },
+    {
+        "id": 2993,
+        "curated_ptbr": "Radolf deixou o grupo.",
+        "verdict": "rewritten",
+        "rationale": "Mensagem sucinta de sistema informando a saída do membro do grupo."
+    },
+    {
+        "id": 2994,
+        "curated_ptbr": "Alguém que consiga derrotar a China Misha numa disputa de bebida... Mas quem?...",
+        "verdict": "rewritten",
+        "rationale": "Dilema cômico de Lyner buscando um campeão do copo para o desafio na Cosmosfera."
+    },
+    {
+        "id": 2995,
+        "curated_ptbr": "Opa! Lyner, Misha?!\nEstão num encontro romântico por aqui?",
+        "verdict": "rewritten",
+        "rationale": "Provocação bem-humorada de Jack pegando os dois de surpresa."
+    },
+    {
+        "id": 2996,
+        "curated_ptbr": "Não viaja, a gente tá procurando uma pessoa! Aliás, falando nisso, Jack... você não adora uma birita?",
+        "verdict": "rewritten",
+        "rationale": "Reação desconcertada de Lyner e a lembrança oportuna do apreço de Jack pelo álcool."
+    },
+    {
+        "id": 2997,
+        "curated_ptbr": "Mas é claro! Gosto mais de um trago do que de comer!",
+        "verdict": "rewritten",
+        "rationale": "Adaptação idiomática canônica da expressão japonesa '三度の飯より好き' (gostar mais do que das três refeições diárias)."
+    },
+    {
+        "id": 2998,
+        "curated_ptbr": "Então vem com a gente!\nEu te pago todas as rodadas que você aguentar beber!",
+        "verdict": "rewritten",
+        "rationale": "Proposta irrecusável de Lyner recrutando Jack para o duelo etílico."
+    },
+    {
+        "id": 2999,
+        "curated_ptbr": "Ora, sejam bem-vindos de volta. Este é o seu desafiante? Ele realmente tem cara de quem não recusa uma boa taça.",
+        "verdict": "rewritten",
+        "rationale": "Tom acolhedor e irônico do Espírito da Flor avaliando o novo competidor."
+    },
+    {
+        "id": 3000,
+        "curated_ptbr": "Mas com certeza! E não gosto só de bebida boa, como também de belas damas... assim como você.",
+        "verdict": "rewritten",
+        "rationale": "Galanteio fanfarrão clássico de Jack ao iniciar a disputa."
+    },
+    {
+        "id": 3001,
+        "curated_ptbr": "Que galanteador! Mas não pense que vou pegar leve só porque você me encheu de elogios.",
+        "verdict": "rewritten",
+        "rationale": "Resposta esperta e confiante do Espírito da Flor aceitando o duelo."
+    },
+    {
+        "id": 3002,
+        "curated_ptbr": "Então que assim seja: vamos virar a noite bebendo juntos!",
+        "verdict": "rewritten",
+        "rationale": "Brinde festivo de Jack disposto a beber até o amanhecer ('二人で夜を明かしましょう')."
+    },
+    {
+        "id": 3003,
+        "curated_ptbr": "Nggaaah... hhuuuurrgh...",
+        "verdict": "rewritten",
+        "rationale": "Transcrição fonética viva de ronco etílico ('ンガーッ...ンゴーッ'), banindo a rubrica 'Zzzz'."
+    },
+    {
+        "id": 3004,
+        "curated_ptbr": "Ora, vejam só, capotou no sono! Ele até bebeu bastante, mas ainda está muito longe de me vencer.",
+        "verdict": "rewritten",
+        "rationale": "Vitória serena do Espírito da Flor observando o mercenário desmaiado de bêbado."
+    },
+    {
+        "id": 3005,
+        "curated_ptbr": "Nem assim deu certo...",
+        "verdict": "rewritten",
+        "rationale": "Desolação cômica de Lyner ao ver seu trunfo nocauteado pelo álcool."
+    },
+    {
+        "id": 3006,
+        "curated_ptbr": "Ufa... O mundo dela voltou ao normal... Que alívio...",
+        "verdict": "rewritten",
+        "rationale": "Alívio genuíno de Lyner ao ver a Cosmosfera restaurada após o colapso."
+    },
+    {
+        "id": 3007,
+        "curated_ptbr": "Mas aquela montanha tá cuspindo fogo. Tem um clima muito sinistro no ar... É melhor eu não chegar perto dela.",
+        "verdict": "rewritten",
+        "rationale": "Percepção sensorial de perigo diante da erupção magmática psíquica."
+    },
+    {
+        "id": 3008,
+        "curated_ptbr": "Lyner... Até onde você pretende avançar? Para ser franco, este humilde servidor está ficando apavorado...",
+        "verdict": "rewritten",
+        "rationale": "Dicção arcaica e nobre de Don Leon ('拙者 / 貴様') revelando genuíno temor."
+    },
+    {
+        "id": 3009,
+        "curated_ptbr": "Ué, por quê? Este aqui não é o seu mundo?",
+        "verdict": "rewritten",
+        "rationale": "Inocência de Lyner que ainda não compreende as profundezas inexploradas da mente."
+    },
+    {
+        "id": 3010,
+        "curated_ptbr": "É verdade, mas... deste patamar para baixo,\ntrata-se de um abismo ignoto fora de controle não apenas para você, mas para este servo também...",
+        "verdict": "rewritten",
+        "rationale": "Alerta solene de Don Leon sobre os domínios incontroláveis do subconsciente profundo."
+    },
+    {
+        "id": 3011,
+        "curated_ptbr": "Portanto, caso algo lhe aconteça, este que vos fala não terá como resgatá-lo. E a minha própria existência correrá risco mortal...",
+        "verdict": "rewritten",
+        "rationale": "Consequências capitais de um trauma fatal nas camadas primitivas da psique."
+    },
+    {
+        "id": 3012,
+        "curated_ptbr": "É mesmo?... Então é bom redobrarmos a cautela daqui pra frente...",
+        "verdict": "rewritten",
+        "rationale": "Mudança de postura de Lyner adotando prontidão rigorosa."
+    },
+    {
+        "id": 3013,
+        "curated_ptbr": "Que caixa é esta...?!",
+        "verdict": "rewritten",
+        "rationale": "Surpresa diante do recipiente misterioso encontrado nas ruínas."
+    },
+    {
+        "id": 3014,
+        "curated_ptbr": "É uma arca deveras suspeita.",
+        "verdict": "rewritten",
+        "rationale": "Vocabulário solene e formal característico do paladino Radolf."
+    },
+    {
+        "id": 3015,
+        "curated_ptbr": "Ela está selada... Parece que só vai abrir se recitarmos a chave de liberação.",
+        "verdict": "rewritten",
+        "rationale": "Diagnóstico do mecanismo de trava mágica ('解除キーを唱えないと開かない')."
+    },
+    {
+        "id": 3016,
+        "curated_ptbr": "Lyner... Tem um bilhete caído aqui no chão...",
+        "verdict": "rewritten",
+        "rationale": "Tom tímido e prestativo de Aurica indicando a pista ('紙がおちてる...')."
+    },
+    {
+        "id": 3017,
+        "curated_ptbr": "...O que diz nele?",
+        "verdict": "rewritten",
+        "rationale": "Curiosidade de Lyner debruçando-se sobre o manuscrito."
+    },
+    {
+        "id": 3018,
+        "curated_ptbr": "Anotação de 02/07/3770:\nColuna vertical...",
+        "verdict": "rewritten",
+        "rationale": "Formatação da data do calendário canônico de Sol Ciel e fragmento de enigma."
+    },
+    {
+        "id": 3019,
+        "curated_ptbr": "Beleza, funcionou!",
+        "verdict": "rewritten",
+        "rationale": "Comemoração espontânea de Lyner quando a engrenagem destrava ('よし、動いた!')."
+    },
+    {
+        "id": 3020,
+        "curated_ptbr": "Como assim?!\nLotados pelos próximos dez dias?!",
+        "verdict": "rewritten",
+        "rationale": "Desespero atônito do viajante diante da falta de vagas na hospedaria."
+    },
+    {
+        "id": 3021,
+        "curated_ptbr": "Lamento muito. Com essa tempestade toda, tem um monte de gente ilhada sem conseguir voltar pro Beco Vagalume.",
+        "verdict": "rewritten",
+        "rationale": "Explicação do estalajadeiro e toponímia canônica [Beco Vagalume]."
+    },
+    {
+        "id": 3022,
+        "curated_ptbr": "E eu sou um desses coitados... Ai, ai, pelo visto hoje vou ter que dormir ao relento de novo...",
+        "verdict": "rewritten",
+        "rationale": "Lamento resignado do hóspede sem teto ('ああ、今日も野宿かなぁ...')."
+    },
+    {
+        "id": 3023,
+        "curated_ptbr": "Então a estalagem está completamente lotada em virtude da tempestade.",
+        "verdict": "rewritten",
+        "rationale": "Constatação ponderada de Radolf sintetizando o quadro de crise."
+    },
+    {
+        "id": 3024,
+        "curated_ptbr": "A Igreja não providenciou medida alguma de amparo humanitário...?!",
+        "verdict": "rewritten",
+        "rationale": "Indignação moral do cavaleiro com a omissão da Igreja dos Santos perante os desabrigados."
+    },
+    {
+        "id": 3025,
+        "curated_ptbr": "A Canção... se transformou?!",
+        "verdict": "rewritten",
+        "rationale": "Assombro diante da mutação e acúmulo de poder harmônico em combate."
+    },
+    {
+        "id": 3026,
+        "curated_ptbr": "Eu nem imaginava que tinha tamanho poder...",
+        "verdict": "rewritten",
+        "rationale": "Humildade e espanto de Aurica descobrindo o próprio potencial sonoro."
+    },
+    {
+        "id": 3027,
+        "curated_ptbr": "Ao carregar a Magia da Canção por tempo suficiente, a magia em si sofre uma evolução de potência.",
+        "verdict": "rewritten",
+        "rationale": "Explicação didática do sistema de carga progressiva de magia."
+    },
+    {
+        "id": 3028,
+        "curated_ptbr": "Uma Magia da Canção potencializada desfere um impacto devastador muito superior ao padrão.",
+        "verdict": "rewritten",
+        "rationale": "Clareza do ganho de eficácia bélica no estado potencializado."
+    },
+    {
+        "id": 3029,
+        "curated_ptbr": "Quanto maior for o tempo de carga acumulada, mais espetacular e destrutiva será a canção liberada.",
+        "verdict": "rewritten",
+        "rationale": "Princípio da mecânica de carregamento harmônico ('溜めれば溜めた分だけ')."
+    },
+    {
+        "id": 3030,
+        "curated_ptbr": "Acho que já chegou a hora de disparar essa magia, não é?",
+        "verdict": "rewritten",
+        "rationale": "Sinalização tática de Lyner coordenando o golpe decisivo com a parceira."
+    },
+    {
+        "id": 3031,
+        "curated_ptbr": "Sim... você tem razão.",
+        "verdict": "rewritten",
+        "rationale": "Concordância afetuosa e firme de Aurica ('うん...そうだね')."
+    },
+    {
+        "id": 3032,
+        "curated_ptbr": "Para disparar o poder da canção,\npressione a tecla IM03 e selecione \"Executar\".",
+        "verdict": "rewritten",
+        "rationale": "Blindagem obrigatória do token [IM03] e eliminação de ecos sonoros na instrução."
+    },
+    {
+        "id": 3033,
+        "curated_ptbr": "Ela também não está por aqui...",
+        "verdict": "rewritten",
+        "rationale": "Angústia de Lyner sem encontrar o paradeiro de Aurica."
+    },
+    {
+        "id": 3034,
+        "curated_ptbr": "Pensei que a encontraríamos nestas redondezas. Para onde ela terá ido?...",
+        "verdict": "rewritten",
+        "rationale": "Preocupação séria de Radolf participando da busca."
+    },
+    {
+        "id": 3035,
+        "curated_ptbr": "Olha, não sei se é indelicado da minha parte perguntar isso, mas... o que foi que aconteceu entre você e a Aurica?",
+        "verdict": "rewritten",
+        "rationale": "Delicadeza de Misha ao tocar num assunto pessoal doloroso entre Lyner e Aurica."
+    },
+    {
+        "id": 3036,
+        "curated_ptbr": "Pois é, a verdade é que...",
+        "verdict": "rewritten",
+        "rationale": "Abertura de desabafo honesto de Lyner contando os fatos recentes."
+    },
+    {
+        "id": 3037,
+        "curated_ptbr": "...Entendi tudo. Mas, sabe, eu compreendo a dor da Aurica.",
+        "verdict": "rewritten",
+        "rationale": "Empatia profunda entre Reyvateils compreendendo o fardo psíquico de Aurica."
+    },
+    {
+        "id": 3038,
+        "curated_ptbr": "Se eu descobrisse de repente que há uma aberração dentro de mim, talvez não tivesse coragem de olhar na cara de ninguém.",
+        "verdict": "rewritten",
+        "rationale": "Tradução poderosa e pungente de '自分が異常' (perceber que algo está errado/anômalo consigo mesma)."
+    },
+    {
+        "id": 3039,
+        "curated_ptbr": "E ainda por cima ardendo em febre numa hora dessas... A gente sente que nem o chão existe mais debaixo dos pés.",
+        "verdict": "rewritten",
+        "rationale": "Expressão idiomática brasileira rica e tocante para '生きてる心地しない' (perder o chão / perder o fôlego de viver)."
+    },
+    {
+        "id": 3040,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio dramático de constrição moral de Lyner preservado."
+    }
+]
+
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch3_012.json", "w", encoding="utf-8") as f:
+    json.dump(batch3, f, indent=2, ensure_ascii=False)
+
+print(f"Batch 3 written: {len(batch3)} items.")

@@ -1,0 +1,238 @@
+# -*- coding: utf-8 -*-
+import json
+
+batch4 = [
+    {
+        "id": 4643,
+        "curated_ptbr": "Ei.",
+        "verdict": "approved_as_is",
+        "rationale": "Vocativo inicial conciso dos guardas da Igreja."
+    },
+    {
+        "id": 4644,
+        "curated_ptbr": "Sim.",
+        "verdict": "rewritten",
+        "rationale": "Confirmação marcial entre os cavaleiros sagrados."
+    },
+    {
+        "id": 4645,
+        "curated_ptbr": "O senhor é Lyner, correto?",
+        "verdict": "rewritten",
+        "rationale": "Tratamento respeitoso e militar prestado pelos guardas da Igreja (ライナー殿ですね)."
+    },
+    {
+        "id": 4646,
+        "curated_ptbr": "O Comandante-Geral Radolf está à sua procura.",
+        "verdict": "rewritten",
+        "rationale": "Título canônico 'Comandante-Geral Radolf' (ラードルフ総司 - Soushi dos Cavaleiros da Igreja)."
+    },
+    {
+        "id": 4647,
+        "curated_ptbr": "O Radolf?...\nSerá que vocês\nvieram nos resgatar?!",
+        "verdict": "rewritten",
+        "rationale": "Esperança súbita de Lyner em 3 versos perfeitamente balanceados, evitando fraturas sintáticas antes de \\n."
+    },
+    {
+        "id": 4648,
+        "curated_ptbr": "Sim.\nJá mandamos avisá-lo de sua presença.",
+        "verdict": "rewritten",
+        "rationale": "Resposta protocolar do guarda em 2 linhas límpidas."
+    },
+    {
+        "id": 4649,
+        "curated_ptbr": "Lyner!",
+        "verdict": "approved_as_is",
+        "rationale": "Chamado aliviado de Radolf idêntico ao original."
+    },
+    {
+        "id": 4650,
+        "curated_ptbr": "Você está são e salvo! Que alívio... Quando vi você despencar daquele dirigível, achei que estivesse acabado.",
+        "verdict": "rewritten",
+        "rationale": "Comoção e alívio do honrado comandante militar ao reencontrar Lyner com vida."
+    },
+    {
+        "id": 4651,
+        "curated_ptbr": "Você veio nos resgatar!\nFico em dívida com você, Radolf!",
+        "verdict": "rewritten",
+        "rationale": "Gratidão sincera de Lyner pelo salvamento (恩にきるよ!)."
+    },
+    {
+        "id": 4652,
+        "curated_ptbr": "Sim, eu vi o dirigível fazer\num pouso de emergência por aqui.\nDe qualquer forma, vamos voltar para o navio.",
+        "verdict": "rewritten",
+        "rationale": "Explicação militar de Radolf em 3 linhas naturais sem pontuação órfã."
+    },
+    {
+        "id": 4653,
+        "curated_ptbr": "Me perdoe, Lyner.",
+        "verdict": "rewritten",
+        "rationale": "Pedido de desculpas sério e honrado do comandante (すまなかったな、ライナー)."
+    },
+    {
+        "id": 4654,
+        "curated_ptbr": "Eu estava bem ao seu lado,\nmas não percebi nada do que acontecia...\nQue vergonha sinto de mim mesmo.",
+        "verdict": "rewritten",
+        "rationale": "Autocrítica severa de Radolf (情けない), quebrando em 3 linhas sem pontuação solta inicial."
+    },
+    {
+        "id": 4655,
+        "curated_ptbr": "Não se culpe por isso.\nAfinal de contas, eu mesmo colhi o que plantei.",
+        "verdict": "rewritten",
+        "rationale": "Tradução expressiva do provérbio japonês '自分でまいたタネ' (colher o que plantou / assumir a responsabilidade)."
+    },
+    {
+        "id": 4656,
+        "curated_ptbr": "Entendo...",
+        "verdict": "rewritten",
+        "rationale": "Ponderação solene de Radolf."
+    },
+    {
+        "id": 4657,
+        "curated_ptbr": "O mérito de verdade é da Krusche.\nSe não fosse por ela, nenhum de nós dois teria sobrevivido.",
+        "verdict": "rewritten",
+        "rationale": "Reconhecimento generoso de Lyner quanto ao papel crucial da piloto Krusche na sobrevivência de ambos."
+    },
+    {
+        "id": 4658,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio desolado e retraído de Aurica."
+    },
+    {
+        "id": 4659,
+        "curated_ptbr": "Hum?\nO que houve, Aurica?",
+        "verdict": "rewritten",
+        "rationale": "Percepção atenta de Radolf notando a tristeza da moça."
+    },
+    {
+        "id": 4660,
+        "curated_ptbr": "Eu não passei de um fardo afinal de contas...\nPor minha culpa, aquela garota...",
+        "verdict": "rewritten",
+        "rationale": "Dor profunda de Aurica pelo sacrifício de Misha (足手まとい / fardo)."
+    },
+    {
+        "id": 4661,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio consternado de Radolf."
+    },
+    {
+        "id": 4662,
+        "curated_ptbr": "Vai ficar tudo bem.\nEu vou trazer a Misha de volta, com certeza.",
+        "verdict": "rewritten",
+        "rationale": "Promessa solene e protetora de Lyner reconfortando Aurica."
+    },
+    {
+        "id": 4663,
+        "curated_ptbr": "Por isso, fique calma, Aurica. Você não tem culpa de nada.",
+        "verdict": "rewritten",
+        "rationale": "Afeto cavalheiresco de Lyner aliviando o complexo de culpa da parceira."
+    },
+    {
+        "id": 4664,
+        "curated_ptbr": "Sim...",
+        "verdict": "rewritten",
+        "rationale": "Aceitação meiga e tímida de Aurica."
+    },
+    {
+        "id": 4665,
+        "curated_ptbr": "Afinal de contas, viemos todos parar aqui\na bordo do mesmíssimo navio.",
+        "verdict": "rewritten",
+        "rationale": "Constatação irônica de Krusche sobre o destino compartilhado da tripulação."
+    },
+    {
+        "id": 4666,
+        "curated_ptbr": "E sobre o dirigível, o que você decide?\nQuer ir dar uma olhada nele agora mesmo?",
+        "verdict": "rewritten",
+        "rationale": "Pragmatismo técnico de Krusche priorizando a manutenção da aeronave."
+    },
+    {
+        "id": 4667,
+        "curated_ptbr": "Também tenho um compromisso na Igreja... O que a gente faz agora?...",
+        "verdict": "rewritten",
+        "rationale": "Dilema de Lyner equilibrando os deveres com a Igreja e o reparo da nave."
+    },
+    {
+        "id": 4668,
+        "curated_ptbr": "Por mim tanto faz a ordem, garoto. Você é quem manda.",
+        "verdict": "rewritten",
+        "rationale": "Voz despojada e parceira de Krusche (ボクはどっちからでも構わないけど)."
+    },
+    {
+        "id": 4669,
+        "curated_ptbr": "De qualquer forma, vamos resolver uma pendência por vez.",
+        "verdict": "rewritten",
+        "rationale": "Decisão prudente e prática de Lyner."
+    },
+    {
+        "id": 4670,
+        "curated_ptbr": "Uou!\nQuem são vocês, afinal?!",
+        "verdict": "rewritten",
+        "rationale": "Alarme repentino dos guardas ao avistarem o grupo."
+    },
+    {
+        "id": 4671,
+        "curated_ptbr": "Droga!\nEu não sabia que havia um posto de guarda bem aqui!",
+        "verdict": "rewritten",
+        "rationale": "Sobressalto tático de Lyner em 2 linhas balanceadas."
+    },
+    {
+        "id": 4672,
+        "curated_ptbr": "São invasores! Peguem todos eles!",
+        "verdict": "rewritten",
+        "rationale": "Grito de combate dos sentinelas (侵入者だ!やっちまえ!)."
+    },
+    {
+        "id": 4673,
+        "curated_ptbr": "Não tem jeito... Precisamos passar custe o que custar.",
+        "verdict": "rewritten",
+        "rationale": "Resignação combativa de Lyner ao defender o grupo."
+    },
+    {
+        "id": 4674,
+        "curated_ptbr": "Me desculpem por isso...",
+        "verdict": "rewritten",
+        "rationale": "Compaixão nobre de Lyner até mesmo perante os sentinelas forçados a lutar."
+    },
+    {
+        "id": 4675,
+        "curated_ptbr": "Lyner! Vamos nessa!",
+        "verdict": "rewritten",
+        "rationale": "Urgência pragmática de Jack acelerando o avanço."
+    },
+    {
+        "id": 4676,
+        "curated_ptbr": "Ora, seja bem-vindo, Lyner.",
+        "verdict": "rewritten",
+        "rationale": "Hospitalidade suave e acolhedora de Claire em seu bistrô."
+    },
+    {
+        "id": 4677,
+        "curated_ptbr": "Não me canso de admirar a sua beleza. Você é como uma rosa solitária desabrochando neste deserto de marmanjos que chamam de taverna.",
+        "verdict": "rewritten",
+        "rationale": "Galanteio canastrão e poético de Jack (漢砂漠の中に咲く一輪の薔薇), traduzindo fielmente a imagem cômica do original."
+    },
+    {
+        "id": 4678,
+        "curated_ptbr": "Que idiota...",
+        "verdict": "rewritten",
+        "rationale": "Desdém sarcástico e cortante de Krusche reagindo ao flerte de Jack (...バカが)."
+    },
+    {
+        "id": 4679,
+        "curated_ptbr": "Hehehe...\nVocê não muda nunca, Jack.",
+        "verdict": "rewritten",
+        "rationale": "Riso tolerante e gracioso de Claire em 2 linhas sem pontuação solta."
+    },
+    {
+        "id": 4680,
+        "curated_ptbr": "Na verdade, estamos procurando uma pessoa...\nSerá que algum espadachim de armadura vermelha\npassou por este local recentemente?",
+        "verdict": "rewritten",
+        "rationale": "Lyner indo direto ao assunto com educação em 3 versos balanceados perfeitamente."
+    }
+]
+
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch4_018.json", "w", encoding="utf-8") as f:
+    json.dump(batch4, f, indent=2, ensure_ascii=False)
+
+print(f"Batch 4 saved with {len(batch4)} items.")

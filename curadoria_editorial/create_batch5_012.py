@@ -1,0 +1,297 @@
+import json
+
+batch5 = [
+    {
+        "id": 3086,
+        "curated_ptbr": "Terminei!\n...Este é o Gancho Invertido.",
+        "verdict": "rewritten",
+        "rationale": "Comemoração e apresentação orgulhosa do artefato sintetizado ('インバートフック')."
+    },
+    {
+        "id": 3087,
+        "curated_ptbr": "Deu um trabalho danado, mas consegui terminar com sucesso!",
+        "verdict": "rewritten",
+        "rationale": "Sensação de triunfo de Lyner superando a complexidade da receita."
+    },
+    {
+        "id": 3088,
+        "curated_ptbr": "Ficou pronto mesmo?!\nOlha só, mandou bem. Você até que subiu no meu conceito agora.",
+        "verdict": "rewritten",
+        "rationale": "Elogio sarcástico e sincero de Krusche ('ちょっと見直したよ'), corrigindo o decalque 'tenho respeito'."
+    },
+    {
+        "id": 3089,
+        "curated_ptbr": "Hehehe! Viu só como eu mando bem?",
+        "verdict": "rewritten",
+        "rationale": "Vanglória juvenil divertida de Lyner ('へへへ、どんなもんだい')."
+    },
+    {
+        "id": 3090,
+        "curated_ptbr": "Deixa eu dar uma olhadinha nele?",
+        "verdict": "rewritten",
+        "rationale": "Curiosidade técnica da engenheira inspecionando o mecanismo."
+    },
+    {
+        "id": 3091,
+        "curated_ptbr": "Com certeza! Admire com os seus próprios olhos!",
+        "verdict": "rewritten",
+        "rationale": "Fórmula grandiloquente de exibição orgulhosa ('とくとご覧あれ')."
+    },
+    {
+        "id": 3092,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Pausa contemplativa de Krusche ao segurar o objeto nostálgico preservada."
+    },
+    {
+        "id": 3093,
+        "curated_ptbr": "Que saudade...\nQuantos anos já se passaram desde aquela época...?",
+        "verdict": "rewritten",
+        "rationale": "Nostalgia melancólica de Krusche recordando seus anos dourados de oficina."
+    },
+    {
+        "id": 3094,
+        "curated_ptbr": "Ah, Luke...",
+        "verdict": "rewritten",
+        "rationale": "Murmúrio íntimo evocando o antigo companheiro de sonhos ('ねえ、ルーク...')."
+    },
+    {
+        "id": 3095,
+        "curated_ptbr": "...Krusche?",
+        "verdict": "approved_as_is",
+        "rationale": "Interpelação cautelosa e confusa de Lyner diante do transe da amiga."
+    },
+    {
+        "id": 3096,
+        "curated_ptbr": "Ah, me desculpa! Aqui está. Obrigada.",
+        "verdict": "rewritten",
+        "rationale": "Correção de gênero: agradecimento no feminino por ser Krusche falando."
+    },
+    {
+        "id": 3097,
+        "curated_ptbr": "De nada. Olha, talvez seja indelicadeza minha perguntar isso, mas... quem é esse tal de Luke?",
+        "verdict": "rewritten",
+        "rationale": "Cautela respeitosa de Lyner ao abordar o assunto sensível ('出過ぎた真似かもしれないけど')."
+    },
+    {
+        "id": 3098,
+        "curated_ptbr": "...Meu ex-namorado.",
+        "verdict": "approved_as_is",
+        "rationale": "Resposta direta e franca de Krusche confirmada."
+    },
+    {
+        "id": 3099,
+        "curated_ptbr": "S-sério?!... A Krusche... com um ex-namorado...",
+        "verdict": "rewritten",
+        "rationale": "Choque cômico de Lyner que não imaginava o lado amoroso da parceira mecânica."
+    },
+    {
+        "id": 3100,
+        "curated_ptbr": "Ei! Você tava pensando que eu era incapaz de ter um romance na vida, não tava?! Que tremenda falta de consideração!",
+        "verdict": "rewritten",
+        "rationale": "Indignação explosiva e autêntica de Krusche defendendo sua feminilidade ('ボクに恋愛沙汰なんて')."
+    },
+    {
+        "id": 3101,
+        "curated_ptbr": "N-não, espera aí... Eu não quis dizer tanto assim...",
+        "verdict": "rewritten",
+        "rationale": "Tentativa desesperada de Lyner de apaziguar a situação ('そこまでは...')."
+    },
+    {
+        "id": 3102,
+        "curated_ptbr": "O Luke era um dos companheiros com quem eu costumava desenvolver aeronaves no passado.",
+        "verdict": "rewritten",
+        "rationale": "Contextualização sóbria sobre a parceria de engenharia aeronáutica."
+    },
+    {
+        "id": 3103,
+        "curated_ptbr": "Ele era o engenheiro mais talentoso do nosso grupo... e o sonho da vida dele era alcançar o topo da Torre.",
+        "verdict": "rewritten",
+        "rationale": "Admiração profissional e poética pelo piloto visionário ('一番の腕利きで')."
+    },
+    {
+        "id": 3104,
+        "curated_ptbr": "...E onde ele tá agora?",
+        "verdict": "rewritten",
+        "rationale": "Pergunta apreensiva de Lyner percebendo o tom grave da conversa ('...今は?')."
+    },
+    {
+        "id": 3105,
+        "curated_ptbr": "Ele partiu rumo ao topo... e nunca mais retornou.",
+        "verdict": "rewritten",
+        "rationale": "Tragédia silenciosa do desaparecimento nos confins da Torre ('そのまま帰ってこない')."
+    },
+    {
+        "id": 3106,
+        "curated_ptbr": "...Desculpa ter tocado no assunto.",
+        "verdict": "rewritten",
+        "rationale": "Pesar genuíno de Lyner por ter reaberto uma ferida tão íntima."
+    },
+    {
+        "id": 3107,
+        "curated_ptbr": "Deixa pra lá. Um dia eu também vou subir até o topo da Torre, e aí eu descubro por conta própria.",
+        "verdict": "rewritten",
+        "rationale": "Resiliência indomável de Krusche reafirmando sua meta de vida."
+    },
+    {
+        "id": 3108,
+        "curated_ptbr": "...Ter um sonho pelo qual lutar é uma coisa linda, não acha?",
+        "verdict": "rewritten",
+        "rationale": "Reflexão lírica sobre o valor motivador dos grandes anseios da alma."
+    },
+    {
+        "id": 3109,
+        "curated_ptbr": "Não importa o que a dura realidade nos imponha...\ntudo ao nosso redor passa a se iluminar com esperança.",
+        "verdict": "rewritten",
+        "rationale": "Mensagem central do arco de Krusche sobre a superação do luto através da esperança."
+    },
+    {
+        "id": 3110,
+        "curated_ptbr": "Tenho certeza de que é dessa chama\nque nascem as grandes invenções que mudam o mundo.",
+        "verdict": "rewritten",
+        "rationale": "A essência da engenharia e da criatividade humana ('新しいモノが生まれてくる')."
+    },
+    {
+        "id": 3111,
+        "curated_ptbr": "...Com certeza.",
+        "verdict": "rewritten",
+        "rationale": "Adesão solene de Lyner selando o momento de profunda cumplicidade."
+    },
+    {
+        "id": 3112,
+        "curated_ptbr": "Lyner, você gostaria de experimentar o jogo do mundo virtual que combinamos outro dia?",
+        "verdict": "rewritten",
+        "rationale": "Convite sereno e formal da Administradora Shurelia para a simulação colegial."
+    },
+    {
+        "id": 3113,
+        "curated_ptbr": "Sendo assim, vamos iniciar...\nConfesso que estou bem empolgada para ver o resultado!",
+        "verdict": "rewritten",
+        "rationale": "Entusiasmo sutil e cativante da deusa iniciando a rotina de dados ('ちょっと楽しみですね')."
+    },
+    {
+        "id": 3114,
+        "curated_ptbr": "Compreendo...",
+        "verdict": "rewritten",
+        "rationale": "Aquiescência graciosa de Shurelia ('そうですか...')."
+    },
+    {
+        "id": 3115,
+        "curated_ptbr": "Essa é a dedução mais plausível diante dos fatos.",
+        "verdict": "rewritten",
+        "rationale": "Raciocínio lógico e disciplinado de Ayatane no prólogo militar ('妥当だろう')."
+    },
+    {
+        "id": 3116,
+        "curated_ptbr": "E, se me permite acrescentar: é alguém que vai dar uma trabalheira tremenda.",
+        "verdict": "rewritten",
+        "rationale": "Alerta astuto sobre a periculosidade do invasor ('そうとう厄介なヤツ')."
+    },
+    {
+        "id": 3117,
+        "curated_ptbr": "Senhora Shurelia, quais são as suas ordens?",
+        "verdict": "rewritten",
+        "rationale": "Tratamento canônico reverente a Shurelia em contexto de hierarquia militar de Platina."
+    },
+    {
+        "id": 3118,
+        "curated_ptbr": "De qualquer modo, precisamos constatar com nossos próprios olhos. Vamos nos dirigir ao Plugue Sinfônico.",
+        "verdict": "rewritten",
+        "rationale": "Liderança firme de Shurelia e terminologia técnica canônica [Plugue Sinfônico] (導力プラグ)."
+    },
+    {
+        "id": 3119,
+        "curated_ptbr": "E mais uma recomendação: vocês dois ainda são aprendizes de cavaleiro sem experiência em combate real. Jamais cometam qualquer imprudência.",
+        "verdict": "rewritten",
+        "rationale": "Correção crítica de número (plural 'vocês dois' / 'あなた達' referindo-se a Lyner e Ayatane, destruído no singular pela NISA)."
+    },
+    {
+        "id": 3120,
+        "curated_ptbr": "Ayatane, assuma a liderança e nos guie pelo caminho.",
+        "verdict": "rewritten",
+        "rationale": "Comando tático direto confiando a vanguarda ao experiente batedor."
+    },
+    {
+        "id": 3121,
+        "curated_ptbr": "Às suas ordens.",
+        "verdict": "rewritten",
+        "rationale": "Resposta marcial perfeita e disciplinada de Ayatane ('わかりました')."
+    },
+    {
+        "id": 3122,
+        "curated_ptbr": "Não importa quantas vezes a gente venha aqui, a vista é sempre linda... Traz uma paz tão boa.",
+        "verdict": "rewritten",
+        "rationale": "Sensibilidade contemplativa de Misha diante da vastidão dos céus da Torre."
+    },
+    {
+        "id": 3123,
+        "curated_ptbr": "Eu nem imaginava que existia um lugar tão lindo tão pertinho da minha terra natal.",
+        "verdict": "rewritten",
+        "rationale": "Encantamento inocente de Aurica ao redescobrir os arredores de Stonehenge."
+    },
+    {
+        "id": 3124,
+        "curated_ptbr": "E é óbvio que não tem a menor chance de achar pistas do Ayatane num lugar desses. Por que diabos a gente veio parar aqui?!",
+        "verdict": "rewritten",
+        "rationale": "Mau humor prático e impaciente característico do mercenário Jack."
+    },
+    {
+        "id": 3125,
+        "curated_ptbr": "Senhora Shurelia, o que significa este pilar de pedra?",
+        "verdict": "rewritten",
+        "rationale": "Curiosidade de Lyner interpelando Shurelia com respeito sobre o monumento ('石柱')."
+    },
+    {
+        "id": 3126,
+        "curated_ptbr": "...Isto é... um memorial em homenagem aos mortos.",
+        "verdict": "rewritten",
+        "rationale": "Pesadume e solenidade histórica na explicação de Shurelia sobre o cenotáfio ('慰霊碑')."
+    },
+    {
+        "id": 3127,
+        "curated_ptbr": "Um memorial...?",
+        "verdict": "rewritten",
+        "rationale": "Estranhamento de Lyner que desconhecia o termo arcaico em katakana ('イレイヒ...?')."
+    },
+    {
+        "id": 3128,
+        "curated_ptbr": "Antes de Mir ser selada, o continente se estendia para muito além deste precipício.",
+        "verdict": "rewritten",
+        "rationale": "Revelação do passado geográfico antes da Grande Queda."
+    },
+    {
+        "id": 3129,
+        "curated_ptbr": "Contudo, aquela terra foi derrubada por Mir...\ne uma infinidade de vidas pereceu no abismo.",
+        "verdict": "rewritten",
+        "rationale": "Narrativa pungente do cataclismo provocado pelo despertar do vírus de Mir."
+    },
+    {
+        "id": 3130,
+        "curated_ptbr": "Este memorial foi erguido para honrar a memória de todas as vítimas daquela tragédia.",
+        "verdict": "rewritten",
+        "rationale": "Dignidade e reverência solene àqueles que pereceram na queda."
+    },
+    {
+        "id": 3131,
+        "curated_ptbr": "E representa também o nosso juramento...\nNunca mais permitir que uma tragédia dessas se repita.",
+        "verdict": "rewritten",
+        "rationale": "Juramento inabalável de Shurelia com quebra sem fratura sintática."
+    },
+    {
+        "id": 3132,
+        "curated_ptbr": "Mas por qual razão será que Mir precipitou o continente flutuante no vazio?...",
+        "verdict": "rewritten",
+        "rationale": "Correção crucial do disparate da NISA ('the wing fall'), resgatando o autêntico [continente flutuante] (浮遊大陸)."
+    },
+    {
+        "id": 3133,
+        "curated_ptbr": "O ódio que ela nutria pela humanidade devia ser profundo a esse ponto...",
+        "verdict": "rewritten",
+        "rationale": "Melancolia e dor de Shurelia reconhecendo a imensidão do ressentimento de Mir."
+    }
+]
+
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch5_012.json", "w", encoding="utf-8") as f:
+    json.dump(batch5, f, indent=2, ensure_ascii=False)
+
+print(f"Batch 5 written: {len(batch5)} items.")

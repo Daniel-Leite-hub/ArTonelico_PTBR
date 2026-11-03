@@ -1,0 +1,1658 @@
+{
+  "block_id": "BLK_SYS_044",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Executable Strings",
+  "line_count": 145,
+  "id_range": [
+    32709,
+    32853
+  ],
+  "scene_handoff_received": {
+    "status": "COMPLETED",
+    "block_id": "BLK_SYS_043",
+    "id_range": "32421-32708",
+    "completed_at": "2026-10-30T23:57:03.565813+00:00",
+    "dramatic_context": "Sessões de síntese avançada de Grathmeld entre Lyner e Lady Shurelia concluídas com maestria cômica, lore profunda da biologia das Reyvateils de Origem e engenharia fônica da Primeira Era.",
+    "emotional_state": "Comédia refinada, deadpan de Shurelia, cumplicidade calorosa de Lyner e rigor técnico determinístico.",
+    "active_hooks": [
+      "Conclusão integral do bloco BLK_SYS_043 (IDs 32421 a 32708).",
+      "Preparação para a sequência dos blocos de sistema e menus da oficina."
+    ]
+  },
+  "active_cast": {},
+  "matched_terms": {
+    "Reyvateil": {
+      "pt": "Reyvateil",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Raça / Classe",
+      "note": "Donzelas cantoras capazes de sintonizar a Torre e converter canções em poder (Magia da Canção). Plural: Reyvateils."
+    },
+    "Dive": {
+      "pt": "Mergulho / mergulhar",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Ação / Sistema",
+      "note": "Substantivo: 'Mergulho' (o ato de entrar na Cosmosfera). Verbo: 'mergulhar'. 'Dive Shop' -> Loja de Mergulho / Centro de Mergulho."
+    },
+    "DP": {
+      "pt": "DP",
+      "gender": "masculino",
+      "number": "plural",
+      "category": "UI / Atributo",
+      "note": "Pontos de Mergulho. Manter sigla no HUD e menus com restrição de espaço."
+    },
+    "Song Magic": {
+      "pt": "Magia da Canção",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Combate / Magia",
+      "note": "Poder conjurado pelas Reyvateils. A canção cresce em potência enquanto elas cantam (Harmonics/Burst)."
+    },
+    "Grathnode": {
+      "pt": "Grathnode",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Tecnologia / Mineral",
+      "note": "Condutor e cristal sonoro. Cristais Grathnode aprimoram atributos e efeitos das Reyvateils."
+    },
+    "Grathnode Crystal": {
+      "pt": "Cristal Grathnode",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Item / Aprimoramento",
+      "note": "Plural: Cristais Grathnode. Cristais instalados na Reyvateil."
+    },
+    "Grathmeld": {
+      "pt": "Grathmeld",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Sistema / Síntese",
+      "note": "A arte e método de síntese alquímica sonora do mundo de Sol Ciel."
+    },
+    "Install": {
+      "pt": "Instalar / Instalação",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Mecânica / Ação",
+      "note": "Ato de colocar Cristais Grathnode na Porta de Instalação da Reyvateil."
+    },
+    "Installer Port": {
+      "pt": "Porta de Instalação",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Anatomia / Tecnologia",
+      "note": "Conector biotecnológico na pele da Reyvateil (localizado na região lombar/abaixo das costas)."
+    },
+    "Leaf": {
+      "pt": "Leaf",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Economia / Moeda",
+      "note": "A moeda corrente do jogo ('500 Leaf'). Cuidado para não confundir com folha de planta em itens botânicos."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 32697,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "でも、簡単なもの作るよりはいいですよ。CR最近は簡単だと退屈で仕方が無いんです。",
+      "original_en": "But it’s better than making simple things. Easy things are just so boring to make these days.",
+      "text_ptbr": "Melhor do que fazer coisa boba.CRSe for fácil demais, perco o interesse."
+    },
+    {
+      "id": 32698,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "グラスメルクが好きになった証拠ですね。CR...でも、あまり危険なものを作ってはCRダメですよ。",
+      "original_en": "It’s proof that you like Grathmeld now. ...But don’t make things that are too dangerous.",
+      "text_ptbr": "Sinal de que pegou gosto pelo Grathmeld.CR...Mas nada de criar perigos por aí!"
+    },
+    {
+      "id": 32699,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "危ないものなんて作りませんって。",
+      "original_en": "I won’t make any dangerous things.",
+      "text_ptbr": "Não vou fazer nada perigoso."
+    },
+    {
+      "id": 32700,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "気づいてないかもしれませんが、これ自体が危険です。",
+      "original_en": "You may have not noticed, but this itself is pretty dangerous.",
+      "text_ptbr": "Pode não ter notado, mas este discoCRjá é perigoso por si só."
+    },
+    {
+      "id": 32701,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "え!?これがですか?",
+      "original_en": "What!? This?",
+      "text_ptbr": "Hã?! Isto aqui?"
+    },
+    {
+      "id": 32702,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "本当に何も知らないんですね。CRこれはプラティナの上空に飛散しているCRグラスノ盤と同じものです。",
+      "original_en": "It seems you really don’t know. This is the same thing as the Grathnode Discs that are scattered above Platina.",
+      "text_ptbr": "Você não sabe de nada mesmo... É idênticoCRaos Discos de Grathnode flutuandoCRno céu de Platina."
+    },
+    {
+      "id": 32703,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "アレが粉砕したお陰で第一紀が終焉を迎えたことは...もちろん知ってますよね?",
+      "original_en": "The First Era ended Because they shattered. But, you knew that, right?",
+      "text_ptbr": "Sabe que a Primeira Era acabouCRquando eles se estilhaçaram, né?"
+    },
+    {
+      "id": 32704,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "も、もちろんですよ!CRってことはこれも飛散したらCR大変なことになるな...。",
+      "original_en": "O, of course! Which means, if this shatters, we’ll be in big trouble...",
+      "text_ptbr": "C-Claro que sei! Então se issoCRse partir, teremos um problemão..."
+    },
+    {
+      "id": 32705,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "プチグラスノインフェリアが起こります。",
+      "original_en": "A mini Grathnode Inferior would occur.",
+      "text_ptbr": "Causará um Grathnode Inferiorzinho."
+    },
+    {
+      "id": 32706,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "あ、やっぱりグラスノインフェリア・プチの方が可愛いのでこちらで...。",
+      "original_en": "Oh, but Grathnode Inferior Mini sounds better so...",
+      "text_ptbr": "Pensando bem, \"Mini-Inferior\"CRsoa mais fofo..."
+    },
+    {
+      "id": 32707,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "いや、別にどっちでもいいです。",
+      "original_en": "Um, whichever is fine.",
+      "text_ptbr": "Tanto faz o nome..."
+    },
+    {
+      "id": 32708,
+      "event_file": "SLUS/TEXT/0540",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "%sを作るにはアイテムが足りないぞ...。",
+      "original_en": "I don’t have enough items to make a %s.",
+      "text_ptbr": "Faltam itens para criar %s..."
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 32709,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテムが足りないぞ。CR材料を作ることになるな...",
+      "original_en": "There aren’t enough items. I’ll have to make the ingredients.",
+      "current_ptbr": "Não há itens suficientes. Vou ter que preparar os ingredientes.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32710,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どのアイテムから作ろうか...",
+      "original_en": "Which item should I make first?",
+      "current_ptbr": "Qual item devo fabricar primeiro?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32711,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どの結晶を使おうか...",
+      "original_en": "Which crystal should I use?",
+      "current_ptbr": "Qual cristal devo usar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32712,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いくつ作ろうかな...",
+      "original_en": "How many should I make?",
+      "current_ptbr": "Quantos devo fazer?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32713,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "さて、作るか...",
+      "original_en": "Alright, let’s do this.",
+      "current_ptbr": "Tudo bem, vamos lá.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32714,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "がんばるぞ",
+      "original_en": "I’ll try my best.",
+      "current_ptbr": "Vou dar o meu melhor.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32715,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sが%s個できたぞ",
+      "original_en": "I made %s [%s].",
+      "current_ptbr": "Criei %s [%s].",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32716,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作ったアイテムを整理しないと...",
+      "original_en": "I need to organize the items I just made.",
+      "current_ptbr": "Preciso organizar os itens que acabei de criar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32717,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sを作るにはアイテムが足りないみたい...。 / %sを作るにはアイテムが足りないわよ。",
+      "original_en": "You don’t have enough items to make %s.",
+      "current_ptbr": "Você não tem itens suficientes para criar %s.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32718,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテムが足りないよ、材料のアイテムから作っちゃう?",
+      "original_en": "You don’t have enough items. Do you want to make the ingredients first?",
+      "current_ptbr": "Você não tem itens suficientes. Quer preparar os ingredientes primeiro?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32719,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どのアイテムから作るの? / どのアイテムから作る?",
+      "original_en": "Which item will you make first?",
+      "current_ptbr": "Qual item você vai fabricar primeiro?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32720,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どの結晶を使うの?",
+      "original_en": "Which crystal are you goin to use?",
+      "current_ptbr": "Qual cristal você vai usar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32721,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いくつ作るの? / いくつ作る?",
+      "original_en": "How many will you make?",
+      "current_ptbr": "Quantos você vai fabricar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32722,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これでいいかな? / これでいいかしら?",
+      "original_en": "Is this okay?",
+      "current_ptbr": "Tudo bem assim?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32723,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "がんばろうね♪ライナー",
+      "original_en": "Let’s work hard,Lyner♪",
+      "current_ptbr": "Vamos nos esforçar, Lyner♪",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32724,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sが%s個できたよ♪ / %sが%s個できたわ♪",
+      "original_en": "We made %s [%s].",
+      "current_ptbr": "Criamos %s [%s].",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32725,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作ったアイテムをどうしよっか? / 作ったアイテム、どうしましょうか?",
+      "original_en": "What should we do with the items we made?",
+      "current_ptbr": "O que devemos fazer com os itens que criamos?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32726,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテムが足りないみたいね、材料のアイテムから作るの?",
+      "original_en": "You don’t have enough items. Are you going to make the ingredients first?",
+      "current_ptbr": "Você não tem itens suficientes. Vai fabricar os ingredientes primeiro?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32727,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "使うのはどの結晶?",
+      "original_en": "Which crystal will you use?",
+      "current_ptbr": "Qual cristal você vai usar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32728,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はじめましょ、ライナー",
+      "original_en": "Let’s get started, Lyner.",
+      "current_ptbr": "Vamos começar, Lyner.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32729,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作ったアイテムだけど、どうする?",
+      "original_en": "About the items we made, what do you want to do with them?",
+      "current_ptbr": "Sobre os itens que criamos, o que você quer fazer com eles?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32730,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sを作るにはアイテムが足りないみたいですね。",
+      "original_en": "You don’t seem to have enough items to make %s.",
+      "current_ptbr": "Parece que você não tem itens suficientes para fabricar %s.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32731,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテムが足りませんね、材料から作りますか?",
+      "original_en": "You’re lacking items. Would you like to start making the ingredients?",
+      "current_ptbr": "Estão faltando itens. Gostaria de começar a preparar os ingredientes?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32732,
+      "event_file": "SLUS/TEXT/0541",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どのアイテムから作りましょうか?",
+      "original_en": "Which item would you like to make first?",
+      "current_ptbr": "Qual item você gostaria de fabricar primeiro?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32733,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どの結晶を使いますか?",
+      "original_en": "Which crystal would you like to use?",
+      "current_ptbr": "Qual cristal você gostaria de usar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32734,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いくつ作ります?",
+      "original_en": "How many would you like?",
+      "current_ptbr": "Quantos você gostaria?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32735,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これでいいですか?",
+      "original_en": "Is this correct?",
+      "current_ptbr": "Está correto?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32736,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "がんばりましょう、ライナー",
+      "original_en": "We can do this, Lyner.",
+      "current_ptbr": "A gente consegue fazer isso, Lyner.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32737,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sが%s個できました♪",
+      "original_en": "We made %s [%s]♪",
+      "current_ptbr": "Criamos %s [%s]♪",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32738,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテム選択IM06 決定IM00 戻るIM01",
+      "original_en": "Select ItemIM06  ConfirmIM00  BackIM01",
+      "current_ptbr": "ItemIM06 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32739,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶選択IM04 決定IM00 戻るIM01",
+      "original_en": "Select Grathnode CrystalIM04  ConfirmIM00 BackIM01",
+      "current_ptbr": "Cristal GrathnodeIM04 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32740,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "数量選択IM05 決定IM00 戻るIM01",
+      "original_en": "Select AmountIM05  ConfirmIM00  BackIM01",
+      "current_ptbr": "QuantidadeIM05 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32741,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "できたぜ!CR『%s』CRとでも呼ぼうかな",
+      "original_en": "It’s done! I’ll call it CR[%s]",
+      "current_ptbr": "Pronto! Vou chamá-lo de CR[%s]",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32742,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sの作成",
+      "original_en": "Create %s,",
+      "current_ptbr": "Criar %s,",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32743,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "早送りIM00 スキップIM01",
+      "original_en": "Fast ForwardIM00  SkipIM01",
+      "current_ptbr": "AvançarIM00 PularIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32744,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "古いものと新しいものを混ぜる",
+      "original_en": "Mix old and new item",
+      "current_ptbr": "Misturar itens antigos e novos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32745,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "古いアイテムを売却",
+      "original_en": "Sell Old Item",
+      "current_ptbr": "Vender item antigo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32746,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "新しいアイテムを売却",
+      "original_en": "Sell New Item",
+      "current_ptbr": "Vender novo item",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32747,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテムを混ぜました。CR品質%sの『%s』が%s個になりました。",
+      "original_en": "Mixed items. You now have %s quality [%s] x%s.",
+      "current_ptbr": "Itens misturados. Agora você tem a qualidade %s [%s] x%s.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32748,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "古いアイテムが%sリーフで売れました。CR品質%sの『%s』が%s個になりました。",
+      "original_en": "Old item was sold for %s Leaf. You now have %s quality [%s] x%s.",
+      "current_ptbr": "Vendeu o antigo por %s Leaf. Agora: qualidade %s [%s] x%s.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32749,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "新しいアイテムが%sリーフで売れました。CR品質%sの『%s』が%s個のままです。",
+      "original_en": "New item was sold for %s Leaf. You now have %s quality [%s] x%s.",
+      "current_ptbr": "Vendeu o novo por %s Leaf. Agora: qualidade %s [%s] x%s.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32750,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "このアイテム、%sって呼んでいい?",
+      "original_en": "Can I call this item %s?",
+      "current_ptbr": "Posso chamá-lo de %s?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32751,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32752,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32753,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテム選択IM06 決定IM00",
+      "original_en": "Select ItemIM06  ConfirmIM00",
+      "current_ptbr": "ItemIM06 OKIM00",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32754,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "数量選択IM05 決定IM00",
+      "original_en": "Select AmountIM05  ConfirmIM00",
+      "current_ptbr": "QuantidadeIM05 OKIM00",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32755,
+      "event_file": "SLUS/TEXT/0542",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶選択IM04 決定IM00",
+      "original_en": "Select Grathnode CrystalIM04  ConfirmIM00",
+      "current_ptbr": "Cristal GrathnodeIM04 OKIM00",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32756,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "コスチューム",
+      "original_en": "Costume",
+      "current_ptbr": "Traje",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32757,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "武器",
+      "original_en": "Weapon",
+      "current_ptbr": "Arma",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32758,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "防具",
+      "original_en": "Armor",
+      "current_ptbr": "Armad",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32759,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アクセサリ",
+      "original_en": "Accessory",
+      "current_ptbr": "Acess.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32760,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "装備を外す",
+      "original_en": "Unequip",
+      "current_ptbr": "Desequipar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32761,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "装備を外す",
+      "original_en": "Unequip",
+      "current_ptbr": "Desequipar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32762,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶を外す",
+      "original_en": "Take off Grathnode Crystal",
+      "current_ptbr": "Remover Cristal Grathnode",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32763,
+      "event_file": "SLUS/TEXT/0543",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "(なし)",
+      "original_en": "(None)",
+      "current_ptbr": "(Nenhum)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32764,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詠唱を止める",
+      "original_en": "Stop Song",
+      "current_ptbr": "Parar canção",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32765,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "(なし)",
+      "original_en": "(None)",
+      "current_ptbr": "(Nenhum)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32766,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "始めは歌わない",
+      "original_en": "Don’t sing at start",
+      "current_ptbr": "Sem canto inicial",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32767,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "(なし)",
+      "original_en": "(None)",
+      "current_ptbr": "(Nenhum)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32768,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sの作成",
+      "original_en": "Create %s,",
+      "current_ptbr": "Criar %s,",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32769,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sの作成",
+      "original_en": "Create %s,",
+      "current_ptbr": "Criar %s,",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32770,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶",
+      "original_en": "Grathnode Crystal",
+      "current_ptbr": "Cristal Grathnode",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32771,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "%sの作成",
+      "original_en": "Create %s,",
+      "current_ptbr": "Criar %s,",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32772,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "新しいアイテム",
+      "original_en": "New Item",
+      "current_ptbr": "Item novo",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32773,
+      "event_file": "SLUS/TEXT/0544",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "古いアイテム",
+      "original_en": "Old Item",
+      "current_ptbr": "Item ant",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32774,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キャラクター選択IM06 決定IM00 戻るIM01",
+      "original_en": "Select Character IM06  ConfirmIM00  BackIM01",
+      "current_ptbr": "Personagem IM06 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32775,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "インストールっていうのは、ダイブ屋さんが言っていたとおり、グラスノ結晶をあたしの身体に入れること。 / インストールっていうのは、ダイブ屋が言っていたとおり、グラスノ結晶を私の身体に入れること。",
+      "original_en": "Installing is exactly what the person at the Dive Shop said; you put a Grathnode Crystal inside me.",
+      "current_ptbr": "A instalação é exatamente como a pessoa da loja de mergulho disse: você coloca um Cristal Grathnode dentro de mim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32776,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも、どこからでもグラスノ結晶を入れられるわけじゃないの。 / でも、どこからでもグラスノ結晶を入れられるわけじゃないのよ。",
+      "original_en": "But, you can’t just shove the Grathnode Crystal in wherever you please.",
+      "current_ptbr": "Mas você não pode simplesmente enfiar o Cristal Grathnode onde bem entender.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32777,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レーヴァテイルには、身体のどこかにインストールポイントっていう場所があって、そことグラスノ結晶が反応してとけ込むの。",
+      "original_en": "All Reyvateils have a spot on their body called an installer port, that reacts to Grathnode Crystal and takes them into their body.",
+      "current_ptbr": "Todas as Reyvateils têm um ponto no corpo chamado porta de instalação, que reage ao Cristal Grathnode e o absorve para dentro do corpo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32778,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あたしの場合は、首筋のあたりなんだけど...",
+      "original_en": "In my case, it’s around my neck....",
+      "current_ptbr": "No meu caso, fica ao redor do meu pescoço...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32779,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "えと...あの...CR髪、かき分けて...背中を見てみて。",
+      "original_en": "See...um...part my hair...and look at my back.",
+      "current_ptbr": "Veja... hum... afaste meu cabelo... e olhe para as minhas costas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32780,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え...ええっ!CRいいのか?",
+      "original_en": "Wh... What! Are you sure?",
+      "current_ptbr": "O... O quê! Tem certeza?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32781,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ちょ、ちょっとだけだからね!CRあんまり広げたらだめだからね!",
+      "original_en": "J, just take a peek, okay? Please don’t stare at me there!",
+      "current_ptbr": "D-dê só uma olhadinha, tá? Não fique me encarando ali!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32782,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、ああ...。",
+      "original_en": "Okay...",
+      "current_ptbr": "Tudo bem...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32783,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "な、なんだこれ?CR肌に模様が描かれてる!?",
+      "original_en": "Wh, what’s this? There’s a pattern on your skin!?",
+      "current_ptbr": "O-o que é isso? Tem um desenho na sua pele!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32784,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そこがインストールポイントだよ。CRその模様の中心に丸があるでしょ?CRそこにグラスノ結晶を当てると取り込まれる。",
+      "original_en": "That’s the installer port. You see the circle in the middle of the pattern? If you put a Grathnode Crystal up against it, it’ll take it in.",
+      "current_ptbr": "Essa é a porta de instalação. Você vê o círculo no meio do padrão? Se você encostar um Cristal Grathnode nela, ela o absorverá.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32785,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "やってみて。",
+      "original_en": "Try it.",
+      "current_ptbr": "Experimente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32786,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あたしのインストールポイントは、CR首筋の辺りにあるんだ。",
+      "original_en": "My installer port is near the back of my neck.",
+      "current_ptbr": "Minha porta de instalação fica perto da nuca.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32787,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "背中に模様が描かれているのがわかる?CRその中心に丸があるでしょ?CRそこがあたしのインストールポイントだよ。",
+      "original_en": "You see how there’s a pattern drawn on my back? Find the circle in the middle of it. That’s my installer port.",
+      "current_ptbr": "Vê o desenho nas minhas costas? O círculo no meio é minha porta de instalação.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32788,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "私は、胸のちょっと上の辺りにあるのよ。",
+      "original_en": "Mine is on my upper chest.",
+      "current_ptbr": "A minha fica na parte superior do peito.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32789,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ここ、わかる...?CR胸の所にタトゥがあるでしょ...?",
+      "original_en": "Here...see how it looks like a tattoo between my breasts...?",
+      "current_ptbr": "Aqui... vê como parece uma tatuagem entre meus seios...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32790,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え...ええっ!CRな、なんか見ていいものか...どうなのか...",
+      "original_en": "Uh...umm, I don’t know if I should be looking at that...",
+      "current_ptbr": "Hum... bem, não sei se deveria estar olhando para isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32791,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "もう!スケベ!CR別に胸見せてるわけじゃないんだから!CR...もう...",
+      "original_en": "You pervert! It’s not like I’m going to show you my boobs! ...Sheesh...",
+      "current_ptbr": "Seu pervertido! Não é como se eu fosse mostrar meus seios pra você! ... Puxa vida...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32792,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ご、ごめん...",
+      "original_en": "S, sorry...",
+      "current_ptbr": "D-desculpe...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32793,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "胸元のこれが...タトゥか。",
+      "original_en": "This thing near your breast...it’s a tattoo?",
+      "current_ptbr": "Essa coisa perto do seu seio... é uma tatuagem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32794,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そこがインストールポイントよ。CRその模様の中心に丸があるでしょ?CRそこにグラスノ結晶を当てると取り込まれる。",
+      "original_en": "That’s my installer port. See how there’s a circle in the middle? Put a Grathnode Crystal up against it, and it’ll take it in.",
+      "current_ptbr": "Essa é a minha porta de instalação. Vê como tem um círculo no meio? Coloque um Cristal Grathnode contra ela, e ela vai absorvê-lo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32795,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "私のインストールポイントは、CR胸のちょっと上の辺りにあるのよ。",
+      "original_en": "My installer port is on my upper chest.",
+      "current_ptbr": "Minha porta de instalação fica na parte superior do peito.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32796,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "胸元に模様が描かれているのがわかる?CRその中心に丸があるでしょ?CRそこが私のインストールポイントよ。",
+      "original_en": "See how there’s a pattern between my breasts? Find the circle in the middle. That’s my installer port.",
+      "current_ptbr": "Vê como há um padrão entre meus seios? Encontre o círculo no meio. Essa é a minha porta de instalação.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32797,
+      "event_file": "SLUS/TEXT/0545",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "私のインストールポイントは、CR腰にあるの。",
+      "original_en": "My installer port is on my hip.",
+      "current_ptbr": "Minha porta de instalação fica no meu quadril.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32798,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "わかる?CRおしりの少し上の辺りなんだけど...",
+      "original_en": "See it? It’s like right above my butt...",
+      "current_ptbr": "Viu? Está bem ali em cima da minha bunda...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32799,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...?CRどうしたの?やっぱりイヤ...?",
+      "original_en": "...What’s wrong? Don’t you want to see it?",
+      "current_ptbr": "...O que foi? Você não quer ver?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32800,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、いえ、そういうワケじゃ...",
+      "original_en": "Oh, no, that’s not what I meant...",
+      "current_ptbr": "Ah, não, não foi isso que eu quis dizer...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32801,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "腰の辺りにタトゥがあるでしょう?CRそこ。",
+      "original_en": "See how there’s a tattoo near my hip? Right here.",
+      "current_ptbr": "Vê como tem uma tatuagem perto do meu quadril? Bem aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32802,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "インストールを行うことで、詩魔法に特殊な効果を付加できるようになります。",
+      "original_en": "By installing, you can add a special effect to any Song Magic.",
+      "current_ptbr": "Ao instalá-lo, você pode adicionar um efeito especial a qualquer Magia da Canção.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32803,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "例えば、単純なダメージ魔法に「毒を与える」というグラスノ結晶をインストールすると、毒付きダメージを与えられるようになります。",
+      "original_en": "For example, installing  a Grathnode Crystal with a [Poison] affect into a simple damage spell will add poison damage to the Song.",
+      "current_ptbr": "Por exemplo, instalar um Cristal Grathnode com efeito [Veneno] em um feitiço simples de dano adicionará dano de veneno à Canção.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32804,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "インストールをして、戦闘などでその詩魔法を使ってみましょう。",
+      "original_en": "You should install and test my Songs in battle.",
+      "current_ptbr": "Você deveria instalar e testar minhas Canções em batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32805,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まずは、創りたいアイテムを選択するのじゃ。",
+      "original_en": "First, you must select the item you wish to make.",
+      "current_ptbr": "Primeiro, você deve selecionar o item que deseja criar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32806,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "今回ならば『カイフクンC』じゃから、これじゃな。CRIM00ボタンを押してみい。",
+      "original_en": "This time you want the [Healy C] so pick this one. Press the IM00 button.",
+      "current_ptbr": "Desta vez, você quer o [Healy C], então escolha esse. Aperte o botão IM00.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32807,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そして材料の確認をするぞ。",
+      "original_en": "And then check for your ingredients.",
+      "current_ptbr": "E então verifique seus ingredientes.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32808,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "材料がないときは、敵を倒したり買ったりして材料を集めなければ作れないぞ。",
+      "original_en": "If you need ingredients, defeat enemies or buy them to be able to make your item.",
+      "current_ptbr": "Se precisar de ingredientes, derrote inimigos ou compre-os para poder fabricar seu item.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32809,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "今回は特別に、ワシが材料を用意してやった。",
+      "original_en": "This time, I prepared your ingredients especially for you.",
+      "current_ptbr": "Desta vez, preparei os ingredientes especialmente para você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32810,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "アイテムCR『青い石』を手に入れた!",
+      "original_en": "Received [Blue Stone]!",
+      "current_ptbr": "Recebeu [Pedra Azul]!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32811,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶CR『詩1割増サービス』をCR手に入れた!",
+      "original_en": "Received a Grathnode Crystal [10% Song Increase]!",
+      "current_ptbr": "Recebeu um Cristal Grathnode [Aumento de 10% na Canção]!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32812,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これで、合成の続きができるようになったの。",
+      "original_en": "Now you can continue Grathmelding.",
+      "current_ptbr": "Agora você pode continuar com o Grathmelding.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32813,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "材料の中にグラスノ結晶があるときは、どの結晶を使うか決めるのじゃ。",
+      "original_en": "When you see a Grathnode Crystal as a material, you have to decide which crystal you want to use.",
+      "current_ptbr": "Quando você vir um Cristal Grathnode como material, terá que decidir qual cristal deseja usar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32814,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶の『品質』値は、アイテムの品質に大きく影響するからの。",
+      "original_en": "The [Quality] value of the Grathnode Crystal has a tremendous effect on the item’s quality.",
+      "current_ptbr": "O valor de [Qualidade] do Cristal Grathnode tem um efeito enorme na qualidade do item.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32815,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "『品質』値が高いアイテムを創ると、色々とイイコトがあるぞい。",
+      "original_en": "The higher [Quality] value of an item, the better results you’ll get from using it.",
+      "current_ptbr": "Quanto maior o valor de [Qualidade] de um item, melhores serão os resultados que você obterá ao usá-lo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32816,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よしよし、選んだな。CRそして最後に、いくつ作るかを決めるのじゃ。",
+      "original_en": "Now that you have selected your materials, choose how many you want to make.",
+      "current_ptbr": "Agora que você selecionou seus materiais, escolha quantos deseja fabricar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32817,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これで、後はアイテムを創るだけじゃ!CRさあ、やってみなさい。",
+      "original_en": "All that’s left is to create the item. Go ahead and try it.",
+      "current_ptbr": "Agora só falta criar o item. Vá em frente e tente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32818,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "できた!",
+      "original_en": "I did it!",
+      "current_ptbr": "Consegui!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32819,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "おお、見事じゃ!!",
+      "original_en": "Yes, good job!",
+      "current_ptbr": "Sim, muito bem!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32820,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これで『カイフクンC』が完成したというわけじゃ。",
+      "original_en": "You just made a [Healy C].",
+      "current_ptbr": "Você acabou de criar um [Healy C].",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32821,
+      "event_file": "SLUS/TEXT/0546",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一度制作したアイテムは、その後お店で買えるようになるものもあります。",
+      "original_en": "There are some items which can be bought at shops after you have created them once.",
+      "current_ptbr": "Existem alguns itens que podem ser comprados nas lojas depois que você os cria uma vez.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32822,
+      "event_file": "SLUS/TEXT/0547",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "自動発動スキル",
+      "original_en": "Passive Skill",
+      "current_ptbr": "Habilidade passiva",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32823,
+      "event_file": "SLUS/TEXT/0547",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "回復スキル",
+      "original_en": "Recovery Skill",
+      "current_ptbr": "Habilidade de recuperação",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32824,
+      "event_file": "SLUS/TEXT/0547",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "消費HP",
+      "original_en": "Consumed HP",
+      "current_ptbr": "HP consumidos",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32825,
+      "event_file": "SLUS/TEXT/0548",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "BGM",
+      "original_en": "BGM",
+      "current_ptbr": "BGM",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32826,
+      "event_file": "SLUS/TEXT/0548",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "SSE",
+      "original_en": "SSE",
+      "current_ptbr": "SSE",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32827,
+      "event_file": "SLUS/TEXT/0549",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32828,
+      "event_file": "SLUS/TEXT/0549",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32829,
+      "event_file": "SLUS/TEXT/0550",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "使う",
+      "original_en": "Use",
+      "current_ptbr": "Usar",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32830,
+      "event_file": "SLUS/TEXT/0551",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32831,
+      "event_file": "SLUS/TEXT/0552",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いっぺんに",
+      "original_en": "Bam",
+      "current_ptbr": "Bam",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32832,
+      "event_file": "SLUS/TEXT/0552",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "OFF",
+      "original_en": "OFF",
+      "current_ptbr": "DES",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32833,
+      "event_file": "SLUS/TEXT/0552",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ON",
+      "original_en": "ON",
+      "current_ptbr": "LIG",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32834,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32835,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32836,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32837,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32838,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32839,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32840,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "買う",
+      "original_en": "Buy",
+      "current_ptbr": "Cp.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32841,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32842,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32843,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "DP",
+      "original_en": "DP",
+      "current_ptbr": "DP",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32844,
+      "event_file": "SLUS/TEXT/0553",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32845,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "DP",
+      "original_en": "DP",
+      "current_ptbr": "DP",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32846,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32847,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32848,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32849,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32850,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32851,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32852,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "はい",
+      "original_en": "Yes",
+      "current_ptbr": "Sim",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 32853,
+      "event_file": "SLUS/TEXT/0554",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いいえ",
+      "original_en": "No",
+      "current_ptbr": "Não",
+      "review_status": "unreviewed"
+    }
+  ]
+}

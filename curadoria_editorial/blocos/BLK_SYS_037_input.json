@@ -1,0 +1,3082 @@
+{
+  "block_id": "BLK_SYS_037",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Executable Strings",
+  "line_count": 288,
+  "id_range": [
+    30693,
+    30980
+  ],
+  "scene_handoff_received": {
+    "last_scene_id": "BLK_SYS_036",
+    "last_line_id": 30692,
+    "location_and_situation": "Núcleo Sistêmico Parte 36 (SLUS/TEXT/0442 a 0456: Galeria de cenas e artes secretas, toponímia da Cosmosfera, lojas de Lyra e Spica, Centro de Mergulho / Dive Shops e mensagens oficiais de Memory Card do PS2) concluído com soberania absoluta do japonês, eliminação de todos os 124 estouros de buffer legados e validação 100% limpa no Hard Gate Técnico.",
+    "emotional_state": "Excelência Editorial, Humor Carismático de NPCs e Rigor Absoluto de Sistema.",
+    "active_hooks": [
+      "Conclusão integral do bloco BLK_SYS_036 (IDs 30403 a 30692).",
+      "Consolidação completa de diálogos de lojas de Mergulho, catálogo de arte e avisos de Memory Card do PS2 para os blocos subsequentes."
+    ]
+  },
+  "active_cast": {},
+  "matched_terms": {
+    "Reyvateil": {
+      "pt": "Reyvateil",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Raça / Classe",
+      "note": "Donzelas cantoras capazes de sintonizar a Torre e converter canções em poder (Magia da Canção). Plural: Reyvateils."
+    },
+    "Song Magic": {
+      "pt": "Magia da Canção",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Combate / Magia",
+      "note": "Poder conjurado pelas Reyvateils. A canção cresce em potência enquanto elas cantam (Harmonics/Burst)."
+    },
+    "Grathnode": {
+      "pt": "Grathnode",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Tecnologia / Mineral",
+      "note": "Condutor e cristal sonoro. Cristais Grathnode aprimoram atributos e efeitos das Reyvateils."
+    },
+    "Grathnode Crystal": {
+      "pt": "Cristal Grathnode",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Item / Aprimoramento",
+      "note": "Plural: Cristais Grathnode. Cristais instalados na Reyvateil."
+    },
+    "Popcorn Bomb": {
+      "pt": "Pipocabomba",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Item Sintetizado / Grathmeld",
+      "note": "Bomba sintetizada em Grathmeld com milho explosivo. Causa dano multielemental e físico."
+    },
+    "Invert Hook": {
+      "pt": "Gancho Giro",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Item de Suporte / Grathmeld",
+      "note": "Item que acelera drasticamente a velocidade de canto da Reyvateil em combate."
+    },
+    "Tranquility": {
+      "pt": "Tranquilidade",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Item / Suporte",
+      "note": "トランキリティ. Remédio calmante / item tático consumível de Grathmeld usado em combate para restaurar e estabilizar o canto das Reyvateils."
+    },
+    "Peeka": {
+      "pt": "Peeka",
+      "category": "Item / Combate",
+      "note": "Item de camuflagem e fuga de batalha que Misha tenta usar comicamente para despistar intrusos no acampamento."
+    },
+    "Refresh Core": {
+      "pt": "Núcleo Restaurador",
+      "category": "Item de Síntese / Cura",
+      "note": "Item de restauração profunda com alta capacidade de cura, porém lento demais para uso tático durante o combate (JP リフレッシュコア)."
+    },
+    "Flute": {
+      "pt": "Lorde Flute",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "NPC / Personagem",
+      "note": "Líder e guardião honorável da Tribo Teru no Portão Pheyna (JP フラウト様)."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 30681,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "どこにセーブしますか?",
+      "original_en": "Where would you like to save?",
+      "text_ptbr": "Onde deseja salvar?"
+    },
+    {
+      "id": 30682,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "どのデータをロードしますか?",
+      "original_en": "Which data would you like to load?",
+      "text_ptbr": "Quais dados deseja carregar?"
+    },
+    {
+      "id": 30683,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "データが壊れています。データを作りなおします。CRよろしいですか?CR(以前のデータは消えてしまいます。)",
+      "original_en": "The data is corrupt. Create new data? Creating new data will overwrite previous data.",
+      "text_ptbr": "Dados corrompidos. Recriar dados?CR(Os dados anteriores serão apagados.)"
+    },
+    {
+      "id": 30684,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "ゲームクリア情報をセーブします。CRよろしいですか?",
+      "original_en": "Save clear data?",
+      "text_ptbr": "Salvar conclusão?"
+    },
+    {
+      "id": 30685,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "ゲームクリア情報をセーブしないで、CR終了してよろしいですか?",
+      "original_en": "End the game without saving clear data?",
+      "text_ptbr": "Sair sem salvar os dados de conclusão?"
+    },
+    {
+      "id": 30686,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "メモリーカード(PS2)にこのゲームのデータがCRありません。CRこのゲームのセーブデータを作成します。CRよろしいですか?",
+      "original_en": "The Memory Card (8MB) (for PlayStationΘ2) has no save data. Create new save data?",
+      "text_ptbr": "Sem dados no Memory Card (8MB) (para PS2).CRDeseja criar novo arquivo de save?"
+    },
+    {
+      "id": 30687,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "メモリーカード(PS2)には、おまけデータしかCRセーブされていません。",
+      "original_en": "The Memory Card (8MB) (for PlayStationΘ2) has only bonus data.",
+      "text_ptbr": "O Memory Card (8MB) (para PS2)CRsó contém dados de bônus."
+    },
+    {
+      "id": 30688,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "メモリーカード(PS2)の空き容量が足りません。CRこのゲームのデータをセーブするには380KB以上のCR空き容量が必要です。CRこのまま始めますか?",
+      "original_en": "There is not enough space on the Memory Card (8MB) (for PlayStationΘ2). You need at least 380KB to save. Do you want to start the game anyway?",
+      "text_ptbr": "Espaço insuficiente no Memory Card (8MB) (para PS2).CRSão necessários 380KB livres para salvar.CRDeseja iniciar o jogo mesmo assim?"
+    },
+    {
+      "id": 30689,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "セーブしていません。CRこのまま進行してよろしいですか?",
+      "original_en": "You have not saved yet. Do you want to proceed anyway?",
+      "text_ptbr": "O jogo não foi salvo.CRDeseja prosseguir mesmo assim?"
+    },
+    {
+      "id": 30690,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "セーブデータが壊れている可能性があります。",
+      "original_en": "Data may be corrupted.",
+      "text_ptbr": "Dados talvez inválidos."
+    },
+    {
+      "id": 30691,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "このゲームのセーブデータを作成しています。CRIM08SP20IM07SP80IM09SP02IM08SP04本体の電源を切ったり、CRメモリーカード(PS2)を抜き差ししないでください。",
+      "original_en": "Creating save data. Do not turn off the PlayStationΘ2 or remove the Memory Card (8MB) (for PlayStationΘ2).",
+      "text_ptbr": "Criando arquivo de save.CRNão remova o Memory Card nem desligue o console."
+    },
+    {
+      "id": 30692,
+      "event_file": "SLUS/TEXT/0456",
+      "speaker": "Sistema / Narração",
+      "speaker_id": 0,
+      "original_jp": "セーブデータの作成に失敗しました。",
+      "original_en": "Failed to create save data.",
+      "text_ptbr": "Falha ao criar os dados."
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 30693,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キャラクター選択IM06 決定IM00 戻るIM01",
+      "original_en": "Select Character IM06  ConfirmIM00  BackIM01",
+      "current_ptbr": "Personagem IM06 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30694,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "装備品選択IM04 キャラ切替IM05 決定IM00 戻るIM01",
+      "original_en": "Select EquipmentIM04  Switch CharacterIM05  ConfirmIM00 BackIM01",
+      "current_ptbr": "EquiparIM04 PersonagemIM05 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30695,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "装備変更",
+      "original_en": "Change Equipment",
+      "current_ptbr": "Trocar equipamento",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30696,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "パワード",
+      "original_en": "Enhancements",
+      "current_ptbr": "Melhorias",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30697,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "選択IM04 キャラ切替IM05 決定IM00 戻るIM01",
+      "original_en": "SelectIM04  Switch CharacterIM05 ConfirmIM00 BackIM01",
+      "current_ptbr": "EscolherIM04 PersonagemIM05 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30698,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キャラ切替IM05 決定IM00 戻るIM01",
+      "original_en": "Switch Character  ConfirmIM00  BackIM01",
+      "current_ptbr": "Trocar personagem Confirmar IM00 Voltar IM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30699,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "装備変更によってパワードが無効になるグラスノ結晶を外します。CRよろしいですか?",
+      "original_en": "Changing equipment will remove the Grathnode Crystal that nulls Enhancement. Is this okay?",
+      "current_ptbr": "Trocar de equipamento removerá o Cristal Grathnode que anula o Aumento. Tudo bem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30700,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "装備選択IM06 決定IM00 戻るIM01",
+      "original_en": "Select EquipmentIM06  ConfirmIM00 BackIM01",
+      "current_ptbr": "EquiparIM06 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30701,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レベル選択IM04 決定IM00 戻るIM01",
+      "original_en": "Select LevelIM04  ConfirmIM00  BackIM01",
+      "current_ptbr": "NívelIM04 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30702,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レベル選択IM04 装備品切替IM05 決定IM00 戻るIM01",
+      "original_en": "Select LevelIM04  Switch EquipmentIM05 ConfirmIM00  BackIM01",
+      "current_ptbr": "Selecionar Nível IM04 Trocar Equipamento IM05 Confirmar IM00 Voltar IM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30703,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶選択IM06 決定IM00 戻るIM01",
+      "original_en": "Select Grathnode CrystalIM06  ConfirmIM00 BackIM01",
+      "current_ptbr": "Cristal GrathnodeIM06 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30704,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "同じ効果のグラスノ結晶があります。CR効果は重複せず、最大の効果だけが適用されます。CRよろしいですか?",
+      "original_en": "A Grathnode Crystal with the same effect already exists. Only the higher effect will be used. Is this okay?",
+      "current_ptbr": "Já existe um Cristal Grathnode com o mesmo efeito. Apenas o efeito mais alto será usado. Está tudo bem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30705,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "他の装備にも攻撃回数を増やすグラスノ結晶があります。CR効果は重複せず、最大の効果だけが適用されます。CRよろしいですか?",
+      "original_en": "There is a Grathnode Crystal that increases the number of attacks on other equipment. Only the highest effect will be used. Is this okay?",
+      "current_ptbr": "Existe um Cristal Grathnode que aumenta o número de ataques em outros equipamentos. Apenas o efeito mais alto será usado. Está tudo certo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30706,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "コスチューム選択IM04 決定IM00 戻るIM01",
+      "original_en": "Select CostumeIM04  ConfirmIM00  BackIM01",
+      "current_ptbr": "TrajeIM04 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30707,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "キャラクター選択IM04 決定IM00 戻るIM01",
+      "original_en": "Select CharacterIM04  ConfirmIM00  BackIM01",
+      "current_ptbr": "PersonagemIM04 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30708,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "詩魔法選択IM04 決定IM00 戻るIM01",
+      "original_en": "Select Song MagicIM04 ConfirmIM00  BackIM01",
+      "current_ptbr": "Magia de CançãoIM04 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30709,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レベル選択IM04 詩魔法切替IM05 決定IM00 戻るIM01",
+      "original_en": "Select LevelIM04  Switch Song MagicIM05  ConfirmIM00 BackIM01",
+      "current_ptbr": "NívelIM04 Magia de CançãoIM05 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30710,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グラスノ結晶選択IM06 決定IM00 戻るIM01",
+      "original_en": "Select Grathnode CrystalIM06  ConfirmIM00 BackIM01",
+      "current_ptbr": "Cristal GrathnodeIM06 OKIM00 VoltarIM01",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30711,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "同じ効果のグラスノ結晶があります。CR効果は重複せず、最大の効果だけが適用されます。CRよろしいですか?",
+      "original_en": "A Grathnode Crystal with the same effect already exists. Only the higher effect will be used. Is this okay?",
+      "current_ptbr": "Já existe um Cristal Grathnode com o mesmo efeito. Apenas o efeito mais alto será usado. Está tudo bem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30712,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "出来た!カイフクンCだ!",
+      "original_en": "It’s done! Healy C!",
+      "current_ptbr": "Pronto! Healy C!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30713,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...凄いね。",
+      "original_en": "...Wow.",
+      "current_ptbr": "...Uau.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30714,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なに、こんなの朝飯前だって。",
+      "original_en": "What, this is nothing.",
+      "current_ptbr": "O quê? Isso não é nada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30715,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、ううん、そうじゃなくて。CR瓶のラベルまでしっかり作ってあるところに感心してるんだよ。",
+      "original_en": "Oh, no, not that. I was just impressed how you even made the label on the bottle.",
+      "current_ptbr": "Ah, não, não é isso. Só fiquei impressionado com o fato de você ter feito até o rótulo da garrafa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30716,
+      "event_file": "SLUS/TEXT/0457",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "瓶に関しての感想かよ!?",
+      "original_en": "A comment about the bottle!?",
+      "current_ptbr": "Um comentário sobre a garrafa!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30717,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも中身は単なる「くすり」なんだよね。CR普通に「くすり」でいいんじゃないかな...。",
+      "original_en": "But there’s just medicine inside, right? Can’t we just call it ”Medicine?”",
+      "current_ptbr": "Mas só tem remédio dentro, certo? Não podemos simplesmente chamá-lo de “Remédio”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30718,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "出来た!CR全快するわけじゃないけどカイフクンCCRより強いから「ゼンカインD」!",
+      "original_en": "It’s done! It might fully heal you, and it’s stronger than Healy C, so ”Fullhealin D”!",
+      "current_ptbr": "Pronto! Pode te curar totalmente, e é mais forte que o Healy C, então “Fullhealin D”!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30719,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それじゃ「強いくすり」ね。",
+      "original_en": "So it’s ”strong medicine.”",
+      "current_ptbr": "Então é um “remédio forte”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30720,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それって、名前っていうより説明じゃ...",
+      "original_en": "That’s more like an explanation than a name...",
+      "current_ptbr": "Isso parece mais uma explicação do que um nome...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30721,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "わかりやすいのが一番だと思うけど...。CRそれに、ゼンカインDのDってなに?",
+      "original_en": "I think the easiest to understand is the best... And what’s the D in ”Fullhealin D” anyway?",
+      "current_ptbr": "Acho que o mais fácil de entender é o melhor... E afinal, o que significa o “D” em “Fullhealin D”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30722,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...そんなの俺に聞かれたって、困る。",
+      "original_en": "...I wouldn’t know how to answer that.",
+      "current_ptbr": "...Eu não saberia como responder a isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30723,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "「強いくすり」の方がわかりやすくていいよ。",
+      "original_en": "”Strong medicine” is so much easier to understand.",
+      "current_ptbr": "“Remédio forte” é muito mais fácil de entender.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30724,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし出来た!CR「ヒールクラッカー」だ。",
+      "original_en": "Okay, it’s done! It’s a ”Heal Cracker.”",
+      "current_ptbr": "Pronto! É um “Biscoito Curativo”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30725,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...あの材料からどうやってこれがCR出来たのかが謎だよね?",
+      "original_en": "...Isn’t it a mystery how those ingredients were able to make this?",
+      "current_ptbr": "...Não é um mistério como esses ingredientes conseguiram produzir isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30726,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それにこれってさ、回復アイテムにはCR見えないし...",
+      "original_en": "And this doesn’t really look like a healing item...",
+      "current_ptbr": "E isso nem parece muito um item de cura...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30727,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあな。パーティーでもするのかとCR間違われるかもな。",
+      "original_en": "True. People might think we’re going to have a party of something.",
+      "current_ptbr": "É verdade. As pessoas podem pensar que vamos dar uma festa ou algo do tipo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30728,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "クラッカーって名前もいけないよ。CRいっぱい回復するなら「パパン元気薬」CRとかの方がいいんじゃない?",
+      "original_en": "I think the name ”Cracker” doesn’t fit either. If it recovers a lot, isn’t like ”Boom Energy Drink” better?",
+      "current_ptbr": "“Biscoito” também não combina. Se recupera tanta energia, que tal “Energético Explosivo”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30729,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...間違ってはいない気がするけど、CR微妙だなぁ...。",
+      "original_en": "...I don’t think it’s wrong, but there’s something about it...",
+      "current_ptbr": "...Não acho que esteja errado, mas tem algo nisso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30730,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "食材が結構入って出来ている「レストアボム」の完成だ!",
+      "original_en": "It took a lot of ingredients, but the ”Restore Bomb” is now complete!",
+      "current_ptbr": "Foram necessários muitos ingredientes, mas a “Bomba de Recuperação” está pronta!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30731,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "見た目は綺麗なんだけどさ...これ、導火線?",
+      "original_en": "It looks pretty, but...is this a fuse?",
+      "current_ptbr": "É bonito, mas... isto é um pavio?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30732,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "名前の通り、一応爆弾だからな。CRまあ、回復アイテムだけどさ。",
+      "original_en": "As the name suggests, it’s supposed to be a bomb. Even though it’s a recovery item.",
+      "current_ptbr": "Como o nome sugere, é pra ser uma bomba. Mesmo sendo um item de recuperação.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30733,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ば、爆弾!?",
+      "original_en": "A bomb!?",
+      "current_ptbr": "Uma bomba!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30734,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "別に痛いわけじゃないんだから、CRそう怖がること無いだろ?",
+      "original_en": "It’s not like it would hurt, so there’s no need to be afraid.",
+      "current_ptbr": "Não é como se fosse doer, então não há motivo para ter medo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30735,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも、最初はやっぱり怖いよ...。CR「元気大爆薬」って名前にしない?",
+      "original_en": "But at first it’s kind of scary... Why don’t we just name it ”Energy Explosives”?",
+      "current_ptbr": "Mas, no começo, dá um pouco de medo... Por que não chamamos simplesmente de “Explosivos de Energia”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30736,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "い、色んな意味で怪しさをかもし出さないか、その名前?",
+      "original_en": "I, isn’t that name a little strange in many ways?",
+      "current_ptbr": "Ei, esse nome não é um pouco estranho em vários aspectos?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30737,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なんか、凄く苦そうな薬だね...。",
+      "original_en": "That seems like such a bitter medicine...",
+      "current_ptbr": "Parece mesmo um remédio tão amargo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30738,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "良薬は口に苦しって言うだろ?CRよく効く証拠さ。",
+      "original_en": "Good medicine tastes bitter. It’s proof that it would work well.",
+      "current_ptbr": "Um bom remédio tem gosto amargo. É a prova de que vai funcionar bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30739,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なんてのは冗談で、実は苦いものが苦手なCR人のことも考えてにょ?ギモ味にしてある。",
+      "original_en": "Well, that was just a joke. But don’t worry, it’s Nyo? Guts flavored.",
+      "current_ptbr": "Bem, isso foi só uma piada. Mas não se preocupe, é com sabor de Nyo? Guts.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30740,
+      "event_file": "SLUS/TEXT/0458",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ちょっと微妙かもしれないけど、CRそれだったら安心だね。",
+      "original_en": "It sounds a little iffy, but I guess that’s a relief.",
+      "current_ptbr": "Parece um pouco duvidoso, mas acho que é um alívio.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30741,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それじゃ...「サヨナラ麻痺毒」くらいにしとく。本当は「苦いよ危険!」とかにしようかと思ったけど。",
+      "original_en": "Then...I’ll name it ”Bye-bye Paralyzing Poison.” I was planning to make it something like ”Danger, Bitter!”",
+      "current_ptbr": "Então... vou chamá-lo de “Adeus, Veneno Paralisante”. Eu estava pensando em dar um nome tipo “Perigo, Amargo!”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30742,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "これが作れると凄い安心だよね。CR戦闘中に倒れてもすぐ起き上がれるし。",
+      "original_en": "It feels more secure now that you can make this. You can get up even if you lose consciousness in battle.",
+      "current_ptbr": "Me sinto mais seguro agora que você consegue fazer isso. Você consegue se levantar mesmo que perca a consciência durante a batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30743,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあな。でも、出来ることならあまりCR使う機会がないことを願うよ。",
+      "original_en": "Yeah. But if possible, I’d prefer to not use it often in the first place.",
+      "current_ptbr": "É. Mas, se possível, eu preferiria não usá-lo com frequência, para começar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30744,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうだね...。CR死んでも復活できるんでしょ...。CRそれなら「コンティニュー」だね。",
+      "original_en": "True... You can revive even if you die, right... Then it’s ”Continue.”",
+      "current_ptbr": "É verdade... Você pode reviver mesmo se morrer, certo... Então é “Continuar”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30745,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし出来た!メッソーだ!",
+      "original_en": "Okay, it’s done! Missile!",
+      "current_ptbr": "Ok, está pronto! Míssil!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30746,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...いつ見ても不思議なんだけど、CRどうしてこれで炎のダメージをCR与えられるんだろうね?",
+      "original_en": "...It always makes me wonder, but how does this do fire damage?",
+      "current_ptbr": "...Isso sempre me deixa pensando: como é que isso causa dano de fogo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30747,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どう見ても火って感じはしないのに...。",
+      "original_en": "It looks nothing like fire at all...",
+      "current_ptbr": "Não se parece nem um pouco com fogo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30748,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ、材料に赤い石を使ってるからな。",
+      "original_en": "Well, I did use a red stone as an ingredient.",
+      "current_ptbr": "Bem, eu usei uma pedra vermelha como ingrediente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30749,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "投げつけて爆発させる、手投げ式の爆弾CRみたいなものだよ。",
+      "original_en": "You throw it and make it explode, so it’s like a hand grenade.",
+      "current_ptbr": "Você joga e faz explodir, então é como uma granada de mão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30750,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうなんだ...なんか、パッと見じゃそんなCR物だってわかんないよね。",
+      "original_en": "I see... Just looking at it won’t let you know it’s something like that.",
+      "current_ptbr": "Entendo... Só de olhar pra ele, não dá pra saber que é algo assim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30751,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "「ポイバク」って呼んであげようよ。CRそれならわかりやすいよ。",
+      "original_en": "Let’s call it ”Toss Boom.” Then it’s easy to know what it is.",
+      "current_ptbr": "Vamos chamar de “Joga e Bum”. Assim fica fácil saber o que é.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30752,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ほら、バク風車完成だ!",
+      "original_en": "Here, the Baku Pinwheel is complete!",
+      "current_ptbr": "Pronto, o Cata-vento de Baku está pronto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30753,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うわぁ...なんだか、凄くゴツイ扇風機だね...。",
+      "original_en": "Whoa...it’s such a bulky fan...",
+      "current_ptbr": "Uau... é um ventilador tão volumoso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30754,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもこれだったら熱帯夜とかに使ったら凄い快適に眠れそうだね!",
+      "original_en": "But if you use it on a really hot night, I’m sure you’ll have a good night sleep!",
+      "current_ptbr": "Mas se você usá-lo numa noite bem quente, tenho certeza de que vai ter uma boa noite de sono!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30755,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "扇風機として使ったらダメージ食らうけどな。",
+      "original_en": "If you use it as a fan, you’ll take damage.",
+      "current_ptbr": "Se você usá-lo como leque, vai sofrer dano.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30756,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...もうちょっと日常生活で役に立つ物CR作ろうよ。CRこんな「扇風ばくだん」いらないよ!",
+      "original_en": "...Let’s make something that’s more useful for everyday life. I don’t need this ”Fan Bomb.”",
+      "current_ptbr": "...Vamos fazer algo útil no dia a dia. Não preciso desse “Leque-Bomba”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30757,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、ポルタポルタ完成だ。",
+      "original_en": "Okay, the Boltapolta is complete.",
+      "current_ptbr": "Ok, o Boltapolta está pronto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30758,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ポルタポルタ、ね...何か変な名前。",
+      "original_en": "Boltapolta, huh? ...That’s such a weird name.",
+      "current_ptbr": "Boltapolta, hein? ...Que nome estranho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30759,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そういうこと言うか?これ、戦闘で相手にCR雷の攻撃が出来るんだぞ。",
+      "original_en": "You shouldn’t say that. This thing allows you to deal lightning damage to your opponents in battle.",
+      "current_ptbr": "Você não deveria dizer isso. Essa coisa permite que você cause dano elétrico aos seus oponentes em batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30760,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ふ~ん...じゃあ、投げるときも油断してるとビリビリ来ちゃうね。",
+      "original_en": "Oh...so, if you’re not paying attention, it might electrocute you, too.",
+      "current_ptbr": "Ah... então, se você não prestar atenção, ele pode te eletrocutar também.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30761,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ、相当不注意な真似をしなければ、CRそんなことにはならないと思うけど。",
+      "original_en": "Well, unless you really aren’t careful, I don’t think it’ll happen.",
+      "current_ptbr": "Bem, a menos que você realmente não tome cuidado, não acho que isso vá acontecer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30762,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よぉし、出来たぞ。電離化合液だ。",
+      "original_en": "Alright, it’s complete. It’s an Ionization Liquid.",
+      "current_ptbr": "Tudo bem, está pronto. É um Líquido de Ionização.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30763,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なんだか難しい名前だね。",
+      "original_en": "That’s such a hard name.",
+      "current_ptbr": "Que nome difícil.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30764,
+      "event_file": "SLUS/TEXT/0459",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ、難しいのは名前だけだよ。CR使い方は相手に投げつけるだけだしな。",
+      "original_en": "Well, it’s just a name. All you need to do is throw it at an opponent.",
+      "current_ptbr": "Bem, é só um nome. Basta jogá-lo no adversário.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30765,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "この中の水を?CRふ~ん...普通の水にしか見えないんだけど?",
+      "original_en": "The water inside? H~m... It looks like normal water to me.",
+      "current_ptbr": "A água lá dentro? H~m... Pra mim, parece água normal.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30766,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、下手に触らないほうがいいぞ。CRマジで爆発するからな。",
+      "original_en": "Oh, don’t touch it too much. It will seriously explode.",
+      "current_ptbr": "Ah, não mexam muito nisso. Vai explodir de verdade.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30767,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うわぁ、見るからに爆弾だね。",
+      "original_en": "Whoa, that’s a bomb alright.",
+      "current_ptbr": "Uau, isso é uma bomba mesmo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30768,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ポプコーンボムって言ってくれよ。CR物理ダメージ以外にも、属性ダメージがCR付くんだからな。",
+      "original_en": "It’s a Popcorn Bomb. It deals physical damage and adds an extra attribute damage.",
+      "current_ptbr": "É uma Bomba de Pipoca. Ela causa dano físico e adiciona um dano extra de um atributo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30769,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも、爆弾に変わりはないんだよね?",
+      "original_en": "But it is a bomb, right?",
+      "current_ptbr": "Mas é uma bomba, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30770,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そ、そりゃまあそうだけどさ...。",
+      "original_en": "W, well, yeah I guess...",
+      "current_ptbr": "B-bem, sim, acho que sim...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30771,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "「大惨事ばくだん」でいいじゃない。CR普通に爆発した方が威力も強そうだしね。",
+      "original_en": "”Tragedy Bomb” sounds about right to me. It seems stronger if it just explodes too.",
+      "current_ptbr": "“Bomba Tragédia” parece um bom nome. Parece mais forte se só explodir também.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30772,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、蚊取り線香...。CRしかもブタさん。",
+      "original_en": "Hey, a bug repellent... And it’s shaped like a pig.",
+      "current_ptbr": "Ei, um repelente de insetos... E tem formato de porquinho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30773,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いや、これはイナイイナイっていう、CR敵除けのアイテムだよ。",
+      "original_en": "Actually, this is a Peeka, an item that keeps the enemies away.",
+      "current_ptbr": "Na verdade, isso é um Peeka, um item que mantém os inimigos afastados.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30774,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、そうなんだ。CR敵除け線香なんだね?",
+      "original_en": "Oh, I see. So it’s an enemy repellent?",
+      "current_ptbr": "Ah, entendi. Então é um repelente de inimigos?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30775,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うっ...ま、間違ってないからCR何も言い返せない...。",
+      "original_en": "Uh... W, well I can’t say you’re wrong...",
+      "current_ptbr": "Hum... B, bem, não posso dizer que você esteja errado...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30776,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、バーの出来上がりだ!",
+      "original_en": "Yes, the Boo is complete!",
+      "current_ptbr": "Sim, o Boo está pronto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30777,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "デンデン太鼓?",
+      "original_en": "A rattle drum?",
+      "current_ptbr": "Um tambor de chocalho?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30778,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "見た目はそうかもしれないけど、CRこれを叩くと敵が沢山寄ってくるんだぞ。",
+      "original_en": "Its appearance seems like it, but if you play it, a lot of enemies come to you.",
+      "current_ptbr": "A aparência dele parece isso, mas se você tocá-lo, muitos inimigos vêm até você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30779,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...「敵さんコチラ!」?",
+      "original_en": "...”Here, Enemy Enemy!”?",
+      "current_ptbr": "...“Vem, Inimiguinho!”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30780,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いや、まあ確かにそうなんだけどさ...。",
+      "original_en": "Uh, well, I guess...",
+      "current_ptbr": "Hum, bem, acho que...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30781,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、インバートフックだ。",
+      "original_en": "Hey, an Invert Hook.",
+      "current_ptbr": "Ei, um Invert Hook.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30782,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なんだ、知ってるのか?",
+      "original_en": "Oh, you know?",
+      "current_ptbr": "Ah, você conhece?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30783,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うん。慣れないと早さについていけなくてCR舌を噛むってことで有名だからね。",
+      "original_en": "Yeah. It’s known for making you bite your tongue if you aren’t used to the speed.",
+      "current_ptbr": "É. É conhecido por fazer você morder a língua se não estiver acostumado com a velocidade.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30784,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レーヴァテイルの間では「舌切りフック」CRなんて名前で呼ばれてるよ。",
+      "original_en": "We Reyvateil call it ”Tongue Cutting Hook”.",
+      "current_ptbr": "Nós, Reyvateil, chamamos isso de “Gancho Cortador de Língua”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30785,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "随分と殺伐とした名前で呼ばれてるんだな、これ...。",
+      "original_en": "That’s a pretty bloody name you guys have for this...",
+      "current_ptbr": "Que nome bem sangrento vocês deram pra isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30786,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、トランキリティまで作れるんだ!",
+      "original_en": "Hey, you can even make Tranquility!",
+      "current_ptbr": "Dá até pra fazer Tranquilidade!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30787,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ミシャに聞いたんだけど、これってCRレーヴァテイルにとっては重要なものCRなんだろ?",
+      "original_en": "I heard from Misha, but this is a really important item for you Reyvateil, right?",
+      "current_ptbr": "Misha me contou: este item é muito importante para vocês, Reyvateils, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30788,
+      "event_file": "SLUS/TEXT/0460",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うん。謳い続けて疲れた時とかにはこれをCR使うと、凄い楽になれるんだよ。",
+      "original_en": "Yes. We use it when we’re tired from singing too long. It’s very refreshing.",
+      "current_ptbr": "Sim. Nós usamos quando ficamos cansadas de cantar por muito tempo. É muito revigorante.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30789,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "だからあればあるだけ、謳い手としてはCRありがたいし、安心できるんだよ。",
+      "original_en": "Please make as many as you can. It’s a relief, knowing you have so many.",
+      "current_ptbr": "Por favor, façam o máximo que puderem. É um alívio saber que vocês têm tantos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30790,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よぉし、アタラズ完成だ!",
+      "original_en": "There, the Hitlezz is complete!",
+      "current_ptbr": "Pronto, o Hitlezz está completo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30791,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...何か怪しい薬だね。これ、私達が飲むの?",
+      "original_en": "...That’s a strange medicine. Do we drink this?",
+      "current_ptbr": "...Que remédio estranho. A gente bebe isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30792,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵にかける道具だよ。CR相手の命中率が下がって、攻撃が当たらなくなるんだ。",
+      "original_en": "It’s a tool we pour on the enemy. Their accuracy goes down and their attacks won’t hit us as much.",
+      "current_ptbr": "É um item que jogamos no inimigo. Reduz sua precisão, então os ataques erram mais.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30793,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "へぇ、凄いね。CR...でも、アタラズなんて直接的過ぎる名前、カッコ悪いよ。",
+      "original_en": "Oh, that’s great... But that name is too straightforward and sounds stupid.",
+      "current_ptbr": "Ah, que ótimo... Mas esse nome é muito óbvio e soa bobo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30794,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "敵の攻撃がスカるんだからCR「スカリーチョ」にしようよ。CR今とっさに考えた割にはいい名前でしょ。",
+      "original_en": "Since the enemy’s attacks miss us, let’s name it ”Misserchi.” That’s pretty good for something I just made up.",
+      "current_ptbr": "Já que os ataques do inimigo não nos acertam, vamos chamá-la de “Misserchi”. Ficou bem legal para algo que acabei de inventar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30795,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ど、どこの言葉だよそれ...。",
+      "original_en": "W, what language is that...",
+      "current_ptbr": "Q, que língua é essa...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30796,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、マモレーズ完成だ!CRこれで戦闘が楽になること間違いないな。",
+      "original_en": "Yes, the Guardlezz is complete! Now this will make battle so much easier.",
+      "current_ptbr": "Sim, o Guardlezz está pronto! Agora isso vai facilitar muito a batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30797,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なんだかちょっと美味しそうだね。",
+      "original_en": "It sounds a little tasty.",
+      "current_ptbr": "Parece até que vai ficar gostoso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30798,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一応言っておくけど、やめた方がいいぞ。",
+      "original_en": "I’ll say this just in case, but don’t try it.",
+      "current_ptbr": "Vou dizer isso só por precaução, mas não tentem fazer isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30799,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "だけど、そんな名前でこんな色してたら、CR食べられそうと思っても仕方ないよ。",
+      "original_en": "But with that name, and this color, you can’t help but think you can eat it.",
+      "current_ptbr": "Mas com esse nome e essa cor, dá pra pensar que dá pra comer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30800,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "間違って食べないように...CR「マモレーニョ」とかどう?",
+      "original_en": "So that we won’t eat it by mistake... How about name it ”Harmeregno”?",
+      "current_ptbr": "Para não acabarmos comendo por engano... Que tal chamá-la de “Harmeregno”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30801,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どこがどう「間違って食べないように」付けた名前なんだ!?",
+      "original_en": "What part of that is ”so that we won’t eat it by mistake”!?",
+      "current_ptbr": "Que parte disso significa “para que a gente não coma por engano”!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30802,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、完成!その名も...。",
+      "original_en": "Yes, its complete! Its name is...",
+      "current_ptbr": "Sim, está completa! O nome dela é...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30803,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トロ。",
+      "original_en": "Snail.",
+      "current_ptbr": "Caracol.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30804,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...は?",
+      "original_en": "...Wha?",
+      "current_ptbr": "...O quê?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30805,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トロくさくなるから「トロ」。CRドンビリズよりもわかりやすいし、CR短くまとまってるよ。",
+      "original_en": "It’ll make you go slower, so ”Snail.” It’s easier to know what it is than Quicklezz, and it’s so much shorter.",
+      "current_ptbr": "Ele deixa mais lento, então “Caracol”. É mais fácil de entender que Quicklezz e bem mais curto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30806,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "短けりゃ良いってもんじゃないだろ...。",
+      "original_en": "Just because it’s shorter doesn’t mean it’s better...",
+      "current_ptbr": "Só porque é mais curto não quer dizer que seja melhor...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30807,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ネオ・アタラズ、完成だ!!",
+      "original_en": "The Neo Hitlezz is complete!!",
+      "current_ptbr": "O Neo Hitlezz está completo!!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30808,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ただでさえ当たりづらかったのが、CRこれを使うとどうなっちゃうの?",
+      "original_en": "They were already having a hard time hitting, so what happens if you use this?",
+      "current_ptbr": "Eles já estavam com dificuldade para acertar, então o que acontece se você usar isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30809,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ほとんど当たることなくなる。CR当たるほうがおかしいって感じかな?",
+      "original_en": "Most of their hits won’t come through. It’s weirder for them to hit us.",
+      "current_ptbr": "A maioria dos golpes deles não vai acertar. É mais estranho quando eles acertam a gente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30810,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それじゃあ「ド・スカリーチョ」でいいね。",
+      "original_en": "Then ”D’Misserchi” sounds good.",
+      "current_ptbr": "Então “D’Misserchi” soa bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30811,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "もうなんだかわからないけど、オリカがそれでいいならそれでいいよ...。",
+      "original_en": "I don’t get it anymore, but if you want it that way, it’s fine...",
+      "current_ptbr": "Não estou mais entendendo nada, mas se você quer assim, tudo bem...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30812,
+      "event_file": "SLUS/TEXT/0461",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マモレーズ・ハイの完成だ!",
+      "original_en": "The Guardlezz High is complete!",
+      "current_ptbr": "O Guardlezz High está completo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30813,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "この間作った防御力ダウンのお薬のCR強化版だね。",
+      "original_en": "It’s a stronger version of the medicine that lowers their defense that you made the other day.",
+      "current_ptbr": "É uma versão mais forte do remédio que reduz a defesa dos inimigos, feito outro dia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30814,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "じゃあ、名前は「ル・マモレーニョ」で決定だね!",
+      "original_en": "So the name is ”L’Harmeregno”!",
+      "current_ptbr": "Então o nome é “L’Harmeregno”!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30815,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...俺、ちゃんとマモレーズ・ハイってCR言ったんだけど、聞いてないみたいだな。",
+      "original_en": "...I’m sure I said Guardlezz High, but it seems like you weren’t listening.",
+      "current_ptbr": "...Eu disse Guardlezz High, mas parece que você não ouviu.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30816,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ドンビリズRX、完成!",
+      "original_en": "Quicklezz RX, complete!",
+      "current_ptbr": "Quicklezz RX, concluído!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30817,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "つまり、「大トロ」だね。",
+      "original_en": "In other words, ”Escargot.”",
+      "current_ptbr": "Em outras palavras, “Escargot”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30818,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そ、それはいくらなんでもマズイだろ!?",
+      "original_en": "Is, isn’t that a little too strange!?",
+      "current_ptbr": "Isso... isso não é um pouco estranho demais!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30819,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "食欲を誘う名前だけど、ピッタリだよ。CR絶対に「大トロ」じゃないとダメだよ。",
+      "original_en": "It is a name that might strike your appetite, but it’s perfect. It has to be ”Escargot.”",
+      "current_ptbr": "É um nome que pode despertar seu apetite, mas é perfeito. Tem que ser “Escargot”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30820,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、夢追いの水が出来たぞ。",
+      "original_en": "Yes, the Dream Chasing Water is complete.",
+      "current_ptbr": "Sim, a Água dos Sonhos está pronta.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30821,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "可愛いかも...。CRライナーって器用なんだね。",
+      "original_en": "It’s kind of cute... Lyner, you’re pretty skilled.",
+      "current_ptbr": "É meio fofo... Lyner, você é bem habilidoso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30822,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...それは中身のことじゃなくて、CR外側の瓶のことを褒めてるんだよな?",
+      "original_en": "...I’m guessing you’re praising the outer bottle and not the insides.",
+      "current_ptbr": "...Acho que você está elogiando a embalagem por fora e não o conteúdo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30823,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うん。CRだってこれ、凄く可愛いもの。",
+      "original_en": "Yep. Cause this is really cute.",
+      "current_ptbr": "É isso aí. Porque isso é muito fofo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30824,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもな、中身だって結構苦労したんだぞ?",
+      "original_en": "But you know, it was pretty hard making the inside too.",
+      "current_ptbr": "Mas, sabe, foi bem difícil fazer o interior também.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30825,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも私的には、こんな可愛い瓶を作れるってことの方が驚きなんだけど?",
+      "original_en": "But I was more surprised that you were able to make such a cute bottle.",
+      "current_ptbr": "Mas fiquei mais surpresa por você fazer uma garrafa tão fofa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30826,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いや、まあその...CR確かに瓶の方が作るの苦労したけどさ...。",
+      "original_en": "Well, yeah, I mean... It was harder to make the bottle but...",
+      "current_ptbr": "Bem, sim, quer dizer... Foi mais difícil fazer a garrafa, mas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30827,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "言わなくてもわかるよ。CR近年まれにみるグッドデザインだもん。",
+      "original_en": "I understand. It’s a nice design, something you don’t see nowadays.",
+      "current_ptbr": "Entendi. É um design legal, algo que a gente não vê mais hoje em dia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30828,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "このパワーソーサーって、パッと見よくCRわからないよね?",
+      "original_en": "The looks of this Power Sourcer isn’t really self-explanatory.",
+      "current_ptbr": "A aparência desse “Power Sourcer” não é exatamente autoexplicativa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30829,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "う~ん...まあ、否定は出来ないな。",
+      "original_en": "Hmm... Well I can’t deny that.",
+      "current_ptbr": "Hmm... Bem, não posso negar isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30830,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもまあ、効果だけは抜群だろ?CR相手を麻痺させるんだからな。",
+      "original_en": "But aren’t the effects great? It paralyzes the opponent.",
+      "current_ptbr": "Mas os efeitos não são ótimos? Ela paralisa o adversário.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30831,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも、痺れさせるだけにしては少し大げさCRすぎるような気もするし、パワーって何かCR意味あるの?",
+      "original_en": "But it’s a little too exaggerated for only paralyzing effects, and what’s ”Power” supposed to mean?",
+      "current_ptbr": "Mas é um pouco exagerado demais para apenas efeitos paralisantes, e o que “Poder” significa, afinal?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30832,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "お、俺に聞かないでくれよ。CRこっちはレシピ通りに作っただけなんだからさ...。",
+      "original_en": "D, don’t ask me. I just made it according to the recipe...",
+      "current_ptbr": "N-não me pergunte. Só fiz seguindo a receita...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30833,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ふ~ん...じゃあわかりやすく「痺れマシン」とかで良いんじゃないのかな?",
+      "original_en": "Hmm... Then why not simply, ”Paralyzing Machine”?",
+      "current_ptbr": "Hmm... Então por que não simplesmente “Máquina Paralisante”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30834,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...もう、好きにしてくれ。",
+      "original_en": "...Fine, go ahead.",
+      "current_ptbr": "...Tudo bem, vai em frente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30835,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ら、ライナー!?CR何てもの作ってるのよ!",
+      "original_en": "L, Lyner!? What are you making!",
+      "current_ptbr": "L, Lyner!? O que você está fazendo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30836,
+      "event_file": "SLUS/TEXT/0462",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え?何って別に、ただ人魚のウタ缶を作っただけだけど...。",
+      "original_en": "Huh? I was just making a Siren’s Canned Song...",
+      "current_ptbr": "Hã? Eu só estava fazendo uma “Canção Enlatada de Sereia”...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30837,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "や、やだ、近づけないで!CRその「悪魔の缶詰」!!",
+      "original_en": "N, no, get it away from me! That ”Canned Devil”!!",
+      "current_ptbr": "N, não! Afaste esse “Demônio Enlatado” de mim!!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30838,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、悪魔って...別にとって食うわけじゃないだろ?",
+      "original_en": "D, devil... It’s not like you’re going to eat it.",
+      "current_ptbr": "D, demônio... Não é como se você fosse comê-lo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30839,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも凄い勢いで飛んでくるよ。CRそれでどこまでも追いかけてくるもん!",
+      "original_en": "But it’ll come flying at you at high speed. And it’ll follow you forever!",
+      "current_ptbr": "Mas ele vai voar na sua direção em alta velocidade. E vai te seguir para sempre!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30840,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "缶が尖ってるから、当たると頭凹むCRくらいじゃすまないよ...。",
+      "original_en": "And the can is pointy, so it’s not going to be just a small injury...",
+      "current_ptbr": "E a lata é pontiaguda, então não vai ser só um arranhãozinho...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30841,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ま、まあ、レーヴァテイルの詩に反応CRするからな、このウタ缶。",
+      "original_en": "W, well, the Canned Song does react to the songs of Reyvateil.",
+      "current_ptbr": "B-bem, a Canção Enlatada reage às Canções das Reyvateils.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30842,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "私の近くでは絶対に使わないでよね。",
+      "original_en": "Don’t use it anywhere close to me.",
+      "current_ptbr": "Não use isso perto de mim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30843,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よぉし、完成だ。",
+      "original_en": "Alright, it’s complete.",
+      "current_ptbr": "Tudo bem, está pronto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30844,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うわぁ、タテ笛ってなんだか懐かしい。",
+      "original_en": "Wow, it’s been a while since I’ve seen a recorder.",
+      "current_ptbr": "Nossa, faz tempo que não vejo uma flauta doce.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30845,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...けど、なんでこんな怪しい色してるの?",
+      "original_en": "...But why is it this strange color?",
+      "current_ptbr": "...Mas por que essa cor tão estranha?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30846,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ、もし今ここでオリカがこれを吹いたら、俺が死ぬことになるんだけどな。",
+      "original_en": "Well, if you were to play this right now, I would die.",
+      "current_ptbr": "Bem, se você tocasse isso agora, eu morreria.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30847,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...どんどん危ないもの作れるようにCRなっていくね、ライナー。",
+      "original_en": "...You’re becoming able to make more and more dangerous things.",
+      "current_ptbr": "...Você está conseguindo criar coisas cada vez mais perigosas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30848,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあな。正直少し複雑だけど、CR作れて困りはしないからな。",
+      "original_en": "Kind of. Honestly, I don’t know if I should be happy, but there’s no harm in being able to make it.",
+      "current_ptbr": "Mais ou menos. Sinceramente, não sei se devo ficar feliz, mas não custa nada poder criá-lo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30849,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうだね。CRこの「瞬殺笛」だって、戦闘の時にはCR凄い役立つだろうしね。",
+      "original_en": "You’re right. Even this ”Instant Kill Flute” would be really helpful during battle.",
+      "current_ptbr": "Você está certo. Até mesmo essa “Flauta da Morte Instantânea” seria muito útil durante a batalha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30850,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "またそういうわけのわからない名前を...。",
+      "original_en": "And you gave it another weird name...",
+      "current_ptbr": "E você deu outro nome esquisito pra ele...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30851,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "トランキリティよりも大幅に精神力をCR回復できる、虚空トランスレイだ。",
+      "original_en": "It’s a Void Trace Ray. It recovers much more mental power than the Tranquility.",
+      "current_ptbr": "É um Raio do Vazio. Recupera bem mais energia mental que a Tranquilidade.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30852,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、それって凄く効果が強いって話だよね?",
+      "original_en": "Oh, I’ve heard it has really strong effects.",
+      "current_ptbr": "Ah, ouvi dizer que tem efeitos bem fortes.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30853,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうらしいな。CR俺は実際に使えないからよくわからないんCRだけど...。",
+      "original_en": "I guess. I myself can’t actually use it so I’m not really sure but...",
+      "current_ptbr": "Acho que sim. Eu mesmo não consigo usá-lo, então não tenho certeza, mas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30854,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "どんなに疲れてもこれを使うだけで一気にCR全快しちゃうのが問題なんだよ。",
+      "original_en": "The problem is, that no matter how tired you are, one use of this and you’re fully recovered.",
+      "current_ptbr": "O problema é que, por mais cansado que você esteja, basta usar isso uma vez para se recuperar totalmente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30855,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あまりにも爽快な気分で謳い続けられるから、撃つときに物足りなさを感じちゃうんだよね。",
+      "original_en": "Since you can keep singing feeling refreshed the whole time, you don’t feel the satisfaction when you shoot.",
+      "current_ptbr": "Como você consegue continuar cantando com uma sensação de revigoramento o tempo todo, não sente a satisfação ao atirar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30856,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "だから「MP超回復機」とも言われてるんだよ。物足りなさから謳いつづけちゃう人もいるらしいしね。",
+      "original_en": "So it’s also called a ”MP Super Restorer.” Some people even keep singing ’cause they feel unsatisfied.",
+      "current_ptbr": "Por isso, também chamam de “Super-restaurador de MP”. Algumas continuam cantando porque não se sentem satisfeitas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30857,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...回復しすぎるのも問題あるな。",
+      "original_en": "...There’s a problem with recovering too much too.",
+      "current_ptbr": "...Também há um problema em recuperar demais.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30858,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "さて、完成したにはしたんだが。CRオリカ、何かいい名前付けてくれないか?",
+      "original_en": "Well, it’s complete, but. Aurica, want to give it a good name?",
+      "current_ptbr": "Bem, está pronto, mas... Aurica, quer dar um bom nome a ele?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30859,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え、私がつけちゃってもいいの?",
+      "original_en": "Huh, you’re letting me name it?",
+      "current_ptbr": "Hã, você vai me deixar dar um nome nisso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30860,
+      "event_file": "SLUS/TEXT/0463",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "だって、零音なんたらじゃ言いにくいし、CR難しいだろ?",
+      "original_en": "Cause isn’t it too long and hard to say Silent whatever?",
+      "current_ptbr": "Esse nome “Silencioso” não sei o quê não é longo e difícil de dizer?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30861,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "こう、増幅させるってのがわかるようなCRもっと簡単な名前、無いかな?",
+      "original_en": "So, is there a simpler name that’ll let you know that it amplifies?",
+      "current_ptbr": "Então, tem algum nome mais simples que deixe claro que isso amplifica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30862,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ていうか、なんだかこれ、よくわからないCRよね?",
+      "original_en": "Or like, this thing is a little strange.",
+      "current_ptbr": "Ou tipo, isso aqui é um pouco estranho.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30863,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "グニャグニャっとしてるし、知らない人にはガラクタにしか見えないよ。",
+      "original_en": "It’s bent all over and stuff. To someone who doesn’t know what it is, I bet it looks like junk.",
+      "current_ptbr": "Está todo amassado e tal. Para quem não sabe o que é, aposto que parece lixo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30864,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "俺もそう思うから否定はしないさ。",
+      "original_en": "I think so too, so I won’t deny it.",
+      "current_ptbr": "Eu também acho isso, então não vou negar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30865,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもさ、まさかガラクタなんて名前じゃCRマズイだろ?",
+      "original_en": "But I can’t really name it junk.",
+      "current_ptbr": "Mas não dá pra chamar isso de lixo, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30866,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "う~ん...そうだなぁ...。CRハーモクリスタルがガンガン増えるからCR「ハーモガンガン」なんてのはどうかな?",
+      "original_en": "H~m... Let’s see... Since there’s a boost in the increase of Harmocrystals, how about Harmo Booster?",
+      "current_ptbr": "H~m... Como aumenta os Harmocristais, que tal “Reforço Harmônico”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30867,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "(...聞く相手を間違えたな)",
+      "original_en": "(...I asked the wrong person)",
+      "current_ptbr": "(...perguntei para a pessoa errada)",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30868,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "意味はわかり辛いだろうけど、CR「嘆きと喜びの棺」の出来上がりだ。",
+      "original_en": "I’m sure the meaning is a little hard to understand, but the ”Coffin of Grief and Joy” is complete.",
+      "current_ptbr": "Tenho certeza de que o significado é um pouco difícil de entender, mas o “Caixão da Tristeza e da Alegria” está completo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30869,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うん、本当に意味わからないね。",
+      "original_en": "Yep, I really don’t get what that means.",
+      "current_ptbr": "É, eu realmente não entendo o que isso significa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30870,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "正直、そこまでサラリと言われるとはCR思ってなかったよ...。",
+      "original_en": "Honestly, I didn’t think you’d say it flat out...",
+      "current_ptbr": "Sinceramente, não achei que você fosse dizer isso tão diretamente...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30871,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "名前もわけわからないけど、別に棺じゃないし、これ...",
+      "original_en": "I don’t get the name, and this isn’t even a coffin...",
+      "current_ptbr": "Não entendo o nome, e isso nem é um caixão...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30872,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "棺の形してるだけで、実際には入れないしね。",
+      "original_en": "It’s shaped like a coffin, but you can’t really go in.",
+      "current_ptbr": "Tem o formato de um caixão, mas não dá pra entrar de verdade.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30873,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうだけど、でも形は棺だからな...。",
+      "original_en": "Yeah, but, it is shaped like a coffin...",
+      "current_ptbr": "É, mas tem o formato de um caixão...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30874,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "う~ん...「冥土蘇生ボックス」にしたらどうかな?わかりやすくない?",
+      "original_en": "H~m... Why don’t you make it ”Nether Revival Box”? Isn’t it a little easier to understand?",
+      "current_ptbr": "H~m... Que tal “Caixa de Ressurreição do Além”? Não é mais fácil de entender?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30875,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ボックス...。CR微妙にポップな感じになったな...。",
+      "original_en": "Box... It does sound a little more normal...",
+      "current_ptbr": "Caixa... Parece um pouco mais normal mesmo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30876,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "回復アイテム、リフレッシュコアの完成だ!",
+      "original_en": "A recovery item, the Refresh Core is complete!",
+      "current_ptbr": "O Núcleo Restaurador, um item de recuperação, está pronto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30877,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "また回復薬?CRもう沢山持ってるじゃない。CRもしかしてライナーって健康マニア?",
+      "original_en": "Another recovery medicine? You already have a lot. Or are you a health freak?",
+      "current_ptbr": "Outro remédio para se recuperar? Você já tem muitos. Ou você é fanático por saúde?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30878,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "な、なんだよ健康マニアって。CRこれは特殊な回復剤なんだよ。一晩寝ればCR全員HPも詩魔法も全快なんだぜ?",
+      "original_en": "This one is a special kind of recovery medicine! Sleep for a night, and everyone’s HP and Song Magic fully recovers.",
+      "current_ptbr": "Esse aqui é um tipo especial de remédio de recuperação! Durma uma noite e o HP e a Magia da Canção de todo mundo se recuperam totalmente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30879,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一晩寝れば...?",
+      "original_en": "Sleep for a night...?",
+      "current_ptbr": "Dormir uma noite...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30880,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そう。寝ている間に煙が出て、CR次の日の朝には...",
+      "original_en": "Yeah. Smoke comes out of it while you sleep, and the next morning...",
+      "current_ptbr": "É. Sai fumaça enquanto você dorme, e na manhã seguinte...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30881,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "一匹残らずイチコロ!",
+      "original_en": "No one will survive!",
+      "current_ptbr": "Ninguém vai sobreviver!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30882,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "な、なんだよそれ。CR物騒なこと言うなよ...。",
+      "original_en": "Wh, what are you talking about. Don’t say such scary things...",
+      "current_ptbr": "O, o que você está falando? Não diga coisas tão assustadoras...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30883,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あたしも言っていて気分悪くなってきたよ。でも、ゴキブリ駆除剤みたいなんだもん。",
+      "original_en": "I said it and I’m starting to feel uneasy about it. But it sounds like cockroach fumigation.",
+      "current_ptbr": "Eu disse isso e já tô começando a ficar desconfortável com isso. Mas parece mesmo fumigação contra baratas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30884,
+      "event_file": "SLUS/TEXT/0464",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それだけは言って欲しくなかったな...。CR俺もちょっと気にしていたんだ。",
+      "original_en": "That’s one thing I was hoping you wouldn’t say... I was kind of worried about that too.",
+      "current_ptbr": "Essa era uma coisa que eu esperava que você não dissesse... Eu também estava meio preocupado com isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30885,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よ~し、完成だ!",
+      "original_en": "Alright, it’s complete!",
+      "current_ptbr": "Pronto, está pronto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30886,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なに、この機械仕掛けのサッカーボールは?",
+      "original_en": "What is this mechanical soccer ball?",
+      "current_ptbr": "O que é essa bola de futebol mecânica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30887,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "サッカーボールだなんてとんでもない!CRこれは超強力な爆弾だからな。",
+      "original_en": "A soccer ball? This is far from it! It’s a really strong bomb.",
+      "current_ptbr": "Uma bola de futebol? Isso está longe de ser o caso! É uma bomba muito poderosa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30888,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "普通に使っても敵味方巻き込むCR威力なんだから、蹴ったりしたらCR確実に即死だぞ。",
+      "original_en": "It would hurt both the enemy and yourself when it’s used normally, so if you were to kick it, you’d die instantly for sure.",
+      "current_ptbr": "Isso machucaria tanto o inimigo quanto a você mesmo quando usado normalmente, então, se você desse um chute nele, com certeza morreria na hora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30889,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...とんでもない爆弾作ったね。",
+      "original_en": "...That’s a terrible bomb you just made.",
+      "current_ptbr": "...Que bomba horrível você acabou de fazer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30890,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "だけどまあ、最後の手段としてはCR丁度良いんじゃないか?",
+      "original_en": "Well, but it’d be perfect if you can use it as a last resort.",
+      "current_ptbr": "Bem, mas seria perfeito se você pudesse usá-la como último recurso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30891,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "もう負けそうになった時とか、一か八かこれを持って敵にアタックさ!",
+      "original_en": "If you’re about to lose, just risk it and attack the enemy with this!",
+      "current_ptbr": "Se você estiver prestes a perder, arrisque e ataque o inimigo com isso!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30892,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...神風特攻なんかしたくないよ、あたし...。",
+      "original_en": "...I don’t want to do any kamikaze attacks...",
+      "current_ptbr": "...Não quero fazer nenhum ataque kamikaze...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30893,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし出来た!CRなんだか想像してたのよりかっこよくCR仕上がったな。",
+      "original_en": "Yes, it’s done! It’s kind of cooler than I had imagined.",
+      "current_ptbr": "Pronto, está feito! Ficou até mais legal do que eu tinha imaginado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30894,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "カッコイイ?CRなんか見た感じどこにでもある普通の剣にCR見えるよ?",
+      "original_en": "Cool? Just by looks, it seems like a normal sword you can find anywhere else.",
+      "current_ptbr": "Legal? Só de olhar, parece uma espada comum que você encontra em qualquer lugar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30895,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あのな...まあ、確かに威力的には微妙なCR感じだけどな。",
+      "original_en": "You see... Well, I guess its strength is a little iffy.",
+      "current_ptbr": "Sabe... Bem, acho que a potência dela é um pouco duvidosa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30896,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "だけど、これを再結晶化すればなかなかいいグラスノをもらえるんだぜ。",
+      "original_en": "But if you recrystallize this, you can get a pretty good grathnode out of it.",
+      "current_ptbr": "Mas se você recristalizar isso, dá pra conseguir um grathnode bem bom.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30897,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...それって、剣としての価値ないんじゃないかな?",
+      "original_en": "...So it doesn’t really have value to it as a sword?",
+      "current_ptbr": "...Então ela não tem realmente nenhum valor como espada?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30898,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "物としての価値はあるさ。",
+      "original_en": "It has value as a thing.",
+      "current_ptbr": "Tem valor como objeto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30899,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "なんだか、剣がかわいそう...",
+      "original_en": "I kind of feel sorry for the sword...",
+      "current_ptbr": "Eu até sinto um pouco de pena da espada...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30900,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よぉし、出来たぞ。グラスティフォンだ!",
+      "original_en": "Alright, it’s done. It’s a Glastiphon!",
+      "current_ptbr": "Pronto, está pronto. É um Glastiphon!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30901,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ラードルフ総司、喜ぶだろうね。CR装備すると体力も上がるんでしょ?",
+      "original_en": "I’m sure Cardinal Radolf would be happy. Doesn’t your physical strength increase when it’s equipped?",
+      "current_ptbr": "Tenho certeza de que o cardeal Radolf ficaria feliz. Sua força física não aumenta quando você a equipa?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30902,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ああ。そんなアイテムを混ぜた覚えはCR無いんだけどな...。",
+      "original_en": "Yeah. Even though I don’t recall mixing items like that...",
+      "current_ptbr": "É. Mesmo que eu não me lembre de ter misturado itens assim...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30903,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "「元気になる槍」って改名してあげようよ。グラス何とかより言いやすいし、CRわかりやすいよ。",
+      "original_en": "Let’s rename it to ”Energizer Spear.” It’s easier to say than that Glas-something, and it makes more sense.",
+      "current_ptbr": "Vamos renomeá-la para “Lança Energizante”. É mais fácil de dizer do que aquele Glas-alguma-coisa, e faz mais sentido.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30904,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それでラードルフの喜びが半減しなければCRいいんだけどな...。",
+      "original_en": "I hope that doesn’t bring down Radolf’s happiness...",
+      "current_ptbr": "Espero que isso não diminua a felicidade do Radolf...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30905,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、ヴィヴァーチェの完成だ。CR結構簡単だったな。",
+      "original_en": "Yes, the Vivaci is complete. It was pretty easy.",
+      "current_ptbr": "Sim, o Vivaci está pronto. Foi bem fácil.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30906,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...なんか、竹筒に見えるんだけど?",
+      "original_en": "...It kind of looks like a bamboo barrel.",
+      "current_ptbr": "...Parece meio que um barril de bambu.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30907,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "竹筒なんてとんでもない!装備すれば体力まで上げてくれる凄い武器なんだぞ!?",
+      "original_en": "A bamboo barrel? That’s a terrible thing to say! It’s a great weapon that even increases your physical strength when it’s equipped!",
+      "current_ptbr": "Um barril de bambu? Que coisa horrível de se dizer! É uma arma ótima que até aumenta sua força física quando equipada!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30908,
+      "event_file": "SLUS/TEXT/0465",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ふ~ん...緑じゃなかったら良かったのに...",
+      "original_en": "H~m... Maybe it would have been better if it wasn’t green...",
+      "current_ptbr": "H~m... Talvez fosse melhor se não fosse verde...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30909,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも、ジャックさんも緑だからCRちょうどいいかも。",
+      "original_en": "But Jack is green too so it might be perfect.",
+      "current_ptbr": "Mas o Jack também é verde, então talvez seja perfeito.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30910,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "妙なところに落ち着いたな...。",
+      "original_en": "That’s a weird place to settle...",
+      "current_ptbr": "Que jeito estranho de se conformar...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30911,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "自分で作っておいてなんだけど、CR凄い凶悪だよな、これ?",
+      "original_en": "I know I made it and all, but this is so atrocious.",
+      "current_ptbr": "Sei que fui eu quem fez e tudo mais, mas isso é horrível.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30912,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうだよね...CR音速で回る歯車で物を切り裂くなんて、CR怖いよ。",
+      "original_en": "It is... A gear churns at the speed of sound and cuts things up. That’s scary.",
+      "current_ptbr": "É... Uma engrenagem gira na velocidade do som e corta tudo. Isso é assustador.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30913,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ていうか、この歯車少し大き過ぎない?",
+      "original_en": "Or like, isn’t the gear a little too big?",
+      "current_ptbr": "Ou melhor, essa engrenagem não é grande demais?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30914,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ、これくらいにした方が強くてCR良いだろ?",
+      "original_en": "Well, don’t you think it’s  stronger and better this way?",
+      "current_ptbr": "Bem, você não acha que fica mais forte e melhor assim?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30915,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもまあ、確かに凶悪だよな。CR少し柔らかい感じにしたほうがいいかな?",
+      "original_en": "But yeah, it really is atrocious. Would it be better if I made it look a little softer?",
+      "current_ptbr": "Mas é, realmente é horrível. Seria melhor se eu deixasse a aparência um pouco mais suave?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30916,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "「クルクルズバズバ」ってのはどうかな?",
+      "original_en": "How about ”Twirly Slashy”?",
+      "current_ptbr": "Que tal “Gira e Corta”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30917,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "可愛らしい名前だけど、実際に使った時のCRギャップが天と地ほどあるよな...。",
+      "original_en": "That’s a cute name, but there’d be a huge gap when you actually use it...",
+      "current_ptbr": "É um nome fofo, mas não combina nada com o estrago que faz...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30918,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "朱雀&青龍。二刀で一つだから時間掛かるよ、まったく...。",
+      "original_en": "Suzaku & Seiryuu. It’s two blades in one, so it takes so much time...",
+      "current_ptbr": "Suzaku e Seiryuu. São duas lâminas em uma, por isso leva tanto tempo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30919,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ていうか、これ、本当に刀?CRなんだか凄く凶悪なデザインしてるんだけど。",
+      "original_en": "Or like, is this really a katana? The design is pretty scary looking.",
+      "current_ptbr": "Ou, tipo, isso é mesmo uma katana? O design parece bem assustador.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30920,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ま、まあ、そういうレシピだったんだからCRしょうがないだろ。",
+      "original_en": "W, well, that was the recipe so I can’t help it.",
+      "current_ptbr": "B-bem, essa era a receita, então não tenho o que fazer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30921,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもさ、これ、どう見ても悪役の刀だよね?",
+      "original_en": "But, this looks like a villain’s katana.",
+      "current_ptbr": "Mas isso parece uma katana de vilão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30922,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いや、デザインで判断すればそうだけどさ...。",
+      "original_en": "Well, if you judge it just by looks...",
+      "current_ptbr": "Bem, se você julgar só pela aparência...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30923,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作ってる時にどうにかすればよかったのに...。",
+      "original_en": "You should have done something when you were making it...",
+      "current_ptbr": "Você deveria ter feito alguma coisa quando estava montando isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30924,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "シエロセラミクスをイオン板とCRパワードビスで補強してみたんだ。",
+      "original_en": "I reinforced the Cieroceramics with an ion board and a powered screw.",
+      "current_ptbr": "Reforcei a Cierocerâmica com uma placa iônica e um parafuso motorizado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30925,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "見た目はあんまり変わってないけど、CRどこか変わったところあるの?",
+      "original_en": "It doesn’t look very different, so what’s the deal?",
+      "current_ptbr": "Não parece muito diferente, então qual é a questão?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30926,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ、少し効果が強くなっただけだよ。CR正直、それ以外の特殊な効果はないしな。",
+      "original_en": "Well, its effects just got a little stronger. Honestly, there are no other special effects.",
+      "current_ptbr": "Bem, os efeitos dele ficaram um pouco mais fortes. Sinceramente, não há outros efeitos especiais.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30927,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "じゃあてんこ盛りに更に足したんだから、CR「特盛りソード」で決定だね!",
+      "original_en": "Since it’s more than just large, it’s a ”Super Size Sword!”",
+      "current_ptbr": "Já que é mais do que apenas grande, é uma “Espada Supergigante!”",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30928,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...それ、頼むから人前でだけは言わないでCRくれよ?",
+      "original_en": "...Just don’t say that in front of other people.",
+      "current_ptbr": "...Só não diga isso na frente de outras pessoas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30929,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作っておいてなんだけど、これ、どうしてCR炎の追加ダメージがあるんだろうな?",
+      "original_en": "I know I’ve already made it but, why does this even have an added fire damage?",
+      "current_ptbr": "Sei que já o criei, mas por que isso tem dano de fogo adicional?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30930,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え?メッソーか何か入れたんじゃないの?",
+      "original_en": "Huh? Did you use a Missile?",
+      "current_ptbr": "Hã? Você usou um míssil?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30931,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "入れたのは電離化合液と歯車だよ。CRそれに鉄骨を一本を組み合わせただけCRなんだけどなぁ...。",
+      "original_en": "All I used was Ionization Liquid and a Cog. Then I built a Metal Frame to house it all...",
+      "current_ptbr": "Tudo o que usei foi Líquido de Ionização e uma Engrenagem. Depois, construí uma Estrutura Metálica para abrigar tudo isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30932,
+      "event_file": "SLUS/TEXT/0466",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作った本人がそんなこと言っちゃCRダメだと思うけど?",
+      "original_en": "I don’t think the person who made it should be so unsure.",
+      "current_ptbr": "Não acho que a pessoa que criou isso deva estar tão insegura.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30933,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いや、でもマジで謎なんだって。",
+      "original_en": "No, but it’s seriously a mystery.",
+      "current_ptbr": "Não, mas é realmente um mistério.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30934,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "電離化合液を入れはしたけど、あれは炎とはまったく関係ないしな...",
+      "original_en": "I did put in Ionization Liquid, but that has nothing to do with fire...",
+      "current_ptbr": "Eu coloquei Líquido de Ionização, mas isso não tem nada a ver com fogo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30935,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...本当にまったく関係ないものが入ってるんだね。",
+      "original_en": "...So, nothing in there has anything to do with fire.",
+      "current_ptbr": "...Então, nada disso tem a ver com fogo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30936,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でもそうなると、インフェルノって名前もCRウソっぽくなるよね。",
+      "original_en": "But if that’s the case, the name Inferno sounds a little fake too.",
+      "current_ptbr": "Mas, se for assim, o nome “Inferno” também soa um pouco falso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30937,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "何も言い返せないよ。CRでも、ちゃんと炎は出るんだからな。",
+      "original_en": "I can’t say anything back. But there is fire that comes out of it.",
+      "current_ptbr": "Não consigo responder nada. Mas sai fogo dela.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30938,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "う~ん...じゃあさ、「ビミョンフェルノ」なら問題なくない?",
+      "original_en": "H~m... Then how about ”Ifferno”?",
+      "current_ptbr": "H~m... Então, que tal “Ifferno”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30939,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "さすがにその名前は微妙だぞ...。",
+      "original_en": "That name sure does sound iffy...",
+      "current_ptbr": "Esse nome realmente soa meio duvidoso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30940,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "いつの間にか銃も当たり前のようにCR作れるようになってきてるな、俺。",
+      "original_en": "It’s gotten so natural for me to even make guns now.",
+      "current_ptbr": "Já ficou tão natural para mim que agora até faço armas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30941,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうだね。CRでもライナーって銃は使わないもんね?",
+      "original_en": "But you don’t use guns, right?",
+      "current_ptbr": "Mas você não usa armas de fogo, certo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30942,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあね。剣術が好きだったってのもあるけど、銃なんて無かったからな...。",
+      "original_en": "Yeah. It’s partially because I like sword fighting, but there also weren’t any guns...",
+      "current_ptbr": "É. Em parte é porque gosto de lutas com espadas, mas também não tinha nenhuma arma de fogo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30943,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうだったんだ...。CRでも、そのわりにこんな強そうな拳銃CR作れるよね?",
+      "original_en": "I see... But you can still make strong looking guns like this?",
+      "current_ptbr": "Entendo... Mas você ainda consegue fazer armas com aparência robusta como essa?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30944,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "レシピ通りに作ってるだけさ。",
+      "original_en": "I just make them according to the recipe.",
+      "current_ptbr": "Eu só as faço seguindo a receita.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30945,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "実はこれ、素人にはとても使えないくらいCR強くてさ、試し撃ちしてないんだよ。",
+      "original_en": "Actually, this is too strong for amateurs to use, so I haven’t even tested it out yet.",
+      "current_ptbr": "Na verdade, ela é forte demais para amadores usarem, então eu nem cheguei a testá-la ainda.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30946,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え!?CRそ、それってマズイんじゃないの!?",
+      "original_en": "What!? I, isn’t that a problem!?",
+      "current_ptbr": "O quê!? Eu... isso não é um problema!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30947,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "マズイんだけど、銃は使えないからなぁ...。ま、暴発はしないさ、多分ね。",
+      "original_en": "It is a problem, but I can’t use guns... Well, it shouldn’t go off accidentally, I think.",
+      "current_ptbr": "É um problema, mas não sei usar armas de fogo... Bem, acho que não deve disparar acidentalmente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30948,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...ジャックさん...ぶっつけ本番で使うんだね。後ろで謳いながら祈ってるよ。",
+      "original_en": "...Jack... He’s going to just use it on the spot huh. I’ll pray for him as I sing in the back.",
+      "current_ptbr": "...Jack... Ele vai simplesmente usá-la ali mesmo, né? Vou rezar por ele enquanto canto lá atrás.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30949,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "こいつは凄いぞ。CRエンジンと言うだけあって、騒音が物凄い!どのくらい凄いかと言うと...",
+      "original_en": "This is amazing. Its name Engine says a lot about it’s tremendous sound! I’ll show you how crazy it is...",
+      "current_ptbr": "Isso é incrível. O nome “Engine” já diz muito sobre o som estrondoso dela! Vou mostrar pra vocês como ela é louca...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30950,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "た、試さなくていいってば!CRそんなうるさそうな物。",
+      "original_en": "Y, you don’t have to test it out! It looks so noisy.",
+      "current_ptbr": "N, não precisa testar! Parece muito barulhenta.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30951,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "冗談だよ。結構反動も強いから、CR相当慣れてるヤツでないと扱いきれないしな。",
+      "original_en": "I’m just kidding. The recoil is pretty strong too, so it’s hard to control unless you’re used to it.",
+      "current_ptbr": "Estou só brincando. O coice também é bem forte, então é difícil de controlar, a menos que você esteja acostumado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30952,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "確かにうるさそうではあるけどさ...。CRまさか凄いのって音だけ?",
+      "original_en": "It sure does look pretty noisy but... Is the noise the only thing tremendous about it?",
+      "current_ptbr": "Ela realmente parece bem barulhenta, mas... Será que o barulho é a única coisa impressionante nela?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30953,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "音が凄いっていうのはそれだけ強いエンジンがついているって事さ。CRつまり切れ味は抜群だ!",
+      "original_en": "The loud sound just means that it has that much stronger of an engine. So therefore, it cuts extremely well!",
+      "current_ptbr": "O barulho alto só significa que o motor é muito mais potente. Por isso, ela corta extremamente bem!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30954,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも結局、うるさいのに変わりはないんだね。「ヴイヴイソウ」って名前の方が良くない?",
+      "original_en": "But in the end, it’s still noisy. Doesn’t the name ”Vroom Vroom Saw” sound better?",
+      "current_ptbr": "Mas continua barulhenta. Que tal “Serra Vrum-Vrum”?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30955,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "まあ...微妙に騒音公害を可愛く肯定しているような名前で、いいんじゃないか?",
+      "original_en": "Well... It kind of sounds like you’re cutely supporting noise pollution, but it’s okay?",
+      "current_ptbr": "Bem... Parece que você está defendendo a poluição sonora de um jeito fofo, mas tudo bem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30956,
+      "event_file": "SLUS/TEXT/0467",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "自分で作っておいてなんだけど、こりゃもう、刀じゃないよな?",
+      "original_en": "I know I made it, but this is no longer a katana huh.",
+      "current_ptbr": "Eu sei que fui eu quem a fiz, mas isso não é mais uma katana, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30957,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うん、そうだね...なんだか凄い禍々しくてCR怖いよ。",
+      "original_en": "Yeah, you’re right... It’s really evil looking and scary.",
+      "current_ptbr": "É, tem razão... Parece maligna e assustadora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30958,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作ってる最中に何度か指を切りそうになって慌てたよ。しかし、何でそんなに指を切りそうになったんだろう...。",
+      "original_en": "I almost cut my fingers while I was making it. It kind of made me panic. But I wonder why I almost cut my finger so many times...",
+      "current_ptbr": "Quase cortei meus dedos enquanto a fazia. Isso meio que me deixou em pânico. Mas me pergunto por que quase cortei meu dedo tantas vezes...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30959,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "きっとこのオーラが呪いのオーラなんだよ。とんでもないもの作っちゃったね...。",
+      "original_en": "This aura is probably a cursed aura. You’ve made quite a troublesome thing...",
+      "current_ptbr": "Essa aura provavelmente é uma aura amaldiçoada. Você criou uma coisa bem complicada...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30960,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "よし、銀の謳い手の完成だ。とは言っても、銀で出来てるわけじゃないけどな。",
+      "original_en": "Yes, the Silver Singer is complete. Though, it’s not made of silver or anything.",
+      "current_ptbr": "Sim, o Cantor de Prata está pronto. Mas, na verdade, ele não é feito de prata nem nada parecido.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30961,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "でも凄い綺麗だよ。本物の銀みたいだし、CRまるで鏡みたい!",
+      "original_en": "But it’s really pretty. It looks like real silver, it’s almost like a mirror!",
+      "current_ptbr": "Mas é realmente linda. Parece prata de verdade, é quase como um espelho!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30962,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それはそうと、謳い手ってのがよくCRわからないんだよね。CRだってライナー、謳わないでしょ?",
+      "original_en": "But aside from that, I don’t get why it’s Silver Singer. It’s not like you sing, right?",
+      "current_ptbr": "Mas, tirando isso, não entendo por que se chama “Silver Singer”. Não é como se você cantasse, né?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30963,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "それに謳い手なんていわれると、私のCR存在価値が薄くなっちゃうような気がCRして嫌だな。",
+      "original_en": "And by saying it’s a singer, I feel like my existence is being weakened, so I don’t like it.",
+      "current_ptbr": "Chamar isso de cantor parece tirar a minha importância de cantora. Não gosto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30964,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうか。じゃあ、オリカに名前を決めてCRもらおうかな?",
+      "original_en": "I see. Then maybe I’ll have you pick the name?",
+      "current_ptbr": "Entendi. Então, talvez eu deixe você escolher o nome?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30965,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え!?CRわ、私が決めちゃっていいの?",
+      "original_en": "Huh!? I, is it okay for me to decide?",
+      "current_ptbr": "Hã!? Eu... tudo bem se eu decidir?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30966,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "ああ、いいよ。CRオリカに任せた。",
+      "original_en": "Yeah, go ahead. I leave it up to you.",
+      "current_ptbr": "É, vai em frente. Deixo por sua conta.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30967,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "うん...えっと、それじゃあね...。",
+      "original_en": "Okay... Then, um...",
+      "current_ptbr": "Tudo bem... Então, hum...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30968,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "あ、思いついた!CR「ピカピカの剣!」",
+      "original_en": "Oh, I got it! ”Twinkly Sword!”",
+      "current_ptbr": "Ah, já sei! “Espada Cintilante!”",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30969,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "へぇ、って、マジ!?CRピカピカの剣って本気!?",
+      "original_en": "Oh, uh, seriously!? You’re naming it Twinkly Sword for real!?",
+      "current_ptbr": "Ah, hum, sério mesmo!? Você vai chamá-la de “Espada Cintilante” de verdade!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30970,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "違うよ。ピカピカの剣じゃなくてCR「ピカピカの剣!」だよ。",
+      "original_en": "No. It’s not Twinkly Sword, it’s ”Twinkly Sword!”",
+      "current_ptbr": "Não. Não é “Espada Cintilante”, é “Espada Cintilante!”",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30971,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "...つ、作るの、メチャクチャ苦労したのに...。",
+      "original_en": "...B, but it was so hard to make...",
+      "current_ptbr": "...M, mas foi tão difícil de fazer...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30972,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "作ってみたはいいけど、なんだか凄いCR効果だな、この槍。",
+      "original_en": "So I finished making this, but it has such great effects.",
+      "current_ptbr": "Então, terminei de fazer isso, mas os efeitos são incríveis.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30973,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "全部の耐性と追加攻撃する力があるってCR話しだからな...。",
+      "original_en": "It has resistance to everything and then even has additional damage so...",
+      "current_ptbr": "Tem resistência a tudo e ainda causa dano adicional, então...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30974,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "全部付いてるの!?CR武器なのに防御まで!?",
+      "original_en": "To everything!? It’s a weapon but it has defense too!?",
+      "current_ptbr": "Em tudo!? É uma arma, mas também tem defesa!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30975,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "最近は攻撃するだけが武器じゃないってCRことだよ。それに元々、槍は防御もCR出来るしな。",
+      "original_en": "Weapons aren’t just for attacking anymore it seems. And spears can be used for guarding in the first place.",
+      "current_ptbr": "Parece que as armas não servem mais só para atacar. E as lanças podem ser usadas para se defender, para começar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30976,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そういえばそうだね。CRでも、エレメントスピア、か...。",
+      "original_en": "That’s right. But an Element Spear, huh...",
+      "current_ptbr": "É mesmo. Mas uma Lança Elemental, hein...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30977,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "え?何か問題あった?",
+      "original_en": "Huh? Is there a problem with that?",
+      "current_ptbr": "Hã? Tem algum problema nisso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30978,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "そうじゃないけどさ、せっかくなんだからCRもっとかっこいい名前の方がいいよ。",
+      "original_en": "Not really, but shouldn’t it have a better name since it’s cool?",
+      "current_ptbr": "Na verdade, não, mas não deveria ter um nome melhor, já que é legal?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30979,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "例えば...う~ん、強くてカッコイイ名前CRなんだから...「スーパー大盛り槍」だよ!",
+      "original_en": "For example... H~m, a strong cool sounding name so... ”Super Large Spear” should do it!",
+      "current_ptbr": "Por exemplo... H~m, um nome que soe forte e legal, então... “Lança Supergrande” deve servir!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 30980,
+      "event_file": "SLUS/TEXT/0468",
+      "speaker_id": 0,
+      "speaker": "Sistema / Narração",
+      "original_jp": "体力も防御力も攻撃力も、他のもほとんどCR全部上がるんだからね!",
+      "original_en": "Physical strength, defense, attack power, and a lot of other things get better!",
+      "current_ptbr": "Força física, defesa, poder de ataque e muitas outras coisas melhoram!",
+      "review_status": "unreviewed"
+    }
+  ]
+}

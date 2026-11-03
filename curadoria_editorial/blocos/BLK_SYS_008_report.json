@@ -1,0 +1,396 @@
+{
+  "block_id": "BLK_SYS_008",
+  "completed_at": "2026-10-29T04:33:54.665503+00:00",
+  "backup_created": "G:\\JOGO\\PS2\\Ar tonelico - Melody of Elemia (Undub)\\Ferramentas_Traducao\\backups\\curadoria\\ArTonelico_backup_pre_BLK_SYS_008_20261029_013352.atproj",
+  "total_dialogues": 288,
+  "lines_rewritten": 248,
+  "lines_approved_as_is": 40,
+  "new_terms_added": 5,
+  "scene_handoff": {
+    "last_scene_id": "BLK_SYS_008",
+    "last_line_id": 22628,
+    "location_and_situation": "Núcleo Sistêmico Parte 8 (Catálogo integral de Cristais Grathnode, Efeitos de Instalação em Reyvateils, Bônus de Magia Vermelha, Debuffs, Vulnerabilidades Elementais e Multiplicadores de Hits em SLUS/TEXT/0089 a 0100) concluído e 100% auditado contra o Shift-JIS de memória física.",
+    "emotional_state": "Sistêmico / Excelência editorial, eliminação de 100% dos erros grotescos de tradução americana ('Cannot Add Fire' -> '+Dano de Fogo', 'Reduce Damage to Self' -> 'Drena HP: Usuário'), restauração de tags [Magia Vermelha]CR e zero estouro de bytes.",
+    "active_hooks": [
+      "Transicionar para BLK_SYS_009 ou próximo eixo narrativo/sistêmico conforme o Scene Breakdown Ledger."
+    ]
+  },
+  "highlights": [
+    {
+      "id": 22345,
+      "jp": "セラハート",
+      "en": "Sera Heart",
+      "before": "Coração Sera",
+      "after": "Sera Heart",
+      "reason": "JP セラハート (Elimina estouro de 25B para 21B <= 24B mantendo o padrão da família Sera)"
+    },
+    {
+      "id": 22348,
+      "jp": "オーダーガード",
+      "en": "Order Guard",
+      "before": "Guarda Ordem",
+      "after": "Vigia Ordem",
+      "reason": "JP オーダーガード (Elimina estouro de 25B para 23B <= 24B alinhado à guarda urbana)"
+    },
+    {
+      "id": 22349,
+      "jp": "ドラゴンヘッド",
+      "en": "Dragon Head",
+      "before": "Cabeça dragão",
+      "after": "Dragon Head",
+      "reason": "JP ドラゴンヘッド (Elimina estouro de 29B para 23B <= 24B com nome canônico da cabeça)"
+    },
+    {
+      "id": 22350,
+      "jp": "ウォルファントム",
+      "en": "War Phantom",
+      "before": "Fantasma guerra",
+      "after": "War Phantom",
+      "reason": "JP ウォルファントム (Elimina estouro de 31B para 23B <= 24B com nome canônico)"
+    },
+    {
+      "id": 22378,
+      "jp": "赤魔法威力増加",
+      "en": "Red Magic Increase Intesity",
+      "before": "Potência da magia vermelha +",
+      "after": "+Poder Magia Vermelha",
+      "reason": "JP 赤魔法威力増加 (Elimina estouro de 58B para 45B <= 56B; buff ofensivo)"
+    },
+    {
+      "id": 22381,
+      "jp": "マヒ効果",
+      "en": "Paralyze Effect",
+      "before": "Efeito paralisia",
+      "after": "Efeito Paralis.",
+      "reason": "JP マヒ効果 (Elimina estouro de 33B para 31B <= 32B; status passivo de paralisia)"
+    },
+    {
+      "id": 22384,
+      "jp": "WT遅延",
+      "en": "WTDelay",
+      "before": "Atraso WT",
+      "after": "Adia WT",
+      "reason": "JP WT遅延 (Elimina estouro crítico de 19B para 15B <= 16B; atraso de Wait Time)"
+    },
+    {
+      "id": 22385,
+      "jp": "炎追加ダメ",
+      "en": "Cannot Add Fire",
+      "before": "Não adiciona fogo",
+      "after": "+Dano de Fogo",
+      "reason": "JP 炎追加ダメ (Corrige erro bizarro do EN 'Cannot Add Fire' onde ダメ foi lido como 駄目 em vez de dano; elimina estouro de 36B para 27B <= 32B)"
+    },
+    {
+      "id": 22386,
+      "jp": "氷追加ダメ",
+      "en": "Cannot Add Ice",
+      "before": "Não adiciona gelo",
+      "after": "+Dano de Gelo",
+      "reason": "JP 氷追加ダメ (Corrige mistranslation do EN 'Cannot Add Ice' para bônus de dano de gelo; elimina estouro de 36B para 27B <= 32B)"
+    },
+    {
+      "id": 22387,
+      "jp": "雷追加ダメ",
+      "en": "Cannot Add Lightning",
+      "before": "Não adiciona raio",
+      "after": "+Dano de Raio",
+      "reason": "JP 雷追加ダメ (Corrige mistranslation do EN 'Cannot Add Lightning' para bônus de raio; 27B <= 48B)"
+    },
+    {
+      "id": 22388,
+      "jp": "風追加ダメ",
+      "en": "Cannot Add Wind",
+      "before": "Não adiciona vento",
+      "after": "+Dano de Vento",
+      "reason": "JP 風追加ダメ (Corrige erro grotesco do EN 'Cannot Add Wind' para bônus de vento; elimina estouro de 38B para 29B <= 32B)"
+    },
+    {
+      "id": 22389,
+      "jp": "ダメージを自分に還元",
+      "en": "Reduce Damage to Self",
+      "before": "Reduz dano ao usuário",
+      "after": "Drena HP: Usuário",
+      "reason": "JP ダメージを自分に還元 (Desfaz erro do EN 'Reduce Damage to Self'; o dano causado é restituído em HP ao conjurador; 35B <= 48B)"
+    },
+    {
+      "id": 22390,
+      "jp": "ダメージを味方に還元",
+      "en": "Reduce Damage to Party",
+      "before": "Reduz dano ao grupo",
+      "after": "Drena HP: Grupo",
+      "reason": "JP ダメージを味方に還元 (Desfaz mistranslation do EN 'Reduce Damage to Party'; o dano causado cura o grupo; 31B <= 48B)"
+    },
+    {
+      "id": 22391,
+      "jp": "攻撃ヒット数増",
+      "en": "Increase Chance to Attack",
+      "before": "Aumenta chance de atacar",
+      "after": "+Hits por Ataque",
+      "reason": "JP 攻撃ヒット数増 (Corrige mistranslation do EN 'Chance to Attack'; ヒット数増 é aumento no número de acertos por golpe; 33B <= 56B)"
+    },
+    {
+      "id": 22415,
+      "jp": "炎耐力1段階アップ",
+      "en": "Fire Resist 1 Level Up",
+      "before": "Resistência a fogo +1 nível",
+      "after": "Resist. Fogo +1 Grau",
+      "reason": "JP 炎耐力1段階アップ (Elimina estouro de 57B para 41B <= 48B; elevação de patamar)"
+    },
+    {
+      "id": 22419,
+      "jp": "全耐力1段階アップ",
+      "en": "All Resists 1 Level Up",
+      "before": "Todas as resistências +1 nível",
+      "after": "Resist. Geral +1 Grau",
+      "reason": "JP 全耐力1段階アップ (Elimina estouro de 63B para 43B <= 48B; bônus defensivo geral)"
+    },
+    {
+      "id": 22431,
+      "jp": "マヒ攻撃",
+      "en": "Paralyze Attack",
+      "before": "Ataque paralisante",
+      "after": "Golpe Paralisia",
+      "reason": "JP マヒ攻撃 (Elimina estouro de 37B para 29B <= 32B; golpe entorpecente)"
+    },
+    {
+      "id": 22432,
+      "jp": "呪い攻撃",
+      "en": "Curse Attack",
+      "before": "Ataque amaldiçoado",
+      "after": "Ataque Maldito",
+      "reason": "JP 呪い攻撃 (Elimina estouro de 38B para 27B <= 32B; ataque com maldição)"
+    },
+    {
+      "id": 22433,
+      "jp": "暗闇攻撃",
+      "en": "Blink Attack",
+      "before": "Ataque cegante",
+      "after": "Ataque Cegante",
+      "reason": "JP 暗闇攻撃 (Desfaz erro do EN 'Blink'; 暗闇 é escuridão/cegueira; 27B <= 32B)"
+    },
+    {
+      "id": 22441,
+      "jp": "詩1割増サービス",
+      "en": "Song: 10% Bonus",
+      "before": "Canção: bônus 10%",
+      "after": "Canção: +10%",
+      "reason": "JP 詩1割増サービス (Elimina estouro de 36B para 25B <= 32B; bônus na canção)"
+    },
+    {
+      "id": 22442,
+      "jp": "【赤魔法用】CR赤魔法の威力を10%増加する。",
+      "en": "[Red Magic]CR10% increase in effectiveness of Red Magic.",
+      "before": "[Magia vermelha]CRAumenta em 10% a potência da magia vermelha.",
+      "after": "[Magia Vermelha]CRAumenta o dano da magia em 10%.",
+      "reason": "JP 【赤魔法用】CR赤魔法の威力を10%増加する。 (Elimina estouro de 126B para 99B <= 112B)"
+    },
+    {
+      "id": 22449,
+      "jp": "詩出血大サービス!",
+      "en": "Song: Big Bonus",
+      "before": "Canção: bônus grande",
+      "after": "Canção: +75%!",
+      "reason": "JP 詩出血大サービス! (Elimina estouro de 42B para 27B <= 32B; superoferta da canção)"
+    },
+    {
+      "id": 22450,
+      "jp": "【赤魔法用】CR赤魔法の威力を75%増加する。",
+      "en": "[Red Magic] 75% increase in effectiveness of Red Magic.",
+      "before": "[Magia vermelha] Aumenta em 75% a potência da magia vermelha.",
+      "after": "[Magia Vermelha]CRAumenta o dano da magia em 75%.",
+      "reason": "JP 【赤魔法用】CR赤魔法の威力を75%増加する。 (Restaura o separador CR omitido no EN e elimina estouro de 124B para 99B <= 112B)"
+    },
+    {
+      "id": 22452,
+      "jp": "【赤魔法用】CR赤魔法の威力を100%増加する。",
+      "en": "[Red Magic]CR100% increase in effectiveness of Red Magic.",
+      "before": "[Magia vermelha]CRAumenta em 100% a potência da magia vermelha.",
+      "after": "[Magia Vermelha]CRAumenta o dano da magia em 100%.",
+      "reason": "JP 【赤魔法用】CR赤魔法の威力を100%増加する。 (Elimina estouro de 128B para 101B <= 120B)"
+    },
+    {
+      "id": 22464,
+      "jp": "【赤魔法用】CR高確率で相手に毒を与える。",
+      "en": "[Red Magic]CRHigh chance to poison the opponent.",
+      "before": "[Magia vermelha]CRAlta chance de envenenar o inimigo.",
+      "after": "[Magia Vermelha]CRAlta chance de causar veneno.",
+      "reason": "JP 【赤魔法用】CR高確率で相手に毒を与える。 (Elimina estouro de 107B para 95B <= 96B)"
+    },
+    {
+      "id": 22484,
+      "jp": "【赤魔法用】CR相手の行動順をわずかに遅延させる。",
+      "en": "[Red Magic]CRSlightly delay the opponent’s turn.",
+      "before": "[Magia vermelha]CRAtrasa levemente o turno inimigo.",
+      "after": "[Magia Vermelha]CRAtraso leve no turno do alvo.",
+      "reason": "JP 【赤魔法用】CR相手の行動順をわずかに遅延させる。 (Elimina estouro de 103B para 95B <= 96B)"
+    },
+    {
+      "id": 22493,
+      "jp": "炎追加並盛り",
+      "en": "Kiddy Size Fire",
+      "before": "Fogo pequeno",
+      "after": "+Fogo: Médio",
+      "reason": "JP 炎追加並盛り (Elimina estouro de 38B para 25B <= 32B; tigela média de bônus ígneo)"
+    },
+    {
+      "id": 22494,
+      "jp": "【赤魔法用】CR元のダメージ×10%の追加炎ダメージ。",
+      "en": "[Red Magic]CRBase damage x10% additional fire damage.",
+      "before": "[Magia vermelha]CRAdiciona 10% do dano base como dano de fogo.",
+      "after": "[Magia Vermelha]CR+10% do dano-base em dano de fogo.",
+      "reason": "JP 【赤魔法用】CR元のダメージ×10%の追加炎ダメージ。 (Elimina estouro de 125B para 107B <= 112B)"
+    },
+    {
+      "id": 22501,
+      "jp": "激辛大音声",
+      "en": "Super Scorcho",
+      "before": "Superchamuscar",
+      "after": "Grito Ardente",
+      "reason": "JP 激辛大音声 (Elimina estouro de 33B para 27B <= 32B; voz extremamente ardente)"
+    },
+    {
+      "id": 22504,
+      "jp": "【赤魔法用】CR元のダメージ×10%の追加氷ダメージ。",
+      "en": "[Red Magic]CRBase damage x10% additional ice damage.",
+      "before": "[Magia vermelha]CRAdiciona 10% do dano base como dano de gelo.",
+      "after": "[Magia Vermelha]CR+10% do dano-base em gelo.",
+      "reason": "JP 【赤魔法用】CR元のダメージ×10%の追加氷ダメージ。 (Elimina estouro de 125B para 95B <= 104B)"
+    },
+    {
+      "id": 22511,
+      "jp": "氷結大絶叫",
+      "en": "Brain Breeze",
+      "before": "Brisa mental",
+      "after": "Grito Glacial",
+      "reason": "JP 氷結大絶叫 (Elimina estouro de 33B para 27B <= 32B; grito colossal glacial)"
+    },
+    {
+      "id": 22521,
+      "jp": "落雷大怒号",
+      "en": "Anger Thunderstorm",
+      "before": "Tempestade furiosa",
+      "after": "Trovão Furioso",
+      "reason": "JP 落雷大怒号 (Berro trovejante furioso; 29B <= 40B)"
+    },
+    {
+      "id": 22534,
+      "jp": "【赤魔法用】CRダメージの5%を自分のMPに還元。",
+      "en": "[Red Magic]CR5% of damage done returns as your MP.",
+      "before": "[Magia vermelha]CRRecupera seu MP em 5% do dano causado.",
+      "after": "[Magia Vermelha]CR5% do dano retorna como MP.",
+      "reason": "JP 【赤魔法用】CRダメージの5%を自分のMPに還元。 (Elimina estouro de 113B para 91B <= 104B)"
+    },
+    {
+      "id": 22544,
+      "jp": "【赤魔法用】CR与えたダメージの10%を仲間に還元。",
+      "en": "[Red Magic]CR10% of damage done returns as party HP.",
+      "before": "[Magia vermelha]CRRecupera o HP do grupo em 10% do dano causado.",
+      "after": "[Magia Vermelha]CR10% do dano cura o grupo.",
+      "reason": "JP 【赤魔法用】CR与えたダメージの10%を仲間に還元。 (Elimina estouro de 129B para 89B <= 104B)"
+    },
+    {
+      "id": 22554,
+      "jp": "【赤魔法用】CR攻撃のヒット数を1回増やす。",
+      "en": "[Red Magic]CRAdds 1 hit to normal attack.",
+      "before": "[Magia vermelha]CRAdiciona 1 golpe ao ataque normal.",
+      "after": "[Magia Vermelha]CR+1 hit ao ataque normal.",
+      "reason": "JP 【赤魔法用】CR攻撃のヒット数を1回増やす。 (Elimina estouro de 105B para 85B <= 88B)"
+    },
+    {
+      "id": 22563,
+      "jp": "ねばねば成分混入",
+      "en": "Gooey Blend",
+      "before": "Mistura pegajosa",
+      "after": "Viscosidade",
+      "reason": "JP ねばねば成分混入 (Elimina estouro de 33B para 23B <= 24B; substância viscosa)"
+    },
+    {
+      "id": 22569,
+      "jp": "武器をなまくらに",
+      "en": "Dull Weapon",
+      "before": "Arma sem fio",
+      "after": "Arma Cega",
+      "reason": "JP 武器をなまくらに (Elimina estouro de 25B para 19B <= 24B; なまくら = lâmina sem fio/cega)"
+    },
+    {
+      "id": 22573,
+      "jp": "武器をプリンにする",
+      "en": "Jelly Weapon",
+      "before": "Arma gelatinosa",
+      "after": "Arma de Pudim",
+      "reason": "JP 武器をプリンにする (Elimina estouro de 33B para 27B <= 32B; amolecer a arma)"
+    },
+    {
+      "id": 22577,
+      "jp": "武器ピコハン化!",
+      "en": "Foam Weapon",
+      "before": "Arma de espuma",
+      "after": "Arma Espuma",
+      "reason": "JP 武器ピコハン化! (Elimina estouro de 29B para 23B <= 24B; piada com martelo de brinquedo)"
+    },
+    {
+      "id": 22581,
+      "jp": "防具をさびさせる",
+      "en": "Rust Armor",
+      "before": "Armadura enferrujada",
+      "after": "Ferrugem",
+      "reason": "JP 防具をさびさせる (Elimina estouro de 41B para 17B <= 24B; corrosão da couraça)"
+    },
+    {
+      "id": 22587,
+      "jp": "防具トーフ化!",
+      "en": "Tofu Armor",
+      "before": "Armadura tofu",
+      "after": "Armad. Tofu",
+      "reason": "JP 防具トーフ化! (Elimina estouro de 27B para 23B <= 24B; fragilizar defesa como tofu)"
+    },
+    {
+      "id": 22596,
+      "jp": "【赤魔法用】CR必ずクリティカルさせる。",
+      "en": "[Red Magic]CR100% critical rate.",
+      "before": "[Magia vermelha]CRChance de crítico de 100%.",
+      "after": "[Magia Vermelha]CRCrítico 100%.",
+      "reason": "JP 【赤魔法用】CR必ずクリティカルさせる。 (Elimina estouro de 90B para 64B <= 64B; garantia de dano crítico)"
+    },
+    {
+      "id": 22599,
+      "jp": "【赤魔法用】CR炎の耐久力をわずかに低下させる。",
+      "en": "[Red Magic]CRSlightly lower fire resistance.",
+      "before": "[Magia vermelha]CRReduz levemente a resistência a fogo.",
+      "after": "[Magia Vermelha]CRBaixa a resist. a fogo.",
+      "reason": "JP 【赤魔法用】CR炎の耐久力をわずかに低下させる。 (Elimina estouro de 112B para 83B <= 88B)"
+    },
+    {
+      "id": 22602,
+      "jp": "炎を天敵にする",
+      "en": "Enemy of Fire",
+      "before": "Inimigo do fogo",
+      "after": "Presa do Fogo",
+      "reason": "JP 炎を天敵にする (Elimina estouro de 43B para 27B <= 32B; presa mortal de fogo)"
+    },
+    {
+      "id": 22609,
+      "jp": "【赤魔法用】CR風の耐久力を大幅に低下させる。",
+      "en": "[Red Magic]CRGreatly lower wind resistance.",
+      "before": "[Magia vermelha]CRReduz muito a resistência a vento.",
+      "after": "[Magia Vermelha]CRDerruba a resist. vento.",
+      "reason": "JP 【赤魔法用】CR風の耐久力を大幅に低下させる。 (Elimina estouro de 106B para 85B <= 88B)"
+    },
+    {
+      "id": 22627,
+      "jp": "【赤魔法用】CR全ての耐久力を大幅に低下させる。",
+      "en": "[Red Magic]CRGreatly lowers all resistances.",
+      "before": "[Magia vermelha]CRReduz muito todas as resistências.",
+      "after": "[Magia Vermelha]CRDerruba toda resistência.",
+      "reason": "JP 【赤魔法用】CR全ての耐久力を大幅に低下させる。 (Elimina estouro de 106B para 83B <= 88B)"
+    },
+    {
+      "id": 22628,
+      "jp": "赤魔法負荷減少",
+      "en": "Less MP for Red",
+      "before": "Menos MP: vermelha",
+      "after": "Menos MP: Verm.",
+      "reason": "JP 赤魔法負荷減少 (Elimina estouro de 39B para 31B <= 32B; redução de MP)"
+    }
+  ]
+}

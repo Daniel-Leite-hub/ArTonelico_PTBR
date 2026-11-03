@@ -1,0 +1,250 @@
+# -*- coding: utf-8 -*-
+import json
+
+batch1 = [
+    {
+        "id": 4511,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio reticente de hesitação e choque preservado fielmente ao original japonês."
+    },
+    {
+        "id": 4512,
+        "curated_ptbr": "Misha?...\nO que... o que aconteceu?!",
+        "verdict": "rewritten",
+        "rationale": "Substituído 'O que houve?' pela reação assustada de Lyner com gaguejo (ど、どうしたんだ!?), eliminando reticências soltas no início da segunda linha conforme a regra estrita do Hard Gate."
+    },
+    {
+        "id": 4513,
+        "curated_ptbr": "Des... desculpa... Eu...",
+        "verdict": "rewritten",
+        "rationale": "Ajustado 'Sinto... muito...' para 'Des... desculpa...', preservando o balbucio e a intimidade de Misha (ご...ごめん...私...)."
+    },
+    {
+        "id": 4514,
+        "curated_ptbr": "Misha! Fica firme!",
+        "verdict": "rewritten",
+        "rationale": "Substituído o professoral 'Vamos, controle-se!' por 'Fica firme!', condizente com a voz protetora e direta de Lyner (しっかりしろ)."
+    },
+    {
+        "id": 4515,
+        "curated_ptbr": "Estou com medo...\nLyner, estou com medo!",
+        "verdict": "rewritten",
+        "rationale": "Adequada a quebra de linha à pontuação original (CR), mantendo a pontuação antes de \\n e iniciando a segunda linha com o vocativo sem pontuação órfã."
+    },
+    {
+        "id": 4516,
+        "curated_ptbr": "Só de olhar para este portão, sinto um pavor terrível subir pelo meu corpo...",
+        "verdict": "rewritten",
+        "rationale": "Recuperada a sensação física de repulsa e terror do japonês (おぞましいものが身体を駆け上がる), perdida no achatamento do inglês 'brings up horrible images'."
+    },
+    {
+        "id": 4517,
+        "curated_ptbr": "Não entendo o porquê,\nmas não consigo chegar mais perto...\nEu... vou enlouquecer...",
+        "verdict": "rewritten",
+        "rationale": "Preservada a estrutura em 3 versos da fala de Misha, balanceando quebras sem fratura sintática e transmitindo o pânico de colapso mental (おかしくなる)."
+    },
+    {
+        "id": 4518,
+        "curated_ptbr": "Entendi.\nA gente não precisa\nvoltar nunca mais para cá.",
+        "verdict": "rewritten",
+        "rationale": "Preservadas as quebras de linha com cadência confortadora de Lyner, garantindo ausência de fratura sintática ou preposição órfã."
+    },
+    {
+        "id": 4519,
+        "curated_ptbr": "Desculpa... Me desculpa de verdade...",
+        "verdict": "rewritten",
+        "rationale": "Traduzida a duplicidade carinhosa de desculpas de Misha (ごめん...ごめんね...。), superior ao seco 'Sinto... muito...'."
+    },
+    {
+        "id": 4520,
+        "curated_ptbr": "A Aurica... veio mesmo para um lugar desses?\nO que ela veio fazer aqui?\nPor que será?...",
+        "verdict": "rewritten",
+        "rationale": "Preservada a estrutura tripartite da reflexão atônita de Lyner, com eufonia natural em PT-BR e sem quebra fraturada."
+    },
+    {
+        "id": 4521,
+        "curated_ptbr": "Vamos dar uma busca por aqui.\nNem sempre as informações que recebemos são exatas.",
+        "verdict": "rewritten",
+        "rationale": "Tom pragmático e militar de Radolf preservado com balanceamento rítmico perfeito entre as duas linhas."
+    },
+    {
+        "id": 4522,
+        "curated_ptbr": "Ora, ora... Veio de novo?\nQue pena, mas a Misha disse que não quer mais te mostrar o mundo dela por enquanto.",
+        "verdict": "rewritten",
+        "rationale": "Tom sarcástico e provocativo da Moradora do Mundo Inferior (あら、また来たのね), quebrando a linha sem partícula órfã."
+    },
+    {
+        "id": 4523,
+        "curated_ptbr": "O mundo da Misha evoluiu para uma camada ainda mais profunda graças à Mudança de Paradigma.",
+        "verdict": "rewritten",
+        "rationale": "Adequado termo canônico 'Mudança de Paradigma' e naturalizada a prosódia sobre a evolução psicológica da Cosmosfera."
+    },
+    {
+        "id": 4524,
+        "curated_ptbr": "As camadas profundas só são reveladas a quem tem a mais pura confiança dela. Resumindo: você ainda não chegou a esse nível com ela.",
+        "verdict": "rewritten",
+        "rationale": "Fluência expositiva da guardiã preservando a explicação das mecânicas de intimidade da Cosmosfera."
+    },
+    {
+        "id": 4525,
+        "curated_ptbr": "Se quer mesmo continuar avançando,\né melhor se aproximar mais da Misha no mundo real.",
+        "verdict": "rewritten",
+        "rationale": "Quebra de linha balanceada após a oração condicional, sem fratura sintática ou pontuação órfã."
+    },
+    {
+        "id": 4526,
+        "curated_ptbr": "Parece que você não possui a quantidade de Tópicos de Conversa necessária\npara adentrar este nível da Cosmosfera.",
+        "verdict": "rewritten",
+        "rationale": "Corrigido 'Espaço da Alma' (decalque do EN Soulspace) para o cânone 'Cosmosfera', e 'tópicos de conversa' para o termo canônico de sistema 'Tópicos de Conversa'."
+    },
+    {
+        "id": 4527,
+        "curated_ptbr": "Os Tópicos de Conversa aumentam ao dialogar com a Misha em pousadas ou acampamentos. Sempre que encontrar novos tópicos pelo mundo, converse ativamente com ela.",
+        "verdict": "rewritten",
+        "rationale": "Instrução de tutorial límpida e elegante sobre a dinâmica de obtenção de tópicos de conversa (マター)."
+    },
+    {
+        "id": 4528,
+        "curated_ptbr": "Pois muito bem... Deseja partir agora para o mundo virtual?",
+        "verdict": "rewritten",
+        "rationale": "Tratamento polido e cerimonioso do atendente do terminal de mergulho (さてさて、仮想世界へ行かれますかな?)."
+    },
+    {
+        "id": 4529,
+        "curated_ptbr": "Sendo assim, tenha uma excelente jornada.",
+        "verdict": "rewritten",
+        "rationale": "Fórmula cortês de despedida japonesa (行ってらっしゃいませ) vertida com elegância."
+    },
+    {
+        "id": 4530,
+        "curated_ptbr": "Você fez a transição para o mundo virtual.",
+        "verdict": "rewritten",
+        "rationale": "Notificação de sistema concisa e precisa referente à mudança de plano existencial."
+    },
+    {
+        "id": 4531,
+        "curated_ptbr": "Sendo assim, até a nossa próxima ocasião.",
+        "verdict": "rewritten",
+        "rationale": "Conclusão respeitosa do atendente (それでは、また会う日まで)."
+    },
+    {
+        "id": 4532,
+        "curated_ptbr": "!!",
+        "verdict": "approved_as_is",
+        "rationale": "Exclamação de alerta idêntica ao original."
+    },
+    {
+        "id": 4533,
+        "curated_ptbr": "Achei! Bem ali!\nFicou enganchado bem naquele ponto!",
+        "verdict": "rewritten",
+        "rationale": "Expressão entusiasmada de Lyner com quebra balanceada correspondente ao original japonês."
+    },
+    {
+        "id": 4534,
+        "curated_ptbr": "Fica mais um andar abaixo...\nSe encontrarmos alguma passagem para descer até lá...",
+        "verdict": "rewritten",
+        "rationale": "Corrigido 'cômodo' para 'andar' (階層 se refere a níveis/andares estruturais da Torre) e balanceada a quebra de linha."
+    },
+    {
+        "id": 4535,
+        "curated_ptbr": "Vamos começar a procurar logo.",
+        "verdict": "rewritten",
+        "rationale": "Determinação incisiva de Lyner expressa com eufonia natural."
+    },
+    {
+        "id": 4536,
+        "curated_ptbr": "Será que conseguimos?!",
+        "verdict": "rewritten",
+        "rationale": "Expressão clássica de suspense em batalha anime (やったか!), vertida como dúvida cheia de expectativa dramática."
+    },
+    {
+        "id": 4537,
+        "curated_ptbr": "Vejam só...\nO Poder Harmônico está voltando\npara o corpo de todo mundo...",
+        "verdict": "rewritten",
+        "rationale": "Termo canônico 'Poder Harmônico' padronizado com maiúsculas, com quebras de linha balanceadas sem pontuação solta."
+    },
+    {
+        "id": 4538,
+        "curated_ptbr": "Malditos!...\nTodo o Poder Harmônico\nque eu drenei com tanto esforço...!!",
+        "verdict": "rewritten",
+        "rationale": "Exclamação vilanesca teatral de Claire na simulação (おのれ... せっかく吸い上げた...), com quebras perfeitamente preservadas."
+    },
+    {
+        "id": 4539,
+        "curated_ptbr": "Agora é a sua vez!\nEstá pronta para o que der e vier?!",
+        "verdict": "rewritten",
+        "rationale": "Desafio direto à vilã Claire (貴方の番よ! 覚悟はいい!?), corrigindo o erro do inglês que generalizava para 'Is everyone ready?'."
+    },
+    {
+        "id": 4540,
+        "curated_ptbr": "Ora, que pena por vocês.\nMas lamento informar que não sou derrotada com tanta facilidade!",
+        "verdict": "rewritten",
+        "rationale": "Tom arrogante e gracioso da persona de vilã de Claire, fluindo com naturalidade irônica."
+    },
+    {
+        "id": 4541,
+        "curated_ptbr": "A gente se vê por aí.\nDa próxima vez que nos encontrarmos,\nvou saborear até a última gota do seu Poder Harmônico!",
+        "verdict": "rewritten",
+        "rationale": "Ameaça sádica e afetada da vilã Claire (味、たっぷり堪能させてもらうわ), preservando as 3 linhas sem fratura sintática."
+    },
+    {
+        "id": 4542,
+        "curated_ptbr": "Ohohohoho...!",
+        "verdict": "rewritten",
+        "rationale": "Transcrição fonética da clássica risada arrogante ojou-sama (おーほほほほ...), substituindo o genérico 'Haa ha ha ha!'."
+    },
+    {
+        "id": 4543,
+        "curated_ptbr": "Ei! Pare agora mesmo!!",
+        "verdict": "rewritten",
+        "rationale": "Ordem enérgica de interrupção (待ちなさい!!), mais expressiva do que o simples 'Não!'."
+    },
+    {
+        "id": 4544,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Silêncio e frustração idênticos ao original."
+    },
+    {
+        "id": 4545,
+        "curated_ptbr": "Droga! Ela conseguiu fugir...",
+        "verdict": "rewritten",
+        "rationale": "Frustração expressiva da companheira Reyvateil (くそっ!逃がしたか...)."
+    },
+    {
+        "id": 4546,
+        "curated_ptbr": "Quem era aquela mulher afinal de contas...?!",
+        "verdict": "rewritten",
+        "rationale": "Pergunta atônita de Lyner na voz interior da simulação mental."
+    },
+    {
+        "id": 4547,
+        "curated_ptbr": "Aquela mulher é a infame líder suprema da Facção Mir, conhecida pelo nome de Claire.",
+        "verdict": "rewritten",
+        "rationale": "Padronização canônica da 'Facção Mir' (ミュール団) conforme assentado em BLK_EVD_006."
+    },
+    {
+        "id": 4548,
+        "curated_ptbr": "A líder da Facção Mir...",
+        "verdict": "rewritten",
+        "rationale": "Eco atônito de Lyner unificado com a tradução canônica de 'Facção Mir'."
+    },
+    {
+        "id": 4549,
+        "curated_ptbr": "Mas me diz... Quem é você afinal?\nPara saber de detalhes tão profundos,\nnão deve ser uma garota comum.",
+        "verdict": "rewritten",
+        "rationale": "Curiosidade desconfiada de Lyner, com quebras em 3 linhas correspondentes ao japonês sem pontuação órfã."
+    },
+    {
+        "id": 4550,
+        "curated_ptbr": "Eu sou... apenas uma grande amiga da Leila...",
+        "verdict": "rewritten",
+        "rationale": "Preservado o nome colegial de Shurelia/persona 'Leila' (澪羅) e o tom reservado da Reyvateil da Cosmosfera."
+    }
+]
+
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch1_018.json", "w", encoding="utf-8") as f:
+    json.dump(batch1, f, indent=2, ensure_ascii=False)
+
+print(f"Batch 1 saved with {len(batch1)} items.")

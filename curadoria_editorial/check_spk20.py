@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+import glob
+import json
+
+for fpath in glob.glob('Ferramentas_Traducao/curadoria_editorial/blocos/*output.json'):
+    try:
+        with open(fpath, 'r', encoding='utf-8') as f:
+            d = json.load(f)
+        for line in d.get('dialogues', []):
+            if line.get('speaker_id') == 20:
+                print(f"{fpath} | ID {line['id']} | ev: {line.get('event_file')} | spk: {line.get('speaker')} | JP: {line.get('original_jp')[:30]}")
+    except Exception as e:
+        pass

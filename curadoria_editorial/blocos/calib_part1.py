@@ -1,0 +1,85 @@
+# -*- coding: utf-8 -*-
+"""Dados de calibração editorial para BLK_SYS_024 - Parte 1 (Arquivos 0283 a 0285)
+IDs 26954 a 27025 (72 falas) - 100% calibrado e testado
+"""
+
+lines_0283 = {
+    26954: ("...Mas eu também não souCRnem um pouco perfeita.", "Misha confessando suas imperfeições com CR. (99B <= 104B)"),
+    26955: ("Só que, querendo parecer talentosa,CReu dava um jeito de esconder tudo que nãoCRera perfeito em mim, só isso...", "Misha explicando a máscara de perfeição com quebras CR. (226B <= 232B)"),
+    26956: ("...Misha?", "Lyner surpreso com o desabafo. (19B <= 24B)"),
+    26957: ("Hã? Não, nada! O que importaCRé que sou um gênio,CRnão é?", "Misha desconversando e retomando a pose com quebras CR. (121B <= 144B)"),
+    26958: ("Nunca imaginei que viajariaCRjunto com você pelo mundo.", "Misha reflexiva sobre a jornada com Lyner com CR. (112B <= 120B)"),
+    26959: ("Não é um tédio?CRFicar só perambulando.", "Lyner perguntando sobre a rotina de andarilho com CR. (83B <= 96B)"),
+    26960: ("Não, de jeito nenhum!CRÉ a primeira vez que viajo, tá ótimo!CRQuero conhecer muito mais lugares!", "Misha entusiasmada com a jornada com quebras CR. (197B <= 232B)"),
+    26961: ("Na época da Tenba, você ficavaCRsempre no Beco Vagalume?", "Lyner perguntando sobre o passado na Tenba com CR. (115B <= 120B)"),
+    26962: ("Sim... Mas aquilo até que era bom.CRNo Beco Vagalume eu podia andar livre.", "Misha relembrando a liberdade no Beco Vagalume com CR. (150B <= 184B)"),
+    26963: ("Antes disso... era só um quarto escuro...", "Misha lembrando do confinamento. (84B <= 88B)"),
+    26964: ("Quarto escuro?CRTava presa lá, ou algo assim?", "Lyner chocado com o confinamento com CR. (92B <= 96B)"),
+    26965: ("Hum... Uma hora eu te conto.CRNão é algo de que eu queira lembrar...", "Misha desconversando sobre as memórias dolorosas com CR. (139B <= 176B)"),
+    26966: ("Lyner... Se eu te contar uma coisa,CRpromete não me detestar?", "Misha receosa ao fazer confissão íntima com CR. (124B <= 136B)"),
+    26967: ("Dá um certo medo, mas fala.", "Lyner apreensivo. (56B <= 56B)"),
+    26968: ("É que... fazer coisas pelos outros?CRAquilo era algo que eu odiava.", "Misha admitindo o egoísmo do passado com CR. (136B <= 176B)"),
+    26969: ("Eu achava que, antes de fazer pros outros,CReu mesma tinha que vir em primeiro lugar...", "Misha refletindo sobre sua postura antiga com CR. (175B <= 216B)"),
+    26970: ("É?... Mas comigo você sempreCRme ajudou em tudo, né?", "Lyner lembrando da generosidade dela com ele com CR. (108B <= 120B)"),
+    26971: ("Você é exceção.CRÉ o Lyner.", "Misha com tom afetuoso e cúmplice com CR. (58B <= 64B)"),
+    26972: ("Não entendi a lógica, mas...CRjá que é por mim, tudo bem.", "Lyner desconcertado mas agradecido com CR. (119B <= 128B)"),
+    26973: ("Hehe... Mas sinto que andoCRmudando um pouquinho.", "Misha notando a própria transformação interior com CR. (99B <= 104B)"),
+    26974: ("Eu odiava tanto ajudar os outros...CRSinto que essa aversão tá diminuindo...", "Misha percebendo a mudança afetiva com CR. (155B <= 168B)"),
+    26975: ("Ei, Lyner... O que você achaCRde me ver adulta?", "Misha perguntando a opinião dele sobre ela crescida com CR. (96B <= 104B)"),
+    26976: ("O que eu acho?...CRPergunta meio difícil, hein.", "Lyner hesitante diante da pergunta com CR. (96B <= 104B)"),
+    26977: ("Desculpa... É que antesCReu não queria crescer.", "Misha justificando o trauma da forma adulta com CR. (97B <= 104B)")
+}
+
+lines_0284 = {
+    26978: ("Eu achava que você me odiaria,CRalém de outros motivos também.", "Misha explicando o medo de rejeição com CR. (131B <= 184B)"),
+    26979: ("Mas ando mudando de ideiaCRultimamente.", "Misha mudando de perspectiva sobre a forma adulta com CR. (79B <= 96B)"),
+    26980: ("Acho que você não me odiariaCRmesmo eu adulta...CRSerá só ilusão?", "Misha com esperança tímida sobre ser aceita com quebras CR. (138B <= 152B)"),
+    26981: ("Lyner, o que você acha do Leard?", "Misha perguntando a opinião dele sobre o pai. (70B <= 72B)"),
+    26982: ("Não penso nada demais, acho.", "Lyner respondendo com naturalidade e indiferença. (62B <= 72B)"),
+    26983: ("...É bem a sua cara responder isso.", "Misha sorrindo do jeito previsível de Lyner. (70B <= 104B)"),
+    26984: ("Leard me ensinou a MagiaCRda Canção no passado.", "Misha contando sobre as aulas com Leard com CR. (95B <= 96B)"),
+    26985: ("Só que naquela época eu odiava,CRera uma tortura só...", "Misha relembrando o sofrimento infantil com CR. (107B <= 120B)"),
+    26986: ("Agora que posso te ajudar com ela,CRfinalmente comecei a gostar.", "Misha feliz por ser útil a Lyner com CR. (117B <= 152B)"),
+    26987: ("Gostar só pra me ajudarCRme deixa sem jeito.", "Lyner sem jeito com a dedicação dela com CR. (90B <= 96B)"),
+    26988: ("É a verdade, ué!CRSou até um pouco grata a ele.", "Misha sincera e grata a Leard com CR. (98B <= 104B)"),
+    26989: ("O treino era tão espartano... CRele berrava... dizia cada coisa absurda...", "Misha lembrando o rigor de Leard com reticências. (152B <= 176B)"),
+    26990: ("Graças ao treino...CRÀquele inferno...CRMinha dura infância...", "Misha com humor dramático sobre o treino com quebras CR. (128B <= 128B)"),
+    26991: ("...Mas já que posso te ajudar,CRtenho que agradecer... só um tiquinho...", "Misha agradecendo a Leard a contragosto com CR. (138B <= 160B)"),
+    26992: ("...Devo pedir perdão por ele,CRafinal?", "Lyner constrangido pelos métodos do pai com CR. (78B <= 80B)"),
+    26993: ("Misha... Você não táCRse sentindo mal?", "Lyner preocupado com o bem-estar dela com CR. (80B <= 88B)"),
+    26994: ("Tô ótima! O que houve?", "Misha estranhando a preocupação repentina. (47B <= 56B)"),
+    26995: ("É?... Pareceu que você estavaCRmeio pálida, só por isso...", "Lyner explicando o motivo da preocupação com CR. (112B <= 136B)"),
+    26996: ("Sério?! Verem meu rosto quandoCRnão estou no melhor estadoCRé meio vergonhoso.", "Misha preocupada com sua aparência com quebras CR. (155B <= 160B)"),
+    26997: ("Ah, não, foi engano meu!CRNão precisa se preocupar...", "Lyner tentando amenizar com CR. (105B <= 144B)"),
+    26998: ("...Tomara.CRMas agora fiquei encucada...", "Misha inquieta com o comentário com CR. (73B <= 96B)"),
+    26999: ("Sempre sonhei em ser livre.", "Misha desabafando sobre seu anseio de infância. (56B <= 64B)"),
+    27000: ("Quando era pequena... digo,CRde idade, não de tamanho, tá?", "Misha fazendo ressalva cômica sobre sua estatura com CR. (122B <= 168B)"),
+    27001: ("Desde então vivia presa a fadoCRe destino, sem nem entenderCRo que eram.", "Misha lamentando o fardo que carregava na infância com quebras CR. (137B <= 184B)")
+}
+
+lines_0285 = {
+    27002: ("Falando sério, tô farta disso.", "Misha desabafando sobre o fardo sufocante. (62B <= 72B)"),
+    27003: ("Nunca passei por isso, mas imaginoCRo quanto deva ter sido doloroso.", "Lyner se compadecendo do sofrimento dela com CR. (134B <= 144B)"),
+    27004: ("Bom, quase ninguém passa por isso.CRÉ algo raro, e bem cruel.", "Misha pontuando a crueldade do destino dela com CR. (119B <= 160B)"),
+    27005: ("Acho que por viver tão presa a isso,CReu sempre busquei a liberdade.", "Misha explicando sua ânsia por autonomia com CR. (135B <= 168B)"),
+    27006: ("Queria força pra ser livre,CRpor isso quis crescer forte.", "Misha justificando o desejo de ficar poderosa com CR. (116B <= 136B)"),
+    27007: ("...Se você me ajudasse,CRseria ótimo...", "Misha insinuando que quer a ajuda de Lyner com CR. (81B <= 96B)"),
+    27008: ("Mudei muito desde a épocaCRda Crônica Crescente.CRAté eu me surpreendo.", "Misha notando sua evolução desde a Crônica Crescente com quebras CR. (136B <= 176B)"),
+    27009: ("É? Como assim?", "Lyner curioso. (33B <= 40B)"),
+    27010: ("Antes, como já disse, a minhaCRliberdade vinha em primeiro lugar.", "Misha relembrando seu antigo egoísmo com CR. (128B <= 152B)"),
+    27011: ("Minha liberdade era prioridade,CRe o resto não importava em nada.", "Misha explicando a postura desapegada que tinha com CR. (128B <= 144B)"),
+    27012: ("Pra falar a verdade, até poucoCReu era bem assim mesmo...", "Misha admitindo que a mudança é recente com CR. (116B <= 136B)"),
+    27013: ("Agora penso em tudo.CRAté eu fico surpresa comigo.", "Misha refletindo sobre sua maturidade com CR. (102B <= 136B)"),
+    27014: ("Já viu quase tudo da minhaCRCosmosfera, né?", "Misha perguntando sobre as visitas à Cosmosfera com CR. (89B <= 104B)"),
+    27015: ("Hã? Ah... sim, já vi quase tudo...", "Lyner sem jeito admitindo. (67B <= 80B)"),
+    27016: ("Sabia... Mas não é que euCRqueira reclamar disso nem nada.", "Misha tranquilizando Lyner com CR. (119B <= 128B)"),
+    27017: ("Só que, assim, você não precisa maisCRmergulhar em mim, entende?CRIsso me deixa meio triste.", "Misha confessando a carência do Mergulho com quebras CR. (187B <= 200B)"),
+    27018: ("Por isso, se você mergulhasseCRàs vezes, eu ficaria feliz...", "Misha pedindo para Lyner mergulhar nela com CR. (123B <= 128B)"),
+    27019: ("Você anda falando muito comCRa Senhora Shurelia, né?", "Misha com ciúmes discreto de Shurelia com CR. (107B <= 120B)"),
+    27020: ("É, pois é.", "Lyner respondendo casualmente. (23B <= 24B)"),
+    27021: ("Hum... Achei que ela não fosseCRde conversar muito com as pessoas...", "Misha curiosa sobre a personalidade de Shurelia com CR. (132B <= 152B)"),
+    27022: ("Mas é uma chance. ConversarCRdeve deixá-la contente.", "Misha tentando parecer compreensiva com CR. (107B <= 136B)"),
+    27023: ("Mas sinto que você anda íntimoCRdemais da Senhora Shurelia...", "Misha expressando ciúmes com CR. (125B <= 152B)"),
+    27024: ("Pra quem vê de fora, parece demais...CRQuer dizer, só dá pra pensar nisso!", "Misha confrontando Lyner sobre a proximidade com Shurelia com CR. (146B <= 176B)"),
+    27025: ("Ela parece tão ingênua sobre o mundoCRque fico meio preocupada...", "Misha comentando a ingenuidade de Shurelia com CR. (129B <= 144B)")
+}

@@ -1,0 +1,2059 @@
+{
+  "block_id": "BLK_EVD_033",
+  "axis_id": "AXIS_3",
+  "axis_name": "3_HISTORIA_E_EVENTOS",
+  "category": "Event Dialogue",
+  "line_count": 183,
+  "id_range": [
+    8182,
+    8364
+  ],
+  "scene_handoff_received": {
+    "resumo_dramatico": "A investigação de Lyner na Cosmosfera de Aurica, onde Don Leon explica a conexão de todas as almas através da [Torre da Vida] e adentra os circuitos da Ar tonelico, descobrindo que o mundo virtual de Shurelia está infestado por réplicas virais e concedendo a Lyner o [Anel Mamorimino]; em seguida, a simulação no Campo Binário (universo colegial), onde Harase-kun (Lyner) ensina a tímida e meiga Togasaki-san (Leila/Shurelia) a nadar na piscina, compartilhando momentos de ternura e o pacto dos 'motivos para viver plenamente' (ikigai); o envenenamento psicológico perpetrado por Lilura com seu bordão '-da' na barraca de picolés, inventando boatos vis sobre o hábito de Leila de dar as mãos; a emboscada do leão mecânico viral, momento em que o ciúme e a dúvida paralisam Lyner, impedindo a conexão mística e resultando no rapto estarrecedor de Togasaki por Claire para reprogramá-la como a temível 'Arma Letal'; e a irrupção heroica de Misha, que fustiga implacavelmente a covardia de Lyner e o conduz, após seu pedido humilde de perdão e redenção, rumo ao quartel-general da Facção Mir oculto sob o Parque com Vista pro Mar.",
+    "decisoes_terminologicas": {
+      "Guardião Mental": "心の護 (Mind Guardian, entidade arquetípica defensora da psique da Reyvateil)",
+      "Torre da Vida": "『いのちの塔』 (Tower of Life, conduto místico da rede psicossônica ligando as Cosmosferas à Ar tonelico)",
+      "Anel Mamorimino": "『まもりみの指輪』 (Mamorimino Ring, anel artefato entregue por Don Leon que monitora e quantifica a contaminação viral)",
+      "Singer Angel": "シンガーエンジェル (Singer Angel, persona heroica tokusatsu de Shurelia)",
+      "Poder dos Harmonics": "ハーモニクスパワー (Harmonics Power, energia mística ativada pela ressonância de almas e pelo toque das mãos)",
+      "Arma Letal": "リーサルウェポン (Lethal Weapon, a função primordial bélica de Shurelia desprovida de humanidade)",
+      "Facção Mir": "ミュール団 (Team Mir, organização antagônica colegial liderada por Claire na simulação binária)",
+      "Parque com Vista pro Mar": "海の見える公園 (Park Overlooking the Sea, topônimo costeiro do Campo Binário onde se oculta a base inimiga)"
+    },
+    "alertas_para_proximo_bloco": "Avanço imediato para a infiltração no esconderijo da Facção Mir sob o Parque com Vista pro Mar, o confronto decisivo contra Claire e ELMA, e a tentativa desesperada de impedir que a personalidade de Leila seja deletada e substituída pelo protocolo de destruição da Arma Letal."
+  },
+  "active_cast": {
+    "Shurelia": {
+      "id": 9,
+      "full_name": "Shurelia (Eoria)",
+      "gender": "feminino",
+      "role": "Administradora da Torre / Deusa de Elemia",
+      "voice_profile": "Nobre, etérea, graciosa, solene em sua função divina, mas surpreendentemente desajeitada, inocente e fofa em assuntos mundanos e cotidianos. Dicção refinada e serena.",
+      "laughter_and_vocalizations": "Riso suave e elegante ('Hehe', 'Fufu...'), timidez fofa ('Ah...', 'Isso é...'), determinação ('Sim!').",
+      "address_matrix": {
+        "Lyner": "Confiança límpida e serena ao convidá-lo para ser seu companheiro pelo mundo ('Sendo assim, Lyner... conto com você nessa jornada').",
+        "Radolf": "Tratamento divino gracioso aos seus devotos cavaleiros.",
+        "Mir": "Dor profunda pela tragédia da irmã de criação, compaixão e tristeza.",
+        "Leard": "Humildade divina e compaixão sincera, desculpando-se pelos transtornos causados e pedindo autorização com doçura tímida ('...Não... posso?')."
+      }
+    },
+    "Aurica": {
+      "id": 2,
+      "full_name": "Aurica Felchel",
+      "gender": "feminino",
+      "role": "Reyvateil da Igreja de Elemia",
+      "voice_profile": "Tímida, meiga, insegura, marcada pelo trauma do massacre de Skuwat. Dicção hesitante, delicada e dócil ('Eu...', 'Será que...'). Na Cosmosfera, revela desejos intensos e medo de rejeição.",
+      "laughter_and_vocalizations": "Risinho tímido ('Hehe...', 'Hihi'), hesitações ('Ah...', 'E-eu...'), choque contido ('Ai!', 'Oh...'). Sem rubricas descritivas.",
+      "address_matrix": {
+        "Lyner": "Devoção profunda e humilde, querendo ser útil a qualquer custo ('Eu quero fazer algo pelo Lyner. Nem que seja cozinhar ou lavar roupa pra você').",
+        "Misha": "Troca de farpas bem-humorada acusando Misha de ser uma megera controladora e disputando o braço de Lyner.",
+        "Claire": "Tratamento de irmã mais velha e confidente ('Claire').",
+        "Falss": "Respeito religioso cerimonioso ('Bispo Falss / o senhor').",
+        "Leard": "Respeito cerimonioso e temor reverente ('É-é uma honra conhecê-lo...')."
+      }
+    },
+    "Lyner": {
+      "id": 1,
+      "full_name": "Lyner Barsett",
+      "gender": "masculino",
+      "role": "Protagonista / Cavaleiro de Elemia",
+      "voice_profile": "Jovem idealista, impulsivo, corajoso, com grande compaixão e senso de justiça. Reage de forma transparente e emotiva. Fala em português oral culto e caloroso (você / te), sem afetações normativas em conversas casuais.",
+      "laughter_and_vocalizations": "Riso franco ('Haha!', 'Hahaha!'), alívio ('Uff...', 'Ah...'), choque ('Hã?!', 'O quê?!'). Sem rubricas (*suspiro*).",
+      "address_matrix": {
+        "Aurica": "Gratidão calorosa pelo apoio incondicional e pela oferta humilde de ajudar na busca do Metal Skuwat ('Obrigado, Aurica').",
+        "Misha": "Proteção fervorosa contra a desumanização ('Uma Reyvateil não é um objeto!'), acolhimento terno às suas fraquezas ('esses defeitinhos só mostram o quanto ela é cheia de vida') e respeito à sua linhagem como β-Pura.",
+        "Shurelia": "Honra e devoção solene ao aceitar acompanhá-la em sua jornada pelo mundo ('A honra é toda minha!').",
+        "Krusche": "Parceria descontraída e bem-humorada ('você / te'), tolerando o choque do orçamento estratosférico da nave.",
+        "Radolf": "Tratamento de camarada e superior respeitado ('você' com reverência militar ou 'o senhor' em missões solenes).",
+        "Jack": "Respeito sincero ao calejado veterano Teru, buscando conselhos de sobrevivência na travessia da Torre.",
+        "Leard": "Respeito filial firme, porém contestando vigorosamente a frieza e o tom intimidador do pai diante da vulnerabilidade das Reyvateils ('Pai!! Por que tem que intimidar a garota?!').",
+        "address_matrix": {
+          "Misha": "você / tratamento carinhoso e protetor de infância, com comentários bem-humorados sobre seus hábitos e magias peculiares",
+          "Aurica": "você / cumplicidade carinhosa, encorajando sua autoestima e lembrando com afeto de suas peripécias na Cosmosfera",
+          "Shurelia": "Senhora Shurelia / respeito reverente à administradora da Torre, com assombro diante do poder colossal de suas magias"
+        },
+        "Shurelia (Leila)": "Vínculo romântico e transcendente na Cosmosfera ('eu só queria... passar mais um minuto, mais um segundo que fosse ao lado da Leila...'), valorizando os sentimentos vivos e a memória do coração acima de réplicas digitais.",
+        "Ayano": "Respeito atônito com a aparição imponente da presidente corporativa ('A-a Senhora... Ayano?!')."
+      }
+    },
+    "Misha": {
+      "id": 3,
+      "full_name": "Misha Arsellec Lünn",
+      "gender": "feminino",
+      "role": "Reyvateil Origin / Amiga de Infância de Lyner",
+      "voice_profile": "Extrovertida, energética, provocativa, com espírito tsundere genuíno. Inteligente e conhecedora de tecnologia ancestral. Esconde dores e saudades profundas por trás de birras carinhosas.",
+      "laughter_and_vocalizations": "Riso provocativo ('Hehe!', 'Hihihi!'), bico emburrado ('Humpf!', 'Ora!'), indignação fofa ('Ei!', 'Como é que é?!').",
+      "address_matrix": {
+        "Lyner": "Fúria visceral e repreensão moral justa ('Seu idiota incompetente!! Por que você não segurou a mão dela?!'), exigindo compromisso heroico antes de aceitar sua ajuda no resgate.",
+        "Aurica": "Disputa cômica de ciúmes arremessando bombas em meio à paródia de Atelier Elie na Cosmosfera.",
+        "Krusche": "Indignação cômica diante das provocações sobre suas fobias e descoordenação motora ('Cala a bôôôca!').",
+        "Leard": "Respeito com afeto familiar de quem cresceu em Platina.",
+        "Jack": "Tratamento de infância provocativo ('Mano Harm-da! / Harm, seu pervertido!').",
+        "Claire": "Desafio frontal e impiedoso ('Se acha que consegue, por que não tenta a sorte?')."
+      }
+    }
+  },
+  "matched_terms": {
+    "Reyvateil": {
+      "pt": "Reyvateil",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Raça / Classe",
+      "note": "Donzelas cantoras capazes de sintonizar a Torre e converter canções em poder (Magia da Canção). Plural: Reyvateils."
+    },
+    "Somersault": {
+      "pt": "Mortal",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Combate / Habilidade",
+      "note": "Chute acrobático giratório para trás de Misha (JP さまそー). Tradução canônica: Mortal (em vez do equívoco 'Wakey' do inglês)."
+    },
+    "FFT Divider": {
+      "pt": "Divisor FFT",
+      "category": "Item / Síntese Grathmeld",
+      "note": "Componente alquímico avançado de transformação de sinal para fabricação de superitens bélicos, apelidado de 'O Início do Perigo' (JP FFTディバイダ)."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 8170,
+      "event_file": "Event/796.evd",
+      "speaker": "Reyvateil da Cosmosfera",
+      "speaker_id": 128,
+      "original_jp": "お前なぁ!!CRどうしてさっき澪羅にハーモニクスパワーを渡さなかった!どうして手を繋がなかった!",
+      "original_en": "It’s your fault! Why didn’t you power up her Harmonics earlier? You just had to hold her hand!",
+      "text_ptbr": "Seu idiota incompetente!!\nPor que você não transmitiu o Poder dos Harmonics pra Leila?!\nPor que você não segurou a mão dela?!"
+    },
+    {
+      "id": 8171,
+      "event_file": "Event/796.evd",
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "speaker_id": 132,
+      "original_jp": "...。",
+      "original_en": "......",
+      "text_ptbr": "......"
+    },
+    {
+      "id": 8172,
+      "event_file": "Event/796.evd",
+      "speaker": "Reyvateil da Cosmosfera",
+      "speaker_id": 128,
+      "original_jp": "...ちくしょう!",
+      "original_en": "...Damn.",
+      "text_ptbr": "...Que inferno!"
+    },
+    {
+      "id": 8173,
+      "event_file": "Event/796.evd",
+      "speaker": "Reyvateil da Cosmosfera",
+      "speaker_id": 128,
+      "original_jp": "今からミュール団の本部へ行く。CR澪羅を連れ戻しに...。",
+      "original_en": "I have to go to Team Mir’s headquarters to get Leila back...",
+      "text_ptbr": "Vou invadir o quartel-general da Facção Mir agora mesmo!\nEu vou trazer a Leila de volta..."
+    },
+    {
+      "id": 8174,
+      "event_file": "Event/796.evd",
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "speaker_id": 132,
+      "original_jp": "俺も行く!",
+      "original_en": "I’m going with you!",
+      "text_ptbr": "Eu vou com você!"
+    },
+    {
+      "id": 8175,
+      "event_file": "Event/796.evd",
+      "speaker": "Reyvateil da Cosmosfera",
+      "speaker_id": 128,
+      "original_jp": "澪羅を疑ったのに行くのか?CR他にも男がいるかもしれないと思ってる女を助けに行くのか?",
+      "original_en": "You doubted her, but now you want to come? You want to save a girl you can’t even trust?",
+      "text_ptbr": "Você duvidou da Leila e agora quer pagar de herói?!\nQuer bancar o salvador de uma garota que você achou\nque andava se engraçando com outros caras?!"
+    },
+    {
+      "id": 8176,
+      "event_file": "Event/796.evd",
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "speaker_id": 132,
+      "original_jp": "すまない...俺がバカだった。CR君に謝っても仕方ないけど...",
+      "original_en": "I’m sorry! I was stupid. But, it won’t do any good to apologize to you...",
+      "text_ptbr": "Me perdoa!... Eu fui um completo idiota!\nSei que não adianta nada pedir desculpas a você, mas..."
+    },
+    {
+      "id": 8177,
+      "event_file": "Event/796.evd",
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "speaker_id": 132,
+      "original_jp": "だからこそ、俺が行って助けたいんだ...。",
+      "original_en": "That’s why I have to help you save her...",
+      "text_ptbr": "...é justamente por isso que eu tenho que ir e salvá-la!"
+    },
+    {
+      "id": 8178,
+      "event_file": "Event/796.evd",
+      "speaker": "Reyvateil da Cosmosfera",
+      "speaker_id": 128,
+      "original_jp": "...。",
+      "original_en": "......",
+      "text_ptbr": "......"
+    },
+    {
+      "id": 8179,
+      "event_file": "Event/796.evd",
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "speaker_id": 132,
+      "original_jp": "頼む...!",
+      "original_en": "Please...!",
+      "text_ptbr": "Eu te imploro!..."
+    },
+    {
+      "id": 8180,
+      "event_file": "Event/796.evd",
+      "speaker": "Reyvateil da Cosmosfera",
+      "speaker_id": 128,
+      "original_jp": "...わかった。CRヤツらのアジトは、海の見える公園の下だ。森の中に入口がある。",
+      "original_en": "Alright. Their headquarters is right below the Park Overlooking the Sea. There’s an entrance through the forest.",
+      "text_ptbr": "...Está bem.\nO esconderijo delas fica bem debaixo do Parque com Vista pro Mar.\nTem uma entrada secreta no meio do bosque."
+    },
+    {
+      "id": 8181,
+      "event_file": "Event/796.evd",
+      "speaker": "Lyner (Voz Interior / Memória na Cosmosfera)",
+      "speaker_id": 132,
+      "original_jp": "よし、すぐ行こう!",
+      "original_en": "Alright, let’s go!",
+      "text_ptbr": "Certo! Vamos agora mesmo!"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 8182,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "遂にここまで来たか...CR呪われし種族たちよ。",
+      "original_en": "You’re finally here...cursed species.",
+      "current_ptbr": "Vocês finalmente estão aqui... espécie amaldiçoada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8183,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "自らを護るために争い続ける、臆病な種族よ。",
+      "original_en": "A cowardly species who only fight to protect themselves.",
+      "current_ptbr": "Uma espécie covarde que só luta para se proteger.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8184,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お前達の最期はもう、CRすぐそこまで来ている。",
+      "original_en": "Your time is at its end.",
+      "current_ptbr": "Seu tempo está chegando ao fim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8185,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "全世界に広がるガーディアン、そして絶えず生み出されるウイルス達。",
+      "original_en": "There are guardians all over the world, and new viruses continue to be born.",
+      "current_ptbr": "Existem guardiões por todo o mundo, e novos vírus continuam surgindo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8186,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "大いなる唯一神の下、彼らCR使徒達によってこの世界はCR初期化される。",
+      "original_en": "Under a single great god, our apostles will usher in a new world.",
+      "current_ptbr": "Sob um único grande deus, nossos apóstolos darão início a um novo mundo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8187,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "やめろ!そんな事!CR一体何をしようとCRしているんだ...!",
+      "original_en": "No! Stop! What do you think you’re doing?",
+      "current_ptbr": "Não! Pare! O que você acha que está fazendo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8188,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "争いのない世界、CR「レーヴァテリア」の創造。",
+      "original_en": "I’m creating the perfect world,CR”Reyvateilia.”",
+      "current_ptbr": "Estou criando o mundo perfeito, CR “Reyvateilia”.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8189,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "レーヴァテリア...だって?",
+      "original_en": "Reyvateilia?",
+      "current_ptbr": "Reyvateilia?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8190,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "レーヴァテイルだけの...CR平穏な世の中の創造。",
+      "original_en": "A peaceful world, inhabited only by Reyvateils.",
+      "current_ptbr": "Um mundo pacífico, habitado apenas por Reyvateils.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8191,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "その序章として、CR人類の根絶は必要不可欠。",
+      "original_en": "But, to create such a paradise, all Humans must be exterminated.",
+      "current_ptbr": "Mas, para criar tal paraíso, todos os humanos devem ser exterminados.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8192,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...どうして...",
+      "original_en": "Why?",
+      "current_ptbr": "Por quê?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8193,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "どうして人間を根絶やしにCRする必要があるんだよ...",
+      "original_en": "Why do you want to exterminate the Humans?",
+      "current_ptbr": "Por que você quer exterminar os humanos?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8194,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8195,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "平和な世界を創りたいってCR「想い」は、お前だけがCR持っているわけじゃない。",
+      "original_en": "You’re not the only one who wants to live in a peaceful world.",
+      "current_ptbr": "Você não é a única que quer viver em um mundo em paz.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8196,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺達だって...誰だってCR争いがない世界が良いにCR決まってるんだ!",
+      "original_en": "We...everyone wishes for a safer world!",
+      "current_ptbr": "Nós... todos desejamos um mundo mais seguro!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8197,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...なあ、ミュール...CRもうこれ以上、争うのはCRやめにしないか?",
+      "original_en": "Hey, Mir...why can’t we all stop fighting?",
+      "current_ptbr": "Ei, Mir... por que não podemos todos parar de brigar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8198,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "みんなお前の攻撃に怯えてる。苦しんでいるんだ。",
+      "original_en": "Everyone is scared of what you’ll do. Everyone is suffering.",
+      "current_ptbr": "Todo mundo está com medo do que você vai fazer. Todo mundo está sofrendo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8199,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8200,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺達も...お前も...CRもう傷つけ合うのは...CRこれで終わりにしようぜ。",
+      "original_en": "We...you...let’s stop the hurting. Let’s put an end to the battles.",
+      "current_ptbr": "Nós... você... vamos acabar com o sofrimento e pôr fim às batalhas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8201,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "争うのをやめる...だと...?",
+      "original_en": "You...want to stop fighting...?",
+      "current_ptbr": "Você... quer parar de lutar...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8202,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー・バルセルト...。CRそのような言葉、CR軽々しく口にするな!",
+      "original_en": "Lyner Barsett... Do you ever stop to think before you start rambling!?",
+      "current_ptbr": "Lyner Barsett... Você nunca para para pensar antes de começar a divagar!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8203,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ぐはぁぁっ!!",
+      "original_en": "Ugaahh!!",
+      "current_ptbr": "Ugaahh!!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8204,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナー!",
+      "original_en": "Lyner!",
+      "current_ptbr": "Lyner!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8205,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お前が何を知っている?CRお前にそれが出来るのか?",
+      "original_en": "You think we can just stop fighting? What do you know?",
+      "current_ptbr": "Você acha que podemos simplesmente parar de lutar? O que você sabe disso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8206,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "本当に争いのない世界をCR創れると思っているのか?",
+      "original_en": "Do you really believe that you can create a world without conflict?",
+      "current_ptbr": "Você realmente acredita que pode criar um mundo sem conflitos?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8207,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "その為に、いついかなる時も命を張る事ができるのか!?",
+      "original_en": "Are you willing to throw your life away!?",
+      "current_ptbr": "Você está disposto a jogar sua vida fora!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8208,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お前にそれだけのCR決意があるのか!!",
+      "original_en": "Are you really that determined!?",
+      "current_ptbr": "Você está mesmo tão determinado assim!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8209,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お前達にそれは不可能だ。CR過去の歴史がCRそれを証明している...。",
+      "original_en": "You aren’t capable of doing that. History has proven it, time and again...",
+      "current_ptbr": "Você não é capaz de fazer isso. A história já provou isso, repetidas vezes...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8210,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "何があろうとも、人に対する憎しみが...消える事はない!",
+      "original_en": "Nothing can quell my hatred of Humans!",
+      "current_ptbr": "Nada pode abafar meu ódio pelos humanos!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8211,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そうか...わかった。CRそれなら俺も容赦はしない...。",
+      "original_en": "...Okay then. I won’t go easy on you.",
+      "current_ptbr": "...Tudo bem, então. Não vou pegar leve com você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8212,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "この世界に住まう全てのCR「いのち」のため、お前をCRここで倒す!",
+      "original_en": "I must defeat you for the sake of every life in this world!",
+      "current_ptbr": "Preciso derrotá-la pelo bem de todas as vidas neste mundo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8213,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ!CR「FFTディバイダ」を!",
+      "original_en": "Aurica! The [FFT Divider]! ",
+      "current_ptbr": "Aurica! O [Divisor FFT]!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8214,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "うん!",
+      "original_en": "Okay!",
+      "current_ptbr": "Tudo bem!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8215,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "それは...!",
+      "original_en": "That’s...!",
+      "current_ptbr": "Isso é...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8216,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "お願い...これで...",
+      "original_en": "Please...take...this!",
+      "current_ptbr": "Por favor... aceite... isto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8217,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "えーいっ!!",
+      "original_en": "Ha!",
+      "current_ptbr": "Ha!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8218,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "なにっ!?",
+      "original_en": "What!?",
+      "current_ptbr": "O quê!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8219,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...え!?CRそ...そんな...",
+      "original_en": "...Huh? It...can’t...",
+      "current_ptbr": "...Hã? Isso... não pode...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8220,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "くっ...危なかったわ...。CRまさか「それ」を見つけCR出してくるとは...。",
+      "original_en": "That was close... I didn’t expect you to find that...",
+      "current_ptbr": "Foi por pouco... Não esperava que você descobrisse isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8221,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "でも、そう簡単にCR通すものか...。",
+      "original_en": "But, you can’t stop me that easily...",
+      "current_ptbr": "Mas vocês não vão conseguir me impedir tão facilmente...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8222,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ダメだ...。まずはCRガーディアンを倒さないと...",
+      "original_en": "No! We have to defeat the guardian first.",
+      "current_ptbr": "Não! Temos que derrotar o guardião primeiro.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8223,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ、まずは攻撃だ。CRシュレリア様以外をCR全部倒すぞ!",
+      "original_en": "Aurica, we have to attack first! But we have to beat it without hurting Lady Shurelia!",
+      "current_ptbr": "Aurica, temos que atacar primeiro! Mas temos que derrotá-lo sem machucar a Senhora Shurelia!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8224,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "わかった!",
+      "original_en": "Okay!",
+      "current_ptbr": "Tudo bem!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8225,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "よし!これで終わりだ!CRオリカ、頼むぜ!",
+      "original_en": "This should work! Aurica, I’m counting on you!",
+      "current_ptbr": "Isso deve funcionar! Aurica, estou contando com você!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8226,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺達で...この世界を...",
+      "original_en": "We...will...protect...",
+      "current_ptbr": "Nós... vamos... proteger...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8227,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "この世界を...CR護るんだから!!",
+      "original_en": "We will protect this world!",
+      "current_ptbr": "Vamos proteger este mundo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8228,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "何度やっても無駄よ!",
+      "original_en": "It’s no use!",
+      "current_ptbr": "Não adianta nada!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8229,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "あたし達の想い...通じて...",
+      "original_en": "Please work...",
+      "current_ptbr": "Por favor, que dê certo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8230,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "えぇぇいっ!!",
+      "original_en": "Haa!",
+      "current_ptbr": "Haa!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8231,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "くっ!...CRし、しまった...CR身体が...!!",
+      "original_en": "Damn this body...!",
+      "current_ptbr": "Maldito seja este corpo...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8232,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "お願い!!",
+      "original_en": "Please!",
+      "current_ptbr": "Por favor!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8233,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュール!CRシュレリア様から離れろぉ!",
+      "original_en": "Mir! Get out of Lady Shurelia!",
+      "current_ptbr": "Mir! Saia da Senhora Shurelia!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8234,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "いやぁぁぁぁ!!!",
+      "original_en": "Noooo!",
+      "current_ptbr": "Nãoooo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8235,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様!!",
+      "original_en": "Lady Shurelia!",
+      "current_ptbr": "Lady Shurelia!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8236,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。CR...ライナー...?CR...どうして...ここに...",
+      "original_en": "...Lyner? Why are you here...?",
+      "current_ptbr": "...Lyner? Por que você está aqui...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8237,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様!CRよかった...CR元に戻ったんだ...!",
+      "original_en": "Lady Shurelia! You’re back!",
+      "current_ptbr": "Lady Shurelia! Você voltou!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8238,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュールが分離したんだ!CRやったぞ、オリカ!!",
+      "original_en": "Mir was forced out! We did it, Aurica!",
+      "current_ptbr": "Mir foi expulsa! Conseguimos, Aurica!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8239,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "うん...CRやったね!ライナー...!CRあたしたち...",
+      "original_en": "Yes! We did! Oh, we’re finally...",
+      "current_ptbr": "Sim! Conseguimos! Ah, finalmente estamos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8240,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "...おの...れ...ニンゲン...",
+      "original_en": "Ngh! Humans...",
+      "current_ptbr": "Ngh! Humanos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8241,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "根絶やし...に...CRこの...世界ごと...CR根絶やしに...",
+      "original_en": "I will exterminate...the whole world...",
+      "current_ptbr": "Vou exterminar... o mundo inteiro...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8242,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュール...ついに正体をCR現しやがったな!",
+      "original_en": "Mir...so, you finally show your true self!",
+      "current_ptbr": "Mir... então, você finalmente mostra quem você realmente é!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8243,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ミュール...!CRうぐっ...",
+      "original_en": "Mir...! Urgh...",
+      "current_ptbr": "Mir...! Urgh...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8244,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様!CRまだ無理はしないでください。ミュールは俺が倒します!",
+      "original_en": "Lady Shurelia! Take it easy. I’ll defeat Mir!",
+      "current_ptbr": "Lady Shurelia! Fique tranquila. Eu vou derrotar a Mir!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8245,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "しかし...",
+      "original_en": "But...",
+      "current_ptbr": "Mas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8246,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "大丈夫ですよ。CRだって俺には...",
+      "original_en": "Don’t worry. I can do this, because I have...",
+      "current_ptbr": "Não se preocupe. Eu consigo fazer isso, porque tenho...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8247,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカやみんながついてる。",
+      "original_en": "...Aurica and everyone else...",
+      "current_ptbr": "...Aurica e todos os outros...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8248,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そして、ここに来るまでにも、世界中の人達が、俺に力をCRくれた。",
+      "original_en": "And I have the power and the spirit of the people all around the world.",
+      "current_ptbr": "E tenho o poder e o espírito das pessoas de todo o mundo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8249,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "この世界を護りたい...というみんなの想いが、俺達をCRここまで連れてきたんだ。",
+      "original_en": "The will of the people got us up here.",
+      "current_ptbr": "Foi a vontade do povo que nos trouxe até aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8250,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "だから!CR絶対に負けない!",
+      "original_en": "So, there’s no way we’ll be defeated!",
+      "current_ptbr": "Então, não há como sermos derrotados!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8251,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ...。CRこんなバカに最後までCRつき合ってくれてありがとな。",
+      "original_en": "Aurica...thank you for sticking with a fool like me all the way to the end.",
+      "current_ptbr": "Aurica... obrigado por ter ficado ao lado de um tolo como eu até o fim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8252,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺が今ここにいられるのは、オリカのお陰だ。",
+      "original_en": "I’m only here now because of you.",
+      "current_ptbr": "Só estou aqui agora por sua causa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8253,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナー...",
+      "original_en": "Lyner...",
+      "current_ptbr": "Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8254,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "頼りにしてるぜ!",
+      "original_en": "I’m counting on you!",
+      "current_ptbr": "Estou contando com você!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8255,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...任せておいて!",
+      "original_en": "...You bet!",
+      "current_ptbr": "...Pode apostar!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8256,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "みんな...これで最後だ。CRよろしく頼むぜ!",
+      "original_en": "Okay, everyone...this should be our final battle. I’m counting on all of you!",
+      "current_ptbr": "Muito bem, pessoal... essa deve ser nossa batalha final. Estou contando com todos vocês!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8257,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "終わった...。CRこれで...世界は...",
+      "original_en": "It’s over... The world is...",
+      "current_ptbr": "Acabou... O mundo está...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8258,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...救われたんだね!",
+      "original_en": "...It’s saved!",
+      "current_ptbr": "...Está salvo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8259,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "うわぁっ!",
+      "original_en": "Whoa!",
+      "current_ptbr": "Uau!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8260,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "きゃあっ!!",
+      "original_en": "Oh!",
+      "current_ptbr": "Oh!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8261,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "くっ!!",
+      "original_en": "Ugh!",
+      "current_ptbr": "Ugh!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8262,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "私は...少しニンゲンを...CR甘く見すぎたようね...",
+      "original_en": "I...underestimated...the Humans...",
+      "current_ptbr": "Eu... subestimei... os humanos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8263,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "もう...手加減は...しない...CRこの世界を...",
+      "original_en": "I won’t take it easy...on this world...anymore...",
+      "current_ptbr": "Não vou mais... dar mole... com este mundo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8264,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "この世界を...初期化する!!",
+      "original_en": "I will...create...a new world!",
+      "current_ptbr": "Vou... criar... um novo mundo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8265,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュール...!?CR...不死身...なのか!?",
+      "original_en": "Mir...? Is it...immortal?",
+      "current_ptbr": "Mir...? Será que é... imortal?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8266,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "私は...死なない...CRなぜなら...私は塔...CR塔は私...",
+      "original_en": "I...cannot die...because...I am...the Tower!",
+      "current_ptbr": "Eu... não posso morrer... porque... eu sou... a Torre!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8267,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "塔が...生き続ける限り...CR私は...生き続けるのだから...",
+      "original_en": "And as long as...the Tower lives...then I shall live...",
+      "current_ptbr": "E enquanto... a Torre existir... eu também viverei...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8268,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...なに...!?",
+      "original_en": "What!?",
+      "current_ptbr": "O quê!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8269,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そんな...それじゃ...CR俺達は...",
+      "original_en": "Then...we...",
+      "current_ptbr": "Então... nós...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8270,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8271,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...大丈夫。CRそんなに怖がらないで...",
+      "original_en": "Lyner, it’s alright. Don’t be scared...",
+      "current_ptbr": "Lyner, está tudo bem. Não tenha medo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8272,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "私がここにいます。CRこの塔の管理者は私...",
+      "original_en": "I am here. And I am the administrator of the Tower...",
+      "current_ptbr": "Estou aqui. E sou a administradora da Torre...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8273,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...。CR貴方は...CRこの世界が好きですか?",
+      "original_en": "Lyner, do you like this world?",
+      "current_ptbr": "Lyner, você gosta deste mundo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8274,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...はい。",
+      "original_en": "...Yes.",
+      "current_ptbr": "...Sim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8275,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "そう...よかった。",
+      "original_en": "I’m glad to hear that.",
+      "current_ptbr": "Fico feliz em ouvir isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8276,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "貴方はたくさんの旅をして、色々な人の想いを受け取ってきました。",
+      "original_en": "You’ve traveled the world and met many different people.",
+      "current_ptbr": "Você viajou pelo mundo e conheceu muitas pessoas diferentes.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8277,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "その想いは貴方を豊かにし...それは、この世界に新たなCR風を生む源になります。",
+      "original_en": "Your spirit was strengthened by your experiences...and it will fuel a brand new world.",
+      "current_ptbr": "Seu espírito foi fortalecido por suas experiências... e isso dará força a um mundo totalmente novo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8278,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナーなら必ず、この地を大切に...大切に、育み...CR豊かな世界を紡ぎ出せます。",
+      "original_en": "I’m confident that you’ll nurture this land...and raise a beautiful world.",
+      "current_ptbr": "Tenho certeza de que você cuidará desta terra... e construirá um mundo maravilhoso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8279,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア...様?",
+      "original_en": "Lady Shurelia...",
+      "current_ptbr": "Lady Shurelia...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8280,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...。CR本当に立派に成長しましたね。",
+      "original_en": "Lyner...you grew up to be a great man.",
+      "current_ptbr": "Lyner... você cresceu e se tornou um grande homem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8281,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "私の想いの全て...CRライナーに託します。",
+      "original_en": "I’ll leave you with all of my hopes for the future...",
+      "current_ptbr": "Vou deixar para vocês todas as minhas esperanças para o futuro...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8282,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...詩...?",
+      "original_en": "...A Song?",
+      "current_ptbr": "...Uma música?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8283,
+      "event_file": "Event/410.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...強さと儚さ...CR痛いくらい...感じる...",
+      "original_en": "Strength, and vanity...I can feel them both...",
+      "current_ptbr": "Força e vaidade... Consigo sentir as duas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8284,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "この詩は...CR...サスペンド!",
+      "original_en": "This Song is...Suspend!",
+      "current_ptbr": "Essa música é... Suspend!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8285,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "そんな...信じられない...CRこの詩を謳えば、アナタもCR一緒に消えてしまうのよ!",
+      "original_en": "I don’t believe it... Singing this song means that you will disappear as well!",
+      "current_ptbr": "Não acredito nisso... Cantar essa música significa que você também vai desaparecer!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8286,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...シュレリア様!CRそんな!!",
+      "original_en": "...Lady Shurelia! No!",
+      "current_ptbr": "...Senhora Shurelia! Não!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8287,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "覚悟の上です。CRそれでも私は...この世界を...",
+      "original_en": "I know what I’m doing...I want to...",
+      "current_ptbr": "Eu sei o que estou fazendo... Eu quero...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8288,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "この世界を...救いたいの!!",
+      "original_en": "I want to...save the world!",
+      "current_ptbr": "Quero... salvar o mundo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8289,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャ!CR「FFTディバイダ」を!",
+      "original_en": "Misha! The [FFT Divider]! ",
+      "current_ptbr": "Misha! O [Divisor FFT]!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8290,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ええ!",
+      "original_en": "Okay!",
+      "current_ptbr": "Tudo bem!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8291,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "それは...!",
+      "original_en": "That’s...!",
+      "current_ptbr": "Isso é...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8292,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "お願い...これで...",
+      "original_en": "Take this!",
+      "current_ptbr": "Tome isso!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8293,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "やぁっ!!",
+      "original_en": "Ha!",
+      "current_ptbr": "Ha!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8294,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "なにっ!?",
+      "original_en": "What!?",
+      "current_ptbr": "O quê!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8295,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...え!?CRそ...そんな...",
+      "original_en": "...Huh? It...can’t...",
+      "current_ptbr": "...Hã? Isso... não pode...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8296,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "くっ...危なかったわ...。CRまさか「それ」を見つけCR出してくるとは...。",
+      "original_en": "That was close... I didn’t expect you to find that...",
+      "current_ptbr": "Foi por pouco... Não esperava que você descobrisse isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8297,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "でも、そう簡単にCR通すものか...。",
+      "original_en": "But, you can’t stop me that easily...",
+      "current_ptbr": "Mas você não vai conseguir me impedir tão facilmente...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8298,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ダメだ...。まずはCRガーディアンを倒さないと...",
+      "original_en": "No! We have to defeat the guardian first.",
+      "current_ptbr": "Não! Temos que derrotar o guardião primeiro.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8299,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャ、まずは攻撃だ。CRシュレリア様以外をCR全部倒すぞ!",
+      "original_en": "Misha, we have to attack first! But we have to beat it without hurting Lady Shurelia!",
+      "current_ptbr": "Misha, temos que atacar primeiro! Mas precisamos derrotá-lo sem machucar a Senhora Shurelia!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8300,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "はい!",
+      "original_en": "Gotcha!",
+      "current_ptbr": "Pode deixar!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8301,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "よし!これで終わりだ!CRミシャ、頼むぜ!",
+      "original_en": "This should work! Misha, I’m counting on you!",
+      "current_ptbr": "Isso deve funcionar! Misha, estou contando com você!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8302,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺達で...この世界を...",
+      "original_en": "We...will...protect...",
+      "current_ptbr": "Nós... vamos... proteger...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8303,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "この世界を...CR護るんだから!!",
+      "original_en": "We will protect this world!",
+      "current_ptbr": "Vamos proteger este mundo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8304,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "何度やっても無駄よ!",
+      "original_en": "It’s no use!",
+      "current_ptbr": "Não adianta nada!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8305,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "私達の想い...通じて...",
+      "original_en": "Please work...",
+      "current_ptbr": "Por favor, funcione...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8306,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "えぇぇいっ!!",
+      "original_en": "Haa!",
+      "current_ptbr": "Haa!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8307,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "くっ!...CRし、しまった...CR身体が...!!",
+      "original_en": "Damn this body...!",
+      "current_ptbr": "Maldito seja este corpo...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8308,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "お願い!!",
+      "original_en": "Please!",
+      "current_ptbr": "Por favor!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8309,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュール!CRシュレリア様から離れろぉ!",
+      "original_en": "Mir! Get out of Lady Shurelia!",
+      "current_ptbr": "Mir! Saia da Senhora Shurelia!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8310,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "いやぁぁぁぁ!!!",
+      "original_en": "Noooo!",
+      "current_ptbr": "Nãoooo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8311,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様!!",
+      "original_en": "Lady Shurelia!",
+      "current_ptbr": "Lady Shurelia!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8312,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。CR...ライナー...?CR...どうして...ここに...",
+      "original_en": "...Lyner? Why are you here...?",
+      "current_ptbr": "...Lyner? Por que você está aqui...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8313,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様!CRよかった...CR元に戻ったんだ...!",
+      "original_en": "Lady Shurelia! You’re back!",
+      "current_ptbr": "Lady Shurelia! Você voltou!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8314,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュールが分離したんだ!CRやったぞ、ミシャ!!",
+      "original_en": "Mir was forced out! We did it, Misha!",
+      "current_ptbr": "Mir foi expulsa! Conseguimos, Misha!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8315,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ええ...CRライナー...私たち...",
+      "original_en": "Yes! We did! We’re finally...",
+      "current_ptbr": "Sim! Conseguimos! Finalmente estamos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8316,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "...おの...れ...ニンゲン...",
+      "original_en": "Ngh! Humans...",
+      "current_ptbr": "Ngh! Humanos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8317,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "根絶やし...に...CRこの...世界ごと...CR根絶やしに...",
+      "original_en": "I will exterminate...the whole world...",
+      "current_ptbr": "Vou exterminar... o mundo inteiro...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8318,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュール...ついに正体をCR現しやがったな!",
+      "original_en": "Mir...so, you finally show your true self!",
+      "current_ptbr": "Mir... então, você finalmente mostra quem você realmente é!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8319,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ミュール...!CRうぐっ...",
+      "original_en": "Mir...! Urgh...",
+      "current_ptbr": "Mir...! Urgh...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8320,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア様!CRまだ無理はしないでください。ミュールは俺が倒します!",
+      "original_en": "Lady Shurelia! Take it easy. I’ll defeat Mir!",
+      "current_ptbr": "Lady Shurelia! Calma. Eu vou derrotar a Mir!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8321,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "しかし...",
+      "original_en": "But...",
+      "current_ptbr": "Mas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8322,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "大丈夫ですよ。CRだって俺には...",
+      "original_en": "Don’t worry. I can do this, because I have...",
+      "current_ptbr": "Não se preocupe. Eu consigo fazer isso, porque tenho...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8323,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャやみんながついてる。",
+      "original_en": "...Misha and everyone else...",
+      "current_ptbr": "...Misha e todos os outros...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8324,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そして、ここに来るまでにも、世界中の人達が、俺に力をCRくれた。",
+      "original_en": "And I have the power and the spirit of the people all around the world.",
+      "current_ptbr": "E tenho o poder e o espírito das pessoas de todo o mundo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8325,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "この世界を護りたい...というみんなの想いが、俺達をCRここまで連れてきたんだ。",
+      "original_en": "The will of the people got us up here.",
+      "current_ptbr": "Foi a vontade do povo que nos trouxe até aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8326,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "だから!CR絶対に負けない!",
+      "original_en": "So, there’s no way we’ll be defeated!",
+      "current_ptbr": "Então, não há como sermos derrotados!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8327,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャ...。CRこんなバカに最後までCRつき合ってくれてありがとな。",
+      "original_en": "Misha...thank you for sticking with a fool like me all the way to the end.",
+      "current_ptbr": "Misha... obrigado por ficar ao lado de um tolo como eu até o fim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8328,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺が今ここにいられるのは、ミシャのお陰だ。",
+      "original_en": "I’m only here now because of you.",
+      "current_ptbr": "Só estou aqui agora por sua causa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8329,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ライナー...",
+      "original_en": "Lyner...",
+      "current_ptbr": "Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8330,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "頼りにしてるぜ!",
+      "original_en": "I’m counting on you!",
+      "current_ptbr": "Estou contando com você!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8331,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...任せておいて!",
+      "original_en": "No problem!",
+      "current_ptbr": "Sem problema!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8332,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "みんな...これで最後だ。CRよろしく頼むぜ!",
+      "original_en": "Okay, everyone...this should be our final battle. I’m counting on all of you!",
+      "current_ptbr": "Muito bem, pessoal... essa deve ser nossa batalha final. Estou contando com todos vocês!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8333,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "終わった...。CRこれで...世界は...",
+      "original_en": "It’s over... The world is...",
+      "current_ptbr": "Acabou... O mundo está...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8334,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...救われたのね!",
+      "original_en": "...It’s saved!",
+      "current_ptbr": "...Está salvo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8335,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "うわぁっ!",
+      "original_en": "Whoa!",
+      "current_ptbr": "Uau!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8336,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "きゃっ!!",
+      "original_en": "Oh!",
+      "current_ptbr": "Oh!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8337,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "くっ!!",
+      "original_en": "Ugh!",
+      "current_ptbr": "Ugh!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8338,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "私は...少しニンゲンを...CR甘く見すぎたようね...",
+      "original_en": "I...underestimated...the Humans...",
+      "current_ptbr": "Eu... subestimei... os humanos...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8339,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "もう...手加減は...しない...CRこの世界を...",
+      "original_en": "I won’t take it easy...on this world...anymore...",
+      "current_ptbr": "Não vou mais... pegar leve... com este mundo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8340,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "この世界を...初期化する!!",
+      "original_en": "I will...create...a new world!",
+      "current_ptbr": "Vou... criar... um novo mundo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8341,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミュール...!?CR...不死身...なのか!?",
+      "original_en": "Mir...? Is it...immortal?",
+      "current_ptbr": "Mir...? Será que é... imortal?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8342,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "私は...死なない...CRなぜなら...私は塔...CR塔は私...",
+      "original_en": "I...cannot die...because...I am...the Tower!",
+      "current_ptbr": "Eu... não posso morrer... porque... eu sou... a Torre!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8343,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "塔が...生き続ける限り...CR私は...生き続けるのだから...",
+      "original_en": "And as long as...the Tower lives...then I shall live...",
+      "current_ptbr": "E enquanto... a Torre existir... então eu viverei...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8344,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...なに...!?",
+      "original_en": "What!?",
+      "current_ptbr": "O quê!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8345,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そんな...それじゃ...CR俺達は...",
+      "original_en": "Then...we...",
+      "current_ptbr": "Então... nós...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8346,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8347,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...大丈夫。CRそんなに怖がらないで...",
+      "original_en": "Lyner, it’s alright. Don’t be scared...",
+      "current_ptbr": "Lyner, está tudo bem. Não tenha medo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8348,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "私がここにいます。CRこの塔の管理者は私...",
+      "original_en": "I am here. And I am the administrator of the Tower...",
+      "current_ptbr": "Estou aqui. E sou a administradora da Torre...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8349,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...。CR貴方は...CRこの世界が好きですか?",
+      "original_en": "Lyner, do you like this world?",
+      "current_ptbr": "Lyner, você gosta deste mundo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8350,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...はい。",
+      "original_en": "...Yes.",
+      "current_ptbr": "...Sim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8351,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "そう...よかった。",
+      "original_en": "I’m glad to hear that.",
+      "current_ptbr": "Fico feliz em ouvir isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8352,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "貴方はたくさんの旅をして、色々な人の想いを受け取ってきました。",
+      "original_en": "You’ve traveled the world and met many different people.",
+      "current_ptbr": "Você viajou pelo mundo e conheceu muitas pessoas diferentes.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8353,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "その想いは貴方を豊かにし...それは、この世界に新たなCR風を生む源になります。",
+      "original_en": "Your spirit was strengthened by your experiences...and it will fuel a brand new world.",
+      "current_ptbr": "Seu espírito foi fortalecido por suas experiências... e isso dará força a um mundo totalmente novo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8354,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナーなら必ず、この地を大切に...大切に、育み...CR豊かな世界を紡ぎ出せます。",
+      "original_en": "I’m confident that you’ll nurture this land...",
+      "current_ptbr": "Tenho certeza de que você cuidará bem desta terra...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8355,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "シュレリア...様?",
+      "original_en": "Lady Shurelia...",
+      "current_ptbr": "Lady Shurelia...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8356,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー...。CR本当に立派に成長しましたね。",
+      "original_en": "Lyner...you grew up to be a great man.",
+      "current_ptbr": "Lyner... você cresceu e se tornou um grande homem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8357,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "私の想いの全て...CRライナーに託します。",
+      "original_en": "I’ll share all my feelings with you...",
+      "current_ptbr": "Vou compartilhar todos os meus sentimentos com você...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8358,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...詩...?",
+      "original_en": "...A Song?",
+      "current_ptbr": "...Uma música?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8359,
+      "event_file": "Event/410.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...強さと儚さ...CR痛いくらい...感じる...",
+      "original_en": "I feel...it is strong...yet fragile.",
+      "current_ptbr": "Sinto... que é forte... mas frágil.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8360,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "この詩は...CR...サスペンド!",
+      "original_en": "This Song is...Suspend!",
+      "current_ptbr": "Essa música é... Suspend!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8361,
+      "event_file": "Event/410.evd",
+      "speaker_id": 74,
+      "speaker": "Personagem [74]",
+      "original_jp": "そんな...信じられない...CRこの詩を謳えば、アナタもCR一緒に消えてしまうのよ!",
+      "original_en": "I don’t believe it... Singing this song means that you will disappear as well!",
+      "current_ptbr": "Não acredito nisso... Cantar essa música significa que você também vai desaparecer!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8362,
+      "event_file": "Event/410.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...シュレリア様!CRそんな!!",
+      "original_en": "...Lady Shurelia! No!",
+      "current_ptbr": "...Senhora Shurelia! Não!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8363,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "覚悟の上です。CRそれでも私は...この世界を...",
+      "original_en": "I know what I’m doing...I want to...",
+      "current_ptbr": "Eu sei o que estou fazendo... Eu quero...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 8364,
+      "event_file": "Event/410.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "この世界を...救いたいの!!",
+      "original_en": "I want to...save the world!",
+      "current_ptbr": "Quero... salvar o mundo!",
+      "review_status": "unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,3326 @@
+{
+  "block_id": "BLK_EVD_021",
+  "axis_id": "AXIS_3",
+  "axis_name": "3_HISTORIA_E_EVENTOS",
+  "category": "Event Dialogue",
+  "line_count": 296,
+  "id_range": [
+    5277,
+    5572
+  ],
+  "scene_handoff_received": {
+    "resumo_dramatico": "Síntese lúdica do coelho letal [Solid Bunny] com Shurelia no Grathmeld; revelação da projeção incorpórea de Hama em Tastiera e chegada ao altar da Crônica Crescente; aula técnica de Shurelia sobre o Olho Congelado ([Ponto de Equilíbrio de Ardelburg]) e refluxo de energia sinfônica; confissão de Aurica em Skuwat; despertar de Mir e pacto incondicional do grupo em apoiar a busca de Lyner pelo carma de Ayatane; Jack e o guia secreto da Tenba comprado de Spica rumo ao Centro de Pesquisas; juramento de infância com Misha no Stonehenge da Cosmosfera; reunião militar em Platina com Radolf e Leard sobre os arquivos secretos de Falss e busca por [Re_Nation]; simulação de realidade virtual retro com Shurelia; criação de [Tiro Trovão] com Misha e [Slasher] com o Coelho do Relógio; entrada no perturbador Nível 8 de Aurica.",
+    "decisoes_terminologicas": {
+      "Solid Bunny": "[Solid Bunny] (item letal com voz de coelho fofo criado por Shurelia via Grathmeld)",
+      "Frozen Eye": "Olho Congelado / [Ponto de Equilíbrio de Ardelburg] (sistema de contenção via semicondutor [Elemento Ardel])",
+      "Thunder Shot": "Magia Verde [Tiro Trovão] (雷弾) tecida na Cosmosfera de Misha, usada também para curtos-circuitos",
+      "Watch Rabbit": "Coelho do Relógio (時計ウサギ, personificação de Alice no País das Maravilhas corrigida do decalque literal; concede a Magia Azul [Slasher])",
+      "Re_Nation": "[Re_Nation] (canção/cristal sagrado investigado nos arquivos secretos de Falss)"
+    },
+    "alertas_para_proximo_bloco": "Atenção ao Nível 8 da Cosmosfera de Aurica (atmosfera opressiva e caótica) e aos desdobramentos da infiltração no Centro de Pesquisas da Tenba e da investigação de Ayatane."
+  },
+  "active_cast": {
+    "Jack": {
+      "id": 4,
+      "full_name": "Jack Hamilton",
+      "gender": "masculino",
+      "role": "Mercenário Teru / Veterano de Guerra",
+      "voice_profile": "Despojado, cínico, experiente, fala arrastada de pistoleiro calejado. Esconde um senso moral afiado sob a pose de quem só trabalha por dinheiro.",
+      "laughter_and_vocalizations": "Risinho sarcástico ('Hehehe...', 'Humpf'), desdém ('Tsc... que saco'), aviso ('Fica esperto').",
+      "address_matrix": {
+        "Lyner": "Chama de 'garoto' ou 'Lyner', dando conselhos de sobrevivência cínicos mas valiosos.",
+        "Krusche": "Parceria profissional sem rodeios.",
+        "Radolf": "Respeito irônico à retidão do cavaleiro."
+      }
+    },
+    "Aurica": {
+      "id": 2,
+      "full_name": "Aurica Felchel",
+      "gender": "feminino",
+      "role": "Reyvateil da Igreja de Elemia",
+      "voice_profile": "Tímida, meiga, insegura, marcada pelo trauma do massacre de Skuwat. Dicção hesitante, delicada e dócil ('Eu...', 'Será que...'). Na Cosmosfera, revela desejos intensos e medo de rejeição.",
+      "laughter_and_vocalizations": "Risinho tímido ('Hehe...', 'Hihi'), hesitações ('Ah...', 'E-eu...'), choque contido ('Ai!', 'Oh...'). Sem rubricas descritivas.",
+      "address_matrix": {
+        "Lyner": "Tratamento de profunda admiração e carinho tímido ('você / te', sempre chamando por 'Lyner...'). Vê nele seu herói protetor.",
+        "Misha": "Rivalidade doce e receio velado por ciúmes de Lyner, com respeito mútuo como Reyvateil.",
+        "Claire": "Tratamento de irmã mais velha e confidente ('Claire').",
+        "Falss": "Respeito religioso cerimonioso ('Bispo Falss / o senhor')."
+      }
+    },
+    "Radolf": {
+      "id": 6,
+      "full_name": "Radolf Schnaider",
+      "gender": "masculino",
+      "role": "Comandante dos Cavaleiros de Elemia",
+      "voice_profile": "Nobre, digno, virtuoso, estóico. Cavalheiro militar devotado à proteção dos inocentes e à fé de Elemia. Dicção sóbria, formal e firme.",
+      "laughter_and_vocalizations": "Sorriso contido ('Humpf, de fato'), solenidade militar ('Entendido!', 'Avante!').",
+      "address_matrix": {
+        "Lyner": "Tratamento de camarada de armas e jovem promissor ('Lyner', 'você').",
+        "Shurelia": "Devoção absoluta e respeito religioso máximo ('Senhora Shurelia / Vossa Graça').",
+        "Krusche": "Paciência e respeito cordial, mesmo sob as provocações dela."
+      }
+    },
+    "Don_Leon": {
+      "id": 53,
+      "full_name": "Don Leon (Donsuke)",
+      "gender": "masculino",
+      "role": "Guardião da Cosmosfera de Aurica",
+      "voice_profile": "Samurai em miniatura / boneco de pelúcia com pose épica e grandiloquente caricata ('sessha' no japonês). Fala solene e teatralmente arcaica em contraste com sua aparência fofa.",
+      "laughter_and_vocalizations": "Gargalhada solene ('Gwahahaha!', 'Humpf!').",
+      "address_matrix": {
+        "Lyner": "Trata Lyner com desafio e lealdade ('Jovem cavaleiro!', 'Lyner-dono').",
+        "Aurica": "Devoção absoluta à sua mestra e criadora ('Senhorita Aurica')."
+      }
+    },
+    "Lyner": {
+      "id": 1,
+      "full_name": "Lyner Barsett",
+      "gender": "masculino",
+      "role": "Protagonista / Cavaleiro de Elemia",
+      "voice_profile": "Jovem idealista, impulsivo, corajoso, com grande compaixão e senso de justiça. Reage de forma transparente e emotiva. Fala em português oral culto e caloroso (você / te), sem afetações normativas em conversas casuais.",
+      "laughter_and_vocalizations": "Riso franco ('Haha!', 'Hahaha!'), alívio ('Uff...', 'Ah...'), choque ('Hã?!', 'O quê?!'). Sem rubricas (*suspiro*).",
+      "address_matrix": {
+        "Aurica": "Tratamento carinhoso, protetor e cavalheiro ('você / te'). Respeita suas hesitações e encoraja sua autoconfiança.",
+        "Misha": "Tratamento de amizade de infância íntima ('você / te'). Troca provocações bem-humoradas, reage com surpresa aos ciúmes dela.",
+        "Shurelia": "Tratamento inicialmente cerimonioso e reverente ('a senhora / Senhora Shurelia'), evoluindo para ternura íntima e proteção.",
+        "Krusche": "Tratamento direto, despojado e cúmplice ('você / te'). Tolera e revida o sarcasmo dela com bom humor.",
+        "Radolf": "Tratamento de camarada e superior respeitado ('você' com reverência militar ou 'o senhor' em missões solenes).",
+        "Jack": "Tratamento descontraído, tolerante ao cinismo do mercenário ('você / te').",
+        "Leard": "Tratamento filial de profundo respeito ('o senhor / pai'). Acata suas ordens mesmo quando discorda do método.",
+        "address_matrix": {
+          "Misha": "você / tratamento carinhoso e protetor de infância, com comentários bem-humorados sobre seus hábitos e magias peculiares",
+          "Aurica": "você / cumplicidade carinhosa, encorajando sua autoestima e lembrando com afeto de suas peripécias na Cosmosfera",
+          "Shurelia": "Senhora Shurelia / respeito reverente à administradora da Torre, com assombro diante do poder colossal de suas magias"
+        }
+      }
+    },
+    "Misha": {
+      "id": 3,
+      "full_name": "Misha Arsellec Lünn",
+      "gender": "feminino",
+      "role": "Reyvateil Origin / Amiga de Infância de Lyner",
+      "voice_profile": "Extrovertida, energética, provocativa, com espírito tsundere genuíno. Inteligente e conhecedora de tecnologia ancestral. Esconde dores e saudades profundas por trás de birras carinhosas.",
+      "laughter_and_vocalizations": "Riso provocativo ('Hehe!', 'Hihihi!'), bico emburrado ('Humpf!', 'Ora!'), indignação fofa ('Ei!', 'Como é que é?!').",
+      "address_matrix": {
+        "Lyner": "Tratamento íntimo e caloroso com provocações constantes ('você / te', 'Lyner bobo!', 'Seu idiota!'). Ama-o desde a infância.",
+        "Aurica": "Tratamento direto, meio ciumento mas empático e fraterno.",
+        "Krusche": "Tratamento parceiro e espontâneo.",
+        "Leard": "Respeito com afeto familiar de quem cresceu em Platina."
+      }
+    },
+    "Shurelia": {
+      "id": 9,
+      "full_name": "Shurelia (Eoria)",
+      "gender": "feminino",
+      "role": "Administradora da Torre / Deusa de Elemia",
+      "voice_profile": "Nobre, etérea, graciosa, solene em sua função divina, mas surpreendentemente desajeitada, inocente e fofa em assuntos mundanos e cotidianos. Dicção refinada e serena.",
+      "laughter_and_vocalizations": "Riso suave e elegante ('Hehe', 'Fufu...'), timidez fofa ('Ah...', 'Isso é...'), determinação ('Sim!').",
+      "address_matrix": {
+        "Lyner": "Trata-o com carinho soberano que floresce em afeição pessoal genuína ('Lyner', 'você').",
+        "Radolf": "Tratamento divino gracioso aos seus devotos cavaleiros.",
+        "Mir": "Dor profunda pela tragédia da irmã de criação, compaixão e tristeza."
+      }
+    },
+    "Krusche": {
+      "id": 5,
+      "full_name": "Krusche Elendia",
+      "gender": "feminino",
+      "role": "Piloto de Dirigível / Engenheira Mecânica",
+      "voice_profile": "Independente, audaciosa, sarcástica, pragmática ao extremo. Detesta sentimentalismo barato e enrolação. Fala incisiva, rápida e cheia de atitude.",
+      "laughter_and_vocalizations": "Gargalhada zombeteira ('Hahaha!', 'Humpf, hehe'), impaciência ('Tsc!', 'Bora logo!').",
+      "address_matrix": {
+        "Lyner": "Camarada de negócios e aventuras ('garoto', 'Lyner', 'você'). Puxa a orelha dele quando ele é ingênuo.",
+        "Radolf": "Provocações à solenidade militar dele.",
+        "Jack": "Respeito entre profissionais cínicos."
+      }
+    }
+  },
+  "matched_terms": {
+    "Reyvateil": {
+      "pt": "Reyvateil",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Raça / Classe",
+      "note": "Donzelas cantoras capazes de sintonizar a Torre e converter canções em poder (Magia da Canção). Plural: Reyvateils."
+    },
+    "DP": {
+      "pt": "DP",
+      "gender": "masculino",
+      "number": "plural",
+      "category": "UI / Atributo",
+      "note": "Pontos de Mergulho. Manter sigla no HUD e menus com restrição de espaço."
+    },
+    "Song Magic": {
+      "pt": "Magia da Canção",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Combate / Magia",
+      "note": "Poder conjurado pelas Reyvateils. A canção cresce em potência enquanto elas cantam (Harmonics/Burst)."
+    },
+    "Platina": {
+      "pt": "Platina",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Localização",
+      "note": "A cidade flutuante no topo da Torre Ar tonelico, onde Lyner nasceu e os Cavaleiros residem."
+    },
+    "Upper World": {
+      "pt": "Mundo Superior",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Geografia / Lore",
+      "note": "A região acima da Blastline onde fica Platina e os níveis sagrados da Torre."
+    },
+    "Tenba": {
+      "pt": "Tenba",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Facção / Corporação",
+      "note": "A poderosa corporação industrial-militar do Mundo Inferior com ambições de expansão tecnológica."
+    },
+    "Crescent Chronicle": {
+      "pt": "Crônica Crescente",
+      "category": "Lore / Literatura",
+      "note": "Obra literária de romance acompanhada e discutida pelos personagens durante o descanso."
+    },
+    "Tail of Reminiscence": {
+      "pt": "Asa da Reminiscência",
+      "category": "Localização / Lore",
+      "note": "Colina memorial no formato de asa de cauda que guarda as memórias de infância de Lyner e Misha (JP 追憶の尾翼)."
+    },
+    "Silvaplate": {
+      "pt": "Silvaplate",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Estrutura / Cenário",
+      "note": "Enorme placa e estrutura arquitetônica externa que sustenta os níveis inferiores da Torre Ar tonelico (JP シルヴァプレート)."
+    },
+    "FFT Divider": {
+      "pt": "Divisor FFT",
+      "category": "Item / Síntese Grathmeld",
+      "note": "Componente alquímico avançado de transformação de sinal para fabricação de superitens bélicos, apelidado de 'O Início do Perigo' (JP FFTディバイダ)."
+    },
+    "Paradigm Shift": {
+      "pt": "Mudança de Paradigma",
+      "category": "Cosmosfera / Sistema Psicológico",
+      "note": "O salto qualitativo e desbloqueio de um novo nível da Cosmosfera de uma Reyvateil quando ela supera um bloqueio emocional profundo (JP パラダイムシフト)."
+    },
+    "Trio of Elemia": {
+      "pt": "Trio de Elemia",
+      "category": "Divindades / Mitologia de Sol Ciel",
+      "note": "As três Deusas do Canto ancestrais de Elemia: Eoria, Frelia e Tilia (JP エレミア三謳神)."
+    },
+    "Altar of Apostles": {
+      "pt": "Altar dos Apóstolos",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Localização / Lore da Igreja",
+      "note": "Santuário sagrado e tenebroso reivindicado por Falss como epicentro de sua guerra santa (JP 使徒の祭壇)."
+    },
+    "FFT Spectrum": {
+      "pt": "Espectro FFT",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Tecnologia / Autenticação Fônica",
+      "note": "Protocolo fônico de autenticação por transformada rápida de Fourier para reconhecimento de cavaleiros (JP FFTスペクトラム認証)."
+    },
+    "Skuwat Village": {
+      "pt": "Vilarejo de Skuwat",
+      "category": "Localização / Lore",
+      "note": "Aldeia natal de Aurica, devastada pela catástrofe viral e guardiã de suas memórias de infância com Don Leon (JP スクワート村)."
+    },
+    "Ordeal of the Moon": {
+      "pt": "Provação da Lua",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Rito / Tradição Teru",
+      "note": "Exame marcial sagrado em Em Pheyna para comprovar se um guerreiro é um autêntico Cavaleiro de Elemia mediante o domínio de Harmonics (JP 月の試練)."
+    },
+    "Stonehenge": {
+      "pt": "Stonehenge",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Marco / Cosmosphere",
+      "note": "Círculo megalítico sagrado na Cosmosfera de Aurica onde ocorre o rito de transição da Mudança de Paradigma (JP ストーンヘンジ)."
+    },
+    "Mai": {
+      "pt": "Mai",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Personagem / Androide",
+      "note": "Segunda androide de manutenção e irmã mais velha de Kanade, guardiã do Sino de Plasma da Asa Direita de Hórus, sacrificada na Guerra das Reyvateils (JP マイ)."
+    }
+  },
+  "lead_in_context_read_only": [
+    {
+      "id": 5265,
+      "event_file": "Event/93.evd",
+      "speaker": "Misha",
+      "speaker_id": 3,
+      "original_jp": "とにかく、その人をCR探しに行きましょ。",
+      "original_en": "Come on, let’s go find my friend.",
+      "text_ptbr": "Enfim, vamos logo encontrar essa pessoa!"
+    },
+    {
+      "id": 5266,
+      "event_file": "Event/801.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "頼奈!CRまた来てくれたのね...ありがとう!",
+      "original_en": "Thank you for coming again!",
+      "text_ptbr": "Lyner! Que bom que você voltou... Muito obrigada!"
+    },
+    {
+      "id": 5267,
+      "event_file": "Event/801.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "それじゃ、いくわよ!",
+      "original_en": "Let’s go!",
+      "text_ptbr": "Muito bem, vamos lá!"
+    },
+    {
+      "id": 5268,
+      "event_file": "Event/801.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "...あれ?ここは...",
+      "original_en": "Huh? Where am I...?",
+      "text_ptbr": "...Ué? Onde é que eu estou...?"
+    },
+    {
+      "id": 5269,
+      "event_file": "Event/801.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "お帰りなさい。CRゲームオーバーになっちゃったみたいです。",
+      "original_en": "Welcome back. Looks like it’s Game Over.",
+      "text_ptbr": "Bem-vindo de volta!\nParece que deu Game Over para você."
+    },
+    {
+      "id": 5270,
+      "event_file": "Event/801.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "ありゃりゃ...またか...",
+      "original_en": "...Not again.",
+      "text_ptbr": "Puxa vida... Perdi de novo..."
+    },
+    {
+      "id": 5271,
+      "event_file": "Event/801.evd",
+      "speaker": "Shurelia",
+      "speaker_id": 9,
+      "original_jp": "何度でも挑戦出来るみたいですから、CRまた挑戦してみてもいいかもしれませんね。",
+      "original_en": "Next time, we can continue where we left off. Maybe you should try again some other time.",
+      "text_ptbr": "Parece que dá para tentar quantas vezes quiser, então talvez valha a pena tentar de novo qualquer hora!"
+    },
+    {
+      "id": 5272,
+      "event_file": "Event/753.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "...いよいよレベル8か...。",
+      "original_en": "I’m finally down to level 8...",
+      "text_ptbr": "...Finalmente cheguei ao Nível 8..."
+    },
+    {
+      "id": 5273,
+      "event_file": "Event/753.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "...。CRなんだかにわかに空気が重いような...。",
+      "original_en": "It seems pretty gloomy around here...",
+      "text_ptbr": "... O ar repentinamente parece tão pesado..."
+    },
+    {
+      "id": 5274,
+      "event_file": "Event/753.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "とにかく外に出てみよう...。",
+      "original_en": "I better get going...",
+      "text_ptbr": "De qualquer forma, vou dar uma olhada lá fora..."
+    },
+    {
+      "id": 5275,
+      "event_file": "Event/753.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "うわぁぁ!!な、なんだこれは...!?CR大変なことになってるぞ...",
+      "original_en": "Whoa! What is this!? Something horrible is happening...",
+      "text_ptbr": "Uaaah!! M-mas o que é tudo isso...?! As coisas fugiram completamente do controle..."
+    },
+    {
+      "id": 5276,
+      "event_file": "Event/753.evd",
+      "speaker": "Lyner",
+      "speaker_id": 1,
+      "original_jp": "一体誰がこんな事を...CRって、オリカに決まってるか...。",
+      "original_en": "Who did this!? Oh, right...the devilish Aurica...",
+      "text_ptbr": "Quem diabos faria uma atrocidade dessas...?\nDigo, só podia ser a Aurica, né...?"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 5277,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ...。",
+      "original_en": "Aurica...",
+      "current_ptbr": "Aurica...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5278,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5279,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "俺さ、「FFTディバイダ」を取るために光の中に入って、死にそうになったとき...",
+      "original_en": "When I almost died trying to get the [FFT Divider]...",
+      "current_ptbr": "Quando eu quase morri tentando pegar o [Divisor FFT]...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5280,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...すげえ後悔した。",
+      "original_en": "...I had so many regrets.",
+      "current_ptbr": "...Eu tinha tantos arrependimentos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5281,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...え?",
+      "original_en": "...Huh?",
+      "current_ptbr": "...Hã?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5282,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ、...ありがとう。CR俺を信じてここまで一緒にCR来てくれて。",
+      "original_en": "Aurica, thank you for trusting me enough to come this far.",
+      "current_ptbr": "Aurica, obrigado por confiar em mim o suficiente para chegarmos até aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5283,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...どうしたの?突然...",
+      "original_en": "...Why are you telling me this?",
+      "current_ptbr": "...Por que você está me dizendo isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5284,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "今、思ってることをCR言っただけだ。CR今言わないでいつ言うんだよ。",
+      "original_en": "I just have to let you know how I feel. I might not get another chance.",
+      "current_ptbr": "Só preciso te dizer o que sinto. Talvez eu não tenha outra chance.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5285,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "でも、こんな時に...",
+      "original_en": "But, it doesn’t seem appropriate now...",
+      "current_ptbr": "Mas, não parece apropriado agora...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5286,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そう思うだろ?CRでも、もしかしたら俺は...CR死んでいたかもしれない。",
+      "original_en": "Why not? I almost died, remember?",
+      "current_ptbr": "Por que não? Eu quase morri, lembra?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5287,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そしたら俺、この言葉をCR永遠に、伝えられなかった。",
+      "original_en": "And if I had, I could never tell you how I felt.",
+      "current_ptbr": "E se tivesse, nunca conseguiria te dizer o que sentia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5288,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5289,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そう思ったら、CRなんだか怖くなってさ...。",
+      "original_en": "When I realized that, I got kinda scared...",
+      "current_ptbr": "Quando percebi isso, fiquei meio assustado...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5290,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナー!",
+      "original_en": "Lyner...",
+      "current_ptbr": "Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5291,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "あたしたち、CRいつまでも一緒だよね...。CRこれからもずっと、ずっと...",
+      "original_en": "We’ll always be together, right? Together forever...",
+      "current_ptbr": "Vamos ficar sempre juntos, certo? Juntos para sempre...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5292,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "あたし、ライナーと一緒ならどこへだってついていく!",
+      "original_en": "I can go anywhere, as long as I’m with you!",
+      "current_ptbr": "Posso ir a qualquer lugar, desde que esteja com você!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5293,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "今までの辛いことも、CRこの身体も、レーヴァテイルであることも...",
+      "original_en": "Even with my past, body, and being a Reyvateil...",
+      "current_ptbr": "Mesmo com meu passado, meu corpo e o fato de ser uma Reyvateil...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5294,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナーと出逢うためのCR必然だったなら、CR全部幸せに思えるもの。",
+      "original_en": "If I knew I had to choose those to get to meet you, I’d have no regrets.",
+      "current_ptbr": "Se soubesse que tudo isso me levaria até você, escolheria o mesmo caminho sem arrependimento.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5295,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ...。",
+      "original_en": "Aurica...",
+      "current_ptbr": "Aurica...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5296,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "あたしも...CRずっと伝えたかったんだ。CR今の言葉。",
+      "original_en": "I’ve been meaning to tell you that for a long time.",
+      "current_ptbr": "Há muito tempo que queria te dizer isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5297,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナー。",
+      "original_en": "Lyner...",
+      "current_ptbr": "Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5298,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "いよいよだね。",
+      "original_en": "It’s finally time.",
+      "current_ptbr": "Finalmente chegou a hora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5299,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...ああ。",
+      "original_en": "...Alright.",
+      "current_ptbr": "...Tudo bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5300,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナーの事、CR信じてるから...。",
+      "original_en": "Lyner...I believe in you.",
+      "current_ptbr": "Lyner... Eu acredito em você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5301,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5302,
+      "event_file": "Event/408.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "頼りにしてるぜ。",
+      "original_en": "I’m counting on you.",
+      "current_ptbr": "Estou contando com você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5303,
+      "event_file": "Event/408.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...うん。",
+      "original_en": "...I know.",
+      "current_ptbr": "...Eu sei.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5304,
+      "event_file": "Event/845.evd",
+      "speaker_id": 13,
+      "speaker": "Bourd / Guarda da Porta A5",
+      "original_jp": "ここはA6隔壁です。CR認証者は一歩前へ進み出てください。",
+      "original_en": "This is the A6 Dividing Gate. Please present your authorization code.",
+      "current_ptbr": "Este é o Portão Divisor A6. Por favor, apresente seu código de autorização.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5305,
+      "event_file": "Event/845.evd",
+      "speaker_id": 13,
+      "speaker": "Bourd / Guarda da Porta A5",
+      "original_jp": "FFTスペクトラム認証。ライナーバルセルト。指示をどうぞ。",
+      "original_en": "FFT Spectrum authorization confirmed, Lyner Barsett. Awaiting commands.",
+      "current_ptbr": "Autorização do Espectro FFT confirmada, Lyner Barsett. Aguardando comandos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5306,
+      "event_file": "Event/845.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "A6隔壁を開放する。",
+      "original_en": "Open A6 Dividing Gate.",
+      "current_ptbr": "Abra o Portão Divisor A6.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5307,
+      "event_file": "Event/845.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "#0Ma paks ga exec guol A6 al noes.",
+      "original_en": "#0Ma paks ga exec guol A6 al noes.",
+      "current_ptbr": "",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5308,
+      "event_file": "Event/845.evd",
+      "speaker_id": 13,
+      "speaker": "Bourd / Guarda da Porta A5",
+      "original_jp": "コード認証しました。",
+      "original_en": "Your code has been verified.",
+      "current_ptbr": "Seu código foi verificado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5309,
+      "event_file": "Event/845.evd",
+      "speaker_id": 13,
+      "speaker": "Bourd / Guarda da Porta A5",
+      "original_jp": "隔壁開放まで2秒。CR状況、通行許可、入りました。",
+      "original_en": "In 2 seconds, the Dividing Gate will open. You are authorized to proceed.",
+      "current_ptbr": "Em 2 segundos, o Portão Divisor se abrirá. Você está autorizado a prosseguir.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5310,
+      "event_file": "Event/488.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャの所へ行く前に、CR親父の所に寄っていこう。",
+      "original_en": "Let’s go see my Dad before we leave to see Misha.",
+      "current_ptbr": "Vamos ver meu pai antes de partirmos para encontrar a Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5311,
+      "event_file": "Event/791.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "頼奈!CRまた来てくれたのね...ありがとう!",
+      "original_en": "Thank you for coming again!",
+      "current_ptbr": "Obrigado por ter vindo de novo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5312,
+      "event_file": "Event/791.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "それじゃ、いくわよ!",
+      "original_en": "Let’s go!",
+      "current_ptbr": "Vamos lá!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5313,
+      "event_file": "Event/791.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...あれ?ここは...",
+      "original_en": "Huh? Where am I...?",
+      "current_ptbr": "Hã? Onde estou...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5314,
+      "event_file": "Event/791.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お帰りなさい。CRゲームオーバーになっちゃったみたいです。",
+      "original_en": "Welcome back. Looks like it’s Game Over.",
+      "current_ptbr": "Bem-vindo de volta. Parece que o jogo acabou.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5315,
+      "event_file": "Event/791.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ありゃりゃ...またか...",
+      "original_en": "...Not again.",
+      "current_ptbr": "...De novo, não.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5316,
+      "event_file": "Event/791.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "何度でも挑戦出来るみたいですから、CRまた挑戦してみてもいいかもしれませんね。",
+      "original_en": "Next time, we can continue where we left off. Maybe you should try again some other time.",
+      "current_ptbr": "Da próxima vez, podemos continuar de onde paramos. Talvez você devesse tentar novamente em outra ocasião.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5317,
+      "event_file": "Event/227.evd",
+      "speaker_id": 19,
+      "speaker": "Hama",
+      "original_jp": "お疲れ様。CRここがクレセントクロニクル。ミシャの為の祭壇よ。",
+      "original_en": "Here we are. This is the Crescent Chronicle. It is Misha’s altar.",
+      "current_ptbr": "Aqui estamos. Esta é a Crônica Crescente. É o altar de Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5318,
+      "event_file": "Event/227.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "この扉...CRなんだか懐かしい...。",
+      "original_en": "This door...sure brings back memories...",
+      "current_ptbr": "Essa porta... com certeza me traz lembranças...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5319,
+      "event_file": "Event/227.evd",
+      "speaker_id": 19,
+      "speaker": "Hama",
+      "original_jp": "さあ、入ってちょうだい。",
+      "original_en": "Please come inside.",
+      "current_ptbr": "Por favor, entrem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5320,
+      "event_file": "Event/761.evd",
+      "speaker_id": 100,
+      "speaker": "Personagem [100]",
+      "original_jp": "やあやあ、また会いましたね。CRご機嫌はいかがですか?",
+      "original_en": "Oh, nice to see you again. How are you?",
+      "current_ptbr": "Ah, que bom te ver de novo. Como você está?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5321,
+      "event_file": "Event/761.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "いい方だと思うけど...。CR君こそ、こんな所で何やってるんだ?",
+      "original_en": "I’m all right... What are you doing here?",
+      "current_ptbr": "Estou bem... O que você está fazendo aqui?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5322,
+      "event_file": "Event/761.evd",
+      "speaker_id": 100,
+      "speaker": "Personagem [100]",
+      "original_jp": "オリカさんのお祝いに来たのですよ。CR今この世界は賑やかですよ。",
+      "original_en": "I’m here to celebrate with Aurica. This world is very busy now.",
+      "current_ptbr": "Estou aqui para comemorar com a Aurica. Este mundo está bem agitado agora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5323,
+      "event_file": "Event/761.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "で、そのオリカは?",
+      "original_en": "So, where is Aurica?",
+      "current_ptbr": "Então, onde está a Aurica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5324,
+      "event_file": "Event/761.evd",
+      "speaker_id": 100,
+      "speaker": "Personagem [100]",
+      "original_jp": "まだご自宅で準備中ではないですかな?",
+      "original_en": "I think she’s preparing for the ceremony at home.",
+      "current_ptbr": "Acho que ela está se preparando para a cerimônia em casa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5325,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "これは...!",
+      "original_en": "This is...",
+      "current_ptbr": "Isso é...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5326,
+      "event_file": "Event/708.evd",
+      "speaker_id": 98,
+      "speaker": "Personagem [98]",
+      "original_jp": "おい!光の中に...誰かいるぜ!",
+      "original_en": "Hey, I see someone in the light!",
+      "current_ptbr": "Ei, estou vendo alguém na luz!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5327,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...オリカ!?",
+      "original_en": "...Aurica?",
+      "current_ptbr": "...Aurica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5328,
+      "event_file": "Event/708.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "あ...あたしがいる...",
+      "original_en": "I...I see myself...",
+      "current_ptbr": "Eu... eu me vejo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5329,
+      "event_file": "Event/708.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "パラダイムシフトを起こしたのは...CRあなたなの?",
+      "original_en": "Did you pass through the Paradigm Shift?",
+      "current_ptbr": "Você passou pela Mudança de Paradigma?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5330,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ああ。君は...オリカじゃないのか?",
+      "original_en": "Huh? What’s going on? Are you Aurica?",
+      "current_ptbr": "Hã? O que está acontecendo? Você é a Aurica?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5331,
+      "event_file": "Event/708.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "あたしは...オリカ。CRでも、あたしは...まだ貴方の知らないオリカ。",
+      "original_en": "I am Aurica. But, you haven’t met me before.",
+      "current_ptbr": "Eu sou a Aurica. Mas você ainda não me conhece.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5332,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...?",
+      "original_en": "...?",
+      "current_ptbr": "...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5333,
+      "event_file": "Event/708.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "さあ、オリカ...。CRこの中に飛び込んで。CRあなたは一歩成長した貴方になれる。",
+      "original_en": "Aurica, jump in there. It’s a step toward spiritual growth.",
+      "current_ptbr": "Aurica, entre naquela luz. É um passo rumo ao crescimento espiritual.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5334,
+      "event_file": "Event/708.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "一歩成長した...あたし...",
+      "original_en": "Spiritual growth...?",
+      "current_ptbr": "Crescimento espiritual...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5335,
+      "event_file": "Event/708.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "そう。CRこのストーンヘンジは、あたしが成長していく時の祭壇であり、舞台。",
+      "original_en": "Yes. This Stonehenge is an altar for growing spiritually.",
+      "current_ptbr": "Sim. Este Stonehenge é um altar para o crescimento espiritual.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5336,
+      "event_file": "Event/708.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "あなたが成長していくために必要なもの。CRこの光を一度くぐるごとに、あなたの心は一段階成長するのです。",
+      "original_en": "You need to grow. Every time you step into this light, you’ll be a step closer to enlightenment.",
+      "current_ptbr": "Você precisa crescer. Cada vez que você entrar nessa luz, estará um passo mais perto da iluminação.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5337,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ...",
+      "original_en": "Aurica...",
+      "current_ptbr": "Aurica...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5338,
+      "event_file": "Event/708.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "うん。",
+      "original_en": "Yes.",
+      "current_ptbr": "Sim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5339,
+      "event_file": "Event/708.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...ねえ、ライナー。CRありがとう。",
+      "original_en": "Thank you, for everything.",
+      "current_ptbr": "Obrigado por tudo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5340,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ああ、いいさ。",
+      "original_en": "Don’t mention it.",
+      "current_ptbr": "De nada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5341,
+      "event_file": "Event/708.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...また、逢えるかな?",
+      "original_en": "Will I see you again?",
+      "current_ptbr": "Vou te ver de novo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5342,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "大丈夫。逢えるさ。",
+      "original_en": "Of course.",
+      "current_ptbr": "Claro.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5343,
+      "event_file": "Event/708.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...うん。CRじゃあ、行くね...。",
+      "original_en": "Then, I’m going...",
+      "current_ptbr": "Então, vou indo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5344,
+      "event_file": "Event/708.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "...。CR貴様ごときがオリカさんをパラダイムシフトさせるとはな...",
+      "original_en": "I cannot believe that you were able to bring Aurica to the Paradigm Shift...",
+      "current_ptbr": "Não acredito que você conseguiu levar Aurica à Mudança de Paradigma...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5345,
+      "event_file": "Event/708.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そういう言い方はないと思うけど...。",
+      "original_en": "What is that supposed to mean?",
+      "current_ptbr": "O que isso quer dizer?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5346,
+      "event_file": "Event/708.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "ふん。まあいい。CRとにかくオリカさんが一歩成長出来たことに間違いはないんだ。礼は言っておく。",
+      "original_en": "Never mind. I wish to thank you for helping Aurica to grow stronger.",
+      "current_ptbr": "Deixa pra lá. Quero agradecer por ter ajudado a Aurica a ficar mais forte.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5347,
+      "event_file": "Event/708.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "それでは、さらばだ。CRオリカさんが貴様をレベル2に入れてくれるようなら、また会うことになるだろう。",
+      "original_en": "Adios. I will see you again...if Aurica allows you to visit her in level 2.",
+      "current_ptbr": "Adeus. Vou te ver de novo... se a Aurica permitir que você a visite no nível 2.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5348,
+      "event_file": "Event/146.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "これは...",
+      "original_en": "What’s this...",
+      "current_ptbr": "O que é isso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5349,
+      "event_file": "Event/146.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "なんてことだ...。CRちくしょう...ウイルスめ...!",
+      "original_en": "What happened? Damn! Those stupid viruses!",
+      "current_ptbr": "O que aconteceu? Droga! Esses vírus idiotas!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5350,
+      "event_file": "Event/146.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "しかし...派手にCR落っこちてきたモンだな...。",
+      "original_en": "That’s...some crash...",
+      "current_ptbr": "Que... batida...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5351,
+      "event_file": "Event/146.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": ".........。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5352,
+      "event_file": "Event/146.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "あ...。あそこからCR中に入れそうだよ。",
+      "original_en": "Ah... I think we can get inside over there.",
+      "current_ptbr": "Ah... Acho que podemos entrar por ali.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5353,
+      "event_file": "Event/146.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "よし、行こうぜ!",
+      "original_en": "Let’s go!",
+      "current_ptbr": "Vamos lá!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5354,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー、突然だけど道具をいくつか分けてもらえないかな?",
+      "original_en": "Can I borrow some of your tools?",
+      "current_ptbr": "Posso pegar algumas das suas ferramentas emprestadas?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5355,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "は?別に良いですけど、どうして?",
+      "original_en": "Huh? Sure, but why?",
+      "current_ptbr": "Hã? Claro, mas por quê?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5356,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "実は、久々に作ってみようと思ったCR料理があって...",
+      "original_en": "I used to make this one food, I felt like cooking it today...so...",
+      "current_ptbr": "Eu costumava fazer esse prato, me deu vontade de cozinhar hoje... então...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5357,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そうですか。いいですよ、CR好きなものを持っていってもらって。",
+      "original_en": "I see. Go ahead and take whatever you need.",
+      "current_ptbr": "Entendi. Fique à vontade para pegar o que precisar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5358,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ありがと。CRそれじゃあ、ちょっと失礼して...",
+      "original_en": "Thank you. Excuse me...",
+      "current_ptbr": "Obrigada. Com licença...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5359,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "...オパールライスとすずなり草を貰うね。CRそれじゃ、ちょっと待ってて。",
+      "original_en": "...I’ll take Opal Rice, and I’ll be right back.",
+      "current_ptbr": "...Vou pegar o “Opal Rice” e já volto.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5360,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "久々に、か...得意料理か何かかな?",
+      "original_en": "She used to cook it... Was it her specialty or something?",
+      "current_ptbr": "Ela costumava cozinhar isso... Era a especialidade dela ou algo assim?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5361,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お待たせー。",
+      "original_en": "Thank you for waiting.",
+      "current_ptbr": "Obrigada por esperar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5362,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "待ってました!で、どんな料理なんですか?",
+      "original_en": "Finally! So, what kind of food is this?",
+      "current_ptbr": "Finalmente! Então, que tipo de prato é esse?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5363,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "はい、これ。",
+      "original_en": "Here you go.",
+      "current_ptbr": "Aqui está.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5364,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "え?...これって、ウサギのご飯?",
+      "original_en": "What? ...Rabbit rice?",
+      "current_ptbr": "O quê? ...Arroz de coelho?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5365,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "「うさライス」よ。CRどう、可愛いでしょ?",
+      "original_en": "Yes! [Bunny Rice]. Isn’t it cute?",
+      "current_ptbr": "Sim! [Arroz de Coelhinho]. Não é fofo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5366,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "え、ええ、まあ確かに可愛いですけど...",
+      "original_en": "Sure, it’s cute, but...",
+      "current_ptbr": "Claro, é fofo, mas...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5367,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...シュレリア様、これ、よく作るんですか?",
+      "original_en": "...Lady Shurelia, do you make this often?",
+      "current_ptbr": "...Lady Shurelia, você faz isso com frequência?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5368,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "前は作ってたかな。CR今は忙しくて、なかなか作れなくて...",
+      "original_en": "I used to. I’m too busy to cook nowadays...",
+      "current_ptbr": "Costumava fazer. Hoje em dia estou ocupada demais para cozinhar...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5369,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "久しぶりなんでちょっと自信ないんだけど...食べてくれる?",
+      "original_en": "It’s been a while, so I can’t guarantee that it’ll be good. Would you still try it?",
+      "current_ptbr": "Já faz um tempo, então não posso garantir que vai ficar bom. Você ainda assim gostaria de experimentar?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5370,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "もちろん。それじゃ、いただきます!",
+      "original_en": "Of course. I’ll eat it!",
+      "current_ptbr": "Claro. Vou comer!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5371,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "......どう?",
+      "original_en": "...How is it?",
+      "current_ptbr": "...E aí, como está?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5372,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...美味しいんですけど、なんていうか...CR懐かしさを感じますね。",
+      "original_en": "...It’s...good. How can I explain the taste...it’s nostalgic.",
+      "current_ptbr": "...Está... bom. Como posso explicar o sabor... é nostálgico.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5373,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "えっと、これは...お子様ランチか。",
+      "original_en": "Is this a kid’s meal?",
+      "current_ptbr": "Isso é um prato infantil?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5374,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "お子様ランチ...?",
+      "original_en": "Kid’s meal...?",
+      "current_ptbr": "Prato infantil...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5375,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "はい...うわぁ、昔、まだ親父が笑顔を向けてきてくれた頃のこと思い出しましたよ...。",
+      "original_en": "Yeah... Whoa, it reminds me of when my Dad wasn’t so strict...",
+      "current_ptbr": "É... Nossa, isso me lembra de quando meu pai não era tão rigoroso...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5376,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "何にしても、美味しかったのよね?",
+      "original_en": "Did you like it? Was it any good?",
+      "current_ptbr": "Você gostou? Ficou bom?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5377,
+      "event_file": "Event/881.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "あ、ああ、美味しいです。",
+      "original_en": "Yes it was.",
+      "current_ptbr": "Sim, foi mesmo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5378,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "よかった。簡単に出来るから、CR良ければライナーも作ってみてね。",
+      "original_en": "I’m glad. It’s easy to make, so Lyner, you should try making it.",
+      "current_ptbr": "Que bom. É fácil de fazer, então, Lyner, você deveria tentar fazer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5379,
+      "event_file": "Event/881.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "アイテム『うさライス』を手に入れた。レシピカード『合C:うさライス』をCR手に入れた!",
+      "original_en": "Received [Bunny Rice]! Received the recipe card: [Bunny Rice]!",
+      "current_ptbr": "Recebi [Arroz de Coelhinho]! Recebi o cartão de receita: [Arroz de Coelhinho]!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5380,
+      "event_file": "Event/881.evd",
+      "speaker_id": 9,
+      "speaker": "Shurelia",
+      "original_jp": "ライナー。ちょっといい?",
+      "original_en": "Lyner, can I speak with you?",
+      "current_ptbr": "Lyner, posso falar com você?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5381,
+      "event_file": "Event/850.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "よっ...",
+      "original_en": "Yo...",
+      "current_ptbr": "E aí...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5382,
+      "event_file": "Event/354.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "門が開けっ放しだ!",
+      "original_en": "The gate’s been left open!",
+      "current_ptbr": "O portão foi deixado aberto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5383,
+      "event_file": "Event/354.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "まさか...この開かずの門とCR言われた場所が...",
+      "original_en": "No way! The Teru would never leave it open like that.",
+      "current_ptbr": "Não acredito! Os Teru nunca deixariam o portão aberto assim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5384,
+      "event_file": "Event/354.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "とにかく、急いでCRイム・フェーナへ行こう!",
+      "original_en": "We better hurry to Em Pheyna!",
+      "current_ptbr": "É melhor a gente correr para Em Pheyna!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5385,
+      "event_file": "Event/237.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "どこへ行くの!?CRまだ買い物するの!",
+      "original_en": "Where are you going!? Don’t you want to shop some more?",
+      "current_ptbr": "Aonde você vai!? Não quer fazer mais compras?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5386,
+      "event_file": "Event/90.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ごめん...CRまだもうちょっと待って...。",
+      "original_en": "Sorry, but can you wait a little longer?",
+      "current_ptbr": "Desculpe, mas você poderia esperar mais um pouco?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5387,
+      "event_file": "Event/90.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ああ、いいよ。CR俺は全然焦ってないから。",
+      "original_en": "Sure. Just take your time.",
+      "current_ptbr": "Claro. Fique à vontade.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5388,
+      "event_file": "Event/90.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ホントごめんね。",
+      "original_en": "I’m really sorry.",
+      "current_ptbr": "Sinto muito mesmo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5389,
+      "event_file": "Event/715.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ、この階層も克服したんだな...。",
+      "original_en": "Aurica, you overcame this level, too...",
+      "current_ptbr": "Aurica, você também superou este nível...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5390,
+      "event_file": "Event/715.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "うん...まさか、ドラゴンを克服できるなんて...自分でも思っても見なかった。",
+      "original_en": "Yes...I never dreamed I’d defeat the dragon.",
+      "current_ptbr": "Sim... Eu nunca imaginei que derrotaria o dragão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5391,
+      "event_file": "Event/715.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5392,
+      "event_file": "Event/715.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "......。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5393,
+      "event_file": "Event/715.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "それじゃ、行くね。CRなんか、次にどんな世界になってるのか、CR少し不安だけど...",
+      "original_en": "I have to go. I can’t wait to see the next world...",
+      "current_ptbr": "Tenho que ir. Mal posso esperar para ver o próximo mundo...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5394,
+      "event_file": "Event/715.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "次の世界で会おうな。",
+      "original_en": "I’ll see you there.",
+      "current_ptbr": "Nos vemos lá.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5395,
+      "event_file": "Event/715.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "無事、パラダイムシフトが完了したようだな。",
+      "original_en": "The Paradigm Shift looks safe.",
+      "current_ptbr": "A Mudança de Paradigma parece segura.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5396,
+      "event_file": "Event/715.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ、どんどん成長していくな。",
+      "original_en": "She looks steady.",
+      "current_ptbr": "Ela parece firme.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5397,
+      "event_file": "Event/715.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "...そして、どんどん辛くなっていく。",
+      "original_en": "...It will get harder, my friend.",
+      "current_ptbr": "...Vai ficar mais difícil, meu amigo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5398,
+      "event_file": "Event/715.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...え?",
+      "original_en": "...Really?",
+      "current_ptbr": "...Sério?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5399,
+      "event_file": "Event/715.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "貴様が、だ。CRレベルが上がるということは、深層心理を垣間見るということ。",
+      "original_en": "Si. As she advances, the worlds will get more difficult. Her feelings will get stronger.",
+      "current_ptbr": "Sí. Conforme ela avançar, os mundos ficarão mais difíceis e os sentimentos, mais intensos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5400,
+      "event_file": "Event/715.evd",
+      "speaker_id": 53,
+      "speaker": "Don Leon (Donsuke)",
+      "original_jp": "深層心理をナメていると、そのうち痛い目に遭うぜ。",
+      "original_en": "Don’t underestimate the deeper parts of her mind.",
+      "current_ptbr": "Não subestime as partes mais profundas da mente dela.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5401,
+      "event_file": "Event/715.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "あ...ああ...",
+      "original_en": "I...I won’t...",
+      "current_ptbr": "Eu... eu não vou...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5402,
+      "event_file": "Event/73.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "やるじゃない!これからCRも、わたしが狙われたらCRその調子でお願いね!",
+      "original_en": "Good job! If I’m ever targeted, please save me like you did just now!",
+      "current_ptbr": "Muito bem! Se eu for alvo de algum ataque, por favor, me salve como você fez agora há pouco!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5403,
+      "event_file": "Event/169.evd",
+      "speaker_id": 52,
+      "speaker": "Personagem [52]",
+      "original_jp": "ライナー様ですね。すぐに門を開けます。",
+      "original_en": "You’re Lyner, right? I’ll open the gate right away.",
+      "current_ptbr": "Você é o Lyner, certo? Vou abrir o portão agora mesmo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5404,
+      "event_file": "Event/169.evd",
+      "speaker_id": 52,
+      "speaker": "Personagem [52]",
+      "original_jp": "いってらっしゃいませ。",
+      "original_en": "Have a safe trip.",
+      "current_ptbr": "Tenha uma boa viagem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5405,
+      "event_file": "Event/155.evd",
+      "speaker_id": 18,
+      "speaker": "Soldado / Sentinela",
+      "original_jp": "それではこれより、神聖なる試練『月の試練』を行う。",
+      "original_en": "Now, we can begin the [Ordeal of the Moon].",
+      "current_ptbr": "Agora, podemos começar a [Provação da Lua].",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5406,
+      "event_file": "Event/155.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5407,
+      "event_file": "Event/155.evd",
+      "speaker_id": 18,
+      "speaker": "Soldado / Sentinela",
+      "original_jp": "その前に...そこの娘。CR名は何という?",
+      "original_en": "But, before we start...the girl, what is your name?",
+      "current_ptbr": "Mas, antes de começarmos... garota, qual é o seu nome?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5408,
+      "event_file": "Event/155.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...あたし...ですか?CR...オリカです。",
+      "original_en": "...Me? My name is Aurica.",
+      "current_ptbr": "...Eu? Meu nome é Aurica.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5409,
+      "event_file": "Event/155.evd",
+      "speaker_id": 18,
+      "speaker": "Soldado / Sentinela",
+      "original_jp": "それではライナーよ。まずはオリカと二人でこの寺院のCR最奥の間まで辿り着くのだ。",
+      "original_en": "Lyner, you must go to the last room of this temple with Aurica.",
+      "current_ptbr": "Lyner, você deve ir até a última sala deste templo com Aurica.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5410,
+      "event_file": "Event/155.evd",
+      "speaker_id": 18,
+      "speaker": "Soldado / Sentinela",
+      "original_jp": "そこに私はいる。CR試練はそこで行う。",
+      "original_en": "I’ll be waiting for you there to begin the ordeal.",
+      "current_ptbr": "Estarei esperando por vocês lá para dar início à provação.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5411,
+      "event_file": "Event/155.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "...行っちゃった。",
+      "original_en": "...He’s gone.",
+      "current_ptbr": "...Ele se foi.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5412,
+      "event_file": "Event/155.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "それじゃ、行ってくるから。みんなは街ででもCR待っててくれよ。",
+      "original_en": "We better get going, too. Please wait for us in the city.",
+      "current_ptbr": "É melhor partirmos também. Por favor, esperem por nós na cidade.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5413,
+      "event_file": "Event/155.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5414,
+      "event_file": "Event/155.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "『ラードルフ』がCR仲間から外れた。",
+      "original_en": "Radolf has left your party.",
+      "current_ptbr": "Radolf saiu do seu grupo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5415,
+      "event_file": "Event/155.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "『クルシェ』がCR仲間から外れた。",
+      "original_en": "Krusche has left your party.",
+      "current_ptbr": "Krusche saiu do seu grupo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5416,
+      "event_file": "Event/155.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "『ジャック』がCR仲間から外れた。",
+      "original_en": "Jack has left your party.",
+      "current_ptbr": "Jack saiu do seu grupo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5417,
+      "event_file": "Event/505.evd",
+      "speaker_id": 28,
+      "speaker": "Personagem [28]",
+      "original_jp": "社長より話は聞いております。どうぞお入りください。",
+      "original_en": "The president has authorized you to enter. Come on in.",
+      "current_ptbr": "A presidente autorizou sua entrada. Pode entrar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5418,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "おや、ライナー殿。CR今日は随分とお早いですね。",
+      "original_en": "Ah, Lyner! You’re here early today.",
+      "current_ptbr": "Ah, Lyner! Você chegou cedo hoje.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5419,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "そういえば、昨晩のCR落下事件は知ってますか?",
+      "original_en": "Have you heard about the incident last night?",
+      "current_ptbr": "Você já ouviu falar do incidente de ontem à noite?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5420,
+      "event_file": "Event/148.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "はい、もちろん。...実はCRそれで俺、気がついたんです。",
+      "original_en": "Of course I did. And...that whole thing made me realize...",
+      "current_ptbr": "Claro que sim. E... tudo isso me fez perceber...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5421,
+      "event_file": "Event/148.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "もう一秒たりともCR遊んでる暇は無いって。",
+      "original_en": "I can’t waste any more time here.",
+      "current_ptbr": "Não posso perder mais tempo aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5422,
+      "event_file": "Event/148.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "だから、今から塔を登ります。",
+      "original_en": "So, I’m going to start climbing the Tower.",
+      "current_ptbr": "Então, vou começar a subir a Torre.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5423,
+      "event_file": "Event/148.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "全然まともなお礼、出来ませんが...必ず戻ってきてお礼はします。",
+      "original_en": "I can’t thank you enough. But, I promise to come back and make up for everything you’ve done for me.",
+      "current_ptbr": "Não tenho palavras para agradecer. Mas prometo voltar e retribuir tudo o que você fez por mim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5424,
+      "event_file": "Event/148.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "急な出発ですみません...。",
+      "original_en": "I’m sorry for being in such a rush...",
+      "current_ptbr": "Desculpe-me por estar com tanta pressa...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5425,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "いいんですよ。CR早く塔をお登りなさい。",
+      "original_en": "Do not worry. Go, and begin your climb.",
+      "current_ptbr": "Não se preocupe. Vá e comece sua escalada.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5426,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "私も塔まで見送りに行ければいいのですが...CRそうはいかない身。",
+      "original_en": "I wish I could go to the Tower with you and send you off properly, but I must remain here.",
+      "current_ptbr": "Gostaria de poder ir até a Torre com você e me despedir como deve ser, mas preciso ficar aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5427,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "失礼ではありますが、ここで見送らせていただきますよ。",
+      "original_en": "I hope you don’t find it rude of me to say goodbye now.",
+      "current_ptbr": "Espero que você não ache rude da minha parte me despedir agora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5428,
+      "event_file": "Event/148.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "いえ、そんな。CR...今までありがとうCRございました。",
+      "original_en": "No, of course not. Thank you...for everything.",
+      "current_ptbr": "Não, claro que não. Obrigado... por tudo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5429,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "ラードルフ、オリカ。",
+      "original_en": "Radolf, Aurica...",
+      "current_ptbr": "Radolf, Aurica...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5430,
+      "event_file": "Event/148.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "はっ。",
+      "original_en": "Yes, sir.",
+      "current_ptbr": "Sim, senhor.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5431,
+      "event_file": "Event/148.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "はい。",
+      "original_en": "Yes.",
+      "current_ptbr": "Sim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5432,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "しっかりとライナー殿をCRお守りするのですよ。",
+      "original_en": "Please do your best to help Lyner.",
+      "current_ptbr": "Por favor, façam o possível para ajudar Lyner.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5433,
+      "event_file": "Event/148.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "仰せのままに。",
+      "original_en": "As you wish.",
+      "current_ptbr": "Como desejar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5434,
+      "event_file": "Event/148.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "はい。",
+      "original_en": "Okay.",
+      "current_ptbr": "Tudo bem.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5435,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "それでは、旅の無事をCRお祈りしております。",
+      "original_en": "I shall pray for your safety.",
+      "current_ptbr": "Vou rezar pela sua segurança.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5436,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "皆さんに、エレミア三謳神のご加護があらんことを...",
+      "original_en": "May the Trio of Elemia bless us all...",
+      "current_ptbr": "Que o Trio de Elemia abençoe a todos nós...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5437,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5438,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "いよいよですね。CR...私もそろそろミッションを開始するとしましょう。",
+      "original_en": "The time has come. My mission can finally begin.",
+      "current_ptbr": "Chegou a hora. Minha missão pode finalmente começar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5439,
+      "event_file": "Event/148.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "......。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5440,
+      "event_file": "Event/148.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "ワールドマップのCR『シルヴァプレート』にCR行けるようになった!",
+      "original_en": "[Silvaplate] has been added to the World Map!",
+      "current_ptbr": "[Silvaplate] foi adicionado ao Mapa Mundial!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5441,
+      "event_file": "Event/503.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "この板一枚が落っこちてきた為に、色んな事があったね。",
+      "original_en": "When this plate fell, it was bad news for everybody.",
+      "current_ptbr": "Quando essa placa caiu, foi uma má notícia para todo mundo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5442,
+      "event_file": "Event/503.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "天覇の施設は潰されたし...CR嵐は起きたし...。",
+      "original_en": "Tenba’s facility collapsed...and it created the storm...",
+      "current_ptbr": "As instalações de Tenba desabaram... e isso causou a tempestade...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5443,
+      "event_file": "Event/503.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "まあ、天覇には同情するが...ここで行っていた研究はCR誉められたモンじゃなかった。",
+      "original_en": "I felt sorry for Tenba, but I deplore the research they conducted here.",
+      "current_ptbr": "Senti pena da Tenba, mas condeno a pesquisa que fizeram aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5444,
+      "event_file": "Event/503.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "...そういえば、ボルドが残したものもきっと沢山眠ってるだろう。",
+      "original_en": "Many atrocities that Bourd committed remain undiscovered.",
+      "current_ptbr": "Muitas atrocidades cometidas por Bourd ainda não foram descobertas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5445,
+      "event_file": "Event/503.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そうか...。何かの参考になるかもしれないな...。",
+      "original_en": "You’re right... We better check it out.",
+      "current_ptbr": "Você está certo... É melhor a gente dar uma olhada nisso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5446,
+      "event_file": "Event/722.evd",
+      "speaker_id": 103,
+      "speaker": "Personagem [103]",
+      "original_jp": "大変です!CRオリカさんが、クレアさんに...!",
+      "original_en": "Emergency! Aurica is...!",
+      "current_ptbr": "Emergência! A Aurica está...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5447,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "まずいな!",
+      "original_en": "No!",
+      "current_ptbr": "Não!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5448,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "クレアお姉ちゃん...このお薬...飲んで。CRきっと楽になれるから。",
+      "original_en": "Take this medicine. It’ll make you feel better.",
+      "current_ptbr": "Tome este remédio. Vai fazer você se sentir melhor.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5449,
+      "event_file": "Event/722.evd",
+      "speaker_id": 8,
+      "speaker": "Claire",
+      "original_jp": "ホントに?ありがとう!",
+      "original_en": "Really? Thank you!",
+      "current_ptbr": "Sério? Obrigada!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5450,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "クレアさん!その薬、飲んじゃダメだ!!",
+      "original_en": "Don’t take that medicine!",
+      "current_ptbr": "Não tome esse remédio!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5451,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ライナー...。もう遅いよ。CRあたし、生まれ変わるんだから。",
+      "original_en": "Lyner, it’s too late. This is going to change my life.",
+      "current_ptbr": "Lyner, é tarde demais. Isso vai mudar a minha vida.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5452,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そういうのを生まれ変わるっていわねぇよ!本当にそれでいいのか?",
+      "original_en": "Is that how you want your life to be?",
+      "current_ptbr": "É assim que você quer que sua vida seja?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5453,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "いい。あたし...これからは一番になれる。CRクレアお姉ちゃんの影で泣く必要が無くなるの。",
+      "original_en": "I’ll be the best from now on. I won’t have to cry in Claire’s shadow.",
+      "current_ptbr": "Vou ser a melhor a partir de agora. Não vou mais precisar chorar na sombra da Claire.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5454,
+      "event_file": "Event/722.evd",
+      "speaker_id": 55,
+      "speaker": "Guarda / Viajante",
+      "original_jp": "待ちなさい!",
+      "original_en": "Wait!",
+      "current_ptbr": "Espere!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5455,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "あなた、本当にそれで良いの?CRクレアさんにどれだけ心の支えになってCRもらっていたか...忘れてしまったの?",
+      "original_en": "Are you sure about this? Did you forget how much Miss Claire has helped you? She was always there for you.",
+      "current_ptbr": "Tem certeza disso? Você esqueceu o quanto a Srta. Claire te ajudou? Ela sempre esteve ao seu lado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5456,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "あなたは...!!",
+      "original_en": "You...!",
+      "current_ptbr": "Você...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5457,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "...!!",
+      "original_en": "...!",
+      "current_ptbr": "...!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5458,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "クレアさんがいたから、あたしは今ここにいる。あたしが非力でいじめられたときも助けてくれた。",
+      "original_en": "I’m only here today because of Miss Claire. She protected me from bullies.",
+      "current_ptbr": "Só estou aqui hoje por causa da Srta. Claire. Ela me protegeu dos valentões.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5459,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "喋るのが苦手で、他にお友達がいなかったあたしの、唯一の大親友。CRそんな人を簡単に殺していいの?",
+      "original_en": "I wasn’t good at making friends. She was my only one, my best friend. Are you sure you want to kill someone as special as her?",
+      "current_ptbr": "Eu não era boa em fazer amigos. Ela era a minha única amiga, minha melhor amiga. Você tem certeza de que quer matar alguém tão especial quanto ela?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5460,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "そ、それは...",
+      "original_en": "I...",
+      "current_ptbr": "Eu...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5461,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "今ならまだ間に合う...その手を止めて...",
+      "original_en": "It’s not too late...",
+      "current_ptbr": "Ainda não é tarde demais...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5462,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "でも...クレアは...クレアお姉ちゃんは...CRあたしにとっては...",
+      "original_en": "But Claire was...always...",
+      "current_ptbr": "Mas a Claire era... sempre...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5463,
+      "event_file": "Event/722.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "いや...もういや...わからない!CRあたし、どうしたらいいのか...わからない!",
+      "original_en": "That’s enough! ...I don’t know what to do!",
+      "current_ptbr": "Já chega! ...Não sei o que fazer!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5464,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "オリカ!!",
+      "original_en": "Aurica!",
+      "current_ptbr": "Aurica!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5465,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...いっちまった...。CR一体何なんだ...。",
+      "original_en": "She’s gone...what’s happening to her...",
+      "current_ptbr": "Ela sumiu... o que está acontecendo com ela...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5466,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "オリカは今、自分の中のオリカと戦っています。クレアさんに対する気持ちは正のものばかりではありませんから。",
+      "original_en": "Aurica is fighting with herself. She has some negative feelings toward Miss Claire.",
+      "current_ptbr": "Aurica está em conflito consigo mesma. Ela nutre alguns sentimentos negativos em relação à Srta. Claire.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5467,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "ずっと助けられて生きてきた反面、ずっとクレアさんの影に隠れて生きていた自分がいる。",
+      "original_en": "Miss Claire helped her out, but we were also living in her shadow.",
+      "current_ptbr": "A Srta. Claire a ajudou, mas nós também vivíamos à sombra dela.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5468,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "恐らく...クレアさんの病気を治せないのは、そこに大きな葛藤があるからです。",
+      "original_en": "There’s a conflict inside her. That’s why Aurica can’t cure her.",
+      "current_ptbr": "Há um conflito dentro dela. É por isso que a Aurica não consegue curá-la.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5469,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...なるほど...。",
+      "original_en": "...I see.",
+      "current_ptbr": "...Entendi.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5470,
+      "event_file": "Event/722.evd",
+      "speaker_id": 118,
+      "speaker": "Cidadão de Karff",
+      "original_jp": "どうか、このレベルのオリカを助けてあげてください。あと、悪魔にあまり惑わされないよう、気をつけてください。",
+      "original_en": "Please save the Aurica of this level. Please don’t listen to that devilish girl.",
+      "current_ptbr": "Por favor, salve a Aurica deste nível. Por favor, não dê ouvidos àquela garota diabólica.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5471,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そうか...オリカの中で、クレアさんは唯一の支えであって、最大の邪魔者ってわけか...。",
+      "original_en": "Miss Claire is Aurica’s best friend. But at the same time, she’s also her worst enemy.",
+      "current_ptbr": "A Srta. Claire é a melhor amiga da Aurica. Mas, ao mesmo tempo, ela também é sua pior inimiga.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5472,
+      "event_file": "Event/722.evd",
+      "speaker_id": 103,
+      "speaker": "Personagem [103]",
+      "original_jp": "ライナーさん、CRオリカさんは大丈夫でしょうか...?",
+      "original_en": "Will Aurica be okay?",
+      "current_ptbr": "A Aurica vai ficar bem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5473,
+      "event_file": "Event/722.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...そうだな。オリカを探さないと!CRどこへ行ったんだろう...",
+      "original_en": "I have to go find her!",
+      "current_ptbr": "Tenho que ir procurá-la!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5474,
+      "event_file": "Event/559.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "ボタンを押しました。",
+      "original_en": "You pressed the button.",
+      "current_ptbr": "Você apertou o botão.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5475,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "!?",
+      "original_en": "!?",
+      "current_ptbr": "!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5476,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...ミシャ?どうした?",
+      "original_en": "...Misha? What’s wrong?",
+      "current_ptbr": "...Misha? O que deu?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5477,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "あ...あの...、実はその...",
+      "original_en": "W, well...honestly...",
+      "current_ptbr": "B, bem... sinceramente...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5478,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "私...高いところ...ダメなの...",
+      "original_en": "I’m...afr, afraid of heights...",
+      "current_ptbr": "Eu... tenho... medo de altura...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5479,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "え、ええ!?そうなのか?",
+      "original_en": "Really? You!?",
+      "current_ptbr": "Sério? Você!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5480,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...うん。ま、まさかパイプCRラインがこんな狭いなんて、思ってなかったし...。",
+      "original_en": "...Yes. I didn’t think the Pipeline...would be this narrow...",
+      "current_ptbr": "...Sim. Não achei que o Tubulamento... fosse tão estreito assim...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5481,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ね、ねえ、ライナー...",
+      "original_en": "L, Lyner...",
+      "current_ptbr": "L, Lyner...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5482,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...手...繋いでくれる?",
+      "original_en": "...Will you...hold my hand?",
+      "current_ptbr": "...Você... poderia segurar minha mão?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5483,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "あ...あぁ、CRそれで大丈夫なのか?",
+      "original_en": "Uh, yeah, of course. Are you gonna be okay?",
+      "current_ptbr": "Ah, é, claro. Você vai ficar bem?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5484,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...うん、なんとか。CRでも絶対に離したらダメよ!",
+      "original_en": "...I think so, yes. Just don’t let go of my hand!",
+      "current_ptbr": "...Acho que sim. Só não solte minha mão!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5485,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "わかってるって。",
+      "original_en": "Okay, I won’t.",
+      "current_ptbr": "Tudo bem, eu não vou.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5486,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...絶対だからね!約束よ!?離したらしがみつくからね!",
+      "original_en": "...I mean it! Do you promise? If you let go, I’m gonna grab you!",
+      "current_ptbr": "...Estou falando sério! Você promete? Se você soltar, eu vou te agarrar!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5487,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "大丈夫だって。CRそんなことしないから。",
+      "original_en": "Okay, I get it. I won’t let go.",
+      "current_ptbr": "Tá bom, entendi. Não vou soltar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5488,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...ん。",
+      "original_en": "...Hmm?",
+      "current_ptbr": "...Hmm?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5489,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "しかし、ミシャにCRそんな弱点があるなんてな。",
+      "original_en": "I’m just surprised that you’re scared of something.",
+      "current_ptbr": "Só estou surpreso por você ter medo de alguma coisa.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5490,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "何でもできる優等生だとCR思ってたんだけど。",
+      "original_en": "I mean, I thought you were the girl who could do anything without even flinching.",
+      "current_ptbr": "Quer dizer, eu achava que você era a garota que conseguia fazer qualquer coisa sem nem pestanejar.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5491,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "もしかして、嫌いになった?",
+      "original_en": "Are you disappointed?",
+      "current_ptbr": "Você está decepcionado?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5492,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "...へ?CRそんなこと無いって。",
+      "original_en": "Huh? Not at all.",
+      "current_ptbr": "Hã? De jeito nenhum.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5493,
+      "event_file": "Event/101.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "それに、それくらいの方がCR丁度いいと思うけどな。",
+      "original_en": "I think it’s cute that you have at least one weakness.",
+      "current_ptbr": "Acho fofo que você tenha pelo menos uma fraqueza.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5494,
+      "event_file": "Event/101.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "...うー。",
+      "original_en": "...Hmph.",
+      "current_ptbr": "...Hmph.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5495,
+      "event_file": "Event/380.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "材料の「スクワートメタル」は、あたしの住んでたCRスクワート村にあるんだ。",
+      "original_en": "You can find [Skuwat Metal] in Skuwat Village, where I used to live.",
+      "current_ptbr": "Você pode encontrar [Metal de Skuwat] na Vila de Skuwat, onde eu morava.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5496,
+      "event_file": "Event/380.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "ここからだとちょっとCR遠いけど、頑張って歩こ!",
+      "original_en": "It’s a little far, but it’s not too bad. Come on, let’s go!",
+      "current_ptbr": "É um pouco longe, mas não é tão ruim assim. Vamos lá!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5497,
+      "event_file": "Event/380.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "ワールドマップのCR『追憶の尾翼』にCR行けるようになった!",
+      "original_en": "[Tail of Reminiscence] has been added to the World Map!",
+      "current_ptbr": "[Cauda das Lembranças] foi adicionada ao Mapa Mundial!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5498,
+      "event_file": "Event/380.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "ワールドマップのCR『スクワート廃墟』にCR行けるようになった!",
+      "original_en": "[Skuwat Village] has been added to the World Map!",
+      "current_ptbr": "[Vila de Skuwat] foi adicionada ao Mapa Mundial!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5499,
+      "event_file": "Event/637.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ここまで来れば大丈夫だろう...。",
+      "original_en": "I think we’re safe here...",
+      "current_ptbr": "Acho que estamos seguros aqui...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5500,
+      "event_file": "Event/637.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "うわぁあ!CRここもかよ!追いかけてきてるのか...!?",
+      "original_en": "No! Is it chasing me...!?",
+      "current_ptbr": "Não! Está me perseguindo...!?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5501,
+      "event_file": "Event/637.evd",
+      "speaker_id": 111,
+      "speaker": "Personagem [111]",
+      "original_jp": "...グルルル...",
+      "original_en": "Grrrr...",
+      "current_ptbr": "Grrrr...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5502,
+      "event_file": "Event/637.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "と、とにかく逃げないと!",
+      "original_en": "I have to run away!",
+      "current_ptbr": "Tenho que fugir!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5503,
+      "event_file": "Event/637.evd",
+      "speaker_id": 111,
+      "speaker": "Personagem [111]",
+      "original_jp": "アギャーッ!!",
+      "original_en": "Grrrr!",
+      "current_ptbr": "Grrrr!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5504,
+      "event_file": "Event/662.evd",
+      "speaker_id": 143,
+      "speaker": "Personagem [143]",
+      "original_jp": "あれま、お久し振りです。",
+      "original_en": "Long time no see.",
+      "current_ptbr": "Há quanto tempo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5505,
+      "event_file": "Event/662.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "君もここに来たのか?",
+      "original_en": "You’re here, too?",
+      "current_ptbr": "Você também está aqui?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5506,
+      "event_file": "Event/662.evd",
+      "speaker_id": 143,
+      "speaker": "Personagem [143]",
+      "original_jp": "そりゃもう。CR今日はミシャの晴れ舞台ですからね。",
+      "original_en": "Of course. It’s a special day for Misha.",
+      "current_ptbr": "Claro. É um dia especial para a Misha.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5507,
+      "event_file": "Event/662.evd",
+      "speaker_id": 143,
+      "speaker": "Personagem [143]",
+      "original_jp": "来ないわけがないじゃないですか。",
+      "original_en": "So, of course I’m here.",
+      "current_ptbr": "Então, é claro que estou aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5508,
+      "event_file": "Event/418.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "何か久しぶりにノンビリしているって感じがするな。",
+      "original_en": "I haven’t been able to relax like this in a long time.",
+      "current_ptbr": "Faz muito tempo que não consigo relaxar assim.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5509,
+      "event_file": "Event/418.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "こうやって、武器以外のものを眺めながら歩くってのもCR結構楽しいモンだぜ。",
+      "original_en": "It’s kinda fun to walk around without having to shop for weapons.",
+      "current_ptbr": "É meio divertido andar por aí sem precisar comprar armas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5510,
+      "event_file": "Event/418.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "まあ、一人でなければもっといいんだけどな。",
+      "original_en": "But, it’d be even better if I had someone to walk with...",
+      "current_ptbr": "Mas seria ainda melhor se eu tivesse alguém com quem passear...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5511,
+      "event_file": "Event/691.evd",
+      "speaker_id": 137,
+      "speaker": "Personagem [137]",
+      "original_jp": "...。",
+      "original_en": "......",
+      "current_ptbr": "......",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5512,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "あら、ライナー。CR水をあげに来てくれたの?",
+      "original_en": "Are you here to water the flower?",
+      "current_ptbr": "Você está aqui para regar a flor?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5513,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "もしそうなら1000DP必要になるけど、お水あげる?",
+      "original_en": "You need 1,000 DP to water it. Do you still want to do it?",
+      "current_ptbr": "Você precisa de 1.000 DP para regá-la. Ainda quer fazer isso?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5514,
+      "event_file": "Event/691.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "うわっ!",
+      "original_en": "Whoa!",
+      "current_ptbr": "Uau!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5515,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "わぁ!お花が成長したわね!",
+      "original_en": "The flower grew so much!",
+      "current_ptbr": "A flor cresceu tanto!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5516,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "なんだか、ライナーとお花育ててると楽しい。退屈な毎日にも楽しみが出てくるもの。",
+      "original_en": "It’s fun to take care of this flower with you. My days aren’t so boring anymore.",
+      "current_ptbr": "É divertido cuidar dessa flor com você. Meus dias não são mais tão chatos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5517,
+      "event_file": "Event/691.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "そうか...それは良かった。",
+      "original_en": "I’m glad.",
+      "current_ptbr": "Fico feliz.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5518,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "私、運動音痴で高所恐怖症でしょ...?CRだから、小さい頃、外に出るのはCRあまり好きじゃなかった。",
+      "original_en": "I’m not good with sports, and I’m scared of heights. So, I didn’t like to play outside when I was little.",
+      "current_ptbr": "Não sou boa em esportes e tenho medo de altura. Por isso, quando era pequena, não gostava de brincar lá fora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5519,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "でも、お花に水をあげに行くときだけはCR別だったわ。早く花が咲かないかな...ってCR楽しみにしてたもの。",
+      "original_en": "But, I like to go out to water flowers. It’s exciting to see them grow.",
+      "current_ptbr": "Mas eu gosto de sair para regar as flores. É emocionante vê-las crescer.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5520,
+      "event_file": "Event/691.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ミシャは花が好きなんだな。",
+      "original_en": "You must like flowers.",
+      "current_ptbr": "Você deve gostar de flores.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5521,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "ええ、とても。CRそうだ、私ね、とても好きな場所があるの。「追憶の尾翼」ってところなんだけど...。",
+      "original_en": "Yes, very much. The [Tail of Reminiscence] is my favorite place...",
+      "current_ptbr": "Sim, muito. A [Cauda das Lembranças] é meu lugar favorito...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5522,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "そこには1つの慰霊碑があって、それ以外は一面、花の咲き乱れる草原なの。",
+      "original_en": "It’s a monument that’s surrounded by flowers.",
+      "current_ptbr": "É um monumento cercado por flores.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5523,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "私がプラティナからイム・フェーナに移るときに、その「追憶の尾翼」に寄って...そこでライナーとお別れしたのよ?",
+      "original_en": "We said goodbye at the [Tail of Reminiscence] when I left for Em Pheyna. ",
+      "current_ptbr": "Nos despedimos na [Cauda das Lembranças] quando parti para Em Pheyna.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5524,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "覚えてた?",
+      "original_en": "Do you remember?",
+      "current_ptbr": "Você se lembra?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5525,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "あら、お水が足りないみたい。",
+      "original_en": "Oh, we need to water it some more.",
+      "current_ptbr": "Ah, precisamos regá-la um pouco mais.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5526,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "もっと愛情注がないとダメよ。CRまた今度お願いね。",
+      "original_en": "You need to love and care for your flowers. Try harder next time.",
+      "current_ptbr": "Você precisa amar e cuidar das suas flores. Esforce-se mais da próxima vez.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5527,
+      "event_file": "Event/691.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "そう。それじゃまた今度お願いね。",
+      "original_en": "Come back to water it soon.",
+      "current_ptbr": "Volte logo para regá-la.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5528,
+      "event_file": "Event/688.evd",
+      "speaker_id": 54,
+      "speaker": "Moradora do Mundo Inferior",
+      "original_jp": "ライナー!ライナー!大変なのよ!CR波止場に船が入港したのよ!",
+      "original_en": "Lyner, a ship has arrived at the pier!",
+      "current_ptbr": "Lyner, um navio chegou ao cais!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5529,
+      "event_file": "Event/688.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "なんだって!?CRそうか...船って...もしかして、CRミシャの封印された詩の記憶だったのか...!",
+      "original_en": "Huh? Oh, I get it. The ship was her lost Song Magic.",
+      "current_ptbr": "Ah, entendi. A nave era a Magia da Canção que ela havia perdido.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5530,
+      "event_file": "Event/688.evd",
+      "speaker_id": 54,
+      "speaker": "Moradora do Mundo Inferior",
+      "original_jp": "早く行ってみましょうよ!",
+      "original_en": "Come on! Let’s go!",
+      "current_ptbr": "Vamos lá! Vamos embora!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5531,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "船が...船が来たわ...!!",
+      "original_en": "Here comes the ship!",
+      "current_ptbr": "Lá vem a nave!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5532,
+      "event_file": "Event/688.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "良かったな!ミシャ...。CR4年もの間、ずっと待ってたCR甲斐があったな!",
+      "original_en": "Great! You’ve been looking for four years, but your hard work is finally paying off!",
+      "current_ptbr": "Ótimo! Você vem procurando há quatro anos, mas seu esforço finalmente está valendo a pena!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5533,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "ホントに...。CRこれで私は、いつでも自分の故郷に帰れます。",
+      "original_en": "Now I can go back home whenever I want.",
+      "current_ptbr": "Agora posso voltar para casa sempre que quiser.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5534,
+      "event_file": "Event/688.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "それじゃ、もうここからはいなくなるのか?",
+      "original_en": "Are you leaving us?",
+      "current_ptbr": "Você está nos deixando?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5535,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "いいえ。ずっといるわよ。CR私の故郷は船の中ですもの。",
+      "original_en": "No. I’ll always be here. My home is inside the ship.",
+      "current_ptbr": "Não. Eu sempre estarei aqui. Meu lar é dentro da nave.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5536,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "でもね、もうここに縛られることは無くなったわ。だから、私もライナーに、自分の力を貸してあげることができるようになったの。",
+      "original_en": "But, I don’t always have to stay there. I can go out and help you.",
+      "current_ptbr": "Mas não preciso ficar sempre lá. Posso sair e ajudar você.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5537,
+      "event_file": "Event/688.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "それって...。",
+      "original_en": "You mean...",
+      "current_ptbr": "Você quer dizer...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5538,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "ライナー...私を使って下さいね。",
+      "original_en": "Please, let me help you.",
+      "current_ptbr": "Por favor, deixe-me ajudá-lo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5539,
+      "event_file": "Event/688.evd",
+      "speaker_id": 50,
+      "speaker": "Sistema / Caixa Narrativa / Tutorial",
+      "original_jp": "コスチューム「点心爛漫」を取得しました。装備することで戦闘パラメータが変化します。",
+      "original_en": "You have acquired the [Chinese Dress] costume. Equipping it will change your stats.",
+      "current_ptbr": "Você adquiriu o traje [Vestido Chinês]. Equipá-lo alterará suas estatísticas.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5540,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "でもホントに、これで4年ぶり...4年ぶりに、「ミシャ」が1つに戻れたわ。",
+      "original_en": "After four years, I’ll finally be whole again.",
+      "current_ptbr": "Depois de quatro anos, enfim estarei completa de novo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5541,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "ライナー...ありがとう...。CRホントにありがとう...。",
+      "original_en": "Thank you, Lyner.",
+      "current_ptbr": "Obrigada, Lyner.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5542,
+      "event_file": "Event/688.evd",
+      "speaker_id": 130,
+      "speaker": "Espírito da Flor",
+      "original_jp": "これからも、ミシャをよろしくね...。",
+      "original_en": "Let’s continue to help one another...",
+      "current_ptbr": "Vamos continuar a ajudar uns aos outros...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5543,
+      "event_file": "Event/171.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ここは...CR使徒の祭壇間近の場所...!",
+      "original_en": "Whoa...we’re really close to the Altar of Apostles!",
+      "current_ptbr": "Uau... estamos bem perto do Altar dos Apóstolos!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5544,
+      "event_file": "Event/171.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "それじゃ俺たち...",
+      "original_en": "Which means...?",
+      "current_ptbr": "O que significa...?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5545,
+      "event_file": "Event/171.evd",
+      "speaker_id": 2,
+      "speaker": "Aurica",
+      "original_jp": "無事抜け出せたみたい。",
+      "original_en": "We made it safely.",
+      "current_ptbr": "Chegamos em segurança.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5546,
+      "event_file": "Event/171.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "上側に辿り着いたんだ!CRやったあ!",
+      "original_en": "We’re in the Upper World!? Alright!",
+      "current_ptbr": "Estamos no Mundo Superior!? Ótimo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5547,
+      "event_file": "Event/171.evd",
+      "speaker_id": 6,
+      "speaker": "Radolf",
+      "original_jp": "間一髪...だったな!",
+      "original_en": "Yes, but, we barely made it...",
+      "current_ptbr": "Sim, mas foi por um fio...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5548,
+      "event_file": "Event/171.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "ええ...。",
+      "original_en": "You’re right.",
+      "current_ptbr": "Você está certo.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5549,
+      "event_file": "Event/171.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "よし!とにかくCRプラティナまで行こう!",
+      "original_en": "Alright, Platina, here we come!",
+      "current_ptbr": "Muito bem, Platina, lá vamos nós!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5550,
+      "event_file": "Event/225.evd",
+      "speaker_id": 19,
+      "speaker": "Hama",
+      "original_jp": "来たわね。CRそれじゃ、先へ進むわね。",
+      "original_en": "Ah, you’re here. Let’s proceed.",
+      "current_ptbr": "Ah, você está aqui. Vamos em frente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5551,
+      "event_file": "Event/225.evd",
+      "speaker_id": 19,
+      "speaker": "Hama",
+      "original_jp": "それじゃ。",
+      "original_en": "I’ll see you there.",
+      "current_ptbr": "Nos vemos lá.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5552,
+      "event_file": "Event/225.evd",
+      "speaker_id": 5,
+      "speaker": "Krusche",
+      "original_jp": "本当に神出鬼没な人だね。",
+      "original_en": "She appears in the most unexpected places.",
+      "current_ptbr": "Ela aparece nos lugares mais inesperados.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5553,
+      "event_file": "Event/225.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "一体どんな仕掛けなんだ...?",
+      "original_en": "What kind of trick is she pulling on us?",
+      "current_ptbr": "Que tipo de truque ela está aprontando conosco?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5554,
+      "event_file": "Event/225.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "後で教えてもらえ。CRとにかく今は進むぞ。",
+      "original_en": "Ask her later. Let’s just go for now.",
+      "current_ptbr": "Pergunte a ela mais tarde. Por enquanto, vamos embora.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5555,
+      "event_file": "Event/253.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "ここだ!CRここを左へ...。",
+      "original_en": "Hey, let’s go left.",
+      "current_ptbr": "Ei, vamos para a esquerda.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5556,
+      "event_file": "Event/253.evd",
+      "speaker_id": 4,
+      "speaker": "Jack",
+      "original_jp": "こっちだぜ。",
+      "original_en": "C’mon, this way.",
+      "current_ptbr": "Vamos, por aqui.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5557,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "これはライナー殿。CRお久し振りですな。",
+      "original_en": "Lyner, it has been quite a while since we last spoke.",
+      "current_ptbr": "Lyner, já faz um bom tempo desde a última vez que conversamos.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5558,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "今下で荒れ狂っている嵐のCRことはご存知ですかな?",
+      "original_en": "Have you heard about the storm down below?",
+      "current_ptbr": "Você já ouviu falar da tempestade lá embaixo?",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5559,
+      "event_file": "Event/230.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ええ。CR街中その噂ばかりですから。",
+      "original_en": "Yeah. Everyone’s been talking about it.",
+      "current_ptbr": "É. Todo mundo tem falado sobre isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5560,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "実は、我々もほとほとCR困っているのですよ...。",
+      "original_en": "Unfortunately, we don’t know of any way to stop it.",
+      "current_ptbr": "Infelizmente, não conhecemos nenhuma maneira de impedir isso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5561,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "おっと、愚痴をこぼしている場合ではありませんな。",
+      "original_en": "Pardon me. I did not mean to complain about it.",
+      "current_ptbr": "Com licença. Não tive a intenção de reclamar disso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5562,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "これも大いなるエレミアCR三謳神の試練でしょうから。",
+      "original_en": "This must be an ordeal of the Trio of Elemia.",
+      "current_ptbr": "Isso deve ser uma provação do Trio de Elemia.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5563,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "ライナー殿も十分にCR気をつけてくだされ。",
+      "original_en": "Please, be careful.",
+      "current_ptbr": "Por favor, tome cuidado.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5564,
+      "event_file": "Event/230.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "はい、ありがとうございます。",
+      "original_en": "I will. Thanks for the warning.",
+      "current_ptbr": "Vou tomar. Obrigado pelo aviso.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5565,
+      "event_file": "Event/230.evd",
+      "speaker_id": 20,
+      "speaker": "Tastiella",
+      "original_jp": "皆さんに、エレミア三謳神のご加護があらんことを...。",
+      "original_en": "May the Trio of Elemia bless us all...",
+      "current_ptbr": "Que o Trio de Elemia abençoe a todos nós...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5566,
+      "event_file": "Event/69.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "!! ライナー、気をつけて!あいつ、わたしを狙ってるわ!",
+      "original_en": "Lyner, watch out! That guy is trying to attack me!",
+      "current_ptbr": "Lyner, cuidado! Aquele cara está tentando me atacar!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5567,
+      "event_file": "Event/69.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "敵の中には、わたしたちレーヴァテイルを直接攻撃してくるやつもいるの。",
+      "original_en": "Some enemies try to attack Reyvateils directly.",
+      "current_ptbr": "Alguns inimigos tentam atacar as Reyvateils diretamente.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5568,
+      "event_file": "Event/69.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "なんだって!?そんなひきょうな連中がいるのか?",
+      "original_en": "Really!? Cheating bastards...",
+      "current_ptbr": "Sério!? Desgraçados trapaceiros...",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5569,
+      "event_file": "Event/69.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "わたしたちの詩の力はすごいけど、自分自身はか弱い女の子だから。",
+      "original_en": "Our Song Magic is powerful, but we are fragile girls ourselves.",
+      "current_ptbr": "Nossa Magia da Canção é poderosa, mas nós mesmas somos garotas frágeis.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5570,
+      "event_file": "Event/69.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "だからライナー、わたしが狙われてる時は、あなたが体を張って護ってね。",
+      "original_en": "So Lyner, if they target me, you have to protect me with your body and soul.",
+      "current_ptbr": "Então, Lyner, se eles vierem atrás de mim, você tem que me proteger com o seu corpo e a sua alma.",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5571,
+      "event_file": "Event/69.evd",
+      "speaker_id": 1,
+      "speaker": "Lyner",
+      "original_jp": "ああ、任せとけ!",
+      "original_en": "You can count on me!",
+      "current_ptbr": "Pode contar comigo!",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": 5572,
+      "event_file": "Event/69.evd",
+      "speaker_id": 3,
+      "speaker": "Misha",
+      "original_jp": "まずは、「護る」コマンドを選んで、わたしを護ってね!絶対だよ!",
+      "original_en": "Great. Then select the [Guard] command and protect me! Do you promise?",
+      "current_ptbr": "Ótimo. Então selecione o comando [Guarda] e me proteja! Você promete?",
+      "review_status": "unreviewed"
+    }
+  ]
+}

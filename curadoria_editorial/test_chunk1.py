@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+from test_curation_helper import check_curations
+
+CHUNK_1_CANDIDATES = {
+    31269: ("Parece até um novelo de lã.", "Lapidação concisa e natural da observação de Aurica sobre o novelo de lã (54B/80B)."),
+    31270: ("Assim não emaranha.CRFica bem melhor, né?", "Síntese concisa de Lyner eliminando o estouro de +23B da fala sobre não emaranhar (76B/96B)."),
+    31271: ("Bem... pode ser.", "Aprovação concisa de Aurica eliminando o estouro de +1B (33B/40B)."),
+    31272: ("Ei, Lyner. O Fertilizante não temCRum cheiro que abre o apetite?", "Ajuste eufônico da indagação de Aurica sobre o aroma apetitoso do fertilizante (125B/168B)."),
+    31273: ("Claro. Leva Tripas de Nyo?CRe Cogumelo-Trovão...", "Ajuste preciso dos ingredientes com Tripas de Nyo? e Cogumelo-Trovão (83B/112B)."),
+    31274: ("...Isso faz a Árvore-Pedra crescer?", "Eliminação do estouro de +19B mantendo a dúvida atônita de Aurica (69B/88B)."),
+    31275: ("Cresce, sim. É bem nutritivo.", "Eliminação do estouro de +1B com resposta confiante de Lyner (57B/80B)."),
+    31276: ("Ei, tem algo flutuando no frasco.", "Observação atenta de Aurica ao notar algo no frasco (67B/96B)."),
+    31277: ("É parte do Cogumelo-Trovão.CRDeixei curtindo pra extrairCRcada gota de nutriente.", "Explicação técnica de Lyner sobre curtir o cogumelo para absorver nutrientes (156B/192B)."),
+    31278: ("Vai crescer rápido, né...", "Eliminação do estouro de +23B com o comentário tímido de Aurica (49B/56B)."),
+    31279: ("Uau, que algodão fofinho!", "Exclamação espontânea e encantada de Aurica (47B/56B)."),
+    31280: ("Viu só?CRÉ algodão feito de Erva Suzunari.", "Eliminação do estouro de +9B com entusiasmo de Lyner sobre a Erva Suzunari (70B/104B)."),
+    31281: ("Da Erva Suzunari?CREla fica fofinha desse jeito?", "Eliminação do estouro de +2B com a surpresa meiga de Aurica (74B/104B)."),
+    31282: ("É. Explodi tudo com uma bombaCRe juntei os pedaços. Aí virouCResse algodão macio!", "Lyner detalhando o método bizarro e explosivo de sintetizar algodão (162B/200B)."),
+    31283: ("...Pensar na poeira e na sujeiraCRda explosão misturadas aí...CRdá até um arrepio...", "Reação de nojinho de Aurica imaginando as impurezas da explosão (166B/192B)."),
+    31284: ("Tirar a sujeira faz parte do processo.CRMas olha, ficou perfeito para o nomeCR“Algodão Natural”, não acha?", "Lyner defendendo orgulhoso seu Algodão Natural (196B/240B)."),
+    31285: ("Que método forçado...CR“Afron Cotton” combina bem mais.", "Eliminação do estouro de +2B com o batismo cômico de Aurica (116B/160B)."),
+    31286: ("Parece um ferro bem duro, né?", "Observação de Aurica sobre o metal (54B/64B)."),
+    31287: ("Mas é claro!CRÉ uma peça da aeronave pra genteCRatravessar a Blastline!", "Explicação técnica de Lyner sobre a peça da aeronave para cruzar a Blastline (134B/160B)."),
+    31288: ("Nossa... É bem pesado.CRDá até medo de pensar no estragoCRse isso cair no meu dedinho do pé!", "Eliminação do estouro de +6B com o medo hilário de Aurica sobre machucar o dedinho (170B/248B)."),
+    31289: ("Mas precisava pensar logo nisso?", "Lyner estranhando a fixação de Aurica com o dedinho do pé (62B/72B)."),
+    31290: ("Isso foi bem difícil de fazer...", "Comentário de Lyner sobre a complexidade da manufatura (62B/80B)."),
+    31291: ("Não parece um tecido bonito.CRTem um monte de retalhos remendados...", "Aurica analisando o pano cheio de remendos (136B/144B)."),
+    31292: ("Esses remendos me deram um trabalhão!CRMas olha que usei bastante coisa aí.", "Lyner comentando o esforço de costura com retalhos (146B/208B)."),
+    31293: ("Roupa Engraçada, Camiseta FunbunCRe Fio do Vínculo.CRNão acha um desperdício?", "Correção terminológica de Fio do Vínculo e cadência dos materiais (140B/168B)."),
+    31294: ("Tem Fio do Vínculo nisso?CREntão unir uma Roupa EngraçadaCRe uma Camiseta Funbun virou isso?", "Aurica perplexa com a união dos trajes pelo Fio do Vínculo (160B/208B)."),
+    31295: ("Os materiais são ótimos, mas o visualCRficou tão pobrezinho...CR“Pano Esfarrapado”...", "Eliminação do estouro de +17B com o apelido cômico de Pano Esfarrapado por Aurica (140B/152B)."),
+    31296: ("Ah, é o Don Leon!", "Alegria meiga de Aurica ao reconhecer seu mascote (36B/48B)."),
+    31297: ("Hehe! Fazer um bichinho de pelúciaCRfoi novidade pra mim. Foi bem divertido!", "Lyner orgulhoso do artesanato de pelúcia (148B/176B)."),
+    31298: ("É mesmo? Então da próxima vezCRfaça um Don Leon do meu tamanho!", "Pedido afetuoso e pueril de Aurica para um Don Leon gigante (124B/152B)."),
+    31299: ("Ei, até que parece divertido!", "Concordância animada de Lyner (60B/72B)."),
+    31300: ("Ehehe... Mas o seu Don LeonCRficou a sua cara, Lyner!", "Eliminação radical do estouro de +43B na provocação carinhosa de Aurica (90B/112B)."),
+    31301: ("Olha só, essa cara meio abobalhadaCRé igualzinha à sua!", "Aurica apontando a carinha de bobo idêntica à de Lyner (108B/128B)."),
+    31302: ("Já sei! Vamos chamarCResse Don Leon de “Don Leon Lyner”!", "Eliminação do estouro de +2B com o batismo de Don Leon Lyner (98B/104B)."),
+    31303: ("...Isso é bullying?", "Eliminação do estouro de +23B com a indignação cômica de Lyner (37B/48B)."),
+    31304: ("Flipper finalizado!", "Lyner comemorando o término do Flipper (40B/56B)."),
+    31305: ("Esse é o mecanismo de flutuaçãoCRda aeronave, né? Ele voa?", "Curiosidade de Aurica sobre o mecanismo flutuante (116B/128B)."),
+    31306: ("Sim, com certeza.", "Resposta convicta de Lyner (35B/40B)."),
+    31307: ("Dá até vontade de subir neleCRe sair voando pelos céus, né?", "Imaginação sonhadora de Aurica querendo voar no disco (114B/136B)."),
+    31308: ("Até que seria legal!CRSeria uma diversão bem diferenteCRde voar de aeronave.", "Lyner curtindo a ideia lúdica de Aurica (138B/192B)."),
+    31309: ("Mas pensando bem, dá um medinho...", "Eliminação do estouro de +22B com o receio tímido de Aurica (69B/80B)."),
+    31310: ("Aliás, como você ia subirCRnum disco que fica girando?...", "Eliminação do estouro de +15B com o choque prático de Lyner (90B/120B)."),
+    31311: ("O motor da aeronave para cruzarCRa Blastline: o Ramcluster!", "Apresentação triunfal do motor Ramcluster por Lyner (116B/144B)."),
+    31312: ("Nossa, parece incrível!", "Eliminação do estouro de +5B com a admiração de Aurica (47B/56B)."),
+    31313: ("Pois é. Mas usá-lo sozinhoCRseria uma catástrofe...", "Aviso de perigo de Lyner sobre ligar o motor sem controle (98B/144B)."),
+    31314: ("Ué? Não dá pra usar sozinho?", "Dúvida ingênua de Aurica (57B/72B)."),
+    31315: ("Dá até pra usar, mas precisaCRda Bússola de Gravard pra controlar...", "Eliminação do estouro de +29B especificando a Bússola de Gravard (118B/128B)."),
+    31316: ("Mas este já vem com a BússolaCRde Gravard, então tá tranquilo.", "Garantia de segurança de Lyner sobre a integração da bússola (110B/112B)."),
+}
+
+if __name__ == '__main__':
+    ok = check_curations(CHUNK_1_CANDIDATES)
+    if ok:
+        print("[SUCESSO] Chunk 1 100% calibrado, 0 estouros e 0 erros técnicos!")

@@ -1,0 +1,2507 @@
+{
+  "block_id": "BLK_SYS_003",
+  "axis_id": "AXIS_1",
+  "axis_name": "1_NUCLEO_SISTEMICO_E_MENUS",
+  "category": "Equipamentos, Armas, Armaduras, Acessórios e Itens de Síntese",
+  "total_lines": 288,
+  "lines_rewritten": 154,
+  "lines_approved_as_is": 134,
+  "new_terms": {
+    "MC: [Categoria]": {
+      "pt": "MC: [Categoria]",
+      "category": "Bestiário / Sistema",
+      "note": "Prefixo canônico de Monster Card (Card de Monstro / 敵C:). Mantido com 'MC:' para concisão de bytes e paridade com a UI do jogo."
+    },
+    "Pom": {
+      "pt": "Pom",
+      "gender": "masculino",
+      "number": "singular",
+      "category": "Bestiário / Mascote",
+      "note": "Criatura mascote gelatinosa clássica da Torre de Sol Ciel. Plural: Poms."
+    },
+    "Bit Ball": {
+      "pt": "Bit Ball",
+      "gender": "feminino",
+      "number": "singular",
+      "category": "Bestiário / Mecânico",
+      "note": "Dron de patrulha mecânico esférico com emissor de feixe laser central. Plural: Bit Balls."
+    }
+  },
+  "scene_handoff_final": {
+    "last_scene_id": "BLK_SYS_003",
+    "last_line_id": 21170,
+    "location_and_situation": "Núcleo Sistêmico Parte 3 (Equipamentos de síntese, armas, armaduras corporais, acessórios, catálogo completo da família Pom, plantas carnívoras, feras lupinas, guardas Tenba, sacerdotes templários e esferas mecânicas de segurança) concluído e 100% calibrado dentro dos tetos de memória.",
+    "emotional_state": "Sistêmico / Neutro.",
+    "active_hooks": [
+      "Encadear com BLK_SYS_004 (continuação do Bestiário, chefes mecânicos, demônios e itens de lore)."
+    ]
+  },
+  "highlights": [
+    {
+      "id": 20883,
+      "jp": "合C:超文明の遺産",
+      "en": "RC: Super Civ Legacy",
+      "before": "RC: Legado da Supercivilização",
+      "after": "RC: Legado Ancestral",
+      "reason": "JP 合C:超文明の遺産 (Legado da civilização ancestral; 41B <= 48B; concisão que elimina o estouro grave de 61B da tradução anterior)"
+    },
+    {
+      "id": 20885,
+      "jp": "合C:トランキリティ",
+      "en": "RC: Tranquility",
+      "before": "RC: Tranquilidade",
+      "after": "RC: Calmaria",
+      "reason": "JP 合C:トランキリティ (Paralelo ao item Calmaria; 25B <= 32B; soluciona o overflow de 35B)"
+    },
+    {
+      "id": 20891,
+      "jp": "合C:赤い薬剤A / 合C:赤い薬剤B",
+      "en": "RC: Red Medicine A",
+      "before": "RC: Remédio vermelho A",
+      "after": "RC: Remédio Verm. A",
+      "reason": "JP 合C:赤い薬剤A (Receita de medicamento vermelho; lapidado no teto exato: 40B <= 40B, eliminando estouro de 46B)"
+    },
+    {
+      "id": 20896,
+      "jp": "合C:かわいい小瓶",
+      "en": "RC: Cute Bottle",
+      "before": "RC: Garrafa fofa",
+      "after": "RC: Frasco Fofo",
+      "reason": "JP 合C:かわいい小瓶 (Frasco fofo; 31B <= 32B; termo muito mais acurado para 'kobin' e cabe com folga)"
+    },
+    {
+      "id": 20907,
+      "jp": "嘆きと喜びの棺",
+      "en": "Coffin of Grief and Joy",
+      "before": "Caixão da dor e da alegria",
+      "after": "Caixão: Dor e Alegria",
+      "reason": "JP 嘆きと喜びの棺 (Esquife de dor e alegria; 44B <= 48B; formatação sintética elegante que elimina estouro de 54B)"
+    },
+    {
+      "id": 20915,
+      "jp": "大自然あいす",
+      "en": "Nature Ice",
+      "before": "Gelo natural",
+      "after": "Gelo Nativo",
+      "reason": "JP 大自然あいす (Sorvete/gelo da natureza; 23B <= 24B; quarteto 'Gelo Nativo / RC: Gelo Nativo / Supergelo Nativo / RC: Supergelo Nativo' 100% harmonizado)"
+    },
+    {
+      "id": 20919,
+      "jp": "焼肉ソーダ",
+      "en": "BBQ Soda",
+      "before": "Refrigerante BBQ",
+      "after": "Soda BBQ",
+      "reason": "JP 焼肉ソーダ (Refrigerante/soda de churrasco; 17B <= 24B; corrige overflow de 33B)"
+    },
+    {
+      "id": 20921,
+      "jp": "ソリッドうさこ",
+      "en": "Solid Bunnygirl",
+      "before": "Coelhinha sólida",
+      "after": "Coelha Sólida",
+      "reason": "JP ソリッドうさこ (Mascote Usako rígida; 28B <= 32B; elimina estouro de 34B)"
+    },
+    {
+      "id": 20923,
+      "jp": "うさライス",
+      "en": "Bunny Rice",
+      "before": "Arroz de coelho",
+      "after": "Arroz Usako",
+      "reason": "JP うさライス (Prato de arroz com formato da coelhinha Usako; 23B <= 24B; preserva identidade diegética e corrige 31B)"
+    },
+    {
+      "id": 20925,
+      "jp": "めかうさ",
+      "en": "Bunny Mech",
+      "before": "Coelho mecânico",
+      "after": "Meca-Coelho",
+      "reason": "JP めかうさ (Coelho mecânico Mecha-Usa; 23B <= 24B; conciso, expressivo e elimina estouro de 32B)"
+    },
+    {
+      "id": 20932,
+      "jp": "合C:ソード1",
+      "en": "RC: Sword 1",
+      "before": "RC: Espada 1",
+      "after": "RC: Esp. 1",
+      "reason": "JP 合C:ソード1 (Receita de Espada 1; 21B <= 24B; padroniza série RC: Esp. 1 a 4 dentro do limite de 24B)"
+    },
+    {
+      "id": 20937,
+      "jp": "音速歯車",
+      "en": "Sonic Gear",
+      "before": "Engrenagem sônica",
+      "after": "Eng. Sônica",
+      "reason": "JP 音速歯車 (Engrenagem que gira na velocidade do som; 24B <= 24B; paralelismo com 'Eng. Mortal' de BLK_SYS_002)"
+    },
+    {
+      "id": 20938,
+      "jp": "合C:チェーン1",
+      "en": "RC: Chain 1",
+      "before": "RC: Corrente 1",
+      "after": "RC: Corr. 1",
+      "reason": "JP 合C:チェーン1 (Receita de Corrente 1; 23B <= 24B; padroniza série RC: Corr. 1 a 4 dentro de 24B)"
+    },
+    {
+      "id": 20977,
+      "jp": "天上天下唯我独尊",
+      "en": "God’s Armor",
+      "before": "Armadura divina",
+      "after": "Cota Divina",
+      "reason": "JP 天上天下唯我独尊 (Armadura lendária soberana e invencível; 23B <= 24B; resolve overflow de 31B)"
+    },
+    {
+      "id": 20979,
+      "jp": "褐色モモヒキ",
+      "en": "Brown Tights",
+      "before": "Meia-calça marrom",
+      "after": "Ceroula Marrom",
+      "reason": "JP 褐色モモヒキ (Momohiki = ceroulas tradicionais masculinas compridas; 29B <= 32B; fidelidade cultural ao original)"
+    },
+    {
+      "id": 21008,
+      "jp": "合C:ブースター",
+      "en": "RC: Booster",
+      "before": "RC: Amplificador",
+      "after": "RC: Booster",
+      "reason": "JP 合C:ブースター (Receita de Booster/acelerador; 23B <= 24B; corrige overflow de 33B e confisco de nome com amplificadores de som)"
+    },
+    {
+      "id": 21024,
+      "jp": "マロンポム",
+      "en": "Melon Pom",
+      "before": "Pom melão",
+      "after": "Pom Marrom",
+      "reason": "JP マロンポム (Correção cabal do equívoco de localização ocidental do inglês; Marron = Castanha/Marrom, ponta da cabeça castanha; 21B <= 24B)"
+    },
+    {
+      "id": 21046,
+      "jp": "ただでさえ大きくないポムの更に小さいやつ...",
+      "en": "A smaller version of an already small Pom...",
+      "before": "Versão menor de um Pom já pequeno...",
+      "after": "Uma versão ainda menor de uma criatura que já não é grande. Por ser miúdo, é difícil acertá-lo e seus ataques causam dor pontual como picadas. Quem tem vista fraca que se cuide!",
+      "reason": "JP 目の悪い方には要注意 (Restaura o trocadilho cômico do autor omitido na versão ocidental; 189B <= 312B)"
+    },
+    {
+      "id": 21072,
+      "jp": "マッドドッグ",
+      "en": "Mad Dog",
+      "before": "Cão feroz",
+      "after": "Mad Dog",
+      "reason": "JP マッドドッグ (Cão hidrófobo raivoso; 15B <= 16B; resolve estouro de 20B e mantém simetria com a descrição de Feral Wolf)"
+    },
+    {
+      "id": 21136,
+      "jp": "下半身がないことからわかると思うが、人間ではない...",
+      "en": "As you can see, they are not human...",
+      "before": "Como se vê, não são humanos...",
+      "after": "Como dá para notar pela ausência da metade inferior do corpo, não é humano. Trata-se do espírito de um Temple Guard caído que retornou do além com poderes ampliados.",
+      "reason": "JP 下半身がないことから (Restaura a descrição anatômica espectral original omitida pelo inglês; 174B <= 264B)"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 20883,
+      "original_en": "RC: Super Civ Legacy",
+      "original_jp": "合C:超文明の遺産",
+      "current_ptbr": "RC: Legado da Supercivilização",
+      "curated_ptbr": "RC: Legado Ancestral",
+      "justification": "JP 合C:超文明の遺産 (Legado da civilização ancestral; 41B <= 48B; concisão que evita estouro dos 48B)"
+    },
+    {
+      "id": 20884,
+      "original_en": "Tranquility",
+      "original_jp": "トランキリティ",
+      "current_ptbr": "Calmaria",
+      "curated_ptbr": "Calmaria",
+      "justification": "JP トランキリティ (Calmaria/tranquilidade; 17B <= 24B)"
+    },
+    {
+      "id": 20885,
+      "original_en": "RC: Tranquility",
+      "original_jp": "合C:トランキリティ",
+      "current_ptbr": "RC: Tranquilidade",
+      "curated_ptbr": "RC: Calmaria",
+      "justification": "JP 合C:トランキリティ (Paralelo ao item Calmaria; 25B <= 32B)"
+    },
+    {
+      "id": 20886,
+      "original_en": "Hitlezz",
+      "original_jp": "アタラズ",
+      "current_ptbr": "Hitlezz",
+      "curated_ptbr": "Hitlezz",
+      "justification": "JP アタラズ (Marca de medicamento de precisão; 15B <= 16B)"
+    },
+    {
+      "id": 20887,
+      "original_en": "RC: Blue Medicine A",
+      "original_jp": "合C:青い薬剤A / 合C:青い薬剤B",
+      "current_ptbr": "RC: Remédio azul A",
+      "curated_ptbr": "RC: Remédio Azul A",
+      "justification": "JP 合C:青い薬剤A (Receita de medicamento azul; 38B <= 40B)"
+    },
+    {
+      "id": 20888,
+      "original_en": "Guardlezz",
+      "original_jp": "マモレーズ",
+      "current_ptbr": "Guardlezz",
+      "curated_ptbr": "Guardlezz",
+      "justification": "JP マモレーズ (Marca de medicamento de guarda; 19B <= 24B)"
+    },
+    {
+      "id": 20889,
+      "original_en": "RC: Yellow Medicine A",
+      "original_jp": "合C:黄色い薬剤A / 合C:黄色い薬剤B",
+      "current_ptbr": "RC: Remédio amarelo A",
+      "curated_ptbr": "RC: Remédio Amarelo A",
+      "justification": "JP 合C:黄色い薬剤A (Receita de medicamento amarelo; 44B <= 48B)"
+    },
+    {
+      "id": 20890,
+      "original_en": "Quicklezz",
+      "original_jp": "ドンビリズ",
+      "current_ptbr": "Quicklezz",
+      "curated_ptbr": "Quicklezz",
+      "justification": "JP ドンビリズ (Marca de medicamento de agilidade; 19B <= 24B)"
+    },
+    {
+      "id": 20891,
+      "original_en": "RC: Red Medicine A",
+      "original_jp": "合C:赤い薬剤A / 合C:赤い薬剤B",
+      "current_ptbr": "RC: Remédio vermelho A",
+      "curated_ptbr": "RC: Remédio Verm. A",
+      "justification": "JP 合C:赤い薬剤A (Receita de medicamento vermelho; abreviado no teto exato: 40B <= 40B)"
+    },
+    {
+      "id": 20892,
+      "original_en": "Neo Hitlezz",
+      "original_jp": "ネオ・アタラズ",
+      "current_ptbr": "Neo Hitlezz",
+      "curated_ptbr": "Neo Hitlezz",
+      "justification": "JP ネオ・アタラズ (Versão aprimorada do Hitlezz; 23B <= 24B)"
+    },
+    {
+      "id": 20893,
+      "original_en": "Guardlezz High",
+      "original_jp": "マモレーズ・ハイ",
+      "current_ptbr": "Guardlezz High",
+      "curated_ptbr": "Guardlezz High",
+      "justification": "JP マモレーズ・ハイ (Versão superior do Guardlezz; 29B <= 32B)"
+    },
+    {
+      "id": 20894,
+      "original_en": "Quicklezz RX",
+      "original_jp": "ドンビリズRX",
+      "current_ptbr": "Quicklezz RX",
+      "curated_ptbr": "Quicklezz RX",
+      "justification": "JP ドンビリズRX (Versão avançada do Quicklezz; 25B <= 32B)"
+    },
+    {
+      "id": 20895,
+      "original_en": "Dreamchaser",
+      "original_jp": "夢追いの水",
+      "current_ptbr": "Dreamchaser",
+      "curated_ptbr": "Caça-Sonhos",
+      "justification": "JP 夢追いの水 (Água que persegue sonhos / Dreamchaser; 24B <= 24B)"
+    },
+    {
+      "id": 20896,
+      "original_en": "RC: Cute Bottle",
+      "original_jp": "合C:かわいい小瓶",
+      "current_ptbr": "RC: Garrafa fofa",
+      "curated_ptbr": "RC: Frasco Fofo",
+      "justification": "JP 合C:かわいい小瓶 (Frasco/pequena garrafa fofa; 31B <= 32B)"
+    },
+    {
+      "id": 20897,
+      "original_en": "Power Sourcer",
+      "original_jp": "パワーソーサー",
+      "current_ptbr": "Fonte de poder",
+      "curated_ptbr": "Fonte de Poder",
+      "justification": "JP パワーソーサー (Disco/fonte de energia; 29B <= 32B)"
+    },
+    {
+      "id": 20898,
+      "original_en": "RC: Battery",
+      "original_jp": "合C:バッテリー",
+      "current_ptbr": "RC: Bateria",
+      "curated_ptbr": "RC: Bateria",
+      "justification": "JP 合C:バッテリー (Receita de bateria; 23B <= 24B)"
+    },
+    {
+      "id": 20899,
+      "original_en": "Siren’s Canned Song",
+      "original_jp": "人魚のウタ缶",
+      "current_ptbr": "Canção enlatada da sereia",
+      "curated_ptbr": "Canção da Sereia",
+      "justification": "JP 人魚のウタ缶 (Canto da sereia em lata; 33B <= 40B)"
+    },
+    {
+      "id": 20900,
+      "original_en": "RC: Canned Stuff",
+      "original_jp": "合C:かんづめ",
+      "current_ptbr": "RC: Enlatado",
+      "curated_ptbr": "RC: Enlatado",
+      "justification": "JP 合C:かんづめ (Receita de enlatados; 25B <= 40B)"
+    },
+    {
+      "id": 20901,
+      "original_en": "Wind Slicer Recorder",
+      "original_jp": "風斬りのタテ笛",
+      "current_ptbr": "Flauta corta-vento",
+      "curated_ptbr": "Flauta Corta-Vento",
+      "justification": "JP 風斬りのタテ笛 (Flauta doce que corta o vento; 37B <= 48B)"
+    },
+    {
+      "id": 20902,
+      "original_en": "RC: Flute",
+      "original_jp": "合C:たてぶえ",
+      "current_ptbr": "RC: Flauta",
+      "curated_ptbr": "RC: Flauta",
+      "justification": "JP 合C:たてぶえ (Receita de flauta; 21B <= 24B)"
+    },
+    {
+      "id": 20903,
+      "original_en": "Void Transray",
+      "original_jp": "虚空トランスレイ",
+      "current_ptbr": "Raio vazio",
+      "curated_ptbr": "Raio Vazio",
+      "justification": "JP 虚空トランスレイ (Feixe do vazio / Transray; 21B <= 32B)"
+    },
+    {
+      "id": 20904,
+      "original_en": "RC: MP Recovery Machine",
+      "original_jp": "合C:MP回復機",
+      "current_ptbr": "RC: Máquina de recuperar MP",
+      "curated_ptbr": "RC: Restaurador de MP",
+      "justification": "JP 合C:MP回復機 (Aparelho de restauração de MP; 43B <= 48B)"
+    },
+    {
+      "id": 20905,
+      "original_en": "Sound Reflecting Amplifier",
+      "original_jp": "零音反射式増幅器",
+      "current_ptbr": "Amplificador refletor",
+      "curated_ptbr": "Amplificador Reflexivo",
+      "justification": "JP 零音反射式増幅器 (Amplificador de reflexão acústica; 45B <= 56B)"
+    },
+    {
+      "id": 20906,
+      "original_en": "RC: Resonating Amplifier",
+      "original_jp": "合C:共振増幅器",
+      "current_ptbr": "RC: Amplificador ressonante",
+      "curated_ptbr": "RC: Amplificador Ressonante",
+      "justification": "JP 合C:共振増幅器 (Receita de amplificador ressonante; 55B <= 56B)"
+    },
+    {
+      "id": 20907,
+      "original_en": "Coffin of Grief and Joy",
+      "original_jp": "嘆きと喜びの棺",
+      "current_ptbr": "Caixão da dor e da alegria",
+      "curated_ptbr": "Caixão: Dor e Alegria",
+      "justification": "JP 嘆きと喜びの棺 (Esquife do pranto e do júbilo; 44B <= 48B)"
+    },
+    {
+      "id": 20908,
+      "original_en": "RC: Coffin",
+      "original_jp": "合C:棺",
+      "current_ptbr": "RC: Caixão",
+      "curated_ptbr": "RC: Caixão",
+      "justification": "JP 合C:棺 (Receita de esquife/caixão; 21B <= 24B)"
+    },
+    {
+      "id": 20909,
+      "original_en": "Refresh Core",
+      "original_jp": "リフレッシュコア",
+      "current_ptbr": "Núcleo restaurador",
+      "curated_ptbr": "Núcleo de Vigor",
+      "justification": "JP リフレッシュコア (Núcleo de restauração/vitalidade; 32B <= 32B)"
+    },
+    {
+      "id": 20910,
+      "original_en": "RC: Resting Device",
+      "original_jp": "合C:休息装置",
+      "current_ptbr": "RC: Dispositivo descanso",
+      "curated_ptbr": "RC: Módulo Descanso",
+      "justification": "JP 合C:休息装置 (Receita de dispositivo de repouso; 40B <= 40B)"
+    },
+    {
+      "id": 20911,
+      "original_en": "Ar Tonelico?",
+      "original_jp": "アルトネリコ?",
+      "current_ptbr": "Ar Tonelico?",
+      "curated_ptbr": "Ar Tonelico?",
+      "justification": "JP アルトネリコ? (Nome da Torre com ponto de interrogação; 25B <= 32B)"
+    },
+    {
+      "id": 20912,
+      "original_en": "RC: Tower",
+      "original_jp": "合C:塔",
+      "current_ptbr": "RC: Torre",
+      "curated_ptbr": "RC: Torre",
+      "justification": "JP 合C:塔 (Receita simbólica da Torre; 19B <= 24B)"
+    },
+    {
+      "id": 20913,
+      "original_en": "Dokkoi Parfait",
+      "original_jp": "ドッコイパヘ",
+      "current_ptbr": "Parfait Dokkoi",
+      "curated_ptbr": "Parfait Dokkoi",
+      "justification": "JP ドッコイパヘ (Sobremesa Parfait Dokkoi; 29B <= 32B)"
+    },
+    {
+      "id": 20914,
+      "original_en": "RC: Dokkoi Parfait",
+      "original_jp": "合C:ドッコイパヘ",
+      "current_ptbr": "RC: Parfait Dokkoi",
+      "curated_ptbr": "RC: Parfait Dokkoi",
+      "justification": "JP 合C:ドッコイパヘ (Receita de Parfait Dokkoi; 37B <= 40B)"
+    },
+    {
+      "id": 20915,
+      "original_en": "Nature Ice",
+      "original_jp": "大自然あいす",
+      "current_ptbr": "Gelo natural",
+      "curated_ptbr": "Gelo Nativo",
+      "justification": "JP 大自然あいす (Sorvete/gelo da natureza; 23B <= 24B)"
+    },
+    {
+      "id": 20916,
+      "original_en": "RC: Nature Ice",
+      "original_jp": "合C:大自然あいす",
+      "current_ptbr": "RC: Gelo natural",
+      "curated_ptbr": "RC: Gelo Nativo",
+      "justification": "JP 合C:大自然あいす (Receita de gelo nativo; 31B <= 32B)"
+    },
+    {
+      "id": 20917,
+      "original_en": "Super Nature Ice",
+      "original_jp": "超自然あいす",
+      "current_ptbr": "Supergelo natural",
+      "curated_ptbr": "Supergelo Nativo",
+      "justification": "JP 超自然あいす (Sorvete/gelo da supernatureza; 33B <= 40B)"
+    },
+    {
+      "id": 20918,
+      "original_en": "RC: Super Nature Ice",
+      "original_jp": "合C:超自然あいす",
+      "current_ptbr": "RC: Supergelo natural",
+      "curated_ptbr": "RC: Supergelo Nativo",
+      "justification": "JP 合C:超自然あいす (Receita de supergelo nativo; 41B <= 48B)"
+    },
+    {
+      "id": 20919,
+      "original_en": "BBQ Soda",
+      "original_jp": "焼肉ソーダ",
+      "current_ptbr": "Refrigerante BBQ",
+      "curated_ptbr": "Soda BBQ",
+      "justification": "JP 焼肉ソーダ (Refrigerante de churrasco; 17B <= 24B)"
+    },
+    {
+      "id": 20920,
+      "original_en": "RC: BBQ Soda",
+      "original_jp": "合C:焼肉ソーダ",
+      "current_ptbr": "RC: Refrigerante BBQ",
+      "curated_ptbr": "RC: Soda BBQ",
+      "justification": "JP 合C:焼肉ソーダ (Receita de refrigerante de churrasco; 25B <= 32B)"
+    },
+    {
+      "id": 20921,
+      "original_en": "Solid Bunnygirl",
+      "original_jp": "ソリッドうさこ",
+      "current_ptbr": "Coelhinha sólida",
+      "curated_ptbr": "Coelha Sólida",
+      "justification": "JP ソリッドうさこ (Mascote Usako rígida; 28B <= 32B)"
+    },
+    {
+      "id": 20922,
+      "original_en": "RC: Solid Bunnygirl",
+      "original_jp": "合C:ソリッドうさこ",
+      "current_ptbr": "RC: Coelhinha sólida",
+      "curated_ptbr": "RC: Coelha Sólida",
+      "justification": "JP 合C:ソリッドうさこ (Receita de Usako sólida; 36B <= 40B)"
+    },
+    {
+      "id": 20923,
+      "original_en": "Bunny Rice",
+      "original_jp": "うさライス",
+      "current_ptbr": "Arroz de coelho",
+      "curated_ptbr": "Arroz Usako",
+      "justification": "JP うさライス (Prato de arroz no formato da coelhinha Usako; 23B <= 24B)"
+    },
+    {
+      "id": 20924,
+      "original_en": "RC: Bunny Rice",
+      "original_jp": "合C:うさライス",
+      "current_ptbr": "RC: Arroz coelho",
+      "curated_ptbr": "RC: Arroz Usako",
+      "justification": "JP 合C:うさライス (Receita de arroz Usako; 31B <= 32B)"
+    },
+    {
+      "id": 20925,
+      "original_en": "Bunny Mech",
+      "original_jp": "めかうさ",
+      "current_ptbr": "Coelho mecânico",
+      "curated_ptbr": "Meca-Coelho",
+      "justification": "JP めかうさ (Coelho mecânico / Mecha-Usako; 23B <= 24B)"
+    },
+    {
+      "id": 20926,
+      "original_en": "RC: Bunny Mech",
+      "original_jp": "合C:めかうさ",
+      "current_ptbr": "RC: Coelho mecânico",
+      "curated_ptbr": "RC: Meca-Coelho",
+      "justification": "JP 合C:めかうさ (Receita de coelho mecânico; 31B <= 32B)"
+    },
+    {
+      "id": 20927,
+      "original_en": "Capri Soda",
+      "original_jp": "カプリソーダ",
+      "current_ptbr": "Refrigerante Capri",
+      "curated_ptbr": "Soda Capri",
+      "justification": "JP カプリソーダ (Refrigerante Capri; 21B <= 24B)"
+    },
+    {
+      "id": 20928,
+      "original_en": "RC: Capri Soda",
+      "original_jp": "合C:カプリソーダ",
+      "current_ptbr": "RC: Refrigerante Capri",
+      "curated_ptbr": "RC: Soda Capri",
+      "justification": "JP 合C:カプリソーダ (Receita de refrigerante Capri; 29B <= 32B)"
+    },
+    {
+      "id": 20929,
+      "original_en": "Food Juice",
+      "original_jp": "メシジュース",
+      "current_ptbr": "Suco de comida",
+      "curated_ptbr": "Suco Rango",
+      "justification": "JP メシジュース (Suco nutritivo de refeição/rango; 21B <= 24B)"
+    },
+    {
+      "id": 20930,
+      "original_en": "RC: Food Juice",
+      "original_jp": "合C:メシジュース",
+      "current_ptbr": "RC: Suco de comida",
+      "curated_ptbr": "RC: Suco Rango",
+      "justification": "JP 合C:メシジュース (Receita de suco de refeição; 29B <= 32B)"
+    },
+    {
+      "id": 20931,
+      "original_en": "Cieroceramics",
+      "original_jp": "シエロセラミクス",
+      "current_ptbr": "Cieroceramics",
+      "curated_ptbr": "Cieroceramics",
+      "justification": "JP シエロセラミクス (Cerâmica de Sol Ciel / Cieroceramics; 27B <= 32B)"
+    },
+    {
+      "id": 20932,
+      "original_en": "RC: Sword 1",
+      "original_jp": "合C:ソード1",
+      "current_ptbr": "RC: Espada 1",
+      "curated_ptbr": "RC: Esp. 1",
+      "justification": "JP 合C:ソード1 (Receita de Espada 1 abreviada no limite; 21B <= 24B)"
+    },
+    {
+      "id": 20933,
+      "original_en": "Glastiphon",
+      "original_jp": "グラスティフォン",
+      "current_ptbr": "Glastiphon",
+      "curated_ptbr": "Glastiphon",
+      "justification": "JP グラスティフォン (Arma lendária Glastiphon; 21B <= 24B)"
+    },
+    {
+      "id": 20934,
+      "original_en": "RC: Spear 1",
+      "original_jp": "合C:スピア1",
+      "current_ptbr": "RC: Lança 1",
+      "curated_ptbr": "RC: Lança 1",
+      "justification": "JP 合C:スピア1 (Receita de Lança 1; 24B <= 24B)"
+    },
+    {
+      "id": 20935,
+      "original_en": "Vivaci",
+      "original_jp": "ヴィヴァーチェ",
+      "current_ptbr": "Vivaci",
+      "curated_ptbr": "Vivaci",
+      "justification": "JP ヴィヴァーチェ (Arma de fogo Vivaci; 13B <= 16B)"
+    },
+    {
+      "id": 20936,
+      "original_en": "RC: Gun 1",
+      "original_jp": "合C:銃1",
+      "current_ptbr": "RC: Arma 1",
+      "curated_ptbr": "RC: Arma 1",
+      "justification": "JP 合C:銃1 (Receita de Arma de fogo 1; 21B <= 24B)"
+    },
+    {
+      "id": 20937,
+      "original_en": "Sonic Gear",
+      "original_jp": "音速歯車",
+      "current_ptbr": "Engrenagem sônica",
+      "curated_ptbr": "Eng. Sônica",
+      "justification": "JP 音速歯車 (Engrenagem que gira na velocidade do som; 24B <= 24B)"
+    },
+    {
+      "id": 20938,
+      "original_en": "RC: Chain 1",
+      "original_jp": "合C:チェーン1",
+      "current_ptbr": "RC: Corrente 1",
+      "curated_ptbr": "RC: Corr. 1",
+      "justification": "JP 合C:チェーン1 (Receita de Corrente 1 abreviada; 23B <= 24B)"
+    },
+    {
+      "id": 20939,
+      "original_en": "Suzaku & Seiryuu",
+      "original_jp": "朱雀&青龍",
+      "current_ptbr": "Suzaku & Seiryuu",
+      "curated_ptbr": "Suzaku & Seiryuu",
+      "justification": "JP 朱雀&青龍 (Par de katanas lendárias Suzaku e Seiryuu; 33B <= 40B)"
+    },
+    {
+      "id": 20940,
+      "original_en": "RC: Katana 1",
+      "original_jp": "合C:カタナ1",
+      "current_ptbr": "RC: Katana 1",
+      "curated_ptbr": "RC: Katana 1",
+      "justification": "JP 合C:カタナ1 (Receita de Katana 1; 25B <= 32B)"
+    },
+    {
+      "id": 20941,
+      "original_en": "Eufortissimo",
+      "original_jp": "ユーフォルテシモ",
+      "current_ptbr": "Eufortissimo",
+      "curated_ptbr": "Eufortissimo",
+      "justification": "JP ユーフォルテシモ (Espada musical Eufortissimo; 25B <= 32B)"
+    },
+    {
+      "id": 20942,
+      "original_en": "RC: Sword 2",
+      "original_jp": "合C:ソード2",
+      "current_ptbr": "RC: Espada 2",
+      "curated_ptbr": "RC: Esp. 2",
+      "justification": "JP 合C:ソード2 (Receita de Espada 2 abreviada; 21B <= 24B)"
+    },
+    {
+      "id": 20943,
+      "original_en": "Inferno",
+      "original_jp": "インフェルノ",
+      "current_ptbr": "Inferno",
+      "curated_ptbr": "Inferno",
+      "justification": "JP インフェルノ (Lança abrasadora Inferno; 15B <= 16B)"
+    },
+    {
+      "id": 20944,
+      "original_en": "RC: Spear 2",
+      "original_jp": "合C:スピア2",
+      "current_ptbr": "RC: Lança 2",
+      "curated_ptbr": "RC: Lança 2",
+      "justification": "JP 合C:スピア2 (Receita de Lança 2; 24B <= 24B)"
+    },
+    {
+      "id": 20945,
+      "original_en": "Estremo",
+      "original_jp": "エストレーモ",
+      "current_ptbr": "Estremo",
+      "curated_ptbr": "Estremo",
+      "justification": "JP エストレーモ (Pistola extrema Estremo; 15B <= 16B)"
+    },
+    {
+      "id": 20946,
+      "original_en": "RC: Gun 2",
+      "original_jp": "合C:銃2",
+      "current_ptbr": "RC: Arma 2",
+      "curated_ptbr": "RC: Arma 2",
+      "justification": "JP 合C:銃2 (Receita de Arma de fogo 2; 21B <= 24B)"
+    },
+    {
+      "id": 20947,
+      "original_en": "Electromagnetic Engine",
+      "original_jp": "電磁エンジン",
+      "current_ptbr": "Motor eletromagnético",
+      "curated_ptbr": "Motor Eletromagnético",
+      "justification": "JP 電磁エンジン (Motor eletromagnético; 44B <= 48B)"
+    },
+    {
+      "id": 20948,
+      "original_en": "RC: Chain 2",
+      "original_jp": "合C:チェーン2",
+      "current_ptbr": "RC: Corrente 2",
+      "curated_ptbr": "RC: Corr. 2",
+      "justification": "JP 合C:チェーン2 (Receita de Corrente 2 abreviada; 23B <= 24B)"
+    },
+    {
+      "id": 20949,
+      "original_en": "Zetsuei & Zanmu",
+      "original_jp": "絶影&斬無",
+      "current_ptbr": "Zetsuei & Zanmu",
+      "curated_ptbr": "Zetsuei & Zanmu",
+      "justification": "JP 絶影&斬無 (Par de katanas das sombras Zetsuei e Zanmu; 31B <= 32B)"
+    },
+    {
+      "id": 20950,
+      "original_en": "RC: Katana 2",
+      "original_jp": "合C:カタナ2",
+      "current_ptbr": "RC: Katana 2",
+      "curated_ptbr": "RC: Katana 2",
+      "justification": "JP 合C:カタナ2 (Receita de Katana 2; 25B <= 32B)"
+    },
+    {
+      "id": 20951,
+      "original_en": "Silver Singer",
+      "original_jp": "銀の謳い手",
+      "current_ptbr": "Cantor prateado",
+      "curated_ptbr": "Cantor Prateado",
+      "justification": "JP 銀の謳い手 (Lâmina nobre que ressoa como canção de prata; 31B <= 32B)"
+    },
+    {
+      "id": 20952,
+      "original_en": "RC: Sword 3",
+      "original_jp": "合C:ソード3",
+      "current_ptbr": "RC: Espada 3",
+      "curated_ptbr": "RC: Esp. 3",
+      "justification": "JP 合C:ソード3 (Receita de Espada 3 abreviada; 21B <= 24B)"
+    },
+    {
+      "id": 20953,
+      "original_en": "Element Spear",
+      "original_jp": "エレメントスピア",
+      "current_ptbr": "Lança elemental",
+      "curated_ptbr": "Lança Elemental",
+      "justification": "JP エレメントスピア (Lança imbuída com elementos; 32B <= 32B)"
+    },
+    {
+      "id": 20954,
+      "original_en": "RC: Spear 3",
+      "original_jp": "合C:スピア3",
+      "current_ptbr": "RC: Lança 3",
+      "curated_ptbr": "RC: Lança 3",
+      "justification": "JP 合C:スピア3 (Receita de Lança 3; 24B <= 24B)"
+    },
+    {
+      "id": 20955,
+      "original_en": "Misereen",
+      "original_jp": "ミゼンシャー",
+      "current_ptbr": "Misereen",
+      "curated_ptbr": "Misereen",
+      "justification": "JP ミゼンシャー (Pistola Misereen; 17B <= 24B)"
+    },
+    {
+      "id": 20956,
+      "original_en": "RC: Gun 3",
+      "original_jp": "合C:銃3",
+      "current_ptbr": "RC: Arma 3",
+      "curated_ptbr": "RC: Arma 3",
+      "justification": "JP 合C:銃3 (Receita de Arma de fogo 3; 21B <= 24B)"
+    },
+    {
+      "id": 20957,
+      "original_en": "Sharkgill",
+      "original_jp": "シャークギル",
+      "current_ptbr": "Sharkgill",
+      "curated_ptbr": "Sharkgill",
+      "justification": "JP シャークギル (Arma de lâminas estriadas Sharkgill; 19B <= 24B)"
+    },
+    {
+      "id": 20958,
+      "original_en": "RC: Chain 3",
+      "original_jp": "合C:チェーン3",
+      "current_ptbr": "RC: Corrente 3",
+      "curated_ptbr": "RC: Corr. 3",
+      "justification": "JP 合C:チェーン3 (Receita de Corrente 3 abreviada; 23B <= 24B)"
+    },
+    {
+      "id": 20959,
+      "original_en": "KANADE",
+      "original_jp": "KANADE",
+      "current_ptbr": "KANADE",
+      "curated_ptbr": "KANADE",
+      "justification": "JP KANADE (Lâmina sagrada Kanade / Toque Musical; 13B <= 16B)"
+    },
+    {
+      "id": 20960,
+      "original_en": "RC: Sword 4",
+      "original_jp": "合C:ソード4",
+      "current_ptbr": "RC: Espada 4",
+      "curated_ptbr": "RC: Esp. 4",
+      "justification": "JP 合C:ソード4 (Receita de Espada 4 abreviada; 21B <= 24B)"
+    },
+    {
+      "id": 20961,
+      "original_en": "Doom Slayer",
+      "original_jp": "ドゥームスレイヤー",
+      "current_ptbr": "Matador da ruína",
+      "curated_ptbr": "Doom Slayer",
+      "justification": "JP ドゥームスレイヤー (Lança letal Doom Slayer; 23B <= 24B)"
+    },
+    {
+      "id": 20962,
+      "original_en": "RC: Spear 4",
+      "original_jp": "合C:スピア4",
+      "current_ptbr": "RC: Lança 4",
+      "curated_ptbr": "RC: Lança 4",
+      "justification": "JP 合C:スピア4 (Receita de Lança 4; 24B <= 24B)"
+    },
+    {
+      "id": 20963,
+      "original_en": "Vahstrad",
+      "original_jp": "ヴァストラッド",
+      "current_ptbr": "Vahstrad",
+      "curated_ptbr": "Vahstrad",
+      "justification": "JP ヴァストラッド (Arma de fogo avançada Vahstrad; 17B <= 24B)"
+    },
+    {
+      "id": 20964,
+      "original_en": "RC: Gun 4",
+      "original_jp": "合C:銃4",
+      "current_ptbr": "RC: Arma 4",
+      "curated_ptbr": "RC: Arma 4",
+      "justification": "JP 合C:銃4 (Receita de Arma de fogo 4; 21B <= 24B)"
+    },
+    {
+      "id": 20965,
+      "original_en": "J’s Depression",
+      "original_jp": "Jの憂鬱",
+      "current_ptbr": "Depressão de J",
+      "curated_ptbr": "Depressão de J",
+      "justification": "JP Jの憂鬱 (Corrente da melancolia de Jack; 30B <= 32B)"
+    },
+    {
+      "id": 20966,
+      "original_en": "RC: Chain 4",
+      "original_jp": "合C:チェーン4",
+      "current_ptbr": "RC: Corrente 4",
+      "curated_ptbr": "RC: Corr. 4",
+      "justification": "JP 合C:チェーン4 (Receita de Corrente 4 abreviada; 23B <= 24B)"
+    },
+    {
+      "id": 20967,
+      "original_en": "Eversong",
+      "original_jp": "エバーソング",
+      "current_ptbr": "Eversong",
+      "curated_ptbr": "Eversong",
+      "justification": "JP エバーソング (Espada do cântico eterno; 17B <= 24B)"
+    },
+    {
+      "id": 20968,
+      "original_en": "RC: Super Weapon",
+      "original_jp": "合C:超ウェポン",
+      "current_ptbr": "RC: Superarma",
+      "curated_ptbr": "RC: Superarma",
+      "justification": "JP 合C:超ウェポン (Receita de superarmamento; 27B <= 40B)"
+    },
+    {
+      "id": 20969,
+      "original_en": "Eoria’s Serenade",
+      "original_jp": "エオリアの小夜曲",
+      "current_ptbr": "Serenata de Eoria",
+      "curated_ptbr": "Serenata de Eoria",
+      "justification": "JP エオリアの小夜曲 (Arma sagrada de Eoria; 35B <= 40B)"
+    },
+    {
+      "id": 20970,
+      "original_en": "RC: Ultimate Weapon",
+      "original_jp": "合C:極超ウェポン",
+      "current_ptbr": "RC: Arma suprema",
+      "curated_ptbr": "RC: Arma Suprema",
+      "justification": "JP 合C:極超ウェポン (Receita de arma suprema transcendental; 33B <= 40B)"
+    },
+    {
+      "id": 20971,
+      "original_en": "Eoria’s Wing",
+      "original_jp": "エオリアの翼",
+      "current_ptbr": "Asa de Eoria",
+      "curated_ptbr": "Asa de Eoria",
+      "justification": "JP エオリアの翼 (Armadura protetora de Eoria; 25B <= 32B)"
+    },
+    {
+      "id": 20972,
+      "original_en": "RC: Armor A",
+      "original_jp": "合C:よろいA",
+      "current_ptbr": "RC: Armadura A",
+      "curated_ptbr": "RC: Cota A",
+      "justification": "JP 合C:よろいA (Receita de armadura corporal A; 21B <= 24B)"
+    },
+    {
+      "id": 20973,
+      "original_en": "Elemia’s Guardian",
+      "original_jp": "エレミアの守護神",
+      "current_ptbr": "Guardião de Elemia",
+      "curated_ptbr": "Guardião de Elemia",
+      "justification": "JP エレミアの守護神 (Armadura pesada consagrada da Igreja; 38B <= 40B)"
+    },
+    {
+      "id": 20974,
+      "original_en": "RC: Armor B",
+      "original_jp": "合C:よろいB",
+      "current_ptbr": "RC: Armadura B",
+      "curated_ptbr": "RC: Cota B",
+      "justification": "JP 合C:よろいB (Receita de armadura corporal B; 21B <= 24B)"
+    },
+    {
+      "id": 20975,
+      "original_en": "Air Metal Jacket",
+      "original_jp": "エアメタルジャケ",
+      "current_ptbr": "Jaqueta Air Metal",
+      "curated_ptbr": "Jaqueta Air Metal",
+      "justification": "JP エアメタルジャケ (Jaqueta reforçada de liga leve; 35B <= 40B)"
+    },
+    {
+      "id": 20976,
+      "original_en": "RC: Jacket",
+      "original_jp": "合C:ジャケット",
+      "current_ptbr": "RC: Jaqueta",
+      "curated_ptbr": "RC: Jaqueta",
+      "justification": "JP 合C:ジャケット (Receita de jaqueta protetora; 23B <= 24B)"
+    },
+    {
+      "id": 20977,
+      "original_en": "God’s Armor",
+      "original_jp": "天上天下唯我独尊",
+      "current_ptbr": "Armadura divina",
+      "curated_ptbr": "Cota Divina",
+      "justification": "JP 天上天下唯我独尊 (Armadura suprema solitária e invencível; 23B <= 24B)"
+    },
+    {
+      "id": 20978,
+      "original_en": "RC: Samurai Armor",
+      "original_jp": "合C:武者よろい",
+      "current_ptbr": "RC: Armadura samurai",
+      "curated_ptbr": "RC: Cota Samurai",
+      "justification": "JP 合C:武者よろい (Receita de armadura samurai; 33B <= 40B)"
+    },
+    {
+      "id": 20979,
+      "original_en": "Brown Tights",
+      "original_jp": "褐色モモヒキ",
+      "current_ptbr": "Meia-calça marrom",
+      "curated_ptbr": "Ceroula Marrom",
+      "justification": "JP 褐色モモヒキ (Calçolas longas/ceroulas clássicas marrons; 29B <= 32B)"
+    },
+    {
+      "id": 20980,
+      "original_en": "RC: Camel Color",
+      "original_jp": "合C:ラクダ色",
+      "current_ptbr": "RC: Cor camelo",
+      "curated_ptbr": "RC: Cor Camelo",
+      "justification": "JP 合C:ラクダ色 (Receita de tecido cor camelo; 29B <= 32B)"
+    },
+    {
+      "id": 20981,
+      "original_en": "Passion T-shirt",
+      "original_jp": "熱血Tシャツ",
+      "current_ptbr": "Camiseta paixão",
+      "curated_ptbr": "Camiseta Paixão",
+      "justification": "JP 熱血Tシャツ (Camiseta da determinação ardente; 32B <= 32B)"
+    },
+    {
+      "id": 20982,
+      "original_en": "RC: Circle Neck",
+      "original_jp": "合C:まるくび",
+      "current_ptbr": "RC: Gola red.",
+      "curated_ptbr": "RC: Gola Red.",
+      "justification": "JP 合C:まるくび (Receita de camiseta de gola redonda; 27B <= 32B)"
+    },
+    {
+      "id": 20983,
+      "original_en": "Sailor Bunny Dress",
+      "original_jp": "せらうさドレス",
+      "current_ptbr": "Vestido coelha marinheira",
+      "curated_ptbr": "Vestido Sailor Usa",
+      "justification": "JP せらうさドレス (Vestido marinheiro da coelhinha Usako; 37B <= 40B)"
+    },
+    {
+      "id": 20984,
+      "original_en": "RC: Dress",
+      "original_jp": "合C:ドレス",
+      "current_ptbr": "RC: Vestido",
+      "curated_ptbr": "RC: Vestido",
+      "justification": "JP 合C:ドレス (Receita de vestido; 23B <= 24B)"
+    },
+    {
+      "id": 20985,
+      "original_en": "Higedance Suit",
+      "original_jp": "ヒゲダンスーツ",
+      "current_ptbr": "Traje Higedance",
+      "curated_ptbr": "Traje Higedance",
+      "justification": "JP ヒゲダンスーツ (Traje cômico da dança do bigode; 31B <= 32B)"
+    },
+    {
+      "id": 20986,
+      "original_en": "RC: Formal",
+      "original_jp": "合C:フォーマル",
+      "current_ptbr": "RC: Formal",
+      "curated_ptbr": "RC: Formal",
+      "justification": "JP 合C:フォーマル (Receita de vestimenta formal; 21B <= 24B)"
+    },
+    {
+      "id": 20987,
+      "original_en": "Bushido Armor",
+      "original_jp": "ブシドーアーマー",
+      "current_ptbr": "Armadura bushido",
+      "curated_ptbr": "Cota Bushido",
+      "justification": "JP ブシドーアーマー (Armadura do código guerreiro Bushido; 25B <= 32B)"
+    },
+    {
+      "id": 20988,
+      "original_en": "RC: Sword Fight",
+      "original_jp": "合C:チャンバラ",
+      "current_ptbr": "RC: Luta espada",
+      "curated_ptbr": "RC: Luta Espada",
+      "justification": "JP 合C:チャンバラ (Receita de combate de espadas chanbara; 31B <= 32B)"
+    },
+    {
+      "id": 20989,
+      "original_en": "Operetta",
+      "original_jp": "オペレッタ",
+      "current_ptbr": "Operetta",
+      "curated_ptbr": "Operetta",
+      "justification": "JP オペレッタ (Tiara elegante de ópera; 17B <= 24B)"
+    },
+    {
+      "id": 20990,
+      "original_en": "RC: Tiara",
+      "original_jp": "合C:ティアラ",
+      "current_ptbr": "RC: Tiara",
+      "curated_ptbr": "RC: Tiara",
+      "justification": "JP 合C:ティアラ (Receita de tiara; 19B <= 24B)"
+    },
+    {
+      "id": 20991,
+      "original_en": "Grand Crown",
+      "original_jp": "グランドクラウン",
+      "current_ptbr": "Grande coroa",
+      "curated_ptbr": "Grã-Coroa",
+      "justification": "JP グランドクラウン (Coroa majestosa; 20B <= 24B)"
+    },
+    {
+      "id": 20992,
+      "original_en": "RC: King’s Crown",
+      "original_jp": "合C:王冠",
+      "current_ptbr": "RC: Coroa real",
+      "curated_ptbr": "RC: Coroa Real",
+      "justification": "JP 合C:王冠 (Receita de coroa da realeza; 29B <= 40B)"
+    },
+    {
+      "id": 20993,
+      "original_en": "Grathnode Ring",
+      "original_jp": "グラスノリング",
+      "current_ptbr": "Anel Grathnode",
+      "curated_ptbr": "Anel Grathnode",
+      "justification": "JP グラスノリング (Anel condutor de ondas Grathnode; 29B <= 32B)"
+    },
+    {
+      "id": 20994,
+      "original_en": "RC: Shining Ring",
+      "original_jp": "合C:光る指輪",
+      "current_ptbr": "RC: Anel brilhante",
+      "curated_ptbr": "RC: Anel Brilhante",
+      "justification": "JP 合C:光る指輪 (Receita de anel radiante; 37B <= 40B)"
+    },
+    {
+      "id": 20995,
+      "original_en": "Parameno Ring",
+      "original_jp": "パラメノリング",
+      "current_ptbr": "Anel Parameno",
+      "curated_ptbr": "Anel Parameno",
+      "justification": "JP パラメノリング (Anel especial de sintonização Parameno; 27B <= 32B)"
+    },
+    {
+      "id": 20996,
+      "original_en": "RC: Black Ring",
+      "original_jp": "合C:黒い指輪",
+      "current_ptbr": "RC: Anel preto",
+      "curated_ptbr": "RC: Anel Preto",
+      "justification": "JP 合C:黒い指輪 (Receita de anel sombrio; 29B <= 32B)"
+    },
+    {
+      "id": 20997,
+      "original_en": "Stardust Tears",
+      "original_jp": "星屑の涙",
+      "current_ptbr": "Lágrimas estelares",
+      "curated_ptbr": "Lágrima Estelar",
+      "justification": "JP 星屑の涙 (Gema brilhante de poeira cósmica; 32B <= 32B)"
+    },
+    {
+      "id": 20998,
+      "original_en": "RC: Crystal",
+      "original_jp": "合C:水晶",
+      "current_ptbr": "RC: Cristal",
+      "curated_ptbr": "RC: Cristal",
+      "justification": "JP 合C:水晶 (Receita de cristal mineral; 23B <= 24B)"
+    },
+    {
+      "id": 20999,
+      "original_en": "Mother-in-law Ring",
+      "original_jp": "こじゅうとの指輪",
+      "current_ptbr": "Anel da sogra",
+      "curated_ptbr": "Anel da Sogra",
+      "justification": "JP こじゅうとの指輪 (Anel afiado da sogra implicante; 27B <= 40B)"
+    },
+    {
+      "id": 21000,
+      "original_en": "RC: Flashy Ring",
+      "original_jp": "合C:派手な指輪",
+      "current_ptbr": "RC: Anel chamativo",
+      "curated_ptbr": "RC: Anel Luxo",
+      "justification": "JP 合C:派手な指輪 (Receita de anel chamativo/luxuoso; 27B <= 32B)"
+    },
+    {
+      "id": 21001,
+      "original_en": "Shampoo Hat",
+      "original_jp": "シャンプーハット",
+      "current_ptbr": "Chapéu de banho",
+      "curated_ptbr": "Touca Banho",
+      "justification": "JP シャンプーハット (Touca protetora de banho; 23B <= 24B)"
+    },
+    {
+      "id": 21002,
+      "original_en": "RC: Hat",
+      "original_jp": "合C:ぼうし",
+      "current_ptbr": "RC: Chapéu",
+      "curated_ptbr": "RC: Cap",
+      "justification": "JP 合C:ぼうし (Receita de chapéu/touca/cobertura de cabeça; 15B <= 16B)"
+    },
+    {
+      "id": 21003,
+      "original_en": "Thread of Binding",
+      "original_jp": "仲結いの糸",
+      "current_ptbr": "Fio aprisionador",
+      "curated_ptbr": "Fio Aprisionador",
+      "justification": "JP 仲結いの糸 (Fio mágico de laços firmes; 33B <= 40B)"
+    },
+    {
+      "id": 21004,
+      "original_en": "RC: Thread",
+      "original_jp": "合C:糸",
+      "current_ptbr": "RC: Fio",
+      "curated_ptbr": "RC: Fio",
+      "justification": "JP 合C:糸 (Receita de linha e fio; 15B <= 24B)"
+    },
+    {
+      "id": 21005,
+      "original_en": "Ardell Crystalline",
+      "original_jp": "アーデル結晶体",
+      "current_ptbr": "Cristal Ardell",
+      "curated_ptbr": "Cristal Ardell",
+      "justification": "JP アーデル結晶体 (Formação cristalina de Ardell; 29B <= 40B)"
+    },
+    {
+      "id": 21006,
+      "original_en": "RC: Octahedron Crystal",
+      "original_jp": "合C:八面体結晶",
+      "current_ptbr": "RC: Cristal octaédrico",
+      "curated_ptbr": "RC: Cristal Octaédrico",
+      "justification": "JP 合C:八面体結晶 (Receita de cristal de oito faces; 46B <= 48B)"
+    },
+    {
+      "id": 21007,
+      "original_en": "Fever Mordar",
+      "original_jp": "フィーバモーダー",
+      "current_ptbr": "Fever Mordar",
+      "curated_ptbr": "Fever Mordar",
+      "justification": "JP フィーバモーダー (Item energético Fever Mordar; 25B <= 32B)"
+    },
+    {
+      "id": 21008,
+      "original_en": "RC: Booster",
+      "original_jp": "合C:ブースター",
+      "current_ptbr": "RC: Amplificador",
+      "curated_ptbr": "RC: Booster",
+      "justification": "JP 合C:ブースター (Receita de amplificador/propulsor; 23B <= 24B)"
+    },
+    {
+      "id": 21009,
+      "original_en": "White Ring",
+      "original_jp": "ホワイトリング",
+      "current_ptbr": "Anel branco",
+      "curated_ptbr": "Anel Branco",
+      "justification": "JP ホワイトリング (Anel alvinegro puro; 23B <= 24B)"
+    },
+    {
+      "id": 21010,
+      "original_en": "RC: White Ring",
+      "original_jp": "合C:白い指輪",
+      "current_ptbr": "RC: Anel branco",
+      "curated_ptbr": "RC: Anel Branco",
+      "justification": "JP 合C:白い指輪 (Receita de anel branco; 31B <= 32B)"
+    },
+    {
+      "id": 21011,
+      "original_en": "Green Ring",
+      "original_jp": "グリンリング",
+      "current_ptbr": "Anel verde",
+      "curated_ptbr": "Anel Verde",
+      "justification": "JP グリンリング (Anel esmeralda verdejante; 21B <= 24B)"
+    },
+    {
+      "id": 21012,
+      "original_en": "RC: Green Ring",
+      "original_jp": "合C:緑の指輪",
+      "current_ptbr": "RC: Anel verde",
+      "curated_ptbr": "RC: Anel Verde",
+      "justification": "JP 合C:緑の指輪 (Receita de anel verde; 29B <= 32B)"
+    },
+    {
+      "id": 21013,
+      "original_en": "Aeriel Cage",
+      "original_jp": "エアリエルのカゴ",
+      "current_ptbr": "Gaiola aérea",
+      "curated_ptbr": "Jaula Ariel",
+      "justification": "JP エアリエルのカゴ (Gaiola sagrada do espírito do ar Ariel; 23B <= 24B)"
+    },
+    {
+      "id": 21014,
+      "original_en": "RC: Cage",
+      "original_jp": "合C:カゴ",
+      "current_ptbr": "RC: Gaiola",
+      "curated_ptbr": "RC: Gaiola",
+      "justification": "JP 合C:カゴ (Receita de gaiola/cesto; 21B <= 24B)"
+    },
+    {
+      "id": 21015,
+      "original_en": "Sun Lamp",
+      "original_jp": "太陽のランプ",
+      "current_ptbr": "Lâmpada solar",
+      "curated_ptbr": "Farol Solar",
+      "justification": "JP 太陽のランプ (Lâmpada radiante do sol; 23B <= 24B)"
+    },
+    {
+      "id": 21016,
+      "original_en": "RC: Lamp",
+      "original_jp": "合C:ランプ",
+      "current_ptbr": "RC: Lâmpada",
+      "curated_ptbr": "RC: Lâmpada",
+      "justification": "JP 合C:ランプ (Receita de lamparina; 24B <= 24B)"
+    },
+    {
+      "id": 21017,
+      "original_en": "Yuteria Chord",
+      "original_jp": "ユーテリア弦",
+      "current_ptbr": "Acorde Yuteria",
+      "curated_ptbr": "Acorde Yuteria",
+      "justification": "JP ユーテリア弦 (Corda melódica da ressonância de Yuteria; 29B <= 32B)"
+    },
+    {
+      "id": 21018,
+      "original_en": "RC: Yuteria Chord",
+      "original_jp": "合C:ユーテリア弦",
+      "current_ptbr": "RC: Acorde Yuteria",
+      "curated_ptbr": "RC: Acorde Yuteria",
+      "justification": "JP 合C:ユーテリア弦 (Receita de corda Yuteria; 37B <= 40B)"
+    },
+    {
+      "id": 21019,
+      "original_en": "Circula Teleporter",
+      "original_jp": "相転換サーキュラ",
+      "current_ptbr": "Teleporte Circula",
+      "curated_ptbr": "Teleporte Circula",
+      "justification": "JP 相転換サーキュラ (Dispositivo de transição de fase Circula; 35B <= 40B)"
+    },
+    {
+      "id": 21020,
+      "original_en": "RC: Circula",
+      "original_jp": "合C:サーキュラ",
+      "current_ptbr": "RC: Circula",
+      "curated_ptbr": "RC: Circula",
+      "justification": "JP 合C:サーキュラ (Receita do transportador Circula; 23B <= 24B)"
+    },
+    {
+      "id": 21021,
+      "original_en": "Pom",
+      "original_jp": "ポム",
+      "current_ptbr": "Pom",
+      "curated_ptbr": "Pom",
+      "justification": "JP ポム (Mascote e monstro mascote clássico; 7B <= 8B)"
+    },
+    {
+      "id": 21022,
+      "original_en": "An animal shaped like a chestnut. Its head is pointy and pink at the tip. It’s squishy, so it doesn’t hurt much even if they hit you.",
+      "original_jp": "栗のような形をした生物。頭の先っちょが尖っていて、その先端部分がピンク色をしている。ブニョブニョしているので、当たってもあまり痛くない。",
+      "current_ptbr": "Animal parecido com uma castanha. A cabeça é pontuda, com a ponta rosa. É macio, por isso suas investidas não machucam muito.",
+      "curated_ptbr": "Animal parecido com uma castanha. A cabeça é pontuda, com a ponta rosa. É macio, por isso suas investidas não machucam muito.",
+      "justification": "Descrição zoológica/bestiário refinada; 255B <= original_bytes"
+    },
+    {
+      "id": 21023,
+      "original_en": "MC: Pom1",
+      "original_jp": "敵C:ポム系1",
+      "current_ptbr": "MC: Pom1",
+      "curated_ptbr": "MC: Pom1",
+      "justification": "JP 敵C:ポム系1 (Card de Monstro do Pom 1; 17B <= 32B)"
+    },
+    {
+      "id": 21024,
+      "original_en": "Melon Pom",
+      "original_jp": "マロンポム",
+      "current_ptbr": "Pom melão",
+      "curated_ptbr": "Pom Marrom",
+      "justification": "JP マロンポム (Correção cabal do erro do EN 'Melon'; Marron = Castanha/Marrom; 21B <= 24B)"
+    },
+    {
+      "id": 21025,
+      "original_en": "The shape, color...everything about it screams melon. It looks similar to a Pom, but the head is brown, instead. These guys don’t really hurt either.",
+      "original_jp": "形といい色といい、まさにマロンだ。表面的な色はポムとあまり代わりがないが、頭の先端部分が茶色になっているのが特徴。やはり当てられてもあまり痛くない。",
+      "current_ptbr": "Forma, cor... tudo nele lembra um melão. Parece um Pom, mas tem a cabeça marrom. Também não machuca muito.",
+      "curated_ptbr": "Na forma e na cor, é puro marrom. O corpo pouco difere do Pom comum, mas a ponta de sua cabeça é castanha. Também não machuca muito.",
+      "justification": "Descrição zoológica/bestiário refinada; 270B <= original_bytes"
+    },
+    {
+      "id": 21026,
+      "original_en": "MC: Pom2",
+      "original_jp": "敵C:ポム系2",
+      "current_ptbr": "MC: Pom2",
+      "curated_ptbr": "MC: Pom2",
+      "justification": "JP 敵C:ポム系2 (Card de Monstro do Pom 2; 17B <= 24B)"
+    },
+    {
+      "id": 21027,
+      "original_en": "Peachy Pom",
+      "original_jp": "モモポム",
+      "current_ptbr": "Pom pêssego",
+      "curated_ptbr": "Pom Pêssego",
+      "justification": "JP モモポム (Pom de cor rosada; 24B <= 24B)"
+    },
+    {
+      "id": 21028,
+      "original_en": "A Pom with a pink body and white head. It’s squishy like the others, but this one’s pretty aggressive. Don’t let your guard down.",
+      "original_jp": "体の表面がピンク色になって、頭のてっぺんが真っ白になったポム。相変わらずプニョプニョしてはいるが、結構凶暴なので油断していると痛い目を見ることになる。",
+      "current_ptbr": "Pom de corpo rosa e cabeça branca. É macio como os outros, mas bem agressivo. Não baixe a guarda.",
+      "curated_ptbr": "Pom de corpo rosa e cabeça branca. Continua macio como os outros, mas é bem agressivo. Não baixe a guarda.",
+      "justification": "Descrição zoológica/bestiário refinada; 216B <= original_bytes"
+    },
+    {
+      "id": 21029,
+      "original_en": "MC: Pom3",
+      "original_jp": "敵C:ポム系3",
+      "current_ptbr": "MC: Pom3",
+      "curated_ptbr": "MC: Pom3",
+      "justification": "JP 敵C:ポム系3 (Card de Monstro do Pom 3; 17B <= 24B)"
+    },
+    {
+      "id": 21030,
+      "original_en": "Kneaded Pom",
+      "original_jp": "ネリポム",
+      "current_ptbr": "Pom amassado",
+      "curated_ptbr": "Pom de Goma",
+      "justification": "JP ネリポム (Pom amassado com textura de massa elástica; 23B <= 24B)"
+    },
+    {
+      "id": 21031,
+      "original_en": "It’s so blue you can’t even tell the head apart from the rest of its body. It kind of looks like a water drop. Unlike the other Poms, this one is a little more rubbery.",
+      "original_jp": "頭と表面がほとんど見分けが付かないくらいに青色になったポム。まるで水かなにかの雫のように見える。他のポムと違って少しだけ弾力感がある。",
+      "current_ptbr": "É tão azul que a cabeça se confunde com o corpo. Parece uma gota d'água. É mais elástico que os outros Poms.",
+      "curated_ptbr": "É tão azul que a cabeça se confunde com o corpo. Lembra uma gota d'água. Diferente dos outros Poms, tem textura mais elástica.",
+      "justification": "Descrição zoológica/bestiário refinada; 258B <= original_bytes"
+    },
+    {
+      "id": 21032,
+      "original_en": "MC: Pom4",
+      "original_jp": "敵C:ポム系4",
+      "current_ptbr": "MC: Pom4",
+      "curated_ptbr": "MC: Pom4",
+      "justification": "JP 敵C:ポム系4 (Card de Monstro do Pom 4; 17B <= 24B)"
+    },
+    {
+      "id": 21033,
+      "original_en": "Metal Pom",
+      "original_jp": "メタルポム",
+      "current_ptbr": "Pom metálico",
+      "curated_ptbr": "Pom Metal",
+      "justification": "JP メタルポム (Pom com carapaça metálica; 19B <= 24B)"
+    },
+    {
+      "id": 21034,
+      "original_en": "The name Metal is there for a reason. Attacks are almost useless to this hard blob, and it hurts when it hits you. But somehow, it’s still squishy and bounces around.",
+      "original_jp": "メタルという名前は伊達じゃない。攻撃しても硬くて歯が立たないし、攻撃されるとめちゃくちゃ痛い。それなのに、どうしてだかプニョプニョして跳ねている。",
+      "current_ptbr": "Não se chama Metal à toa. Quase nenhum ataque afeta essa massa dura, e suas investidas doem. Mesmo assim, continua macio e saltitante.",
+      "curated_ptbr": "Não se chama Metal à toa. Quase nenhum ataque afeta essa massa dura, e seus golpes doem horrores. Mesmo assim, continua macio e saltitante.",
+      "justification": "Descrição zoológica/bestiário refinada; 281B <= original_bytes"
+    },
+    {
+      "id": 21035,
+      "original_en": "MC: Pom5",
+      "original_jp": "敵C:ポム系5",
+      "current_ptbr": "MC: Pom5",
+      "curated_ptbr": "MC: Pom5",
+      "justification": "JP 敵C:ポム系5 (Card de Monstro do Pom 5; 17B <= 24B)"
+    },
+    {
+      "id": 21036,
+      "original_en": "Prism Pom",
+      "original_jp": "プリズムポム",
+      "current_ptbr": "Pom prisma",
+      "curated_ptbr": "Pom Prisma",
+      "justification": "JP プリズムポム (Pom multicolorido e brilhante; 21B <= 24B)"
+    },
+    {
+      "id": 21037,
+      "original_en": "A very pretty looking Pom. It’s so colorful you might even want to capture it just to make it part of some collection, but it’s rather strong so that’ll be a little hard.",
+      "original_jp": "見た目の色が物凄く綺麗なポム。思わずこのまま捕まえてコレクションにしてしまいたいような外見をしているが、結構強いのでそれをするのは至難の業だ。",
+      "current_ptbr": "Um Pom muito bonito e colorido. Dá vontade de capturá-lo para uma coleção, mas sua força torna isso difícil.",
+      "curated_ptbr": "Um Pom multicolorido e deslumbrante. Dá vontade de capturá-lo para uma coleção, mas sua força torna isso muito difícil.",
+      "justification": "Descrição zoológica/bestiário refinada; 243B <= original_bytes"
+    },
+    {
+      "id": 21038,
+      "original_en": "MC: Pom6",
+      "original_jp": "敵C:ポム系6",
+      "current_ptbr": "MC: Pom6",
+      "curated_ptbr": "MC: Pom6",
+      "justification": "JP 敵C:ポム系6 (Card de Monstro do Pom 6; 17B <= 24B)"
+    },
+    {
+      "id": 21039,
+      "original_en": "Trio de Pom",
+      "original_jp": "トリオ・ザ・ポム",
+      "current_ptbr": "Trio de Pom",
+      "curated_ptbr": "Trio de Pom",
+      "justification": "JP トリオ・ザ・ポム (Trio de Poms coordenados; 23B <= 24B)"
+    },
+    {
+      "id": 21040,
+      "original_en": "Three Poms. One may be weak, but three Poms together can become strong. The perfectly synchronized triple attacks are quite a show for the viewer.",
+      "original_jp": "三匹のポム。一匹の力は小さいけれど、仲間と一緒に力をあわせればポムだって強くなる。息のあった三位一体の連携攻撃は見るものを驚かす。",
+      "current_ptbr": "Três Poms. Um pode ser fraco, mas juntos ficam fortes. Seus ataques triplos perfeitamente sincronizados são um espetáculo.",
+      "curated_ptbr": "Três Poms. Um sozinho é fraco, mas juntos ficam fortes. Seus ataques triplos perfeitamente sincronizados são um espetáculo.",
+      "justification": "Descrição zoológica/bestiário refinada; 251B <= original_bytes"
+    },
+    {
+      "id": 21041,
+      "original_en": "MC: Pom7",
+      "original_jp": "敵C:ポム系7",
+      "current_ptbr": "MC: Pom7",
+      "curated_ptbr": "MC: Pom7",
+      "justification": "JP 敵C:ポム系7 (Card de Monstro do Pom 7; 17B <= 24B)"
+    },
+    {
+      "id": 21042,
+      "original_en": "Big Pom",
+      "original_jp": "でかポム",
+      "current_ptbr": "Pom grande",
+      "curated_ptbr": "Pom Max",
+      "justification": "JP でかポム (Pom grandalhão gigante; 15B <= 16B)"
+    },
+    {
+      "id": 21043,
+      "original_en": "A big version of a Pom. It’s still squishy even though it’s big, but they’re really dense and heavy. Whether it bounces into you or onto you, it’ll hurt.",
+      "original_jp": "ポムのどデカイバージョン。デカくても相変わらずプニョプニョしているが、ドスンドスンと音がするほどの質量。当たるにしろ潰されるにしろ、地獄。",
+      "current_ptbr": "Uma versão grande do Pom. Ainda é macio, mas também denso e pesado. Ser atingido ou esmagado por ele dói bastante.",
+      "curated_ptbr": "Versão colossal do Pom. Ainda é macio, mas tem uma massa que faz o chão tremer. Ser atingido ou esmagado por ele é um pesadelo.",
+      "justification": "Descrição zoológica/bestiário refinada; 259B <= original_bytes"
+    },
+    {
+      "id": 21044,
+      "original_en": "MC: Pom8",
+      "original_jp": "敵C:ポム系8",
+      "current_ptbr": "MC: Pom8",
+      "curated_ptbr": "MC: Pom8",
+      "justification": "JP 敵C:ポム系8 (Card de Monstro do Pom 8; 17B <= 24B)"
+    },
+    {
+      "id": 21045,
+      "original_en": "Tiny Pom",
+      "original_jp": "ちびポム",
+      "current_ptbr": "Pom pequeno",
+      "curated_ptbr": "Mini Pom",
+      "justification": "JP ちびポム (Pom minúsculo em miniatura; 17B <= 24B)"
+    },
+    {
+      "id": 21046,
+      "original_en": "A smaller version of an already small Pom. It’s small, so they’re hard to hit, and it hurts when they attack because they’ll hit you like a tiny pellet. ",
+      "original_jp": "ただでさえ大きくないポムの更に小さいやつ。小さいから攻撃しにくい上に、攻撃されるとピンポイントで突かれたかのような痛みを感じる。目の悪い方には要注意。",
+      "current_ptbr": "Versão menor de um Pom já pequeno. É difícil acertá-lo, e seus ataques doem como pequenas balas.",
+      "curated_ptbr": "Versão menor de um Pom já pequeno. É difícil acertá-lo e seus botes causam dor pontual como picadas. Cuidado redobrado para quem tem vista fraca!",
+      "justification": "Descrição zoológica/bestiário refinada; 296B <= original_bytes"
+    },
+    {
+      "id": 21047,
+      "original_en": "MC: Pom9",
+      "original_jp": "敵C:ポム系9",
+      "current_ptbr": "MC: Pom9",
+      "curated_ptbr": "MC: Pom9",
+      "justification": "JP 敵C:ポム系9 (Card de Monstro do Pom 9; 17B <= 24B)"
+    },
+    {
+      "id": 21048,
+      "original_en": "Hulaflower",
+      "original_jp": "フラフラワー",
+      "current_ptbr": "Hulaflower",
+      "curated_ptbr": "Hulaflower",
+      "justification": "JP フラフラワー (Planta humanoide dançante Hulaflower; 21B <= 24B)"
+    },
+    {
+      "id": 21049,
+      "original_en": "A flower that has the upper half of a person growing out of the middle. The roots are like legs, which allow them to move. The hair on its head is actually a bud of the flower.",
+      "original_jp": "人間の上半身を花びらの中心部分から生やした花。花の根元が足のようになっていて、その部分を使って歩くことが出来る。頭部の髪の部分は実は花のつぼみ。",
+      "current_ptbr": "Flor com a metade superior de uma pessoa no centro. As raízes servem de pernas. O cabelo da cabeça é, na verdade, um botão de flor.",
+      "curated_ptbr": "Flor com a metade superior de uma pessoa no centro. As raízes servem de pernas para se mover. O cabelo na cabeça é, na verdade, um botão de flor.",
+      "justification": "Descrição zoológica/bestiário refinada; 295B <= original_bytes"
+    },
+    {
+      "id": 21050,
+      "original_en": "MC: Plant1",
+      "original_jp": "敵C:植物系1",
+      "current_ptbr": "MC: Plant1",
+      "curated_ptbr": "MC: Plant1",
+      "justification": "JP 敵C:植物系1 (Card de Monstro da Família Planta 1; 21B <= 24B)"
+    },
+    {
+      "id": 21051,
+      "original_en": "Yodelflower",
+      "original_jp": "ヨロレイフラワー",
+      "current_ptbr": "Yodelflower",
+      "curated_ptbr": "Yodelflower",
+      "justification": "JP ヨロレイフラワー (Planta tirolesa Yodelflower; 23B <= 24B)"
+    },
+    {
+      "id": 21052,
+      "original_en": "Unlike the Hulaflower, the person growing from the petals is skin colored. There are quite a few incidents where people go up to it mistakenly and get hurt.",
+      "original_jp": "フラフラワーとは違い、花びらの中心から生えている人間の上半身部分の色が、肌色になっている。そのため、間違って近寄って襲われてしまうことが多々あるらしい。",
+      "current_ptbr": "Ao contrário da Hulaflower, a figura entre as pétalas tem cor de pele. Muita gente se aproxima por engano e acaba ferida.",
+      "curated_ptbr": "Ao contrário da Hulaflower, a figura entre as pétalas tem cor de pele. Muita gente se aproxima por engano e acaba sendo atacada.",
+      "justification": "Descrição zoológica/bestiário refinada; 259B <= original_bytes"
+    },
+    {
+      "id": 21053,
+      "original_en": "MC: Plant2",
+      "original_jp": "敵C:植物系2",
+      "current_ptbr": "MC: Plant2",
+      "curated_ptbr": "MC: Plant2",
+      "justification": "JP 敵C:植物系2 (Card de Monstro da Família Planta 2; 21B <= 24B)"
+    },
+    {
+      "id": 21054,
+      "original_en": "Gospelflower",
+      "original_jp": "ゴスペラワー",
+      "current_ptbr": "Gospelflower",
+      "curated_ptbr": "Gospelflower",
+      "justification": "JP ゴスペラワー (Planta cinzenta soturna Gospelflower; 25B <= 32B)"
+    },
+    {
+      "id": 21055,
+      "original_en": "This flower is grey all around and not very attractive. But they’re aggressive; they’ll come to you. It’s somewhat strong, so there’s no harm in being careful.",
+      "original_jp": "全体的に灰色をしていて、近づき難い外見をしている。しかし自分の方から人間に襲い掛かってくる。若干強いために戦うときは注意するに越したことはない。",
+      "current_ptbr": "Flor cinzenta e pouco atraente, mas agressiva: ela vai atrás de você. É um tanto forte, então convém ter cuidado.",
+      "curated_ptbr": "Flor acinzentada e sombria, mas bastante agressiva: ela própria avança sobre você. É bem resistente, então convém ter cautela.",
+      "justification": "Descrição zoológica/bestiário refinada; 259B <= original_bytes"
+    },
+    {
+      "id": 21056,
+      "original_en": "MC: Plant3",
+      "original_jp": "敵C:植物系3",
+      "current_ptbr": "MC: Plant3",
+      "curated_ptbr": "MC: Plant3",
+      "justification": "JP 敵C:植物系3 (Card de Monstro da Família Planta 3; 21B <= 24B)"
+    },
+    {
+      "id": 21057,
+      "original_en": "Yumyumflower",
+      "original_jp": "パクパクフラワー",
+      "current_ptbr": "Yumyumflower",
+      "curated_ptbr": "Yumyumflower",
+      "justification": "JP パクパクフラワー (Planta voraz comilona Pakupaku; 25B <= 32B)"
+    },
+    {
+      "id": 21058,
+      "original_en": "This flower isn’t what’s yummy. The person in the middle of the flower will eat anything. For example, if a traveler accidentally walks by, yum yum...",
+      "original_jp": "名前でわかるとおり、水以外にも、花の中央部分から生えている人間の部分で色んなものをパクパクと食べてしまう。例えば、偶然遭遇した旅人とかもパクパクと...。",
+      "current_ptbr": "Não é a flor que serve de comida. A pessoa no centro dela come qualquer coisa. Se um viajante passar por perto... nham, nham!",
+      "curated_ptbr": "Não é a flor que serve de comida. A figura no centro devora qualquer coisa. Se um viajante passar por perto... nhac, nhac!",
+      "justification": "Descrição zoológica/bestiário refinada; 247B <= original_bytes"
+    },
+    {
+      "id": 21059,
+      "original_en": "MC: Plant4",
+      "original_jp": "敵C:植物系4",
+      "current_ptbr": "MC: Plant4",
+      "curated_ptbr": "MC: Plant4",
+      "justification": "JP 敵C:植物系4 (Card de Monstro da Família Planta 4; 21B <= 24B)"
+    },
+    {
+      "id": 21060,
+      "original_en": "Cannonflower",
+      "original_jp": "カノンフラワー",
+      "current_ptbr": "Cannonflower",
+      "curated_ptbr": "Cannonflower",
+      "justification": "JP カノンフラワー (Planta colossal de ataque pesado; 25B <= 32B)"
+    },
+    {
+      "id": 21061,
+      "original_en": "A Hulaflower that became gigantic. It’s not just the petals that grew, but the person in the middle grew too, so it looks even bigger.",
+      "original_jp": "フラフラワーが少し巨大になったモンスター。花だけならまだしも、人の部分まで大きくなっているために、やたらと大きく見える。",
+      "current_ptbr": "Hulaflower que cresceu demais. As pétalas e a pessoa no centro aumentaram, deixando-a ainda mais imponente.",
+      "curated_ptbr": "Uma Hulaflower que cresceu demais. As pétalas e a figura humana no centro aumentaram, tornando-a imensa e intimidadora.",
+      "justification": "Descrição zoológica/bestiário refinada; 240B <= original_bytes"
+    },
+    {
+      "id": 21062,
+      "original_en": "MC: Plant5",
+      "original_jp": "敵C:植物系5",
+      "current_ptbr": "MC: Plant5",
+      "curated_ptbr": "MC: Plant5",
+      "justification": "JP 敵C:植物系5 (Card de Monstro da Família Planta 5; 21B <= 24B)"
+    },
+    {
+      "id": 21063,
+      "original_en": "Guillotineflower",
+      "original_jp": "ギロチンフラワー",
+      "current_ptbr": "Guillotineflower",
+      "curated_ptbr": "Guillotineflower",
+      "justification": "JP ギロチンフラワー (Planta cortante afiada como guilhotina; 33B <= 40B)"
+    },
+    {
+      "id": 21064,
+      "original_en": "It almost looks golden, but actually it’s just covered in pollen. The leaves are sharp, just like the blades of a guillotine.",
+      "original_jp": "黄金のように見えるが、実は物凄い大量の花粉が付いているだけ。葉っぱの部分がギロチンのような鋭さを持っていることからこの名前で呼ばれている。",
+      "current_ptbr": "Parece dourada, mas está coberta de pólen. Suas folhas são afiadas como lâminas de guilhotina.",
+      "curated_ptbr": "Parece dourada, mas está coberta de pólen espesso. Suas folhas cortam com a afiação de lâminas de guilhotina.",
+      "justification": "Descrição zoológica/bestiário refinada; 222B <= original_bytes"
+    },
+    {
+      "id": 21065,
+      "original_en": "MC: Plant6",
+      "original_jp": "敵C:植物系6",
+      "current_ptbr": "MC: Plant6",
+      "curated_ptbr": "MC: Plant6",
+      "justification": "JP 敵C:植物系6 (Card de Monstro da Família Planta 6; 21B <= 24B)"
+    },
+    {
+      "id": 21066,
+      "original_en": "Gigaflower",
+      "original_jp": "でらフラワー",
+      "current_ptbr": "Gigaflower",
+      "curated_ptbr": "Gigaflower",
+      "justification": "JP でらフラワー (Planta titânica Gigaflower; 21B <= 24B)"
+    },
+    {
+      "id": 21067,
+      "original_en": "What could have happened for it to become so gigantic? The flower and the person inside are both huge. It’s almost like fighting a giant.",
+      "original_jp": "何をどうしたらこんなデカく成長するのだろうか? 花もデカけりゃ中の人もデカイ。まるで巨人を相手にしているような錯覚に襲われる。",
+      "current_ptbr": "O que a fez crescer tanto? A flor e a pessoa no centro são enormes. É quase como lutar contra um gigante.",
+      "curated_ptbr": "O que a fez crescer tanto? A flor e a pessoa no centro são titânicas. A sensação é de lutar contra um verdadeiro gigante.",
+      "justification": "Descrição zoológica/bestiário refinada; 246B <= original_bytes"
+    },
+    {
+      "id": 21068,
+      "original_en": "MC: Plant7",
+      "original_jp": "敵C:植物系7",
+      "current_ptbr": "MC: Plant7",
+      "curated_ptbr": "MC: Plant7",
+      "justification": "JP 敵C:植物系7 (Card de Monstro da Família Planta 7; 21B <= 24B)"
+    },
+    {
+      "id": 21069,
+      "original_en": "Stray Dog",
+      "original_jp": "野犬",
+      "current_ptbr": "Cão de rua",
+      "curated_ptbr": "Cão de Rua",
+      "justification": "JP 野犬 (Cachorro vadio das montanhas; 22B <= 24B)"
+    },
+    {
+      "id": 21070,
+      "original_en": "More like just a wild dog than a monster. It’s not much to fuss about, but don’t underestimate wildlife. It’ll keep coming at you until it kills you.",
+      "original_jp": "モンスターというよりは、ただの野性的な犬。モンスターと騒ぐほどのものではないが、野生を舐めてはいけない。相手を仕留めるまで容赦なく飛び掛ってくる。",
+      "current_ptbr": "Parece mais um cão selvagem que um monstro. Não subestime os animais: ele continuará atacando até matar você.",
+      "curated_ptbr": "Parece mais um cão selvagem que um monstro. Não subestime as feras: ele continuará atacando ferozmente até abater você.",
+      "justification": "Descrição zoológica/bestiário refinada; 244B <= original_bytes"
+    },
+    {
+      "id": 21071,
+      "original_en": "MC: Beast1",
+      "original_jp": "敵C:野獣系1",
+      "current_ptbr": "MC: Beast1",
+      "curated_ptbr": "MC: Beast1",
+      "justification": "JP 敵C:野獣系1 (Card de Monstro da Família Fera 1; 21B <= 24B)"
+    },
+    {
+      "id": 21072,
+      "original_en": "Mad Dog",
+      "original_jp": "マッドドッグ",
+      "current_ptbr": "Cão feroz",
+      "curated_ptbr": "Mad Dog",
+      "justification": "JP マッドドッグ (Cão hidrófobo raivoso Mad Dog; 15B <= 16B)"
+    },
+    {
+      "id": 21073,
+      "original_en": "A vicious dog. Its sharp fangs and claws, added to its quick attacks make them quite annoying. Blood makes them happy, which isn’t a pretty sight.",
+      "original_jp": "凶暴な犬。すばしっこいうえに鋭い歯と爪で攻撃してくるので性質が悪い。血が付くとやたらと映えるので見ていて気分のいいものではない。",
+      "current_ptbr": "Cão feroz. Presas e garras afiadas, junto de ataques rápidos, tornam-no irritante. Ver sangue o alegra, o que não é nada bonito.",
+      "curated_ptbr": "Cão raivoso e traiçoeiro. Presas e garras afiadas, com investidas rápidas, tornam-no irritante. Fica eufórico ao ver sangue.",
+      "justification": "Descrição zoológica/bestiário refinada; 253B <= original_bytes"
+    },
+    {
+      "id": 21074,
+      "original_en": "MC: Beast2",
+      "original_jp": "敵C:野獣系2",
+      "current_ptbr": "MC: Beast2",
+      "curated_ptbr": "MC: Beast2",
+      "justification": "JP 敵C:野獣系2 (Card de Monstro da Família Fera 2; 21B <= 24B)"
+    },
+    {
+      "id": 21075,
+      "original_en": "Feral Wolf",
+      "original_jp": "あらくれウルフ",
+      "current_ptbr": "Lobo selvagem",
+      "curated_ptbr": "Lobo Feroz",
+      "justification": "JP あらくれウルフ (Lobo selvagem brutal; 21B <= 24B)"
+    },
+    {
+      "id": 21076,
+      "original_en": "A white wolf. Incomparable to the Mad Dog, this wolf is ferocious. It is really quick.",
+      "original_jp": "白い毛に包まれた狼。狼だけあってマッドドッグなど足元にも及ばないくらい凶暴だ。やたらとすばしっこい。",
+      "current_ptbr": "Lobo branco muito mais feroz que o Cão Feroz. É extremamente rápido.",
+      "curated_ptbr": "Lobo branco muito mais feroz que o Mad Dog. Move-se com extrema rapidez.",
+      "justification": "Descrição zoológica/bestiário refinada; 145B <= original_bytes"
+    },
+    {
+      "id": 21077,
+      "original_en": "MC: Beast3",
+      "original_jp": "敵C:野獣系3",
+      "current_ptbr": "MC: Beast3",
+      "curated_ptbr": "MC: Beast3",
+      "justification": "JP 敵C:野獣系3 (Card de Monstro da Família Fera 3; 21B <= 24B)"
+    },
+    {
+      "id": 21078,
+      "original_en": "Night Stalker",
+      "original_jp": "ナイトストーカー",
+      "current_ptbr": "Espreitador noturno",
+      "curated_ptbr": "Caçador Noturno",
+      "justification": "JP ナイトストーカー (Lobo predador da escuridão; 32B <= 32B)"
+    },
+    {
+      "id": 21079,
+      "original_en": "As the name suggest, these beasts prowl the dark night for an unsuspecting prey. It also nulls all physical attacks, so it’s a hard enemy to hit.",
+      "original_jp": "名前からわかるとおり、夜の闇に隠れて獲物に近づき、確実に仕留める。さらにこちらの物理攻撃を無効化してしまう、かなりの難敵だ。",
+      "current_ptbr": "Essas feras rondam a noite atrás de presas distraídas. Anulam ataques físicos, por isso é difícil feri-las.",
+      "curated_ptbr": "Essas feras rondam a noite atrás de presas distraídas. Anulam ataques físicos com facilidade, tornando-se rivais difíceis.",
+      "justification": "Descrição zoológica/bestiário refinada; 249B <= original_bytes"
+    },
+    {
+      "id": 21080,
+      "original_en": "MC: Beast4",
+      "original_jp": "敵C:野獣系4",
+      "current_ptbr": "MC: Beast4",
+      "curated_ptbr": "MC: Beast4",
+      "justification": "JP 敵C:野獣系4 (Card de Monstro da Família Fera 4; 21B <= 24B)"
+    },
+    {
+      "id": 21081,
+      "original_en": "Mist Walker",
+      "original_jp": "ミストウォーカー",
+      "current_ptbr": "Andarilho da névoa",
+      "curated_ptbr": "Mist Walker",
+      "justification": "JP ミストウォーカー (Lobo lendário que habita a névoa; 23B <= 24B)"
+    },
+    {
+      "id": 21082,
+      "original_en": "A wolf that is said to be the strongest of all wolves. If it finds prey, it will go in for the kill no matter what time of day. It’s a pain that physical attacks are useless against them.",
+      "original_jp": "狼の中でも最強といわれる狼。獲物を見つけたら昼夜問わずに襲い掛かり、確実に仕留めるほどの凶暴な力を持っている。物理攻撃が効かないのも厄介だ。",
+      "current_ptbr": "Dizem que é o mais forte dos lobos. Ao encontrar uma presa, ataca a qualquer hora. Ataques físicos não funcionam contra ele.",
+      "curated_ptbr": "Dizem ser o mais forte dos lobos. Ao encontrar uma presa, ataca implacável a qualquer hora. Golpes físicos não funcionam contra ele.",
+      "justification": "Descrição zoológica/bestiário refinada; 268B <= original_bytes"
+    },
+    {
+      "id": 21083,
+      "original_en": "MC: Beast5",
+      "original_jp": "敵C:野獣系5",
+      "current_ptbr": "MC: Beast5",
+      "curated_ptbr": "MC: Beast5",
+      "justification": "JP 敵C:野獣系5 (Card de Monstro da Família Fera 5; 21B <= 24B)"
+    },
+    {
+      "id": 21084,
+      "original_en": "Mercenary",
+      "original_jp": "傭兵",
+      "current_ptbr": "Mercenário",
+      "curated_ptbr": "Mercenário",
+      "justification": "JP 傭兵 (Guerreiro contratado de aluguel; 22B <= 24B)"
+    },
+    {
+      "id": 21085,
+      "original_en": "Hired soldiers. They don’t really belong to anyone, but will do anything depending on the money and the contract. Many seem to be rowdy people.",
+      "original_jp": "雇われ兵。特にどこかに属しているような者ではなく、契約と金次第でなんでもやる。荒くれ者が多いらしい。",
+      "current_ptbr": "Soldados de aluguel. Não têm lealdade fixa e aceitam qualquer serviço conforme o pagamento e o contrato. Muitos são briguentos.",
+      "curated_ptbr": "Soldados de aluguel sem lealdade fixa. Aceitam qualquer serviço conforme a recompensa e o contrato. Quase todos são brutos.",
+      "justification": "Descrição zoológica/bestiário refinada; 249B <= original_bytes"
+    },
+    {
+      "id": 21086,
+      "original_en": "MC: Mercenary1",
+      "original_jp": "敵C:傭兵系1",
+      "current_ptbr": "MC: Mercenary1",
+      "curated_ptbr": "MC: Mercenary1",
+      "justification": "JP 敵C:傭兵系1 (Card de Monstro da Família Mercenário 1; 29B <= 32B)"
+    },
+    {
+      "id": 21087,
+      "original_en": "Wandering Swordsman",
+      "original_jp": "さすらい剣士",
+      "current_ptbr": "Espadachim errante",
+      "curated_ptbr": "Espadachim Errante",
+      "justification": "JP さすらい剣士 (Guerreiro solitário que vaga pelo mundo; 37B <= 40B)"
+    },
+    {
+      "id": 21088,
+      "original_en": "Don’t know where he came from, don’t know where he’ll go next. He is on a journey without destination as he masters his sword.",
+      "original_jp": "どこから来たのかわからない、そしてどこへ行くのかもわからない。当てのない旅をしながら剣の腕を磨いている剣士だ。",
+      "current_ptbr": "Ninguém sabe de onde veio nem para onde vai. Viaja sem destino enquanto aperfeiçoa sua espada.",
+      "curated_ptbr": "Ninguém sabe de onde veio nem para onde vai. Viaja sem destino certo enquanto lapida a maestria de sua espada.",
+      "justification": "Descrição zoológica/bestiário refinada; 222B <= original_bytes"
+    },
+    {
+      "id": 21089,
+      "original_en": "MC: Mercenary2",
+      "original_jp": "敵C:傭兵系2",
+      "current_ptbr": "MC: Mercenary2",
+      "curated_ptbr": "MC: Mercenary2",
+      "justification": "JP 敵C:傭兵系2 (Card de Monstro da Família Mercenário 2; 29B <= 32B)"
+    },
+    {
+      "id": 21090,
+      "original_en": "Samuraiman",
+      "original_jp": "サムライマン",
+      "current_ptbr": "Samuraiman",
+      "curated_ptbr": "Samuraiman",
+      "justification": "JP サムライマン (Samurai excêntrico de espada ocidental; 21B <= 24B)"
+    },
+    {
+      "id": 21091,
+      "original_en": "A samurai. But he holds a sword instead of a katana. Therefore, Samuraiman.",
+      "original_jp": "侍。だけど持っているのは刀ではなく剣。だからその名はサムライマン。",
+      "current_ptbr": "Um samurai que usa espada em vez de katana. Por isso, Samuraiman.",
+      "curated_ptbr": "Um samurai que usa espada em vez de katana. Por isso atende por Samuraiman.",
+      "justification": "Descrição zoológica/bestiário refinada; 151B <= original_bytes"
+    },
+    {
+      "id": 21092,
+      "original_en": "MC: Mercenary3",
+      "original_jp": "敵C:傭兵系3",
+      "current_ptbr": "MC: Mercenary3",
+      "curated_ptbr": "MC: Mercenary3",
+      "justification": "JP 敵C:傭兵系3 (Card de Monstro da Família Mercenário 3; 29B <= 32B)"
+    },
+    {
+      "id": 21093,
+      "original_en": "Sword Adept",
+      "original_jp": "達人",
+      "current_ptbr": "Mestre da espada",
+      "curated_ptbr": "Mestre",
+      "justification": "JP 達人 (Espadachim experiente e veterano; 13B <= 24B)"
+    },
+    {
+      "id": 21094,
+      "original_en": "A swordsman who has trained his sword skills for a long time. He won’t easily lose. Many have the body of a bouncer or bodyguard.",
+      "original_jp": "長年剣の腕を磨き、そんじょそこらの相手には負けない力を手に入れた剣士。用心棒という言葉が似合いそうな風体をした人間が多かったりする。",
+      "current_ptbr": "Espadachim com muitos anos de treino. Não perde facilmente. Muitos têm porte de guarda-costas.",
+      "curated_ptbr": "Espadachim veterano com anos de treino árduo. Não é derrotado com facilidade. Muitos têm porte intimidador de guarda-costas.",
+      "justification": "Descrição zoológica/bestiário refinada; 253B <= original_bytes"
+    },
+    {
+      "id": 21095,
+      "original_en": "MC: Mercenary4",
+      "original_jp": "敵C:傭兵系4",
+      "current_ptbr": "MC: Mercenary4",
+      "curated_ptbr": "MC: Mercenary4",
+      "justification": "JP 敵C:傭兵系4 (Card de Monstro da Família Mercenário 4; 29B <= 32B)"
+    },
+    {
+      "id": 21096,
+      "original_en": "Rogue",
+      "original_jp": "ごろつき",
+      "current_ptbr": "Ladino",
+      "curated_ptbr": "Capanga",
+      "justification": "JP ごろつき (Valentão encrenqueiro de beco escuro; 15B <= 16B)"
+    },
+    {
+      "id": 21097,
+      "original_en": "You are sure to find them in back alleys and unpopular areas. They usually come in groups when they want to mess with you.",
+      "original_jp": "裏路地などの人気の少ないところに行けば確実にいるであろう輩。大抵は複数で集団を作り、大人数で絡んでくる。",
+      "current_ptbr": "Vivem em becos e lugares pouco frequentados. Costumam andar em grupo quando querem arrumar confusão.",
+      "curated_ptbr": "Vivem em becos e vielas escuras. Costumam agir em bando quando resolvem cercar e intimidar suas vítimas.",
+      "justification": "Descrição zoológica/bestiário refinada; 210B <= original_bytes"
+    },
+    {
+      "id": 21098,
+      "original_en": "MC: Mercenary5",
+      "original_jp": "敵C:傭兵系5",
+      "current_ptbr": "MC: Mercenary5",
+      "curated_ptbr": "MC: Mercenary5",
+      "justification": "JP 敵C:傭兵系5 (Card de Monstro da Família Mercenário 5; 29B <= 32B)"
+    },
+    {
+      "id": 21099,
+      "original_en": "Blademaster",
+      "original_jp": "ブレイドマスター",
+      "current_ptbr": "Mestre da lâmina",
+      "curated_ptbr": "Blademaster",
+      "justification": "JP ブレイドマスター (Grão-mestre espadachim lendário; 23B <= 24B)"
+    },
+    {
+      "id": 21100,
+      "original_en": "Ultimate swordsman who has mastered the art of swords. They have perfected all types of sword skills.",
+      "original_jp": "剣術を極めた最強の剣士。一つの剣術だけでは飽き足らず、ありとあらゆる剣術を極めたものの事を指す。",
+      "current_ptbr": "Espadachim supremo, mestre na arte da espada. Aperfeiçoou todos os tipos de técnica.",
+      "curated_ptbr": "Espadachim supremo, mestre na arte da espada. Aperfeiçoou todos os tipos de técnica.",
+      "justification": "Descrição zoológica/bestiário refinada; 171B <= original_bytes"
+    },
+    {
+      "id": 21101,
+      "original_en": "MC: Mercenary6",
+      "original_jp": "敵C:傭兵系6",
+      "current_ptbr": "MC: Mercenary6",
+      "curated_ptbr": "MC: Mercenary6",
+      "justification": "JP 敵C:傭兵系6 (Card de Monstro da Família Mercenário 6; 29B <= 32B)"
+    },
+    {
+      "id": 21102,
+      "original_en": "Tenba Security",
+      "original_jp": "天覇警備兵",
+      "current_ptbr": "Segurança Tenba",
+      "curated_ptbr": "Segurança Tenba",
+      "justification": "JP 天覇警備兵 (Guarda patrimonial do conglomerado Tenba; 31B <= 32B)"
+    },
+    {
+      "id": 21103,
+      "original_en": "Private security guards of the Tenba Conglomerate. They can be found at all Tenba facilities. They aren’t that strong, but there are many of them.",
+      "original_jp": "複合企業集団天覇専属の警備兵。天覇の施設に行けば確実にいる。あまり強いわけではないのだが、ウジャウジャといるので相手にするのは面倒。",
+      "current_ptbr": "Guardas particulares do Conglomerado Tenba. Estão em todas as suas instalações. Não são muito fortes, mas são numerosos.",
+      "curated_ptbr": "Guardas particulares do Conglomerado Tenba. Estão em todas as suas instalações. Não são fortes, mas surgem em bandos chatos.",
+      "justification": "Descrição zoológica/bestiário refinada; 252B <= original_bytes"
+    },
+    {
+      "id": 21104,
+      "original_en": "MC: Security1",
+      "original_jp": "敵C:警備兵系1",
+      "current_ptbr": "MC: Security1",
+      "curated_ptbr": "MC: Security1",
+      "justification": "JP 敵C:警備兵系1 (Card de Monstro da Família Guarda 1; 27B <= 32B)"
+    },
+    {
+      "id": 21105,
+      "original_en": "Guardsman",
+      "original_jp": "ガードマン",
+      "current_ptbr": "Guarda",
+      "curated_ptbr": "Guarda",
+      "justification": "JP ガードマン (Vigilante de instalações; 13B <= 24B)"
+    },
+    {
+      "id": 21106,
+      "original_en": "Security guards for certain facilities. Each one is weak, but they don’t guard alone, so often times you must fight many at once.",
+      "original_jp": "あちこちの施設を護っている警備兵。一人一人は弱いのだが、一人で警備をしているわけではないので、複数で戦うことが多い。",
+      "current_ptbr": "Guardas de instalações específicas. São fracos sozinhos, mas nunca vigiam sem companhia: prepare-se para enfrentar vários.",
+      "curated_ptbr": "Vigilantes de instalações diversas. Sozinhos são fracos, mas nunca fazem ronda desacompanhados: prepare-se para enfrentar vários.",
+      "justification": "Descrição zoológica/bestiário refinada; 261B <= original_bytes"
+    },
+    {
+      "id": 21107,
+      "original_en": "MC: Security2",
+      "original_jp": "敵C:警備兵系2",
+      "current_ptbr": "MC: Security2",
+      "curated_ptbr": "MC: Security2",
+      "justification": "JP 敵C:警備兵系2 (Card de Monstro da Família Guarda 2; 27B <= 32B)"
+    },
+    {
+      "id": 21108,
+      "original_en": "Armed Guard",
+      "original_jp": "特装機動兵",
+      "current_ptbr": "Guarda armado",
+      "curated_ptbr": "Guarda Arm.",
+      "justification": "JP 特装機動兵 (Guarda tático móvel blindado; 23B <= 24B)"
+    },
+    {
+      "id": 21109,
+      "original_en": "A security guard with a special kind of equipment. They guard the more important facilities, and are much stronger than normal guards.",
+      "original_jp": "特殊な装備をしている警備兵。普通の施設よりも重要な施設を守っている警備兵で、通常のガードマンなどよりも強い。",
+      "current_ptbr": "Guarda com equipamento especial. Protege instalações importantes e é muito mais forte que os guardas comuns.",
+      "curated_ptbr": "Guarda com equipamento tático especial. Protege setores mais importantes e é muito mais forte que os vigias comuns.",
+      "justification": "Descrição zoológica/bestiário refinada; 233B <= original_bytes"
+    },
+    {
+      "id": 21110,
+      "original_en": "MC: Security3",
+      "original_jp": "敵C:警備兵系3",
+      "current_ptbr": "MC: Security3",
+      "curated_ptbr": "MC: Security3",
+      "justification": "JP 敵C:警備兵系3 (Card de Monstro da Família Guarda 3; 27B <= 32B)"
+    },
+    {
+      "id": 21111,
+      "original_en": "Crusader",
+      "original_jp": "クルセイダー",
+      "current_ptbr": "Cruzado",
+      "curated_ptbr": "Cruzado",
+      "justification": "JP クルセイダー (Soldado de choque implacável Crusader; 15B <= 24B)"
+    },
+    {
+      "id": 21112,
+      "original_en": "Security guards that only protect the very important facilities. They are dangerous, and will not hesitate to take your life to prevent intrusion.",
+      "original_jp": "かなり重要な施設を守る警備兵。侵入者などの侵入を防ぐためなら、相手の命を気にせずに襲い掛かってくる危険な集団。",
+      "current_ptbr": "Guardas das instalações mais importantes. São perigosos e não hesitam em matar para impedir invasões.",
+      "curated_ptbr": "Guardas das instalações mais críticas. São perigosos e não hesitam em matar para impedir o avanço de invasores.",
+      "justification": "Descrição zoológica/bestiário refinada; 227B <= original_bytes"
+    },
+    {
+      "id": 21113,
+      "original_en": "MC: Security4",
+      "original_jp": "敵C:警備兵系4",
+      "current_ptbr": "MC: Security4",
+      "curated_ptbr": "MC: Security4",
+      "justification": "JP 敵C:警備兵系4 (Card de Monstro da Família Guarda 4; 27B <= 32B)"
+    },
+    {
+      "id": 21114,
+      "original_en": "Shadowman",
+      "original_jp": "シャドウマン",
+      "current_ptbr": "Homem-sombra",
+      "curated_ptbr": "Shadowman",
+      "justification": "JP シャドウマン (Agente especial furtivo armado; 19B <= 24B)"
+    },
+    {
+      "id": 21115,
+      "original_en": "Security guards with super powerful weapons that seem almost overkill. If you look suspicious, they will attack you without warning.",
+      "original_jp": "ここまでする必要があるのかというくらいに強力な武器を持つ警備兵。怪しければ警告なく、目標が動かなくなるまで攻撃をしてくる。",
+      "current_ptbr": "Guardas com armas absurdamente poderosas. Se você parecer suspeito, atacarão sem aviso.",
+      "curated_ptbr": "Guardas munidos de armas devastadoras. Se você levantar qualquer suspeita, atacarão sem aviso até cessar seus movimentos.",
+      "justification": "Descrição zoológica/bestiário refinada; 246B <= original_bytes"
+    },
+    {
+      "id": 21116,
+      "original_en": "MC: Security5",
+      "original_jp": "敵C:警備兵系5",
+      "current_ptbr": "MC: Security5",
+      "curated_ptbr": "MC: Security5",
+      "justification": "JP 敵C:警備兵系5 (Card de Monstro da Família Guarda 5; 27B <= 32B)"
+    },
+    {
+      "id": 21117,
+      "original_en": "Specialist",
+      "original_jp": "スペシャリスト",
+      "current_ptbr": "Especialista",
+      "curated_ptbr": "Perito",
+      "justification": "JP スペシャリスト (Especialista tático de infiltração e defesa; 13B <= 24B)"
+    },
+    {
+      "id": 21118,
+      "original_en": "The best of the best of security guards. With a 95% success rate, there will never be intruders if you leave it to them.",
+      "original_jp": "警備兵の中の警備兵。任務成功率95%を誇る彼らに任せておけばまず間違いなく侵入者などいなくなるだろう。",
+      "current_ptbr": "A elite dos guardas. Com 95% de sucesso, prometem não deixar nenhum invasor passar.",
+      "curated_ptbr": "A elite dos guardas. Com 95% de taxa de sucesso, garantem que nenhum intruso passará por suas patrulhas.",
+      "justification": "Descrição zoológica/bestiário refinada; 210B <= original_bytes"
+    },
+    {
+      "id": 21119,
+      "original_en": "MC: Security6",
+      "original_jp": "敵C:警備兵系6",
+      "current_ptbr": "MC: Security6",
+      "curated_ptbr": "MC: Security6",
+      "justification": "JP 敵C:警備兵系6 (Card de Monstro da Família Guarda 6; 27B <= 32B)"
+    },
+    {
+      "id": 21120,
+      "original_en": "Priest Spirit",
+      "original_jp": "神官の亡霊",
+      "current_ptbr": "Espírito sacerdote",
+      "curated_ptbr": "Espectro Sacro",
+      "justification": "JP 神官の亡霊 (Fantasma armado do sacerdote do templo; 29B <= 32B)"
+    },
+    {
+      "id": 21121,
+      "original_en": "Ghosts of priests with bulky armor and a spear. We don’t know what happened to them before they died, but they’re angry and swing their spears around like crazy.",
+      "original_jp": "神官なのにどうしてだか槍とゴツイ甲冑に身を包んだ亡霊。生前に何があったのかは知らないが、物凄い剣幕で槍を振り回して攻撃してくる。",
+      "current_ptbr": "Fantasmas de sacerdotes com armaduras pesadas e lanças. Não sabemos como morreram, mas estão furiosos e atacam sem parar.",
+      "curated_ptbr": "Espectros de sacerdotes com armaduras pesadas e lanças. Não sabemos como morreram, mas atacam enfurecidos brandindo suas armas.",
+      "justification": "Descrição zoológica/bestiário refinada; 257B <= original_bytes"
+    },
+    {
+      "id": 21122,
+      "original_en": "MC: Priest1",
+      "original_jp": "敵C:神官系1",
+      "current_ptbr": "MC: Priest1",
+      "curated_ptbr": "MC: Priest1",
+      "justification": "JP 敵C:神官系1 (Card de Monstro da Família Sacerdote 1; 23B <= 24B)"
+    },
+    {
+      "id": 21123,
+      "original_en": "Temple Guard",
+      "original_jp": "テンプルガード",
+      "current_ptbr": "Guarda do templo",
+      "curated_ptbr": "Vigia do Templo",
+      "justification": "JP テンプルガード (Sentinela armada do Templo; 31B <= 32B)"
+    },
+    {
+      "id": 21124,
+      "original_en": "Security guards who protect the Temple. They have special abilities to heal in addition to their spear attacks, so don’t rush blindly.",
+      "original_jp": "寺院を守る警備兵。槍による攻撃だけではなく、回復、攻撃系の特殊能力も使うので、無闇に突っ込むと痛い目を見る。",
+      "current_ptbr": "Guardas do Templo. Além das lanças, usam poderes de cura. Não avance sem pensar.",
+      "curated_ptbr": "Guardas que protegem o Templo. Além das lanças, usam magias de cura e ataque. Avançar sem cautela trará sérias dores de cabeça.",
+      "justification": "Descrição zoológica/bestiário refinada; 261B <= original_bytes"
+    },
+    {
+      "id": 21125,
+      "original_en": "MC: Priest2",
+      "original_jp": "敵C:神官系2",
+      "current_ptbr": "MC: Priest2",
+      "curated_ptbr": "MC: Priest2",
+      "justification": "JP 敵C:神官系2 (Card de Monstro da Família Sacerdote 2; 23B <= 24B)"
+    },
+    {
+      "id": 21126,
+      "original_en": "Temple Master",
+      "original_jp": "テンプルマスター",
+      "current_ptbr": "Mestre do templo",
+      "curated_ptbr": "Sumo do Templo",
+      "justification": "JP テンプルマスター (Mestre guardião dos recintos sagrados; 29B <= 32B)"
+    },
+    {
+      "id": 21127,
+      "original_en": "Guards that protect more important places. Unlike Temple Guards, they don’t have spears, but they do have special attacks.",
+      "original_jp": "テンプルガードよりも更に重要な場所を守る警備兵。テンプルガードと違って槍を持ってはいないが、特殊攻撃をしてくる。",
+      "current_ptbr": "Guardas de lugares importantes. Não usam lanças como os Guardas do Templo, mas possuem ataques especiais.",
+      "curated_ptbr": "Guardas de santuários sagrados. Não usam lanças como os Vigias do Templo, mas desferem artes mágicas perigosas.",
+      "justification": "Descrição zoológica/bestiário refinada; 227B <= original_bytes"
+    },
+    {
+      "id": 21128,
+      "original_en": "MC: Priest3",
+      "original_jp": "敵C:神官系3",
+      "current_ptbr": "MC: Priest3",
+      "curated_ptbr": "MC: Priest3",
+      "justification": "JP 敵C:神官系3 (Card de Monstro da Família Sacerdote 3; 23B <= 24B)"
+    },
+    {
+      "id": 21129,
+      "original_en": "Fanatic",
+      "original_jp": "ファナティック",
+      "current_ptbr": "Fanático",
+      "curated_ptbr": "Zelote",
+      "justification": "JP ファナティック (Fanático religioso munido de cajado; 13B <= 16B)"
+    },
+    {
+      "id": 21130,
+      "original_en": "They specialize in magical rather than physical attacks, and therefore carry a staff. They will attack while healing, so it’s rather annoying.",
+      "original_jp": "物理的攻撃ではなく特殊攻撃を得意とするために、杖を持っている。回復しながら強力な攻撃をしてくるので、中々に厄介な相手。",
+      "current_ptbr": "Especialistas em magia que usam cajados. Atacam e se curam ao mesmo tempo, o que os torna irritantes.",
+      "curated_ptbr": "Especialistas em magia que empunham cajados. Atacam e se curam simultaneamente, revelando-se oponentes bem irritantes.",
+      "justification": "Descrição zoológica/bestiário refinada; 237B <= original_bytes"
+    },
+    {
+      "id": 21131,
+      "original_en": "MC: Priest4",
+      "original_jp": "敵C:神官系4",
+      "current_ptbr": "MC: Priest4",
+      "curated_ptbr": "MC: Priest4",
+      "justification": "JP 敵C:神官系4 (Card de Monstro da Família Sacerdote 4; 23B <= 24B)"
+    },
+    {
+      "id": 21132,
+      "original_en": "Heretic Disciple",
+      "original_jp": "異端の使徒",
+      "current_ptbr": "Discípulo herege",
+      "curated_ptbr": "Discípulo Herege",
+      "justification": "JP 異端の使徒 (Seguidor de dogmas proibidos com máscara sinistra; 33B <= 40B)"
+    },
+    {
+      "id": 21133,
+      "original_en": "Disciples of heretics who wear strange masks. They have high skills in both attack and defense. Their strange magic might give you a hard time.",
+      "original_jp": "あやしげな仮面をつけた異端の使徒。能力もかなり高く攻守に優れている。戦いの時はあやしげな魔法に苦しめられるだろう。",
+      "current_ptbr": "Discípulos de hereges com máscaras estranhas. São bons no ataque e na defesa. Sua magia peculiar pode complicar a luta.",
+      "curated_ptbr": "Discípulos da heresia trajando máscaras estranhas. Possuem atributos altos no ataque e na defesa, atormentando com magias arcanas.",
+      "justification": "Descrição zoológica/bestiário refinada; 263B <= original_bytes"
+    },
+    {
+      "id": 21134,
+      "original_en": "MC: Priest5",
+      "original_jp": "敵C:神官系5",
+      "current_ptbr": "MC: Priest5",
+      "curated_ptbr": "MC: Priest5",
+      "justification": "JP 敵C:神官系5 (Card de Monstro da Família Sacerdote 5; 23B <= 24B)"
+    },
+    {
+      "id": 21135,
+      "original_en": "Deathroid",
+      "original_jp": "デストロイド",
+      "current_ptbr": "Deathroid",
+      "curated_ptbr": "Deathroid",
+      "justification": "JP デストロイド (Espectro guerreiro cibernético sem pernas; 19B <= 24B)"
+    },
+    {
+      "id": 21136,
+      "original_en": "As you can see, they are not human. They are the ghosts of dead Temple Guards who have returned with greater powers and strength.",
+      "original_jp": "下半身がないことからわかると思うが、人間ではない。死んでしまったテンプルガードが亡霊となって出てきたもの。能力も大きく強化されている。",
+      "current_ptbr": "Como se vê, não são humanos. São fantasmas de Guardas do Templo que voltaram com mais força e poder.",
+      "curated_ptbr": "Pela falta da metade inferior do corpo, nota-se que não são humanos. São espíritos de guardas caídos com forças ampliadas.",
+      "justification": "Descrição zoológica/bestiário refinada; 251B <= original_bytes"
+    },
+    {
+      "id": 21137,
+      "original_en": "MC: Priest6",
+      "original_jp": "敵C:神官系6",
+      "current_ptbr": "MC: Priest6",
+      "curated_ptbr": "MC: Priest6",
+      "justification": "JP 敵C:神官系6 (Card de Monstro da Família Sacerdote 6; 23B <= 24B)"
+    },
+    {
+      "id": 21138,
+      "original_en": "Falcon Hawk",
+      "original_jp": "アードラ",
+      "current_ptbr": "Falcão",
+      "curated_ptbr": "Falcão",
+      "justification": "JP アードラ (Ave de rapina veloz Adra; 13B <= 24B)"
+    },
+    {
+      "id": 21139,
+      "original_en": "A huge bird monster. It will attack with its sharp claws and beak. Its size may surprise you, but it’s not that strong, so you can defeat them easily.",
+      "original_jp": "巨大な鳥のモンスター。鋭い爪と口ばしを使って攻撃をしてくる。大きいので外見に驚かされはするが、そんなに強くはないので倒すのは楽。",
+      "current_ptbr": "Ave monstruosa enorme que ataca com garras e bico afiados. O tamanho assusta, mas não é tão forte.",
+      "curated_ptbr": "Ave monstruosa colossal que ataca com garras e bico afiados. O tamanho assusta à primeira vista, mas é fraca e fácil de abater.",
+      "justification": "Descrição zoológica/bestiário refinada; 258B <= original_bytes"
+    },
+    {
+      "id": 21140,
+      "original_en": "MC: Bird1",
+      "original_jp": "敵C:鳥系1",
+      "current_ptbr": "MC: Bird1",
+      "curated_ptbr": "MC: Bird1",
+      "justification": "JP 敵C:鳥系1 (Card de Monstro da Família Ave 1; 19B <= 24B)"
+    },
+    {
+      "id": 21141,
+      "original_en": "Vulture",
+      "original_jp": "ヴァルチャー",
+      "current_ptbr": "Abutre",
+      "curated_ptbr": "Abutre",
+      "justification": "JP ヴァルチャー (Ave carniceira veloz Vulture; 13B <= 16B)"
+    },
+    {
+      "id": 21142,
+      "original_en": "A huge bird monster. It’s not surprisingly strong, but it is quick. Its speed makes fighting it a nuisance.",
+      "original_jp": "巨大な鳥のモンスター。そんなに驚くほど強いというわけではないのだが、スピードがやたらと速いので戦いの時には苦労する。",
+      "current_ptbr": "Ave monstruosa enorme. Não é muito forte, mas sua velocidade torna a luta incômoda.",
+      "curated_ptbr": "Ave monstruosa enorme. Não chega a ser muito forte, mas sua velocidade transforma a luta em um estorvo.",
+      "justification": "Descrição zoológica/bestiário refinada; 208B <= original_bytes"
+    },
+    {
+      "id": 21143,
+      "original_en": "MC: Bird2",
+      "original_jp": "敵C:鳥系2",
+      "current_ptbr": "MC: Bird2",
+      "curated_ptbr": "MC: Bird2",
+      "justification": "JP 敵C:鳥系2 (Card de Monstro da Família Ave 2; 19B <= 24B)"
+    },
+    {
+      "id": 21144,
+      "original_en": "Roc",
+      "original_jp": "ロック",
+      "current_ptbr": "Roc",
+      "curated_ptbr": "Roc",
+      "justification": "JP ロック (Pássaro mítico gigante Roc; 7B <= 8B)"
+    },
+    {
+      "id": 21145,
+      "original_en": "A huge bird that is obviously a monster. It has claws on its wings, which it uses to pierce and slash its opponents.",
+      "original_jp": "見るからにモンスターと言わんばかりの外見をしている巨大な鳥。羽の部分に大きな爪が付いていて、これで相手を突いたり裂いたりする。",
+      "current_ptbr": "Ave enorme com garras nas asas, usadas para perfurar e cortar os adversários.",
+      "curated_ptbr": "Ave colossal que encarna um monstro temível. Possui garras enormes nas asas, usadas para dilacerar seus adversários.",
+      "justification": "Descrição zoológica/bestiário refinada; 235B <= original_bytes"
+    },
+    {
+      "id": 21146,
+      "original_en": "MC: Bird3",
+      "original_jp": "敵C:鳥系3",
+      "current_ptbr": "MC: Bird3",
+      "curated_ptbr": "MC: Bird3",
+      "justification": "JP 敵C:鳥系3 (Card de Monstro da Família Ave 3; 19B <= 24B)"
+    },
+    {
+      "id": 21147,
+      "original_en": "Garuda",
+      "original_jp": "ガルーダ",
+      "current_ptbr": "Garuda",
+      "curated_ptbr": "Garuda",
+      "justification": "JP ガルーダ (Pássaro divino supremo das tempestades; 13B <= 16B)"
+    },
+    {
+      "id": 21148,
+      "original_en": "The fastest and strongest bird monster. Their stored attacks are pretty painful, so try to finish them off before they begin.",
+      "original_jp": "鳥のモンスターの中でも一番速くて強いやつ。溜めによる攻撃は食らうとかなり痛いので、遅くとも溜めの状態に入った時点で決着を付けておこう。",
+      "current_ptbr": "A ave monstruosa mais rápida e forte. Seus Ataques Armazenados doem muito: derrote-a antes que os use.",
+      "curated_ptbr": "A ave monstruosa mais rápida e forte. Seus golpes carregados causam estragos imensos: derrote-a antes que concentre poder.",
+      "justification": "Descrição zoológica/bestiário refinada; 246B <= original_bytes"
+    },
+    {
+      "id": 21149,
+      "original_en": "MC: Bird4",
+      "original_jp": "敵C:鳥系4",
+      "current_ptbr": "MC: Bird4",
+      "curated_ptbr": "MC: Bird4",
+      "justification": "JP 敵C:鳥系4 (Card de Monstro da Família Ave 4; 19B <= 24B)"
+    },
+    {
+      "id": 21150,
+      "original_en": "Bit Ball",
+      "original_jp": "ビットボール",
+      "current_ptbr": "Esfera Bit",
+      "curated_ptbr": "Bit Ball",
+      "justification": "JP ビットボール (Dron mecânico esférico disparador de laser; 17B <= 24B)"
+    },
+    {
+      "id": 21151,
+      "original_en": "It appears to be a simple round ball, but it shoots lasers from the red hole in the center. If you leave it alone, it will begin calling its friends, so beat them immediately when you see them.",
+      "original_jp": "見た目こそただの丸いだけの玉のように見えるが、玉の中央部にある赤い穴から光線が放って攻撃してくる。さらに放っておくと仲間を呼ぶので、遭遇したら即倒そう。",
+      "current_ptbr": "Parece uma bola, mas dispara lasers pelo orifício vermelho central. Se não for derrotada logo, chamará reforços.",
+      "curated_ptbr": "Parece uma simples esfera, mas dispara lasers pelo orifício vermelho central. Se não for destruída logo, chamará reforços.",
+      "justification": "Descrição zoológica/bestiário refinada; 250B <= original_bytes"
+    },
+    {
+      "id": 21152,
+      "original_en": "MC: Ball1",
+      "original_jp": "敵C:ボール系1",
+      "current_ptbr": "MC: Ball1",
+      "curated_ptbr": "MC: Ball1",
+      "justification": "JP 敵C:ボール系1 (Card de Monstro da Família Esfera 1; 19B <= 24B)"
+    },
+    {
+      "id": 21153,
+      "original_en": "Bit Ball v2",
+      "original_jp": "ビットボール改",
+      "current_ptbr": "Esfera Bit v2",
+      "curated_ptbr": "Bit Ball v2",
+      "justification": "JP ビットボール改 (Versão modificada e reforçada da Bit Ball; 23B <= 24B)"
+    },
+    {
+      "id": 21154,
+      "original_en": "A stronger, upgraded version of the Bit Ball. It’s not just the lasers that are more effective, but it is armored. If you underestimate it, you could get hurt.",
+      "original_jp": "ビットボールを強化改造したもの。中央部から発射される光線の威力だけでなく、強度も強くなっているので、舐めて掛かったら大打撃を受けることに。",
+      "current_ptbr": "Versão reforçada da Esfera Bit. Seus lasers são melhores e ela tem armadura. Não a subestime.",
+      "curated_ptbr": "Versão aprimorada da Bit Ball. Além de disparar lasers mais potentes, possui blindagem reforçada. Jamais a subestime.",
+      "justification": "Descrição zoológica/bestiário refinada; 238B <= original_bytes"
+    },
+    {
+      "id": 21155,
+      "original_en": "MC: Ball2",
+      "original_jp": "敵C:ボール系2",
+      "current_ptbr": "MC: Ball2",
+      "curated_ptbr": "MC: Ball2",
+      "justification": "JP 敵C:ボール系2 (Card de Monstro da Família Esfera 2; 19B <= 24B)"
+    },
+    {
+      "id": 21156,
+      "original_en": "Blast Eye",
+      "original_jp": "ブラスト・アイ",
+      "current_ptbr": "Olho Blast",
+      "curated_ptbr": "Blast Eye",
+      "justification": "JP ブラスト・アイ (Bit Ball de grande calibre Blast Eye; 19B <= 24B)"
+    },
+    {
+      "id": 21157,
+      "original_en": "A slightly larger version of a Bit Ball. It’s not just the size that increased; its strength and destructive powers are greater too.",
+      "original_jp": "ビットボールが一回り大きくなったもの。見た目がデカくなっただけではなく、強度も破壊力も爆発的に上がっている。",
+      "current_ptbr": "Esfera Bit um pouco maior. Sua força e seu poder destrutivo também aumentaram.",
+      "curated_ptbr": "Uma Bit Ball um pouco maior. Sua rigidez estrutural e seu poder de destruição também aumentaram bastante.",
+      "justification": "Descrição zoológica/bestiário refinada; 212B <= original_bytes"
+    },
+    {
+      "id": 21158,
+      "original_en": "MC: Ball3",
+      "original_jp": "敵C:ボール系3",
+      "current_ptbr": "MC: Ball3",
+      "curated_ptbr": "MC: Ball3",
+      "justification": "JP 敵C:ボール系3 (Card de Monstro da Família Esfera 3; 19B <= 24B)"
+    },
+    {
+      "id": 21159,
+      "original_en": "Hyper Bit",
+      "original_jp": "ハイパービット",
+      "current_ptbr": "Hyper Bit",
+      "curated_ptbr": "Hyper Bit",
+      "justification": "JP ハイパービット (Enxame tático de Bit Balls unificadas; 19B <= 24B)"
+    },
+    {
+      "id": 21160,
+      "original_en": "Multiple Bit Balls traveling in a pack. Their destructive power is strong, plus each ones’ attacks are pretty strong, too.",
+      "original_jp": "複数のビットボールが一つの塊となって行動している。その分破壊力も強いのだが、一つ一つの攻撃力もやたらと強いので厄介だ。",
+      "current_ptbr": "Várias Esferas Bit em grupo. Juntas têm grande poder destrutivo, e os ataques individuais também são fortes.",
+      "curated_ptbr": "Várias Bit Balls reunidas em grupo. Juntas têm grande poder destrutivo, e seus disparos individuais são bem fortes.",
+      "justification": "Descrição zoológica/bestiário refinada; 234B <= original_bytes"
+    },
+    {
+      "id": 21161,
+      "original_en": "MC: Ball4",
+      "original_jp": "敵C:ボール系4",
+      "current_ptbr": "MC: Ball4",
+      "curated_ptbr": "MC: Ball4",
+      "justification": "JP 敵C:ボール系4 (Card de Monstro da Família Esfera 4; 19B <= 24B)"
+    },
+    {
+      "id": 21162,
+      "original_en": "Flame Guarder",
+      "original_jp": "フレイムガーダー",
+      "current_ptbr": "Guardião fogo",
+      "curated_ptbr": "Flame Guarder",
+      "justification": "JP フレイムガーダー (Bit Ball com barreira térmica contra chamas; 27B <= 32B)"
+    },
+    {
+      "id": 21163,
+      "original_en": "A reconstructed Bit Ball that is stronger against special attacks. It is surrounded by a wall of resistance against fire attacks.",
+      "original_jp": "ビットボールを特殊攻撃に強くなるように改造したもの。炎系の攻撃に強くなる耐性の壁を周囲に張っている。",
+      "current_ptbr": "Esfera Bit modificada para resistir a ataques especiais. Uma barreira a protege do fogo.",
+      "curated_ptbr": "Bit Ball modificada para resistir a ataques especiais. Uma barreira mágica ao seu redor a protege contra o fogo.",
+      "justification": "Descrição zoológica/bestiário refinada; 226B <= original_bytes"
+    },
+    {
+      "id": 21164,
+      "original_en": "MC: Ball5",
+      "original_jp": "敵C:ボール系5",
+      "current_ptbr": "MC: Ball5",
+      "curated_ptbr": "MC: Ball5",
+      "justification": "JP 敵C:ボール系5 (Card de Monstro da Família Esfera 5; 19B <= 24B)"
+    },
+    {
+      "id": 21165,
+      "original_en": "Ice Guarder",
+      "original_jp": "アイスガーダー",
+      "current_ptbr": "Guardião gelo",
+      "curated_ptbr": "Ice Guarder",
+      "justification": "JP アイスガーダー (Bit Ball com barreira criogênica contra gelo; 23B <= 24B)"
+    },
+    {
+      "id": 21166,
+      "original_en": "A reconstructed Bit Ball that is stronger against special attacks. It is surrounded by a wall of resistance against ice attacks.",
+      "original_jp": "ビットボールを特殊攻撃に強くなるように改造したもの。氷系の攻撃に強くなる耐性の壁を周囲に張っている。",
+      "current_ptbr": "Esfera Bit modificada para resistir a ataques especiais. Uma barreira a protege do gelo.",
+      "curated_ptbr": "Bit Ball modificada para resistir a ataques especiais. Uma barreira mágica ao seu redor a protege contra o gelo.",
+      "justification": "Descrição zoológica/bestiário refinada; 226B <= original_bytes"
+    },
+    {
+      "id": 21167,
+      "original_en": "MC: Ball6",
+      "original_jp": "敵C:ボール系6",
+      "current_ptbr": "MC: Ball6",
+      "curated_ptbr": "MC: Ball6",
+      "justification": "JP 敵C:ボール系6 (Card de Monstro da Família Esfera 6; 19B <= 24B)"
+    },
+    {
+      "id": 21168,
+      "original_en": "Electric Guarder",
+      "original_jp": "エレキガーダー",
+      "current_ptbr": "Guardião raio",
+      "curated_ptbr": "Electric Guarder",
+      "justification": "JP エレキガーダー (Bit Ball com barreira de isolamento contra raios; 33B <= 40B)"
+    },
+    {
+      "id": 21169,
+      "original_en": "A reconstructed Bit Ball that is stronger against special attacks. It is surrounded by a wall of resistance against lightning attacks.",
+      "original_jp": "ビットボールを特殊攻撃に強くなるように改造したもの。雷系の攻撃に強くなる耐性の壁を周囲に張っている。",
+      "current_ptbr": "Esfera Bit modificada para resistir a ataques especiais. Uma barreira a protege dos raios.",
+      "curated_ptbr": "Bit Ball modificada para resistir a ataques especiais. Uma barreira mágica ao seu redor a protege contra raios.",
+      "justification": "Descrição zoológica/bestiário refinada; 224B <= original_bytes"
+    },
+    {
+      "id": 21170,
+      "original_en": "MC: Ball7",
+      "original_jp": "敵C:ボール系7",
+      "current_ptbr": "MC: Ball7",
+      "curated_ptbr": "MC: Ball7",
+      "justification": "JP 敵C:ボール系7 (Card de Monstro da Família Esfera 7; 19B <= 24B)"
+    }
+  ]
+}

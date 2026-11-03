@@ -1,0 +1,225 @@
+import json
+
+batch6 = [
+    {
+        "id": 3134,
+        "curated_ptbr": "Ah, Raina!\nVocê veio nos visitar de novo! Que alegria...",
+        "verdict": "rewritten",
+        "rationale": "Restauração da identidade colegial canônica de Lyner ('頼奈' - Raina Harase) na simulação de Shurelia, superando o achatamento da NISA."
+    },
+    {
+        "id": 3135,
+        "curated_ptbr": "Ah, que bom que você apareceu! Tinha uma coisa que eu queria muito te contar, Raina.",
+        "verdict": "rewritten",
+        "rationale": "Entusiasmo da colega de classe colegial conversando com a protagonista feminina simulada."
+    },
+    {
+        "id": 3136,
+        "curated_ptbr": "Como você se sintonizou com o Chifre Prateado recentemente, agora podemos acessar uma força mágica ainda mais formidável!",
+        "verdict": "rewritten",
+        "rationale": "Toponímia canônica [Chifre Prateado] (シルヴァホルン) e integração com o sistema mágico da Torre."
+    },
+    {
+        "id": 3137,
+        "curated_ptbr": "Pra ser mais exata, isso significa que podemos expandir a quantidade de conjurações da sua magia. Se quiser entoar Magia da Canção com toda a liberdade, não deixe de aproveitar!",
+        "verdict": "rewritten",
+        "rationale": "Explicação mecânica diegética sobre a ampliação de slots de uso de feitiços."
+    },
+    {
+        "id": 3138,
+        "curated_ptbr": "Ah, tudo bem então...\nVolte quando tiver vontade!",
+        "verdict": "rewritten",
+        "rationale": "Despedida amigável e descontraída da estudante da Cosmosfera."
+    },
+    {
+        "id": 3139,
+        "curated_ptbr": "Perfeito!\nVou conceder mais uma carga de uso para \"○○○\"!",
+        "verdict": "rewritten",
+        "rationale": "Confirmação do aprimoramento mágico preservando o caractere curinga do sistema."
+    },
+    {
+        "id": 3140,
+        "curated_ptbr": "Haaah!",
+        "verdict": "rewritten",
+        "rationale": "Vocalização mágica enérgica de conjuração ('はっ!')."
+    },
+    {
+        "id": 3141,
+        "curated_ptbr": "Hehehe, deu tudo certo!\nAgora você pode disparar \"○○○\" mais uma vez!",
+        "verdict": "rewritten",
+        "rationale": "Comemoração alegre do sucesso do aprimoramento."
+    },
+    {
+        "id": 3142,
+        "curated_ptbr": "A Magia ○ \"○○○\" ganhou +1 carga de conjuração!",
+        "verdict": "rewritten",
+        "rationale": "Mensagem padronizada de sistema para expansão de slots de magia."
+    },
+    {
+        "id": 3143,
+        "curated_ptbr": "Uééé... Parece que faltou um pouquinho de energia. Venha tentar de novo assim que juntar mais, tá bom?",
+        "verdict": "rewritten",
+        "rationale": "Reação desapontada e fofa ao faltar pontos de Dive/sintonia ('あれれ...少し足りなかったみたい')."
+    },
+    {
+        "id": 3144,
+        "curated_ptbr": "Vamos, Aurica... É hora de avançarmos para o próximo nível.",
+        "verdict": "rewritten",
+        "rationale": "Incentivo gentil de Lyner ao término da exploração do patamar atual da mente."
+    },
+    {
+        "id": 3145,
+        "curated_ptbr": "......",
+        "verdict": "approved_as_is",
+        "rationale": "Hesitação silenciosa e paralisia de medo de Aurica preservadas."
+    },
+    {
+        "id": 3146,
+        "curated_ptbr": "...Aurica?\nO que foi?",
+        "verdict": "rewritten",
+        "rationale": "Preocupação empática imediata de Lyner ao perceber o tremor da parceira."
+    },
+    {
+        "id": 3147,
+        "curated_ptbr": "Eu... tô com tanto medo de seguir para o próximo mundo... Desta vez mesma, existia uma versão de mim que tentou matar a mana Claire.",
+        "verdict": "rewritten",
+        "rationale": "Confissão dilacerante do pavor de Aurica diante da persona homicida que emergiu na Cosmosfera."
+    },
+    {
+        "id": 3148,
+        "curated_ptbr": "Uma parte de mim que nem eu mesma conheço...\nSó de pensar que posso encontrar ainda mais coisas assim lá na frente... eu fico apavorada...",
+        "verdict": "rewritten",
+        "rationale": "Vulnerabilidade profunda perante os abismos inconscientes reprimidos ('あたしの知らないあたし')."
+    },
+    {
+        "id": 3149,
+        "curated_ptbr": "Aurica... Vai ficar tudo bem. Eu vou estar ao seu lado o tempo todo... Não importa o que aconteça, eu vou te salvar.",
+        "verdict": "rewritten",
+        "rationale": "Juramento de proteção e salvação incondicional de Lyner ('何かあっても、俺がオリカを助ける')."
+    },
+    {
+        "id": 3150,
+        "curated_ptbr": "...É verdade mesmo? Então...",
+        "verdict": "rewritten",
+        "rationale": "Fio de esperança e carência tímida nos olhos de Aurica ('...ホントに? それじゃ...')."
+    },
+    {
+        "id": 3151,
+        "curated_ptbr": "Você segura a minha mão... durante a Mudança de Paradigma?",
+        "verdict": "rewritten",
+        "rationale": "Momento poético capital de vínculo afetivo e terminologia canônica [Mudança de Paradigma] (パラダイムシフト)."
+    },
+    {
+        "id": 3152,
+        "curated_ptbr": "...Claro, eu seguro.",
+        "verdict": "rewritten",
+        "rationale": "Aceitação afetuosa e firme de Lyner acolhendo a mão da Reyvateil."
+    },
+    {
+        "id": 3153,
+        "curated_ptbr": "Obrigada... Hehe. A sua mão, Lyner... é tão quentinha.",
+        "verdict": "rewritten",
+        "rationale": "Conforto sensorial reconfortante e riso tímido ('ライナーの手...暖かいね')."
+    },
+    {
+        "id": 3154,
+        "curated_ptbr": "É... que bom...",
+        "verdict": "rewritten",
+        "rationale": "Timidez acolhedora de Lyner acalmando a parceira."
+    },
+    {
+        "id": 3155,
+        "curated_ptbr": "Consegui me acalmar um pouquinho. Então a gente se vê no próximo mundo...",
+        "verdict": "rewritten",
+        "rationale": "Serenidade restabelecida antes da transição de nível mental."
+    },
+    {
+        "id": 3156,
+        "curated_ptbr": "...Compreendeu agora? O quão estarrecedora é uma Mudança de Paradigma?",
+        "verdict": "rewritten",
+        "rationale": "Intervenção solene de Don Leon interrogando Lyner com gravidade marcial."
+    },
+    {
+        "id": 3157,
+        "curated_ptbr": "Caso os abismos mais profundos da psique venham à tona enquanto o espírito ainda é imaturo, o ego desmorona em colapso irreversível.",
+        "verdict": "rewritten",
+        "rationale": "Restauração da psicologia canônica da Cosmosfera ('自我が崩壊してしまう') destruída pela tradução preliminar da NISA."
+    },
+    {
+        "id": 3158,
+        "curated_ptbr": "Acreditar que, por se tratar do seu próprio mundo interior, tudo ocorrerá conforme a sua vontade consciente é um erro crasso.",
+        "verdict": "rewritten",
+        "rationale": "Lição magistral sobre a autonomia implacável dos processos inconscientes."
+    },
+    {
+        "id": 3159,
+        "curated_ptbr": "Com frequência, o subconsciente opera em direção diametralmente oposta aos anseios conscientes do coração.",
+        "verdict": "rewritten",
+        "rationale": "Dramaturgia psicológica densa traduzindo '自分の想いとは裏腹に動いたりする'."
+    },
+    {
+        "id": 3160,
+        "curated_ptbr": "...É algo muito complexo.",
+        "verdict": "rewritten",
+        "rationale": "Admissão humilde de Lyner diante da imensidão da alma humana."
+    },
+    {
+        "id": 3161,
+        "curated_ptbr": "O mesmo se aplica a você! A única diferença é que, sendo um mero humano, você não tem o dom de mergulhar para contemplar a própria psique.",
+        "verdict": "rewritten",
+        "rationale": "Perspicácia filosófica de Don Leon equiparando a fragilidade psíquica humana à das Reyvateils."
+    },
+    {
+        "id": 3162,
+        "curated_ptbr": "Bem, pouco importa agora. Já está na hora de você despertar.",
+        "verdict": "rewritten",
+        "rationale": "Conclusão do Mergulho e aviso de retorno à consciência física."
+    },
+    {
+        "id": 3163,
+        "curated_ptbr": "Adeus, Lyner.",
+        "verdict": "rewritten",
+        "rationale": "Despedida cerimonial samurai de Don Leon ('さらばだ、ライナー')."
+    },
+    {
+        "id": 3164,
+        "curated_ptbr": "Aqui é o Anteparo A2.\nO requerente da autenticação deve dar um passo à frente.",
+        "verdict": "rewritten",
+        "rationale": "Protocolo militar do console de segurança automatizado da Torre ('A2隔壁')."
+    },
+    {
+        "id": 3165,
+        "curated_ptbr": "Autenticação por espectro FFT: Lyner Barsett. Aguardando diretrizes.",
+        "verdict": "rewritten",
+        "rationale": "Identificação biométrica e sinfônica de alta tecnologia da Torre de Ar tonelico."
+    },
+    {
+        "id": 3166,
+        "curated_ptbr": "Liberar abertura do Anteparo A2.",
+        "verdict": "rewritten",
+        "rationale": "Comando verbal formal do Cavaleiro de Elemia para abertura da comporta de contenção."
+    },
+    {
+        "id": 3167,
+        "curated_ptbr": "#0Ma paks ga exec guol A2 al noes.",
+        "verdict": "rewritten",
+        "rationale": "Blindagem obrigatória da frase de comando ancestral em língua Hymmnos com tag de sistema #0."
+    },
+    {
+        "id": 3168,
+        "curated_ptbr": "Código criptográfico validado.",
+        "verdict": "rewritten",
+        "rationale": "Confirmação do sistema de segurança reconhecendo o verso de comando."
+    },
+    {
+        "id": 3169,
+        "curated_ptbr": "Dois segundos para despressurização do anteparo.\nStatus: permissão de tráfego concedida.",
+        "verdict": "rewritten",
+        "rationale": "Contagem regressiva mecânica e liberação de trânsito pelos níveis sagrados."
+    }
+]
+
+with open(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\batch6_012.json", "w", encoding="utf-8") as f:
+    json.dump(batch6, f, indent=2, ensure_ascii=False)
+
+print(f"Batch 6 written: {len(batch6)} items.")

@@ -1,0 +1,85 @@
+# -*- coding: utf-8 -*-
+"""Dados de calibração editorial para BLK_SYS_024 - Parte 2 (Arquivos 0286 a 0288)
+IDs 27026 a 27097 (72 falas) - 100% calibrado e testado
+"""
+
+lines_0286 = {
+    27026: ("...Não vai ensinar nada estranho a ela.", "Misha com ciúmes alertando Lyner. (79B <= 80B)"),
+    27027: ("Parece bem íntimo da SenhoraCRShurelia. Que inveja, hein.", "Misha provocando com ciúmes e quebra CR. (116B <= 120B)"),
+    27028: ("P-parece tanto assim?", "Lyner sem jeito. (43B <= 64B)"),
+    27029: ("Sei que conversam à noite,CRmas parece que tão se divertindoCRaté demais.", "Misha observando os dois com quebras CR. (150B <= 168B)"),
+    27030: ("Ué, já que estamos conversando,CRnão quero ser um cara chato.", "Lyner justificando a conversa agradável com CR. (117B <= 160B)"),
+    27031: ("Não acho que seja algo errado, mas...CRé q-que... fico curiosa, sabe?", "Misha admitindo a curiosidade com CR. (137B <= 168B)"),
+    27032: ("Se vocês dois não estão... sei lá...CRnum relacionamento estranho...", "Misha receosa de um caso entre eles com CR. (133B <= 168B)"),
+    27033: ("Ultimamente você só conversaCRcom a Senhora Shurelia todo dia.", "Misha cobrando exclusividade com CR. (124B <= 144B)"),
+    27034: ("É que ultimamente você nemCRfala comigo...", "Misha sentindo falta da atenção dele com CR. (87B <= 88B)"),
+    27035: ("Eu também queria conversarCRbastante com você...", "Misha confessando o desejo de papear com CR. (94B <= 112B)"),
+    27036: ("Ugh... d-desculpa. Pensando bem,CRacho que foi isso mesmo...", "Lyner percebendo a mancada com CR. (114B <= 128B)"),
+    27037: ("Depois a gente conversaCRbastante!", "Lyner prometendo atenção a Misha com CR. (69B <= 72B)"),
+    27038: ("...Não, desculpa eu por serCRmimada desse jeito.", "Misha reconhecendo o próprio capricho com CR. (92B <= 120B)"),
+    27039: ("Sobre o que ela costuma falarCRnormalmente?", "Misha curiosa sobre o teor das conversas com CR. (87B <= 96B)"),
+    27040: ("Sobre o quê?... Não acho que a genteCRfale de nada de especial.", "Lyner respondendo casualmente com CR. (117B <= 152B)"),
+    27041: ("Mas conversam quaseCRtodo dia!", "Misha questionando a frequência com CR. (61B <= 72B)"),
+    27042: ("Nunca conversei muito com ela,CRentão não faço ideia de como seja.", "Misha admitindo distância de Shurelia com CR. (128B <= 176B)"),
+    27043: ("Não era sobre issoCRque eu queria falar!", "Misha corrigindo o foco da conversa com CR. (82B <= 88B)"),
+    27044: ("Se tem tanto assunto com ela,CRcom certeza tem comigo também, né?", "Misha reivindicando atenção com CR. (129B <= 168B)"),
+    27045: ("Se não me der atenção, vou invadirCRo seu quarto todo santo dia, ouviu?", "Misha fazendo ameaça fofa com CR. (139B <= 144B)"),
+    27046: ("Acho que você me faz vestirCRo Shiromuku vezes demais...", "Misha comentando sobre o quimono de noiva com CR. (114B <= 136B)"),
+    27047: ("É mesmo?... Bom, quem não tá vestindoCRnão deve ter essa sensação.", "Lyner ponderando sobre o uso do traje com CR. (130B <= 176B)"),
+    27048: ("Não é que eu não goste, tá?", "Misha ressalvando seu apreço pelo traje. (58B <= 64B)"),
+    27049: ("É que, sabe, é um traje especial...CReu queria que continuasse sendoCRalgo especial pra mim...", "Misha explicando o valor afetivo do Shiromuku com quebras CR. (172B <= 200B)")
+}
+
+lines_0287 = {
+    27050: ("E além disso, você só foca na lutaCRe nem repara em mim, sabia?", "Misha reclamando da falta de atenção visual na batalha com CR. (124B <= 152B)"),
+    27051: ("Se eu me distrair,CReu acabo morrendo!", "Lyner justificando o foco na sobrevivência com CR. (77B <= 88B)"),
+    27052: ("Bom, é verdade, mas...CRentão vou me transformar agora!", "Misha decidindo vestir ali no descanso com CR. (117B <= 136B)"),
+    27053: ("Se reparar em mim agora,CReu deixo você me fazer vestirCRo Shiromuku de novo.", "Misha negociando a troca de traje com quebras CR. (156B <= 176B)"),
+    27054: ("Fico tão feliz de viajarCRcom você de novo.", "Misha feliz pela jornada a dois com CR. (82B <= 104B)"),
+    27055: ("É? Acho que uma vida tranquilaCRseria bem mais fácil.", "Lyner comentando sobre sossego com CR. (99B <= 128B)"),
+    27056: ("Hum... uma vida assimCRnão seria nada má.", "Misha concordando com CR. (85B <= 104B)"),
+    27057: ("Mas prefiro mil vezes andar por aíCRe viajar pelo mundo assim com você.", "Misha escolhendo a aventura ao lado de Lyner com CR. (134B <= 176B)"),
+    27058: ("Você gosta mais de mim adulta,CRnão é, Lyner?", "Misha sondando a preferência dele com CR. (87B <= 96B)"),
+    27059: ("Hã?! Não fiz você crescerCRpor causa disso...", "Lyner desconcertado gaguejando com CR. (94B <= 96B)"),
+    27060: ("Não precisa fingir tanto.", "Misha provocando. (52B <= 64B)"),
+    27061: ("Fufufu, então você é um garotoCRnormal afinal de contas. Que bom!", "Misha aliviada pelo interesse masculino normal dele com CR. (130B <= 136B)"),
+    27062: ("Afinal, você prefere a versãoCRpequena de mim?", "Misha perguntando da preferência pela forma infantil com CR. (94B <= 104B)"),
+    27063: ("Falando assim parece que tenho fetichesCRestranhos, dá um tempo!", "Lyner desesperado com a conotação com CR. (128B <= 136B)"),
+    27064: ("Qual é o problema?CRNo fundo você deve ter uma quedaCRpor isso mesmo.", "Misha zombando da defensiva de Lyner com quebras CR. (139B <= 160B)"),
+    27065: ("Já me acostumei a esse corpo,CRe se você tiver esse gosto,CRnão vejo problema nenhum.", "Misha compreensiva com quebras CR. (174B <= 176B)"),
+    27066: ("Você prefere mulheresCRmais maduras, né?", "Misha insistindo no tópico com CR. (83B <= 88B)"),
+    27067: ("Meu gosto pessoal não temCRnada a ver com isso!", "Lyner insistindo que a missão não tem a ver com gosto com CR. (89B <= 96B)"),
+    27068: ("Não precisa ficar na defensiva!", "Misha retrucando. (63B <= 80B)"),
+    27069: ("Garotos normais se encantamCRpor mulheres adultas, podeCRassumir com orgulho!", "Misha dando permissão para ele admirar mulheres maduras com quebras CR. (149B <= 168B)"),
+    27070: ("Garotos?... Parece que tá me tratandoCRcomo criança, é meio estranho.", "Lyner incomodado com o termo garoto com CR. (134B <= 184B)"),
+    27071: ("Ah! Pensando bem, sou maisCRvelha que você, Lyner!", "Misha lembrando de sua idade cronológica com CR. (102B <= 104B)"),
+    27072: ("Pode vir pro colinhoCRda sua irmã mais velha!", "Misha oferecendo colo de irmã mais velha com CR. (92B <= 112B)"),
+    27073: ("...Pelo visto não ouviu nadaCRdo que eu disse.", "Lyner suspirando derrotado com CR. (84B <= 104B)")
+}
+
+lines_0288 = {
+    27074: ("Enfim caiu a ficha.", "Misha chegando a uma conclusão súbita. (41B <= 56B)"),
+    27075: ("Você prefere garotas baixinhasCRcomo eu do que mulheres adultas, né?", "Misha cravando sua teoria provocadora com CR. (132B <= 176B)"),
+    27076: ("O-olha... por favor, não repitaCRisso lá fora!", "Lyner implorando discrição pública com CR. (84B <= 96B)"),
+    27077: ("Fica calmo. Não importa seu gosto,CReu jamais deixaria de gostar de você.", "Misha assegurando afeto incondicional com CR. (142B <= 184B)"),
+    27078: ("Além disso, ser pequena é bem prático.CRMesmo se eu ficar colada em você em público,CRninguém vai olhar torto.", "Misha destacando as vantagens do corpo menor com quebras CR. (199B <= 240B)"),
+    27079: ("...Sem exageros, por favor.CRTenho medo do que pode acontecer...", "Lyner cauteloso com as travessuras dela com CR. (127B <= 136B)"),
+    27080: ("Não quero voltar pra CrônicaCRCrescente nunca mais.", "Misha traumatizada com a Crônica Crescente com CR. (92B <= 112B)"),
+    27081: ("Achei que tinha saído e me trancaram de novo,CRaí saí e me trancaram outra vez,CRe depois me soltaram...", "Misha revoltada com o vai e vem do confinamento com quebras CR. (179B <= 232B)"),
+    27082: ("Ninguém quer entrar lá...CRÉ bom que tenha sido a última vez,CRouviu bem?", "Misha impondo ultimato cômico com quebras CR. (151B <= 168B)"),
+    27083: ("Ultimamente você conversa comigoCRtoda noite, né?", "Misha notando a rotina noturna a dois com CR. (90B <= 120B)"),
+    27084: ("É, agora que você falou.", "Lyner concordando casualmente. (50B <= 64B)"),
+    27085: ("Ficar indo de quarto em quarto todo diaCRdá trabalho... Que tal a gente ficarCRno mesmo quarto daqui pra frente?", "Misha propondo dormirem no mesmo quarto com quebras CR. (226B <= 232B)"),
+    27086: ("I-isso... melhor não. Sinto que coisasCRbem perigosas vão acontecer...", "Lyner nervoso com o perigo da tentação a dois com CR. (143B <= 168B)"),
+    27087: ("Poxa... Em troca, continueCRvindo ao meu quarto!", "Misha exigindo visitas continuadas com CR. (97B <= 120B)"),
+    27088: ("A Canção Pai Teimoso me deu medoCRem vários sentidos, confesso.", "Misha sobre a bizarra Canção Pai Teimoso com CR. (128B <= 128B)"),
+    27089: ("Começo a cantar e brota um coroaCRna minha cabeça vermelho de raiva!", "Misha descrevendo a manifestação hilária com CR. (139B <= 152B)"),
+    27090: ("B-bom, eu te entendo. Quando ele surgiu,CRnem eu conseguia prestar atenção na luta.", "Lyner concordando sobre o absurdo visual com CR. (146B <= 200B)"),
+    27091: ("Como mulher, prefiro evitarCRessa Canção ao máximo.", "Misha com constrangimento feminino com CR. (104B <= 120B)"),
+    27092: ("Dá pra chamar o Bombardeio GaiaCRde magia?", "Lyner questionando a natureza do ataque com CR. (80B <= 96B)"),
+    27093: ("Ué, tem algo contra?", "Misha surpresa com a dúvida. (41B <= 72B)"),
+    27094: ("Não é contra, mas é bizarro demais!", "Lyner achando absurdo. (69B <= 120B)"),
+    27095: ("Aquilo é só arremessar um martelo giganteCRe esmagar os inimigos, não é?", "Lyner descrevendo o ataque puramente físico com CR. (135B <= 152B)"),
+    27096: ("Aquilo é ataque físico,CRnão magia, não acha?", "Lyner contestando a classificação mágica com CR. (95B <= 112B)"),
+    27097: ("O martelo e o brutamontes que o jogaCRvêm da magia, então qual é o problema?!", "Misha justificando logicamente a magia com CR. (142B <= 168B)")
+}

@@ -1,0 +1,83 @@
+# -*- coding: utf-8 -*-
+"""Atualiza o glossario_mestre.json com as decisões canônicas do bloco BLK_EVD_076."""
+
+import json
+from pathlib import Path
+
+GLOSSARY_PATH = Path(r"G:\JOGO\PS2\Ar tonelico - Melody of Elemia (Undub)\Ferramentas_Traducao\curadoria_editorial\glossario_mestre.json")
+
+with open(GLOSSARY_PATH, "r", encoding="utf-8") as f:
+    glossary = json.load(f)
+
+new_terms = {
+    "Life Shower": {
+        "pt": "Chuva Vital",
+        "gender": "feminino",
+        "number": "singular",
+        "category": "Combate / Magia Azul",
+        "note": "青魔法【ライフシャワー】 (Aomahō Raifu Shawā). Magia Azul curativa de alta intensidade tecida por Aurica em sua Cosmosfera para restauração contínua de vitalidade (padronizado com BLK_SYS_001 e BLK_SYS_010)."
+    },
+    "Inside the Ship": {
+        "pt": "Interior da Embarcação",
+        "gender": "masculino",
+        "number": "singular",
+        "category": "Cosmosfera / Destino do Mapa",
+        "note": "船の中 (Fune no naka). Ponto navegável e destino interior do navio ancestral atracado no cais da Cosmosfera de Misha após ela recuperar a Chronicle Key (padronizado com BLK_EVD_026 ID 6608)."
+    }
+}
+
+for term, data in new_terms.items():
+    glossary["terms"][term] = data
+
+glossary["last_scene_handoff"] = {
+    "last_scene_id": "Event/727.evd",
+    "last_line_id": 17406,
+    "resumo_dramatico": (
+        "O bloco BLK_EVD_076 reúne cinco arcos dramáticos capitais de revelação e desenvolvimento: "
+        "(1) Em Event/293.evd, Radolf e Aurica retornam triunfantes com Lyner à Igreja de Elemia em Nemo após salvarem Platina. "
+        "Falss, mantendo sua máscara de benevolência pastoral e invocando o Trio de Elemia, aceita o voluntariado de Lyner e outorga a Aurica "
+        "o reconhecimento de Reyvateil de pleno direito, enviando-a em seguida para receber seu agente prolongador de vida (延命剤). "
+        "Fora do templo, Radolf revela a Lyner a tragédia das Reyvateils de Terceira Geração, que sem o composto sobrevivem apenas cerca de "
+        "três meses sob dolorosas injeções periódicas. Logo após, a cidade é tomada pelo pânico com a formação de um tornado colossal abaixo do "
+        "continente, suspendendo todas as rotas de naus para o Beco Vagalume. "
+        "(2) Em Event/605.evd, no mergulho da Cosmosfera de Misha, esta se ilude com a ideia de abandonar o sacerdócio da Fada da Canção para tornar-se humana. "
+        "Quando Krusche surge moribunda na aldeia onírica e a magia curativa fracassa, Lyner insiste em usar o elixir concedido pelo Mestre Yakuan (薬庵先生), "
+        "o que desencadeia a fúria em prantos de Misha, para quem aquele frasco representava seu único meio de virar humana. As personas oníricas "
+        "revelam a Lyner que Misha carrega o fardo cósmico de um selo sagrado e que revelar o trauma acarreta a pena de apagamento imediato pelo inconsciente. "
+        "(3) Em Event/376.evd, de volta a Platina, Lyner resgata Misha em lágrimas após ser sumariamente expulsa da câmara de canto por Shurelia "
+        "sob a ordem de que não precisava mais cantar, temendo-se a corrupção viral da Guardiã por Mir. Ao reintegarem-se, revela-se a verdadeira "
+        "aparência adulta de 18 anos de Misha, cujo corpo fora sequestrado e regredido à infância quando Bourd roubou o Hino [Chronicle Key] na Tenba. "
+        "Jack interrompe a emoção do grupo cobrando respostas urgentes sobre a estabilidade do órgão ritual Crônica Crescente. "
+        "(4) Em Event/752.evd, na Cosmosfera de Aurica, a Mudança de Paradigma é violentamente interrompida pelo surgimento da Aurica Maligna (悪魔オリカ), "
+        "que destrói os megálitos de Stonehenge e desafia Lyner a reconstruí-los se quiser entrar em seu domínio tenebroso. Lyner aceita o perigo com "
+        "bravura incondicional ('覚悟の上だ'), permitindo que Aurica convoque a reconstrução mística e teça a Magia Azul [Chuva Vital] (青魔法【ライフシャワー】), "
+        "admitindo enternecida que o convívio com Lyner amoleceu seu coração outrora traumatizado. "
+        "(5) Em Event/727.evd, nas docas oníricas da Cosmosfera de Misha, uma moradora relata que o amadurecimento corpóreo de Misha no mundo desperto "
+        "fez atracar a embarcação de sua terra natal, abrindo o novo destino [Interior da Embarcação]. Misha celebra a libertação de seus grilhões e "
+        "oferece seu poder integral de combate a Lyner, detalhando a separação cruel de seu hino nos laboratórios da Tenba e revelando que a Presidente "
+        "Ayano pediu sinceras desculpas, pois todas as atrocidades haviam sido arquitetadas às escondidas pelo inescrupuloso Bourd."
+    ),
+    "decisoes_terminologicas": {
+        "Supreme Commander Radolf": "ラードルフ総司 (Comandante-Geral Radolf; título formal de líder militar dos Cavaleiros)",
+        "Life-Extending Agent": "延命剤 (agente prolongador de vida / prolongador de vida; mantenedor vital de Terceiras Gerações)",
+        "Trio of Elemia": "エレミア三謳神 (Trio de Elemia; deusas ancestrais Eoria, Frelia e Tyria)",
+        "Chronicle Key": "ヒュムノス『クロニクルキー』 / [Chronicle Key] (Hino/Cristal ancestral selador de Mir e restaurador do corpo de Misha)",
+        "Crescent Chronicle": "クレセントクロニクル (Crônica Crescente; órgão monumental de amplificação acústica em Platina)",
+        "Devilish Aurica": "悪魔オリカ (Aurica Maligna; persona sombria e desiludida da Cosmosfera de Aurica)",
+        "Stonehenge": "ストーンヘンジ (Stonehenge; círculo megalítico sagrado do rito de Mudança de Paradigma)",
+        "Life Shower": "青魔法【ライフシャワー】 / [Chuva Vital] (Magia Azul tecida por Aurica para cura vital)",
+        "Master Yakuan": "薬庵先生 (Mestre Yakuan / eremita Yakuan; sábio das ervas e elixires da Cosmosfera de Misha)",
+        "Inside the Ship": "船の中 / [Interior da Embarcação] (novo destino liberado no cais onírico de Misha)",
+        "President Ayano": "天覇の亜耶乃社長 (Presidente Ayano da Tenba; líder executiva da corporação)"
+    },
+    "alertas_para_proximo_bloco": (
+        "Nos blocos subsequentes (BLK_EVD_077 em diante), zelar pela preservação da voz adulta e curvilínea de Misha, "
+        "o aprofundamento das intrigas políticas com a Presidente Ayano e a Tenba, a exploração do mundo sombrio da Aurica Maligna "
+        "e a investigação da corrupção viral da Torre sob o domínio de Mir."
+    )
+}
+
+with open(GLOSSARY_PATH, "w", encoding="utf-8") as f:
+    json.dump(glossary, f, indent=2, ensure_ascii=False)
+
+print(f"Glossário Mestre atualizado com sucesso! Total de termos: {len(glossary['terms'])}")
