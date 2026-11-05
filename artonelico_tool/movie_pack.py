@@ -38,7 +38,17 @@ def load_movie_pack(source_iso: Path, directory: Path) -> list[dict]:
         entry = find(source_iso, str(path))
         if len(payload) > entry.size or not payload:
             raise ValueError(f'Vídeo não cabe no espaço original: {path}')
-        if hashlib.sha256(read_entry(source_iso, entry)).hexdigest() != item['original_sha256']:
+        orig_digest = hashlib.sha256()
+        with source_iso.open('rb') as src_stream:
+            src_stream.seek(entry.extent * SECTOR)
+            rem = entry.size
+            while rem:
+                blk = src_stream.read(min(rem, 4 * 1024 * 1024))
+                if not blk:
+                    break
+                orig_digest.update(blk)
+                rem -= len(blk)
+        if orig_digest.hexdigest() != item['original_sha256']:
             raise ValueError(f'A ISO-base não corresponde ao vídeo original: {path}')
         if item.get('validation', {}).get('audio_unchanged') is not True or item.get('validation', {}).get('frames_equal') is not True:
             raise ValueError(f'Vídeo sem validação de áudio e quadros: {path}')
@@ -62,8 +72,18 @@ def apply_movie_pack(output_iso: Path, movies: list[dict]) -> list[dict]:
                 stream.write(block)
                 remaining -= len(block)
         move_iso_file_record(output_iso, entry, entry.extent, len(payload))
-        reopened = read_entry(output_iso, find(output_iso, entry.path))
-        if hashlib.sha256(reopened).hexdigest() != movie['sha256']:
+        reopened_entry = find(output_iso, entry.path)
+        digest = hashlib.sha256()
+        with output_iso.open('rb') as stream:
+            stream.seek(reopened_entry.extent * SECTOR)
+            remaining = reopened_entry.size
+            while remaining:
+                chunk = stream.read(min(remaining, 4 * 1024 * 1024))
+                if not chunk:
+                    break
+                digest.update(chunk)
+                remaining -= len(chunk)
+        if digest.hexdigest() != movie['sha256']:
             raise ValueError(f'Falha ao reabrir o vídeo inserido: {entry.path}')
         report.append({'iso_path': entry.path, 'bytes': len(payload), 'sha256': movie['sha256'], 'reopened_verified': True})
     return report

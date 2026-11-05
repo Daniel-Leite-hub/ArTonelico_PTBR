@@ -43,9 +43,46 @@ MENU_RENDERER_GROUPS = frozenset({"SLUS/TEXT/0339", "SLUS/TEXT/0341"})
 # Verified against work/SLUS_214.45; ordinary narrative percent signs must
 # retain the normal full-width game encoding.
 ASCII_RUNTIME_FORMATS = frozenset({
-    'Use [%s]', 'Obtained %d Cole.', 'Obtained %s [%s].',
-    'Obtained [%s].', 'Obtained item: [%s]',
+    '%s acquired the skillCR%s.',
+    'Can I call this item %s?',
+    'Create %s,',
+    'Excuse me, I’ll need a %s Leaf maintenance fee...',
+    'Found [%s], but your item is full, so you give it up.',
+    'I don’t have enough items to make a %s.',
+    'I got it. So I’ll go collect %s items. Don’t expect too much though.',
+    'I got it. So I’ll go collect %s items. I’ll be sure to find something great, so you can keep your hopes up!',
+    'I got it. So I’ll go collect %s items. I’ll do what I can!',
+    'I got it. So I’ll go collect %s items. I’m going to try hard!',
+    'I made %s [%s].',
+    'It’ll cost about %s Leaf.',
+    'It’s done! I’ll call it CR[%s]',
+    'Mixed items. You now have %s quality [%s] x%s.',
+    'New item was sold for %s Leaf. You now have %s quality [%s] x%s.',
+    'Obtained %d Cole.',
+    'Obtained %s [%s].',
+    'Obtained [%s].',
+    'Obtained item: [%s]',
+    'Old item was sold for %s Leaf. You now have %s quality [%s] x%s.',
+    'Seems like I need CR%sDP to enter. Should I go in?',
+    'That’ll be %s Leaf, can you pay?',
+    'Then it’ll cost %s Leafy. Got it?',
+    'Unlocked %s’s topic: [%s]',
+    'Use [%s]',
+    'We made %s [%s].',
+    'We made %s [%s]♪',
+    'You don’t have enough items to make %s.',
+    'You don’t seem to have enough items to make %s.',
+    'You need CR%sDP to enter. Got enough?',
+    'You need CR%sDP to enter. What do you want to do? Are you going in?',
+    'You need CR%sDP to enter. Would you like to access?',
+    'You receive [%s]!',
 })
+
+
+def is_runtime_format_string(original: str | None, current: str | None) -> bool:
+    orig = original or ""
+    curr = current or ""
+    return any(token in orig for token in ("%s", "%d")) or any(token in curr for token in ("%s", "%d"))
 
 
 def effective_event_capacity(event_file: str, original_size: int, slot_capacity: int) -> int:
@@ -97,10 +134,11 @@ def selected_replacements(
             or event_file in MENU_RENDERER_GROUPS
         ):
             value = remove_accents(value)
-        if accent_mode == 'native-menu-font' and event_file.startswith(EXECUTABLE_TEXT_PREFIX) and row['original'] in ASCII_RUNTIME_FORMATS:
-            if row['original'] == 'Use [%s]':
-                value = value.replace('Usar [', 'Use [', 1)
-            value = NativePrintfText(value)
+        if accent_mode == 'native-menu-font' and event_file.startswith(EXECUTABLE_TEXT_PREFIX):
+            if row['original'] in ASCII_RUNTIME_FORMATS or is_runtime_format_string(row['original'], value):
+                if row['original'] == 'Use [%s]':
+                    value = value.replace('Usar [', 'Use [', 1)
+                value = NativePrintfText(value)
         replacements[row["entry_index"]] = value
     return replacements, counts, sources
 
