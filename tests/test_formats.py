@@ -42,13 +42,33 @@ from artonelico_tool.translator import (
 
 ROOT = Path(__file__).resolve().parents[1]
 TEST_OUTPUT = ROOT / "work" / "test_output"
+SLUS_PATH = ROOT / "work/SLUS_214.45"
+RPK_PATH = ROOT / "work/RPK.BIN"
+FONT_PATH = ROOT / "work/fonts/FO_HGGBP.tm2"
+EVENT_DIR = ROOT / "work/extracted/Event"
+SNAPSHOT_PATH = ROOT / "work/manual_pending_snapshot.json"
+ADAPTED_PROJECT = ROOT / "release/ArTonelico_PTBR_adaptado_108_20260926.atproj"
+LEGACY_RELEASE_PROJECT = ROOT / "release/ArTonelico_PTBR.atproj"
+LEGACY_ROOT_PROJECT = ROOT / "ArTonelico_PTBR.atproj"
+HAS_EXTRACTED_EVENTS = EVENT_DIR.is_dir() and any(EVENT_DIR.glob("*.evd"))
+HAS_BASE_ISO = any(
+    (base / "Ar tonelico - Melody of Elemia (Undub).iso").is_file()
+    for base in (ROOT, ROOT.parent)
+)
+
+
+def _open_readonly_project(path: Path) -> sqlite3.Connection:
+    db = sqlite3.connect(f"file:{path.resolve().as_posix()}?mode=ro", uri=True)
+    db.row_factory = sqlite3.Row
+    return db
 
 
 class FormatTests(unittest.TestCase):
+    @unittest.skipUnless(ADAPTED_PROJECT.is_file() and SLUS_PATH.is_file(), "Requer SLUS_214.45 extraído em work/")
     def test_item_acquisition_formats_preserve_runtime_substitutions(self):
         import re
-        db = connect(ROOT / 'release/ArTonelico_PTBR_adaptado_108_20260926.atproj')
-        original_elf = (ROOT / 'work/SLUS_214.45').read_bytes()
+        db = _open_readonly_project(ADAPTED_PROJECT)
+        original_elf = SLUS_PATH.read_bytes()
         cases = {
             28463: ((123,), 'Obteve 123 Cole.'),
             28465: ((encode_game_text('2')[:-1], encode_game_text('Lenço')[:-1]), 'Obteve 2 [Lenço].'),
@@ -80,6 +100,7 @@ class FormatTests(unittest.TestCase):
         self.assertEqual('[Equipamento]CRAtaque +50%, defesa -50%.',effect_translation('[Equipment]CRAttack power 50% up, defense 50% down.'))
         self.assertIsNone(effect_translation('[Equipment]CRUnknown effect.'))
 
+    @unittest.skipUnless(SNAPSHOT_PATH.is_file(), "Requer work/manual_pending_snapshot.json")
     def test_editorial_snapshot_has_complete_encodable_mapping_and_controls(self):
         import json,re
         from artonelico_tool.manual_effects import effect_translation
@@ -108,6 +129,7 @@ class FormatTests(unittest.TestCase):
         self.assertEqual(6144,size)
         self.assertEqual(2048,plans[1][4])
 
+    @unittest.skipUnless(SLUS_PATH.is_file(), "Requer work/SLUS_214.45 extraído")
     def test_native_bitmap_patch_changes_only_declared_font_data(self):
         from artonelico_tool.native_bitmap_font import patch_native_menu_font, MAP, BANK, METRICS, SLOTS
         from artonelico_tool.native_menu_font import NATIVE_MENU_CODES
@@ -128,6 +150,7 @@ class FormatTests(unittest.TestCase):
             patch_native_menu_font(untouched,[original[MAP+SLOTS[0]*2:MAP+SLOTS[0]*2+2]])
         self.assertEqual(original,untouched)
 
+    @unittest.skipUnless(SLUS_PATH.is_file(), "Requer work/SLUS_214.45 extraído")
     def test_native_bitmap_patch_preserves_editorial_curly_quote(self):
         from artonelico_tool.native_bitmap_font import patch_native_menu_font, MAP, BANK, METRICS, SLOTS
         original = (ROOT / 'work/SLUS_214.45').read_bytes()
@@ -169,8 +192,9 @@ class FormatTests(unittest.TestCase):
             protected = db.execute("SELECT automatic,locked,provider FROM dialogues WHERE id=4").fetchone()
             self.assertEqual(("K-BLADE", 1, "identificador_tecnico"), tuple(protected))
 
+    @unittest.skipUnless(LEGACY_RELEASE_PROJECT.is_file(), "Requer banco legado release/ArTonelico_PTBR.atproj")
     def test_no_pending_short_manual_catalog_terms(self):
-        db = sqlite3.connect(ROOT / "release/ArTonelico_PTBR.atproj")
+        db = _open_readonly_project(LEGACY_RELEASE_PROJECT)
         pending = [
             original for (original,) in db.execute(
                 "SELECT original FROM dialogues WHERE translation_track='localization' "
@@ -180,8 +204,9 @@ class FormatTests(unittest.TestCase):
         db.close()
         self.assertEqual([], pending)
 
+    @unittest.skipUnless(LEGACY_ROOT_PROJECT.is_file(), "Requer banco legado ArTonelico_PTBR.atproj")
     def test_reported_runtime_corrections_fit_their_slots(self):
-        source = connect(ROOT / "ArTonelico_PTBR.atproj")
+        source = _open_readonly_project(LEGACY_ROOT_PROJECT)
         db = sqlite3.connect(":memory:")
         source.backup(db)
         source.close()
@@ -204,8 +229,9 @@ class FormatTests(unittest.TestCase):
         finally:
             db.close()
 
+    @unittest.skipUnless(LEGACY_RELEASE_PROJECT.is_file(), "Requer banco legado release/ArTonelico_PTBR.atproj")
     def test_menu_renderer_never_receives_portuguese_font_escape(self):
-        db = connect(ROOT / "release/ArTonelico_PTBR.atproj")
+        db = _open_readonly_project(LEGACY_RELEASE_PROJECT)
         try:
             item, _counts, _sources = selected_replacements(
                 db, "SLUS/TEXT/0160", "portuguese-font"
@@ -225,8 +251,9 @@ class FormatTests(unittest.TestCase):
         finally:
             db.close()
 
+    @unittest.skipUnless(LEGACY_RELEASE_PROJECT.is_file(), "Requer banco legado release/ArTonelico_PTBR.atproj")
     def test_native_menu_mode_uses_reserved_two_byte_codes_without_escape(self):
-        db = connect(ROOT / "release/ArTonelico_PTBR.atproj")
+        db = _open_readonly_project(LEGACY_RELEASE_PROJECT)
         try:
             item, _counts, _sources = selected_replacements(
                 db, "SLUS/TEXT/0160", "native-menu-font"
@@ -241,6 +268,7 @@ class FormatTests(unittest.TestCase):
         finally:
             db.close()
 
+    @unittest.skipUnless(SLUS_PATH.is_file(), "Requer work/SLUS_214.45 extraído")
     def test_unsafe_native_menu_hook_is_blocked_before_any_mutation(self):
         original = (ROOT / "work/SLUS_214.45").read_bytes()
         executable = bytearray(original)
@@ -252,6 +280,7 @@ class FormatTests(unittest.TestCase):
         encoded = encode_game_text(native_menu_text("File dragao"))
         self.assertEqual(encoded, encode_game_text("File dragao"))
 
+    @unittest.skipUnless(LEGACY_RELEASE_PROJECT.is_file(), "Requer banco legado release/ArTonelico_PTBR.atproj")
     def test_menu_reset_mode_restores_native_font_after_every_accent(self):
         encoded = encode_game_text(reset_menu_text("Filé dragão"))
         self.assertEqual(2, encoded.count(b"#1"))
@@ -259,7 +288,7 @@ class FormatTests(unittest.TestCase):
         self.assertIn(b"#1" + ACCENT_TO_ALIAS["é"].encode("ascii") + b"#0", encoded)
         self.assertIn(b"#1" + ACCENT_TO_ALIAS["ã"].encode("ascii") + b"#0", encoded)
 
-        db = connect(ROOT / "release/ArTonelico_PTBR.atproj")
+        db = _open_readonly_project(LEGACY_RELEASE_PROJECT)
         try:
             item, _counts, _sources = selected_replacements(
                 db, "SLUS/TEXT/0160", "menu-font-reset"
@@ -268,6 +297,7 @@ class FormatTests(unittest.TestCase):
         finally:
             db.close()
 
+    @unittest.skipUnless(HAS_EXTRACTED_EVENTS, "Requer Event/*.evd extraídos em work/extracted/Event/")
     def test_every_extracted_evd_round_trips_exactly(self):
         paths = list((ROOT / "work/extracted/Event").glob("*.evd"))
         self.assertEqual(976, len(paths))
@@ -281,6 +311,7 @@ class FormatTests(unittest.TestCase):
             self.assertTrue(all(not row.extra for row in evd.dialogues), path.name)
         self.assertEqual(20_304, count)
 
+    @unittest.skipUnless((EVENT_DIR / "5.evd").is_file(), "Requer work/extracted/Event/5.evd")
     def test_evd_runtime_padding_all_four_residues(self):
         evd = parse((ROOT / 'work/extracted/Event/5.evd').read_bytes())
         values = ['a', 'aa', 'é', 'éa']
@@ -298,8 +329,9 @@ class FormatTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'runtime header'):
             validate_runtime_layout(broken, evd)
 
+    @unittest.skipUnless(ADAPTED_PROJECT.is_file() and HAS_EXTRACTED_EVENTS, "Requer Event/*.evd extraídos e banco mestre")
     def test_evd_full_current_translations_follow_native_loader(self):
-        db = connect(ROOT / 'release/ArTonelico_PTBR_adaptado_108_20260926.atproj')
+        db = _open_readonly_project(ADAPTED_PROJECT)
         try:
             for path in (ROOT / 'work/extracted/Event').glob('*.evd'):
                 evd = parse(path.read_bytes())
@@ -312,6 +344,7 @@ class FormatTests(unittest.TestCase):
         finally:
             db.close()
 
+    @unittest.skipUnless((EVENT_DIR / "1.evd").is_file(), "Requer work/extracted/Event/1.evd")
     def test_prologue_can_expand_without_truncation(self):
         evd = parse((ROOT / 'work/extracted/Event/1.evd').read_bytes())
         text = 'Esta fala mantém todas as informações. ' * 30
@@ -320,11 +353,13 @@ class FormatTests(unittest.TestCase):
         validate_runtime_layout(payload, evd)
         self.assertEqual(encode_game_text(text), parse(payload).dialogues[0].raw)
 
+    @unittest.skipUnless(SLUS_PATH.is_file() and RPK_PATH.is_file(), "Requer work/SLUS_214.45 e work/RPK.BIN")
     def test_rpk_index(self):
         entries = read_index(ROOT / "work/SLUS_214.45", (ROOT / "work/RPK.BIN").stat().st_size)
         self.assertEqual(2_703, len(entries))
         self.assertEqual(976, sum(entry.name.endswith(".evd") for entry in entries))
 
+    @unittest.skipUnless((EVENT_DIR / "0.evd").is_file(), "Requer work/extracted/Event/0.evd")
     def test_replacement_updates_length(self):
         path = ROOT / "work/extracted/Event/0.evd"
         evd = parse(path.read_bytes())
@@ -333,11 +368,13 @@ class FormatTests(unittest.TestCase):
         self.assertEqual("Teste.", changed.dialogues[0].text)
         self.assertEqual(len(encode_game_text("Teste.")), changed.dialogues[0].encoded_length)
 
+    @unittest.skipUnless(LEGACY_RELEASE_PROJECT.is_file(), "Requer banco legado release/ArTonelico_PTBR.atproj")
     def test_project_was_imported(self):
-        db = sqlite3.connect(ROOT / "release/ArTonelico_PTBR.atproj")
+        db = _open_readonly_project(LEGACY_RELEASE_PROJECT)
         self.assertEqual(32_853, db.execute("SELECT COUNT(*) FROM dialogues").fetchone()[0])
         db.close()
 
+    @unittest.skipUnless(HAS_BASE_ISO, "Requer ISO original Undub para leitura direta de SLUS_214.45")
     def test_executable_text_bank_contains_missing_dialogue(self):
         iso = ROOT / "Ar tonelico - Melody of Elemia (Undub).iso"
         if not iso.exists():
@@ -358,6 +395,7 @@ class FormatTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "limite fixo"):
             encode_fixed_slot(translated * 10, target.encoded_length)
 
+    @unittest.skipUnless(FONT_PATH.is_file(), "Requer work/fonts/FO_HGGBP.tm2 extraído")
     def test_lzr_compressor_round_trip(self):
         source = (ROOT / "work/fonts/FO_HGGBP.tm2").read_bytes()
         packed = compress(source)
@@ -384,6 +422,7 @@ class FormatTests(unittest.TestCase):
             encoded,
         )
 
+    @unittest.skipUnless(FONT_PATH.is_file(), "Requer work/fonts/FO_HGGBP.tm2 extraído")
     def test_portuguese_font_still_fits_its_rpk_slot(self):
         source = (ROOT / "work/fonts/FO_HGGBP.tm2").read_bytes()
         patched, preview = patch_tm2(source)
@@ -391,6 +430,7 @@ class FormatTests(unittest.TestCase):
         self.assertNotEqual(source, patched)
         self.assertLessEqual(len(compress(patched)), 3 * 2048)
 
+    @unittest.skipUnless(FONT_PATH.is_file(), "Requer work/fonts/FO_HGGBP.tm2 extraído")
     def test_lowercase_accents_share_the_unaccented_baseline(self):
         source = (ROOT / "work/fonts/FO_HGGBP.tm2").read_bytes()
         _, preview = patch_tm2(source)
@@ -403,6 +443,7 @@ class FormatTests(unittest.TestCase):
             cell = alpha.crop((x0, y0, x1, y1))
             self.assertEqual(15, cell.getbbox()[3] - 1, character)
 
+    @unittest.skipUnless(FONT_PATH.is_file(), "Requer work/fonts/FO_HGGBP.tm2 extraído")
     def test_uppercase_accents_share_the_unaccented_baseline(self):
         source = (ROOT / "work/fonts/FO_HGGBP.tm2").read_bytes()
         _, preview = patch_tm2(source)
@@ -461,6 +502,7 @@ class FormatTests(unittest.TestCase):
         self.assertEqual(1, planned_iso_counts(db)["drafts"])
         db.close()
 
+    @unittest.skipUnless((EVENT_DIR / "0.evd").is_file(), "Requer work/extracted/Event/0.evd")
     def test_automatic_fallback_rebuilds_an_actual_evd_entry(self):
         source = (ROOT / "work/extracted/Event/0.evd").read_bytes()
         evd = parse(source)
@@ -485,6 +527,7 @@ class FormatTests(unittest.TestCase):
         self.assertEqual(evd.dialogues[1].raw, rebuilt.dialogues[1].raw)
         db.close()
 
+    @unittest.skipUnless((EVENT_DIR / "0.evd").is_file(), "Requer work/extracted/Event/0.evd")
     def test_oversized_event_falls_back_only_automatic_text(self):
         source = (ROOT / "work/extracted/Event/0.evd").read_bytes()
         evd = parse(source)
@@ -503,10 +546,11 @@ class FormatTests(unittest.TestCase):
         self.assertEqual(36_864, effective_event_capacity("Event/1.evd", 36_168, 36_864))
         self.assertEqual(36_864, effective_event_capacity("Event/8.evd", 12_152, 36_864))
 
+    @unittest.skipUnless((EVENT_DIR / "1.evd").is_file() and LEGACY_RELEASE_PROJECT.is_file(), "Requer Event/1.evd extraído e banco legado")
     def test_prologue_rebuild_preserves_every_record_slot(self):
         source = (ROOT / "work/extracted/Event/1.evd").read_bytes()
         evd = parse(source)
-        db = connect(ROOT / "release/ArTonelico_PTBR.atproj")
+        db = _open_readonly_project(LEGACY_RELEASE_PROJECT)
         replacements, _counts, sources = selected_replacements(
             db, "Event/1.evd", "portuguese-font"
         )

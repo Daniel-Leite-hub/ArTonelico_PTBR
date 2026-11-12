@@ -1,5 +1,6 @@
 # Ar tonelico: Melody of Elemia — Localization Engineering Framework
 
+[![Release](https://img.shields.io/badge/Release-v0.9.0--beta-yellow.svg)](RELEASE.md)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Database](https://img.shields.io/badge/Database-SQLite3-lightgrey.svg)](https://www.sqlite.org/)
 [![Architecture](https://img.shields.io/badge/Architecture-MIPS%20R5900%20%2F%20PS2%20EE-orange.svg)]()
@@ -7,22 +8,25 @@
 [![AI Pipeline](https://img.shields.io/badge/AI%20Pipeline-Multi--Agent%20LLM%20Curation-purple.svg)]()
 [![Build](https://img.shields.io/badge/Build-Zero%20Capacity%20Fallbacks-brightgreen.svg)]()
 
-Um framework robusto de engenharia reversa, pipeline de dados, automação de compilação binária e curadoria orientada por Inteligência Artificial (LLMs), desenvolvido para localizar integralmente o clássico do PlayStation 2 ***Ar tonelico: Melody of Elemia (Undub)*** para o Português do Brasil (PT-BR).
+Um framework robusto de engenharia reversa, pipeline de dados, automação de compilação binária e curadoria orientada por Inteligência Artificial (LLMs), desenvolvido para localizar o clássico do PlayStation 2 ***Ar tonelico: Melody of Elemia (Undub)*** para o Português do Brasil (PT-BR).
 
 O projeto soluciona restrições arquiteturais críticas de consoles legados dos anos 2000 — incluindo limitações rígidas de memória RAM, alinhamento estrito de setores em disco (ISO9660 LBA), remapeamento de tabelas de ponteiros em binários executáveis MIPS e rasterização de fontes nativas em VRAM —, integrando um pipeline moderno de engenharia de software com orquestração agêntica de IA e governança estrita de dados.
 
 ---
 
-## 1. Resumo da Tradução & Versão do Jogo
+## 1. Resumo da Tradução & Versão Beta (`v0.9.0-beta`)
 
 - **Jogo Base:** *Ar tonelico: Melody of Elemia*
 - **Edição:** *Undub* (Áudio original japonês preservado; executável `SLUS-21445`)
-- **Plataforma:** PlayStation 2 (executável nativamente em console real via OPL e emuladores PCSX2)
-- **Escopo Concluído:**
-  - **100% dos Textos do Jogo:** 32.641 linhas de diálogos, eventos, mundos mentais (*Cosmospheres*), missões secundárias, descrições de alquimia (*Grathmeld*), itens e menus traduzidos e curados.
-  - **Curadoria Baseada no Script Japonês:** Reversão sistemática de censuras, cortes de contexto e simplificações da localização norte-americana legada (NISA), restabelecendo piadas originais, termos técnicos e subtexto sociolinguístico.
-  - **Engine Gráfica de Acentos & Expansão de Memória:** Tipografia nativa compatível com caracteres portugueses (`ã`, `õ`, `é`, `ê`, `á`, `à`, `ó`, `ô`, `í`, `ú`, `ç`) renderizada em VRAM (TM2), aliada a uma expansão dinâmica de *Text Arena* na RAM do console que viabiliza sentenças longas sem abreviações ou perda de sentido.
-  - **Confiabilidade:** 0 travamentos, 0 corrupções de ponteiros e 0 fallbacks por falta de espaço físico.
+- **Versão Atual:** **`v0.9.0-beta`** — *Beta pública com foco nos textos e diálogos*
+- **Plataforma:** PlayStation 2 (PCSX2 e console real via OPL)
+- **Escopo da Beta (`v0.9.0-beta`):**
+  - **Cobertura Textual (`32.641` entradas traduzidas de `32.853` totais):** diálogos de enredo, mundos mentais (*Cosmospheres* de Misha, Aurica e Shurelia), Guardiões, *Talk Topics*, missões secundárias, descrições de alquimia (*Grathmeld*), itens, habilidades e menus (`212` identificadores técnicos são mantidos no original por segurança).
+  - **Curadoria Baseada no Script Japonês:** Confronto pela Tríade de Idiomas (JP original / EN NISA / PT-BR) para resgatar nuances, termos técnicos, humor e subtexto perdidos na adaptação norte-americana.
+  - **Engine Gráfica de Acentos & Expansão de Memória:** Tipografia nativa compatível com caracteres portugueses (`á`, `à`, `â`, `ã`, `é`, `ê`, `í`, `ó`, `ô`, `õ`, `ú`, `ü`, `ç`) renderizada em VRAM (TM2), aliada à realocação de *Text Arena* no executável MIPS (`SLUS_214.45`).
+  - **Limitações Conhecidas desta Beta:**
+    - Esta compilação foca integralmente nos **textos e menus do jogo**; vídeos pré-renderizados (`.sfd` / `videos_ptbr/`) não acompanham este repositório nem o aplicador Beta.
+    - O projeto encontra-se em **validação contínua em gameplay real**; eventuais ajustes de quebra de linha (`CR`), diagramação ou contexto de cena devem ser reportados via *Issues*.
 
 ---
 
@@ -116,11 +120,13 @@ flowchart TD
 
 ```text
 ArTonelico_PTBR_Git/
-├── .gitignore                      # Configuração estrita excluindo ISOs, vídeos e temporários
-├── README.md                       # Documentação técnica de arquitetura e competências
-├── RELEASE.md                      # Manual completo para jogadores e compilação da tradução
+├── .gitignore                      # Exclui ISOs, vídeos (.sfd/videos_ptbr), backups e temporários
+├── README.md                       # Documentação técnica de arquitetura e pipeline
+├── RELEASE.md                      # Manual do jogador e notas da versão v0.9.0-beta
+├── aplicador.py                    # Código-fonte da interface Windows do Aplicador (v0.9.0-beta)
+├── Aplicador_ArTonelico_PTBR.spec  # Configuração PyInstaller do Aplicador autônomo
 ├── main.py                         # Ponto de entrada do aplicativo Studio
-├── ArTonelico_PTBR_Studio.spec     # Configuração PyInstaller para geração do executável Windows
+├── ArTonelico_PTBR_Studio.spec     # Configuração PyInstaller para geração do Studio Windows
 │
 ├── artonelico_tool/                # Pacote Python principal (Core Engine)
 │   ├── evd.py                      # Parser, compilador e validador de scripts binários EVD
@@ -130,10 +136,10 @@ ArTonelico_PTBR_Git/
 │   ├── patcher.py                  # Orquestrador de injeção, realocação e compilação
 │   ├── portuguese_font.py          # Renderizador de atlas de fonte e injeção em texturas TM2
 │   ├── text_arena.py               # Algoritmos de expansão de Text Arena na memória RAM
-│   └── translation_project.py      # Camada de abstração e persistência SQLite
+│   └── project.py                  # Camada de abstração e persistência SQLite
 │
 ├── tools/                          # Utilitários de automação, dados e compilação
-│   ├── build_release_iso_curada.py # Script de compilação da ISO traduzida final
+│   ├── build_release_iso_curada.py # Script de compilação da ISO traduzida
 │   ├── curadoria_apply.py          # Mecanismo de aplicação automatizada de lotes revisados
 │   ├── curadoria_validate.py       # Validador de conformidade determinística e integridade
 │   ├── relink_project_iso.py       # Utilitário de redirecionamento de caminho da ISO-base
@@ -144,14 +150,14 @@ ArTonelico_PTBR_Git/
 │   └── blocos/                     # Manifestos JSON (inputs, outputs e relatórios) dos 134 blocos
 │
 ├── tests/                          # Suite de testes unitários e de regressão
-│   ├── test_formats.py             # Testes de integridade do formato EVD
+│   ├── test_formats.py             # Testes de integridade EVD, codificação, fontes e projetos
 │   ├── test_string_relocation.py   # Testes de realocação de strings em memória
 │   ├── test_text_arena.py          # Testes de expansão de Text Arena
 │   └── ...
 │
-├── release/                        # Artefatos consolidados e executável de release
-│   ├── Aplicador_ArTonelico_PTBR.exe # Aplicativo Windows oficial (1-clique) para aplicar na ISO
-│   ├── ArTonelico_PTBR_adaptado_108_20260926.atproj  # Banco SQLite mestre curado (23 MB)
+├── release/                        # Artefatos consolidados da versão Beta
+│   ├── Aplicador_ArTonelico_PTBR.exe # Aplicativo Windows (1-clique, v0.9.0-beta) para aplicar na ISO
+│   ├── ArTonelico_PTBR_adaptado_108_20260926.atproj  # Banco SQLite mestre curado (~22 MB)
 │   ├── glossario_franquia/         # Base terminológica consolidada
 │   └── iso/                        # Relatórios estruturais e metadados de compilação
 │
@@ -163,12 +169,12 @@ ArTonelico_PTBR_Git/
 
 ## 5. Como Executar e Compilar
 
-### Opção 1: Aplicador Executável Windows (Recomendado para Jogadores)
-O release inclui um executável oficial autônomo com interface gráfica amigável:
+### Opção 1: Aplicador Executável Windows (Recomendado para Jogadores — `v0.9.0-beta`)
+O release inclui um executável autônomo com interface gráfica amigável e banco curado embutido:
 ```text
 release/Aplicador_ArTonelico_PTBR.exe
 ```
-Basta executar o aplicativo, selecionar a imagem ISO original de *Ar tonelico (Undub)* e clicar em **"APLICAR TRADUÇÃO NA ISO"**. O software faz a validação da imagem, aplica todos os scripts, fontes e realocações de memória sem exigir instalação prévia de Python ou dependências.
+Basta executar o aplicativo, selecionar a imagem ISO original de *Ar tonelico (Undub)* e clicar em **"APLICAR TRADUÇÃO NA ISO"**. O software gera a imagem `ArTonelico_PTBR_v0.9.0-beta.iso` aplicando todos os textos curados, fontes acentuadas e realocações de memória sem exigir Python instalado. *(Nota: esta versão Beta foca nos textos; vídeos SFD legendados não são embutidos no aplicador.)*
 
 ### Opção 2: Compilação via Pipeline Python (Para Engenheiros e Desenvolvedores)
 - **Pré-requisitos:** Python 3.10+ e Pillow:
@@ -179,23 +185,26 @@ Basta executar o aplicativo, selecionar a imagem ISO original de *Ar tonelico (U
   ```powershell
   python -B -m unittest discover -s tests
   ```
+  *(Em um clone limpo sem os arquivos binários extraídos da ISO em `work/`, testes que exigem assets proprietários do jogo são ignorados automaticamente enquanto toda a suíte unitária do motor executa normalmente.)*
 - **Compilando a Imagem ISO Traduzida:**
   ```powershell
+  python tools/relink_project_iso.py "release/ArTonelico_PTBR_adaptado_108_20260926.atproj" "C:\Caminho\Para\Ar tonelico - Melody of Elemia (Undub).iso"
   python tools/build_release_iso_curada.py
   ```
-O compilador executa a verificação completa das 32.641 entradas, recalcula os offsets binários, expande a Text Arena e entrega a imagem em `ISOs/ArTonelico_PTBR_completo_curado_20261101.iso`.
+O compilador executa a verificação completa das `32.641` entradas traduzidas, recalcula os offsets binários, expande a Text Arena e gera a imagem traduzida na pasta `ISOs/`.
 
-Para instruções detalhadas de configuração no PCSX2, compatibilidade com consoles reais e guia do jogador, consulte o arquivo [`RELEASE.md`](RELEASE.md).
+Para instruções detalhadas de configuração no PCSX2, compatibilidade com consoles reais e guia da versão Beta, consulte o arquivo [`RELEASE.md`](RELEASE.md).
 
 ---
 
-## 6. Métricas & Resultados Consolidados
+## 6. Métricas & Resultados Consolidados (`v0.9.0-beta`)
 
 | Métrica | Valor Verificado |
 | :--- | :--- |
-| **Linhas de Texto Processadas** | `32.641` |
+| **Versão do Release** | `v0.9.0-beta` (Foco nos Textos) |
+| **Registros no Catálogo / Linhas Traduzidas** | `32.853` totais / `32.641` traduzidas (`212` técnicos protegidos) |
 | **Blocos Narrativos e de Sistema Curados** | `134` (90 eventos + 44 sistema) |
+| **Área Mental Auditada (Cosmospheres + Guardiões)** | `7.085` falas (`0` erros críticos / `0` alertas) |
 | **Fallbacks por Estouro de Capacidade** | `0` (Zero perda textual) |
-| **Integridade de Hashes SHA-256** | `100%` validado em banco |
-| **Suporte a Acentuação Gráfica em VRAM** | `100%` funcional |
+| **Suporte a Acentuação Gráfica em VRAM** | `100%` funcional em diálogos e menus |
 | **Tempo de Compilação Automatizada da ISO** | `< 60 segundos` |

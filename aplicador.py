@@ -41,12 +41,12 @@ def get_base_dir() -> Path:
 
 def find_default_project() -> Path | None:
     candidates = [
-        CURRENT_DIR / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
-        CURRENT_DIR / "release" / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
         get_base_dir() / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
         get_base_dir() / "release" / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
         get_base_dir().parent / "release" / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
         get_base_dir().parent / "Ferramentas_Traducao" / "release" / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
+        CURRENT_DIR / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
+        CURRENT_DIR / "release" / "ArTonelico_PTBR_adaptado_108_20260926.atproj",
     ]
     for c in candidates:
         if c.is_file() and c.stat().st_size > 1000000:
@@ -78,7 +78,7 @@ def find_default_iso() -> Path | None:
 class ApplicatorApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Ar tonelico (Undub) — Aplicador de Tradução PT-BR")
+        self.title("Ar tonelico (Undub) — Aplicador PT-BR v0.9.0-beta")
         self.geometry("680x480")
         self.minsize(620, 440)
         self.resizable(True, True)
@@ -108,7 +108,7 @@ class ApplicatorApp(tk.Tk):
 
         subtitle_label = ttk.Label(
             header_frame,
-            text="Aplicador Oficial da Tradução para Português do Brasil (v1.0 Curada)",
+            text="Aplicador da Tradução para Português do Brasil (v0.9.0-beta)",
             font=("Segoe UI", 10),
             foreground="#475569",
         )
@@ -116,8 +116,8 @@ class ApplicatorApp(tk.Tk):
 
         info_box = ttk.Label(
             header_frame,
-            text="• 32.641 diálogos e menus traduzidos e revisados pela Tríade (JP/EN/PT-BR)\n"
-                 "• Acentuação gráfica nativa na VRAM (TM2) • Text Arena expandida sem truncamentos",
+            text="• 32.641 diálogos e menus traduzidos e curados pela Tríade (JP/EN/PT-BR)\n"
+                 "• Acentuação gráfica nativa na VRAM (TM2) • Text Arena expandida (Beta — foco nos textos)",
             font=("Segoe UI", 9, "italic"),
             foreground="#0f766e",
         )
@@ -189,7 +189,7 @@ class ApplicatorApp(tk.Tk):
         default_iso = find_default_iso()
         if default_iso:
             self.iso_var.set(str(default_iso))
-            dest = default_iso.parent / "ArTonelico_PTBR_completo.iso"
+            dest = default_iso.parent / "ArTonelico_PTBR_v0.9.0-beta.iso"
             self.dest_var.set(str(dest))
             self.status_var.set("ISO original localizada automaticamente. Pronto para aplicar!")
 
@@ -201,7 +201,7 @@ class ApplicatorApp(tk.Tk):
         if f:
             self.iso_var.set(f)
             p = Path(f)
-            dest = p.parent / "ArTonelico_PTBR_completo.iso"
+            dest = p.parent / "ArTonelico_PTBR_v0.9.0-beta.iso"
             self.dest_var.set(str(dest))
             self.status_var.set("ISO original selecionada. Clique em 'Aplicar Tradução'.")
 
@@ -209,7 +209,7 @@ class ApplicatorApp(tk.Tk):
         f = filedialog.asksaveasfilename(
             title="Escolha o local e nome para salvar a ISO traduzida",
             defaultextension=".iso",
-            initialfile="ArTonelico_PTBR_completo.iso",
+            initialfile="ArTonelico_PTBR_v0.9.0-beta.iso",
             filetypes=[("Imagem ISO", "*.iso"), ("Todos os Arquivos", "*.*")],
         )
         if f:
@@ -326,11 +326,12 @@ class ApplicatorApp(tk.Tk):
         fallbacks = result.get("capacity_fallback_count", 0)
 
         msg = (
-            f"A tradução foi aplicada com sucesso na ISO!\n\n"
+            f"A tradução (v0.9.0-beta) foi aplicada com sucesso na ISO!\n\n"
             f"• Linhas verificadas: {lines:,}\n"
             f"• Fallbacks de tamanho: {fallbacks}\n"
             f"• Arquivo gerado:\n{target.resolve()}\n\n"
-            f"O jogo está pronto para ser executado no PCSX2 ou em console PlayStation 2 real!"
+            f"Nota: Esta versão Beta foca nos textos e menus do jogo.\n"
+            f"O jogo está pronto para testes no PCSX2 ou em console PlayStation 2!"
         )
         if messagebox.askyesno("Tradução Concluída", msg + "\n\nDeseja abrir a pasta onde a ISO foi salva?"):
             os.system(f'explorer /select,"{target.resolve()}"')
