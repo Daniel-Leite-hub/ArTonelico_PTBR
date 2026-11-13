@@ -204,7 +204,7 @@ Para instruções detalhadas de configuração no PCSX2, compatibilidade com con
 | **Versão do Release** | `v0.9.0-beta` (Foco nos Textos) |
 | **Registros no Catálogo / Linhas Traduzidas** | `32.853` totais / `32.641` traduzidas (`212` técnicos protegidos) |
 | **Blocos Narrativos e de Sistema Curados** | `134` (90 eventos + 44 sistema) |
-| **Área Mental Auditada (Cosmospheres + Guardiões)** | `7.085` falas (`0` erros críticos / `0` alertas) |
+| **Área Mental Auditada (Cosmospheres + Guardiões)** | `7.085` falas (`0` erros críticos) |
 | **Fallbacks por Estouro de Capacidade** | `0` (Zero perda textual) |
 | **Suporte a Acentuação Gráfica em VRAM** | `100%` funcional em diálogos e menus |
 | **Tempo de Compilação Automatizada da ISO** | `< 60 segundos` |
