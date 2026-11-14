@@ -16,7 +16,7 @@
 ### O que está incluído nesta Beta
 - **Cobertura Textual (`32.641` entradas traduzidas de `32.853` totais):**
   - **História Principal & Rotas:** Eventos de enredo de todas as fases, ramificações e finais (rotas de Aurica, Misha e Shurelia).
-  - **Cosmospheres & Guardiões:** Todos os 9 níveis de mergulho mental (*Dive*) de cada Reyvateil, Guardiões e *Dive Shops*, auditados contra estouros de linha e anomalias de quebra (`7.085` falas auditadas sem alertas).
+  - **Cosmospheres & Guardiões:** Todos os 9 níveis de mergulho mental (*Dive*) de cada Reyvateil, Guardiões e *Dive Shops*, auditados contra estouros de linha e anomalias de quebra (`7.085` falas auditadas sem erros críticos).
   - **Sistema e Interface:** Menus de batalha, status, receitas de alquimia (*Grathmeld*), itens, equipamentos, acessórios e *Song Magic* (`212` identificadores técnicos são mantidos no original por segurança).
   - **Acampamento & NPCs:** *Talk Topics*, diálogos com moradores e eventos secundários.
 - **Curadoria Filológica Tríplice (JP Original vs. EN NISA vs. PT-BR):**
@@ -40,13 +40,13 @@ Para garantir compatibilidade com o patcher, utilize a ISO americana **Undub** c
 | **Nome Padrão** | `Ar tonelico - Melody of Elemia (Undub).iso` | `ArTonelico_PTBR_v0.9.0-beta.iso` |
 | **ID do Executável** | `SLUS_214.45` | `SLUS_214.45` (com Text Arena expandida) |
 | **Tamanho em Bytes** | `3.110.580.224 bytes` | `3.324.903.424 bytes` |
-| **SHA-256 (ISO Beta)** | — | `4feefd4c5657a6d14889d85c73990bdd8f7bc9d731fd9c49bb5e2bf32b598e93` |
+| **SHA-256 (ISO Beta)** | — | `fe182a24afac6beabb0ecb7776ebefb45c327e4b2b48f5c8a435bcab62a88923` |
 | **Linhas Traduzidas** | — | `32.641` linhas verificadas (`212` originais protegidas) |
 | **Fallbacks de Espaço** | — | `0` (zero truncamentos) |
 
 > **Checksums dos artefatos de release:**  
-> - `release/Aplicador_ArTonelico_PTBR.exe`: `6af0b2855358b0be338979d48e001acd451e9ca016c46bf614a1aba054929b48`  
-> - `release/ArTonelico_PTBR_adaptado_108_20260926.atproj`: `e179f662a0ef8f405898b48ca240453cd9290a99045fffd620424244493ee6ee`
+> - `release/Aplicador_ArTonelico_PTBR.exe`: `4ced6714e7b87711fccbabeb977dd58dc0b22d927717d1fad91efb4b0613366f`  
+> - `release/ArTonelico_PTBR_adaptado_108_20260926.atproj`: `8db10ef86b53a6fba2eb068b9eec95d31e04e3a9b059077ae6d137e166da444d`
 
 ---
 

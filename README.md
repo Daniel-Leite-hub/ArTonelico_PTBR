@@ -55,7 +55,7 @@ flowchart TD
 
     subgraph S4["4. Automação de Build & Patching Binário"]
         SQLite -->|Binary Recompiler| EVD_NEW["EVDs Reestruturados & Alinhados"]
-        TM2 -->|"Font Rasterizer (Pillow)"| TM2_NEW["Atlas de Glifos Acentuados"]
+        TM2 -->|Font Rasterizer (Pillow)| TM2_NEW["Atlas de Glifos Acentuados"]
         MIPS -->|MIPS Text Reference Patching| ELF_NEW["SLUS com Text Arena Expandida"]
         EVD_NEW & TM2_NEW & ELF_NEW -->|ISO9660 LBA Master| ISO_FINAL["ISO PT-BR Final (32.641 Linhas Verificadas)"]
     end
@@ -204,7 +204,7 @@ Para instruções detalhadas de configuração no PCSX2, compatibilidade com con
 | **Versão do Release** | `v0.9.0-beta` (Foco nos Textos) |
 | **Registros no Catálogo / Linhas Traduzidas** | `32.853` totais / `32.641` traduzidas (`212` técnicos protegidos) |
 | **Blocos Narrativos e de Sistema Curados** | `134` (90 eventos + 44 sistema) |
-| **Área Mental Auditada (Cosmospheres + Guardiões)** | `7.085` falas (`0` erros críticos / `0` alertas) |
+| **Área Mental Auditada (Cosmospheres + Guardiões)** | `7.085` falas (`0` erros críticos) |
 | **Fallbacks por Estouro de Capacidade** | `0` (Zero perda textual) |
 | **Suporte a Acentuação Gráfica em VRAM** | `100%` funcional em diálogos e menus |
 | **Tempo de Compilação Automatizada da ISO** | `< 60 segundos` |

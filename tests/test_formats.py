@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import sqlite3
 import unittest
 from pathlib import Path
@@ -27,7 +28,7 @@ from artonelico_tool.native_menu_font import (
 )
 from artonelico_tool.project import (
     clear_all_translations, connect, mark_reviewed, planned_iso_counts,
-    project_stats, save_text, text_digest,
+    project_stats, save_text, select_final_text, text_digest,
 )
 from artonelico_tool.quality import (
     ensure_default_glossary, normalize_translation_source, protect_azure_text,
@@ -901,6 +902,43 @@ class FormatTests(unittest.TestCase):
             encoded_apostrophe,
             encode_game_text("Uma gota d’água."),
         )
+
+    @unittest.skipUnless(ADAPTED_PROJECT.is_file(), "Requer banco release/ArTonelico_PTBR_adaptado_108_20260926.atproj")
+    def test_adapted_project_event_dialogues_have_safe_cr_and_balloon_size(self):
+        # Validate the actual text emitted to the ISO (select_final_text), never raw translation.
+        db = _open_readonly_project(ADAPTED_PROJECT)
+        accents = set("áàâãéêíóôõúüçÁÀÂÃÉÊÍÓÔÕÚÜÇªº")
+        failures: list[tuple[int, str, int, str]] = []
+        try:
+            for row in db.execute(
+                "SELECT * FROM dialogues WHERE locked=0 AND event_file LIKE 'Event/%' ORDER BY id"
+            ):
+                text, _source = select_final_text(row)
+                if not text:
+                    continue
+                if "\n" in text or "\r" in text:
+                    failures.append((row["id"], row["event_file"], row["entry_index"], "raw_newline"))
+                    continue
+                encoded = encode_game_text(text)
+                if re.search(br"#1.CR", encoded):
+                    failures.append((row["id"], row["event_file"], row["entry_index"], "accent_alias_before_CR"))
+                cr_count = encoded.count(b"CR")
+                if cr_count == 0:
+                    if len(text) > 125 or len(encoded) > 270:
+                        failures.append((row["id"], row["event_file"], row["entry_index"], f"no_cr_overflow:{len(text)}c/{len(encoded)}b"))
+                else:
+                    lines = text.split("CR")
+                    if len(lines) > 3:
+                        failures.append((row["id"], row["event_file"], row["entry_index"], f"too_many_lines:{len(lines)}"))
+                    for idx, line in enumerate(lines):
+                        if len(line) > 44:
+                            failures.append((row["id"], row["event_file"], row["entry_index"], f"line_gt_44:{len(line)}"))
+                        if idx < len(lines) - 1 and line and line[-1] in accents:
+                            failures.append((row["id"], row["event_file"], row["entry_index"], "accent_before_CR"))
+        finally:
+            db.close()
+        self.assertEqual([], failures[:10])
+        self.assertEqual(0, len(failures))
 
 
 if __name__ == "__main__":
