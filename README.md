@@ -55,7 +55,7 @@ flowchart TD
 
     subgraph S4["4. Automação de Build & Patching Binário"]
         SQLite -->|Binary Recompiler| EVD_NEW["EVDs Reestruturados & Alinhados"]
-        TM2 -->|Font Rasterizer (Pillow)| TM2_NEW["Atlas de Glifos Acentuados"]
+        TM2 -->|"Font Rasterizer (Pillow)"| TM2_NEW["Atlas de Glifos Acentuados"]
         MIPS -->|MIPS Text Reference Patching| ELF_NEW["SLUS com Text Arena Expandida"]
         EVD_NEW & TM2_NEW & ELF_NEW -->|ISO9660 LBA Master| ISO_FINAL["ISO PT-BR Final (32.641 Linhas Verificadas)"]
     end
